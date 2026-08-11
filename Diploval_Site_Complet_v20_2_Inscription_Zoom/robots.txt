@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diploval.fr/sitemap.xml
