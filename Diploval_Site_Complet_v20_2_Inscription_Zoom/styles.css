@@ -606,3 +606,57 @@ a.social-card:focus-visible{outline:3px solid rgba(189,109,53,.24);outline-offse
 .registration-fallback a{color:var(--copper-text)}
 .form-honeypot{position:absolute!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;height:1px!important;width:1px!important;margin:-1px!important;padding:0!important;border:0!important}
 @media (max-width:719px){.registration-dialog{width:calc(100% - 18px);max-height:90dvh;padding:1.15rem;border-radius:18px}.agenda-register-button{width:100%}}
+
+/* V20.4 — lisibilité et adaptation responsive des boutons */
+.button{
+  max-width:100%;
+  white-space:normal;
+  text-align:center;
+  line-height:1.3;
+  word-break:normal;
+  overflow-wrap:normal;
+}
+.button-copper,
+.registration-submit{
+  background:#bd6d35 !important;
+  background-color:#bd6d35 !important;
+  color:#ffffff !important;
+  -webkit-text-fill-color:#ffffff;
+  border-color:#bd6d35 !important;
+}
+.button-copper:hover,
+.registration-submit:hover{
+  background:#a95f2e !important;
+  background-color:#a95f2e !important;
+  color:#ffffff !important;
+  -webkit-text-fill-color:#ffffff;
+}
+.button-ghost-light.agenda-register-button{
+  background:rgba(255,255,255,.08);
+  color:#ffffff !important;
+  -webkit-text-fill-color:#ffffff;
+  border-color:rgba(255,255,255,.68);
+}
+.button-ghost-light.agenda-register-button:hover{
+  background:rgba(255,255,255,.15);
+  color:#ffffff !important;
+  -webkit-text-fill-color:#ffffff;
+}
+@media (max-width:719px){
+  .agenda-register-button,
+  .registration-submit{
+    width:100%;
+    min-height:48px;
+    padding:.78rem 1rem;
+    font-size:.78rem;
+    line-height:1.35;
+    white-space:normal;
+  }
+}
+@media (max-width:380px){
+  .agenda-register-button,
+  .registration-submit{
+    padding:.72rem .75rem;
+    font-size:.74rem;
+  }
+}
