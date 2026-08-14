@@ -1,0 +1,34 @@
+{
+  "dossiers": [
+    {
+      "id": "dossier-1",
+      "title": "Sécurité hydrique et hiérarchie des usages de l’eau",
+      "status": "en_cours",
+      "scope": "National · Eau",
+      "summary": "Face à la répétition des sécheresses et aux tensions sur la ressource, Diploval examine les conditions d’une sécurité hydrique anticipée : hiérarchie des usages, expertise scientifique, gouvernance, dérogations, agriculture et protection des ressources.",
+      "visible": true,
+      "featured": true,
+      "publication_id": ""
+    },
+    {
+      "id": "dossier-2",
+      "title": "Saumon du Médoc — projet Pure Salmon",
+      "status": "en_cours",
+      "scope": "Territorial · Gironde",
+      "summary": "Analyse du projet d’élevage de saumons au Verdon-sur-Mer : prélèvements et rejets d’eau, énergie, effluents, conditions d’élevage, risques, gouvernance et effets possibles sur l’estuaire de la Gironde.",
+      "visible": true,
+      "featured": true,
+      "publication_id": ""
+    },
+    {
+      "id": "dossier-3",
+      "title": "Horizeo — Saucats, Gironde",
+      "status": "en_cours",
+      "scope": "Territorial · Gironde",
+      "summary": "Étude du projet énergétique Horizeo à Saucats : forêt, sols, biodiversité, carbone, risque incendie, eau, aménagement du territoire, gouvernance et alternatives possibles.",
+      "visible": true,
+      "featured": true,
+      "publication_id": ""
+    }
+  ]
+}

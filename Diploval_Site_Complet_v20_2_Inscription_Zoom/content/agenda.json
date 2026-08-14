@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "id": "visio-2026-09-25",
+      "title": "Première visioconférence Diploval",
+      "category": "Visioconférence",
+      "mode": "online",
+      "date": "2026-09-25",
+      "start_time": "19:00",
+      "end_time": "20:30",
+      "platform": "Zoom",
+      "online_url": "",
+      "venue": "",
+      "address": "",
+      "city": "",
+      "access": "Sur inscription",
+      "registration": true,
+      "capacity": 50,
+      "summary": "Présentation de la démarche Diploval, de la Charte des fondamentaux du vivant, des outils et des méthodes de travail, suivie d’un temps d’échange.",
+      "status": "a_venir",
+      "visible": true
+    }
+  ]
+}

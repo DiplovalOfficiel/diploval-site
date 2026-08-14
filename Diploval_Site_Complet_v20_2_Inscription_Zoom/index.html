@@ -249,7 +249,7 @@
 </div>
 <p>Les dossiers les plus récents sont présentés ici. La recherche, plus bas, permet ensuite de retrouver une note, un mémorandum, une analyse ou un rapport par mot-clé, format ou échelle d’action.</p>
 </div>
-<div aria-label="Travaux récents, faites défiler horizontalement sur mobile" class="work-scroller"><article class="work-card reveal">
+<div aria-label="Travaux récents, faites défiler horizontalement sur mobile" class="work-scroller" id="admin-featured-publications"><article class="work-card reveal">
 <button aria-label="Ouvrir la fiche Jour du dépassement 2026" class="work-open" data-work="depassement" type="button">
 <img alt="Couverture de la note Jour du dépassement 2026" src="assets/covers/depassement.jpg"/>
 <span class="work-tag">Note</span><span class="work-scope scope-international">International</span>
@@ -364,7 +364,7 @@
     <p class="ongoing-v206__lead">Trois dossiers sont actuellement en cours d’instruction. Ils sont présentés ici avant publication afin de rendre visible le travail engagé, sans anticiper les conclusions.</p>
   </header>
 
-  <div class="ongoing-v206__grid">
+  <div class="ongoing-v206__grid" id="admin-ongoing-grid">
     <article class="ongoing-v206__card">
       <div class="ongoing-v206__cardtop">
         <span class="ongoing-v206__status"><span aria-hidden="true"></span>En cours</span>
@@ -509,7 +509,17 @@
 <div class="details-body"><p>Une idée peut sembler excellente sur le papier et se révéler maladroite une fois appliquée. Nous préférons commencer à une échelle maîtrisable, observer ce qui se passe et ajuster avant de généraliser.</p></div>
 </details>
 <details><summary><span>05</span> Contributions juridiques et plaidoyer <i aria-hidden="true">+</i></summary><div class="details-body"><p>Selon le dossier, Diploval peut préparer une contribution, une relecture argumentée, un avis ou un document de plaidoyer fondé sur le droit positif et les effets concrets de la décision.</p></div></details><details><summary><span>06</span> Suivi des décisions publiques <i aria-hidden="true">+</i></summary><div class="details-body"><p>Une annonce ne suffit pas. Nous pouvons suivre sa traduction réelle, relever les écarts entre les engagements et les actes, puis proposer des points de correction.</p></div></details></div>
-</section><section aria-labelledby="agenda-title" class="section section-agenda" id="agenda">
+</section>
+<section aria-labelledby="actualites-title" class="section section-actualites admin-content-section" id="actualites" hidden>
+  <div class="actualites-shell">
+    <div class="section-heading reveal">
+      <p class="eyebrow">Actualités &amp; mises à jour</p>
+      <h2 id="actualites-title">Du travail en cours au terrain</h2>
+      <p>Courtes nouvelles, avancées de dossiers, contributions et informations pratiques publiées directement par Diploval.</p>
+    </div>
+    <div class="actualites-grid" id="admin-articles-list"></div>
+  </div>
+<section aria-labelledby="agenda-title" class="section section-agenda" id="agenda">
 <div class="agenda-shell">
 <div class="agenda-head reveal">
 <div>
@@ -518,7 +528,8 @@
 </div>
 <div class="agenda-head-copy"><p>Les prochains rendez-vous, déplacements et temps forts de Diploval. Une date, un lieu ou un sujet : l’essentiel doit pouvoir se retrouver en quelques secondes.</p></div>
 </div>
-<article aria-label="Prochain rendez-vous Diploval : première visioconférence le 25 septembre 2026" class="agenda-next reveal"><span class="agenda-next-kicker">Prochain rendez-vous</span><div class="agenda-next-date"><strong>25</strong><span>SEP.<br/>2026</span></div><div class="agenda-next-copy"><small>Vendredi · 19 h — 20 h 30 · En ligne · Zoom</small><h3>Première visioconférence Diploval</h3><p>Présentation de la démarche Diploval, de la Charte des fondamentaux du vivant, des outils et des méthodes de travail, suivie d’un temps d’échange.</p><button class="button button-ghost-light agenda-register-button" type="button" data-open-registration>S’inscrire à la visioconférence →</button></div><span class="agenda-next-status">Sur inscription</span></article>
+<article aria-label="Prochain rendez-vous Diploval : première visioconférence le 25 septembre 2026" class="agenda-next reveal" id="admin-agenda-next"><span class="agenda-next-kicker">Prochain rendez-vous</span><div class="agenda-next-date"><strong>25</strong><span>SEP.<br/>2026</span></div><div class="agenda-next-copy"><small>Vendredi · 19 h — 20 h 30 · En ligne · Zoom</small><h3>Première visioconférence Diploval</h3><p>Présentation de la démarche Diploval, de la Charte des fondamentaux du vivant, des outils et des méthodes de travail, suivie d’un temps d’échange.</p><button class="button button-ghost-light agenda-register-button" type="button" data-open-registration>S’inscrire à la visioconférence →</button></div><span class="agenda-next-status">Sur inscription</span></article>
+<div class="agenda-more" id="admin-agenda-more" hidden></div>
 <div class="agenda-foot reveal"><span aria-hidden="true"></span><p><strong>Prochaines dates</strong> — Les prochaines rencontres, interventions et déplacements seront ajoutés ici au fur et à mesure de leur confirmation.</p></div>
 </div>
 </section>
@@ -566,6 +577,7 @@
 <div><h3>Conversations</h3><p>Des échanges sans mise en scène inutile, avec le temps d’aller au fond.</p></div>
 </article>
 </div>
+<div id="admin-podcast-episodes">
 <article class="podcast-upcoming">
 <div class="podcast-episode-number"><span>En préparation</span><strong>01</strong></div>
 <div class="podcast-episode-copy">
@@ -578,6 +590,7 @@
 </div>
 <a class="podcast-contact" href="mailto:contact@diploval.fr?subject=Proposition%20de%20conversation%20pour%20Les%20Voix%20du%20Vivant">Proposer une conversation <span aria-hidden="true">→</span></a>
 </article>
+</div>
 <p class="podcast-accessibility">Chaque épisode sera accompagné d’un résumé et, lorsque le format le permet, d’une transcription.</p>
 </div>
 </div>
@@ -781,12 +794,12 @@
 <dialog aria-labelledby="registration-title" class="registration-dialog" id="registration-dialog">
 <button aria-label="Fermer" class="dialog-close" type="button">×</button>
 <p class="eyebrow">Les rendez-vous de Diploval</p>
-<h2 id="registration-title">S’inscrire à la visioconférence</h2>
-<p class="registration-lead"><strong>Vendredi 25 septembre 2026, de 19 h à 20 h 30.</strong> Laissez simplement vos coordonnées ; les informations de connexion Zoom vous seront adressées avant le rendez-vous.</p>
+<h2 id="registration-title">S’inscrire à un rendez-vous</h2>
+<p class="registration-lead" id="registration-event-lead"><strong>Vendredi 25 septembre 2026, de 19 h à 20 h 30.</strong> Laissez simplement vos coordonnées ; les informations pratiques vous seront adressées avant le rendez-vous.</p>
 <form name="inscription-visioconference-diploval" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="registration-form">
 <input type="hidden" name="form-name" value="inscription-visioconference-diploval"/>
 <input type="hidden" name="subject" data-remove-prefix value="Nouvelle inscription Zoom — Diploval"/>
-<input type="hidden" name="evenement" value="Première visioconférence Diploval — vendredi 25 septembre 2026, 19 h–20 h 30 — Zoom"/>
+<input type="hidden" name="evenement" id="registration-event-field" value="Première visioconférence Diploval — vendredi 25 septembre 2026, 19 h–20 h 30 — Zoom"/>
 <p class="form-honeypot" aria-hidden="true"><label>Ne pas remplir ce champ : <input name="bot-field" tabindex="-1" autocomplete="off"/></label></p>
 <div class="registration-fields">
 <label><span>Nom et prénom *</span><input type="text" name="nom" autocomplete="name" required/></label>
@@ -864,5 +877,6 @@
 </div>
 </dialog>
 <script src="site.js"></script>
+<script src="content-admin.js?v=21"></script>
 </body>
 </html>
