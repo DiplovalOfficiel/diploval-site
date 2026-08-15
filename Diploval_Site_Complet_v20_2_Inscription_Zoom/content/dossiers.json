@@ -1,6 +1,13 @@
 {
   "dossiers": [
     {
+      "visible": false,
+      "title": "Protection des mineurs et réseaux sociaux",
+      "status": "en_cours",
+      "scope": "National ",
+      "summary": "À la suite de la décision du Conseil constitutionnel du 14 août 2026, Diploval ouvre un examen de fond des moyens de protéger les mineurs sur les réseaux sociaux. Le dossier étudiera notamment les obligations des plateformes, les mécanismes de captation de l’attention, la vérification de l’âge, la vie privée, l’éducation numérique, le rôle des parents et les expériences étrangères, en intégrant directement la parole d’enfants et d’adolescents.\n\nInstruction en cours · Publication à venir"
+    },
+    {
       "id": "dossier-1",
       "title": "Sécurité hydrique et hiérarchie des usages de l’eau",
       "status": "en_cours",
