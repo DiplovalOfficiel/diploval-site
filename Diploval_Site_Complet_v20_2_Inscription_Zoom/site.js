@@ -15,6 +15,23 @@
 
   if (year) year.textContent = new Date().getFullYear();
 
+  // Information temporaire de fermeture — disparaît automatiquement le 4 septembre 2026 (heure de Paris)
+  const closureNotice = document.querySelector('#closure-notice');
+  if (closureNotice) {
+    try {
+      const parts = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Europe/Paris', year: 'numeric', month: '2-digit', day: '2-digit'
+      }).formatToParts(new Date()).reduce((acc, part) => {
+        if (part.type !== 'literal') acc[part.type] = part.value;
+        return acc;
+      }, {});
+      const parisDate = `${parts.year}-${parts.month}-${parts.day}`;
+      if (parisDate >= '2026-09-04') closureNotice.remove();
+    } catch {
+      if (new Date() >= new Date('2026-09-03T22:00:00Z')) closureNotice.remove();
+    }
+  }
+
   const toggleMenu = open => {
     if (!menuButton || !nav) return;
     menuButton.setAttribute('aria-expanded', String(open));
@@ -540,12 +557,59 @@
           body: bodyData.toString()
         });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        registrationStatus.textContent = 'Votre demande d’inscription a bien été envoyée. Vous recevrez les informations du rendez-vous par e-mail.';
+        registrationStatus.innerHTML = '<strong>Merci pour votre inscription.</strong><span>Votre demande a bien été enregistrée pour la visioconférence du 25 septembre 2026.</span><span>Diploval vous recontactera par e-mail le <strong>15 septembre</strong> pour vous transmettre le lien de connexion.</span>';
         registrationStatus.className = 'registration-status is-success';
+        registrationForm.classList.add('is-complete');
         registrationForm.reset();
       } catch (error) {
         registrationStatus.textContent = 'L’envoi n’a pas abouti. Vous pouvez écrire directement à contact@diploval.fr.';
         registrationStatus.className = 'registration-status is-error';
+      } finally {
+        if (submitButton) { submitButton.disabled = false; submitButton.textContent = originalLabel; }
+      }
+    });
+  }
+
+
+  if (registrationDialog && registrationForm && registrationStatus) {
+    registrationDialog.addEventListener('close', () => {
+      registrationForm.classList.remove('is-complete');
+      registrationStatus.textContent = '';
+      registrationStatus.className = 'registration-status';
+    });
+  }
+
+  // Lettre d’information — collecte volontaire via Netlify Forms
+  const newsletterForm = document.querySelector('#newsletter-form');
+  const newsletterStatus = document.querySelector('#newsletter-status');
+  if (newsletterForm && newsletterStatus) {
+    newsletterForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!newsletterForm.reportValidity()) return;
+      if (window.location.protocol === 'file:') {
+        newsletterStatus.textContent = 'L’inscription sera active une fois le site publié sur Netlify.';
+        return;
+      }
+      const submitButton = newsletterForm.querySelector('[type="submit"]');
+      const originalLabel = submitButton ? submitButton.textContent : '';
+      if (submitButton) { submitButton.disabled = true; submitButton.textContent = 'Inscription en cours…'; }
+      newsletterStatus.textContent = '';
+      newsletterStatus.className = 'newsletter-status';
+      try {
+        const bodyData = new URLSearchParams(new FormData(newsletterForm));
+        const response = await fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: bodyData.toString()
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        newsletterStatus.innerHTML = '<strong>Merci.</strong><span>Votre inscription à la lettre de Diploval a bien été enregistrée.</span>';
+        newsletterStatus.className = 'newsletter-status is-success';
+        newsletterForm.classList.add('is-complete');
+        newsletterForm.reset();
+      } catch (error) {
+        newsletterStatus.innerHTML = 'L’inscription n’a pas abouti. Vous pouvez écrire à <a href="mailto:contact@diploval.fr?subject=Inscription%20%C3%A0%20la%20lettre%20de%20Diploval">contact@diploval.fr</a>.';
+        newsletterStatus.className = 'newsletter-status is-error';
       } finally {
         if (submitButton) { submitButton.disabled = false; submitButton.textContent = originalLabel; }
       }

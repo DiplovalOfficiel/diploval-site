@@ -139,6 +139,12 @@
 </nav>
 </div>
 </header>
+<div class="closure-notice" id="closure-notice" role="status" aria-label="Information temporaire">
+  <div class="closure-notice__inner">
+    <span class="closure-notice__mark" aria-hidden="true"></span>
+    <p><strong>Information :</strong> Diploval sera fermé du <strong>22 août au 3 septembre inclus</strong>. Reprise le <strong>4 septembre 2026</strong>.</p>
+  </div>
+</div>
 <main id="main">
 <section aria-labelledby="hero-title" class="hero" id="accueil">
 <div aria-hidden="true" class="hero-orbit orbit-one"></div>
@@ -730,6 +736,33 @@
 </div>
 </div>
 </section>
+<section class="section newsletter-section" id="lettre-diploval" aria-labelledby="newsletter-title">
+  <div class="newsletter-shell reveal">
+    <div class="newsletter-copy">
+      <p class="eyebrow">La lettre de Diploval</p>
+      <h2 id="newsletter-title">Recevoir les nouvelles importantes</h2>
+      <p>Quelques nouvelles lorsque cela mérite vraiment un e-mail : nouvelles publications, avancées de dossiers, rendez-vous et informations importantes de Diploval.</p>
+      <p class="newsletter-note">L’inscription est volontaire et indépendante de toute inscription à un rendez-vous.</p>
+    </div>
+    <form name="newsletter-diploval" method="POST" data-netlify="true" data-netlify-honeypot="newsletter-bot-field" id="newsletter-form" class="newsletter-form">
+      <input type="hidden" name="form-name" value="newsletter-diploval"/>
+      <input type="hidden" name="subject" data-remove-prefix value="Nouvelle inscription — Lettre de Diploval"/>
+      <input type="hidden" name="consent_version" value="newsletter-v1-2026-08-21"/>
+      <p class="form-honeypot" aria-hidden="true"><label>Ne pas remplir ce champ : <input name="newsletter-bot-field" tabindex="-1" autocomplete="off"/></label></p>
+      <label class="newsletter-email">
+        <span>Adresse e-mail *</span>
+        <input type="email" name="email" autocomplete="email" placeholder="votre@email.fr" required/>
+      </label>
+      <label class="newsletter-consent">
+        <input type="checkbox" name="consent_newsletter" value="oui" required/>
+        <span>Je souhaite recevoir la lettre d’information de Diploval par e-mail et j’accepte que mon adresse soit utilisée uniquement à cette fin. Je peux retirer mon consentement à tout moment.</span>
+      </label>
+      <p class="newsletter-privacy">Aucune inscription automatique : vous choisissez ici séparément de recevoir la lettre. <button type="button" class="privacy-inline-link privacy-open">Données personnelles</button></p>
+      <button class="button button-copper newsletter-submit" type="submit">M’inscrire à la lettre →</button>
+      <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
 <section class="contact" id="contact">
 <div class="contact-inner reveal">
 <div>
@@ -761,6 +794,7 @@
 <a href="#reseaux">Réseaux</a>
 <a href="#garanties">Garanties</a>
 <a href="#faq">Questions</a>
+<a href="#lettre-diploval">Lettre d’information</a>
 <a href="#contact">Contact</a>
 </nav>
 </div>
@@ -796,7 +830,7 @@
 <button aria-label="Fermer" class="dialog-close" type="button">×</button>
 <p class="eyebrow">Les rendez-vous de Diploval</p>
 <h2 id="registration-title">S’inscrire à un rendez-vous</h2>
-<p class="registration-lead" id="registration-event-lead"><strong>Vendredi 25 septembre 2026, de 19 h à 20 h 30.</strong> Laissez simplement vos coordonnées ; les informations pratiques vous seront adressées avant le rendez-vous.</p>
+<p class="registration-lead" id="registration-event-lead"><strong>Vendredi 25 septembre 2026, de 19 h à 20 h 30.</strong> Laissez simplement vos coordonnées. Après validation, un message de confirmation s’affichera ici ; le lien Zoom vous sera transmis par e-mail le 15 septembre.</p>
 <form name="inscription-visioconference-diploval" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="registration-form">
 <input type="hidden" name="form-name" value="inscription-visioconference-diploval"/>
 <input type="hidden" name="subject" data-remove-prefix value="Nouvelle inscription Zoom — Diploval"/>
@@ -828,13 +862,14 @@
 <button aria-label="Fermer" class="dialog-close" type="button">×</button>
 <p class="eyebrow">Vie privée</p>
 <h2 id="privacy-title">Données personnelles</h2>
-<div class="dialog-section dialog-lead"><p>Le site ne comporte aucun compte utilisateur, aucune publicité et aucun outil de profilage. Un formulaire est proposé pour demander une inscription aux rendez-vous de Diploval. Diploval n’installe pas de cookie de mesure d’audience, de publicité ou de profilage.</p></div>
+<div class="dialog-section dialog-lead"><p>Le site ne comporte aucun compte utilisateur, aucune publicité et aucun outil de profilage. Deux formulaires peuvent être utilisés : l’un pour demander une inscription à un rendez-vous, l’autre pour s’abonner volontairement à la lettre d’information de Diploval. Diploval n’installe pas de cookie de mesure d’audience, de publicité ou de profilage.</p></div>
 <div class="dialog-section"><h3>Responsable du traitement</h3><p><strong>Franck Saubin</strong>, pour Diploval — nom public : Souix Nathorod. Point de contact : <a href="mailto:contact@diploval.fr?subject=Données%20personnelles">contact@diploval.fr</a>.</p></div>
-<div class="dialog-section"><h3>Lorsque vous contactez Diploval ou vous inscrivez à un rendez-vous</h3><p>Si vous écrivez à <a href="mailto:contact@diploval.fr">contact@diploval.fr</a> ou utilisez le formulaire d’inscription, les informations transmises — notamment votre nom, votre adresse électronique, votre organisation éventuelle et votre message — sont utilisées pour répondre à votre demande, gérer l’inscription, vous transmettre les informations pratiques du rendez-vous ou préparer un échange. Le formulaire d’inscription est traité par Netlify Forms et ses soumissions sont accessibles dans l’espace d’administration Netlify de Diploval. Une inscription à un rendez-vous n’entraîne aucune inscription automatique à une lettre d’information.</p></div>
+<div class="dialog-section"><h3>Lorsque vous contactez Diploval ou vous inscrivez à un rendez-vous</h3><p>Si vous écrivez à <a href="mailto:contact@diploval.fr">contact@diploval.fr</a> ou utilisez le formulaire d’inscription, les informations transmises — notamment votre nom, votre adresse électronique, votre organisation éventuelle et votre message — sont utilisées pour répondre à votre demande, gérer l’inscription, vous transmettre les informations pratiques du rendez-vous ou préparer un échange. Le formulaire d’inscription est traité par Netlify Forms et ses soumissions sont accessibles dans l’espace d’administration Netlify de Diploval. <strong>Une inscription à un rendez-vous n’entraîne jamais une inscription automatique à la lettre d’information.</strong></p></div>
+<div class="dialog-section"><h3>Lorsque vous vous inscrivez à la lettre de Diploval</h3><p>Seule votre adresse électronique est demandée. Elle est utilisée pour vous adresser la lettre d’information de Diploval : nouvelles publications, avancées de dossiers, rendez-vous et informations relatives à la vie de la structure. L’inscription repose sur votre consentement, recueilli par une case dédiée non pré-cochée. Le formulaire est traité par Netlify Forms ; la date de soumission et la version du consentement permettent d’en conserver la trace.</p><p>Vous pouvez retirer votre consentement à tout moment, simplement et gratuitement, en écrivant à <a href="mailto:contact@diploval.fr?subject=D%C3%A9sinscription%20lettre%20Diploval">contact@diploval.fr</a>. Lors de chaque envoi de la lettre, une possibilité simple de désinscription devra également être proposée.</p></div>
 <div class="dialog-section"><h3>Données techniques</h3><p>L’hébergement du site peut entraîner le traitement de données techniques nécessaires à sa fourniture et à sa sécurité, notamment des journaux de connexion, par l’hébergeur. Aucun outil publicitaire ou de profilage n’est ajouté par Diploval.</p></div>
-<div class="dialog-section"><h3>Durée et destinataires</h3><p>Les données sont conservées pendant la durée nécessaire au traitement et au suivi de la demande, puis supprimées ou archivées lorsqu’une obligation légale ou la défense de droits le justifie. Elles sont accessibles aux seules personnes qui en ont besoin pour traiter l’échange et aux prestataires techniques nécessaires au fonctionnement de la messagerie et de l’hébergement.</p></div>
+<div class="dialog-section"><h3>Durée et destinataires</h3><p>Les données liées à une demande ou à un rendez-vous sont conservées pendant la durée nécessaire à leur traitement et à leur suivi, puis supprimées ou archivées lorsqu’une obligation légale ou la défense de droits le justifie. L’adresse utilisée pour la lettre d’information est conservée tant que vous restez abonné. En cas de désinscription, elle est retirée de la liste d’envoi ; une trace minimale peut être conservée lorsque cela est nécessaire pour respecter durablement votre opposition. Les données sont accessibles aux seules personnes qui en ont besoin et aux prestataires techniques nécessaires au fonctionnement du service.</p></div>
 <div class="dialog-section"><h3>Vos droits</h3><p>Vous pouvez demander l’accès, la rectification, l’effacement ou la limitation de vos données, et exercer les autres droits applicables à votre situation, en écrivant à <a href="mailto:contact@diploval.fr?subject=Données%20personnelles">contact@diploval.fr</a>. Vous pouvez également saisir la CNIL si vous estimez que vos droits ne sont pas respectés.</p></div>
-<div class="dialog-section"><h3>Évolution du site</h3><p>Si une lettre d’information, une mesure d’audience ou un autre service collectant de nouvelles catégories de données est ajouté ultérieurement, cette information sera mise à jour avant son activation et les choix de consentement nécessaires seront proposés lorsque le droit l’exige.</p></div>
+<div class="dialog-section"><h3>Évolution du site</h3><p>Si le mode d’envoi de la lettre, les prestataires utilisés, une mesure d’audience ou tout autre traitement de données évolue, cette information sera mise à jour avant la modification lorsque cela est nécessaire. Les choix de consentement requis seront proposés séparément.</p></div>
 </dialog>
 <dialog aria-labelledby="publication-title" class="publication-dialog" id="publication-dialog">
 <button aria-label="Fermer" class="dialog-close" type="button">×</button>
