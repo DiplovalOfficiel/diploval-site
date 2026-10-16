@@ -1,6 +1,6 @@
 [build]
-  command = "node scripts/generate-seo-pages.mjs"
-  publish = "."
+  command = "node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/generate-seo-pages.mjs"
+  publish = "Diploval_Site_Complet_v20_2_Inscription_Zoom"
 
 [[headers]]
   for = "/*"
