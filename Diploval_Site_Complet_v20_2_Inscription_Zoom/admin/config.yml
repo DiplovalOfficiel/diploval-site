@@ -90,6 +90,7 @@ collections:
               - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false, hint: "Utilisée pour Google, réseaux sociaux et messageries. À défaut, le site utilise l’image de présentation ou l’image Diploval." }
               - { label: "Image de présentation", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false, hint: "Une image horizontale 16:9 ou proche est idéale. Le site l’adapte automatiquement au mobile et au PC." }
               - { label: "PDF", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false, hint: "Laissez vide si le document n’est pas encore consultable." }
+              - { label: "Afficher le lecteur PDF intégré", name: "embed_pdf", widget: "boolean", default: true, required: false, hint: "Activé par défaut : le document pourra être lu directement dans sa page, tout en restant ouvrable dans un nouvel onglet." }
 
   - name: "dossiers_admin"
     label: "Dossiers en cours"
@@ -219,6 +220,7 @@ collections:
               - { label: "Texte du communiqué", name: "body", widget: "text", hint: "Séparez les paragraphes par une ligne vide." }
               - { label: "Image de présentation (facultative)", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false }
               - { label: "PDF officiel (facultatif)", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false }
+              - { label: "Afficher le lecteur PDF intégré", name: "embed_pdf", widget: "boolean", default: true, required: false, hint: "Permet de lire le PDF officiel directement dans la page du communiqué." }
               - { label: "Signature personnalisée (facultative)", name: "signature", widget: "text", required: false, hint: "Laissez vide pour utiliser la signature automatique correspondant au type de communiqué." }
               - { label: "Note de correction / mise à jour (facultative)", name: "correction_note", widget: "text", required: false }
 
