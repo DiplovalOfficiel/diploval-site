@@ -15,23 +15,6 @@
 
   if (year) year.textContent = new Date().getFullYear();
 
-  // Information temporaire de fermeture — disparaît automatiquement le 4 septembre 2026 (heure de Paris)
-  const closureNotice = document.querySelector('#closure-notice');
-  if (closureNotice) {
-    try {
-      const parts = new Intl.DateTimeFormat('en-GB', {
-        timeZone: 'Europe/Paris', year: 'numeric', month: '2-digit', day: '2-digit'
-      }).formatToParts(new Date()).reduce((acc, part) => {
-        if (part.type !== 'literal') acc[part.type] = part.value;
-        return acc;
-      }, {});
-      const parisDate = `${parts.year}-${parts.month}-${parts.day}`;
-      if (parisDate >= '2026-09-04') closureNotice.remove();
-    } catch {
-      if (new Date() >= new Date('2026-09-03T22:00:00Z')) closureNotice.remove();
-    }
-  }
-
   const toggleMenu = open => {
     if (!menuButton || !nav) return;
     menuButton.setAttribute('aria-expanded', String(open));
@@ -192,12 +175,7 @@
 
   let activeWorkKey = null;
 
-  const publicationUrl = key => {
-    const url = new URL(window.location.href);
-    url.searchParams.set('publication', key);
-    url.hash = 'travaux';
-    return url.toString();
-  };
+  const publicationUrl = key => new URL(`/publications/${encodeURIComponent(key)}/`, window.location.origin).toString();
 
   const updateShareLinks = (key, item) => {
     const url = publicationUrl(key);
@@ -251,7 +229,7 @@
   };
 
   document.querySelectorAll('.work-open, .library-open').forEach(button => {
-    button.addEventListener('click', () => showWork(button.dataset.work));
+    button.addEventListener('click', event => { event.preventDefault(); showWork(button.dataset.work); });
   });
 
   const shareNative = document.querySelector('#share-native');
@@ -557,7 +535,7 @@
           body: bodyData.toString()
         });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        registrationStatus.innerHTML = '<strong>Merci pour votre inscription.</strong><span>Votre demande a bien été enregistrée pour la visioconférence du 25 septembre 2026.</span><span>Diploval vous recontactera par e-mail le <strong>15 septembre</strong> pour vous transmettre le lien de connexion.</span>';
+        registrationStatus.innerHTML = '<strong>Merci pour votre inscription.</strong><span>Votre demande a bien été enregistrée.</span><span>Diploval vous recontactera par e-mail avec les informations pratiques du rendez-vous.</span>';
         registrationStatus.className = 'registration-status is-success';
         registrationForm.classList.add('is-complete');
         registrationForm.reset();
@@ -586,6 +564,13 @@
     newsletterForm.addEventListener('submit', async event => {
       event.preventDefault();
       if (!newsletterForm.reportValidity()) return;
+      const choices = Array.from(newsletterForm.querySelectorAll('[data-newsletter-choice]'));
+      if (choices.length && !choices.some(input => input.checked)) {
+        newsletterStatus.textContent = 'Choisissez au moins un type d’abonnement.';
+        newsletterStatus.className = 'newsletter-status is-error';
+        choices[0].focus();
+        return;
+      }
       if (window.location.protocol === 'file:') {
         newsletterStatus.textContent = 'L’inscription sera active une fois le site publié sur Netlify.';
         return;
@@ -603,7 +588,7 @@
           body: bodyData.toString()
         });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        newsletterStatus.innerHTML = '<strong>Merci.</strong><span>Votre inscription à la lettre de Diploval a bien été enregistrée.</span>';
+        newsletterStatus.innerHTML = '<strong>Merci.</strong><span>Vos choix ont bien été enregistrés. Les envois seront activés avec le service de diffusion dédié.</span>';
         newsletterStatus.className = 'newsletter-status is-success';
         newsletterForm.classList.add('is-complete');
         newsletterForm.reset();
@@ -631,4 +616,25 @@
       window.setTimeout(() => { copyStatus.textContent = ''; }, 3200);
     });
   }
+})();
+
+
+// Finition V24 : alléger les engagements longs sans retirer le contenu.
+(function setupGuaranteeReadMore(){
+  const init=()=>{
+    document.querySelectorAll('.guarantees-v207__card').forEach(card=>{
+      if(card.querySelector('.guarantees-v207__more')) return;
+      const p=Array.from(card.children).find(el=>el.tagName==='P' && !el.classList.contains('guarantees-v207__status') && !el.classList.contains('circle-participation-note'));
+      if(!p || p.textContent.trim().length<300) return;
+      const btn=document.createElement('button');
+      btn.type='button'; btn.className='guarantees-v207__more'; btn.textContent='Lire la suite ↓'; btn.setAttribute('aria-expanded','false');
+      btn.addEventListener('click',()=>{
+        const expanded=card.classList.toggle('is-expanded');
+        btn.textContent=expanded?'Réduire ↑':'Lire la suite ↓';
+        btn.setAttribute('aria-expanded',expanded?'true':'false');
+      });
+      p.insertAdjacentElement('afterend',btn);
+    });
+  };
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init); else init();
 })();
