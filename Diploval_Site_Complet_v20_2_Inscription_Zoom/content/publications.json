@@ -1,6 +1,30 @@
 {
   "publications": [
     {
+      "id": "numerisation-resilience",
+      "title": "Numérisation, sécurité et résilience nationale",
+      "type": "Dossier d’analyse",
+      "type_filter": "analyse",
+      "scope": "National",
+      "scope_filter": "national",
+      "status": "Publié",
+      "version": "Version 1.1",
+      "date_label": "13 octobre 2026",
+      "meta": "V1.1 · 13 octobre 2026",
+      "format": "PDF · 28 pages",
+      "pdf": "assets/documents/numerisation-securite-resilience-v1.1.pdf",
+      "cover": "assets/covers/numerisation-v1.1.png",
+      "summary": "Protection des données, continuité des services essentiels et responsabilités publiques et privées. Le dossier examine le droit existant, les risques, les solutions de secours et les responsabilités sans présumer qu’une nouvelle loi est nécessaire.",
+      "short_summary": "Données, services essentiels, cyber-risques, continuité et solutions de secours.",
+      "details": "Cette version publique consolidée distingue les faits établis, les limites, les hypothèses et les questions encore à instruire. Elle est ouverte à la contradiction et à la contribution citoyenne structurée. La V1.1 reste figée pendant la consultation ; les apports retenus pourront nourrir une version ultérieure clairement datée.",
+      "keywords": "numérisation sécurité résilience données cybersécurité panne continuité services essentiels facturation électronique responsabilité accessibilité citoyens participation consultation national france union européenne",
+      "featured": true,
+      "visible": true,
+      "participation_enabled": true,
+      "participation_status": "Consultation ouverte",
+      "participation_url": "/dossiers/numerisation-securite-resilience"
+    },
+    {
       "id": "depassement",
       "title": "Jour du dépassement 2026",
       "type": "Note d’éclairage",
