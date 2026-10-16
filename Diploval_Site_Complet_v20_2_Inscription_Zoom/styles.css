@@ -36,7 +36,7 @@ svg{display:block}
 .site-header.scrolled{box-shadow:0 8px 28px rgba(10,39,69,.07)}
 .header-inner{width:min(1220px,calc(100% - 32px));min-height:76px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;position:relative}
 .brand{width:145px;display:block;overflow:hidden}
-.brand img{width:100%;mix-blend-mode:multiply}
+.brand img{width:100%;height:auto;mix-blend-mode:multiply}
 .header-actions{display:flex;align-items:center;gap:.7rem}
 .header-contact{display:none;background:var(--ink);color:#fff;padding:.72rem 1rem;border-radius:10px;font-weight:700;font-size:.86rem}
 .menu-toggle{width:48px;height:48px;border:0;background:transparent;display:grid;place-content:center;gap:5px;border-radius:12px;cursor:pointer}
@@ -230,7 +230,7 @@ a.social-card:focus-visible{outline:3px solid rgba(189,109,53,.24);outline-offse
 
 .site-footer{padding:40px 16px calc(24px + env(safe-area-inset-bottom));background:#f7f4ee}
 .footer-main{width:min(1220px,100%);margin:auto;display:grid;gap:1.25rem}
-.footer-brand{width:170px;overflow:hidden}.footer-brand img{mix-blend-mode:multiply}
+.footer-brand{width:170px;overflow:hidden}.footer-brand img{width:100%;height:auto;mix-blend-mode:multiply}
 .footer-main>p{max-width:480px;color:var(--muted);margin:0}
 .footer-main nav{display:grid;grid-template-columns:repeat(2,1fr);gap:.65rem}
 .footer-main nav a{font-weight:650;color:var(--ink)}
