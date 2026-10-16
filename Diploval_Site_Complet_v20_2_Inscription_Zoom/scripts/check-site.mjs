@@ -207,6 +207,30 @@ try{
   }
 }catch(e){errors.push(`Contrôle admin impossible (${e.message})`)}
 
+
+// 8. Decap CMS repository paths.
+// The public site lives in a repository subfolder, so CMS write paths must be
+// relative to the repository root and include that subfolder.
+try{
+  const cfg=read('admin/config.yml');
+  const expectedPrefix='Diploval_Site_Complet_v20_2_Inscription_Zoom/';
+  if(!new RegExp('^media_folder:\\s*"'+expectedPrefix.replace(/[.*+?^${}()|[\\]\\]/g,'\\$&')+'assets/uploads"','m').test(cfg)){
+    errors.push('admin/config.yml : media_folder doit pointer vers Diploval_Site_Complet_v20_2_Inscription_Zoom/assets/uploads dans le dépôt GitHub.');
+  }
+  const badFiles=[...cfg.matchAll(/^\s*file:\s*"content\/[^"]+"/gm)].map(m=>m[0].trim());
+  if(badFiles.length){
+    errors.push('admin/config.yml : chemins Decap incorrects vers content/ à la racine du dépôt. Ils doivent inclure Diploval_Site_Complet_v20_2_Inscription_Zoom/.');
+  }
+  const expectedFiles=[
+    'publications.json','dossiers.json','agenda.json','communiques.json',
+    'articles.json','podcasts.json','site-settings.json','points-information.json'
+  ];
+  for(const name of expectedFiles){
+    const wanted=`file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/${name}"`;
+    if(!cfg.includes(wanted)) errors.push(`admin/config.yml : chemin CMS manquant ou incorrect pour ${name}.`);
+  }
+}catch(e){errors.push(`Configuration CMS : contrôle des chemins impossible (${e.message})`)}
+
 if(warnings.length){console.warn('Site check warnings:');warnings.forEach(x=>console.warn(' - '+x))}
 if(errors.length){console.error('Site check FAILED:');errors.forEach(x=>console.error(' - '+x));process.exit(2)}
 console.log(`Site check OK: ${htmlFiles.length} pages HTML, ${linkCount} liens et ${resourceCount} ressources contrôlés, JSON et JavaScript valides.`);
