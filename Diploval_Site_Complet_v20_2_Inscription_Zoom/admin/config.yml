@@ -10,7 +10,7 @@ display_url: https://diploval.fr
 logo_url: https://diploval.fr/assets/logo-diploval.jpg
 show_preview_links: true
 
-media_folder: "assets/uploads"
+media_folder: "Diploval_Site_Complet_v20_2_Inscription_Zoom/assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
@@ -19,7 +19,7 @@ collections:
     files:
       - label: "Bibliothèque des publications"
         name: "publications"
-        file: "content/publications.json"
+        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/publications.json"
         format: "json"
         fields:
           - label: "Publications"
@@ -30,7 +30,7 @@ collections:
             label_singular: "Ajouter une publication"
             summary: "{{fields.title}} — {{fields.status}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
               - { label: "Mettre en avant", name: "featured", widget: "boolean", default: false }
               - { label: "Ouvrir cette publication à la contribution citoyenne", name: "participation_enabled", widget: "boolean", default: false, required: false, hint: "À activer uniquement pour un dossier explicitement préparé pour une consultation." }
               - label: "Statut de la consultation"
@@ -97,7 +97,7 @@ collections:
     files:
       - label: "Dossiers actuellement à l’étude"
         name: "dossiers"
-        file: "content/dossiers.json"
+        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/dossiers.json"
         format: "json"
         fields:
           - label: "Dossiers"
@@ -108,7 +108,7 @@ collections:
             label_singular: "Ajouter un dossier"
             summary: "{{fields.title}} — {{fields.status}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
               - { label: "Titre", name: "title", widget: "string" }
               - label: "Statut"
                 name: "status"
@@ -129,7 +129,7 @@ collections:
     files:
       - label: "Rendez-vous & événements"
         name: "agenda"
-        file: "content/agenda.json"
+        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/agenda.json"
         format: "json"
         fields:
           - label: "Événements"
@@ -140,7 +140,7 @@ collections:
             label_singular: "Ajouter un événement"
             summary: "{{fields.date}} — {{fields.title}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
               - { label: "Titre", name: "title", widget: "string" }
               - label: "Type d’événement"
                 name: "category"
@@ -182,7 +182,7 @@ collections:
     files:
       - label: "Communiqués de la Présidence & de Diploval"
         name: "communiques"
-        file: "content/communiques.json"
+        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/communiques.json"
         format: "json"
         fields:
           - label: "Communiqués"
@@ -193,7 +193,7 @@ collections:
             label_singular: "Ajouter un communiqué"
             summary: "{{fields.date}} — {{fields.title}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
               - { label: "Afficher parmi les derniers communiqués sur l’accueil", name: "show_home", widget: "boolean", default: true }
               - label: "Type de communiqué"
                 name: "type"
@@ -229,7 +229,7 @@ collections:
     files:
       - label: "Articles du site"
         name: "articles"
-        file: "content/articles.json"
+        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/articles.json"
         format: "json"
         fields:
           - label: "Articles"
@@ -240,7 +240,7 @@ collections:
             label_singular: "Ajouter un article"
             summary: "{{fields.date}} — {{fields.title}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
               - { label: "Titre", name: "title", widget: "string" }
               - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false }
               - label: "Catégorie"
@@ -262,7 +262,7 @@ collections:
     files:
       - label: "Épisodes — Les Voix du Vivant"
         name: "podcasts"
-        file: "content/podcasts.json"
+        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/podcasts.json"
         format: "json"
         fields:
           - label: "Épisodes"
@@ -273,7 +273,7 @@ collections:
             label_singular: "Ajouter un épisode"
             summary: "Épisode {{fields.number}} — {{fields.title}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
               - { label: "Numéro", name: "number", widget: "number", value_type: "int", min: 1 }
               - { label: "Titre", name: "title", widget: "string" }
               - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false }
@@ -291,7 +291,7 @@ collections:
     files:
       - label: "Bandeau temporaire"
         name: "site_settings"
-        file: "content/site-settings.json"
+        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/site-settings.json"
         format: "json"
         fields:
           - label: "Information temporaire"
@@ -311,7 +311,7 @@ collections:
     files:
       - label: "Suivis & chronologies"
         name: "points_information"
-        file: "content/points-information.json"
+        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/points-information.json"
         format: "json"
         fields:
           - label: "Points d’information"
@@ -322,7 +322,7 @@ collections:
             label_singular: "Ajouter un point d’information"
             summary: "{{fields.title}} — {{fields.status}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
               - { label: "Afficher sur l’accueil", name: "show_home", widget: "boolean", default: true }
               - { label: "Titre", name: "title", widget: "string" }
               - { label: "Adresse courte / identifiant", name: "slug", widget: "string", required: false, hint: "Ex. russie-otan-septembre-2026. Laissez vide pour utiliser automatiquement le titre." }
