@@ -1265,3 +1265,27 @@ a.work-open,a.publication-result{color:inherit;text-decoration:none}
   .dp-formnav{align-items:stretch}
   .dp-formnav .button{min-height:44px}
 }
+
+
+/* V8.3 — lecteur PDF générique pour publications et communiqués */
+.seo-detail-after{margin-top:1.15rem}
+.seo-pdf-reader{padding:1rem;border:1px solid rgba(10,39,69,.10);border-radius:18px;background:#fff;box-shadow:0 10px 28px rgba(10,39,69,.045)}
+.seo-pdf-reader-head{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:.9rem}
+.seo-pdf-reader-head .eyebrow{margin:0 0 .2rem}
+.seo-pdf-reader-head h2{margin:0;color:var(--ink);font-family:var(--serif);font-size:1.55rem;font-weight:500}
+.seo-pdf-frame-wrap{position:relative;min-height:720px;border:1px solid rgba(10,39,69,.10);border-radius:14px;overflow:hidden;background:#f3f5f5}
+.seo-pdf-frame-wrap iframe{display:block;width:100%;height:78vh;min-height:720px;border:0;background:#fff}
+.seo-pdf-status{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.7rem;padding:1.2rem;text-align:center;color:var(--muted);background:#f3f5f5}
+.seo-pdf-status[hidden]{display:none}
+.seo-pdf-status.is-error{position:relative;min-height:240px;background:#fff8ea;color:#6b5c49}
+.seo-pdf-status.is-error strong{color:var(--ink)}
+.seo-pdf-status.is-error a{color:var(--copper-text);font-weight:850}
+.seo-pdf-spinner{width:28px;height:28px;border:3px solid rgba(10,39,69,.13);border-top-color:var(--copper);border-radius:50%;animation:seoPdfSpin .8s linear infinite}
+@keyframes seoPdfSpin{to{transform:rotate(360deg)}}
+@media(max-width:760px){
+  .seo-pdf-reader{padding:.8rem;border-radius:15px}
+  .seo-pdf-reader-head{display:block}
+  .seo-pdf-reader-head .button{display:flex;margin-top:.7rem;width:100%;justify-content:center}
+  .seo-pdf-frame-wrap{min-height:62vh}
+  .seo-pdf-frame-wrap iframe{height:68vh;min-height:62vh}
+}
