@@ -62,6 +62,20 @@
     Cross-Origin-Opener-Policy = "same-origin-allow-popups"
     Content-Security-Policy = "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self' https://github.com https://api.netlify.com; script-src 'self' 'unsafe-eval' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://avatars.githubusercontent.com; media-src 'self' blob:; connect-src 'self' https://api.github.com https://api.netlify.com https://github.com; font-src 'self' data:; frame-src 'self' blob:; worker-src 'self' blob:; upgrade-insecure-requests"
 
+
+# Administration Diploval : servir explicitement l'entrée Decap CMS.
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/admin/"
+  to = "/admin/index.html"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/points-information"
   to = "/points-information.html"
