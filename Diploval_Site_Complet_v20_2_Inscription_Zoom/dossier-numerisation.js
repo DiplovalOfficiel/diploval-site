@@ -9,9 +9,39 @@
   errorBox.setAttribute('role','alert');
   errorBox.setAttribute('aria-live','polite');
   form?.prepend(errorBox);
+  const pdfFrame=document.getElementById('dp-pdf-frame');
+  let pdfBlobUrl='';
+  let pdfLoading=null;
+  async function loadPdfViewer(){
+    if(!pdfFrame || pdfFrame.dataset.loaded==='true') return;
+    if(pdfLoading) return pdfLoading;
+    const source=pdfFrame.dataset.pdfSrc;
+    if(!source) return;
+    pdfLoading=(async()=>{
+      try{
+        const response=await fetch(source,{credentials:'same-origin',cache:'no-store'});
+        if(!response.ok) throw new Error(`HTTP ${response.status}`);
+        const blob=await response.blob();
+        pdfBlobUrl=URL.createObjectURL(blob);
+        pdfFrame.src=`${pdfBlobUrl}#page=1&zoom=page-width`;
+        pdfFrame.dataset.loaded='true';
+      }catch(error){
+        console.error('Diploval PDF viewer:',error);
+        const viewer=pdfFrame.closest('.dp-viewer');
+        if(viewer){
+          const fallback=document.createElement('div');
+          fallback.className='dp-pdf-fallback';
+          fallback.innerHTML='<strong>Le lecteur intégré n’a pas pu charger le document.</strong><span>Le PDF reste disponible directement : </span><a href="'+source+'" target="_blank" rel="noopener">ouvrir le dossier dans un nouvel onglet</a>';
+          viewer.replaceChildren(fallback);
+        }
+      }finally{pdfLoading=null}
+    })();
+    return pdfLoading;
+  }
+  window.addEventListener('beforeunload',()=>{if(pdfBlobUrl)URL.revokeObjectURL(pdfBlobUrl)});
   function showError(message,focus){errorBox.textContent=message;errorBox.classList.add('is-visible');focus?.focus()}
   function clearError(){errorBox.textContent='';errorBox.classList.remove('is-visible')}
-  function panel(name){tabs.forEach(b=>b.classList.toggle('active',b.dataset.panel===name));panels.forEach(p=>p.classList.toggle('active',p.id==='panel-'+name));document.querySelector('.dp-tabs-shell')?.scrollIntoView({behavior:'smooth',block:'start'})}
+  function panel(name){tabs.forEach(b=>b.classList.toggle('active',b.dataset.panel===name));panels.forEach(p=>p.classList.toggle('active',p.id==='panel-'+name));if(name==='lire')loadPdfViewer();document.querySelector('.dp-tabs-shell')?.scrollIntoView({behavior:'smooth',block:'start'})}
   tabs.forEach(b=>b.addEventListener('click',()=>panel(b.dataset.panel)));
   document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>panel(b.dataset.jump)));
   function step(n){clearError();document.querySelectorAll('.dp-formstep').forEach(x=>x.classList.toggle('active',x.dataset.formstep==n));document.querySelectorAll('.dp-stepbtn').forEach(x=>x.classList.toggle('active',x.dataset.step==n))}
