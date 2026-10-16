@@ -1,0 +1,11 @@
+{
+  "temporary_notice": {
+    "enabled": false,
+    "label": "Information",
+    "text": "",
+    "start_date": "",
+    "end_date": "",
+    "link": "",
+    "link_label": "En savoir plus"
+  }
+}
