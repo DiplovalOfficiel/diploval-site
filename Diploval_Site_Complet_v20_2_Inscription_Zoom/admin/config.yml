@@ -10,7 +10,7 @@ display_url: https://diploval.fr
 logo_url: https://diploval.fr/assets/logo-diploval.jpg
 show_preview_links: true
 
-media_folder: "Diploval_Site_Complet_v20_2_Inscription_Zoom/assets/uploads"
+media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
@@ -19,7 +19,7 @@ collections:
     files:
       - label: "Bibliothèque des publications"
         name: "publications"
-        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/publications.json"
+        file: "content/publications.json"
         format: "json"
         fields:
           - label: "Publications"
@@ -32,12 +32,24 @@ collections:
             fields:
               - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
               - { label: "Mettre en avant", name: "featured", widget: "boolean", default: false }
+              - { label: "Ouvrir cette publication à la contribution citoyenne", name: "participation_enabled", widget: "boolean", default: false, required: false, hint: "À activer uniquement pour un dossier explicitement préparé pour une consultation." }
+              - label: "Statut de la consultation"
+                name: "participation_status"
+                widget: "select"
+                required: false
+                options:
+                  - "Consultation ouverte"
+                  - "Consultation à venir"
+                  - "Consultation close"
+                  - "Résultats publiés"
+              - { label: "Page de consultation", name: "participation_url", widget: "string", required: false, hint: "Ex. dossier-numerisation.html. Laissez vide pour les publications sans participation." }
               - { label: "Identifiant interne (facultatif)", name: "id", widget: "string", required: false, hint: "Pour une nouvelle publication, vous pouvez laisser vide. Le site créera un identifiant à partir du titre." }
               - { label: "Titre", name: "title", widget: "string" }
               - label: "Type de publication"
                 name: "type"
                 widget: "select"
-                options: ["Analyse", "Article", "Charte · Socle", "Édito", "Mémorandum", "Note stratégique", "Note d’éclairage", "Rapport", "Référentiel", "Suivi", "Synthèse décideurs"]
+                hint: "Le libellé choisi devient automatiquement la petite étiquette de la carte. Sa couleur et sa taille sont gérées par le site pour rester cohérentes."
+                options: ["Analyse", "Article", "Charte · Socle", "Contribution", "Document de référence", "Dossier d’analyse", "Édito", "Étude", "Fiche pratique", "Guide", "Mémorandum", "Note stratégique", "Note d’éclairage", "Proposition", "Rapport", "Référentiel", "Suivi", "Synthèse", "Synthèse décideurs"]
               - label: "Filtre de format"
                 name: "type_filter"
                 widget: "select"
@@ -51,7 +63,8 @@ collections:
               - label: "Échelle"
                 name: "scope"
                 widget: "select"
-                options: ["Territorial", "National", "Europe", "International", "Multi-échelles"]
+                hint: "Cette valeur devient automatiquement l’étiquette d’échelle. Pour Local, Départemental ou Régional, utilisez le filtre Territorial ci-dessous."
+                options: ["Local", "Départemental", "Régional", "Territorial", "National", "Europe", "International", "Multi-échelles"]
               - label: "Filtre d’échelle"
                 name: "scope_filter"
                 widget: "select"
@@ -73,6 +86,8 @@ collections:
               - { label: "Résumé principal", name: "summary", widget: "text" }
               - { label: "Détails complémentaires", name: "details", widget: "text", required: false }
               - { label: "Mots-clés de recherche", name: "keywords", widget: "text", required: false }
+              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour utiliser automatiquement le résumé principal. Environ 140 à 160 caractères est idéal." }
+              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false, hint: "Utilisée pour Google, réseaux sociaux et messageries. À défaut, le site utilise l’image de présentation ou l’image Diploval." }
               - { label: "Image de présentation", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false, hint: "Une image horizontale 16:9 ou proche est idéale. Le site l’adapte automatiquement au mobile et au PC." }
               - { label: "PDF", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false, hint: "Laissez vide si le document n’est pas encore consultable." }
 
@@ -81,7 +96,7 @@ collections:
     files:
       - label: "Dossiers actuellement à l’étude"
         name: "dossiers"
-        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/dossiers.json"
+        file: "content/dossiers.json"
         format: "json"
         fields:
           - label: "Dossiers"
@@ -113,7 +128,7 @@ collections:
     files:
       - label: "Rendez-vous & événements"
         name: "agenda"
-        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/agenda.json"
+        file: "content/agenda.json"
         format: "json"
         fields:
           - label: "Événements"
@@ -160,12 +175,59 @@ collections:
                   - { label: "Annulé", value: "annule" }
                   - { label: "Terminé / archive", value: "termine" }
 
+
+  - name: "communiques_admin"
+    label: "Communiqués officiels"
+    files:
+      - label: "Communiqués de la Présidence & de Diploval"
+        name: "communiques"
+        file: "content/communiques.json"
+        format: "json"
+        fields:
+          - label: "Communiqués"
+            name: "communiques"
+            widget: "list"
+            collapsed: true
+            add_to_top: true
+            label_singular: "Ajouter un communiqué"
+            summary: "{{fields.date}} — {{fields.title}}"
+            fields:
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
+              - { label: "Afficher parmi les derniers communiqués sur l’accueil", name: "show_home", widget: "boolean", default: true }
+              - label: "Type de communiqué"
+                name: "type"
+                widget: "select"
+                hint: "Présidence = prise de parole portée par le Président de Diploval. Institutionnel = annonce officielle de la structure."
+                options:
+                  - { label: "Présidence de Diploval", value: "presidence" }
+                  - { label: "Diploval · Institutionnel", value: "institutionnel" }
+              - label: "Statut"
+                name: "status"
+                widget: "select"
+                options: ["Brouillon", "Publié", "Archivé"]
+              - { label: "Identifiant interne (facultatif)", name: "id", widget: "string", required: false, hint: "Vous pouvez laisser vide pour un nouveau communiqué." }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false }
+              - label: "Échelle"
+                name: "scope"
+                widget: "select"
+                required: false
+                options: ["Diploval", "Local", "Départemental", "Régional", "National", "Europe", "International", "Multi-échelles"]
+              - { label: "Résumé court", name: "summary", widget: "text" }
+              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre le résumé court." }
+              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false }
+              - { label: "Texte du communiqué", name: "body", widget: "text", hint: "Séparez les paragraphes par une ligne vide." }
+              - { label: "Image de présentation (facultative)", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false }
+              - { label: "PDF officiel (facultatif)", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false }
+              - { label: "Signature personnalisée (facultative)", name: "signature", widget: "text", required: false, hint: "Laissez vide pour utiliser la signature automatique correspondant au type de communiqué." }
+              - { label: "Note de correction / mise à jour (facultative)", name: "correction_note", widget: "text", required: false }
+
   - name: "articles_admin"
     label: "Actualités & articles"
     files:
       - label: "Articles du site"
         name: "articles"
-        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/articles.json"
+        file: "content/articles.json"
         format: "json"
         fields:
           - label: "Articles"
@@ -179,9 +241,16 @@ collections:
               - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
               - { label: "Titre", name: "title", widget: "string" }
               - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false }
-              - { label: "Catégorie", name: "category", widget: "string", required: false, hint: "Ex. Mise à jour, Terrain, Contribution, Vie de Diploval" }
+              - label: "Catégorie"
+                name: "category"
+                widget: "select"
+                required: false
+                options: ["Actualité", "Contribution", "Intervention", "Mise à jour", "Partenariat", "Publication", "Terrain", "Vie de Diploval"]
+                hint: "Cette catégorie est affichée comme un repère éditorial ; le site applique automatiquement son style."
               - { label: "Image de présentation", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false }
               - { label: "Introduction", name: "intro", widget: "text" }
+              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre l’introduction." }
+              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false }
               - { label: "Texte", name: "body", widget: "text", required: false, hint: "Séparez les paragraphes par une ligne vide." }
               - { label: "Lien facultatif", name: "link", widget: "string", required: false }
               - { label: "Texte du lien", name: "link_label", widget: "string", required: false, default: "En savoir plus" }
@@ -191,7 +260,7 @@ collections:
     files:
       - label: "Épisodes — Les Voix du Vivant"
         name: "podcasts"
-        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/podcasts.json"
+        file: "content/podcasts.json"
         format: "json"
         fields:
           - label: "Épisodes"
@@ -209,6 +278,118 @@ collections:
               - { label: "Format", name: "format", widget: "select", options: ["La voix de Diploval", "Conversation"] }
               - { label: "Durée affichée", name: "duration", widget: "string", required: false, hint: "Ex. 18 min" }
               - { label: "Résumé", name: "summary", widget: "text" }
+              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre le résumé." }
+              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false }
               - { label: "Image / pochette", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false }
               - { label: "Fichier audio", name: "audio", widget: "file", required: false, choose_url: false, allow_multiple: false }
               - { label: "Transcription (facultatif)", name: "transcript", widget: "text", required: false }
+
+  - name: "site_settings_admin"
+    label: "Réglages du site"
+    files:
+      - label: "Bandeau temporaire"
+        name: "site_settings"
+        file: "content/site-settings.json"
+        format: "json"
+        fields:
+          - label: "Information temporaire"
+            name: "temporary_notice"
+            widget: "object"
+            fields:
+              - { label: "Afficher le bandeau", name: "enabled", widget: "boolean", default: false }
+              - { label: "Libellé", name: "label", widget: "string", default: "Information" }
+              - { label: "Texte", name: "text", widget: "text", required: false }
+              - { label: "Date de début", name: "start_date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false }
+              - { label: "Date de fin incluse", name: "end_date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false, hint: "Le bandeau disparaît automatiquement après cette date." }
+              - { label: "Lien facultatif", name: "link", widget: "string", required: false }
+              - { label: "Texte du lien", name: "link_label", widget: "string", required: false, default: "En savoir plus" }
+
+  - name: "points_information_admin"
+    label: "Points d’information"
+    files:
+      - label: "Suivis & chronologies"
+        name: "points_information"
+        file: "content/points-information.json"
+        format: "json"
+        fields:
+          - label: "Points d’information"
+            name: "points"
+            widget: "list"
+            collapsed: true
+            add_to_top: true
+            label_singular: "Ajouter un point d’information"
+            summary: "{{fields.title}} — {{fields.status}}"
+            fields:
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false }
+              - { label: "Afficher sur l’accueil", name: "show_home", widget: "boolean", default: true }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Adresse courte / identifiant", name: "slug", widget: "string", required: false, hint: "Ex. russie-otan-septembre-2026. Laissez vide pour utiliser automatiquement le titre." }
+              - { label: "Catégorie", name: "category", widget: "string", required: false, hint: "Ex. Géopolitique, France, Europe, Environnement" }
+              - label: "Statut"
+                name: "status"
+                widget: "select"
+                options:
+                  - { label: "Suivi en cours", value: "suivi" }
+                  - { label: "Stabilisé", value: "stabilise" }
+                  - { label: "Clos", value: "clos" }
+                  - { label: "Archivé", value: "archive" }
+              - label: "Niveau public (facultatif)"
+                name: "level"
+                widget: "select"
+                default: "aucun"
+                hint: "Laissez Aucun niveau pour un Point d’information simple. Utilisez 3, 2 ou Code One uniquement pour un suivi renforcé."
+                options:
+                  - { label: "Aucun niveau — Point d’information simple", value: "aucun" }
+                  - { label: "Niveau 3 — Surveillance active", value: "3" }
+                  - { label: "Niveau 2 — Vigilance renforcée", value: "2" }
+                  - { label: "Niveau 1 — Code One · Seuil critique", value: "1" }
+              - { label: "Ouverture du suivi", name: "opened_at", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" }
+              - { label: "Dernière mise à jour", name: "last_update", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" }
+              - { label: "Résumé", name: "summary", widget: "text" }
+              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre le résumé." }
+              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false }
+              - { label: "Pourquoi ce niveau ? (si utilisé)", name: "why_level", widget: "text", required: false, hint: "À remplir seulement si un niveau 3, 2 ou Code One est utilisé. Expliquez les éléments convergents sans dramatiser ni transformer une hypothèse en fait." }
+              - label: "Ce qui pourrait faire monter le niveau (si utilisé)"
+                name: "watch_up"
+                widget: "list"
+                required: false
+                field: { label: "Élément", name: "item", widget: "string" }
+              - label: "Ce qui pourrait faire redescendre le niveau (si utilisé)"
+                name: "watch_down"
+                widget: "list"
+                required: false
+                field: { label: "Élément", name: "item", widget: "string" }
+              - label: "Sources principales"
+                name: "sources"
+                widget: "list"
+                collapsed: true
+                required: false
+                hint: "Privilégiez, quand c’est possible, trois sources solides et réellement distinctes : source primaire/institutionnelle, agence ou média reconnu, et source permettant de confronter ou compléter."
+                fields:
+                  - { label: "Nom", name: "label", widget: "string" }
+                  - label: "Type"
+                    name: "type"
+                    widget: "select"
+                    options: ["Source officielle", "Agence de presse", "Média", "Organisation internationale", "Document", "Autre"]
+                  - { label: "Lien", name: "url", widget: "string" }
+                  - { label: "Précision facultative", name: "note", widget: "string", required: false }
+              - label: "Chronologie"
+                name: "updates"
+                widget: "list"
+                collapsed: true
+                add_to_top: true
+                label_singular: "Ajouter une mise à jour"
+                summary: "{{fields.datetime}} — {{fields.title}}"
+                fields:
+                  - { label: "Date et heure", name: "datetime", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" }
+                  - { label: "Titre court", name: "title", widget: "string" }
+                  - { label: "Texte", name: "body", widget: "text" }
+                  - { label: "Correction substantielle", name: "correction", widget: "boolean", default: false, required: false }
+                  - label: "Sources de cette mise à jour"
+                    name: "sources"
+                    widget: "list"
+                    collapsed: true
+                    required: false
+                    fields:
+                      - { label: "Nom", name: "label", widget: "string" }
+                      - { label: "Lien", name: "url", widget: "string" }
