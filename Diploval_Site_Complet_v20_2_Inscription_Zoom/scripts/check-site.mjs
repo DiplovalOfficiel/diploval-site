@@ -147,6 +147,18 @@ try{
   if(!/frame-ancestors 'self'/.test(pdfBlock)) errors.push("netlify.toml : la CSP PDF doit contenir frame-ancestors 'self'.");
 }catch(e){errors.push(`netlify.toml : contrôle des en-têtes impossible (${e.message})`)}
 
+
+// 6. Dossier PDF viewer must use a Blob URL instead of framing the PDF response directly.
+try{
+  const dossier=read('dossier-numerisation.html');
+  if(/<iframe[^>]+\ssrc=["']\/assets\/documents\//i.test(dossier)) errors.push('dossier-numerisation.html : le PDF ne doit pas être chargé directement dans l’iframe.');
+  if(!/id=["']dp-pdf-frame["'][^>]+data-pdf-src=/i.test(dossier)) errors.push('dossier-numerisation.html : lecteur PDF Blob manquant.');
+  const dossierJs=read('dossier-numerisation.js');
+  if(!/URL\.createObjectURL\(/.test(dossierJs)||!/fetch\(source/.test(dossierJs)) errors.push('dossier-numerisation.js : chargement PDF fetch -> Blob manquant.');
+  const nt=read('netlify.toml');
+  if(!/frame-src 'self' blob:/.test(nt)) errors.push("netlify.toml : la CSP doit autoriser frame-src 'self' blob: pour le lecteur PDF.");
+}catch(e){errors.push(`lecteur PDF : contrôle impossible (${e.message})`)}
+
 if(warnings.length){console.warn('Site check warnings:');warnings.forEach(x=>console.warn(' - '+x))}
 if(errors.length){console.error('Site check FAILED:');errors.forEach(x=>console.error(' - '+x));process.exit(2)}
 console.log(`Site check OK: ${htmlFiles.length} pages HTML, ${linkCount} liens et ${resourceCount} ressources contrôlés, JSON et JavaScript valides.`);
