@@ -1,7 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const root=process.cwd();
+const __filename=fileURLToPath(import.meta.url);
+const __dirname=path.dirname(__filename);
+const root=path.resolve(__dirname,'..');
 const SITE='https://diploval.fr';
 const RELEASE='2026-10-15';
 const readJson=(p,fallback)=>{try{return JSON.parse(fs.readFileSync(path.join(root,p),'utf8'))}catch{return fallback}};
