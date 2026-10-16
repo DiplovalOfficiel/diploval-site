@@ -130,6 +130,23 @@ if(!/fetch\(["']\/content\/points-information\.json/.test(read('points-informati
 if(!exists('scripts/generate-seo-pages.mjs'))errors.push('Générateur SEO absent.');
 if(!exists('sitemap.xml'))errors.push('sitemap.xml absent.');
 
+
+// 5. Netlify header policy: specific rules must precede the catch-all.
+// The dossier PDF is intentionally embeddable only by Diploval itself.
+try{
+  const nt=read('netlify.toml');
+  const pdfPos=nt.indexOf('for = "/assets/documents/*"');
+  const adminPos=nt.indexOf('for = "/admin/*"');
+  const contentPos=nt.indexOf('for = "/content/*"');
+  const globalPos=nt.indexOf('for = "/*"');
+  if(pdfPos<0||globalPos<0||pdfPos>globalPos) errors.push('netlify.toml : la règle PDF doit être placée avant la règle générale /*.');
+  if(adminPos<0||adminPos>globalPos) errors.push('netlify.toml : la règle /admin/* doit précéder la règle générale /*.');
+  if(contentPos<0||contentPos>globalPos) errors.push('netlify.toml : la règle /content/* doit précéder la règle générale /*.');
+  const pdfBlock=(nt.match(/\[\[headers\]\]\s*\n\s*for = "\/assets\/documents\/\*"\s*\n\s*\[headers\.values\]([\s\S]*?)(?=\n\[\[|$)/)||[])[1]||'';
+  if(!/X-Frame-Options\s*=\s*"SAMEORIGIN"/.test(pdfBlock)) errors.push('netlify.toml : les PDF doivent autoriser l’intégration SAMEORIGIN.');
+  if(!/frame-ancestors 'self'/.test(pdfBlock)) errors.push("netlify.toml : la CSP PDF doit contenir frame-ancestors 'self'.");
+}catch(e){errors.push(`netlify.toml : contrôle des en-têtes impossible (${e.message})`)}
+
 if(warnings.length){console.warn('Site check warnings:');warnings.forEach(x=>console.warn(' - '+x))}
 if(errors.length){console.error('Site check FAILED:');errors.forEach(x=>console.error(' - '+x));process.exit(2)}
 console.log(`Site check OK: ${htmlFiles.length} pages HTML, ${linkCount} liens et ${resourceCount} ressources contrôlés, JSON et JavaScript valides.`);
