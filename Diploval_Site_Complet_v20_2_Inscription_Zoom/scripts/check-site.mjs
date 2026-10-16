@@ -190,6 +190,23 @@ try{
   }
 }catch(e){errors.push(`lecteur PDF générique : contrôle impossible (${e.message})`)}
 
+
+// Administration : vérifier que /admin possède bien sa propre page Decap CMS.
+try{
+  const adminPath=path.join(root,'admin','index.html');
+  if(!fs.existsSync(adminPath)){
+    errors.push('admin/index.html : fichier absent — /admin ne peut pas charger Decap CMS.');
+  }else{
+    const adminHtml=fs.readFileSync(adminPath,'utf8');
+    if(!/decap-cms/i.test(adminHtml)) errors.push('admin/index.html : script Decap CMS introuvable.');
+    if(/Relier ce que nos décisions/i.test(adminHtml)) errors.push('admin/index.html : la page d’accueil publique a été copiée par erreur dans /admin.');
+  }
+  const nt=read('netlify.toml');
+  if(!/from = "\/admin\/?"/.test(nt) || !/to = "\/admin\/index\.html"/.test(nt)){
+    warnings.push('netlify.toml : aucune réécriture explicite /admin vers /admin/index.html.');
+  }
+}catch(e){errors.push(`Contrôle admin impossible (${e.message})`)}
+
 if(warnings.length){console.warn('Site check warnings:');warnings.forEach(x=>console.warn(' - '+x))}
 if(errors.length){console.error('Site check FAILED:');errors.forEach(x=>console.error(' - '+x));process.exit(2)}
 console.log(`Site check OK: ${htmlFiles.length} pages HTML, ${linkCount} liens et ${resourceCount} ressources contrôlés, JSON et JavaScript valides.`);
