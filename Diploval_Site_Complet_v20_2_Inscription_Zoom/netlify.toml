@@ -1,5 +1,5 @@
 [build]
-  command = "node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/generate-seo-pages.mjs"
+  command = "node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/generate-seo-pages.mjs && node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/check-site.mjs"
   publish = "Diploval_Site_Complet_v20_2_Inscription_Zoom"
 
 [[headers]]

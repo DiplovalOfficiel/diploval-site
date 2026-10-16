@@ -40,7 +40,7 @@ function renderDetail(id){
  ${c.correction_note?`<div class="communique-correction"><strong>Correction / mise à jour :</strong> ${esc(c.correction_note)}</div>`:''}
  <footer><p class="communique-signature">${sig}</p>${c.pdf?`<a class="button button-document" href="${attr(c.pdf)}" target="_blank" rel="noopener">Consulter le PDF officiel →</a>`:''}<button class="button button-outline" id="copy-communique-link" type="button">Copier le lien</button></footer>
  </article>`;
- document.querySelector('#communique-back')?.addEventListener('click',()=>{host.hidden=true;if(list)list.hidden=false;history.replaceState({},'', 'communiques.html');window.scrollTo({top:document.querySelector('#liste-communiques').offsetTop-80,behavior:'smooth'})});
+ document.querySelector('#communique-back')?.addEventListener('click',()=>{host.hidden=true;if(list)list.hidden=false;history.replaceState({},'', '/communiques');window.scrollTo({top:document.querySelector('#liste-communiques').offsetTop-80,behavior:'smooth'})});
  document.querySelector('#copy-communique-link')?.addEventListener('click',async e=>{try{await navigator.clipboard.writeText(location.href);e.currentTarget.textContent='Lien copié ✓'}catch{e.currentTarget.textContent='Copiez l’adresse du navigateur'}});
  return true;
 }
