@@ -10,7 +10,7 @@ const typeLabel = t => t==='presidence' ? 'Présidence de Diploval' : 'Diploval 
 const signature = c => c.signature || (c.type==='presidence' ? 'Souix Nathorod\nPrésident de Diploval\nFranck Saubin à l’état civil' : 'Diploval\nPrésidence de Diploval');
 let data=[]; let filter='all';
 
-async function getData(){try{const r=await fetch('content/communiques.json',{cache:'no-store'});if(!r.ok)throw new Error(r.status);return await r.json()}catch(e){console.warn(e);return {communiques:[]}}}
+async function getData(){try{const r=await fetch('/content/communiques.json',{cache:'no-store'});if(!r.ok)throw new Error(r.status);return await r.json()}catch(e){console.warn(e);return {communiques:[]}}}
 function idOf(c){return c.id||slugify(c.title)}
 function publicList(){return data.filter(c=>c.visible!==false && c.status!=='Brouillon').sort((a,b)=>String(b.date).localeCompare(String(a.date)))}
 function card(c){
