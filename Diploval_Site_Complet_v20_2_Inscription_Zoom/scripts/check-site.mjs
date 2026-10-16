@@ -159,6 +159,37 @@ try{
   if(!/frame-src 'self' blob:/.test(nt)) errors.push("netlify.toml : la CSP doit autoriser frame-src 'self' blob: pour le lecteur PDF.");
 }catch(e){errors.push(`lecteur PDF : contrôle impossible (${e.message})`)}
 
+
+
+// 7. Generic PDF reader for publications and communiqués.
+try{
+  if(!exists('pdf-viewer.js')) errors.push('Lecteur PDF générique absent : pdf-viewer.js.');
+  const viewerJs=read('pdf-viewer.js');
+  if(!/URL\.createObjectURL\(/.test(viewerJs)||!/fetch\(source/.test(viewerJs)) errors.push('pdf-viewer.js : chargement fetch -> Blob manquant.');
+  const cfg=read('admin/config.yml');
+  if(!/name: "embed_pdf"/.test(cfg)) errors.push('admin/config.yml : option de lecteur PDF intégré absente.');
+  const slug=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,100);
+  const pubData=data['content/publications.json']?.publications||[];
+  for(const item of pubData.filter(x=>x.visible!==false&&x.pdf&&x.embed_pdf!==false&&!['Brouillon','Archivé'].includes(x.status))){
+    const id=item.id||slug(item.title);
+    const file=`publications/${id}/index.html`;
+    if(!exists(file)){errors.push(`${file} : page publication PDF non générée.`);continue}
+    const h=read(file);
+    const wanted=`data-pdf-src="/${String(item.pdf).replace(/^\//,'')}"`;
+    if(!h.includes('data-pdf-viewer')||!h.includes(wanted)) errors.push(`${file} : lecteur PDF intégré manquant.`);
+    if(!/src=["']\/pdf-viewer\.js/.test(h)) errors.push(`${file} : pdf-viewer.js non chargé.`);
+  }
+  const commData=data['content/communiques.json']?.communiques||[];
+  for(const item of commData.filter(x=>x.visible!==false&&x.pdf&&x.embed_pdf!==false&&x.status!=='Brouillon')){
+    const id=item.id||slug(item.title);
+    const file=`communiques/${id}/index.html`;
+    if(!exists(file)){errors.push(`${file} : page communiqué PDF non générée.`);continue}
+    const h=read(file);
+    if(!/data-pdf-viewer/.test(h)) errors.push(`${file} : lecteur PDF intégré manquant.`);
+    if(!/src=["']\/pdf-viewer\.js/.test(h)) errors.push(`${file} : pdf-viewer.js non chargé.`);
+  }
+}catch(e){errors.push(`lecteur PDF générique : contrôle impossible (${e.message})`)}
+
 if(warnings.length){console.warn('Site check warnings:');warnings.forEach(x=>console.warn(' - '+x))}
 if(errors.length){console.error('Site check FAILED:');errors.forEach(x=>console.error(' - '+x));process.exit(2)}
 console.log(`Site check OK: ${htmlFiles.length} pages HTML, ${linkCount} liens et ${resourceCount} ressources contrôlés, JSON et JavaScript valides.`);
