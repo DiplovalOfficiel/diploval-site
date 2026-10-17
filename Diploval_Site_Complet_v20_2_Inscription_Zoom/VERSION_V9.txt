@@ -1,0 +1,3 @@
+Diploval V9 — 17 octobre 2026
+Catalogue nettoyé, consultations générées depuis /admin, récapitulatif et filtres corrigés.
+Le guide V9 situé à côté du dossier du site fait référence pour cette livraison.

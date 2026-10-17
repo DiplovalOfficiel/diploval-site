@@ -90,31 +90,6 @@
       title: 'Préparer la France sans programmer la guerre', pdf: 'assets/documents/preparer-france-sans-programmer-guerre.pdf',
       body: `<p class="dialog-summary-lead">Préparer un pays au risque n’oblige pas à installer la guerre comme horizon mental inévitable.</p><p>Cet édito défend une sécurité nationale plus large que la seule capacité militaire : défense crédible, résilience civile, agriculture, énergie, santé, infrastructures, cohésion démocratique et diplomatie. L’enjeu est de pouvoir tenir face aux crises tout en gardant ouverte la possibilité d’éviter l’engrenage.</p>`
     },
-    referentiel: {
-      type: 'Référentiel', scope: 'Multi-échelles', status: 'Version 1.0 structurée', version: 'Version 1.0', date: '29 juillet 2026', format: 'Document à intégrer',
-      title: 'Référentiel Diploval',
-      body: `<p class="dialog-summary-lead">Le Référentiel permet de passer des principes à l’examen d’une décision réelle.</p><p>Il regarde le besoin de départ, le territoire, les personnes concernées, les effets attendus, les alternatives et le suivi. Il sert notamment à vérifier si une réponse utile aujourd’hui ne rend pas le problème de demain plus difficile à résoudre.</p>`
-    },
-    incendies: {
-      type: 'Rapport', scope: 'National', status: 'En consolidation', version: 'Bilan de juillet 2026', date: 'Actualisation en cours', format: 'Rapport',
-      title: 'Incendies 2026',
-      body: `<p class="dialog-summary-lead">Le rapport rassemble les données disponibles, la chronologie des feux, les moyens engagés et les conséquences humaines, matérielles et territoriales.</p><p>Il examine aussi la prévention, la capacité des secours, la vulnérabilité des territoires et la vitesse à laquelle le risque évolue.</p>`
-    },
-    programmes: {
-      type: 'Analyse', scope: 'National', status: 'En cours', version: 'Chapitres climat et eau validés', date: '2 août 2026', format: 'Dossier évolutif',
-      title: 'Les programmes politiques à l’épreuve du vivant',
-      body: `<p class="dialog-summary-lead">Les principaux programmes sont soumis à la même grille, quelle que soit leur couleur politique.</p><p>L’analyse porte sur les mesures proposées, les moyens annoncés, les délais, la faisabilité et les conséquences déplacées.</p>`
-    },
-    schaerbeek: {
-      type: 'Analyse', scope: 'Territorial', status: 'Dossier ouvert', version: 'Droit positif et Charte du vivant', date: '1 août 2026', format: 'Analyse territoriale',
-      title: 'Schaerbeek — projet d’abattage de 108 arbres',
-      body: `<p class="dialog-summary-lead">Ce dossier confronte la Charte, le Référentiel et le droit applicable à une décision locale précise.</p><p>L’analyse vérifie les motifs avancés, les alternatives, les conséquences pour le quartier, la participation du public et les voies juridiques qui peuvent être mobilisées.</p>`
-    },
-    hydrique: {
-      type: 'Mémorandum', scope: 'National', status: 'Travail structuré', version: 'Version de travail', date: 'Juin 2026', format: 'Mémorandum et propositions',
-      title: 'Sécurité hydrique de la France',
-      body: `<p class="dialog-summary-lead">Le mémorandum distingue les prélèvements de la consommation réelle et replace les besoins des milieux dans la décision.</p><p>Il traite aussi de la gouvernance par bassin, de la transparence des données, de la qualité de l’eau et des responsabilités publiques et économiques.</p>`
-    },
     elnino: {
       type: 'Note stratégique', scope: 'Territorial', status: 'Publié', version: 'Document d’éclairage stratégique actualisé', date: 'Juin 2026', format: 'PDF · 14 pages',
       title: 'El Niño, climat et adaptation des communes', pdf: 'assets/documents/el-nino-climat-adaptation-communes.pdf',
@@ -140,16 +115,6 @@
       title: 'Cadmium, alimentation et confiance publique', pdf: 'assets/documents/cadmium-alimentation-confiance-publique.pdf',
       body: `<p class="dialog-summary-lead">Le cadmium relie un même problème que l’on traite souvent par morceaux : intrants agricoles, sols, aliments, corps humains, santé publique et confiance dans la décision collective.</p><p>La note examine l’exposition en France, le rôle des engrais phosphatés, les seuils et calendriers réglementaires, puis propose une lecture fondée sur la protection des supports vitaux. Elle insiste aussi sur un point : réduire l’exposition sans désigner les agriculteurs comme responsables d’un cadre qu’ils ne fixent pas seuls.</p>`
     },
-    procheorient: {
-      type: 'Mémorandum', scope: 'International', status: 'Note diplomatique', version: 'Version de travail', date: 'Juin 2026', format: 'Mémorandum',
-      title: 'Palestine, Israël et Liban',
-      body: `<p class="dialog-summary-lead">Cette note travaille à partir du droit international, de la protection des populations civiles, de la sécurité durable et de la responsabilité des institutions.</p><p>Elle cherche les conditions minimales d’une désescalade, d’une protection effective et d’un cadre politique qui puisse tenir dans le temps.</p>`
-    },
-    datacenter: {
-      type: 'Suivi', scope: 'Territorial', status: 'Veille en cours', version: 'Dossier de suivi', date: '2026', format: 'Veille CNDP',
-      title: 'Projet de data center Google dans l’Indre',
-      body: `<p class="dialog-summary-lead">Ce suivi rassemble les informations publiques sur le projet, le débat conduit par la CNDP et les questions territoriales qui en découlent.</p><p>Les principaux points de vigilance concernent l’eau, l’énergie, l’emploi, les infrastructures, les retombées locales et les engagements annoncés.</p>`
-    }
   };
 
 
@@ -300,7 +265,7 @@
 
 
   // Navigation du carrousel de travaux sur mobile
-  const scroller = document.querySelector('.work-scroller');
+  const scroller = (document.querySelector('#admin-featured-publications') ? null : document.querySelector('.work-scroller'));
   const cards = scroller ? Array.from(scroller.querySelectorAll('.work-card')) : [];
   const prev = document.querySelector('#work-prev');
   const next = document.querySelector('#work-next');
@@ -381,14 +346,14 @@
 
 
   // Recherche dans la bibliothèque des publications
-  const publicationSearch = document.querySelector('#publication-search');
-  const publicationType = document.querySelector('#publication-type');
-  const publicationScopeButtons = Array.from(document.querySelectorAll('[data-publication-scope]'));
-  const publicationItems = Array.from(document.querySelectorAll('.publication-result'));
+  const publicationSearch = (document.querySelector('#admin-featured-publications') ? null : document.querySelector('#publication-search'));
+  const publicationType = (document.querySelector('#admin-featured-publications') ? null : document.querySelector('#publication-type'));
+  const publicationScopeButtons = document.querySelector('#admin-featured-publications') ? [] : Array.from(document.querySelectorAll('[data-publication-scope]'));
+  const publicationItems = document.querySelector('#admin-featured-publications') ? [] : Array.from(document.querySelectorAll('.publication-result'));
   const publicationCount = document.querySelector('#publication-count');
   const publicationEmpty = document.querySelector('#publication-empty');
-  const publicationReset = document.querySelector('#publication-reset');
-  const publicationLoadMore = document.querySelector('#publication-load-more');
+  const publicationReset = document.querySelector('#admin-featured-publications') ? null : document.querySelector('#publication-reset');
+  const publicationLoadMore = document.querySelector('#admin-featured-publications') ? null : document.querySelector('#publication-load-more');
   const INITIAL_PUBLICATION_LIMIT = 6;
   const PUBLICATION_BATCH_SIZE = 6;
   let activePublicationScope = 'all';
@@ -455,7 +420,7 @@
       item.classList.toggle('is-active', selected);
       item.setAttribute('aria-pressed', String(selected));
     });
-    updatePublicationResults();
+    if (!document.querySelector('#admin-featured-publications')) updatePublicationResults();
   }));
   if (publicationLoadMore) publicationLoadMore.addEventListener('click', () => {
     publicationVisibleLimit += PUBLICATION_BATCH_SIZE;

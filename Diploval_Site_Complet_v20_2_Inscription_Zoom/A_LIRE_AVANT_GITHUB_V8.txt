@@ -1,0 +1,16 @@
+DIPLOVAL V8 — CORRECTIF FINAL APRÈS AUDIT GLOBAL
+
+Ce correctif est destiné au dépôt GitHub existant.
+Ne supprimez rien d'autre dans le dépôt.
+
+Ce qui est corrigé :
+- ressources CSS/JS/images/PDF rendues sûres sur les URL propres et imbriquées ;
+- affichage du pied de page du dossier Numérisation ;
+- futur fonctionnement des Points d'information individuels (/points-information/slug/) ;
+- chargement JSON des Points d'information et Communiqués ;
+- maintien du formulaire citoyen et de ses validations ;
+- contrôle automatique renforcé à chaque build Netlify ;
+- conservation du SEO et de l'administration /admin.
+
+IMPORTANT : les fichiers content/site-settings.json et content/points-information.json
+sont inclus pour éviter les erreurs de build si ces fichiers sont absents du dépôt.

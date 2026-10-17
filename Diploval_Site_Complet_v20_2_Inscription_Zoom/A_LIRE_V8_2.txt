@@ -1,0 +1,13 @@
+DIPLOVAL V8.2 — CORRECTIF LECTEUR PDF ROBUSTE
+
+Cause réelle : les en-têtes globaux de sécurité Netlify peuvent continuer à s’appliquer au PDF même lorsqu’une règle plus spécifique est ajoutée. Un PDF servi avec une protection anti-frame est donc lisible dans un onglet mais refusé dans une iframe.
+
+Solution : la page récupère désormais le PDF par fetch, crée une URL blob locale au navigateur, puis affiche cette URL blob dans l’iframe. Les protections du PDF restent intactes pour les sites externes.
+
+À remplacer dans GitHub :
+- dossier-numerisation.html
+- dossier-numerisation.js
+- netlify.toml
+- scripts/check-site.mjs
+
+Rien d’autre.

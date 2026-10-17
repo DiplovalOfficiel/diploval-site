@@ -32,24 +32,39 @@ collections:
             fields:
               - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
               - { label: "Mettre en avant", name: "featured", widget: "boolean", default: false }
-              - { label: "Ouvrir cette publication à la contribution citoyenne", name: "participation_enabled", widget: "boolean", default: false, required: false, hint: "À activer uniquement pour un dossier explicitement préparé pour une consultation." }
+              - { label: "Ouvrir cette publication à la contribution citoyenne", name: "participation_enabled", widget: "boolean", default: false, required: false, hint: "La page, le formulaire et les liens sont créés automatiquement au déploiement. Renseignez ci-dessous la version, la question et le calendrier ; le PDF doit être disponible." }
               - label: "Statut de la consultation"
                 name: "participation_status"
                 widget: "select"
+                default: "Consultation à venir"
                 required: false
                 options:
                   - "Consultation ouverte"
                   - "Consultation à venir"
                   - "Consultation close"
                   - "Résultats publiés"
-              - { label: "Page de consultation", name: "participation_url", widget: "string", required: false, hint: "Ex. dossier-numerisation.html. Laissez vide pour les publications sans participation." }
-              - { label: "Identifiant interne (facultatif)", name: "id", widget: "string", required: false, hint: "Pour une nouvelle publication, vous pouvez laisser vide. Le site créera un identifiant à partir du titre." }
+              - { label: "Question directrice de la consultation", name: "participation_question", widget: "text", required: false }
+              - { label: "Ce qui est établi", name: "participation_established", widget: "text", required: false }
+              - { label: "Ce qui reste à instruire", name: "participation_uncertain", widget: "text", required: false }
+              - { label: "Ce qui n’est pas présumé", name: "participation_not_presumed", widget: "text", required: false }
+              - label: "Parties du document proposées dans le formulaire"
+                name: "participation_sections"
+                widget: "list"
+                required: false
+                field: { label: "Partie", name: "section", widget: "string" }
+              - { label: "Ouverture de la consultation", name: "participation_opens", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+              - { label: "Clôture incluse de la consultation", name: "participation_closes", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, hint: "Le formulaire est désactivé dans le navigateur après cette date (heure de Paris). Mettre aussi le statut à Consultation close et republier pour retirer le formulaire du HTML." }
+              - { label: "Règle de calendrier / précisions", name: "participation_schedule", widget: "text", required: false, hint: "Obligatoire si aucune date de clôture n’est fixée. Ne pas inventer de date : expliquer quand et comment la clôture sera annoncée." }
+              - { label: "Suites et synthèse de consultation", name: "participation_followup", widget: "text", required: false }
+              - { label: "Bilan de consultation (PDF)", name: "participation_results_pdf", widget: "file", required: false, choose_url: false, allow_multiple: false }
+              - { label: "Historique des modifications et versions antérieures", name: "participation_history", widget: "text", required: false, hint: "Indiquer les changements, leurs raisons et les références des versions conservées. Ne pas remplacer un PDF déjà consulté par un autre fichier de même nom." }
+              - { label: "Identifiant interne (facultatif)", name: "id", widget: "string", required: false, hint: "Identifiant unique et stable, par exemple pure-salmon. Garder le même pour modifier une publication existante. Laisser vide le calcule depuis le titre ; un identifiant explicite évite de changer l’adresse lors d’un changement de titre." }
               - { label: "Titre", name: "title", widget: "string" }
               - label: "Type de publication"
                 name: "type"
                 widget: "select"
                 hint: "Le libellé choisi devient automatiquement la petite étiquette de la carte. Sa couleur et sa taille sont gérées par le site pour rester cohérentes."
-                options: ["Analyse", "Article", "Charte · Socle", "Contribution", "Document de référence", "Dossier d’analyse", "Édito", "Étude", "Fiche pratique", "Guide", "Mémorandum", "Note stratégique", "Note d’éclairage", "Proposition", "Rapport", "Référentiel", "Suivi", "Synthèse", "Synthèse décideurs"]
+                options: ["Note d’alerte", "Document de cadrage", "Note stratégique et juridique", "Référentiel · Méthode", "Analyse", "Article", "Charte · Socle", "Contribution", "Document de référence", "Dossier d’analyse", "Édito", "Étude", "Fiche pratique", "Guide", "Mémorandum", "Note stratégique", "Note d’éclairage", "Proposition", "Rapport", "Référentiel", "Suivi", "Synthèse", "Synthèse décideurs"]
               - label: "Filtre de format"
                 name: "type_filter"
                 widget: "select"
@@ -89,7 +104,7 @@ collections:
               - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour utiliser automatiquement le résumé principal. Environ 140 à 160 caractères est idéal." }
               - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false, hint: "Utilisée pour Google, réseaux sociaux et messageries. À défaut, le site utilise l’image de présentation ou l’image Diploval." }
               - { label: "Image de présentation", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false, hint: "Une image horizontale 16:9 ou proche est idéale. Le site l’adapte automatiquement au mobile et au PC." }
-              - { label: "PDF", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false, hint: "Laissez vide si le document n’est pas encore consultable." }
+              - { label: "PDF", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false, hint: "Pour publier, joindre un PDF réel. Tant qu’il n’est pas prêt, conserver Visible sur le site désactivé. Les consultations utilisent ce même fichier." }
               - { label: "Afficher le lecteur PDF intégré", name: "embed_pdf", widget: "boolean", default: true, required: false, hint: "Activé par défaut : le document pourra être lu directement dans sa page, tout en restant ouvrable dans un nouvel onglet." }
 
   - name: "dossiers_admin"

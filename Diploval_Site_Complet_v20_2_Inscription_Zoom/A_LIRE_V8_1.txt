@@ -1,0 +1,21 @@
+DIPLOVAL V8.1 — CORRECTIF PDF INTÉGRÉ + EN-TÊTES NETLIFY
+
+Cause du problème observé :
+Le PDF est lisible dans un nouvel onglet, mais son affichage dans l'iframe du
+dossier était bloqué par les protections globales :
+- X-Frame-Options: DENY
+- Content-Security-Policy: frame-ancestors 'none'
+
+Correction :
+- /assets/documents/* autorise désormais uniquement l'intégration SAMEORIGIN,
+  donc depuis diploval.fr lui-même ;
+- la protection DENY reste active pour les pages normales ;
+- les règles /admin/* et /content/* sont replacées avant la règle générale,
+  afin que noindex/no-cache soient réellement appliqués ;
+- le contrôle automatique check-site.mjs vérifie désormais cette configuration.
+
+À remplacer dans GitHub :
+1. Diploval_Site_Complet_v20_2_Inscription_Zoom/netlify.toml
+2. Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/check-site.mjs
+
+Rien d'autre à remplacer pour ce correctif.

@@ -1,3 +1,4 @@
+import {isPublic,state,publicationId} from './consultations.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -121,9 +122,14 @@ for(const p of jsFiles){
 }
 
 // 4. Critical interactive features.
-const dossier=read('dossier-numerisation.html');
-if(!/name=["']contribution-numerisation-v1-1["']/.test(dossier)||!/data-netlify=["']true["']/.test(dossier))errors.push('Le formulaire de contribution Netlify est absent ou incomplet.');
-if(!/src=["']\/dossier-numerisation\.js/.test(dossier))errors.push('Le script externe du dossier participatif n’est pas chargé par une URL racine sûre.');
+for(const p of (data['content/publications.json']?.publications||[]).filter(isPublic).filter(p=>p.participation_enabled)){
+  const file=publicationId(p)==='numerisation-resilience'?'dossier-numerisation.html':'dossiers/'+publicationId(p)+'/index.html';
+  if(!exists(file)){errors.push('Page de consultation absente : '+file);continue;}
+  const html=read(file),open=state(p)==='Consultation ouverte';
+  if(open&&(!html.includes('data-netlify="true"')||!html.includes('id="dp-review"')))errors.push('Formulaire ou récapitulatif manquant : '+file);
+  if(!open&&html.includes('id="dp-form"'))errors.push('Un formulaire est encore présent dans une consultation inactive : '+file);
+  if(!html.includes('/dossier-numerisation.js'))errors.push('Script de consultation absent : '+file);
+}
 const points=read('points-information.html');
 if(!/id=["']niveaux["']/.test(points)||!/id=["']suivis["']/.test(points))errors.push('Les ancres Niveaux/Suivis de la page Points d’information sont absentes.');
 if(!/fetch\(["']\/content\/points-information\.json/.test(read('points-information.js')))errors.push('points-information.js doit charger son JSON depuis /content pour fonctionner sur les URLs de suivi imbriquées.');
@@ -152,7 +158,7 @@ try{
 try{
   const dossier=read('dossier-numerisation.html');
   if(/<iframe[^>]+\ssrc=["']\/assets\/documents\//i.test(dossier)) errors.push('dossier-numerisation.html : le PDF ne doit pas être chargé directement dans l’iframe.');
-  if(!/id=["']dp-pdf-frame["'][^>]+data-pdf-src=/i.test(dossier)) errors.push('dossier-numerisation.html : lecteur PDF Blob manquant.');
+  if(dossier.includes('dp-page')&&!/id=["']dp-pdf-frame["'][^>]+data-pdf-src=/i.test(dossier)) errors.push('dossier-numerisation.html : lecteur PDF Blob manquant.');
   const dossierJs=read('dossier-numerisation.js');
   if(!/URL\.createObjectURL\(/.test(dossierJs)||!/fetch\(source/.test(dossierJs)) errors.push('dossier-numerisation.js : chargement PDF fetch -> Blob manquant.');
   const nt=read('netlify.toml');

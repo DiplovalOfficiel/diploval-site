@@ -1,0 +1,36 @@
+DIPLOVAL V8.3 — LECTEUR PDF AUTOMATIQUE
+
+Objectif :
+Tous les futurs PDF ajoutés depuis /admin dans « Publications & PDF »
+ou « Communiqués officiels » peuvent désormais être lus directement
+dans leur page, sans modification manuelle du code.
+
+Dans /admin :
+- ajoutez le PDF normalement ;
+- « Afficher le lecteur PDF intégré » est activé par défaut ;
+- vous pouvez le désactiver ponctuellement si vous ne souhaitez pas
+  intégrer le document dans la page ;
+- le bouton d'ouverture du PDF dans un nouvel onglet reste disponible.
+
+À remplacer dans GitHub :
+RACINE
+- pdf-viewer.js (nouveau)
+- netlify.toml
+- styles.css
+
+admin/
+- config.yml
+
+scripts/
+- generate-seo-pages.mjs
+- check-site.mjs
+
+Aucun fichier content/*.json n'a besoin d'être modifié.
+Les publications déjà existantes avec PDF bénéficieront aussi du lecteur
+intégré automatiquement après le prochain build Netlify, sauf si
+embed_pdf est explicitement réglé sur false.
+
+TEST AVANT LIVRAISON :
+- génération SEO réussie : 26 URL ;
+- contrôle du site : 28 pages HTML, 1103 liens, 366 ressources ;
+- JSON et JavaScript valides.

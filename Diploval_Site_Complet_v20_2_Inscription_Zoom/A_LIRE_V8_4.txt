@@ -1,0 +1,18 @@
+DIPLOVAL V8.4 — CORRECTIF ADMIN
+
+Symptôme :
+https://diploval.fr/admin/ affiche la page d'accueil publique sans styles,
+au lieu de l'administration Decap CMS.
+
+Correction :
+- remise en place explicite de admin/index.html ;
+- réécriture Netlify /admin et /admin/ vers /admin/index.html ;
+- contrôle automatique renforcé pour bloquer un futur déploiement si
+  admin/index.html manque ou contient accidentellement la page d'accueil.
+
+À remplacer :
+1. RACINE : netlify.toml
+2. admin/ : index.html
+3. scripts/ : check-site.mjs
+
+Ne pas modifier admin/config.yml pour ce correctif.

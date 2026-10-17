@@ -1,0 +1,47 @@
+DIPLOVAL V8.5 — CORRECTIF PUBLICATIONS DEPUIS /admin
+
+Cause confirmée :
+Le site public est publié depuis le sous-dossier :
+Diploval_Site_Complet_v20_2_Inscription_Zoom/
+
+Mais Decap CMS utilisait des chemins comme :
+content/publications.json
+assets/uploads
+
+Or, dans Decap CMS, ces chemins sont relatifs à la RACINE DU DÉPÔT GitHub.
+Une publication créée depuis /admin pouvait donc être enregistrée dans :
+/content/publications.json
+et son PDF dans :
+/assets/uploads/
+
+alors que le site public lit :
+/Diploval_Site_Complet_v20_2_Inscription_Zoom/content/publications.json
+et :
+/Diploval_Site_Complet_v20_2_Inscription_Zoom/assets/uploads/
+
+Résultat : l'enregistrement semblait réussir dans l'administration, mais le site
+public ne voyait pas la nouvelle publication.
+
+Ce correctif :
+- enregistre désormais les contenus CMS dans le bon sous-dossier ;
+- enregistre les PDF/images dans le bon assets/uploads ;
+- conserve public_folder: /assets/uploads pour les URL publiques ;
+- ajoute un message clair sur « Visible sur le site » ;
+- renforce le contrôle automatique pour empêcher ce bug de revenir.
+
+FICHIERS À REMPLACER :
+1. admin/config.yml
+2. scripts/check-site.mjs
+
+IMPORTANT POUR LE TEST DÉJÀ CRÉÉ :
+Le correctif ne déplace pas automatiquement une publication qui aurait déjà été
+enregistrée dans un dossier /content à la racine du dépôt.
+Après installation, le plus simple est de recréer la publication test dans /admin.
+
+Si un dossier « content » existe à la racine du dépôt GitHub, à côté de
+« Diploval_Site_Complet_v20_2_Inscription_Zoom », ne le supprimez pas à l'aveugle. Vérifiez d'abord son contenu.
+Il peut contenir la publication test créée au mauvais endroit.
+
+Pour qu'une publication apparaisse publiquement :
+- « Visible sur le site » doit être activé ;
+- le statut ne doit pas être « Brouillon » ni « Archivé » pour la fiche SEO générée.
