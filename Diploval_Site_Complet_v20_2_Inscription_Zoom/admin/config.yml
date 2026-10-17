@@ -125,6 +125,7 @@ collections:
             fields:
               - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
               - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Identifiant stable du dossier", name: "id", widget: "string", required: false, hint: "Exemple : mobilisations-lyceennes-2026. Créé automatiquement lors de l’enregistrement si vous le laissez vide. Ne pas le modifier après avoir associé une actualité." }
               - label: "Statut"
                 name: "status"
                 widget: "select"
@@ -240,35 +241,77 @@ collections:
               - { label: "Note de correction / mise à jour (facultative)", name: "correction_note", widget: "text", required: false }
 
   - name: "articles_admin"
-    label: "Actualités & articles"
+    label: "Actualités Diploval"
+    label_singular: "Actualité"
+    description: "Choisir le statut, vérifier l’aperçu puis enregistrer la liste. Le bouton Publier de Decap enregistre ce fichier ; seules les actualités au statut Publié avec visibilité activée paraissent après déploiement."
     files:
-      - label: "Articles du site"
+      - label: "Actualités publiées"
         name: "articles"
         file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/articles.json"
         format: "json"
         fields:
-          - label: "Articles"
+          - label: "Actualités"
             name: "articles"
             widget: "list"
             collapsed: true
             add_to_top: true
-            label_singular: "Ajouter un article"
-            summary: "{{fields.date}} — {{fields.title}}"
+            label_singular: "Nouvelle actualité"
+            summary: "{{fields.status}} — {{fields.date}} — {{fields.title}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "Autorisation d’affichage. Une actualité Brouillon ou Archivée reste absente du site même si ce bouton est activé. Enregistrer la liste déclenche le déploiement." }
+              - label: "Statut de l’actualité"
+                name: "status"
+                widget: "select"
+                required: false
+                default: ""
+                options:
+                  - { label: "État existant — conserver la visibilité actuelle", value: "" }
+                  - { label: "Brouillon", value: "Brouillon" }
+                  - { label: "Publié", value: "Publié" }
+                  - { label: "Archivé", value: "Archivé" }
+                hint: "Pour une nouvelle actualité : choisir Brouillon pendant la rédaction, puis Publié et Visible pour sa mise en ligne. L’état existant préserve l’actualité déjà publiée lors de l’installation."
+              - { label: "Ne pas publier avant (facultatif)", name: "publish_at", widget: "datetime", required: false, hint: "Date minimale de parution. Un déploiement Netlify après cette date reste nécessaire : aucune programmation automatique n’est activée." }
               - { label: "Titre", name: "title", widget: "string" }
-              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false }
+              - { label: "Adresse courte / identifiant stable", name: "id", widget: "string", required: false, hint: "Facultatif pour un article existant : laisser vide conserve son adresse calculée depuis le titre. Pour un nouvel article, choisir un identifiant unique et le conserver." }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, default: "{{now}}" }
               - label: "Catégorie"
                 name: "category"
                 widget: "select"
                 required: false
-                options: ["Actualité", "Contribution", "Intervention", "Mise à jour", "Partenariat", "Publication", "Terrain", "Vie de Diploval"]
+                options: ["Lancement d’étude", "Publication", "Consultation citoyenne", "Actualisation de dossier", "Rectificatif", "Vie institutionnelle", "Rencontres & événements", "Suivi des propositions"]
                 hint: "Cette catégorie est affichée comme un repère éditorial ; le site applique automatiquement son style."
               - { label: "Image de présentation", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Introduction", name: "intro", widget: "text" }
+              - { label: "Texte alternatif de l’image", name: "cover_alt", widget: "string", required: false, hint: "Décrire ce que montre l’image, sans commencer par Image de. Si elle est purement décorative, laisser ce champ vide." }
+              - label: "Dossier Diploval associé"
+                name: "dossier_id"
+                widget: "relation"
+                required: false
+                collection: "dossiers_admin"
+                file: "dossiers"
+                search_fields: ["dossiers.*.title", "dossiers.*.id"]
+                display_fields: ["dossiers.*.title"]
+                value_field: "dossiers.*.id"
+                hint: "Sélectionner un dossier existant déjà enregistré avec son identifiant. Le site crée le lien vers la publication finale ou sa carte Dossiers en cours, seulement si cette destination est publique."
+              - { label: "Première publication", name: "published_at", widget: "diploval-audit", required: false }
+              - { label: "Dernière modification", name: "updated_at", widget: "diploval-audit", required: false }
+              - { label: "Note publique de correction / mise à jour", name: "correction_note", widget: "text", required: false, hint: "Pour une modification substantielle, expliquer ici ce qui change et pourquoi. La note apparaîtra sur la page de l’actualité." }
+              - { label: "Résumé de l’actualité", name: "intro", widget: "text", hint: "Un résumé court. Le texte intégral se rédige ci-dessous et sera lu sur la page de l’article." }
               - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre l’introduction." }
               - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Texte", name: "body", widget: "text", required: false, hint: "Séparez les paragraphes par une ligne vide." }
+              - { label: "Contenu de l’actualité", name: "body", widget: "diploval-richtext", required: false }
+              - label: "Sources et références"
+                name: "sources"
+                widget: "list"
+                required: false
+                collapsed: true
+                label_singular: "Source"
+                summary: "{{fields.label}}"
+                fields:
+                  - { label: "Titre de la source", name: "label", widget: "string" }
+                  - { label: "Lien de la source", name: "url", widget: "string", pattern: ['^https?://[^\s<>]+$', 'Indiquez un lien complet commençant par https:// ou http://'] }
+                  - { label: "Auteur, média ou organisme", name: "publisher", widget: "string", required: false }
+                  - { label: "Date / date de consultation", name: "date", widget: "string", required: false }
+                  - { label: "Précision sur cette source", name: "note", widget: "text", required: false }
               - { label: "Lien facultatif", name: "link", widget: "string", required: false }
               - { label: "Texte du lien", name: "link_label", widget: "string", required: false, default: "En savoir plus" }
 
