@@ -2,6 +2,10 @@
   command = "node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/generate-seo-pages.mjs && node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/check-site.mjs"
   publish = "Diploval_Site_Complet_v20_2_Inscription_Zoom"
 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 # PDF Diploval : intégration autorisée uniquement depuis diploval.fr lui-même.
 # Cette règle DOIT rester avant /assets/* et avant /*.
 [[headers]]
@@ -17,6 +21,7 @@
 [[headers]]
   for = "/admin/*"
   [headers.values]
+    Cache-Control = "private, no-store, max-age=0"
     X-Robots-Tag = "noindex, nofollow, noarchive"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"

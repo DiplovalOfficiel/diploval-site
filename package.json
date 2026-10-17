@@ -1,0 +1,7 @@
+{
+  "name": "diploval-private-moderation",
+  "private": true,
+  "version": "9.3.0",
+  "engines": {"node": ">=22"},
+  "dependencies": {"@netlify/blobs": "10.7.12"}
+}
