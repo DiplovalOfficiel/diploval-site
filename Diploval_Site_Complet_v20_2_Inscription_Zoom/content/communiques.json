@@ -1,3 +1,18 @@
 {
-  "communiques": []
+  "communiques": [
+    {
+      "show_home": true,
+      "body": "Les convocations réciproques des ambassadeurs français et iranien, les 6 et 7 octobre 2026, ont fait apparaître un paradoxe diplomatique particulièrement révélateur.\n\nComment un État mis en cause pour de graves violations des droits humains peut-il interpeller un autre État sur le respect des libertés fondamentales ?\n\nAu-delà de cette contradiction, Diploval rappelle qu'une accusation doit être examinée selon les faits et le droit, indépendamment de l'identité de son auteur, sans établir d'équivalence artificielle entre les situations.\n\nCe communiqué de la Présidence propose une réflexion sur la cohérence des engagements internationaux, la responsabilité des États et l'universalité des droits fondamentaux.\n\nConsulter le communiqué officiel au format PDF pour découvrir notre position et les sources de vérification.",
+      "summary": "Après les convocations croisées des ambassadeurs français et iranien des 6 et 7 octobre 2026, Diploval examine le paradoxe diplomatique et rappelle une exigence : les droits fondamentaux doivent être appliqués avec cohérence, sans établir de fausse équivalence entre les deux pays.",
+      "embed_pdf": true,
+      "date": "19/10/2026",
+      "visible": true,
+      "pdf": "/assets/uploads/communique_diploval_france_iran.pdf",
+      "status": "Publié",
+      "scope": "Multi-échelles",
+      "title": "France–Iran : quand les droits fondamentaux deviennent un enjeu diplomatique",
+      "seo_description": "France–Iran : droits fondamentaux et diplomatie | Diploval",
+      "type": "presidence"
+    }
+  ]
 }
