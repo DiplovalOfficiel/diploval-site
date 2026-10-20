@@ -76,6 +76,9 @@ for(const [route,file] of routeMap){
 }
 
 function targetForPath(pathname){
+  // Resolve declared public routes before SEO directories on disk.
+  const mapped=routeMap.get(pathname)||routeMap.get(pathname.replace(/\/$/,''));
+  if(mapped) return mapped;
   const clean=pathname.replace(/^\//,'');
   const local=path.join(root,clean);
   if(fs.existsSync(local)) return fs.statSync(local).isDirectory()?path.join(local,'index.html'):local;
