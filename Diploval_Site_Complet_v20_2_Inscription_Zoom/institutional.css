@@ -1,0 +1,197 @@
+/* Diploval — institutional blue / white / cream. Existing CMS hooks are retained. */
+:root{--ink:#19384a;--ink-2:#244f70;--copper:#244f70;--copper-soft:#dbe7ef;--paper:#f5f2e9;--paper-2:#e4edf3;--sage:#244f70;--text:#19384a;--muted:#465d65;--line:#c8d5d7;--shadow:none;--radius:5px;--serif:Arial,Helvetica,sans-serif;--sans:Arial,Helvetica,sans-serif}
+.institutional-home{font-size:16px;line-height:1.65;background:#f5f2e9}
+.institutional-home [hidden]{display:none!important}
+.institutional-home h1,.institutional-home h2,.institutional-home h3,.institutional-home h4{font-family:var(--sans)!important;font-weight:500!important;letter-spacing:0!important;line-height:1.25!important;color:#19384a}
+.institutional-home h1{font-size:clamp(30px,3vw,40px)!important;max-width:500px;margin:12px 0 20px}
+.institutional-home h2{font-size:26px!important;margin:0 0 16px}
+.institutional-home h3{font-size:20px!important}
+.institutional-home h4{font-size:18px!important}
+.institutional-home em{font-style:normal;color:inherit}
+.institutional-home a:hover{text-decoration:underline;text-underline-offset:4px}
+.institutional-home :focus-visible{outline:3px solid #244f70;outline-offset:4px}
+.institutional-home p{max-width:75ch}
+.institutional-home .reveal{opacity:1;transform:none;transition:none}
+.institutional-home .eyebrow{font-size:12px;letter-spacing:.09em;color:#244f70;font-weight:700}
+.institutional-home .site-header{background:#fff;border-top:5px solid #244f70;backdrop-filter:none;position:relative;box-shadow:none}
+.institutional-home .header-inner{max-width:1120px;flex-wrap:wrap;min-height:0;gap:12px;padding:12px 0 0}
+.institutional-home .brand{width:140px;flex:none}
+.institutional-home .brand img{mix-blend-mode:normal}
+.institutional-brandline{font-size:13px;color:#465d65;flex:1}
+.institutional-home .header-actions{margin-left:auto;order:0}
+.institutional-home .main-nav{order:1;pointer-events:auto;margin:0}
+.institutional-home .main-nav{position:static;display:flex;width:100%;justify-content:flex-start;gap:26px;border-top:1px solid var(--line);padding:14px 0;background:white;box-shadow:none;transform:none;opacity:1;visibility:visible}
+.institutional-home .main-nav a{font-size:14px;font-weight:500;padding:0;color:#19384a}
+.institutional-home .menu-toggle{display:none}
+.institutional-home .hero{padding:42px 24px;background:#dae7ee;min-height:0;overflow:visible}
+.institutional-hero{max-width:1120px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.institutional-signature{color:#244f70;font-size:15px}
+.institutional-pitch{font-size:16px}
+.institutional-home .hero-buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.institutional-home .button{border-radius:4px;padding:11px 16px;font-family:var(--sans);font-size:14px;box-shadow:none;min-height:44px;height:auto;white-space:normal}
+.institutional-home .button-primary,.institutional-home .button-copper{background:#244f70;color:#fff;border:1px solid #244f70}
+.institutional-home .button-outline{background:#fff;color:#244f70;border:1px solid #8da5b6}
+.institutional-home .section,.institutional-home .contact{width:min(1120px,calc(100% - 48px));margin:0 auto;padding:34px 0;background:none;border:0}
+.institutional-home .section>div,.institutional-home .section>header{max-width:100%}
+.institutional-home .section-heading,.institutional-home .works-head,.institutional-home .agenda-head,.institutional-home .points-home-head,.institutional-home .guarantees-v207__head{display:block;margin:0 0 22px;max-width:100%}
+.institutional-home .section-heading p,.institutional-home .works-head>p{font-size:15px;line-height:1.65}
+.institutional-front{width:min(1120px,calc(100% - 48px));margin:30px auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.institutional-front>.participation-home{grid-column:1/-1;margin:0;padding:24px;background:#e1eaf0;border:1px solid var(--line);border-radius:5px}
+.institutional-front>.section,.institutional-front>.communiques-home{width:100%;margin:0;padding:24px;background:white;border:1px solid var(--line);border-radius:5px}
+.institutional-front .actualites-shell{padding:0;background:none;border:0}
+.institutional-home .participation-home__head,.institutional-home .communiques-home__head{display:block}
+.institutional-home .participation-home__head p,.institutional-home .participation-home__note{font-size:14px;line-height:1.6}
+.institutional-home .pc-list{display:grid;gap:14px}
+.institutional-home .pc-card{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:22px;background:white;border:1px solid var(--line);border-radius:4px;box-shadow:none;align-items:start}
+.institutional-home .pc-card>img{width:90px;height:125px;object-fit:contain;grid-row:1/3}
+.institutional-home .pc-actions{grid-column:2;display:flex;flex-wrap:wrap;gap:10px}
+.institutional-home .pc-chip{background:#e1eaf0;color:#244f70;font-size:12px}
+.institutional-home .pc-card p{font-size:15px}
+.institutional-home .publication-explorer{background:white;border:1px solid var(--line);border-radius:5px;padding:24px;margin-top:20px}
+.institutional-home #publication-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.institutional-home .publication-result{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0;padding:20px;background:#fff;border:1px solid var(--line);border-radius:4px;box-shadow:none}
+.institutional-home .publication-result strong{font-family:var(--sans);font-size:18px;font-weight:500;line-height:1.35}
+.institutional-home .publication-result em{font-size:13px;color:#465d65}
+.institutional-home .publication-result small{font-size:12px;color:#244f70}
+.institutional-home .publication-result-thumb{display:none}
+.institutional-home .publication-result-copy{display:flex;flex-direction:column;gap:9px}
+.institutional-home .scope-label,.institutional-home .work-scope,.institutional-home .work-tag{background:#e1eaf0;color:#244f70;border-color:#c8d5d7;font-size:12px}
+.institutional-home .publication-result-arrow{margin-top:auto}
+.institutional-home .publication-toolbar,.institutional-home .publication-filters{gap:12px}
+.institutional-home input,.institutional-home select{font-size:16px;min-height:44px;max-width:100%;border-radius:4px}
+.institutional-home .publication-scope-filters button{padding:9px 13px;min-height:44px;border-radius:4px}
+.institutional-home .publication-scope-filters .is-active{background:#244f70;color:white}
+.institutional-home .publication-note{padding:18px 0;background:none;border:0}
+.institutional-home .publication-note p{font-size:14px}
+.institutional-details{padding:14px 18px;background:#fff;border:1px solid var(--line);border-radius:4px;margin:16px 0}
+.institutional-details>summary,.institutional-service>summary{cursor:pointer;font-weight:600;color:#244f70;min-height:32px;list-style:revert}
+.institutional-details>summary,.institutional-service>summary{display:block;padding:4px 24px 4px 0;font-family:var(--sans);font-size:16px;line-height:1.5;position:relative}
+.institutional-details>summary:after,.institutional-service>summary:after{content:'+';position:absolute;right:0;top:4px;font-size:20px}
+.institutional-details[open]>summary:after,.institutional-service[open]>summary:after{content:'−'}
+.institutional-home .button-copper,.institutional-home .registration-submit{background:#244f70!important;border-color:#244f70!important;color:white!important}
+.institutional-home .button-copper:hover{background:#19384a!important;border-color:#19384a!important}
+.institutional-home .services-start p,.institutional-home .about-panel p,.institutional-home .podcast-intro p,.institutional-home .podcast-signature,.institutional-home .about-signature span,.institutional-home .about-signature small{color:#465d65}
+.institutional-home .services-start .eyebrow,.institutional-home .about-panel .eyebrow{color:#244f70}
+.institutional-home .services-start,.institutional-home .about-panel,.institutional-home .podcast-intro{color:#19384a}
+.institutional-home #admin-articles-list{display:grid;grid-template-columns:1fr;gap:14px}
+.institutional-home .actualite-card{display:grid;grid-template-columns:110px 1fr;border-radius:4px;box-shadow:none}
+.institutional-home .actualite-card>a img{height:100%;max-height:210px;object-fit:cover}
+.institutional-home .actualite-card-body{padding:16px}
+.institutional-home .actualite-card-body p{font-size:14px;line-height:1.6}
+.institutional-home .actualite-card h3{font-size:18px!important}
+.institutional-home #admin-communiques-home{grid-template-columns:1fr}
+.institutional-front{align-items:start}
+.institutional-home .podcast-intro p{color:#465d65!important}
+.institutional-home .podcast-intro .eyebrow{color:#244f70!important}
+.institutional-home .podcast-episode-copy p,.institutional-home .podcast-accessibility,.institutional-home .podcast-contact,.institutional-home .episode-actions span{color:#465d65}
+.institutional-home .podcast-brandline,.institutional-home .podcast-brandline small,.institutional-home .podcast-episode-copy small,.institutional-home .podcast-episode-number span{color:#244f70}
+.institutional-home .podcast-brandline i{background:#c8d5d7}
+.institutional-home .podcast-episode-number span{background:#e1eaf0}
+.institutional-home .site-footer p,.institutional-home .site-footer small,.institutional-home .site-footer strong{color:#e1eaf0}
+.institutional-home .about-portrait{width:180px;aspect-ratio:auto;height:230px;border-radius:4px;box-shadow:none;background:#e1eaf0;border:1px solid var(--line)}
+.institutional-home .about-portrait img{width:100%;height:100%}
+.institutional-home #admin-featured-publications{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row;grid-auto-columns:auto;gap:16px;overflow:visible;scroll-snap-type:none}
+.institutional-home #admin-featured-publications .work-card{width:auto;min-width:0;flex:none;border-radius:4px}
+.institutional-home #admin-featured-publications .work-open{border-radius:4px}
+.institutional-home #admin-featured-publications img{height:220px;object-fit:contain;background:#e1eaf0}
+.institutional-details[open]>summary{margin-bottom:20px}
+.institutional-home .services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.institutional-service{padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:4px}
+.institutional-service p{font-size:15px;margin:12px 0}
+.institutional-service small{font-size:13px;color:#465d65}
+.institutional-home .services-start{padding:24px;background:#e1eaf0;border-radius:4px;margin-top:16px;box-shadow:none}
+.institutional-home .services-boundary{padding:0;background:none;border:0;margin:0}
+.institutional-home .method-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.institutional-home .method-card{padding:22px;background:#e1eaf0;border:1px solid var(--line);border-radius:4px;min-height:0;box-shadow:none}
+.institutional-home .method-card p{font-size:15px}
+.institutional-home .method-icon{display:none}
+.institutional-home .method-number{color:#244f70;font-size:13px}
+.institutional-home .method-detail{padding:16px 0;background:none}
+.institutional-home .architecture-copy{width:100%;text-align:left;margin:0 0 18px}
+.institutional-home .architecture-path{margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.institutional-home .architecture-item{display:block;padding:18px;background:#e1eaf0;border-radius:4px;box-shadow:none;color:#19384a;border:1px solid var(--line)}
+.institutional-home .architecture-item p{color:#465d65}
+.institutional-home .path-arrow,.institutional-home .architecture-icon{display:none}
+.institutional-home .architecture-action{margin:18px 0 0;padding:0;background:none;box-shadow:none}
+.institutional-home .charte-v209{background:white;padding:0;border:0;margin:0}
+.institutional-home .charte-v209__head{display:block}
+.institutional-home .charte-v209__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.institutional-home .charte-v209__item{background:#e1eaf0;border-radius:4px;box-shadow:none}
+.institutional-home .points-home-shell,.institutional-home .agenda-shell,.institutional-home .newsletter-shell,.institutional-home .socials-wrap{padding:24px;background:#fff;border:1px solid var(--line);border-radius:5px;box-shadow:none}
+.institutional-home .agenda-foot{background:#e1eaf0;border-radius:4px;padding:16px;margin:16px 0 0}
+.institutional-home .podcast-shell{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:24px;background:#e1eaf0;border:1px solid var(--line);border-radius:5px}
+.institutional-home .podcast-studio{padding:20px;background:white;border:1px solid var(--line);border-radius:4px;box-shadow:none;color:#19384a}
+.institutional-home .podcast-studio strong,.institutional-home .podcast-studio h3{color:#19384a}
+.institutional-home .podcast-player{background:#e1eaf0;border-radius:4px}
+.institutional-home .podcast-wave span{background:#244f70}
+.institutional-home .podcast-upcoming{padding:16px;background:white;border:1px solid var(--line);border-radius:4px;display:block}
+.institutional-home .podcast-episode-number strong{font-size:24px}
+.institutional-home .about-panel{padding:24px;display:grid;grid-template-columns:180px 1fr;background:#fff;border:1px solid var(--line);border-radius:5px;box-shadow:none}
+.institutional-home .about-portrait{margin:0;min-height:0}
+.institutional-home .about-portrait img{height:230px;object-fit:cover}
+.institutional-home .about-content{padding:0 0 0 24px}
+.institutional-home .about-ground{padding:14px;background:#e1eaf0;border-radius:4px}
+.institutional-home .guarantees-v207:before,.institutional-home .guarantees-v207:after{display:none}
+.institutional-home .guarantees-v207__wrap{width:100%}
+.institutional-home .guarantees-v207__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.institutional-home .guarantees-v207__card{padding:20px;border-radius:4px;box-shadow:none;background:white;border:1px solid var(--line)}
+.institutional-home .guarantees-v207__card:before{background:#244f70;height:2px}
+.institutional-home .guarantees-v207__num,.institutional-home .guarantees-v207__action{color:#244f70}
+.institutional-home .guarantees-v207__grid>.institutional-details{grid-column:1/-1}
+.institutional-home .guarantees-v207__circle{margin:0;display:grid;grid-template-columns:1fr 1fr;padding:0}
+.institutional-home .guarantees-v207__circle-main{background:#e1eaf0;color:#19384a}
+.institutional-home .guarantees-v207__circle-main h3,.institutional-home .guarantees-v207__circle-main p,.institutional-home .guarantees-v207__status strong,.institutional-home .guarantees-v207__status span{color:#19384a}
+.institutional-home .guarantees-v207__principle{background:#e1eaf0;border:0;border-radius:4px}
+.institutional-home .newsletter-shell{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.institutional-home .newsletter-form{background:#e1eaf0;padding:22px;border-radius:4px}
+.institutional-home .contact{background:#e1eaf0;padding:32px;margin:24px auto 40px;border:1px solid var(--line);border-radius:5px}
+.institutional-home .contact h2,.institutional-home .contact p,.institutional-home .contact a{color:#19384a}
+.institutional-home .site-footer{background:#19384a;color:#fff;padding:30px 24px}
+.institutional-home .site-footer a,.institutional-home .site-footer button{color:#fff}
+@media(max-width:760px){
+ .institutional-home .header-inner{width:calc(100% - 32px);padding-bottom:12px;gap:8px}
+ .institutional-brandline{max-width:130px;font-size:11px;line-height:1.4}
+ .institutional-home .brand{width:106px}
+ .institutional-home .header-contact{display:none}
+ .institutional-home .menu-toggle{display:flex;flex-direction:column;justify-content:center;align-items:center;flex-shrink:0}
+ .institutional-home .main-nav{display:none;padding:16px 0;gap:0}
+ .institutional-home .main-nav.open{display:flex;flex-direction:column;align-items:stretch}
+ .institutional-home .main-nav a{padding:12px 4px;min-height:44px}
+ .institutional-home .hero{padding:28px 20px}
+ .institutional-hero{grid-template-columns:1fr;gap:8px}
+ .institutional-home h1{font-size:32px!important}
+ .institutional-home h2{font-size:24px!important}
+ .institutional-home .section,.institutional-front,.institutional-home .contact{width:calc(100% - 32px)}
+ .institutional-home .section{padding:24px 0}
+ .institutional-front{grid-template-columns:1fr;gap:16px;margin-top:20px}
+ .institutional-front>.participation-home{padding:18px}
+ .institutional-home .pc-card{grid-template-columns:1fr;padding:18px;gap:12px}
+ .institutional-home .pc-card>img{display:none}
+ .institutional-home .pc-actions{grid-column:1}
+ .institutional-home #publication-list,.institutional-home .services-grid,.institutional-home .method-grid,.institutional-home .architecture-path,.institutional-home .charte-v209__grid,.institutional-home .guarantees-v207__grid,.institutional-home .guarantees-v207__circle,.institutional-home .newsletter-shell,.institutional-home .podcast-shell,.institutional-home .about-panel{grid-template-columns:1fr}
+ .institutional-home .publication-explorer{padding:16px}
+ .institutional-home .publication-result{padding:18px}
+ .institutional-home .publication-toolbar{display:flex;flex-direction:column;align-items:stretch}
+ .institutional-home .publication-search,.institutional-home .publication-filter{width:100%;max-width:100%}
+ .institutional-home .publication-scope-filters{display:flex;flex-wrap:wrap;gap:6px}
+ .institutional-home .podcast-shell,.institutional-home .newsletter-shell,.institutional-home .agenda-shell,.institutional-home .points-home-shell,.institutional-home .socials-wrap,.institutional-home .about-panel{padding:18px;gap:18px}
+ .institutional-home .about-portrait img{height:210px;width:160px}
+ .institutional-home .about-content{padding:0}
+ .institutional-home .actualite-card{grid-template-columns:1fr}
+ .institutional-home .actualite-card>a img{width:100%;height:160px}
+ .institutional-home #admin-featured-publications{grid-template-columns:1fr}
+ .institutional-home .contact{padding:22px}
+ .institutional-home .services-start{display:block;padding:18px}
+ .institutional-home .services-start .button{margin-top:14px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.institutional-home *{animation:none!important;transition:none!important}}
+@media(min-width:761px) and (max-width:1000px){.institutional-home .main-nav{gap:14px;flex-wrap:wrap}.institutional-home .main-nav a{font-size:13px;min-height:32px}}
+
+/* Portrait: preserve the full original photograph on every screen. */
+.institutional-home .about-signature{color:#19384a!important}
+.institutional-home .about-ground strong{color:#244f70}
+.institutional-home .about-panel{grid-template-columns:220px minmax(0,1fr);gap:24px;align-items:start}
+.institutional-home .about-content{padding:0}
+.institutional-home .about-portrait{width:220px;max-width:100%;height:auto;aspect-ratio:4/5}
+.institutional-home .about-portrait img{width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;object-position:center;display:block}
+@media(max-width:760px){.institutional-home .about-panel{grid-template-columns:1fr}.institutional-home .about-portrait{width:200px;margin:0 auto}}
