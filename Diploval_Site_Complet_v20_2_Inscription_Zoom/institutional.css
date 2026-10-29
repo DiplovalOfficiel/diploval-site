@@ -238,3 +238,17 @@
  .institutional-home .method-detail .text-link{justify-self:start}
  .institutional-home .services-boundary{grid-template-columns:1fr}
 }
+
+/* The full offer: commissioned services, audiences and Diploval's own work. */
+.institutional-audience-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.institutional-production-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.institutional-audience-grid>article,.institutional-production-grid>article{min-width:0;padding:22px;background:#fff;border:1px solid #c8d5d7;border-radius:4px}
+.institutional-audience-grid h3,.institutional-production-grid h3{margin:0 0 12px}
+.institutional-audience-grid p,.institutional-production-grid p,.institutional-audience-note,.institutional-own-work p{font-size:15px;color:#465d65;line-height:1.7}
+.institutional-audience-note{padding:16px 20px;background:#e1eaf0;border-radius:4px;max-width:none!important}
+.institutional-own-work{padding:24px;margin:18px 0;background:#e1eaf0;border:1px solid #c8d5d7;border-radius:4px}
+.institutional-own-work h3{margin:0 0 12px}
+.institutional-own-work p a{color:#244f70;text-decoration:underline;text-underline-offset:3px}
+.institutional-production-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px}
+.institutional-production-actions .text-link{color:#244f70;text-decoration:underline}
+@media(max-width:760px){.institutional-audience-grid,.institutional-production-grid{grid-template-columns:1fr}.institutional-audience-grid>article,.institutional-production-grid>article,.institutional-own-work{padding:18px}}
