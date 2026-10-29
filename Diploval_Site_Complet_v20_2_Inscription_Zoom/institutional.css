@@ -195,3 +195,46 @@
 .institutional-home .about-portrait{width:220px;max-width:100%;height:auto;aspect-ratio:4/5}
 .institutional-home .about-portrait img{width:100%;height:auto;aspect-ratio:4/5;object-fit:contain;object-position:center;display:block}
 @media(max-width:760px){.institutional-home .about-panel{grid-template-columns:1fr}.institutional-home .about-portrait{width:200px;margin:0 auto}}
+
+/* Readability corrections: light surfaces need dark text throughout. */
+.institutional-home .method-detail{background:#e1eaf0;color:#19384a;padding:20px 24px;border:1px solid #c8d5d7;border-radius:4px;gap:16px}
+.institutional-home .method-detail strong{color:#19384a}
+.institutional-home .method-detail span{color:#465d65}
+.institutional-home .method-detail .text-link{color:#244f70;text-decoration:underline}
+.institutional-home .participation-home__head p,.institutional-home .participation-home__note,.institutional-home .participation-home__note strong{color:#465d65}
+.institutional-home .actualite-card-body>small,.institutional-home .charte-v209__num{color:#244f70}
+.institutional-home .charte-v209__item p,.institutional-home .charte-v209__foot{color:#465d65;font-size:14px}
+.institutional-home .guarantees-v207__circle-main .guarantees-v207__label{color:#244f70;background:#fff;border-color:#c8d5d7}
+.institutional-home .newsletter-choices small,.institutional-home .newsletter-privacy{color:#465d65}
+.institutional-home .contact-email{background:#fff;border:1px solid #c8d5d7;color:#19384a;border-radius:4px;padding:16px;min-width:0}
+.institutional-home .contact-email small,.institutional-home .contact-email button,.institutional-home #copy-status{color:#244f70}
+.institutional-home .site-footer .footer-bottom,.institutional-home .site-footer .footer-bottom span{color:#e1eaf0}
+.institutional-home .footer-brand{display:block;background:#fff;padding:8px;border-radius:4px;width:170px;max-width:100%}
+.institutional-home .footer-brand img{mix-blend-mode:normal;object-fit:contain;width:100%;height:auto}
+.institutional-home .footer-main{width:min(1120px,100%);grid-template-columns:170px minmax(0,1fr) minmax(260px,.8fr);gap:28px}
+.institutional-home .footer-main>p{max-width:42ch}
+.institutional-home .footer-main nav{gap:12px 18px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.institutional-home .footer-main nav a{overflow-wrap:anywhere;line-height:1.5}
+.institutional-home .footer-bottom{width:min(1120px,100%);gap:12px 22px;align-items:center}
+.institutional-home .footer-bottom button{white-space:normal;text-align:left;line-height:1.5}
+.institutional-home .social-card.is-coming{grid-template-columns:44px minmax(0,1fr)}
+.institutional-home .social-card.is-coming .social-card-copy{opacity:1}
+.institutional-home .social-card.is-coming .social-status{grid-column:2;justify-self:start;margin:0}
+.institutional-service .service-label{display:block;color:#244f70;font-size:16px;font-weight:600}
+.institutional-service .service-brief{display:block;margin-top:8px;color:#465d65;font-size:14px;font-weight:400;line-height:1.6}
+.institutional-service summary span{letter-spacing:normal;text-transform:none}
+.institutional-home .progress{display:none}
+.institutional-home .guarantees-v207__cardtop{flex-wrap:wrap;align-items:flex-start;gap:8px}
+.institutional-home .guarantees-v207__label{white-space:normal;text-align:left;max-width:100%}
+.institutional-home .services-boundary{display:block}
+.institutional-home .services-boundary p{font-size:15px;line-height:1.7;margin:10px 0 0}
+.institutional-home main :is(p,a,strong,small,summary,h1,h2,h3,h4),.institutional-home .site-footer :is(p,a,button,span){overflow-wrap:anywhere}
+.institutional-home :is(.services-grid,.method-grid,.architecture-path,.charte-v209__grid,.guarantees-v207__grid,.newsletter-shell,.contact-inner)>*{min-width:0}
+@media(min-width:761px) and (max-width:1000px){.institutional-home .guarantees-v207__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ .institutional-home .footer-main{grid-template-columns:1fr;gap:20px}
+ .institutional-home .footer-bottom{flex-direction:column;align-items:flex-start}
+ .institutional-home .method-detail{grid-template-columns:1fr;padding:18px}
+ .institutional-home .method-detail .text-link{justify-self:start}
+ .institutional-home .services-boundary{grid-template-columns:1fr}
+}
