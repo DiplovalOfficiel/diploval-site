@@ -553,7 +553,7 @@
           body: bodyData.toString()
         });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        newsletterStatus.innerHTML = '<strong>Merci.</strong><span>Vos choix ont bien été enregistrés. Les envois seront activés avec le service de diffusion dédié.</span>';
+        newsletterStatus.innerHTML = '<strong>Merci.</strong><span>Vos choix ont bien été enregistrés. Les envois commenceront à l’ouverture de la diffusion.</span>';
         newsletterStatus.className = 'newsletter-status is-success';
         newsletterForm.classList.add('is-complete');
         newsletterForm.reset();
@@ -587,11 +587,13 @@
 // Finition V24 : alléger les engagements longs sans retirer le contenu.
 (function setupGuaranteeReadMore(){
   const init=()=>{
-    document.querySelectorAll('.guarantees-v207__card').forEach(card=>{
+    document.querySelectorAll('.guarantees-v207__card').forEach((card,index)=>{
       if(card.querySelector('.guarantees-v207__more')) return;
       const p=Array.from(card.children).find(el=>el.tagName==='P' && !el.classList.contains('guarantees-v207__status') && !el.classList.contains('circle-participation-note'));
       if(!p || p.textContent.trim().length<300) return;
       const btn=document.createElement('button');
+      if(!p.id) p.id='guarantee-text-'+(index+1);
+      btn.setAttribute('aria-controls',p.id);
       btn.type='button'; btn.className='guarantees-v207__more'; btn.textContent='Lire la suite ↓'; btn.setAttribute('aria-expanded','false');
       btn.addEventListener('click',()=>{
         const expanded=card.classList.toggle('is-expanded');

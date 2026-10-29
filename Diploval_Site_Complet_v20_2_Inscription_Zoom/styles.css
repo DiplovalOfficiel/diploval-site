@@ -982,8 +982,8 @@ a.social-card:focus-visible{outline:3px solid rgba(189,109,53,.24);outline-offse
 .about-portrait img{object-fit:cover;object-position:center center}
 
 /* Garanties : lecture plus légère, sans supprimer le contenu */
-.guarantees-v207__card>p:not(.guarantees-v207__status):not(.circle-participation-note){max-height:7.1em;overflow:hidden;transition:max-height .35s var(--ease);position:relative}
-.guarantees-v207__card.is-expanded>p{max-height:40em}
+.guarantees-v207__card>p:not(.guarantees-v207__status):not(.circle-participation-note){max-height:6.72em;overflow:hidden;position:relative}
+.guarantees-v207__card.is-expanded>p:not(.guarantees-v207__status):not(.circle-participation-note){max-height:none;overflow:visible}
 .guarantees-v207__more{margin-top:.8rem;padding:0;border:0;background:transparent;color:var(--copper-text);font-weight:800;font-size:.76rem;cursor:pointer}
 .guarantees-v207__more:hover{text-decoration:underline}
 

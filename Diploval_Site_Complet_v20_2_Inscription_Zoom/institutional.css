@@ -252,3 +252,11 @@
 .institutional-production-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:20px}
 .institutional-production-actions .text-link{color:#244f70;text-decoration:underline}
 @media(max-width:760px){.institutional-audience-grid,.institutional-production-grid{grid-template-columns:1fr}.institutional-audience-grid>article,.institutional-production-grid>article,.institutional-own-work{padding:18px}}
+
+/* Keep the subscription group title in its panel, including on narrow phones. */
+.institutional-home .newsletter-choices{min-width:0;padding:16px;border-radius:4px}
+.institutional-home .newsletter-choices legend{float:left;box-sizing:border-box;width:100%;max-width:100%;margin:0 0 10px;padding:0;font-size:14px;line-height:1.6;color:#19384a;white-space:normal}
+.institutional-home .newsletter-choices>label{clear:both;min-width:0;min-height:44px;grid-template-columns:18px minmax(0,1fr);gap:10px}
+.institutional-home .newsletter-form input[type="checkbox"]{width:18px;height:18px;min-height:0;flex-shrink:0;accent-color:#244f70}
+.institutional-home .newsletter-choices :is(strong,small),.institutional-home .newsletter-consent span{overflow-wrap:anywhere;min-width:0}
+.institutional-home .newsletter-email input:focus{outline:2px solid #244f70;border-color:#244f70}
