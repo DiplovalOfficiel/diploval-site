@@ -2,7 +2,7 @@
   'use strict';
   const esc = value => String(value ?? '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   const attr = value => esc(value).replace(/`/g,'&#96;');
-  const slugify = value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,80);
+  const slugify = (value, maxLength = 80) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,maxLength);
   const textParagraphs = value => String(value || '').split(/\n\s*\n/).filter(Boolean).map(p => `<p>${esc(p).replace(/\n/g,'<br>')}</p>`).join('');
   const normalizePath = value => value ? (String(value).startsWith('/') ? String(value) : String(value)) : '';
   const monthNames = ['JAN.','FÉV.','MARS','AVR.','MAI','JUIN','JUIL.','AOÛT','SEP.','OCT.','NOV.','DÉC.'];
@@ -91,7 +91,7 @@
   }
 
 
-  function communiqueId(c){return c.id||slugify(c.title)}
+  function communiqueId(c){return c.id||slugify(c.title,100)}
   function communiqueTypeLabel(t){return t==='presidence'?'Présidence de Diploval':'Diploval · Institutionnel'}
   function renderCommuniquesHome(data){
     const section=document.querySelector('#communiques-home'),host=document.querySelector('#admin-communiques-home');

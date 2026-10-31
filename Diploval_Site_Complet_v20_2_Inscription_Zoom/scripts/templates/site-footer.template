@@ -1,0 +1,24 @@
+<footer class="site-footer">
+<div class="footer-main">
+<a class="footer-brand" href="/#top"><img alt="Diploval" decoding="async" height="452" src="/assets/logo-diploval.jpg" width="899"></a>
+<p>Des analyses, des outils et des espaces de dialogue pour aider à décider sans perdre le vivant en chemin.</p>
+<nav aria-label="Navigation de pied de page"><a href="/#services">Services et missions</a><a href="/#publics">Pour qui ?</a>
+<a href="/#methode">Méthode</a><a href="/points-information">Points d’information</a>
+<a href="/#travaux">Travaux</a><a href="/communiques">Communiqués</a><a href="/#agenda">Agenda</a>
+<a href="/#architecture">Charte</a>
+
+<a href="/#reseaux">Réseaux</a>
+<a href="/#garanties">Garanties</a>
+<a href="/#faq">Questions</a>
+<a href="/#lettre-diploval">Lettre d’information</a>
+<a href="/#contact">Contact</a>
+</nav>
+</div>
+<div class="footer-bottom">
+<span>© <span id="year"></span> Diploval</span>
+<button class="legal-open" type="button">Mentions légales</button>
+<button class="privacy-open" type="button">Données personnelles</button>
+<button class="publication-open" type="button">Publications &amp; réutilisation</button>
+<span>Au vivant qui nous unit.</span>
+</div>
+</footer>

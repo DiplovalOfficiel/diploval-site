@@ -105,3 +105,31 @@
   from = "/dossiers/numerisation-securite-resilience"
   to = "/dossier-numerisation.html"
   status = 200
+
+# Preserve the previously published short link to the Senate communique.
+[[redirects]]
+  from = "/communiques/propos-tenus-au-senat-quelles-garanties-de-responsabilite-face-a-l-evocation-d-u"
+  to = "/communiques/propos-tenus-au-senat-quelles-garanties-de-responsabilite-face-a-l-evocation-d-une-violence-potentie/"
+  status = 301
+  force = true
+
+# Preserve the previously published short link to the Senate communique.
+[[redirects]]
+  from = "/communiques/propos-tenus-au-senat-quelles-garanties-de-responsabilite-face-a-l-evocation-d-u/"
+  to = "/communiques/propos-tenus-au-senat-quelles-garanties-de-responsabilite-face-a-l-evocation-d-une-violence-potentie/"
+  status = 301
+  force = true
+
+# Preserve the previously published short link to the Senate communique.
+[[redirects]]
+  from = "/communiques/propos-tenus-au-senat-quelles-garanties-de-responsabilite-face-a-l-evocation-d-une-violenc"
+  to = "/communiques/propos-tenus-au-senat-quelles-garanties-de-responsabilite-face-a-l-evocation-d-une-violence-potentie/"
+  status = 301
+  force = true
+
+# Preserve the previously published short link to the Senate communique.
+[[redirects]]
+  from = "/communiques/propos-tenus-au-senat-quelles-garanties-de-responsabilite-face-a-l-evocation-d-une-violenc/"
+  to = "/communiques/propos-tenus-au-senat-quelles-garanties-de-responsabilite-face-a-l-evocation-d-une-violence-potentie/"
+  status = 301
+  force = true

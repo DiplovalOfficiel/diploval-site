@@ -1,0 +1,15 @@
+<a class="skip-link" href="#main">Aller au contenu</a>
+<header class="site-header" id="top">
+<div class="header-inner">
+<a aria-label="Diploval, retour à l’accueil" class="brand" href="/#accueil">
+<img alt="Diploval" decoding="async" height="452" src="/assets/logo-diploval.jpg" width="899">
+</a><span class="institutional-brandline">Analyse, décision &amp; intérêt général</span>
+<div class="header-actions">
+<a class="header-contact" href="mailto:contact@diploval.fr?subject=Prise%20de%20contact%20avec%20Diploval">Nous contacter</a>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Ouvrir le menu" class="menu-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+</div>
+<nav aria-label="Navigation principale" class="main-nav" id="main-nav"><a href="/#travaux">Publications</a><a href="/propositions-contributions">Contribuer</a><a href="/#services">Nos services</a><a href="/#publics">Pour qui ?</a><a href="/#methode">Notre méthode</a><a href="/points-information">Points d’information</a><a href="/#apropos">Diploval</a><a href="/#contact">Contact</a></nav>
+</div>
+</header>

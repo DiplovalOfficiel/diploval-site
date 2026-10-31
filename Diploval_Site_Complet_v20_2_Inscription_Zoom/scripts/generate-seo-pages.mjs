@@ -63,3 +63,7 @@ try{const p=path.join(root,'index.html');let h=fs.readFileSync(p,'utf8');const o
 
 const xml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemap.map(x=>`  <url><loc>${x.url.replace(/&/g,'&amp;')}</loc>${x.lastmod?`<lastmod>${x.lastmod}</lastmod>`:''}</url>`).join('\n')}\n</urlset>\n`;fs.writeFileSync(path.join(root,'sitemap.xml'),xml);
 console.log(`SEO pages generated: ${sitemap.length} URLs`);
+
+// Apply the common public shell after all page generation.
+const {unifyPublicLayout}=await import('./unify-public-layout.mjs');
+unifyPublicLayout(root);

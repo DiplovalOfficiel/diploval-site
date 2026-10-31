@@ -44,5 +44,5 @@ export function generateArticles(root,articles,helpers){
   home=home.replace(/<section\b[^>]*id="actualites"[^>]*>/,tag=>list.length?tag.replace(/\s+hidden(?:="[^"]*")?/,''):tag.includes('hidden')?tag:tag.replace('>',' hidden>'));
   if(!home.includes('/article-state.js'))home=home.replace(/<script[^>]*src="\/?content-admin\.js[^"]*"[^>]*><\/script>/,tag=>'<script src="/article-state.js?v=1"></script>'+tag);
   if(!home.includes('/article.css?'))home=home.replace('</head>','<link rel="stylesheet" href="/article.css?v=1"></head>');
-  home=home.replace(/content-admin\.js\?v=\d+/g,'content-admin.js?v=31');fs.writeFileSync(homePath,home);
+  home=home.replace(/content-admin\.js\?v=\d+/g,'content-admin.js?v=32');fs.writeFileSync(homePath,home);
 }
