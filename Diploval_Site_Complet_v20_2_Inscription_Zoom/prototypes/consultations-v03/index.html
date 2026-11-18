@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="Prototype fictif Diploval V0.3 : échanges citoyens modérés et suivi des contributions. Aucune donnée réelle.">
+  <title>Diploval V0.3 — Maquette des échanges citoyens</title>
+  <link rel="icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="./style.css?v=1">
+  <script src="./app.js?v=1" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Retour au site Diploval">
+      <img src="/assets/logo-diploval.jpg" alt="" width="44" height="44">
+      <span><strong>DIPLOVAL</strong><small>Penser local, projeter global</small></span>
+    </a>
+    <a class="toplink" href="/propositions-contributions">Consultations Diploval</a>
+  </header>
+  <div class="preview-bar" role="status">
+    <strong>MAQUETTE V0.3 — DONNÉES FICTIVES</strong>
+    <span>Aucune réponse n'est envoyée, enregistrée sur serveur ou publiée. Les actions sont simulées localement et disparaissent au rechargement.</span>
+  </div>
+
+  <main id="main">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Consultations participatives et dialogiques · V0.3</p>
+        <h1>Des arguments qui se rencontrent, sans se confondre.</h1>
+        <p class="lead">Découvrez comment une contribution pourrait recevoir des réponses, être signalée si nécessaire et évoluer dans le temps, tout en conservant une modération préalable.</p>
+        <p class="hero-note">Exemple de thème : « Engagements électoraux : quelle responsabilité devant les citoyens ? » — les avis ci-dessous sont inventés pour illustrer le fonctionnement, sans position attribuée à Diploval.</p>
+      </div>
+      <aside class="principles" aria-label="Règles de fonctionnement">
+        <h2>Les garanties</h2>
+        <ul>
+          <li>Lecture publique et possibilité de proposer une réponse pour tous</li>
+          <li>Publication uniquement après décision humaine</li>
+          <li>Aucun vote de popularité entre les idées</li>
+          <li>Versions précédentes et décisions retraçables</li>
+        </ul>
+      </aside>
+    </section>
+
+    <nav class="tabs" role="tablist" aria-label="Explorer le prototype">
+      <button type="button" role="tab" id="tab-threads" aria-controls="view-threads" aria-selected="true" tabindex="0" data-tab="threads">Échanges publics</button>
+      <button type="button" role="tab" id="tab-personal" aria-controls="view-personal" aria-selected="false" tabindex="-1" data-tab="personal">Suivi personnel</button>
+      <button type="button" role="tab" id="tab-moderation" aria-controls="view-moderation" aria-selected="false" tabindex="-1" data-tab="moderation">Modération (simulation)</button>
+    </nav>
+    <p id="activity" class="activity" role="status" aria-live="polite"></p>
+
+    <section id="view-threads" role="tabpanel" aria-labelledby="tab-threads" class="view">
+      <div class="section-heading">
+        <div><p class="eyebrow">Espace ouvert à la lecture</p><h2>Les échanges autour des arguments</h2><p>Une contribution principale, des réponses courtes et contextualisées. Les nouveaux messages restent privés tant que la modération n'a pas statué.</p></div>
+        <span class="small-tag">3 contributions fictives</span>
+      </div>
+      <div class="filters">
+        <label for="filter-theme">Thème
+          <select id="filter-theme">
+            <option value="">Tous les thèmes</option>
+            <option value="transparence">Transparence</option>
+            <option value="liberte">Liberté de jugement</option>
+            <option value="suivi">Suivi des engagements</option>
+          </select>
+        </label>
+        <label for="filter-search">Rechercher un argument
+          <input id="filter-search" type="search" placeholder="Ex. : justification, circonstances…">
+        </label>
+      </div>
+      <p class="filter-count" id="filter-count" aria-live="polite">3 fils affichés</p>
+      <div class="threads" id="threads-list">
+        <article class="thread" id="argument-ce-0012" data-thread="CE-2026-0012" data-theme="transparence">
+          <header class="thread-head"><div><span class="small-tag">Transparence</span><span class="status-tag">Publication autorisée après modération</span></div><span class="thread-ref">CE-2026-0012</span></header>
+          <h3>Comment expliquer publiquement un engagement modifié ?</h3>
+          <p class="argument-text">« Lorsqu'un engagement électoral important évolue, il me semblerait utile de publier les raisons du changement, avec les informations disponibles. »</p>
+          <p class="attribution">Argument fictif · Participant A · version publique 2</p>
+          <div class="replies" aria-label="Réponses publiques">
+            <div class="reply"><strong>Participant B</strong><p>Une explication devrait aussi pouvoir préciser les contraintes budgétaires ou juridiques nouvelles.</p></div>
+            <div class="reply"><strong>Participant C</strong><p>Peut-on demander une justification sans créer une obligation trop lourde pour les petites collectivités ?</p></div>
+          </div>
+          <div class="thread-actions"><button type="button" class="action primary" data-reply="CE-2026-0012">Proposer une réponse</button><button type="button" class="action subtle" data-flag="CE-2026-0012">Signaler</button><a href="#view-personal" class="inline-link" data-open-view="personal">Voir un exemple de suivi</a></div>
+        </article>
+
+        <article class="thread" id="argument-ce-0013" data-thread="CE-2026-0013" data-theme="liberte">
+          <header class="thread-head"><div><span class="small-tag">Liberté de jugement</span><span class="status-tag">Publication autorisée après modération</span></div><span class="thread-ref">CE-2026-0013</span></header>
+          <h3>La possibilité de changer d'avis doit rester réelle</h3>
+          <p class="argument-text">« Il arrive que de nouvelles informations rendent un engagement inadapté. Il faut pouvoir le réexaminer sans considérer chaque évolution comme une faute. »</p>
+          <p class="attribution">Argument fictif · Participant D · version publique 1</p>
+          <div class="replies" aria-label="Réponses publiques">
+            <div class="reply"><strong>Participant E</strong><p>D'accord sur le principe, mais comment le citoyen distingue-t-il un véritable changement de circonstances d'une simple réorientation ?</p></div>
+          </div>
+          <div class="thread-actions"><button type="button" class="action primary" data-reply="CE-2026-0013">Proposer une réponse</button><button type="button" class="action subtle" data-flag="CE-2026-0013">Signaler</button></div>
+        </article>
+
+        <article class="thread" id="argument-ce-0014" data-thread="CE-2026-0014" data-theme="suivi">
+          <header class="thread-head"><div><span class="small-tag">Suivi des engagements</span><span class="status-tag">Publication autorisée après modération</span></div><span class="thread-ref">CE-2026-0014</span></header>
+          <h3>Quelle méthode pour suivre les engagements ?</h3>
+          <p class="argument-text">« Un tableau de suivi peut être utile, à condition de distinguer les engagements vérifiables des intentions générales et de publier les méthodes utilisées. »</p>
+          <p class="attribution">Argument fictif · Participant F · version publique 1</p>
+          <div class="replies" aria-label="Réponses publiques">
+            <div class="reply"><strong>Participant G</strong><p>Le suivi gagnerait à inclure le droit de réponse des personnes concernées et une présentation des incertitudes.</p></div>
+          </div>
+          <div class="thread-actions"><button type="button" class="action primary" data-reply="CE-2026-0014">Proposer une réponse</button><button type="button" class="action subtle" data-flag="CE-2026-0014">Signaler</button></div>
+        </article>
+      </div>
+      <p id="no-results" class="empty" hidden>Aucun fil fictif ne correspond à cette recherche. Essayez un autre terme.</p>
+
+      <section class="composer" id="reply-composer" aria-labelledby="reply-heading" hidden>
+        <h3 id="reply-heading">Proposer une réponse</h3>
+        <p id="reply-context"></p>
+        <p class="help">Votre texte ne serait visible qu'après examen humain. Dans cette maquette, l'envoi est uniquement simulé.</p>
+        <form id="reply-form">
+          <label for="reply-text">Votre réponse argumentée <span class="required">*</span></label>
+          <textarea id="reply-text" required minlength="10" maxlength="1800" rows="4" placeholder="Votre point de vue, question ou complément…"></textarea>
+          <div class="form-actions"><button type="submit" class="action primary">Simuler un dépôt pour modération</button><button type="button" class="action subtle" id="reply-cancel">Annuler</button></div>
+        </form>
+      </section>
+
+      <section class="composer" id="report-composer" aria-labelledby="report-heading" hidden>
+        <h3 id="report-heading">Signaler un contenu</h3>
+        <p id="report-context"></p>
+        <p class="help">Un signalement déclenche un examen humain. Il ne supprime pas automatiquement la publication concernée.</p>
+        <form id="report-form">
+          <label for="report-reason">Pourquoi souhaitez-vous signaler ce contenu ?</label>
+          <select id="report-reason" required>
+            <option value="">Choisir un motif…</option>
+            <option value="Données personnelles exposées">Données personnelles exposées</option>
+            <option value="Propos insultants ou discriminatoires">Propos insultants ou discriminatoires</option>
+            <option value="Hors sujet répété ou spam">Hors sujet répété ou spam</option>
+            <option value="Autre motif nécessitant un examen">Autre motif nécessitant un examen</option>
+          </select>
+          <label for="report-details">Précisions facultatives</label>
+          <textarea id="report-details" maxlength="600" rows="3" placeholder="Expliquez brièvement ce qui vous paraît problématique…"></textarea>
+          <div class="form-actions"><button type="submit" class="action primary">Simuler un signalement</button><button type="button" class="action subtle" id="report-cancel">Annuler</button></div>
+        </form>
+      </section>
+      <p class="disclaimer">Les contributions reproduites ici ne sont pas de vraies opinions recueillies par Diploval. Une contribution publiée ne signifie pas que Diploval approuve son contenu.</p>
+    </section>
+
+    <section id="view-personal" role="tabpanel" aria-labelledby="tab-personal" class="view" hidden>
+      <div class="section-heading"><div><p class="eyebrow">Accès personnel sécurisé — fonctionnement envisagé</p><h2>Ma contribution et son historique</h2><p>Une référence pour retrouver le dossier, et un accès personnel vérifié pour effectuer des modifications.</p></div></div>
+      <div class="personal-grid">
+        <article class="panel personal-main">
+          <div class="panel-overline">Dossier de démonstration · référence publique fictive</div>
+          <div class="reference"><strong id="personal-ref">CE-2026-0012</strong><button class="action subtle" id="copy-ref" type="button">Copier</button></div>
+          <p class="help"><strong>Le numéro seul ne permet pas de modifier une réponse.</strong> Sur le futur service, un lien temporaire envoyé à l'adresse e-mail vérifiée de l'auteur sera nécessaire. Cette maquette ne demande aucune adresse ni aucun mot de passe.</p>
+          <h3>Texte actuellement visible</h3>
+          <blockquote>Lorsqu'un engagement électoral important évolue, il me semblerait utile de publier les raisons du changement, avec les informations disponibles.</blockquote>
+          <p class="status-line">Version publique 2 · autorisée après modération</p>
+          <form id="revision-form">
+            <label for="revision-text">Proposer une nouvelle version de ma contribution</label>
+            <textarea id="revision-text" rows="5" minlength="15" maxlength="2200" required>Lorsqu'un engagement électoral important évolue, il me semblerait utile de publier les raisons du changement, avec les informations disponibles.</textarea>
+            <p class="help">La nouvelle version sera examinée avant publication. Dans l'intervalle, l'ancienne version publique reste visible. L'historique interne ne sera pas effacé automatiquement.</p>
+            <button class="action primary" type="submit">Simuler une proposition de révision</button>
+          </form>
+        </article>
+        <aside class="panel">
+          <h3>Historique du dossier</h3>
+          <ol class="timeline" id="revision-history">
+            <li><strong>Version 1 · reçue</strong><span>Contribution initiale déposée</span></li>
+            <li><strong>Version 1 · contrôlée</strong><span>Décision humaine de publication</span></li>
+            <li><strong>Version 2 · publiée</strong><span>Précision ajoutée après contrôle</span></li>
+          </ol>
+          <div class="policy-note"><strong>En pratique</strong><p>La conservation et l'affichage de l'historique respecteront les droits de rectification, de retrait de publication et d'effacement applicables.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="view-moderation" role="tabpanel" aria-labelledby="tab-moderation" class="view" hidden>
+      <div class="section-heading"><div><p class="eyebrow">Vue fictive · pas un espace administrateur réel</p><h2>Comment fonctionne la modération préalable ?</h2><p>Les réponses et révisions non vérifiées restent hors des échanges publics. Chaque décision est motivée et tracée.</p></div></div>
+      <div class="moderation-warning" role="note"><strong>Démonstration publique uniquement.</strong> Sur le vrai site, cette interface sera protégée. Aucun compte, aucune donnée ni aucun pouvoir réel de modération ne sont disponibles ici.</div>
+      <div class="moderation-summary" id="moderation-summary" aria-live="polite"></div>
+      <div class="moderation-queue" id="moderation-queue"></div>
+      <p class="disclaimer">Les boutons ci-dessus changent seulement l'état des fiches fictives dans cette page. Une vraie modération exigera une connexion habilitée, un historique d'audit, une vérification des droits et un stockage protégé.</p>
+    </section>
+  </main>
+  <footer><span>Diploval — maquette technique V0.3, sans publication ni traitement de données réelles.</span><a href="/">Retour au site public</a></footer>
+  <noscript><p class="noscript">Activez JavaScript pour essayer les interactions de cette maquette. Les contenus fictifs restent lisibles sans JavaScript.</p></noscript>
+</body>
+</html>
