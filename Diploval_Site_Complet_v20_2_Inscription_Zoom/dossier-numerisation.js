@@ -13,7 +13,7 @@
   let pdfBlobUrl='';
   let pdfLoading=null;
   async function loadPdfViewer(){
-    if(!pdfFrame || pdfFrame.dataset.loaded==='true') return;
+    if(!pdfFrame || pdfFrame.dataset.loaded==='true' || window.DiplovalPDFViewer?.isMobile?.()) return;
     if(pdfLoading) return pdfLoading;
     const source=pdfFrame.dataset.pdfSrc;
     if(!source) return;
