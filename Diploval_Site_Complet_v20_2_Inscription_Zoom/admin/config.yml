@@ -65,7 +65,7 @@ collections:
               - label: "Type de publication"
                 name: "type"
                 widget: "select"
-                hint: "Le libellé choisi devient automatiquement la petite étiquette de la carte. Sa couleur et sa taille sont gérées par le site pour rester cohérentes. Liste de tous les dossiers et documents de la bibliothèque. Ajouter une entrée crée un nouveau document administratif ; rendre visible et sélectionner le bon statut restent des décisions distinctes. Étiquette éditoriale visible sur la carte et la fiche du document. Choisir un type fidèle au contenu."
+                hint: "Le libellé choisi devient automatiquement la petite étiquette de la carte. Sa couleur et sa taille sont gérées par le site pour rester cohérentes. Étiquette éditoriale visible sur la carte et la fiche du document. Choisir un type fidèle au contenu."
                 options: ["Note d’alerte", "Document de cadrage", "Note stratégique et juridique", "Référentiel · Méthode", "Analyse", "Article", "Charte · Socle", "Contribution", "Document de référence", "Dossier d’analyse", "Édito", "Étude", "Fiche pratique", "Guide", "Mémorandum", "Note stratégique", "Note d’éclairage", "Proposition", "Rapport", "Référentiel", "Suivi", "Synthèse", "Synthèse décideurs"]
               - label: "Filtre de format"
                 name: "type_filter"
