@@ -78,6 +78,15 @@ function inView(host,callback){
  }else callback();
 }
 style();
+const mobileMode=mobile();
+document.querySelectorAll('[data-pdf-native-href]').forEach(link=>{
+ if(mobileMode){
+   link.href=link.dataset.pdfNativeHref;
+   link.target='_blank';
+   link.rel='noopener';
+   link.textContent='Lire le PDF';
+ }
+});
 document.querySelectorAll('[data-pdf-viewer]').forEach(host=>{
  const source=host.dataset.pdfSrc,frame=host.querySelector('[data-pdf-frame]'),status=host.querySelector('[data-pdf-status]');
  if(!source||!frame)return;
