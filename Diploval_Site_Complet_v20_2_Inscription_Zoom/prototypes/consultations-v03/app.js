@@ -77,7 +77,7 @@ function openEditor(which,ref){
  box.querySelector('textarea,select')?.focus({preventScroll:true});
 }
 document.querySelectorAll('[data-reply]').forEach(b=>b.addEventListener('click',()=>openEditor('reply',b.dataset.reply)));
-document.querySelectorAll('[data-flag]').forEach(b=>b.addEventListener('click',()=>openEditor('report',b.dataset.flag)));
+document.addEventListener('click',e=>{const b=e.target.closest('[data-flag]');if(b)openEditor('report',b.dataset.flag);});
 $('reply-cancel').addEventListener('click',closeEditors);
 $('report-cancel').addEventListener('click',closeEditors);
 function addQueue(kind,ref,message){
@@ -134,7 +134,7 @@ function appendPublicReply(record){
  const thread=threads.find(t=>t.dataset.thread===record.ref);
  if(!thread)return;
  const reply=node('div','reply');
- reply.append(node('strong','', 'Participant de démonstration · message fictif'),node('p','',record.message));
+ const caption=node('div','reply-caption');caption.append(node('strong','', 'Participant de démonstration · message fictif'));const flag=node('button','report-reply','Signaler ce commentaire');flag.type='button';flag.dataset.flag=record.ref+'/SIM-'+record.id;caption.append(flag);reply.append(caption,node('p','',record.message));
  const replies=thread.querySelector('.replies');
  replies?.append(reply);
  filterThreads();
@@ -147,8 +147,10 @@ function acceptRevision(record){
   thread.querySelector('.attribution').textContent='Argument fictif · Participant A · nouvelle version autorisée (simulation)';
  }
  const quote=$('view-personal').querySelector('blockquote');
+ const oldPublicText=quote.textContent;
  quote.textContent=record.message;
- const li=node('li');li.append(node('strong','', 'Nouvelle version fictive · autorisée'),node('span','', 'Ancienne version conservée dans l’historique de démonstration.'));
+ const li=node('li');li.append(node('strong','', 'Nouvelle version fictive · autorisée'),node('span','', 'Nouvelle formulation publique après validation humaine.'));
+ const details=node('details');details.append(node('summary','', 'Lire la formulation précédente conservée'),node('p','',oldPublicText));li.append(details);
  $('revision-history').append(li);
 }
 function decide(id,decision){
