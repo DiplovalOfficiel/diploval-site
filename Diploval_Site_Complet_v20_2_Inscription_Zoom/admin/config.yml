@@ -25,17 +25,19 @@ collections:
           - label: "Publications"
             name: "publications"
             widget: "list"
+            hint: "Bibliothèque des documents : chaque élément possède son propre statut, sa visibilité, son PDF et son identifiant. Ajouter crée une nouvelle fiche, sans publication automatique."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter une publication"
             summary: "{{fields.title}} — {{fields.status}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
-              - { label: "Mettre en avant", name: "featured", widget: "boolean", default: false }
-              - { label: "Ouvrir cette publication à la contribution citoyenne", name: "participation_enabled", widget: "boolean", default: false, required: false, hint: "La page, le formulaire et les liens sont créés automatiquement au déploiement. Renseignez ci-dessous la version, la question et le calendrier ; le PDF doit être disponible." }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify. Autorise l’affichage public après enregistrement et déploiement. Désactiver pour préparer le contenu hors des pages publiques ; le fichier déposé dans les ressources peut néanmoins rester accessible par lien direct." }
+              - { label: "Mettre en avant", name: "featured", widget: "boolean", default: false , hint: "Met le document en avant dans la sélection de l’accueil. Ne change ni son texte ni son statut de publication." }
+              - { label: "Ouvrir cette publication à la contribution citoyenne", name: "participation_enabled", widget: "boolean", default: false, required: false, hint: "La page, le formulaire et les liens sont créés automatiquement au déploiement. Renseignez ci-dessous la version, la question et le calendrier ; le PDF doit être disponible. Active la création d’une page et d’un formulaire de consultation au déploiement, si le document est public et les champs requis sont remplis. Ne pas l’activer avant validation éditoriale." }
               - label: "Statut de la consultation"
                 name: "participation_status"
                 widget: "select"
+                hint: "État annoncé au public : à venir, ouverte, close ou résultats publiés. Vérifier les dates et la cohérence de cet état avant tout enregistrement."
                 default: "Consultation à venir"
                 required: false
                 options:
@@ -43,31 +45,33 @@ collections:
                   - "Consultation à venir"
                   - "Consultation close"
                   - "Résultats publiés"
-              - { label: "Question directrice de la consultation", name: "participation_question", widget: "text", required: false }
-              - { label: "Ce qui est établi", name: "participation_established", widget: "text", required: false }
-              - { label: "Ce qui reste à instruire", name: "participation_uncertain", widget: "text", required: false }
-              - { label: "Ce qui n’est pas présumé", name: "participation_not_presumed", widget: "text", required: false }
+              - { label: "Question directrice de la consultation", name: "participation_question", widget: "text", required: false , hint: "Question principale soumise aux contributeurs. Elle doit être ouverte, intelligible et permettre des arguments favorables comme contradictoires." }
+              - { label: "Ce qui est établi", name: "participation_established", widget: "text", required: false , hint: "Présente les faits suffisamment étayés du dossier. Faire la différence entre données établies, hypothèses et interprétations." }
+              - { label: "Ce qui reste à instruire", name: "participation_uncertain", widget: "text", required: false , hint: "Décrit les points qui restent incertains ou nécessitent des vérifications ; cela aide les citoyens à cibler leurs apports." }
+              - { label: "Ce qui n’est pas présumé", name: "participation_not_presumed", widget: "text", required: false , hint: "Explique ce que Diploval ne tient pas pour acquis et ce que la consultation ne préjuge pas, afin d’éviter toute question orientée." }
               - label: "Parties du document proposées dans le formulaire"
                 name: "participation_sections"
                 widget: "list"
+                hint: "Liste des chapitres ou thèmes proposés dans le formulaire de contribution. Employer les intitulés réellement présents dans le PDF de référence."
                 required: false
-                field: { label: "Partie", name: "section", widget: "string" }
-              - { label: "Ouverture de la consultation", name: "participation_opens", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
-              - { label: "Clôture incluse de la consultation", name: "participation_closes", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, hint: "Le formulaire est désactivé dans le navigateur après cette date (heure de Paris). Mettre aussi le statut à Consultation close et republier pour retirer le formulaire du HTML." }
-              - { label: "Règle de calendrier / précisions", name: "participation_schedule", widget: "text", required: false, hint: "Obligatoire si aucune date de clôture n’est fixée. Ne pas inventer de date : expliquer quand et comment la clôture sera annoncée." }
-              - { label: "Suites et synthèse de consultation", name: "participation_followup", widget: "text", required: false }
-              - { label: "Bilan de consultation (PDF)", name: "participation_results_pdf", widget: "file", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Historique des modifications et versions antérieures", name: "participation_history", widget: "text", required: false, hint: "Indiquer les changements, leurs raisons et les références des versions conservées. Ne pas remplacer un PDF déjà consulté par un autre fichier de même nom." }
-              - { label: "Identifiant interne (facultatif)", name: "id", widget: "string", required: false, hint: "Identifiant unique et stable, par exemple pure-salmon. Garder le même pour modifier une publication existante. Laisser vide le calcule depuis le titre ; un identifiant explicite évite de changer l’adresse lors d’un changement de titre." }
-              - { label: "Titre", name: "title", widget: "string" }
+                field: { label: "Partie", name: "section", widget: "string" , hint: "Nom exact d’une section du document que le contributeur pourra sélectionner. Respecter l’organisation du dossier." }
+              - { label: "Ouverture de la consultation", name: "participation_opens", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false , hint: "Date à partir de laquelle la consultation est annoncée ouverte. Vérifier le fuseau horaire et l’annonce publique." }
+              - { label: "Clôture incluse de la consultation", name: "participation_closes", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, hint: "Le formulaire est désactivé dans le navigateur après cette date (heure de Paris). Mettre aussi le statut à Consultation close et republier pour retirer le formulaire du HTML. Dernier jour inclus de recueil des contributions ; le formulaire se désactive selon cette date côté navigateur. Il faut aussi mettre à jour le statut et redéployer." }
+              - { label: "Règle de calendrier / précisions", name: "participation_schedule", widget: "text", required: false, hint: "Obligatoire si aucune date de clôture n’est fixée. Ne pas inventer de date : expliquer quand et comment la clôture sera annoncée. Texte expliquant le calendrier ou la procédure de clôture si aucune date finale n’est prévue. Il sera visible par les participants." }
+              - { label: "Suites et synthèse de consultation", name: "participation_followup", widget: "text", required: false , hint: "Suites de la consultation : synthèse contradictoire, traitement des arguments ou décisions prises. Ne publier que ce qui est effectivement vérifié." }
+              - { label: "Bilan de consultation (PDF)", name: "participation_results_pdf", widget: "file", required: false, choose_url: false, allow_multiple: false , hint: "PDF du bilan ou de la restitution publique après instruction. Ne pas y mettre de données personnelles ni de contributions non modérées." }
+              - { label: "Historique des modifications et versions antérieures", name: "participation_history", widget: "text", required: false, hint: "Indiquer les changements, leurs raisons et les références des versions conservées. Ne pas remplacer un PDF déjà consulté par un autre fichier de même nom. Historique public des changements, versions de référence et motifs des corrections. Ne jamais écraser silencieusement le PDF ayant servi à une consultation." }
+              - { label: "Identifiant interne (facultatif)", name: "id", widget: "string", required: false, hint: "Identifiant unique et stable, par exemple pure-salmon. Garder le même pour modifier une publication existante. Laisser vide le calcule depuis le titre ; un identifiant explicite évite de changer l’adresse lors d’un changement de titre. Identifiant unique utilisé dans les liens internes et les adresses des pages. Ne pas le modifier après publication : les anciens liens pourraient cesser de fonctionner." }
+              - { label: "Titre", name: "title", widget: "string" , hint: "Titre affiché au public sur la page et dans les listes. Le modifier peut affecter une adresse calculée automatiquement : conserver l’identifiant stable." }
               - label: "Type de publication"
                 name: "type"
                 widget: "select"
-                hint: "Le libellé choisi devient automatiquement la petite étiquette de la carte. Sa couleur et sa taille sont gérées par le site pour rester cohérentes."
+                hint: "Le libellé choisi devient automatiquement la petite étiquette de la carte. Sa couleur et sa taille sont gérées par le site pour rester cohérentes. Étiquette éditoriale visible sur la carte et la fiche du document. Choisir un type fidèle au contenu."
                 options: ["Note d’alerte", "Document de cadrage", "Note stratégique et juridique", "Référentiel · Méthode", "Analyse", "Article", "Charte · Socle", "Contribution", "Document de référence", "Dossier d’analyse", "Édito", "Étude", "Fiche pratique", "Guide", "Mémorandum", "Note stratégique", "Note d’éclairage", "Proposition", "Rapport", "Référentiel", "Suivi", "Synthèse", "Synthèse décideurs"]
               - label: "Filtre de format"
                 name: "type_filter"
                 widget: "select"
+                hint: "Catégorie technique utilisée dans les filtres de recherche. Elle doit rester cohérente avec le type de publication."
                 options:
                   - { label: "Note", value: "note" }
                   - { label: "Analyse", value: "analyse" }
@@ -78,11 +82,12 @@ collections:
               - label: "Échelle"
                 name: "scope"
                 widget: "select"
-                hint: "Cette valeur devient automatiquement l’étiquette d’échelle. Pour Local, Départemental ou Régional, utilisez le filtre Territorial ci-dessous."
+                hint: "Cette valeur devient automatiquement l’étiquette d’échelle. Pour Local, Départemental ou Régional, utilisez le filtre Territorial ci-dessous. Indique l’échelle ou le territoire concerné par le sujet. Ce libellé apparaît comme repère de lecture."
                 options: ["Local", "Départemental", "Régional", "Territorial", "National", "Europe", "International", "Multi-échelles"]
               - label: "Filtre d’échelle"
                 name: "scope_filter"
                 widget: "select"
+                hint: "Catégorie technique utilisée pour filtrer les publications par échelle. Elle doit correspondre à l’échelle renseignée plus haut."
                 options:
                   - { label: "Territorial", value: "territorial" }
                   - { label: "National", value: "national" }
@@ -92,20 +97,21 @@ collections:
               - label: "Statut"
                 name: "status"
                 widget: "select"
+                hint: "État éditorial du dossier : brouillon, travail, consolidation, publié ou archivé. Un document devient potentiellement visible si Visible est aussi activé ; vérifier les deux."
                 options: ["Brouillon", "Document de travail", "En cours", "En consolidation", "Publié", "Archivé"]
-              - { label: "Version", name: "version", widget: "string", required: false }
-              - { label: "Date affichée", name: "date_label", widget: "string", required: false, hint: "Ex. 14 août 2026, Publication : août 2026" }
-              - { label: "Informations courtes sous le titre", name: "meta", widget: "string", required: false, hint: "Ex. Version 1.3 · août 2026" }
-              - { label: "Format / pagination", name: "format", widget: "string", required: false, hint: "Ex. PDF · 14 pages" }
-              - { label: "Résumé très court (carte)", name: "short_summary", widget: "text" }
-              - { label: "Résumé principal", name: "summary", widget: "text" }
-              - { label: "Détails complémentaires", name: "details", widget: "text", required: false }
-              - { label: "Mots-clés de recherche", name: "keywords", widget: "text", required: false }
-              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour utiliser automatiquement le résumé principal. Environ 140 à 160 caractères est idéal." }
-              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false, hint: "Utilisée pour Google, réseaux sociaux et messageries. À défaut, le site utilise l’image de présentation ou l’image Diploval." }
-              - { label: "Image de présentation", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false, hint: "Une image horizontale 16:9 ou proche est idéale. Le site l’adapte automatiquement au mobile et au PC." }
-              - { label: "PDF", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false, hint: "Pour publier, joindre un PDF réel. Tant qu’il n’est pas prêt, conserver Visible sur le site désactivé. Les consultations utilisent ce même fichier." }
-              - { label: "Afficher le lecteur PDF intégré", name: "embed_pdf", widget: "boolean", default: true, required: false, hint: "Activé par défaut : le document pourra être lu directement dans sa page, tout en restant ouvrable dans un nouvel onglet." }
+              - { label: "Version", name: "version", widget: "string", required: false , hint: "Numéro de version du document. À mettre à jour lors d’une nouvelle édition ; conserver une trace des versions antérieures." }
+              - { label: "Date affichée", name: "date_label", widget: "string", required: false, hint: "Ex. 14 août 2026, Publication : août 2026 Date présentée aux visiteurs (par exemple 18 novembre 2026). Elle ne remplace pas une date de validation juridique." }
+              - { label: "Informations courtes sous le titre", name: "meta", widget: "string", required: false, hint: "Ex. Version 1.3 · août 2026 Petite ligne d’informations sous le titre, par exemple version, mois et pagination. Ce n’est pas un champ de statut." }
+              - { label: "Format / pagination", name: "format", widget: "string", required: false, hint: "Ex. PDF · 14 pages Indique le format ou la durée du contenu, par exemple PDF · 24 pages ou un type d’émission. Ne téléverse aucun fichier." }
+              - { label: "Résumé très court (carte)", name: "short_summary", widget: "text" , hint: "Présentation courte visible sur les cartes et dans certaines listes. Privilégier une ou deux phrases qui donnent le sujet et l’objet du document." }
+              - { label: "Résumé principal", name: "summary", widget: "text" , hint: "Résumé explicatif public qui permet de comprendre le contenu avant de l’ouvrir. Rester fidèle au document sans ajouter de fait non sourcé." }
+              - { label: "Détails complémentaires", name: "details", widget: "text", required: false , hint: "Compléments éditoriaux affichés dans la présentation du document. Ne pas confondre avec le contenu intégral du PDF." }
+              - { label: "Mots-clés de recherche", name: "keywords", widget: "text", required: false , hint: "Mots et expressions facilitant la recherche des publications. Séparer des termes utiles, sans multiplier les mots hors sujet." }
+              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour utiliser automatiquement le résumé principal. Environ 140 à 160 caractères est idéal. Courte description pour moteurs de recherche et aperçus. Si elle est absente, un résumé existant sert de repli selon la rubrique." }
+              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false, hint: "Utilisée pour Google, réseaux sociaux et messageries. À défaut, le site utilise l’image de présentation ou l’image Diploval. Visuel utilisé lors du partage d’un lien sur les réseaux et messageries. Préférer une image horizontale 1200 × 630 ; vérifier lisibilité et droits." }
+              - { label: "Image de présentation", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false, hint: "Une image horizontale 16:9 ou proche est idéale. Le site l’adapte automatiquement au mobile et au PC. Image de présentation de la carte ou de la page. Ne remplace pas l’image du PDF ; utiliser un visuel autorisé et adapté au sujet." }
+              - { label: "PDF", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false, hint: "Pour publier, joindre un PDF réel. Tant qu’il n’est pas prêt, conserver Visible sur le site désactivé. Les consultations utilisent ce même fichier. Fichier PDF attaché au contenu. Le charger dans la médiathèque, vérifier son intégrité et tester les fonctions Lire et Télécharger sur PC et téléphone." }
+              - { label: "Afficher le lecteur PDF intégré", name: "embed_pdf", widget: "boolean", default: true, required: false, hint: "Activé par défaut : le document pourra être lu directement dans sa page, tout en restant ouvrable dans un nouvel onglet. Lecture intégrée sur PC avec agrandissement ; sur téléphone, Lire ouvre le PDF dans son lecteur. Désactiver uniquement si un document impose un autre mode de consultation." }
 
   - name: "dossiers_admin"
     label: "Dossiers en cours"
@@ -118,27 +124,31 @@ collections:
           - label: "Dossiers"
             name: "dossiers"
             widget: "list"
+            hint: "Liste des travaux en cours : elle ne remplace pas la bibliothèque des rapports PDF terminés."
+            hint: "Liste des dossiers en préparation ou en suivi. Ce n’est pas la bibliothèque des rapports PDF publiés, qui se gère dans Publications & PDF."
+        hint: "Liste des dossiers en préparation ou en suivi. Ce n’est pas la bibliothèque des rapports PDF publiés, qui se gère dans Publications & PDF."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un dossier"
             summary: "{{fields.title}} — {{fields.status}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
-              - { label: "Titre", name: "title", widget: "string" }
-              - { label: "Identifiant stable du dossier", name: "id", widget: "string", required: false, hint: "Exemple : mobilisations-lyceennes-2026. Créé automatiquement lors de l’enregistrement si vous le laissez vide. Ne pas le modifier après avoir associé une actualité." }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify. Autorise l’affichage public après enregistrement et déploiement. Désactiver pour préparer le contenu hors des pages publiques ; le fichier déposé dans les ressources peut néanmoins rester accessible par lien direct." }
+              - { label: "Titre", name: "title", widget: "string" , hint: "Titre affiché au public sur la page et dans les listes. Le modifier peut affecter une adresse calculée automatiquement : conserver l’identifiant stable." }
+              - { label: "Identifiant stable du dossier", name: "id", widget: "string", required: false, hint: "Exemple : mobilisations-lyceennes-2026. Créé automatiquement lors de l’enregistrement si vous le laissez vide. Ne pas le modifier après avoir associé une actualité. Identifiant unique utilisé dans les liens internes et les adresses des pages. Ne pas le modifier après publication : les anciens liens pourraient cesser de fonctionner." }
               - label: "Statut"
                 name: "status"
                 widget: "select"
+                hint: "Avancement du dossier : en cours, en finalisation, publié ou traité, en pause, archivé. L’étiquette ne publie pas à elle seule un nouveau PDF."
                 options:
                   - { label: "En cours", value: "en_cours" }
                   - { label: "En finalisation", value: "finalisation" }
                   - { label: "Publié / traité", value: "publie" }
                   - { label: "En pause", value: "pause" }
                   - { label: "Archivé", value: "archive" }
-              - { label: "Échelle / territoire", name: "scope", widget: "string", hint: "Ex. National · Eau ou Territorial · Gironde" }
-              - { label: "Résumé", name: "summary", widget: "text" }
-              - { label: "Image (facultatif)", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Identifiant de la publication finale (facultatif)", name: "publication_id", widget: "string", required: false, hint: "Quand le dossier est publié, vous pouvez lier ici son identifiant de publication." }
+              - { label: "Échelle / territoire", name: "scope", widget: "string", hint: "Ex. National · Eau ou Territorial · Gironde Territoire ou échelle du dossier. Choisir une désignation intelligible, par exemple Territorial · Gironde." }
+              - { label: "Résumé", name: "summary", widget: "text" , hint: "Résumé explicatif public qui permet de comprendre le contenu avant de l’ouvrir. Rester fidèle au document sans ajouter de fait non sourcé." }
+              - { label: "Image (facultatif)", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false , hint: "Image de présentation de la carte ou de la page. Ne remplace pas l’image du PDF ; utiliser un visuel autorisé et adapté au sujet." }
+              - { label: "Identifiant de la publication finale (facultatif)", name: "publication_id", widget: "string", required: false, hint: "Quand le dossier est publié, vous pouvez lier ici son identifiant de publication. Identifiant exact de la publication finale dans la bibliothèque Publications & PDF. Permet de relier le dossier suivi à son document public." }
 
   - name: "agenda_admin"
     label: "Agenda"
@@ -151,42 +161,49 @@ collections:
           - label: "Événements"
             name: "events"
             widget: "list"
+            hint: "Liste des rendez-vous Diploval : vérifier leur date, mode, lieu, accès et statut après l’événement."
+            hint: "Liste des rendez-vous et événements Diploval. Une entrée visible peut apparaître sur la page d’accueil selon sa date et son statut."
+        hint: "Groupe de champs répétés : ajoutez une entrée par élément, puis renseignez les informations demandées."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un événement"
             summary: "{{fields.date}} — {{fields.title}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
-              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify. Autorise l’affichage public après enregistrement et déploiement. Désactiver pour préparer le contenu hors des pages publiques ; le fichier déposé dans les ressources peut néanmoins rester accessible par lien direct." }
+              - { label: "Titre", name: "title", widget: "string" , hint: "Titre affiché au public sur la page et dans les listes. Le modifier peut affecter une adresse calculée automatiquement : conserver l’identifiant stable." }
               - label: "Type d’événement"
                 name: "category"
                 widget: "select"
+                hint: "Type d’activité, par exemple rencontre, intervention ou visioconférence. Utilisé pour présenter le rendez-vous."
                 options: ["Rencontre", "Visioconférence", "Déplacement", "Intervention", "Publication", "Réunion de travail"]
               - label: "Mode"
                 name: "mode"
                 widget: "select"
+                hint: "En ligne, sur place ou hybride. Détermine les informations pratiques à renseigner."
                 options:
                   - { label: "En ligne", value: "online" }
                   - { label: "Sur place", value: "physical" }
                   - { label: "Hybride", value: "hybrid" }
-              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false }
-              - { label: "Heure de début", name: "start_time", widget: "string", required: false, hint: "Ex. 19:00" }
-              - { label: "Heure de fin", name: "end_time", widget: "string", required: false, hint: "Ex. 20:30" }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false , hint: "Date du rendez-vous, distincte de sa date de création dans l’administration." }
+              - { label: "Heure de début", name: "start_time", widget: "string", required: false, hint: "Ex. 19:00 Heure de début au format HH:MM, heure locale du rendez-vous. Vérifier les informations envoyées aux participants." }
+              - { label: "Heure de fin", name: "end_time", widget: "string", required: false, hint: "Ex. 20:30 Heure de fin prévue, au format HH:MM. Une durée estimée peut être précisée dans le résumé." }
               - label: "Accès"
                 name: "access"
                 widget: "select"
+                hint: "Précise si le rendez-vous est ouvert, sur inscription, sur invitation ou réservé à un échange de travail."
                 options: ["Ouvert au public", "Sur inscription", "Sur invitation", "Rencontre de travail"]
-              - { label: "Résumé", name: "summary", widget: "text" }
-              - { label: "Plateforme en ligne (si besoin)", name: "platform", widget: "string", required: false, hint: "Ex. Zoom" }
-              - { label: "Lien en ligne / inscription externe (si besoin)", name: "online_url", widget: "string", required: false }
-              - { label: "Nom du lieu (si sur place)", name: "venue", widget: "string", required: false }
-              - { label: "Adresse (si sur place)", name: "address", widget: "string", required: false }
-              - { label: "Ville / territoire", name: "city", widget: "string", required: false }
-              - { label: "Utiliser le formulaire d’inscription Diploval", name: "registration", widget: "boolean", default: false, hint: "À activer pour ouvrir le formulaire intégré déjà relié à Netlify Forms." }
-              - { label: "Nombre de places (facultatif)", name: "capacity", widget: "number", required: false, value_type: "int", min: 1 }
+              - { label: "Résumé", name: "summary", widget: "text" , hint: "Résumé explicatif public qui permet de comprendre le contenu avant de l’ouvrir. Rester fidèle au document sans ajouter de fait non sourcé." }
+              - { label: "Plateforme en ligne (si besoin)", name: "platform", widget: "string", required: false, hint: "Ex. Zoom Service de visioconférence utilisé, par exemple Zoom. Ce champ ne crée pas de réunion." }
+              - { label: "Lien en ligne / inscription externe (si besoin)", name: "online_url", widget: "string", required: false , hint: "Lien de réunion ou d’inscription externe ; vérifier les droits d’accès et ne pas publier un lien privé sans autorisation." }
+              - { label: "Nom du lieu (si sur place)", name: "venue", widget: "string", required: false , hint: "Nom du lieu ou de la salle où se tient le rendez-vous." }
+              - { label: "Adresse (si sur place)", name: "address", widget: "string", required: false , hint: "Adresse postale du rendez-vous. Vérifier son exactitude avant de la rendre publique." }
+              - { label: "Ville / territoire", name: "city", widget: "string", required: false , hint: "Commune ou territoire du rendez-vous, utile notamment sur les cartes et les présentations." }
+              - { label: "Utiliser le formulaire d’inscription Diploval", name: "registration", widget: "boolean", default: false, hint: "À activer pour ouvrir le formulaire intégré déjà relié à Netlify Forms. Active le formulaire d’inscription Diploval pour cet événement ; vérifier son fonctionnement et les informations nécessaires avant ouverture." }
+              - { label: "Nombre de places (facultatif)", name: "capacity", widget: "number", required: false, value_type: "int", min: 1 , hint: "Nombre de places annoncé à titre informatif. Ne suppose pas un blocage automatique des inscriptions au seuil fixé." }
               - label: "Statut"
                 name: "status"
                 widget: "select"
+                hint: "État de l’événement : à venir, annulé ou terminé/archivé. À actualiser après la date prévue."
                 options:
                   - { label: "À venir", value: "a_venir" }
                   - { label: "Annulé", value: "annule" }
@@ -204,41 +221,44 @@ collections:
           - label: "Communiqués"
             name: "communiques"
             widget: "list"
+            hint: "Liste des communiqués officiels : chaque texte public nécessite une vérification du contenu, de la signature et du PDF éventuel."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un communiqué"
             summary: "{{fields.date}} — {{fields.title}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
-              - { label: "Afficher parmi les derniers communiqués sur l’accueil", name: "show_home", widget: "boolean", default: true }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify. Autorise l’affichage public après enregistrement et déploiement. Désactiver pour préparer le contenu hors des pages publiques ; le fichier déposé dans les ressources peut néanmoins rester accessible par lien direct." }
+              - { label: "Afficher parmi les derniers communiqués sur l’accueil", name: "show_home", widget: "boolean", default: true , hint: "Autorise l’affichage du communiqué parmi les derniers éléments de l’accueil. Sa page reste indépendante." }
               - label: "Type de communiqué"
                 name: "type"
                 widget: "select"
-                hint: "Présidence = prise de parole portée par le Président de Diploval. Institutionnel = annonce officielle de la structure."
+                hint: "Présidence = prise de parole portée par le Président de Diploval. Institutionnel = annonce officielle de la structure. Liste des communiqués institutionnels et de la Présidence. Modifier une entrée publique met à jour son texte à la prochaine publication du site. Présidence : prise de parole du président. Institutionnel : communiqué porté par Diploval. Ce choix détermine l’attribution et la signature de repli."
                 options:
                   - { label: "Présidence de Diploval", value: "presidence" }
                   - { label: "Diploval · Institutionnel", value: "institutionnel" }
               - label: "Statut"
                 name: "status"
                 widget: "select"
+                hint: "Brouillon, publié ou archivé. Les communiqués marqués publiés et visibles peuvent apparaître sur le site après déploiement."
                 options: ["Brouillon", "Publié", "Archivé"]
-              - { label: "Identifiant interne (facultatif)", name: "id", widget: "string", required: false, hint: "Vous pouvez laisser vide pour un nouveau communiqué." }
-              - { label: "Titre", name: "title", widget: "string" }
-              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false }
+              - { label: "Identifiant interne (facultatif)", name: "id", widget: "string", required: false, hint: "Vous pouvez laisser vide pour un nouveau communiqué. Identifiant unique utilisé dans les liens internes et les adresses des pages. Ne pas le modifier après publication : les anciens liens pourraient cesser de fonctionner." }
+              - { label: "Titre", name: "title", widget: "string" , hint: "Titre affiché au public sur la page et dans les listes. Le modifier peut affecter une adresse calculée automatiquement : conserver l’identifiant stable." }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false , hint: "Date affichée au public ; elle doit correspondre à la date réelle de l’événement ou de la publication, pas à la date de saisie si elles diffèrent." }
               - label: "Échelle"
                 name: "scope"
                 widget: "select"
+                hint: "Indique l’échelle ou le territoire concerné par le sujet. Ce libellé apparaît comme repère de lecture."
                 required: false
                 options: ["Diploval", "Local", "Départemental", "Régional", "National", "Europe", "International", "Multi-échelles"]
-              - { label: "Résumé court", name: "summary", widget: "text" }
-              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre le résumé court." }
-              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Texte du communiqué", name: "body", widget: "text", hint: "Séparez les paragraphes par une ligne vide." }
-              - { label: "Image de présentation (facultative)", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false }
-              - { label: "PDF officiel (facultatif)", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Afficher le lecteur PDF intégré", name: "embed_pdf", widget: "boolean", default: true, required: false, hint: "Permet de lire le PDF officiel directement dans la page du communiqué." }
-              - { label: "Signature personnalisée (facultative)", name: "signature", widget: "text", required: false, hint: "Laissez vide pour utiliser la signature automatique correspondant au type de communiqué." }
-              - { label: "Note de correction / mise à jour (facultative)", name: "correction_note", widget: "text", required: false }
+              - { label: "Résumé court", name: "summary", widget: "text" , hint: "Résumé explicatif public qui permet de comprendre le contenu avant de l’ouvrir. Rester fidèle au document sans ajouter de fait non sourcé." }
+              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre le résumé court. Courte description pour moteurs de recherche et aperçus. Si elle est absente, un résumé existant sert de repli selon la rubrique." }
+              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false , hint: "Visuel utilisé lors du partage d’un lien sur les réseaux et messageries. Préférer une image horizontale 1200 × 630 ; vérifier lisibilité et droits." }
+              - { label: "Texte du communiqué", name: "body", widget: "text", hint: "Séparez les paragraphes par une ligne vide. Texte public du document ou de l’article. Vérifier les faits, le ton, les titres et la lisibilité avant la mise en ligne." }
+              - { label: "Image de présentation (facultative)", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false , hint: "Image de présentation de la carte ou de la page. Ne remplace pas l’image du PDF ; utiliser un visuel autorisé et adapté au sujet." }
+              - { label: "PDF officiel (facultatif)", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false , hint: "PDF officiel en complément du texte de la page. Vérifier qu’il correspond exactement à la version validée et signée." }
+              - { label: "Afficher le lecteur PDF intégré", name: "embed_pdf", widget: "boolean", default: true, required: false, hint: "Permet de lire le PDF officiel directement dans la page du communiqué. Permet de lire le PDF directement dans la page sur ordinateur et dans le lecteur du téléphone via Lire." }
+              - { label: "Signature personnalisée (facultative)", name: "signature", widget: "text", required: false, hint: "Laissez vide pour utiliser la signature automatique correspondant au type de communiqué. Signature qui remplace la signature automatique de la catégorie choisie. Vérifier le titre, la fonction et l’accord du signataire." }
+              - { label: "Note de correction / mise à jour (facultative)", name: "correction_note", widget: "text", required: false , hint: "Explication destinée au public des corrections ou modifications significatives, avec la raison et, si possible, la date. Ne pas effacer la trace d’une correction importante." }
 
   - name: "articles_admin"
     label: "Actualités Diploval"
@@ -253,12 +273,13 @@ collections:
           - label: "Actualités"
             name: "articles"
             widget: "list"
+            hint: "Liste des actualités : préparer en brouillon non visible, puis vérifier texte, sources, images et PDF avant publication."
             collapsed: true
             add_to_top: true
             label_singular: "Nouvelle actualité"
             summary: "{{fields.status}} — {{fields.date}} — {{fields.title}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "Autorisation d’affichage. Une actualité Brouillon ou Archivée reste absente du site même si ce bouton est activé. Enregistrer la liste déclenche le déploiement." }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "Autorisation d’affichage. Une actualité Brouillon ou Archivée reste absente du site même si ce bouton est activé. Enregistrer la liste déclenche le déploiement. Autorise l’affichage public après enregistrement et déploiement. Désactiver pour préparer le contenu hors des pages publiques ; le fichier déposé dans les ressources peut néanmoins rester accessible par lien direct." }
               - label: "Statut de l’actualité"
                 name: "status"
                 widget: "select"
@@ -269,19 +290,19 @@ collections:
                   - { label: "Brouillon", value: "Brouillon" }
                   - { label: "Publié", value: "Publié" }
                   - { label: "Archivé", value: "Archivé" }
-                hint: "Pour une nouvelle actualité : choisir Brouillon pendant la rédaction, puis Publié et Visible pour sa mise en ligne. L’état existant préserve l’actualité déjà publiée lors de l’installation."
-              - { label: "Ne pas publier avant (facultatif)", name: "publish_at", widget: "datetime", required: false, hint: "Date minimale de parution. Un déploiement Netlify après cette date reste nécessaire : aucune programmation automatique n’est activée." }
-              - { label: "Titre", name: "title", widget: "string" }
-              - { label: "Adresse courte / identifiant stable", name: "id", widget: "string", required: false, hint: "Facultatif pour un article existant : laisser vide conserve son adresse calculée depuis le titre. Pour un nouvel article, choisir un identifiant unique et le conserver." }
-              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, default: "{{now}}" }
+                hint: "Pour une nouvelle actualité : choisir Brouillon pendant la rédaction, puis Publié et Visible pour sa mise en ligne. L’état existant préserve l’actualité déjà publiée lors de l’installation. Liste des actualités du site. Un nouvel article doit rester Brouillon et non visible jusqu’à sa validation. Brouillon : aucune page publique ; Publié : potentiellement visible si la visibilité est activée ; Archivé : retiré des pages publiques. L’option État existant conserve les contenus hérités."
+              - { label: "Ne pas publier avant (facultatif)", name: "publish_at", widget: "datetime", required: false, hint: "Date minimale de parution. Un déploiement Netlify après cette date reste nécessaire : aucune programmation automatique n’est activée. Date minimale de publication prévue ; ne déclenche pas un déploiement automatique. Il faut enregistrer et redéployer le site après cette date." }
+              - { label: "Titre", name: "title", widget: "string" , hint: "Titre affiché au public sur la page et dans les listes. Le modifier peut affecter une adresse calculée automatiquement : conserver l’identifiant stable." }
+              - { label: "Adresse courte / identifiant stable", name: "id", widget: "string", required: false, hint: "Facultatif pour un article existant : laisser vide conserve son adresse calculée depuis le titre. Pour un nouvel article, choisir un identifiant unique et le conserver. Identifiant unique utilisé dans les liens internes et les adresses des pages. Ne pas le modifier après publication : les anciens liens pourraient cesser de fonctionner." }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, default: "{{now}}" , hint: "Date de l’actualité ou date de consultation de la source, selon l’emplacement. Pour les sources, préciser la date réellement connue." }
               - label: "Catégorie"
                 name: "category"
                 widget: "select"
                 required: false
                 options: ["Lancement d’étude", "Publication", "Consultation citoyenne", "Actualisation de dossier", "Rectificatif", "Vie institutionnelle", "Rencontres & événements", "Suivi des propositions"]
-                hint: "Cette catégorie est affichée comme un repère éditorial ; le site applique automatiquement son style."
-              - { label: "Image de présentation", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Texte alternatif de l’image", name: "cover_alt", widget: "string", required: false, hint: "Décrire ce que montre l’image, sans commencer par Image de. Si elle est purement décorative, laisser ce champ vide." }
+                hint: "Cette catégorie est affichée comme un repère éditorial ; le site applique automatiquement son style. Catégorie éditoriale de l’actualité, affichée sur les cartes et la page. Elle ne suffit pas à ouvrir une consultation citoyenne."
+              - { label: "Image de présentation", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false , hint: "Image de présentation de la carte ou de la page. Ne remplace pas l’image du PDF ; utiliser un visuel autorisé et adapté au sujet." }
+              - { label: "Texte alternatif de l’image", name: "cover_alt", widget: "string", required: false, hint: "Décrire ce que montre l’image, sans commencer par Image de. Si elle est purement décorative, laisser ce champ vide. Description destinée aux personnes qui n’utilisent pas les images. Décrire le contenu utile, ou laisser vide pour un visuel purement décoratif." }
               - label: "Dossier Diploval associé"
                 name: "dossier_id"
                 widget: "relation"
@@ -291,31 +312,32 @@ collections:
                 search_fields: ["dossiers.*.title", "dossiers.*.id"]
                 display_fields: ["dossiers.*.title"]
                 value_field: "dossiers.*.id"
-                hint: "Sélectionner un dossier existant déjà enregistré avec son identifiant. Le site crée le lien vers la publication finale ou sa carte Dossiers en cours, seulement si cette destination est publique."
-              - { label: "Première publication", name: "published_at", widget: "diploval-audit", required: false }
-              - { label: "Dernière modification", name: "updated_at", widget: "diploval-audit", required: false }
-              - { label: "Note publique de correction / mise à jour", name: "correction_note", widget: "text", required: false, hint: "Pour une modification substantielle, expliquer ici ce qui change et pourquoi. La note apparaîtra sur la page de l’actualité." }
-              - { label: "Résumé de l’actualité", name: "intro", widget: "text", hint: "Un résumé court. Le texte intégral se rédige ci-dessous et sera lu sur la page de l’article." }
-              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre l’introduction." }
-              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Document PDF associé", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false, hint: "Téléverser un PDF depuis la médiathèque. Le document sera lisible sur la page et téléchargeable." }
-              - { label: "Afficher le lecteur PDF intégré", name: "embed_pdf", widget: "boolean", required: false, default: true, hint: "Lecture sur ordinateur et téléphone ; téléchargement toujours disponible." }
-              - { label: "Contenu de l’actualité", name: "body", widget: "diploval-richtext", required: false }
+                hint: "Sélectionner un dossier existant déjà enregistré avec son identifiant. Le site crée le lien vers la publication finale ou sa carte Dossiers en cours, seulement si cette destination est publique. Lien vers un dossier existant. Sélectionner un identifiant enregistré ; une référence à un dossier non public ne doit pas créer de lien public."
+              - { label: "Première publication", name: "published_at", widget: "diploval-audit", required: false , hint: "Date initiale de publication tenue automatiquement. Elle aide à distinguer première parution et mise à jour." }
+              - { label: "Dernière modification", name: "updated_at", widget: "diploval-audit", required: false , hint: "Date de dernière modification détectée automatiquement. Ce repère sert à la traçabilité éditoriale." }
+              - { label: "Note publique de correction / mise à jour", name: "correction_note", widget: "text", required: false, hint: "Pour une modification substantielle, expliquer ici ce qui change et pourquoi. La note apparaîtra sur la page de l’actualité. Explication destinée au public des corrections ou modifications significatives, avec la raison et, si possible, la date. Ne pas effacer la trace d’une correction importante." }
+              - { label: "Résumé de l’actualité", name: "intro", widget: "text", hint: "Un résumé court. Le texte intégral se rédige ci-dessous et sera lu sur la page de l’article. Chapeau de l’actualité : visible avant le texte intégral et utilisé dans certains aperçus. Résumer le contenu sans remplacer l’analyse." }
+              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre l’introduction. Courte description pour moteurs de recherche et aperçus. Si elle est absente, un résumé existant sert de repli selon la rubrique." }
+              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false , hint: "Visuel utilisé lors du partage d’un lien sur les réseaux et messageries. Préférer une image horizontale 1200 × 630 ; vérifier lisibilité et droits." }
+              - { label: "Document PDF associé", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false, hint: "Téléverser un PDF depuis la médiathèque. Le document sera lisible sur la page et téléchargeable. PDF joint à l’actualité : téléverser le document validé, puis contrôler lecture et téléchargement sur les deux formats d’écran." }
+              - { label: "Afficher le lecteur PDF intégré", name: "embed_pdf", widget: "boolean", required: false, default: true, hint: "Lecture sur ordinateur et téléphone ; téléchargement toujours disponible. Active le lecteur dans la page sur ordinateur ; sur mobile, le bouton Lire ouvre le document dans son lecteur habituel." }
+              - { label: "Contenu de l’actualité", name: "body", widget: "diploval-richtext", required: false , hint: "Texte principal rédigé avec l’éditeur enrichi. Utiliser les titres pour structurer les arguments ; vérifier liens, citations et orthographe." }
               - label: "Sources et références"
                 name: "sources"
                 widget: "list"
+                hint: "Liste des sources vérifiables citées dans l’article. Chaque référence doit correspondre à une affirmation réellement présente."
                 required: false
                 collapsed: true
                 label_singular: "Source"
                 summary: "{{fields.label}}"
                 fields:
-                  - { label: "Titre de la source", name: "label", widget: "string" }
-                  - { label: "Lien de la source", name: "url", widget: "string", pattern: ['^https?://[^\s<>]+$', 'Indiquez un lien complet commençant par https:// ou http://'] }
-                  - { label: "Auteur, média ou organisme", name: "publisher", widget: "string", required: false }
-                  - { label: "Date / date de consultation", name: "date", widget: "string", required: false }
-                  - { label: "Précision sur cette source", name: "note", widget: "text", required: false }
-              - { label: "Lien facultatif", name: "link", widget: "string", required: false }
-              - { label: "Texte du lien", name: "link_label", widget: "string", required: false, default: "En savoir plus" }
+                  - { label: "Titre de la source", name: "label", widget: "string" , hint: "Nom court ou intitulé affiché dans l’interface. Choisir un texte compréhensible pour une personne extérieure au projet." }
+                  - { label: "Lien de la source", name: "url", widget: "string", pattern: ['^https?://[^\s<>]+$', 'Indiquez un lien complet commençant par https:// ou http://'] , hint: "Adresse complète de la source ou du lien, de préférence en https://. Tester le lien avant publication et vérifier qu’il pointe vers le bon document." }
+                  - { label: "Auteur, média ou organisme", name: "publisher", widget: "string", required: false , hint: "Auteur, organisme ou média à l’origine de la référence. Ne pas confondre avec le nom du site qui la relaie." }
+                  - { label: "Date / date de consultation", name: "date", widget: "string", required: false , hint: "Date de l’actualité ou date de consultation de la source, selon l’emplacement. Pour les sources, préciser la date réellement connue." }
+                  - { label: "Précision sur cette source", name: "note", widget: "text", required: false , hint: "Précision utile sur la source, sa portée ou ses limites. Éviter les affirmations qui ne figurent pas dans la source." }
+              - { label: "Lien facultatif", name: "link", widget: "string", required: false , hint: "Lien complémentaire affiché après l’article. Ne pas le confondre avec le champ PDF associé ni avec les sources documentaires." }
+              - { label: "Texte du lien", name: "link_label", widget: "string", required: false, default: "En savoir plus" , hint: "Libellé du lien complémentaire, par exemple Consulter la réponse institutionnelle. Il doit annoncer la destination." }
 
   - name: "podcasts_admin"
     label: "Podcast"
@@ -328,23 +350,26 @@ collections:
           - label: "Épisodes"
             name: "episodes"
             widget: "list"
+            hint: "Liste des épisodes audio : ne publier que des sons finalisés, autorisés et vérifiés sur mobile."
+            hint: "Liste des épisodes du podcast. Une nouvelle entrée apparaît seulement si la visibilité est activée et le site redéployé."
+        hint: "Groupe de champs répétés : ajoutez une entrée par élément, puis renseignez les informations demandées."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un épisode"
             summary: "Épisode {{fields.number}} — {{fields.title}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
-              - { label: "Numéro", name: "number", widget: "number", value_type: "int", min: 1 }
-              - { label: "Titre", name: "title", widget: "string" }
-              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false }
-              - { label: "Format", name: "format", widget: "select", options: ["La voix de Diploval", "Conversation"] }
-              - { label: "Durée affichée", name: "duration", widget: "string", required: false, hint: "Ex. 18 min" }
-              - { label: "Résumé", name: "summary", widget: "text" }
-              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre le résumé." }
-              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Image / pochette", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Fichier audio", name: "audio", widget: "file", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Transcription (facultatif)", name: "transcript", widget: "text", required: false }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify. Autorise l’affichage public après enregistrement et déploiement. Désactiver pour préparer le contenu hors des pages publiques ; le fichier déposé dans les ressources peut néanmoins rester accessible par lien direct." }
+              - { label: "Numéro", name: "number", widget: "number", value_type: "int", min: 1 , hint: "Numéro de l’épisode. Sert à l’ordre d’affichage ; éviter les numéros en double." }
+              - { label: "Titre", name: "title", widget: "string" , hint: "Titre affiché au public sur la page et dans les listes. Le modifier peut affecter une adresse calculée automatiquement : conserver l’identifiant stable." }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false , hint: "Date affichée au public ; elle doit correspondre à la date réelle de l’événement ou de la publication, pas à la date de saisie si elles diffèrent." }
+              - { label: "Format", name: "format", widget: "select", options: ["La voix de Diploval", "Conversation"] , hint: "Type d’épisode : La voix de Diploval ou Conversation. Cette étiquette informe sur le style de l’émission." }
+              - { label: "Durée affichée", name: "duration", widget: "string", required: false, hint: "Ex. 18 min Durée indicative affichée au public, par exemple 18 min. Ne modifie pas le fichier audio." }
+              - { label: "Résumé", name: "summary", widget: "text" , hint: "Résumé explicatif public qui permet de comprendre le contenu avant de l’ouvrir. Rester fidèle au document sans ajouter de fait non sourcé." }
+              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre le résumé. Courte description pour moteurs de recherche et aperçus. Si elle est absente, un résumé existant sert de repli selon la rubrique." }
+              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false , hint: "Visuel utilisé lors du partage d’un lien sur les réseaux et messageries. Préférer une image horizontale 1200 × 630 ; vérifier lisibilité et droits." }
+              - { label: "Image / pochette", name: "cover", widget: "image", required: false, choose_url: false, allow_multiple: false , hint: "Image de présentation de la carte ou de la page. Ne remplace pas l’image du PDF ; utiliser un visuel autorisé et adapté au sujet." }
+              - { label: "Fichier audio", name: "audio", widget: "file", required: false, choose_url: false, allow_multiple: false , hint: "Téléverser le fichier audio final ; vérifier le volume, les autorisations et la lecture sur téléphone et ordinateur." }
+              - { label: "Transcription (facultatif)", name: "transcript", widget: "text", required: false , hint: "Transcription fidèle de l’épisode pour l’accessibilité et le référencement. Éviter les erreurs de noms propres." }
 
   - name: "site_settings_admin"
     label: "Réglages du site"
@@ -357,14 +382,16 @@ collections:
           - label: "Information temporaire"
             name: "temporary_notice"
             widget: "object"
+            hint: "Message ponctuel affiché sur le site pour une information importante. Ne pas utiliser pour une publication de fond ou une annonce permanente."
+        hint: "Ensemble de champs liés : renseignez chaque valeur utile et vérifiez le résultat avant la mise en ligne."
             fields:
-              - { label: "Afficher le bandeau", name: "enabled", widget: "boolean", default: false }
-              - { label: "Libellé", name: "label", widget: "string", default: "Information" }
-              - { label: "Texte", name: "text", widget: "text", required: false }
-              - { label: "Date de début", name: "start_date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false }
-              - { label: "Date de fin incluse", name: "end_date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false, hint: "Le bandeau disparaît automatiquement après cette date." }
-              - { label: "Lien facultatif", name: "link", widget: "string", required: false }
-              - { label: "Texte du lien", name: "link_label", widget: "string", required: false, default: "En savoir plus" }
+              - { label: "Afficher le bandeau", name: "enabled", widget: "boolean", default: false , hint: "Active ou désactive le bandeau d’information temporaire. Vérifier le texte et les dates avant activation." }
+              - { label: "Libellé", name: "label", widget: "string", default: "Information" , hint: "Petit intitulé visible en tête du bandeau, par exemple Information." }
+              - { label: "Texte", name: "text", widget: "text", required: false , hint: "Texte bref du bandeau. Présenter un fait ou une information datée, sans surcharge." }
+              - { label: "Date de début", name: "start_date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false , hint: "Premier jour prévu d’affichage du bandeau. La date ne remplace pas l’enregistrement et le déploiement." }
+              - { label: "Date de fin incluse", name: "end_date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false, hint: "Le bandeau disparaît automatiquement après cette date. Dernier jour inclus prévu pour le bandeau, qui doit ensuite disparaître automatiquement de l’affichage." }
+              - { label: "Lien facultatif", name: "link", widget: "string", required: false , hint: "Adresse d’une page donnant plus d’informations sur le bandeau, si nécessaire." }
+              - { label: "Texte du lien", name: "link_label", widget: "string", required: false, default: "En savoir plus" , hint: "Texte du bouton menant au complément d’information." }
 
   - name: "points_information_admin"
     label: "Points d’information"
@@ -377,19 +404,21 @@ collections:
           - label: "Points d’information"
             name: "points"
             widget: "list"
+            hint: "Liste des points d’information : chaque niveau, source et mise à jour doit être justifié et daté."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un point d’information"
             summary: "{{fields.title}} — {{fields.status}}"
             fields:
-              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify." }
-              - { label: "Afficher sur l’accueil", name: "show_home", widget: "boolean", default: true }
-              - { label: "Titre", name: "title", widget: "string" }
-              - { label: "Adresse courte / identifiant", name: "slug", widget: "string", required: false, hint: "Ex. russie-otan-septembre-2026. Laissez vide pour utiliser automatiquement le titre." }
-              - { label: "Catégorie", name: "category", widget: "string", required: false, hint: "Ex. Géopolitique, France, Europe, Environnement" }
+              - { label: "Visible sur le site", name: "visible", widget: "boolean", default: false, hint: "À activer pour que cet élément apparaisse publiquement après le déploiement Netlify. Autorise l’affichage public après enregistrement et déploiement. Désactiver pour préparer le contenu hors des pages publiques ; le fichier déposé dans les ressources peut néanmoins rester accessible par lien direct." }
+              - { label: "Afficher sur l’accueil", name: "show_home", widget: "boolean", default: true , hint: "Affiche ce point d’information parmi les suivis mis en avant sur l’accueil, sous réserve qu’il soit public et actif." }
+              - { label: "Titre", name: "title", widget: "string" , hint: "Titre affiché au public sur la page et dans les listes. Le modifier peut affecter une adresse calculée automatiquement : conserver l’identifiant stable." }
+              - { label: "Adresse courte / identifiant", name: "slug", widget: "string", required: false, hint: "Ex. russie-otan-septembre-2026. Laissez vide pour utiliser automatiquement le titre. Identifiant court employé dans l’adresse de la page. Le conserver après publication pour ne pas casser les liens partagés." }
+              - { label: "Catégorie", name: "category", widget: "string", required: false, hint: "Ex. Géopolitique, France, Europe, Environnement Classe cet élément dans sa rubrique ou catégorie publique. Choisir le terme qui décrit réellement son contenu." }
               - label: "Statut"
                 name: "status"
                 widget: "select"
+                hint: "État du suivi : en cours, stabilisé, clos ou archivé. L’archive ne doit pas être présentée comme un événement encore actif."
                 options:
                   - { label: "Suivi en cours", value: "suivi" }
                   - { label: "Stabilisé", value: "stabilise" }
@@ -399,59 +428,64 @@ collections:
                 name: "level"
                 widget: "select"
                 default: "aucun"
-                hint: "Laissez Aucun niveau pour un Point d’information simple. Utilisez 3, 2 ou Code One uniquement pour un suivi renforcé."
+                hint: "Laissez Aucun niveau pour un Point d’information simple. Utilisez 3, 2 ou Code One uniquement pour un suivi renforcé. Groupe de champs répétés : ajoutez une entrée par élément, puis renseignez les informations demandées. Liste des suivis chronologiques et points d’information. Chaque entrée peut être visible sur le site et sur l’accueil selon ses réglages. Niveau public de vigilance : Aucun, 3, 2 ou 1 Code One. Ne choisir un niveau élevé qu’avec une justification vérifiée et documentée."
                 options:
                   - { label: "Aucun niveau — Point d’information simple", value: "aucun" }
                   - { label: "Niveau 3 — Surveillance active", value: "3" }
                   - { label: "Niveau 2 — Vigilance renforcée", value: "2" }
                   - { label: "Niveau 1 — Code One · Seuil critique", value: "1" }
-              - { label: "Ouverture du suivi", name: "opened_at", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" }
-              - { label: "Dernière mise à jour", name: "last_update", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" }
-              - { label: "Résumé", name: "summary", widget: "text" }
-              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre le résumé." }
-              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false }
-              - { label: "Pourquoi ce niveau ? (si utilisé)", name: "why_level", widget: "text", required: false, hint: "À remplir seulement si un niveau 3, 2 ou Code One est utilisé. Expliquez les éléments convergents sans dramatiser ni transformer une hypothèse en fait." }
+              - { label: "Ouverture du suivi", name: "opened_at", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" , hint: "Date et heure d’ouverture du suivi. Ce repère sert à la chronologie publique." }
+              - { label: "Dernière mise à jour", name: "last_update", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" , hint: "Date et heure de la dernière actualisation vérifiée du suivi. Mettre à jour lorsqu’un élément nouveau est publié." }
+              - { label: "Résumé", name: "summary", widget: "text" , hint: "Résumé explicatif public qui permet de comprendre le contenu avant de l’ouvrir. Rester fidèle au document sans ajouter de fait non sourcé." }
+              - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre le résumé. Courte description pour moteurs de recherche et aperçus. Si elle est absente, un résumé existant sert de repli selon la rubrique." }
+              - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false , hint: "Visuel utilisé lors du partage d’un lien sur les réseaux et messageries. Préférer une image horizontale 1200 × 630 ; vérifier lisibilité et droits." }
+              - { label: "Pourquoi ce niveau ? (si utilisé)", name: "why_level", widget: "text", required: false, hint: "À remplir seulement si un niveau 3, 2 ou Code One est utilisé. Expliquez les éléments convergents sans dramatiser ni transformer une hypothèse en fait. Justification publique du niveau choisi. Exposer les critères et les incertitudes, sans alarmisme." }
               - label: "Ce qui pourrait faire monter le niveau (si utilisé)"
                 name: "watch_up"
                 widget: "list"
+                hint: "Indicateurs concrets qui pourraient justifier une hausse du niveau après vérification."
                 required: false
-                field: { label: "Élément", name: "item", widget: "string" }
+                field: { label: "Élément", name: "item", widget: "string" , hint: "Élément ou critère observable associé à une montée ou descente de niveau. Rester concret et vérifiable." }
               - label: "Ce qui pourrait faire redescendre le niveau (si utilisé)"
                 name: "watch_down"
                 widget: "list"
+                hint: "Indicateurs concrets qui pourraient justifier une baisse du niveau après vérification."
                 required: false
-                field: { label: "Élément", name: "item", widget: "string" }
+                field: { label: "Élément", name: "item", widget: "string" , hint: "Élément ou critère observable associé à une montée ou descente de niveau. Rester concret et vérifiable." }
               - label: "Sources principales"
                 name: "sources"
                 widget: "list"
                 collapsed: true
                 required: false
-                hint: "Privilégiez, quand c’est possible, trois sources solides et réellement distinctes : source primaire/institutionnelle, agence ou média reconnu, et source permettant de confronter ou compléter."
+                hint: "Privilégiez, quand c’est possible, trois sources solides et réellement distinctes : source primaire/institutionnelle, agence ou média reconnu, et source permettant de confronter ou compléter. Références documentaires du suivi ou d’une mise à jour. Ajouter des sources primaires et contradictoires lorsque disponibles."
                 fields:
-                  - { label: "Nom", name: "label", widget: "string" }
+                  - { label: "Nom", name: "label", widget: "string" , hint: "Nom court ou intitulé affiché dans l’interface. Choisir un texte compréhensible pour une personne extérieure au projet." }
                   - label: "Type"
                     name: "type"
                     widget: "select"
+                    hint: "Nature de la source (document officiel, agence, média, etc.). Elle aide le lecteur à identifier sa provenance."
                     options: ["Source officielle", "Agence de presse", "Média", "Organisation internationale", "Document", "Autre"]
-                  - { label: "Lien", name: "url", widget: "string" }
-                  - { label: "Précision facultative", name: "note", widget: "string", required: false }
+                  - { label: "Lien", name: "url", widget: "string" , hint: "Adresse complète de la source ou du lien, de préférence en https://. Tester le lien avant publication et vérifier qu’il pointe vers le bon document." }
+                  - { label: "Précision facultative", name: "note", widget: "string", required: false , hint: "Précision utile sur la source, sa portée ou ses limites. Éviter les affirmations qui ne figurent pas dans la source." }
               - label: "Chronologie"
                 name: "updates"
                 widget: "list"
+                hint: "Chronologie des faits et corrections datés. Chaque mise à jour doit être fondée sur des éléments vérifiables."
                 collapsed: true
                 add_to_top: true
                 label_singular: "Ajouter une mise à jour"
                 summary: "{{fields.datetime}} — {{fields.title}}"
                 fields:
-                  - { label: "Date et heure", name: "datetime", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" }
-                  - { label: "Titre court", name: "title", widget: "string" }
-                  - { label: "Texte", name: "body", widget: "text" }
-                  - { label: "Correction substantielle", name: "correction", widget: "boolean", default: false, required: false }
+                  - { label: "Date et heure", name: "datetime", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" , hint: "Date et heure de l’événement ou de la mise à jour. Respecter la chronologie et le fuseau horaire indiqué." }
+                  - { label: "Titre court", name: "title", widget: "string" , hint: "Titre affiché au public sur la page et dans les listes. Le modifier peut affecter une adresse calculée automatiquement : conserver l’identifiant stable." }
+                  - { label: "Texte", name: "body", widget: "text" , hint: "Compte rendu de cette étape de suivi : distinguer les faits confirmés, les déclarations attribuées et les incertitudes." }
+                  - { label: "Correction substantielle", name: "correction", widget: "boolean", default: false, required: false , hint: "Cochez si cette mise à jour corrige substantiellement une affirmation antérieure ; expliquer ce qui change dans le texte." }
                   - label: "Sources de cette mise à jour"
                     name: "sources"
                     widget: "list"
+                    hint: "Références documentaires du suivi ou d’une mise à jour. Ajouter des sources primaires et contradictoires lorsque disponibles."
                     collapsed: true
                     required: false
                     fields:
-                      - { label: "Nom", name: "label", widget: "string" }
-                      - { label: "Lien", name: "url", widget: "string" }
+                      - { label: "Nom", name: "label", widget: "string" , hint: "Nom court ou intitulé affiché dans l’interface. Choisir un texte compréhensible pour une personne extérieure au projet." }
+                      - { label: "Lien", name: "url", widget: "string" , hint: "Adresse complète de la source ou du lien, de préférence en https://. Tester le lien avant publication et vérifier qu’il pointe vers le bon document." }
