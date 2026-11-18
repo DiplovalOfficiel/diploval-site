@@ -33,7 +33,15 @@
       const sources=(a.sources||[]).filter(s=>F.safeURL(s.url));
       return h('div',{className:'dv-news-preview'},
         h('div',{className:'dv-preview-controls'},h('strong',{},'Prévisualiser une actualité'),h('select',{'aria-label':'Actualité à prévisualiser',value:i,onChange:e=>this.setState({index:Number(e.target.value)})},...list.map((item,j)=>h('option',{value:j,key:j},item.title||'Nouvelle actualité'))),h('p',{},'Statut : '+N.status(a)+(a.visible===false?' — visibilité désactivée':'')+'. Le bouton Publier de Decap enregistre la liste ; seules les actualités Publiées et visibles paraissent après déploiement.')),
-        h('article',{},h('p',{},N.category(a)),h('h1',{},a.title||'Nouvelle actualité'),h('p',{},a.intro||''),a.cover?h('img',{src:String(this.props.getAsset(a.cover)),alt:a.cover_alt===undefined?a.title||'':a.cover_alt,style:{maxWidth:'100%'}}):null,h('div',{className:'article-prose',dangerouslySetInnerHTML:{__html:F.render(a.body)}}),a.correction_note?h('aside',{className:'article-correction'},h('strong',{},'Correction / mise à jour'),h('p',{},a.correction_note)):null,sources.length?h('section',{className:'article-sources'},h('h2',{},'Sources et références'),h('ol',{},...sources.map((s,j)=>h('li',{key:j},h('a',{href:F.safeURL(s.url),target:'_blank',rel:'noopener noreferrer'},s.label||s.url))))):null)
+        h('article',{},
+          h('p',{},N.category(a)),h('h1',{},a.title||'Nouvelle actualité'),h('p',{},a.intro||''),
+          a.cover?h('img',{src:String(this.props.getAsset(a.cover)),alt:a.cover_alt===undefined?a.title||'':a.cover_alt,style:{maxWidth:'100%'}}):null,
+          h('div',{className:'article-prose',dangerouslySetInnerHTML:{__html:F.render(a.body)}}),
+          a.pdf?h('section',{className:'dv-pdf-preview-summary'},h('h2',{},'Document PDF associé'),h('p',{},a.pdf),h('p',{},a.embed_pdf===false?'Lecteur intégré désactivé — le téléchargement reste disponible.':'Lecture intégrée prévue sur ordinateur ; ouverture du PDF dans le lecteur mobile.')):null,
+          a.correction_note?h('aside',{className:'article-correction'},h('strong',{},'Correction / mise à jour'),h('p',{},a.correction_note)):null,
+          sources.length?h('section',{className:'article-sources'},h('h2',{},'Sources et références'),h('ol',{},...sources.map((s,j)=>h('li',{key:j},h('a',{href:F.safeURL(s.url),target:'_blank',rel:'noopener noreferrer'},s.label||s.url))))):null,
+          h('section',{className:'dv-admin-preflight'},h('h2',{},'Contrôle avant publication'),...((window.DiplovalPublicationChecks?.issues('articles',{...a,status:N.status(a)})?.errors||[]).map((m,j)=>h('p',{key:j},'À corriger : '+m))),...((window.DiplovalPublicationChecks?.issues('articles',{...a,status:N.status(a)})?.warnings||[]).map((m,j)=>h('p',{key:'w'+j},'À vérifier : '+m))),h('p',{},'Prévisualisation du texte uniquement : tester le PDF, les liens et la page finale sur mobile et PC après le déploiement.'))
+        )
       );
     }
   });
