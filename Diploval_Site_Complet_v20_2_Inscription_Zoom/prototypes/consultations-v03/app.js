@@ -4,7 +4,7 @@
 // Chaque action disparaît au rechargement ; tous les identifiants et messages sont fictifs.
 const $=id=>document.getElementById(id);
 const tabs=[...document.querySelectorAll('[data-tab]')];
-const views=['threads','personal','moderation'];
+const views=['threads','personal','charter','moderation'];
 const activity=$('activity');
 const announce=message=>{activity.textContent=message;};
 const initialQueue=[
@@ -124,6 +124,26 @@ $('revision-form').addEventListener('submit',e=>{
  announce('Proposition fictive '+id+' placée en modération. L’ancienne version publique reste visible.');
 });
 
+
+$('charter-form').addEventListener('submit',e=>{
+ e.preventDefault();
+ const input=$('charter-text');
+ const content=input.value.trim();
+ if(!content){
+  announce('Vous pouvez ne pas répondre. Si vous souhaitez proposer une idée, écrivez-la dans le champ libre.');
+  input.focus();
+  return;
+ }
+ if(content.length<10){
+  announce('Pour cette simulation, précisez votre proposition en au moins dix caractères, sans donner d’informations personnelles.');
+  input.focus();
+  return;
+ }
+ const id=addQueue('Proposition de charte','CHARTE-V0.3',content);
+ input.value='';
+ announce('Proposition fictive '+id+' ajoutée à la file de modération simulée. Rien n’a été publié ni transmis sur un serveur.');
+});
+
 const node=(tag,cls,text)=>{
  const n=document.createElement(tag);
  if(cls)n.className=cls;
@@ -138,6 +158,17 @@ function appendPublicReply(record){
  const replies=thread.querySelector('.replies');
  replies?.append(reply);
  filterThreads();
+}
+function acceptCharter(record){
+ const container=$('charter-proposals');
+ const empty=$('charter-empty');
+ if(empty)empty.hidden=true;
+ const card=node('article','charter-published');
+ const head=node('strong','', 'Proposition de démonstration · publication simulée');
+ const message=node('p','',record.message);
+ const note=node('p','help','Texte fictif autorisé dans cette page, sans publication réelle.');
+ card.append(head,message,note);
+ container.append(card);
 }
 function acceptRevision(record){
  if(record.ref!=='CE-2026-0012')return;
@@ -159,6 +190,7 @@ function decide(id,decision){
  item.state=decision;
  if(decision==='Publication autorisée'&&item.kind==='Réponse')appendPublicReply(item);
  if(decision==='Publication autorisée'&&item.kind==='Révision')acceptRevision(item);
+ if(decision==='Publication autorisée'&&item.kind==='Proposition de charte')acceptCharter(item);
  // Aucune suppression automatique : même les signalements exigent une décision.
  announce('Décision fictive enregistrée pour '+id+' : '+decision+'. Aucun service réel n’a été contacté.');
  renderQueue();
