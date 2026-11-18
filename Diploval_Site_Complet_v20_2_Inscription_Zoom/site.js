@@ -171,13 +171,21 @@
     if (pdfButton) {
       if (item.pdf) {
         pdfButton.hidden = false;
-        pdfButton.href = item.pdf;
-        pdfButton.setAttribute('aria-label', `Consulter le PDF : ${item.title}`);
+        pdfButton.href = publicationUrl(key) + '#lecteur-pdf';
+        pdfButton.textContent = 'Lire le PDF sur le site';
+        pdfButton.removeAttribute('target');
+        pdfButton.setAttribute('aria-label', `Lire le PDF sur le site : ${item.title}`);
       } else {
         pdfButton.hidden = true;
         pdfButton.removeAttribute('href');
         pdfButton.removeAttribute('aria-label');
       }
+    }
+    const downloadButton = document.querySelector('#dialog-download');
+    if(downloadButton){
+      downloadButton.hidden=!item.pdf;
+      if(item.pdf){downloadButton.href=new URL(item.pdf,window.location.origin).pathname;downloadButton.download='';}
+      else downloadButton.removeAttribute('href');
     }
     const action = document.querySelector('#dialog-action');
     if (action) action.href = `mailto:contact@diploval.fr?subject=${encodeURIComponent('À propos du document — ' + item.title)}`;
