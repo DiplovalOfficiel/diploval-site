@@ -69,7 +69,7 @@
   document.querySelectorAll('.dp-stepbtn').forEach(b=>b.addEventListener('click',()=>{
     const target=Number(b.dataset.step||1);
     if(target>1 && !openFirst && !typeField?.value){step(1);showError('Choisissez d’abord le type de contribution.',document.querySelector('.dp-choice'));return}
-    if((target>2&&!openFirst||target>1&&openFirst) && !contribution?.value.trim()){step(2);showError('Expliquez votre contribution avant de continuer.',contribution);return}
+    if((target>2&&!openFirst||target>1&&openFirst) && !contribution?.value.trim()){step(openFirst?1:2);showError('Expliquez votre contribution avant de continuer.',contribution);return}
     step(target)
   }));
   const today=()=>{const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Paris',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()).reduce((a,x)=>{a[x.type]=x.value;return a},{});return `${parts.year}-${parts.month}-${parts.day}`};
