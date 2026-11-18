@@ -49,9 +49,9 @@ export function createDialogueRepository({store,authorize,prefix='dialogue-v03'}
     if(!content||Buffer.byteLength(content,'utf8')>MAX_BYTES)throw Error('Dossier trop volumineux.');
     return content;
   };
-  const confirm=async(key,expected)=>{
+  const confirm=async(key,expected,etag)=>{
     const found=await getJson(key);
-    if(!found||!same(found.data,expected))throw failed();
+    if(!found||found.etag!==etag||!same(found.data,expected))throw failed();
     return found;
   };
   const checkNew=entry=>{
@@ -77,26 +77,28 @@ export function createDialogueRepository({store,authorize,prefix='dialogue-v03'}
     // récupérée par un futur outil interne, jamais exposée publiquement.
     const reserved=await store.set(refKey(record.reference),JSON.stringify(claim),{onlyIfNew:true});
     if(!reserved?.modified||!reserved.etag)throw conflict();
-    await confirm(refKey(record.reference),claim);
+    await confirm(refKey(record.reference),claim,reserved.etag);
     const saved=await store.set(recordKey(record.id),encode(record),{onlyIfNew:true});
     if(!saved?.modified||!saved.etag)throw conflict();
-    await confirm(recordKey(record.id),record);
+    await confirm(recordKey(record.id),record,saved.etag);
     return {id:record.id,reference:record.reference,mutation:record.mutation};
   }
   async function readPrivate(principal,id){
+    await checkedAccess(principal,'lookup_private');
     const existing=await getJson(recordKey(id));
     if(!existing)return null;
     await checkedAccess(principal,'read_private',existing.data);
     return clone(existing.data);
   }
   async function mutatePrivate(principal,id,{expectedMutation,operation,transform}={}){
-    const key=recordKey(id);
-    const existing=await getJson(key);
-    if(!existing)return null;
     if(typeof operation!=='string'||!['revise','moderate','withdraw'].includes(operation)
        ||typeof transform!=='function'){
       throw Error('Opération serveur inconnue ou non autorisée.');
     }
+    await checkedAccess(principal,'lookup_private');
+    const key=recordKey(id);
+    const existing=await getJson(key);
+    if(!existing)return null;
     await checkedAccess(principal,operation,existing.data);
     if(!Number.isSafeInteger(expectedMutation)||existing.data.mutation!==expectedMutation)throw conflict();
     const old=clone(existing.data);
@@ -110,7 +112,7 @@ export function createDialogueRepository({store,authorize,prefix='dialogue-v03'}
     }
     const saved=await store.set(key,encode(next),{onlyIfMatch:existing.etag});
     if(!saved?.modified||!saved.etag)throw conflict();
-    await confirm(key,next);
+    await confirm(key,next,saved.etag);
     return {id:next.id,reference:next.reference,mutation:next.mutation};
   }
   async function readPublicReference(reference){
