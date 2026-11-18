@@ -332,6 +332,52 @@
       "type": "Note stratégique",
       "id": "egalite",
       "type_filter": "note"
+    },
+    {
+      "id": "engagements-electoraux-responsabilite-des-elus",
+      "title": "Engagements électoraux : quelle responsabilité des élus devant les citoyens ?",
+      "type": "Document de cadrage",
+      "type_filter": "analyse",
+      "scope": "National",
+      "scope_filter": "national",
+      "status": "Publié",
+      "visible": true,
+      "featured": false,
+      "short_summary": "Changer d’avis est légitime. Mais comment expliquer, documenter et suivre les engagements électoraux qui évoluent, sont abandonnés ou ne sont pas réalisés ?",
+      "summary": "Cette consultation propose une réflexion ouverte sur la responsabilité de la parole publique. Elle ne présume ni la nécessité de nouvelles sanctions, ni la suffisance des règles actuelles. Les participants sont invités à exposer librement leur analyse, leurs objections et leurs propositions, puis, s’ils le souhaitent, à examiner plusieurs pistes contradictoires.",
+      "details": "Cette consultation s’appuie sur l’article introductif Diploval « Changer d’avis en politique : un droit, mais quelle responsabilité devant les citoyens ? ». Le PDF joint constitue un point de départ à discuter et non une position à approuver.",
+      "keywords": "élections, engagements électoraux, responsabilité des élus, transparence, débat démocratique, consultation citoyenne, contrôle indépendant",
+      "seo_description": "Consultation citoyenne Diploval : comment renforcer la transparence et la responsabilité des engagements électoraux sans empêcher les élus de changer d’avis ?",
+      "cover": "/assets/uploads/diploval-_-changer-d’avis-en-politique.png",
+      "social_image": "/assets/uploads/diploval_presentation_engagements_electoraux_1600x900.png",
+      "pdf": "/assets/documents/DIPLOVAL_Changer_d_avis_en_politique_V1_0_Definitive_18-11-2026.pdf",
+      "embed_pdf": true,
+      "version": "V0.2 · projet de consultation",
+      "date_label": "Projet de consultation — novembre 2026",
+      "meta": "Expression libre · débat contradictoire · projet V0.2",
+      "format": "PDF introductif · formulaire de consultation",
+      "participation_enabled": true,
+      "participation_status": "Consultation à venir",
+      "participation_question": "Comment les élus devraient-ils expliquer et rendre vérifiables les engagements électoraux qu’ils modifient, abandonnent ou ne parviennent pas à réaliser, tout en conservant leur liberté de jugement ?",
+      "participation_established": "Les engagements électoraux contribuent au choix des citoyens. Les responsables élus peuvent revoir leurs positions en raison de circonstances nouvelles, de données nouvelles, d’obstacles juridiques ou de choix politiques. La possibilité de changer d’avis et le devoir d’expliquer les décisions doivent être examinés ensemble.",
+      "participation_uncertain": "Quels engagements pourraient faire l’objet d’un suivi fiable ? Quelles obligations de justification seraient proportionnées ? Qui pourrait apprécier la qualité des explications ? Quels seraient les coûts, les risques de rigidité et les garanties d’indépendance ?",
+      "participation_not_presumed": "Cette consultation ne présume pas qu’un changement de position constitue une faute, qu’une sanction serait nécessaire, que le droit actuel serait insuffisant, ni qu’une des pistes proposées est la meilleure. Les opinions critiques, favorables et alternatives ont la même place.",
+      "participation_sections": [
+        "Liberté de changer d’avis",
+        "Transparence et justification publique",
+        "Suivi indépendant des engagements",
+        "Coûts, risques et garanties démocratiques",
+        "Autre solution ou proposition"
+      ],
+      "participation_open_first": true,
+      "participation_positions": [
+        "Maintenir les règles actuelles : privilégier la responsabilité politique et le jugement des électeurs, sans nouvelle obligation légale.",
+        "Exiger une justification publique, précise et documentée lorsqu’un engagement important est modifié, abandonné ou non réalisé.",
+        "Créer ou renforcer un mécanisme indépendant de suivi des engagements, avec contrôle des méthodes, droit de réponse et publicité des constats."
+      ],
+      "participation_schedule": "PROJET V0.2 NON OUVERT. La date d’ouverture et la date de clôture restent à valider. Des restitutions intermédiaires avant l’élection présidentielle de 2027 sont envisagées, suivies d’une synthèse contradictoire et d’un suivi des suites données.",
+      "participation_history": "Projet de consultation V0.2, établi après validation de l’article introductif. Aucun recueil de contributions n’est autorisé avant test du parcours, vérification de la modération et validation expresse de Diploval.",
+      "participation_followup": "À terme, les restitutions devront présenter les arguments contradictoires, les sources examinées, les propositions alternatives et les raisons documentées des suites retenues ou écartées. La publication d’une synthèse ne vaut pas approbation de toutes les contributions."
     }
   ]
 }
