@@ -42,7 +42,13 @@
   function showError(message,focus){errorBox.textContent=message;errorBox.classList.add('is-visible');focus?.focus()}
   function clearError(){errorBox.textContent='';errorBox.classList.remove('is-visible')}
   function panel(name){tabs.forEach(b=>{const active=b.dataset.panel===name;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});panels.forEach(p=>p.classList.toggle('active',p.id==='panel-'+name));if(name==='lire')loadPdfViewer();document.querySelector('.dp-tabs-shell')?.scrollIntoView({behavior:'smooth',block:'start'})}
-  tabs.forEach(b=>b.addEventListener('click',()=>panel(b.dataset.panel)));
+  tabs.forEach(b=>b.addEventListener('click',()=>{
+    if(b.dataset.panel==='lire'&&window.DiplovalPDFViewer?.isMobile?.()&&pdfFrame?.dataset.pdfSrc){
+      window.open(pdfFrame.dataset.pdfSrc,'_blank','noopener');
+      return;
+    }
+    panel(b.dataset.panel);
+  }));
   document.querySelectorAll('[data-jump]').forEach(b=>b.addEventListener('click',()=>panel(b.dataset.jump)));
   function review(){
     const target=document.getElementById('dp-review');if(!target||!form)return;
