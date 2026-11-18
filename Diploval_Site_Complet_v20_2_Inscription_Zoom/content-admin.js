@@ -41,7 +41,23 @@
     const q=s=>dialog.querySelector(s); if(q('#dialog-type'))q('#dialog-type').textContent=p.type||'Publication'; if(q('#dialog-title'))q('#dialog-title').textContent=p.title||'';
     if(q('#dialog-body'))q('#dialog-body').innerHTML=(p.cover?`<img class="dialog-admin-cover" src="${attr(p.cover)}" alt="Image de présentation : ${attr(p.title)}">`:'')+`<p class="dialog-summary-lead">${esc(p.summary||p.short_summary||'')}</p>${textParagraphs(p.details)}`;
     if(q('#dialog-meta')) q('#dialog-meta').innerHTML=[p.status,p.version,p.date_label,p.scope?`Échelle : ${p.scope}`:null,p.format].filter(Boolean).map(x=>`<span>${esc(x)}</span>`).join('');
-    const pdf=q('#dialog-pdf'); if(pdf){if(p.pdf){pdf.hidden=false;pdf.href=normalizePath(p.pdf);pdf.setAttribute('aria-label',`Consulter le PDF : ${p.title}`)}else{pdf.hidden=true;pdf.removeAttribute('href')}}
+    // La fiche de publication contient le lecteur PDF intégré, la fenêtre d’accueil ne doit pas le contourner.
+    const pdf=q('#dialog-pdf');
+    if(pdf){
+      pdf.hidden=!p.pdf;
+      if(p.pdf){
+        pdf.href='/publications/'+encodeURIComponent(id)+'/#lecteur-pdf';
+        pdf.textContent=p.embed_pdf===false?'Voir la fiche du document':'Lire le PDF sur le site';
+        pdf.setAttribute('aria-label','Consulter le document sur Diploval : '+p.title);
+        pdf.removeAttribute('target');
+      }else pdf.removeAttribute('href');
+    }
+    const download=q('#dialog-download');
+    if(download){
+      download.hidden=!p.pdf;
+      if(p.pdf){download.href=normalizePath(p.pdf);download.download='';download.setAttribute('aria-label','Télécharger le PDF : '+p.title)}
+      else download.removeAttribute('href');
+    }
     const action=q('#dialog-action'); if(action) action.href=`mailto:contact@diploval.fr?subject=${encodeURIComponent('À propos du document — '+p.title)}`;
     const participate=q('#dialog-participate'); if(participate){if(p.participation_enabled&&p.participation_url){participate.hidden=false;participate.href=normalizePath(p.participation_url);participate.textContent=p.participation_status||'Contribuer à cette version →'}else{participate.hidden=true;participate.removeAttribute('href')}}
     if(typeof dialog.showModal==='function')dialog.showModal(); else dialog.setAttribute('open',''); document.body.classList.add('modal-open');
