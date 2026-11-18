@@ -204,3 +204,23 @@ test('l’accès non autorisé est refusé avant tout accès au stockage privé'
  }),/non autorisé/);
  assert.equal(reads,0);
 });
+
+test('un changement concurrent entre la lecture et l’écriture déclenche un conflit ETag',async()=>{
+ const {repo,store}=setup();
+ await writeAndApprove(repo);
+ const originalSet=store.set.bind(store);
+ let injected=false;
+ store.set=async(key,json,options)=>{
+  if(!injected&&options?.onlyIfMatch){
+   injected=true;
+   const current=store.data.get(key);
+   store.data.set(key,{json:current.json,etag:'etag-modification-concurrente'});
+  }
+  return originalSet(key,json,options);
+ };
+ await assert.rejects(()=>repo.mutatePrivate(principal,id,{
+  operation:'revise',expectedMutation:1,
+  transform:e=>revise(e,'Nouvelle formulation soumise après une autre écriture.')
+ }),/Conflit/);
+ assert.equal((await repo.readPrivate(moderator,id)).publishedVersion,1);
+});
