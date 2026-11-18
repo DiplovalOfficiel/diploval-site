@@ -55,6 +55,13 @@ for(const [r,f] of Object.entries({
 const idsByFile=new Map();
 for(const p of htmlFiles){
   const h=fs.readFileSync(p,'utf8');
+  // Un prototype autonome ne doit jamais hériter du shell institutionnel :
+  // la combinaison des deux CSS peut réduire les colonnes à quelques lettres.
+  if(relp(p).startsWith('prototypes/')){
+    if(/\binstitutional-site\b|\/institutional\.css\b|\/styles\.css\b|<header\b[^>]*\bsite-header\b|\/site\.js\b/i.test(h)){
+      errors.push(relp(p)+' : mise en page globale injectée dans une maquette autonome.');
+    }
+  }
   idsByFile.set(p,new Set([...h.matchAll(/\bid=["']([^"']+)["']/g)].map(m=>m[1])));
   if(/Maquette\s*:/i.test(h)||/Maquette de validation/i.test(h))errors.push(`${relp(p)} contient encore un libellé de maquette publique.`);
   // CSP allows JSON-LD inline, but executable inline JS is intentionally forbidden.

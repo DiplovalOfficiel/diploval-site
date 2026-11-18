@@ -9,9 +9,10 @@ export function unifyPublicLayout(root){
   const dialogs=template('site-dialogs.template').match(/<dialog\b[\s\S]*?<\/dialog>/g)||[];
   const files=[];
   function walk(dir){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){
-    if(entry.isDirectory()&&!['admin','scripts','node_modules','.git'].includes(entry.name))walk(path.join(dir,entry.name));
+    if(entry.isDirectory()&&!['admin','scripts','node_modules','.git','prototypes'].includes(entry.name))walk(path.join(dir,entry.name));
     else if(entry.isFile()&&entry.name.endsWith('.html'))files.push(path.join(dir,entry.name));
   }}
+  // Les prototypes ont leur style et leur navigation autonomes. Ne jamais y injecter les ressources globales publiques.
   walk(root);
   for(const file of files){
     let html=fs.readFileSync(file,'utf8');
