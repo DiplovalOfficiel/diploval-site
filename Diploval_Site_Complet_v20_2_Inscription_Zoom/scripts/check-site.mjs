@@ -143,7 +143,7 @@ if(!exists('sitemap.xml'))errors.push('sitemap.xml absent.');
 // 5. Netlify header policy: specific rules must precede the catch-all.
 // The dossier PDF is intentionally embeddable only by Diploval itself.
 try{
-  const nt=read('netlify.toml');
+  const nt=fs.readFileSync(path.resolve(root,'..','netlify.toml'),'utf8');
   const pdfPos=nt.indexOf('for = "/assets/documents/*"');
   const adminPos=nt.indexOf('for = "/admin/*"');
   const contentPos=nt.indexOf('for = "/content/*"');
@@ -164,7 +164,7 @@ try{
   if(dossier.includes('dp-page')&&!/id=["']dp-pdf-frame["'][^>]+data-pdf-src=/i.test(dossier)) errors.push('dossier-numerisation.html : lecteur PDF Blob manquant.');
   const dossierJs=read('dossier-numerisation.js');
   if(!/URL\.createObjectURL\(/.test(dossierJs)||!/fetch\(source/.test(dossierJs)) errors.push('dossier-numerisation.js : chargement PDF fetch -> Blob manquant.');
-  const nt=read('netlify.toml');
+  const nt=fs.readFileSync(path.resolve(root,'..','netlify.toml'),'utf8');
   if(!/frame-src 'self' blob:/.test(nt)) errors.push("netlify.toml : la CSP doit autoriser frame-src 'self' blob: pour le lecteur PDF.");
 }catch(e){errors.push(`lecteur PDF : contrôle impossible (${e.message})`)}
 
@@ -210,7 +210,7 @@ try{
     if(!/decap-cms/i.test(adminHtml)) errors.push('admin/index.html : script Decap CMS introuvable.');
     if(/Relier ce que nos décisions/i.test(adminHtml)) errors.push('admin/index.html : la page d’accueil publique a été copiée par erreur dans /admin.');
   }
-  const nt=read('netlify.toml');
+  const nt=fs.readFileSync(path.resolve(root,'..','netlify.toml'),'utf8');
   if(!/from = "\/admin\/?"/.test(nt) || !/to = "\/admin\/index\.html"/.test(nt)){
     warnings.push('netlify.toml : aucune réécriture explicite /admin vers /admin/index.html.');
   }

@@ -1316,3 +1316,15 @@ body main :is(p,a,h1,h2,h3,h4,summary),body footer :is(p,a,button){overflow-wrap
 #lecteur-pdf{scroll-margin-top:110px}
 .seo-pdf-actions{display:flex;align-items:center;flex-wrap:wrap;gap:.65rem}
 @media(max-width:760px){.seo-pdf-actions{display:flex;flex-direction:column;align-items:stretch}.seo-pdf-actions .button{width:100%;justify-content:center}}
+
+/* Partage cohérent pour fiches de publications, communiqués et consultations. */
+.dv-share-slot{margin:2rem 0}
+.dv-share{padding:1.4rem;border:1px solid rgba(10,39,69,.12);border-radius:17px;background:#fff}
+.dv-share h2{margin:0 0 .4rem;font-size:1.4rem;color:#0a2745}
+.dv-share p{margin:.35rem 0 1rem;color:#526776;line-height:1.55}
+.dv-share-controls{display:flex;flex-wrap:wrap;gap:.6rem}
+.dv-share-action{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.65rem .95rem;border:1px solid #bdccd5;border-radius:9px;background:#fff;color:#0a2745!important;text-decoration:none!important;font:inherit;font-size:.9rem;font-weight:700;cursor:pointer}
+.dv-share-action:hover,.dv-share-action:focus-visible{background:#f0f5f8;outline-offset:3px}
+.dv-share-action.dv-share-primary{background:#0a2745;color:white!important;border-color:#0a2745}
+.dv-share .dv-share-status{margin:.5rem 0 0;font-size:.88rem;overflow-wrap:anywhere}
+@media(max-width:620px){.dv-share{padding:1rem}.dv-share-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.dv-share-action{font-size:.84rem}}

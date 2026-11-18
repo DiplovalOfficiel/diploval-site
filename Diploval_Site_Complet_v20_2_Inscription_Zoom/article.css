@@ -11,3 +11,12 @@
 .article-pdf [data-pdf-frame]{display:block;width:100%;height:min(75vh,880px);border:0;background:white}
 .seo-pdf-actions{display:flex;gap:10px;flex-wrap:wrap}
 @media(max-width:600px){.article-pdf-actions{flex-direction:column}.article-pdf-actions .button{width:100%}.article-pdf .seo-pdf-frame-wrap{min-height:0}}
+
+.dv-share-slot{margin:1.8rem 0}
+.dv-share{padding:1.15rem;border:1px solid #cdd9df;border-radius:15px;background:#fff}
+.dv-share h2{margin:.2rem 0 .5rem;color:#0a2745}
+.dv-share p{margin:.3rem 0 .9rem;color:#556b79;line-height:1.5}
+.dv-share-controls{display:flex;flex-wrap:wrap;gap:.55rem}
+.dv-share-action{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:.6rem .9rem;border:1px solid #bdcbd5;border-radius:8px;background:#fff;color:#0a2745!important;text-decoration:none!important;font:inherit;font-size:.9rem;font-weight:700;cursor:pointer}
+.dv-share .dv-share-status{margin:.5rem 0;overflow-wrap:anywhere}
+@media(max-width:600px){.dv-share-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}}
