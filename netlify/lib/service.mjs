@@ -60,7 +60,7 @@ export function createHandler({env,fetcher=fetch,store,clock=()=>Date.now()}) {
         const records=await Promise.all(rows.map(async raw=>{
           const s=normalizeSubmission(raw,{formId,formName:form.name});
           const review=await readReview(formId,s.id);
-          const fields=['dossier','version','contribution_type','contribution','partie_dossier','source','alternative','email','acknowledgement'];
+          const fields=['dossier','version','contribution_type','contribution','partie_dossier','source','alternative','piste_1','piste_2','piste_3','pistes_commentaire','email','acknowledgement'];
           const data=Object.fromEntries(fields.filter(k=>Object.hasOwn(s.data,k)).map(k=>[k,s.data[k]]));
           const decision=review?.data||emptyReview();
           // The full audit trail is fetched only when opening a contribution.
