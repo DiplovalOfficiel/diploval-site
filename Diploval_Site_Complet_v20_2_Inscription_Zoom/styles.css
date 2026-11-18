@@ -1311,3 +1311,8 @@ body .dp-bottom-note,body .seo-pdf-mobile-copy{color:#465d65}
 .footer-brand img,.footer .footer-brand img{mix-blend-mode:normal}
 .footer-brand{background:#fff;border-radius:4px}
 body main :is(p,a,h1,h2,h3,h4,summary),body footer :is(p,a,button){overflow-wrap:break-word}
+
+/* Le lecteur PDF reste atteignable depuis la fenêtre de présentation des documents. */
+#lecteur-pdf{scroll-margin-top:110px}
+.seo-pdf-actions{display:flex;align-items:center;flex-wrap:wrap;gap:.65rem}
+@media(max-width:760px){.seo-pdf-actions{display:flex;flex-direction:column;align-items:stretch}.seo-pdf-actions .button{width:100%;justify-content:center}}
