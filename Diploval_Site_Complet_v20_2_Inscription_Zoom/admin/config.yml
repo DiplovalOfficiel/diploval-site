@@ -298,6 +298,8 @@ collections:
               - { label: "Résumé de l’actualité", name: "intro", widget: "text", hint: "Un résumé court. Le texte intégral se rédige ci-dessous et sera lu sur la page de l’article." }
               - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre l’introduction." }
               - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false }
+              - { label: "Document PDF associé", name: "pdf", widget: "file", required: false, choose_url: false, allow_multiple: false, hint: "Téléverser un PDF depuis la médiathèque. Le document sera lisible sur la page et téléchargeable." }
+              - { label: "Afficher le lecteur PDF intégré", name: "embed_pdf", widget: "boolean", required: false, default: true, hint: "Lecture sur ordinateur et téléphone ; téléchargement toujours disponible." }
               - { label: "Contenu de l’actualité", name: "body", widget: "diploval-richtext", required: false }
               - label: "Sources et références"
                 name: "sources"
