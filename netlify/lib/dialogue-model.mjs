@@ -106,6 +106,7 @@ export function reviewRevision(entry,{decision,actor,reason='',expectedMutation,
   requireRevision(entry,expectedMutation);
   must(REVIEW_DECISIONS.includes(decision),'Décision inconnue.');
   const moderator=safeString(actor,'Responsable habilité',120),stamp=time(at);
+  must(entry.visibility!=='withdrawn','Un dossier retiré ne peut pas être remis en ligne par une décision sur une révision.');
   const pending=currentPending(entry);
   must(pending,'Aucune version en attente de modération.');
   if(decision==='approve')must(!!entry.permissions.publicationAt,'Aucune autorisation de publication pour ce dossier.');
