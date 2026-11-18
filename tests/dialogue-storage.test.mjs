@@ -68,7 +68,7 @@ async function writeAndApprove(repo,entry=make()){
 
 test('aucun stockage sans autorisation vérifiée injectée',()=>{
  assert.throws(()=>createDialogueRepository({store:fakeStore()}),/politique d’autorisation/);
- assert.throws(()=>createDialogueRepository({store:fakeStore(),authorize}),/aucune/);
+ assert.throws(()=>createDialogueRepository({store:fakeStore(),authorize,prefix:'../non'}),/Espace de stockage/);
 });
 test('le dépôt est privé et vérifié après réservation de référence',async()=>{
  const {repo,store}=setup();
