@@ -45,6 +45,13 @@ collections:
                   - "Consultation à venir"
                   - "Consultation close"
                   - "Résultats publiés"
+              - { label: "Questionnaire : commencer par une expression libre", name: "participation_open_first", widget: "boolean", default: false, required: false, hint: "À activer pour les consultations dont les personnes doivent écrire librement AVANT de consulter des pistes facultatives. Ne modifie pas les consultations existantes si désactivé." }
+              - label: "Pistes facultatives et contradictoires"
+                name: "participation_positions"
+                widget: "list"
+                required: false
+                hint: "Pistes de réflexion non exclusives présentées après la contribution libre. Une personne pourra n’en retenir aucune, plusieurs ou proposer une autre solution. Rédiger des formulations équilibrées et non orientées."
+                field: { label: "Piste de réflexion", name: "position", widget: "string", hint: "Énoncer une option réelle, ses limites ou un point de vue contradictoire, sans présenter cette option comme obligatoire." }
               - { label: "Question directrice de la consultation", name: "participation_question", widget: "text", required: false , hint: "Question principale soumise aux contributeurs. Elle doit être ouverte, intelligible et permettre des arguments favorables comme contradictoires." }
               - { label: "Ce qui est établi", name: "participation_established", widget: "text", required: false , hint: "Présente les faits suffisamment étayés du dossier. Faire la différence entre données établies, hypothèses et interprétations." }
               - { label: "Ce qui reste à instruire", name: "participation_uncertain", widget: "text", required: false , hint: "Décrit les points qui restent incertains ou nécessitent des vérifications ; cela aide les citoyens à cibler leurs apports." }
