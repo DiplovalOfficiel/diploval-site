@@ -26,6 +26,33 @@ async function init(){
  for(const item of publicA){if(item.pdf&&item.embed_pdf===false)add('Actualité avec lecteur intégré désactivé : '+item.title);if(!item.intro)add('Actualité sans résumé : '+item.title);}
  const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Paris',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
  for(const item of e.filter(x=>x.visible!==false&&x.date<today&&x.status==='a_venir'))add('Événement passé encore au statut « À venir » : '+item.title);
+ const rules=window.DiplovalPublicationChecks;
+ const mount=el('preflight-catalog');
+ if(mount&&rules){
+  const categories=[
+   ['publications','Publications & PDF',p],
+   ['communiques','Communiqués officiels',c],
+   ['articles','Actualités Diploval',a]
+  ];
+  mount.replaceChildren();
+  for(const [kind,label,items] of categories){
+   const section=document.createElement('section');
+   const h=document.createElement('h3');h.textContent=label;section.append(h);
+   const shown=rules.catalog(kind,items).filter(x=>x.published);
+   const list=document.createElement('ul');list.className='issues';
+   if(!shown.length){const li=document.createElement('li');li.textContent='Aucun contenu déclaré public.';li.className='ok';list.append(li);}
+   for(const record of shown){
+    const li=document.createElement('li');
+    if(!record.errors.length)li.className='ok';
+    const title=document.createElement('strong');title.textContent=record.title;
+    const detail=document.createElement('div');
+    const issues=[...record.errors.map(x=>'À corriger : '+x),...record.warnings.map(x=>'À vérifier : '+x)];
+    detail.textContent=issues.length?issues.join(' — '):'Données essentielles renseignées. Contrôler les fichiers et l’aperçu avant mise en ligne.';
+    li.append(title,detail);list.append(li);
+   }
+   section.append(list);mount.append(section);
+  }
+ }
  const list=document.createElement('ul');list.className='issues';
  for(const t of problems.length?problems:['Aucune anomalie éditoriale simple détectée dans les catalogues.']){
   const li=document.createElement('li');li.textContent=t;if(!problems.length)li.className='ok';list.append(li);
