@@ -45,6 +45,7 @@
     <nav class="tabs" role="tablist" aria-label="Explorer le prototype">
       <button type="button" role="tab" id="tab-threads" aria-controls="view-threads" aria-selected="true" tabindex="0" data-tab="threads">Échanges publics</button>
       <button type="button" role="tab" id="tab-personal" aria-controls="view-personal" aria-selected="false" tabindex="-1" data-tab="personal">Suivi personnel</button>
+      <button type="button" role="tab" id="tab-charter" aria-controls="view-charter" aria-selected="false" tabindex="-1" data-tab="charter">Charte du dialogue</button>
       <button type="button" role="tab" id="tab-moderation" aria-controls="view-moderation" aria-selected="false" tabindex="-1" data-tab="moderation">Modération (simulation)</button>
     </nav>
     <p id="activity" class="activity" role="status" aria-live="polite"></p>
@@ -164,6 +165,43 @@
           <div class="policy-note"><strong>En pratique</strong><p>La conservation et l'affichage de l'historique respecteront les droits de rectification, de retrait de publication et d'effacement applicables.</p></div>
         </aside>
       </div>
+    </section>
+
+    <section id="view-charter" role="tabpanel" aria-labelledby="tab-charter" class="view" hidden>
+      <div class="section-heading"><div>
+        <p class="eyebrow">Construire les règles du dialogue · participation libre</p>
+        <h2>Comment accueillir un changement d’avis ?</h2>
+        <p>Cette réflexion concerne la future charte des échanges Diploval. Elle est <strong>distincte du questionnaire sur les engagements électoraux</strong> et ne sert pas à évaluer les personnes.</p>
+      </div><span class="small-tag">Question facultative</span></div>
+      <div class="charter-grid">
+        <article class="panel charter-question">
+          <p class="charter-intro">Votre regard nous intéresse, même s’il diffère des règles envisagées.</p>
+          <h3>« Dans un débat, comment souhaiteriez-vous que les autres accueillent une personne qui change d’avis ? Et comment pourrait-on discuter de ses anciennes positions sans la juger personnellement ? »</h3>
+          <p>Vous pouvez répondre librement, exprimer un désaccord, suggérer une règle différente ou ne pas participer. Vous n’avez pas à raconter une expérience personnelle ni à dévoiler votre identité.</p>
+          <form id="charter-form">
+            <label for="charter-text">Votre proposition pour les règles du dialogue <span class="optional">(facultative)</span></label>
+            <textarea id="charter-text" rows="6" maxlength="4000" placeholder="Écrivez librement si vous le souhaitez…"></textarea>
+            <p class="help">Il s’agit ici d’une <strong>simulation locale</strong>. Aucune proposition ne sera transmise à Diploval ni mise en ligne. Dans la version définitive, une autorisation distincte serait demandée avant toute publication d’extrait.</p>
+            <button class="action primary" type="submit">Simuler le dépôt de ma proposition</button>
+          </form>
+        </article>
+        <aside class="panel charter-method">
+          <h3>Que deviendraient les réponses ?</h3>
+          <ol class="charter-process">
+            <li><strong>Expression libre</strong><span>Une réponse peut être courte, critique ou entièrement différente.</span></li>
+            <li><strong>Examen humain</strong><span>Aucune contribution n’est rendue publique sans vérification et autorisation appropriée.</span></li>
+            <li><strong>Synthèse contradictoire</strong><span>Diploval rassemble les propositions et les désaccords sans chercher un vote majoritaire.</span></li>
+            <li><strong>Charte soumise à validation</strong><span>Les règles retenues seraient présentées avec leurs justifications et leurs limites.</span></li>
+          </ol>
+        </aside>
+      </div>
+      <section class="charter-public" aria-labelledby="charter-public-title">
+        <h3 id="charter-public-title">Propositions visibles après modération simulée</h3>
+        <p class="help">Seules les propositions fictives explicitement autorisées dans l’onglet de démonstration « Modération » apparaîtront ici. Ce n’est pas un espace public actif.</p>
+        <div id="charter-proposals" class="charter-proposals" aria-live="polite">
+          <p id="charter-empty" class="empty">Aucune proposition fictive publiée pour le moment.</p>
+        </div>
+      </section>
     </section>
 
     <section id="view-moderation" role="tabpanel" aria-labelledby="tab-moderation" class="view" hidden>
