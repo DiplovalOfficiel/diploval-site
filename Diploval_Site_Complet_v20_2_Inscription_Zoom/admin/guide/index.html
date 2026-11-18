@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><title>Guide de l’administration — Diploval</title><style>
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#0a2745;background:#f4f6f7}*{box-sizing:border-box}body{margin:0}header{background:#0a2745;color:white;padding:16px max(22px,calc((100vw - 1040px)/2));display:flex;gap:16px;flex-wrap:wrap;align-items:center}header a{color:#fff}main{max-width:1040px;margin:auto;padding:28px 20px 70px}h1{font-family:Georgia,serif;font-size:clamp(30px,5vw,46px);font-weight:500}h2{font-family:Georgia,serif;font-size:26px;font-weight:500;margin-top:0}h3{font-size:18px;margin:1.2em 0 .5em}p,li,dd{line-height:1.65}.lead{max-width:790px;color:#536b79;font-size:1.05rem}.sections{display:grid;gap:16px}.panel{background:#fff;padding:clamp(17px,3vw,29px);border:1px solid #d3dfe5;border-radius:16px}.toc{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 26px}.toc a{padding:9px 12px;border:1px solid #b7cbd6;border-radius:8px;color:#0a2745;text-decoration:none;background:white;font-weight:700}.toc a:focus-visible,.toc a:hover{background:#eaf2f6}dt{font-weight:750;margin-top:12px}dd{margin-left:0;color:#485f6e}.note{padding:13px 16px;border-left:4px solid #a66a3f;background:#f8f3eb;border-radius:6px}.checklist{padding-left:20px}section{scroll-margin-top:18px}footer{padding:22px;text-align:center;color:#5d6d79;font-size:13px}@media(max-width:600px){.panel{padding:17px}}
+</style></head><body>
+<header><a href="/admin/">← Éditeur Diploval</a><strong>Guide de l’administration</strong><a href="/admin/pilotage/">Tableau de bord</a></header>
+<main>
+<h1>Guide de l’administration Diploval</h1>
+<p class="lead">Ce guide s’adresse aux personnes autorisées à préparer, corriger et publier les contenus de Diploval. Dans chaque formulaire, une aide est désormais affichée sous les champs pour expliquer leur usage exact.</p>
+<nav class="toc" aria-label="Sommaire du guide">
+<a href="#principes">Principes essentiels</a><a href="#statuts">Statuts et visibilité</a><a href="#rubriques">Les huit rubriques</a><a href="#publication">Avant toute publication</a><a href="#consultations">Consultations citoyennes</a><a href="#securite">Précautions</a></nav>
+<div class="sections">
+<section class="panel" id="principes"><h2>1. Principes essentiels</h2>
+<p><strong>Enregistrer n’est pas publier une page visible.</strong> Dans Decap CMS, le bouton de publication peut enregistrer les listes de données dans GitHub et déclencher un déploiement Netlify. La visibilité réelle dépend de plusieurs champs : statut, autorisation de visibilité, calendrier et existence des fichiers.</p>
+<p><strong>Un document de travail ne doit pas être mis dans les ressources publiques.</strong> Un PDF déposé dans la médiathèque d’un dépôt public peut être accessible directement par son adresse, même si sa page n’est pas visible. Utiliser un espace privé distinct pour les versions confidentielles ou non validées.</p>
+<p><strong>Une modification d’un contenu public doit être validée par une personne habilitée.</strong> L’administration prévoit une confirmation avant les créations ou modifications publiques, mais ce contrôle ne remplace ni la vérification du fond, ni la validation juridique et éditoriale.</p>
+</section>
+<section class="panel" id="statuts"><h2>2. Comprendre les cases essentielles</h2><dl>
+<dt>Visible sur le site</dt><dd>Autorise l’affichage public d’un élément qui remplit aussi les autres conditions de publication. Désactiver cette case ne rend pas automatiquement privé le PDF déjà téléversé.</dd>
+<dt>Statut</dt><dd>Signale si le contenu est brouillon, en travail, publié ou archivé selon la rubrique. Il ne remplace pas la case « Visible ».</dd>
+<dt>Mettre en avant / Afficher sur l’accueil</dt><dd>Choisit si le contenu apparaît parmi les éléments mis en valeur. Cela ne publie pas un brouillon.</dd>
+<dt>Identifiant / adresse courte</dt><dd>Détermine les liens permanents. Conserver cet identifiant après publication pour éviter les liens cassés.</dd>
+<dt>PDF / audio / image</dt><dd>Associe un véritable fichier au contenu. S’assurer qu’il correspond à la version validée, qu’il s’ouvre correctement et que les droits de diffusion sont acquis.</dd>
+<dt>Description SEO / image de partage</dt><dd>Prépare la manière dont une page peut être présentée dans les moteurs de recherche et les réseaux sociaux. Les plateformes restent libres d’utiliser leur propre aperçu.</dd>
+<dt>Sources / correction</dt><dd>Documente les preuves et les changements. Les affirmations doivent rester vérifiables et les corrections substantielles ne doivent pas être dissimulées.</dd>
+</dl></section>
+<section class="panel" id="rubriques"><h2>3. Les rubriques de l’administration</h2>
+<dl><dt>Publications &amp; PDF</dt><dd>Bibliothèque des rapports, notes, synthèses et documents publics. Gestion de la version, du statut, du PDF, des images et, le cas échéant, des consultations associées.</dd>
+<dt>Dossiers en cours</dt><dd>Affiche des travaux encore à l’étude et leur état d’avancement. Un dossier en cours n’est pas automatiquement une publication PDF.</dd>
+<dt>Agenda</dt><dd>Rendez-vous et événements : dates, lieu ou plateforme, accès, éventuel formulaire d’inscription. Vérifier la situation après la date de l’événement.</dd>
+<dt>Communiqués officiels</dt><dd>Déclarations institutionnelles ou de la Présidence : texte validé, signature, PDF officiel et corrections.</dd>
+<dt>Actualités Diploval</dt><dd>Articles et informations institutionnelles : texte rédigé, résumé, sources, image et éventuel PDF associé.</dd>
+<dt>Podcast</dt><dd>Épisodes : numéro, présentation, fichier audio, durée et transcription.</dd>
+<dt>Réglages du site</dt><dd>Bandeau d’information temporaire : texte, lien et dates d’affichage. À utiliser pour une information ponctuelle.</dd>
+<dt>Points d’information</dt><dd>Suivis datés : état, éventuel niveau de vigilance justifié, chronologie et sources vérifiées.</dd></dl>
+</section>
+<section class="panel" id="publication"><h2>4. Vérification avant publication</h2>
+<ol class="checklist"><li>Préparer le contenu en <strong>brouillon non visible</strong> jusqu’à la validation finale.</li><li>Contrôler les faits, les sources, les citations et les formulations contradictoires.</li><li>Vérifier le titre, le résumé, la date, la version et l’identifiant stable.</li><li>Vérifier les droits de diffusion, les images, l’accessibilité et l’absence de données personnelles injustifiées.</li><li>Tester le PDF ou l’audio, ainsi que les liens « Lire », « Télécharger » et « Partager ».</li><li>Examiner la mise en page sur ordinateur et téléphone.</li><li>Confirmer explicitement la mise en ligne, puis vérifier que le déploiement Netlify a réussi et que la page publique fonctionne.</li></ol>
+<p class="note">Un test de construction réussi ne prouve pas qu’un lecteur PDF fonctionne sur tous les appareils. Le contrôle visuel reste indispensable.</p>
+</section>
+<section class="panel" id="consultations"><h2>5. Consultations citoyennes</h2>
+<p>Une consultation publique s’ouvre depuis le dossier associé dans « Publications &amp; PDF ». La case d’activation est distincte du statut « Consultation ouverte ». Avant ouverture, renseigner la version de référence, la question directrice, le calendrier, les éléments établis, les incertitudes et les sujets proposés au formulaire.</p>
+<p>Les réponses des participants ne sont <strong>jamais publiées automatiquement</strong>. Leur instruction se déroule dans l’<a href="/admin/contributions/">espace privé de modération</a>, avec des décisions traçables. La rubrique ne doit pas être utilisée pour exposer les coordonnées ou notes internes des contributeurs.</p>
+</section>
+<section class="panel" id="securite"><h2>6. Sécurité, traçabilité et transmission</h2>
+<p>Chaque personne autorisée doit utiliser ses propres accès. Ne jamais transmettre de mots de passe, jetons GitHub, clés de modération ou données privées par les champs publics. Les accès et leur révocation doivent être gérés séparément des contenus.</p>
+<p>Conserver les versions de référence et les corrections importantes. Avant de supprimer une ressource ou de changer un identifiant, vérifier les liens déjà diffusés. Pour les dossiers sensibles, demander un contrôle éditorial, juridique et de protection des données approprié.</p>
+<p>En cas de doute : <strong>laisser le contenu en brouillon, demander une vérification et ne pas activer la visibilité.</strong></p>
+</section>
+</div></main><footer>Diploval · Guide opérationnel de l’administration · Version de travail</footer>
+</body></html>
