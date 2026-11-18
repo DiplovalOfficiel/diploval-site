@@ -27,7 +27,7 @@ const localRef=(value,label)=>{
 };
 for(const p of data['content/publications.json']?.publications||[]){localRef(p.pdf,`Publication « ${p.title} » / PDF`);localRef(p.cover,`Publication « ${p.title} » / couverture`)}
 for(const c of data['content/communiques.json']?.communiques||[]){localRef(c.pdf,`Communiqué « ${c.title} » / PDF`);localRef(c.cover,`Communiqué « ${c.title} » / image`)}
-for(const a of data['content/articles.json']?.articles||[]){localRef(a.cover,`Article « ${a.title} » / image`)}
+for(const a of data['content/articles.json']?.articles||[]){localRef(a.cover,`Article « ${a.title} » / image`);localRef(a.pdf,`Article « ${a.title} » / PDF`);localRef(a.social_image,`Article « ${a.title} » / partage`)}
 for(const e of data['content/podcasts.json']?.episodes||[]){localRef(e.cover,`Podcast « ${e.title} » / image`);localRef(e.audio,`Podcast « ${e.title} » / audio`)}
 
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(ent=>{const p=path.join(dir,ent.name);return ent.isDirectory()?walk(p):[p]})}
