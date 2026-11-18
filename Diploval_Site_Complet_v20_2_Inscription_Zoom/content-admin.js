@@ -46,11 +46,11 @@
     if(pdf){
       pdf.hidden=!p.pdf;
       if(p.pdf){
-        pdf.href=window.DiplovalPdfLinks?.isMobile?normalizePath(p.pdf):'/publications/'+encodeURIComponent(id)+'/#lecteur-pdf';
-        if(window.DiplovalPdfLinks?.isMobile){pdf.target='_blank';pdf.rel='noopener';}
+        pdf.href=/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent||'')?normalizePath(p.pdf):'/publications/'+encodeURIComponent(id)+'/#lecteur-pdf';
+        if(/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent||'')){pdf.target='_blank';pdf.rel='noopener';}
         pdf.textContent=p.embed_pdf===false?'Voir la fiche du document':'Lire le PDF sur le site';
         pdf.setAttribute('aria-label','Consulter le document sur Diploval : '+p.title);
-        pdf.removeAttribute('target');
+        if(!/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent||''))pdf.removeAttribute('target');
       }else pdf.removeAttribute('href');
     }
     const download=q('#dialog-download');
