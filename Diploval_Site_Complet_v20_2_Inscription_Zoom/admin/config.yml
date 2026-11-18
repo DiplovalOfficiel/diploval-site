@@ -125,8 +125,6 @@ collections:
             name: "dossiers"
             widget: "list"
             hint: "Liste des travaux en cours : elle ne remplace pas la bibliothèque des rapports PDF terminés."
-            hint: "Liste des dossiers en préparation ou en suivi. Ce n’est pas la bibliothèque des rapports PDF publiés, qui se gère dans Publications & PDF."
-        hint: "Liste des dossiers en préparation ou en suivi. Ce n’est pas la bibliothèque des rapports PDF publiés, qui se gère dans Publications & PDF."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un dossier"
@@ -162,8 +160,6 @@ collections:
             name: "events"
             widget: "list"
             hint: "Liste des rendez-vous Diploval : vérifier leur date, mode, lieu, accès et statut après l’événement."
-            hint: "Liste des rendez-vous et événements Diploval. Une entrée visible peut apparaître sur la page d’accueil selon sa date et son statut."
-        hint: "Groupe de champs répétés : ajoutez une entrée par élément, puis renseignez les informations demandées."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un événement"
@@ -351,8 +347,6 @@ collections:
             name: "episodes"
             widget: "list"
             hint: "Liste des épisodes audio : ne publier que des sons finalisés, autorisés et vérifiés sur mobile."
-            hint: "Liste des épisodes du podcast. Une nouvelle entrée apparaît seulement si la visibilité est activée et le site redéployé."
-        hint: "Groupe de champs répétés : ajoutez une entrée par élément, puis renseignez les informations demandées."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un épisode"
@@ -383,7 +377,6 @@ collections:
             name: "temporary_notice"
             widget: "object"
             hint: "Message ponctuel affiché sur le site pour une information importante. Ne pas utiliser pour une publication de fond ou une annonce permanente."
-        hint: "Ensemble de champs liés : renseignez chaque valeur utile et vérifiez le résultat avant la mise en ligne."
             fields:
               - { label: "Afficher le bandeau", name: "enabled", widget: "boolean", default: false , hint: "Active ou désactive le bandeau d’information temporaire. Vérifier le texte et les dates avant activation." }
               - { label: "Libellé", name: "label", widget: "string", default: "Information" , hint: "Petit intitulé visible en tête du bandeau, par exemple Information." }
