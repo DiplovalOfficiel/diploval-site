@@ -1,3 +1,14 @@
 {
-  "points": []
+  "points": [
+    {
+      "visible": true,
+      "show_home": true,
+      "level": "aucun",
+      "summary": "Information technique : Le site Diploval fait actuellement l'objet d'améliorations. Certaines fonctionnalités peuvent être temporairement perturbées. Merci de votre compréhension.",
+      "opened_at": "18/11/2026T22:09",
+      "last_update": "19/11/2026T23:00",
+      "status": "suivi",
+      "title": "Information technque"
+    }
+  ]
 }
