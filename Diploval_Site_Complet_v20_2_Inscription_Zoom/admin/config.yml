@@ -25,6 +25,7 @@ collections:
           - label: "Publications"
             name: "publications"
             widget: "list"
+            hint: "Bibliothèque des documents : chaque élément possède son propre statut, sa visibilité, son PDF et son identifiant. Ajouter crée une nouvelle fiche, sans publication automatique."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter une publication"
@@ -123,6 +124,7 @@ collections:
           - label: "Dossiers"
             name: "dossiers"
             widget: "list"
+            hint: "Liste des travaux en cours : elle ne remplace pas la bibliothèque des rapports PDF terminés."
             hint: "Liste des dossiers en préparation ou en suivi. Ce n’est pas la bibliothèque des rapports PDF publiés, qui se gère dans Publications & PDF."
         hint: "Liste des dossiers en préparation ou en suivi. Ce n’est pas la bibliothèque des rapports PDF publiés, qui se gère dans Publications & PDF."
             collapsed: true
@@ -159,6 +161,7 @@ collections:
           - label: "Événements"
             name: "events"
             widget: "list"
+            hint: "Liste des rendez-vous Diploval : vérifier leur date, mode, lieu, accès et statut après l’événement."
             hint: "Liste des rendez-vous et événements Diploval. Une entrée visible peut apparaître sur la page d’accueil selon sa date et son statut."
         hint: "Groupe de champs répétés : ajoutez une entrée par élément, puis renseignez les informations demandées."
             collapsed: true
@@ -218,6 +221,7 @@ collections:
           - label: "Communiqués"
             name: "communiques"
             widget: "list"
+            hint: "Liste des communiqués officiels : chaque texte public nécessite une vérification du contenu, de la signature et du PDF éventuel."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un communiqué"
@@ -269,6 +273,7 @@ collections:
           - label: "Actualités"
             name: "articles"
             widget: "list"
+            hint: "Liste des actualités : préparer en brouillon non visible, puis vérifier texte, sources, images et PDF avant publication."
             collapsed: true
             add_to_top: true
             label_singular: "Nouvelle actualité"
@@ -345,6 +350,7 @@ collections:
           - label: "Épisodes"
             name: "episodes"
             widget: "list"
+            hint: "Liste des épisodes audio : ne publier que des sons finalisés, autorisés et vérifiés sur mobile."
             hint: "Liste des épisodes du podcast. Une nouvelle entrée apparaît seulement si la visibilité est activée et le site redéployé."
         hint: "Groupe de champs répétés : ajoutez une entrée par élément, puis renseignez les informations demandées."
             collapsed: true
@@ -398,6 +404,7 @@ collections:
           - label: "Points d’information"
             name: "points"
             widget: "list"
+            hint: "Liste des points d’information : chaque niveau, source et mise à jour doit être justifié et daté."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un point d’information"
