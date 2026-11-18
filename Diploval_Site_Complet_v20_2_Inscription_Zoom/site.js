@@ -171,9 +171,9 @@
     if (pdfButton) {
       if (item.pdf) {
         pdfButton.hidden = false;
-        pdfButton.href = publicationUrl(key) + '#lecteur-pdf';
+        pdfButton.href = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent||'') ? new URL(item.pdf,window.location.origin).pathname : publicationUrl(key) + '#lecteur-pdf';
         pdfButton.textContent = 'Lire le PDF sur le site';
-        pdfButton.removeAttribute('target');
+        if(/Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent||'')){pdfButton.target='_blank';pdfButton.rel='noopener';}else pdfButton.removeAttribute('target');
         pdfButton.setAttribute('aria-label', `Lire le PDF sur le site : ${item.title}`);
       } else {
         pdfButton.hidden = true;
