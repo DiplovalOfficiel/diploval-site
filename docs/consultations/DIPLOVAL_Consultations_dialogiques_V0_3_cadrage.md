@@ -119,5 +119,17 @@ Les sept axes suivants sont **validés dans leur principe**. Ils restent soumis 
 
 Ce principe doit faire l'objet d'un travail contradictoire avec les futurs collaborateurs et de tests de compréhension citoyenne avant d'être adopté dans la charte définitive.
 
+**Décision validée — recueil de la parole citoyenne sur ce principe :** ajouter à la V0.3 une question ouverte et facultative, distincte du formulaire principal et des fils de discussion :
+
+> « Dans un débat, comment souhaiteriez-vous que les autres accueillent une personne qui change d'avis ? Et comment pourrait-on discuter de ses anciennes positions sans la juger personnellement ? »
+
+- Ne pas préremplir ni orienter les réponses ; accepter les critiques et les approches différentes.
+- Expliquer brièvement qu'il s'agit d'enrichir les règles du dialogue, pas d'évaluer la personnalité ou la cohérence des participants.
+- Permettre de répondre sans raconter une expérience personnelle ni divulguer son identité.
+- Ne publier que selon les autorisations appropriées et la modération préalable ; les réponses ne sont pas automatiquement publiques.
+- Réunir les points de convergence, désaccords et propositions alternatives dans une restitution contradictoire, puis soumettre à validation les règles proposées pour la charte.
+- Cette évolution concerne la **V0.3**, pas le questionnaire de consultation électorale **V0.2**, qui reste indépendant.
+
+
 **Reste à préciser avant développement sécurisé :** procédure de vérification des contacts, cas des contributeurs sans e-mail, seuil de modification substantielle, politique de conservation et base juridique détaillée, catégories de signalements, délai et modalités de réexamen. Aucune de ces modalités n'est automatiquement considérée comme décidée.
 
