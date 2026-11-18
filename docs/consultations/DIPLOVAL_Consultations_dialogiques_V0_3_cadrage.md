@@ -92,4 +92,32 @@ Chaque lot exige une validation avant passage au suivant. **L'ouverture de la co
 - Lecture par thème, échanges argumentés, contextualisation des désaccords.
 - Aucun classement des opinions par popularité.
 
-**À préciser avant codage du prototype :** pseudonyme public facultatif ou affichage anonyme, modalités de vérification de l'e-mail pour les réponses, politique de durée de conservation, et charte détaillée de modération ; ces points ne doivent pas être supposés validés.
+## 8. Compléments approuvés pour la consolidation V0.3 (18 novembre 2026)
+
+Les sept axes suivants sont **validés dans leur principe**. Ils restent soumis à conception, tests, règles de sécurité et vérification juridique avant activation.
+
+1. **Identité publique choisie** : permettre l'affichage sous pseudonyme, nom ou sans nom. L'adresse de contact demeure privée. Recueillir une autorisation distincte pour la publication d'une contribution, sans obliger une personne à rendre publique sa participation.
+2. **Révisions et réponses contextualisées** : rattacher chaque réponse à la version du texte à laquelle elle réagit. En cas de modification substantielle, signaler sans jugement que certaines réponses concernent une version antérieure. Les versions précédentes ne sont affichées publiquement que dans les conditions licites et autorisées.
+3. **Notifications facultatives** : après accord, informer l'auteur des réponses validées, demandes de précisions et décisions qui concernent sa contribution. Prévoir désactivation et suppression des abonnements.
+4. **Réexamen des décisions de modération** : motiver les décisions importantes, offrir une voie de demande de réexamen et en tracer la suite, sans créer une publication automatique.
+5. **Regroupement d'arguments proches** : présenter les thématiques communes et liens vers les textes originaux en préservant les nuances, les auteurs et les désaccords. Les volumes de réponses ne valent pas sondage ni mesure de vérité.
+6. **Séparation stricte des espaces** : les fils publics ne donnent jamais accès à l'interface privée de modération, aux notes internes, aux coordonnées ni aux actions d'administration. Les droits de chaque collaborateur doivent être limités et vérifiés côté serveur.
+7. **Clôture et restitution** : après la fin d'une consultation, conserver une archive publique structurée dans les limites des droits applicables, expliquant les arguments contradictoires, la synthèse, les suites et les points en suspens. Distinguer consultation close, archive en lecture seule et procédure de complément ultérieur.
+
+## 9. Principe éditorial à approfondir : droit à l'évolution de la pensée
+
+**Question fondatrice ouverte :** comment permettre à une personne de changer d'avis dans un débat sans utiliser systématiquement son opinion passée pour la discréditer ?
+
+**Orientation de conception proposée — non présentée comme règle définitivement tranchée :**
+- Affirmer qu'une évolution de pensée n'est pas en soi une faute, une faiblesse, un aveu de mauvaise foi ou une incohérence disqualifiante.
+- Ne pas interdire la discussion des contradictions réelles : il est légitime de demander des explications, de comparer des arguments datés ou de contester une justification, sous réserve du respect des personnes.
+- Offrir, sans le rendre obligatoire, un champ « Ce qui a changé dans mon raisonnement » ou « Nouveaux faits / arguments pris en compte ». L'auteur peut aussi simplement préciser ou corriger.
+- Rattacher les réponses existantes à la bonne version et indiquer sobrement « Cet argument a été révisé après certaines réponses ».
+- Dans l'interface publique, éviter les mentions accusatoires (« se contredit », « volte-face »), les scores de cohérence, les classements de constance et les mises en scène humiliantes.
+- Distinguer l'historique d'instruction privé d'un historique public autorisé ; garantir les droits de rectification, retrait de publication et effacement lorsque prévus par le droit.
+- Donner aux modérateurs une règle de dialogue : « critiquer les idées et leurs raisons, sans assigner l'auteur pour toujours à une version antérieure ».
+
+Ce principe doit faire l'objet d'un travail contradictoire avec les futurs collaborateurs et de tests de compréhension citoyenne avant d'être adopté dans la charte définitive.
+
+**Reste à préciser avant développement sécurisé :** procédure de vérification des contacts, cas des contributeurs sans e-mail, seuil de modification substantielle, politique de conservation et base juridique détaillée, catégories de signalements, délai et modalités de réexamen. Aucune de ces modalités n'est automatiquement considérée comme décidée.
+
