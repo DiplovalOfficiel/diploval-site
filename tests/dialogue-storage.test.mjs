@@ -46,7 +46,7 @@ function fakeStore(){
 const authorize=(who,action,entry)=>{
  if(who?.kind==='moderator-test')return true;
  if(who?.kind==='verified-test'){
-  if(action==='create')return true;
+  if(action==='create'||action==='lookup_private')return true;
   if(action==='read_private'||action==='revise')
     return entry?.author?.privateContact===who.email;
  }
@@ -191,4 +191,16 @@ test('les références publiques ne permettent pas une lecture privée par const
  await writeAndApprove(repo);
  assert.equal(await repo.readPublicReference('CE-2026-000000000001'),null);
  await assert.rejects(()=>repo.readPrivate(stranger,id),/non autorisé/);
+});
+
+test('l’accès non autorisé est refusé avant tout accès au stockage privé',async()=>{
+ const {repo,store}=setup();
+ let reads=0;
+ const original=store.getWithMetadata.bind(store);
+ store.getWithMetadata=async(...args)=>{reads++;return original(...args);};
+ await assert.rejects(()=>repo.readPrivate(stranger,id),/non autorisé/);
+ await assert.rejects(()=>repo.mutatePrivate(stranger,id,{
+  operation:'moderate',expectedMutation:0,transform:approve
+ }),/non autorisé/);
+ assert.equal(reads,0);
 });
