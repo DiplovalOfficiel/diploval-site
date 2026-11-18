@@ -133,3 +133,27 @@ footer{border-top:1px solid var(--line);max-width:1080px;margin:0 auto;padding:2
 @media(min-width:621px) and (max-width:840px){h1{font-size:2.15rem}.hero{padding-top:33px}.thread h3{font-size:1.1rem}}
 @media(max-width:380px){main{padding-inline:12px}.topbar{gap:8px}.brand span small{font-size:10px}.tabs button{font-size:.81rem;padding-inline:11px}.thread-head{align-items:flex-start}.thread-ref{max-width:100%}.reference strong{font-size:1.16rem}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}}
+
+/* Construction facultative de la charte : présentation autonome, sans réponses imposées. */
+.charter-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,1fr);gap:17px;align-items:start}
+.charter-question h3{font:500 clamp(1.12rem,1.85vw,1.38rem)/1.5 Georgia,"Times New Roman",serif;color:var(--navy);border-left:3px solid var(--copper);padding:0 0 0 16px;margin:16px 0}
+.charter-intro{font-weight:700;color:#526778;margin:0 0 10px}
+.charter-question>p:not(.charter-intro){font-size:.92rem;line-height:1.65;color:var(--text)}
+.charter-question label{margin-top:23px}
+.charter-question textarea{font-size:.94rem;line-height:1.6;min-height:142px}
+.charter-question .action{margin-top:6px}
+.optional{font-size:.83rem;font-weight:400;color:var(--muted)}
+.charter-method h3{font-size:1.08rem}
+.charter-process{counter-reset:charter;list-style:none;margin:16px 0 0;padding:0}
+.charter-process li{counter-increment:charter;display:grid;grid-template-columns:27px minmax(0,1fr);gap:0 11px;padding:0 0 17px;position:relative}
+.charter-process li::before{content:counter(charter);display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:#e8f0f4;color:var(--navy);font-size:.81rem;font-weight:800;grid-column:1;grid-row:1/3}
+.charter-process strong{grid-column:2;font-size:.9rem;line-height:1.45}
+.charter-process span{grid-column:2;color:var(--muted);font-size:.85rem;line-height:1.56;margin-top:3px}
+.charter-public{margin:21px 0 0}
+.charter-public h3{font-size:1.08rem}
+.charter-proposals{display:grid;gap:10px}
+.charter-published{border:1px solid #cfdfd9;border-left:3px solid var(--good);border-radius:10px;background:#fff;padding:16px}
+.charter-published p{overflow-wrap:anywhere;line-height:1.6;margin:8px 0}
+.charter-published .help{margin:4px 0 0}
+@media(max-width:840px){.charter-grid{grid-template-columns:1fr}.charter-method{max-width:none}.charter-process{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px}}
+@media(max-width:620px){.charter-question h3{font-size:1.14rem;line-height:1.55}.charter-process{display:block}.charter-question .action{width:100%}.charter-question label{margin-top:16px}}
