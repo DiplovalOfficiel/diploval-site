@@ -1400,3 +1400,15 @@ body main :is(p,a,h1,h2,h3,h4,summary),body footer :is(p,a,button){overflow-wrap
   .strategic-watch__links{display:grid;gap:.35rem;margin-top:.15rem}
   .strategic-watch__links a{font-size:.72rem}
 }
+
+
+/* V26 — Sources et partage des Points d'information */
+.point-card-actions{display:flex;flex-wrap:wrap;align-items:center;gap:.55rem 1rem;margin-top:.75rem}
+.point-source-jump{display:inline-flex;color:#5f6f7f;font-size:.76rem;font-weight:800;text-decoration:underline;text-decoration-color:rgba(189,109,53,.42);text-underline-offset:4px}
+.point-source-intro{margin:-.15rem 0 .7rem!important;color:#71808e!important;font-size:.76rem!important}
+.point-share{margin-top:.15rem}
+@media(max-width:640px){
+  .point-card-actions{display:grid;gap:.5rem}
+  .point-source-jump,.point-open{width:max-content;max-width:100%}
+  .point-share{margin-top:.35rem}
+}
