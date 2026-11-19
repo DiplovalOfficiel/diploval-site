@@ -61,7 +61,7 @@ test('une enveloppe altérée est refusée sans révéler de texte',async()=>{
  const raw=rawStore(),storage=createEncryptedStore({store:raw,key}),name='dialogue-v03/records/private-002';
  await storage.set(name,JSON.stringify({message:'à protéger'}),{onlyIfNew:true});
  const row=raw.map.get(name),envelope=JSON.parse(row.body);
- envelope.payload=envelope.payload.slice(0,-1)+(envelope.payload.endsWith('A')?'B':'A');
+ envelope.payload=(envelope.payload.startsWith('A')?'B':'A')+envelope.payload.slice(1);
  raw.map.set(name,{...row,body:JSON.stringify(envelope)});
  await assert.rejects(()=>storage.getWithMetadata(name),/intégrité non vérifiée/);
 });
