@@ -193,3 +193,62 @@ Les bases légales de l'article 6 et les exceptions de l'article 9 sont deux exa
 - CNIL, obligation de DPO : https://www.cnil.fr/fr/le-delegue-la-protection-des-donnees-dpo/devenir-delegue-la-protection-des-donnees
 
 **Conservation de l'invariant : NO GO — P01–P16 OPEN — aucune collecte réelle V0.3 — PR #20 brouillon — V0.2 inchangée.**
+
+---
+
+## 10. Contrôle des déclarations publiques et qualification du responsable — 19 novembre 2026
+
+### 10.1. Éléments constatés dans les pages publiques
+
+Source contrôlée : https://diploval.fr/ (rubriques « Mentions légales », « Données personnelles », « Publications, corrections et réutilisation » ; consultation du 19/11/2026).
+
+| Élément du site en ligne | Constat vérifiable sur la page | Lecture pour V0.3 |
+|---|---|---|
+| Éditeur et porteur | Les mentions légales présentent **Franck Saubin**, nom public **Souix Nathorod**, comme fondateur et porteur de Diploval | Cela identifie une personne déclarée publiquement, mais **ne constitue pas une attestation de la forme juridique actuellement immatriculée** |
+| Société annoncée | « Diploval — SASU en cours d'immatriculation ; procédure engagée » ; SIREN/RCS/RNE annoncés comme futurs | Ne pas désigner une SASU comme responsable juridiquement établie sans pièce du registre |
+| Responsable indiqué sur la politique actuelle | « Franck Saubin, pour Diploval » ; adresse de contact général `contact@diploval.fr` | **Responsable publiquement indiqué pour les services existants** ; à confirmer et qualifier formellement pour V0.3, qui constitue un traitement différent |
+| État actuel de l'espace personnel | Le site affirme ne comporter « aucun compte utilisateur » | Déclaration relative au site **actuel**, incompatible avec une présentation de la V0.3 comme déjà disponible ; la future notice devra préciser le changement avant activation |
+| Hébergeur et formulaires actuels | Netlify est présenté comme hébergeur et Netlify Forms comme système des formulaires publics | **Piste d'inventaire fournisseur**, non preuve du lieu de traitement, des clauses art. 28, du chiffrement ou des prestataires de la future V0.3 |
+| Contributions existantes | Le site annonce une non-publication de l'email et une conservation des coordonnées jusqu'à clôture/traitement | Durée non quantifiée : ne pas recycler cette phrase comme politique de conservation détaillée de V0.3 |
+| Licences de publication | Les **textes originaux de Diploval** sont présentés sous CC BY 4.0, avec exceptions | Cela ne prouve **aucune licence automatiquement accordée par les contributeurs ou les institutions** sur leurs textes ; régime spécifique à décider |
+
+La page publique contient une adresse professionnelle envisagée et des coordonnées de contact ; elles ne sont pas reproduites dans le registre de travail, car les décisions de conformité exigent surtout des preuves sur l'entité et les rôles, non la multiplication de données d'identification dans le dépôt.
+
+**Vérification externe non concluante :** une recherche web dans l'Annuaire des Entreprises n'a pas fourni de correspondance officielle suffisamment fiable pour attester la situation RNE/RCS exacte du porteur. Cela **ne signifie pas qu'aucune immatriculation n'existe** ; la pièce officielle reste à obtenir et vérifier via https://annuaire-entreprises.data.gouv.fr/ ou les justificatifs remis par l'exploitant.
+
+### 10.2. Qualification provisoire, sans transformer la déclaration en preuve juridique
+
+**Hypothèse de travail P14 (NON VALIDÉE)** : la personne indiquée dans la politique actuelle, Franck Saubin, décide de l'organisation des consultations Diploval et pourrait être responsable des traitements V0.3, **sous réserve de déterminer s'il agit juridiquement en son nom ou pour le compte d'une personne morale effectivement constituée et de vérifier les finalités/moyens essentiels réellement décidés**.
+
+La CNIL rappelle que les qualifications dépendent de la réalité des finalités et des moyens essentiels, non d'une simple appellation : https://www.cnil.fr/fr/rgpd-comment-bien-identifier-son-role
+
+| Intervenant envisagé | Qualification provisoire | Vérification indispensable |
+|---|---|---|
+| Exploitant juridique effectif de Diploval | Responsable probable des consultations conçues et administrées par Diploval | Justificatif officiel et décision sur les finalités/moyens essentiels |
+| Institution destinataire de publications filtrées | Destinataire ; éventuellement responsable distinct de ses usages propres | Cartographie des flux et des réutilisations, sans présumer de responsabilité conjointe |
+| Institution co-concevant une collecte précise | Responsabilité conjointe **possible uniquement si** finalités/moyens essentiels décidés ensemble | Documenter concrètement l'influence de chacun ; accord art. 26 si applicable |
+| Hébergeur, stockage ou outil d'envoi | Sous-traitant potentiel ou responsable distinct selon la prestation et ses traitements propres | Contrat et finalités propres, sous-traitants ultérieurs, transferts, garanties |
+| Agent institutionnel invité | Utilisateur habilité au nom de son organisme, non un responsable automatiquement autonome | Identification du mandat, habilitation individuelle et date de révocation |
+| Modérateur Diploval | Personne habilitée agissant selon instructions, non responsable indépendant par sa seule fonction | Contrôle de session, règles de séparation, confidentialité et audit |
+
+### 10.3. Déclencheurs de décision et texte public non diffusable
+
+**Dossier P14 à obtenir avant signature :**
+- preuve officielle de l'immatriculation et de la qualité de l'exploitant juridique au jour de la future collecte ;
+- décision écrite identifiant le responsable V0.3 et l'interlocuteur de droits, avec lien entre nom public Diploval et identité légale ;
+- tableau des institutions invitées et de leurs usages permis, notamment refus de toute réutilisation des dossiers privés ;
+- preuve des contrats et des règles de conservation pour le stockage et les emails ;
+- correction de la politique actuelle uniquement lorsque l'évolution de service, l'identité et la description technique sont arrêtées.
+
+**Libellé de travail non publiable tant que P14 demeure OPEN :**
+« Les consultations citoyennes Diploval V0.3 seront placées sous la responsabilité de [IDENTITÉ LÉGALE VÉRIFIÉE], qui déterminera leurs finalités et moyens essentiels. Les institutions invitées ne recevront pas les coordonnées privées des contributeurs du seul fait de leur participation. La nature de leurs propres traitements, leurs destinataires et les éventuelles responsabilités conjointes seront indiqués pour chaque consultation. Les droits pourront être exercés auprès de [CONTACT RGPD VALIDÉ]. »
+
+Le texte entre crochets **ne doit pas être diffusé au public**. Aucun contenu du site existant n'est modifié à cette étape.
+
+**Effet sur les statuts :** P14 demeure **OPEN**, comme P01–P06. Une constatation sur le site n'est pas une preuve d'immatriculation, de conformité ou de désignation signée.
+
+### 10.4. Conséquence opérationnelle immédiate
+
+L'ordre de clôture reste : **pièce officielle de la structure → qualification écrite du responsable V0.3 → finalités et bases art. 6/9 → notice et CGU → contrats et sécurité des prestataires → tests d'exploitation isolés → décision indépendante et datée**. Les travaux de stockage et d'identité institutionnelle peuvent avancer en parallèle, mais ne sont pas à mettre en ligne.
+
+Sources principales : site https://diploval.fr/ ; CNIL https://www.cnil.fr/fr/rgpd-comment-bien-identifier-son-role ; Annuaire national https://annuaire-entreprises.data.gouv.fr/ ; RGPD articles 26 et 28 https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4
