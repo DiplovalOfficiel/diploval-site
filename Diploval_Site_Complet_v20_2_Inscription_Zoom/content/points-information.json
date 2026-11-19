@@ -1,3 +1,30 @@
 {
-  "points": []
+  "points": [
+    {
+      "show_home": true,
+      "level": "2",
+      "summary": "Les discussions diplomatiques se poursuivent autour d’un possible cessez-le-feu et d’un règlement plus large, mais aucun accord général n’est conclu. Les principaux blocages restent les territoires, les garanties de sécurité et les conditions de vérification. Parallèlement, l’intensité militaire demeure élevée et plusieurs incidents continuent d’entretenir un risque d’escalade régionale. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+      "updates": [
+        {
+          "correction": false,
+          "datetime": "19/11/2026T11:51",
+          "title": "Niveau 2 maintenu — négociations actives, risque militaire toujours élevé",
+          "body": "Les échanges diplomatiques restent ouverts et plusieurs propositions de cessez-le-feu, de garanties de sécurité et de désescalade continuent d’être examinées. Aucun accord général n’est toutefois conclu à ce jour. L’activité militaire demeure élevée, mais aucun élément suffisamment établi ne justifie un passage au Code One. Diploval maintient donc le niveau 2 — Vigilance renforcée et poursuit le suivi des négociations et du risque d’escalade régionale.",
+          "sources": []
+        }
+      ],
+      "watch_up": [
+        "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.  Affrontement militaire direct entre forces russes et forces de l’OTAN.  Multiplication coordonnée d’incidents graves dans plusieurs États alliés.  Changement majeur et vérifiable de posture nucléaire ou stratégique.  Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
+      ],
+      "why_level": "Le niveau 2 traduit une situation de tension élevée mais encore contenue. Les opérations militaires restent intenses, les risques d’incident à proximité de l’espace euro-atlantique persistent et aucun cessez-le-feu général n’est en vigueur. En revanche, les canaux diplomatiques restent ouverts et aucun affrontement militaire direct Russie–OTAN ni changement majeur de posture stratégique ne justifie actuellement le passage au Code One.",
+      "visible": true,
+      "watch_down": [
+        "Entrée en vigueur d’un cessez-le-feu général vérifiable.  Réduction durable des frappes et des incidents transfrontaliers.  Mise en place effective d’un mécanisme commun de surveillance.  Accord sur des mesures de désescalade militaire ou énergétique.  Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
+      ],
+      "last_update": "19/11/2026T11:50",
+      "status": "suivi",
+      "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
+      "category": "Géopolitique · Europe"
+    }
+  ]
 }
