@@ -43,6 +43,7 @@ jobs:
             tests/dialogue-b9-9-dual-control.test.mjs \
             tests/dialogue-storage-integration-synthetic.test.mjs \
             tests/dialogue-reference-integrity-inspector.test.mjs \
-            tests/dialogue-contact-index-integrity-inspector.test.mjs
+            tests/dialogue-contact-index-integrity-inspector.test.mjs \
+            tests/dialogue-mutation-recovery-journal.test.mjs
       - name: Aucune mise en production
         run: echo "Audit local GitHub Actions uniquement. Aucun déploiement V0.3 autorisé."
