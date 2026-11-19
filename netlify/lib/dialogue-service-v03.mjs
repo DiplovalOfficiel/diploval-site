@@ -67,7 +67,8 @@ const text=v=>{
  */
 export function createDialogueInternalHandler({
  enabled=false,origin,authorAccess,authorRepository,moderatorRepository,
- publicRepository,authenticateModerator,resolveEntryIdByReference,rateLimit
+ publicRepository,authenticateModerator,resolveEntryIdByReference,rateLimit,
+ moderationQueue=null,appealService=null
 }={}){
  const respond=(body,status=200,extra={})=>new Response(JSON.stringify(body),{
   status,headers:{...headers,...extra}
@@ -154,10 +155,62 @@ export function createDialogueInternalHandler({
     if(!result)throw notFound();
     return respond({accepted:true,mutation:result.mutation},202);
    }
+   if(path==='/author/appeal'&&request.method==='POST'){
+    if(!appealService)throw issue(503,'Service de recours non configuré.');
+    const {principal,id}=await author(request),body=await parseJson(request);
+    if(typeof body.reason!=='string'||body.reason.trim().length<10||body.reason.length>2000)
+     throw issue(400,'Motif de réexamen requis.');
+    const result=await appealService.submit(principal,{entryId:id,reason:body.reason});
+    return respond({appeal:result},202);
+   }
+   if(path==='/author/appeal'&&request.method==='GET'){
+    if(!appealService)throw issue(503,'Service de recours non configuré.');
+    const {principal,id}=await author(request);
+    const version=Number(u.searchParams.get('version'));
+    if(!Number.isSafeInteger(version)||version<1)throw issue(400,'Version de recours requise.');
+    const appeal=await appealService.own(principal,{entryId:id,version});
+    if(!appeal)throw notFound();
+    return respond({appeal});
+   }
    if(path==='/author/logout'&&request.method==='POST'){
     const {token}=await author(request);
     if(!(await authorAccess.revokeSession(token)))throw issue(409,'Session non révoquée.');
     return respond({signedOut:true},200,{'Set-Cookie':cookie(null)});
+   }
+   if(path==='/moderation/queue'&&request.method==='GET'){
+    if(!moderationQueue)throw issue(503,'File de modération non configurée.');
+    const who=await moderator(request);
+    const state=u.searchParams.get('state')||'pending';
+    const consultationId=u.searchParams.get('consultationId')||null;
+    const limit=Number(u.searchParams.get('limit')||20);
+    const cursor=Number(u.searchParams.get('cursor')||0);
+    if(!Number.isSafeInteger(limit)||limit<1||limit>25
+       ||!Number.isSafeInteger(cursor)||cursor<0)throw issue(400,'Pagination invalide.');
+    const result=await moderationQueue.list(who.principal,{state,consultationId,limit,cursor});
+    return respond(result);
+   }
+   if(path==='/moderation/appeal'&&request.method==='GET'){
+    if(!appealService)throw issue(503,'Service de recours non configuré.');
+    const who=await moderator(request);
+    const id=u.searchParams.get('id'),version=Number(u.searchParams.get('version'));
+    if(!ID.test(id||'')||!Number.isSafeInteger(version)||version<1)
+     throw issue(400,'Référence interne ou version invalide.');
+    const result=await appealService.forModerator(who.principal,{entryId:id,version});
+    if(!result)throw notFound();
+    return respond({appeal:result});
+   }
+   if(path==='/moderation/appeal/decide'&&request.method==='POST'){
+    if(!appealService)throw issue(503,'Service de recours non configuré.');
+    const who=await moderator(request),body=await parseJson(request);
+    if(!ID.test(body.id||'')||!Number.isSafeInteger(body.version)||body.version<1
+      ||!['maintain','invite_revision','escalate'].includes(body.decision)
+      ||typeof body.reason!=='string'||body.reason.trim().length<10||body.reason.length>2000)
+     throw issue(400,'Décision motivée de recours requise.');
+    const result=await appealService.decide(who.principal,{
+      entryId:body.id,version:body.version,decision:body.decision,
+      reason:body.reason,actor:who.label,expectedStatus:body.expectedStatus||'pending'
+    });
+    return respond({appeal:result});
    }
    if(path==='/moderation/entry'&&request.method==='GET'){
     const who=await moderator(request),id=u.searchParams.get('id');
