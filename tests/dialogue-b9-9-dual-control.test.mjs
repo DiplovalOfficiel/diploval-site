@@ -59,3 +59,19 @@ test('B9.9 wrong executor rejected',async()=>{
 test('B9.9 no stored approval means no handoff',async()=>{
  const x=fixture();await assert.rejects(x.svc.authorizeHandoff(executor,handoff),/Décision/);
 });
+
+test('B9.10: une décision d’un autre dossier est rejetée même si le magasin la renvoie',async()=>{
+ const x=fixture({fakeDecision:{caseId:'case_456',expectedRevision:1,evidenceId,
+  reviewerId:'reviewer_01',executorId:'executor_01',kind:'supervised_handoff',status:'approved'}});
+ await assert.rejects(x.svc.authorizeHandoff(executor,handoff),/Décision de reprise invalide/);
+});
+test('B9.10: une décision liée à une autre preuve est rejetée',async()=>{
+ const x=fixture({fakeDecision:{caseId:id,expectedRevision:1,evidenceId:'evidence_999999',
+  reviewerId:'reviewer_01',executorId:'executor_01',kind:'supervised_handoff',status:'approved'}});
+ await assert.rejects(x.svc.authorizeHandoff(executor,handoff),/Décision de reprise invalide/);
+});
+test('B9.10: une décision d’une autre révision est rejetée',async()=>{
+ const x=fixture({fakeDecision:{caseId:id,expectedRevision:2,evidenceId,
+  reviewerId:'reviewer_01',executorId:'executor_01',kind:'supervised_handoff',status:'approved'}});
+ await assert.rejects(x.svc.authorizeHandoff(executor,handoff),/Décision de reprise invalide/);
+});
