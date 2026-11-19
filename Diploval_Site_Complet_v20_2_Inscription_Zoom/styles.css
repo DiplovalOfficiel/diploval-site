@@ -1417,19 +1417,21 @@ body main :is(p,a,h1,h2,h3,h4,summary),body footer :is(p,a,button){overflow-wrap
 /* V27 — respiration du bandeau stratégique sur grand écran */
 @media(min-width:1100px){
   .strategic-watch__inner{
-    width:min(1380px,calc(100% - 48px));
+    width:min(1585px,calc(100% - 32px));
     grid-template-columns:minmax(0,1fr) auto;
-    gap:1.4rem;
+    gap:1.55rem;
   }
-  .strategic-watch__intro{gap:1rem}
+  .strategic-watch__intro{gap:1.1rem}
+  .strategic-watch__kicker{min-width:92px}
   .strategic-watch__main{
-    grid-template-columns:12px 165px minmax(0,1fr) auto 22px;
-    gap:.8rem;
-    padding:.62rem .82rem;
+    grid-template-columns:12px 175px minmax(0,1fr) auto 24px;
+    gap:.9rem;
+    padding:.64rem .9rem;
   }
-  .strategic-watch__copy strong{font-size:.94rem}
-  .strategic-watch__copy small{font-size:.7rem}
-  .strategic-watch__meta{font-size:.64rem}
-  .strategic-watch__help{gap:.45rem}
-  .strategic-watch__legend{gap:.4rem .75rem}
+  .strategic-watch__copy strong{font-size:.95rem}
+  .strategic-watch__copy small{font-size:.71rem}
+  .strategic-watch__meta{font-size:.64rem;padding-left:.25rem}
+  .strategic-watch__help{gap:.48rem;min-width:max-content}
+  .strategic-watch__legend{gap:.42rem .8rem}
+  .strategic-watch__links{gap:.5rem .9rem}
 }
