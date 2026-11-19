@@ -4,6 +4,8 @@
       "show_home": true,
       "level": "2",
       "summary": "Les discussions diplomatiques se poursuivent autour d’un possible cessez-le-feu et d’un règlement plus large, mais aucun accord général n’est conclu. Les principaux blocages restent les territoires, les garanties de sécurité et les conditions de vérification. La présence de personnels militaires français en Ukraine et la qualification russe de cette présence comme « participation directe » renforcent toutefois le risque d’incident impliquant directement la France. Diploval maintient donc le niveau 2 — Vigilance renforcée, sans passage au Code One.",
+      "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
+      "opened_at": "2026-11-19T11:50",
       "updates": [
         {
           "correction": false,
@@ -51,8 +53,6 @@
       "last_update": "2026-11-19T12:15",
       "status": "suivi",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
-      "category": "Géopolitique · Europe",
-      "opened_at": "2026-11-19T11:50",
       "sources": [
         {
           "label": "Conseil de l’Union européenne — prolongation de l’EUMAM Ukraine",
@@ -72,7 +72,8 @@
           "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war",
           "note": "Déclarations de Jean-Noël Barrot et rappel des propos russes du 17 novembre 2026."
         }
-      ]
+      ],
+      "category": "Géopolitique · Europe"
     }
   ]
 }
