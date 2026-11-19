@@ -68,7 +68,8 @@ const text=v=>{
 export function createDialogueInternalHandler({
  enabled=false,origin,authorAccess,authorRepository,moderatorRepository,
  publicRepository,authenticateModerator,resolveEntryIdByReference,rateLimit,
- moderationQueue=null,appealService=null,appealQueue=null
+ moderationQueue=null,appealService=null,appealQueue=null,
+ followupService=null,contributorResponses=null
 }={}){
  const respond=(body,status=200,extra={})=>new Response(JSON.stringify(body),{
   status,headers:{...headers,...extra}
@@ -155,6 +156,21 @@ export function createDialogueInternalHandler({
     if(!result)throw notFound();
     return respond({accepted:true,mutation:result.mutation},202);
    }
+   if(path==='/author/followup'&&request.method==='GET'){
+    if(!followupService)throw issue(503,'Suivi personnel non configuré.');
+    const {principal,id}=await author(request);
+    return respond({followup:await followupService.forAuthor(principal,id)});
+   }
+   if(path==='/author/response'&&request.method==='GET'){
+    if(!contributorResponses)throw issue(503,'Réponses personnelles non configurées.');
+    const {principal,id}=await author(request);
+    const mutation=Number(u.searchParams.get('mutation'));
+    if(!Number.isSafeInteger(mutation)||mutation<0)
+     throw issue(400,'Version de réponse invalide.');
+    const response=await contributorResponses.forAuthor(principal,{entryId:id,mutation});
+    if(!response)throw notFound();
+    return respond({response});
+   }
    if(path==='/author/appeal'&&request.method==='POST'){
     if(!appealService)throw issue(503,'Service de recours non configuré.');
     const {principal,id}=await author(request),body=await parseJson(request);
@@ -176,6 +192,46 @@ export function createDialogueInternalHandler({
     const {token}=await author(request);
     if(!(await authorAccess.revokeSession(token)))throw issue(409,'Session non révoquée.');
     return respond({signedOut:true},200,{'Set-Cookie':cookie(null)});
+   }
+   if(path==='/moderation/followup'&&request.method==='GET'){
+    if(!followupService)throw issue(503,'Suivi de modération non configuré.');
+    const who=await moderator(request),id=u.searchParams.get('id');
+    if(!ID.test(id||''))throw issue(400,'Dossier de suivi invalide.');
+    return respond({followup:await followupService.forModerator(who.principal,id)});
+   }
+   if(path==='/moderation/response'&&request.method==='GET'){
+    if(!contributorResponses)throw issue(503,'Réponses de modération non configurées.');
+    const who=await moderator(request),id=u.searchParams.get('id');
+    const mutation=Number(u.searchParams.get('mutation'));
+    if(!ID.test(id||'')||!Number.isSafeInteger(mutation)||mutation<0)
+     throw issue(400,'Dossier ou version invalide.');
+    const response=await contributorResponses.forModerator(who.principal,{entryId:id,mutation});
+    if(!response)throw notFound();
+    return respond({response});
+   }
+   if(path==='/moderation/response/draft'&&request.method==='POST'){
+    if(!contributorResponses)throw issue(503,'Réponses de modération non configurées.');
+    const who=await moderator(request),body=await parseJson(request);
+    if(!ID.test(body.id||'')||!Number.isSafeInteger(body.expectedMutation)
+       ||body.expectedMutation<0||typeof body.topic!=='string'
+       ||typeof body.message!=='string'||body.message.length>2000)
+     throw issue(400,'Brouillon de réponse invalide.');
+    const response=await contributorResponses.draft(who.principal,{
+      entryId:body.id,expectedMutation:body.expectedMutation,
+      topic:body.topic,message:body.message
+    });
+    return respond({response},202);
+   }
+   if(path==='/moderation/response/approve'&&request.method==='POST'){
+    if(!contributorResponses)throw issue(503,'Réponses de modération non configurées.');
+    const who=await moderator(request),body=await parseJson(request);
+    if(!ID.test(body.id||'')||!Number.isSafeInteger(body.expectedMutation)
+       ||body.expectedMutation<0)
+     throw issue(400,'Approbation de réponse invalide.');
+    const response=await contributorResponses.approve(who.principal,{
+      entryId:body.id,expectedMutation:body.expectedMutation
+    });
+    return respond({response});
    }
    if(path==='/moderation/queue'&&request.method==='GET'){
     if(!moderationQueue)throw issue(503,'File de modération non configurée.');
