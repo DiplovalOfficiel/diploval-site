@@ -3,8 +3,15 @@
     {
       "show_home": true,
       "level": "2",
-      "summary": "Les discussions diplomatiques se poursuivent autour d’un possible cessez-le-feu et d’un règlement plus large, mais aucun accord général n’est conclu. Les principaux blocages restent les territoires, les garanties de sécurité et les conditions de vérification. Parallèlement, l’intensité militaire demeure élevée et plusieurs incidents continuent d’entretenir un risque d’escalade régionale. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+      "summary": "Les discussions diplomatiques se poursuivent autour d’un possible cessez-le-feu et d’un règlement plus large, mais aucun accord général n’est conclu. Les principaux blocages restent les territoires, les garanties de sécurité et les conditions de vérification. La présence de personnels militaires français en Ukraine et la qualification russe de cette présence comme « participation directe » renforcent toutefois le risque d’incident impliquant directement la France. Diploval maintient donc le niveau 2 — Vigilance renforcée, sans passage au Code One.",
       "updates": [
+        {
+          "correction": false,
+          "datetime": "2026-11-19T12:15",
+          "title": "Avertissement russe concernant les personnels français en Ukraine",
+          "body": "À la suite des révélations sur la mission française « Volia », Sergueï Lavrov a qualifié la présence de personnels militaires français en Ukraine de « participation directe » au conflit. Paris conteste cette qualification et présente ces missions comme limitées à la formation et à la maintenance, sans participation aux combats. Cet épisode accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, il ne constitue ni une attaque contre le territoire français ni un affrontement militaire direct France–Russie ; le niveau 2 — Vigilance renforcée est donc maintenu.",
+          "sources": []
+        },
         {
           "correction": false,
           "datetime": "2026-11-19T11:51",
@@ -14,22 +21,25 @@
         }
       ],
       "watch_up": [
+        "Frappe russe entraînant des morts ou blessés parmi les personnels militaires français présents en Ukraine, notamment si le caractère intentionnel ou ciblé est établi.",
+        "Menace russe explicitement étendue des personnels français présents en Ukraine à des objectifs militaires ou civils situés sur le territoire français ou celui d’un État de l’OTAN.",
         "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.",
-        "Affrontement militaire direct entre forces russes et forces de l’OTAN.",
+        "Affrontement militaire direct entre forces russes et forces françaises ou de l’OTAN.",
         "Multiplication coordonnée d’incidents graves dans plusieurs États alliés.",
         "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
         "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
       ],
-      "why_level": "Le niveau 2 traduit une situation de tension élevée mais encore contenue. Les opérations militaires restent intenses, les risques d’incident à proximité de l’espace euro-atlantique persistent et aucun cessez-le-feu général n’est en vigueur. En revanche, les canaux diplomatiques restent ouverts et aucun affrontement militaire direct Russie–OTAN ni changement majeur de posture stratégique ne justifie actuellement le passage au Code One.",
+      "why_level": "Le niveau 2 traduit une situation de tension élevée mais encore contenue. Les opérations militaires restent intenses, les risques d’incident à proximité de l’espace euro-atlantique persistent et aucun cessez-le-feu général n’est en vigueur. Un élément nouveau renforce toutefois la vigilance : la présence confirmée de personnels militaires français en Ukraine pour des missions limitées de formation et de maintenance, ainsi que la qualification russe de cette présence comme « participation directe » au conflit. Moscou considère par ailleurs que des forces étrangères présentes en Ukraine peuvent constituer des cibles militaires. Cette situation accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, aucun affrontement militaire direct entre la France ou l’OTAN et la Russie, aucune attaque contre le territoire français et aucun changement majeur de posture stratégique ne justifient le passage au Code One.",
       "visible": true,
       "watch_down": [
         "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
         "Réduction durable des frappes et des incidents transfrontaliers.",
         "Mise en place effective d’un mécanisme commun de surveillance.",
         "Accord sur des mesures de désescalade militaire ou énergétique.",
+        "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-19T11:50",
+      "last_update": "2026-11-19T12:15",
       "status": "suivi",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
       "category": "Géopolitique · Europe",
