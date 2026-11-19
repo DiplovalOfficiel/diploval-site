@@ -7,8 +7,8 @@ const ID=/^[a-z0-9][a-z0-9_-]{2,79}$/i;
 const VALID_ROLES=new Set(['observer','reviewer','supervisor']);
 const PERMISSIONS={
  observer:new Set(['lookup_private','read_private','read_queue','read_appeal']),
- reviewer:new Set(['lookup_private','read_private','read_queue','read_appeal','moderate','review_appeal']),
- supervisor:new Set(['lookup_private','read_private','read_queue','read_appeal','moderate','withdraw','review_appeal','resolve_escalation'])
+ reviewer:new Set(['lookup_private','read_private','read_queue','read_appeal','moderate','review_appeal','draft_notice']),
+ supervisor:new Set(['lookup_private','read_private','read_queue','read_appeal','moderate','withdraw','review_appeal','resolve_escalation','draft_notice','approve_notice'])
 };
 export function createModeratorAccess({verifySession,loadGrants}={}){
  if(typeof verifySession!=='function'||typeof loadGrants!=='function')
@@ -58,5 +58,16 @@ export function createModeratorAccess({verifySession,loadGrants}={}){
   if(!grants)return false;
   return can(grants,action,entry);
  }
- return Object.freeze({authenticate,authorize});
+ // Le contexte de personnel provient de la session vérifiée. Il ne doit
+ // jamais être remplacé par un champ actor ou staffId venu du navigateur.
+ async function resolveStaff(principal){
+  if(!principal||typeof principal!=='object')return null;
+  const proof=issued.get(principal);
+  if(!proof)return null;
+  const session=await verifySession(proof.request);
+  if(!validSession(session)||session.staffId!==proof.staffId)return null;
+  if(!await grantsFor(proof.staffId))return null;
+  return {staffId:session.staffId,label:session.label.trim()};
+ }
+ return Object.freeze({authenticate,authorize,resolveStaff});
 }
