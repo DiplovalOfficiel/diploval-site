@@ -58,3 +58,13 @@ Audit de consolidation sur la PR GitHub #20, branche `audit/consultations-v03-b7
 - Grille : `docs/consultations/DIPLOVAL_V03_B7_gate_NO_GO.json`
 - Workflow : `.github/workflows/consultations-v03-audit.yml`
 - Test corrigé : `tests/dialogue-b9-3-journal-concurrency.test.mjs`
+
+
+## 7. Complément vérifié : CI verte et contrôle de liaison B9.9
+- Le workflow GitHub Actions `44563826993` exécuté sur le commit `2e7a6721b319e920786e09b51a2a262261b10649` s'est terminé en succès : **8/8 tests B7 et 86/86 tests B8–B9 réussis**. Cela ferme l'écart **de vérification de la suite unitaire** pour ce SHA, et **non** les conditions RGPD/sécurité d'ouverture.
+- Correction ciblée B9.9 : la décision chargée depuis le serveur doit avoir exactement les mêmes valeurs `caseId`, `expectedRevision`, `evidenceId` que la demande courante.
+- Trois tests de régression ajoutés : refus d'une décision provenant d'un autre dossier, d'une autre révision ou d'une autre preuve.
+- Les trois nouveaux tests et le correctif doivent recevoir une **nouvelle preuve CI** sur leur propre commit. Ne pas attribuer à ce dernier le résultat vert antérieur.
+- L'usage unique transactionnel de la décision, l'audit atomique, le fencing des adaptateurs, les stockages réels et les validations juridiques sont **toujours non résolus**. **NO GO inchangé.**
+
+Preuve du run : https://github.com/DiplovalOfficiel/diploval-site/actions/runs/44563826993
