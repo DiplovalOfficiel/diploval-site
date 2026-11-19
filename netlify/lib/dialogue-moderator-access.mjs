@@ -31,7 +31,7 @@ export function createModeratorAccess({verifySession,loadGrants}={}){
  const can=({roles,scopes,allConsultations},action,entry)=>{
   if(!Object.values(PERMISSIONS).some(v=>v.has(action)))return false;
   if(![...roles].some(role=>PERMISSIONS[role]?.has(action)))return false;
-  if(action==='lookup_private')return true; // lecture par id suivie du contrôle du dossier
+  if(action==='lookup_private'||action==='read_queue')return true; // accès à l'index, puis recontrôle par dossier
   if(!entry||!ID.test(entry.consultationId||''))return false;
   return allConsultations||scopes.has(entry.consultationId);
  };
