@@ -20,7 +20,7 @@ test('la maquette ne possède aucun branchement aux données ou aux comptes rée
 test('les exemples de délais sont clairement simulés',()=>{
  assert.match(js,/Objectif indicatif fictif/);
  assert.match(js,/Objectif interne dépassé|Objectif indicatif dépassé|Objectif indicatif fictif/);
- assert.match(js,/7 jours/);
+ assert.match(html,/7 jours/);
  assert.match(html,/14 jours pour un recours/);
 });
 test('toute insertion de texte sensible passe par textContent',()=>{
