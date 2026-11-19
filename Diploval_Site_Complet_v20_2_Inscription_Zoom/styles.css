@@ -1412,3 +1412,24 @@ body main :is(p,a,h1,h2,h3,h4,summary),body footer :is(p,a,button){overflow-wrap
   .point-source-jump,.point-open{width:max-content;max-width:100%}
   .point-share{margin-top:.35rem}
 }
+
+
+/* V27 — respiration du bandeau stratégique sur grand écran */
+@media(min-width:1100px){
+  .strategic-watch__inner{
+    width:min(1380px,calc(100% - 48px));
+    grid-template-columns:minmax(0,1fr) auto;
+    gap:1.4rem;
+  }
+  .strategic-watch__intro{gap:1rem}
+  .strategic-watch__main{
+    grid-template-columns:12px 165px minmax(0,1fr) auto 22px;
+    gap:.8rem;
+    padding:.62rem .82rem;
+  }
+  .strategic-watch__copy strong{font-size:.94rem}
+  .strategic-watch__copy small{font-size:.7rem}
+  .strategic-watch__meta{font-size:.64rem}
+  .strategic-watch__help{gap:.45rem}
+  .strategic-watch__legend{gap:.4rem .75rem}
+}
