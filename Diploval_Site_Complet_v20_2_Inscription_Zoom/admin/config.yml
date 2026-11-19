@@ -368,7 +368,7 @@ collections:
   - name: "site_settings_admin"
     label: "Réglages du site"
     files:
-      - label: "Bandeau temporaire"
+      - label: "Bandeau temporaire (accueil)"
         name: "site_settings"
         file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/site-settings.json"
         format: "json"
@@ -376,18 +376,18 @@ collections:
           - label: "Information temporaire"
             name: "temporary_notice"
             widget: "object"
-            hint: "Message ponctuel affiché sur le site pour une information importante. Ne pas utiliser pour une publication de fond ou une annonce permanente."
+            hint: "Bandeau bref affiché en haut de la page d’accueil. Pour une chronique complète, utiliser séparément Points d’information. Le bandeau ne s’active pas depuis un niveau de vigilance."
             fields:
               - { label: "Afficher le bandeau", name: "enabled", widget: "boolean", default: false , hint: "Active ou désactive le bandeau d’information temporaire. Vérifier le texte et les dates avant activation." }
               - { label: "Libellé", name: "label", widget: "string", default: "Information" , hint: "Petit intitulé visible en tête du bandeau, par exemple Information." }
-              - { label: "Texte", name: "text", widget: "text", required: false , hint: "Texte bref du bandeau. Présenter un fait ou une information datée, sans surcharge." }
+              - { label: "Message visible dans le bandeau", name: "text", widget: "text", required: false , hint: "Saisissez ici le message à afficher. Sans ce texte, le bandeau reste masqué même si Afficher le bandeau est activé. Utiliser une phrase courte et datée." }
               - { label: "Date de début", name: "start_date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false , hint: "Premier jour prévu d’affichage du bandeau. La date ne remplace pas l’enregistrement et le déploiement." }
               - { label: "Date de fin incluse", name: "end_date", widget: "datetime", date_format: "DD/MM/YYYY", time_format: false, required: false, hint: "Le bandeau disparaît automatiquement après cette date. Dernier jour inclus prévu pour le bandeau, qui doit ensuite disparaître automatiquement de l’affichage." }
               - { label: "Lien facultatif", name: "link", widget: "string", required: false , hint: "Adresse d’une page donnant plus d’informations sur le bandeau, si nécessaire." }
               - { label: "Texte du lien", name: "link_label", widget: "string", required: false, default: "En savoir plus" , hint: "Texte du bouton menant au complément d’information." }
 
   - name: "points_information_admin"
-    label: "Points d’information"
+    label: "Points d’information — suivis datés"
     files:
       - label: "Suivis & chronologies"
         name: "points_information"
@@ -397,7 +397,7 @@ collections:
           - label: "Points d’information"
             name: "points"
             widget: "list"
-            hint: "Liste des points d’information : chaque niveau, source et mise à jour doit être justifié et daté."
+            hint: "Ces fiches alimentent la page Points d’information et, si choisi, les cartes de l’accueil. Pour faire apparaître le bandeau en haut de l’accueil, ouvrir Réglages du site > Bandeau temporaire > Message visible dans le bandeau. Un niveau de vigilance ne crée pas automatiquement de bandeau."
             collapsed: true
             add_to_top: true
             label_singular: "Ajouter un point d’information"
