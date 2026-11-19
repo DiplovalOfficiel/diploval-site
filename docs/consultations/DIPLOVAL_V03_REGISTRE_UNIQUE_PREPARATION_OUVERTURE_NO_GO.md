@@ -324,3 +324,29 @@ La présence d'un champ de consentement obligatoire pour tout dépôt doit être
 - **P07–P16** : inchangés.
 
 **Interdictions maintenues : aucune ouverture V0.3, aucune collecte réelle, aucune publication juridique, aucune fusion de la PR #20.**
+
+---
+
+## 12. Notice RGPD citoyenne — projet interne rédigé, validation non acquise
+
+**Livrable daté du 19 novembre 2026 :** [Notice d'information à deux niveaux et choix de publication — PROJET INTERNE NON PUBLIABLE](./DIPLOVAL_V03_NOTICE_RGPD_CITOYEN_PROJET_INTERNE_NO_GO.md).
+
+Ce projet contient :
+- un premier niveau en langage simple à placer **avant le formulaire**, seulement après validation ;
+- une notice complète art. 13 décrivant la réception privée, les versions, la modération, la publication éventuelle, le suivi personnel, les réponses institutionnelles, les droits, les incidents et les prestataires ;
+- une maquette non activable de choix distincts : information, autorisation de publication, présentation du nom, examen spécifique des données sensibles et alertes facultatives ;
+- une liste explicite de champs à confirmer par documents : identité légale du responsable, bases art. 6, exception art. 9 si nécessaire, durée par type d'objet, destinataires, transferts, régime des mineurs, conditions de recours et garanties fournisseurs.
+
+**Décision documentaire :** la rédaction est suffisamment avancée pour une **revue juridique et produit**. Elle n'est **ni approuvée ni publiable** tant que les arbitrages restent ouverts. L'acceptation générale des CGU n'est pas une preuve de consentement explicite aux données sensibles. Le choix « sans nom affiché » ne représente pas une anonymisation juridique.
+
+**Liens aux conditions :** P01, P02, P03, P04, P05, P06, P07, P08, P14 et P16. Toutes demeurent **OPEN**. Le projet ne change ni `DIPLOVAL_V03_B7_gate_NO_GO.json` ni `release=NO_GO`.
+
+**Critères d'examen prioritaire :**
+1. Confirmer l'entité juridiquement responsable, son contact RGPD et le statut de l'entreprise ;
+2. arrêter les bases légales et le traitement des opinions/données sensibles par finalité ;
+3. décider des durées exactes et du caractère facultatif des coordonnées de suivi ;
+4. préciser le rôle réel des institutions, les destinataires, les traitements hors EEE et les prestataires ;
+5. faire valider les règles de publication, de réutilisation des contributions, de recours, et des mineurs ;
+6. vérifier ensuite le texte dans le parcours utilisateur et le rendre accessible au clavier, au mobile et aux lecteurs d'écran.
+
+**Règle d'ouverture inchangée :** notice finalisée et approuvée + tous les points bloquants vérifiés + décision humaine datée. Aucun déploiement et aucune collecte réelle V0.3.
