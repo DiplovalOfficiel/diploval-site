@@ -111,9 +111,9 @@ export function createAuthorAccess({store,secret,loadEntry,sendLink,clock=()=>Da
       ||typeof pending.data.entryId!=='string'||!idPattern.test(pending.data.entryId)
       ||typeof pending.data.contactDigest!=='string')return null;
     const latest=await loadEntry(pending.data.entryId);
-    if(!latest||latest.id!==pending.data.entryId
-       ||!sameAuthor(latest,toEmail(latest.author?.privateContact))
-       ||!eq(emailDigest(toEmail(latest.author?.privateContact)),pending.data.contactDigest))return null;
+    const contact=toEmail(latest?.author?.privateContact);
+    if(!latest||latest.id!==pending.data.entryId||!contact
+       ||!eq(emailDigest(contact),pending.data.contactDigest))return null;
     const used={...pending.data,status:'used',usedAt:stamp};
     if(!(await claim(key,pending,used)))return null;
     const sessionToken=token(),sessionKey=entryKey('sessions',sessionToken);
@@ -138,7 +138,7 @@ export function createAuthorAccess({store,secret,loadEntry,sendLink,clock=()=>Da
     if(!record||record.id!==found.data.entryId||!actual
       ||!eq(found.data.contactDigest,emailDigest(actual)))return null;
     const principal=Object.freeze({type:'author'});
-    authenticated.set(principal,{entryId:record.id,contactDigest:found.data.contactDigest});
+    authenticated.set(principal,{entryId:record.id,contactDigest:found.data.contactDigest,sessionKey:entryKey('sessions',sessionToken)});
     return principal;
   }
 
@@ -158,11 +158,17 @@ export function createAuthorAccess({store,secret,loadEntry,sendLink,clock=()=>Da
   async function authorize(principal,action,entry=null){
     const proof=(principal&&typeof principal==='object')?authenticated.get(principal):null;
     if(!proof)return false;
+    // Re-vérifier le statut à chaque autorisation : une révocation n'autorise
+    // pas l'utilisation d'un principal ancien mis en mémoire par erreur.
+    const active=await read(proof.sessionKey);
+    if(!active||active.data.status!=='active'||active.data.expiresAt<=now()
+       ||active.data.entryId!==proof.entryId
+       ||!eq(active.data.contactDigest,proof.contactDigest))return false;
     // Le principal n'est pas réutilisable comme simple objet JSON.
     if(action==='lookup_private')return true;
     if(!entry||entry.id!==proof.entryId)return false;
-    if(!sameAuthor(entry,toEmail(entry.author?.privateContact)))return false;
-    if(!eq(proof.contactDigest,emailDigest(toEmail(entry.author?.privateContact))))return false;
+    const contact=toEmail(entry.author?.privateContact);
+    if(!contact||!eq(proof.contactDigest,emailDigest(contact)))return false;
     return action==='read_private'||action==='revise';
   }
   return Object.freeze({requestLink,redeemLink,authenticate,revokeSession,authorize});
