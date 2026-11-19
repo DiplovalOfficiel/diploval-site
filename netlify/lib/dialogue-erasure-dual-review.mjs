@@ -6,14 +6,14 @@ const ACTOR=/^[a-z0-9_-]{8,96}$/i;
 const fail=message=>new Error(message);
 export function createErasureTwoPersonReview({
  enabled=false,authenticateReviewer,authenticateExecutor,
- loadCase,journal,loadEvidence,verifyEvidence,saveDecision,audit
+ loadCase,journal,loadEvidence,verifyEvidence,saveDecision,loadDecision,audit
 }={}){
  if(enabled!==true)return Object.freeze({
   approve:async()=>{throw fail('B9.9 non activé.');},
   authorizeHandoff:async()=>{throw fail('B9.9 non activé.');}
  });
  if([authenticateReviewer,authenticateExecutor,loadCase,loadEvidence,
-   verifyEvidence,saveDecision,audit].some(x=>typeof x!=='function')
+   verifyEvidence,saveDecision,loadDecision,audit].some(x=>typeof x!=='function')
    ||!journal||typeof journal.inspect!=='function')
   throw fail('Dépendances de double contrôle absentes.');
  const valid=(caseId,expectedRevision,evidenceId)=>
@@ -53,7 +53,9 @@ export function createErasureTwoPersonReview({
   // Authorization only; never opens a lock or modifies any private record.
   return Object.freeze({status:'approved_for_review',caseId,expectedRevision});
  }
- async function authorizeHandoff(principal,decision){
+ async function authorizeHandoff(principal,{caseId,expectedRevision,evidenceId}={}){
+  if(!valid(caseId,expectedRevision,evidenceId))throw fail('Identification invalide.');
+  const decision=await loadDecision({caseId,expectedRevision,evidenceId});
   if(!decision||!valid(decision.caseId,decision.expectedRevision,decision.evidenceId)
      ||!ACTOR.test(decision.reviewerId||'')||!ACTOR.test(decision.executorId||'')
      ||decision.reviewerId===decision.executorId||decision.status!=='approved'
@@ -70,8 +72,8 @@ export function createErasureTwoPersonReview({
     ||await verifyEvidence({caseId:decision.caseId,
       expectedRevision:decision.expectedRevision,evidence})!==true)
    throw fail('Preuve devenue invalide.');
-  // This does not validate that 'decision' came from durable trusted storage.
-  // Production must load it server-side and perform atomic single-use consumption.
+  // Production must also atomically consume this durable decision exactly once;
+  // this reviewer is a fail-closed preflight, not a release capability.
   return Object.freeze({authorized:true,automaticResume:false,unlockPerformed:false});
  }
  return Object.freeze({approve,authorizeHandoff});
