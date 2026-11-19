@@ -95,6 +95,32 @@
   function pointSlug(p){return p.slug||slugify(p.title)}
   const hasPointLevel = level => ['1','2','3'].includes(String(level));
   const levelMeta = level => ({'3':{label:'Niveau 3',name:'Surveillance active'},'2':{label:'Niveau 2',name:'Vigilance renforcée'},'1':{label:'Niveau 1 · Code One',name:'Seuil critique'}}[String(level)]||null);
+  function renderStrategicWatch(data){
+    const section=document.querySelector('#strategic-watch'),host=document.querySelector('#strategic-watch-items');
+    if(!section||!host)return;
+    const rank={'1':3,'2':2,'3':1};
+    const list=(data.points||[])
+      .filter(p=>p.visible!==false&&p.show_home!==false&&!['clos','archive'].includes(p.status)&&hasPointLevel(p.level))
+      .sort((a,b)=>(rank[String(b.level)]||0)-(rank[String(a.level)]||0)||String(b.last_update||b.opened_at||'').localeCompare(String(a.last_update||a.opened_at||'')))
+      .slice(0,3);
+    section.hidden=!list.length;
+    if(!list.length){host.innerHTML='';return}
+    host.innerHTML=list.map(p=>{
+      const m=levelMeta(p.level),href='/points-information/'+encodeURIComponent(pointSlug(p))+'/';
+      const summary=String(p.summary||'').replace(/\s+/g,' ').trim();
+      const short=summary.length>165?summary.slice(0,162).replace(/\s+\S*$/,'')+'…':summary;
+      const meta=p.last_update?'Mis à jour '+formatDateTime(p.last_update):'Suivi en cours';
+      return '<article class="strategic-watch__item strategic-watch__item-'+attr(p.level)+'">'
+        +'<a href="'+href+'" class="strategic-watch__main" aria-label="Ouvrir le suivi : '+attr(p.title)+'">'
+        +'<span class="strategic-watch__signal" aria-hidden="true"></span>'
+        +'<span class="strategic-watch__level"><b>'+esc(m.label)+'</b><em>'+esc(m.name)+'</em></span>'
+        +'<span class="strategic-watch__copy"><strong>'+esc(p.title)+'</strong><small>'+esc(short)+'</small></span>'
+        +'<span class="strategic-watch__meta">'+esc(meta)+'</span>'
+        +'<span class="strategic-watch__arrow" aria-hidden="true">→</span>'
+        +'</a></article>';
+    }).join('');
+  }
+
   function renderPointsHome(data){
     const section=document.querySelector('#points-information'),host=document.querySelector('#admin-points-home'); if(!section||!host)return;
     const list=(data.points||[]).filter(p=>p.visible!==false&&p.show_home!==false&&!['clos','archive'].includes(p.status)).sort((a,b)=>String(b.last_update||b.opened_at||'').localeCompare(String(a.last_update||a.opened_at||''))).slice(0,3);
@@ -165,7 +191,7 @@
   async function init(){const [pub,dos,agenda,articles,communiques,podcasts,points,settings]=await Promise.all([getJSON('content/publications.json',{publications:[]}),getJSON('content/dossiers.json',{dossiers:[]}),getJSON('content/agenda.json',{events:[]}),getJSON('content/articles.json',{articles:[]}),getJSON('content/communiques.json',{communiques:[]}),getJSON('content/podcasts.json',{episodes:[]}),getJSON('content/points-information.json',{points:[]}),getJSON('content/site-settings.json',{})]);publications=(pub.publications||[]).map(p=>{
       if(p.participation_enabled){p.participation_url=publicationId(p)==='numerisation-resilience'?'/dossiers/numerisation-securite-resilience':'/dossiers/'+publicationId(p)+'/';const today=parisToday();if(!['Consultation close','Résultats publiés'].includes(p.participation_status)){if(p.participation_closes&&today>p.participation_closes.slice(0,10))p.participation_status='Consultation close';else if(p.participation_opens&&today<p.participation_opens.slice(0,10))p.participation_status='Consultation à venir';}}
       return p;
-    });renderFeatured();renderLibrary();renderDossiers(dos);renderAgenda(agenda);renderArticles(articles);renderCommuniquesHome(communiques);renderPodcasts(podcasts);renderPointsHome(points);renderSiteNotice(settings);setupRegistrationEvents(agenda.events||[]);try{const id=new URL(location.href).searchParams.get('publication');if(id&&publications.some(p=>publicationId(p)===id&&p.visible!==false&&p.pdf&&!['Brouillon','Archivé'].includes(p.status)))setTimeout(()=>openPublication(id),120)}catch{}}
+    });renderFeatured();renderLibrary();renderDossiers(dos);renderAgenda(agenda);renderArticles(articles);renderCommuniquesHome(communiques);renderPodcasts(podcasts);renderStrategicWatch(points);renderPointsHome(points);renderSiteNotice(settings);setupRegistrationEvents(agenda.events||[]);try{const id=new URL(location.href).searchParams.get('publication');if(id&&publications.some(p=>publicationId(p)===id&&p.visible!==false&&p.pdf&&!['Brouillon','Archivé'].includes(p.status)))setTimeout(()=>openPublication(id),120)}catch{}}
   document.addEventListener('click',e=>{const b=e.target.closest('.admin-work-open');if(b){e.preventDefault();openPublication(b.dataset.adminWork)}});
   setupDynamicShare();
   init();
