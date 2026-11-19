@@ -180,9 +180,12 @@ test('sans session, impossible de récupérer un dossier privé',async()=>{
 test('l’auteur ne peut pas modifier un autre dossier en ajoutant un id',async()=>{
  const env=setup();const cookie=await authorizeAuthor(env);
  await addEntry(env,OTHER_ID,OTHER_REF,'second@example.test');
+ await post(env,'/moderation/review',{
+  id:ENTRY_ID,expectedMutation:0,decision:'approve'
+ },'__Host-fictive-admin=verified');
  const response=await post(env,'/author/revise',{
   id:OTHER_ID,text:'Je propose une réflexion différente avec davantage de nuances.',
-  expectedMutation:0
+  expectedMutation:1
  },cookie);
  assert.equal(response.status,202);
  const actual=await env.seed.readPrivate(SEED,ENTRY_ID);
@@ -192,11 +195,16 @@ test('l’auteur ne peut pas modifier un autre dossier en ajoutant un id',async(
 });
 test('une révision en attente n’est pas visible sans décision modérateur',async()=>{
  const env=setup();const cookie=await authorizeAuthor(env);
+ await post(env,'/moderation/review',{
+  id:ENTRY_ID,expectedMutation:0,decision:'approve'
+ },'__Host-fictive-admin=verified');
  const newText='J’ai changé de position après avoir examiné de nouveaux éléments.';
- const changed=await post(env,'/author/revise',{text:newText,expectedMutation:0},cookie);
+ const changed=await post(env,'/author/revise',{text:newText,expectedMutation:1},cookie);
  assert.equal(changed.status,202);
- assert.equal((await json(changed)).mutation,1);
- assert.equal((await env.request('/public/entry?reference='+REF)).status,404);
+ assert.equal((await json(changed)).mutation,2);
+ const published=await env.request('/public/entry?reference='+REF);
+ assert.equal(published.status,200);
+ assert.equal((await json(published)).entry.version,1);
 });
 test('le cookie auteur n’autorise jamais une action de modération',async()=>{
  const env=setup();const cookie=await authorizeAuthor(env);
