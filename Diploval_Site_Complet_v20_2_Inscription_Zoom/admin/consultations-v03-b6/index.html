@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive">
+<title>Diploval — Suivi des dossiers et réponses · Démonstration B6</title>
+<link rel="stylesheet" href="./style.css?v=1"></head>
+<body>
+<a href="#main" class="skip">Aller au contenu</a>
+<header class="header"><div class="brand"><span class="mark">D</span><span><strong>DIPLOVAL</strong><small>Consultations citoyennes · Administration</small></span></div><a href="/admin/consultations-v03-b5/">Retour à la maquette B5</a></header>
+<div class="warning" role="note"><strong>DÉMONSTRATION B6 · DONNÉES FICTIVES</strong> — Aucun compte connecté, aucun courrier envoyé, aucune réponse sauvegardée ou publiée. Les objectifs de traitement affichés sont des exemples non validés.</div>
+<main id="main" class="container">
+<div class="intro"><div><p class="eyebrow">Consultations V0.3 · Lot B6</p><h1>Suivre un dossier, apporter une réponse.</h1><p>Un suivi clair des étapes, une attention aux retards et une réponse humaine, relue avant d’être accessible au contributeur.</p></div><button id="reset" class="button secondary" type="button">Réinitialiser la démonstration</button></div>
+<div class="controls">
+<label>Rôle simulé<select id="role"><option value="observer">Observateur</option><option value="reviewer" selected>Examinateur</option><option value="supervisor">Superviseur</option></select></label>
+<label>Filtrer les dossiers<select id="filter"><option value="all">Tous les dossiers fictifs</option><option value="pending">En attente d’examen</option><option value="late">Objectif interne dépassé</option><option value="appeal">Recours en cours</option><option value="closed">Décision enregistrée</option></select></label>
+</div>
+<section class="stats" aria-label="Indicateurs fictifs"><div><strong id="stat-pending">0</strong><span>En cours</span></div><div><strong id="stat-late">0</strong><span>À examiner en priorité</span></div><div><strong id="stat-drafts">0</strong><span>Réponses à relire</span></div><div><strong id="stat-approved">0</strong><span>Réponses approuvées</span></div></section>
+<div class="workspace"><section class="cases"><div class="panel-intro"><h2>Dossiers et délais</h2><p>Objectifs de démonstration : 7 jours pour l’examen, 14 jours pour un recours, sans valeur réglementaire.</p></div><div id="cases" class="cases-list" aria-label="Dossiers fictifs"></div></section>
+<section class="details" aria-labelledby="detail-heading"><div class="panel-intro"><p class="eyebrow">Dossier sélectionné</p><h2 id="detail-heading">Choisissez un dossier</h2><p id="detail-caption"></p></div><div id="detail" class="content"></div></section></div>
+<section class="principles"><h2>Principes conservés pour Diploval</h2><div class="principles-grid"><article><strong>Pas d’échéance inventée</strong><p>Un délai n’est affiché qu’après adoption explicite d’une politique interne. Aucun délai légal n’est présumé.</p></article><article><strong>Validation humaine distincte</strong><p>Un examinateur prépare le texte ; un superviseur différent l’approuve avant accès dans le dossier personnel.</p></article><article><strong>Confidentialité prioritaire</strong><p>Pas d’adresse, de donnée sensible ou de motif interne diffusé automatiquement. Aucun envoi de courriel à ce stade.</p></article></div></section>
+<p class="footnote">Prévisualisation strictement fictive. Cette page n’utilise ni API, ni cookie, ni stockage et ne dispose d’aucun moyen de modifier les consultations réelles.</p>
+<p class="screen-reader" aria-live="polite" id="announcement"></p>
+</main><script src="./app.js?v=1" defer></script>
+</body></html>
