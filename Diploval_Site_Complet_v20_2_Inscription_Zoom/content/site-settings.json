@@ -1,11 +1,11 @@
 {
   "temporary_notice": {
-    "enabled": false,
+    "enabled": true,
     "label": "Information",
-    "text": "",
-    "start_date": "",
-    "end_date": "",
+    "text": "Diploval procède actuellement à des améliorations techniques de son site. Certaines fonctionnalités peuvent être temporairement perturbées. Merci de votre compréhension.",
+    "start_date": "19/11/2026",
+    "end_date": "20/11/2026",
     "link": "",
-    "link_label": "En savoir plus"
+    "link_label": ""
   }
 }
