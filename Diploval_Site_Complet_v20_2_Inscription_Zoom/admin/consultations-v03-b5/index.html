@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>Maquette B5 — Modération des consultations Diploval</title>
+<link rel="stylesheet" href="./style.css?v=1">
+</head>
+<body>
+<a class="skip" href="#main">Aller au tableau de modération</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">D</span><div><strong>DIPLOVAL</strong><small>Administration · consultations citoyennes</small></div></div>
+    <a href="/admin/" class="back-link">Retour à l’administration</a>
+  </div>
+</header>
+<div class="notice" role="note">
+  <strong>DÉMONSTRATION B5 — DONNÉES FICTIVES</strong>
+  <span>Aucune connexion réelle, aucune sauvegarde, aucun courriel ni publication. Les décisions ne sont simulées que dans cette page.</span>
+</div>
+<main id="main" class="wrap">
+ <div class="intro">
+   <div><p class="eyebrow">Consultations citoyennes · V0.3</p><h1>Examiner les contributions sans perdre le dialogue.</h1><p>Une file lisible, des décisions motivées et des recours traités distinctement des publications.</p></div>
+   <button id="reset-demo" class="btn subtle" type="button">Réinitialiser la démonstration</button>
+ </div>
+ <div class="controls">
+   <label for="demo-role">Rôle simulé
+    <select id="demo-role">
+      <option value="observer">Observateur — consultation seule</option>
+      <option value="reviewer" selected>Examinateur — décisions</option>
+      <option value="supervisor">Superviseur — retrait et escalades</option>
+    </select>
+   </label>
+   <label for="demo-consultation">Consultation affichée
+    <select id="demo-consultation">
+      <option value="all">Toutes mes consultations fictives</option>
+      <option value="elections">Engagements électoraux</option>
+      <option value="dialogue">Charte du dialogue</option>
+    </select>
+   </label>
+ </div>
+ <section class="metrics" aria-label="État de la file">
+   <div><strong id="metric-pending">0</strong><span>À examiner</span></div>
+   <div><strong id="metric-appeals">0</strong><span>Recours à traiter</span></div>
+   <div><strong id="metric-resolved">0</strong><span>Décisions traitées</span></div>
+   <div><strong id="metric-withdrawn">0</strong><span>Publications retirées</span></div>
+ </section>
+ <div class="workspace">
+  <aside class="side-panel" aria-label="Dossiers de démonstration">
+    <div class="panel-header"><h2>File de traitement</h2><p>Les références ne donnent aucun accès au contenu privé.</p></div>
+    <div class="tabs" role="tablist" aria-label="Filtrer la file">
+      <button type="button" class="tab active" role="tab" aria-selected="true" data-view="pending">À examiner</button>
+      <button type="button" class="tab" role="tab" aria-selected="false" data-view="appeals">Recours</button>
+      <button type="button" class="tab" role="tab" aria-selected="false" data-view="history">Historique</button>
+    </div>
+    <div id="case-list" class="case-list" aria-live="polite"></div>
+  </aside>
+  <section class="detail-panel" aria-labelledby="detail-heading">
+    <div class="panel-header"><p class="eyebrow">Dossier sélectionné</p><h2 id="detail-heading">Choisissez une contribution</h2><p id="detail-intro">Les informations nécessaires au traitement s’afficheront ici, sans adresse privée.</p></div>
+    <div id="detail-content"></div>
+    <div id="review-actions"></div>
+  </section>
+ </div>
+ <section class="policy">
+  <h2>Garanties prévues dans le futur service</h2>
+  <div class="policy-grid">
+   <article><strong>Accès strictement limité</strong><p>Chaque collaborateur n’accède qu’aux consultations pour lesquelles il est habilité.</p></article>
+   <article><strong>Décisions motivées</strong><p>Les refus, retraits et suites données aux recours gardent un motif et un historique privé.</p></article>
+   <article><strong>Aucune publication automatique</strong><p>Un recours favorable ne réécrit ni ne remet en ligne une contribution sans un acte distinct et vérifié.</p></article>
+  </div>
+ </section>
+ <p class="footer-note">Maquette de validation visuelle et fonctionnelle, indépendante du CMS Diploval et des données personnelles des contributeurs. Les comptes professionnels, le stockage et les routes serveur restent désactivés.</p>
+ <p id="announcer" class="sr-only" aria-live="polite"></p>
+</main>
+<script src="./app.js?v=1" defer></script>
+</body>
+</html>
