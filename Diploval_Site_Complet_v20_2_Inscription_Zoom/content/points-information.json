@@ -14,17 +14,26 @@
         }
       ],
       "watch_up": [
-        "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.  Affrontement militaire direct entre forces russes et forces de l’OTAN.  Multiplication coordonnée d’incidents graves dans plusieurs États alliés.  Changement majeur et vérifiable de posture nucléaire ou stratégique.  Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
+        "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.",
+        "Affrontement militaire direct entre forces russes et forces de l’OTAN.",
+        "Multiplication coordonnée d’incidents graves dans plusieurs États alliés.",
+        "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
+        "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
       ],
       "why_level": "Le niveau 2 traduit une situation de tension élevée mais encore contenue. Les opérations militaires restent intenses, les risques d’incident à proximité de l’espace euro-atlantique persistent et aucun cessez-le-feu général n’est en vigueur. En revanche, les canaux diplomatiques restent ouverts et aucun affrontement militaire direct Russie–OTAN ni changement majeur de posture stratégique ne justifie actuellement le passage au Code One.",
       "visible": true,
       "watch_down": [
-        "Entrée en vigueur d’un cessez-le-feu général vérifiable.  Réduction durable des frappes et des incidents transfrontaliers.  Mise en place effective d’un mécanisme commun de surveillance.  Accord sur des mesures de désescalade militaire ou énergétique.  Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
+        "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
+        "Réduction durable des frappes et des incidents transfrontaliers.",
+        "Mise en place effective d’un mécanisme commun de surveillance.",
+        "Accord sur des mesures de désescalade militaire ou énergétique.",
+        "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
       "last_update": "2026-11-19T11:50",
       "status": "suivi",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
-      "category": "Géopolitique · Europe"
+      "category": "Géopolitique · Europe",
+      "opened_at": "2026-11-19T11:50"
     }
   ]
 }
