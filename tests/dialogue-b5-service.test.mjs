@@ -5,6 +5,7 @@ import {createAuthorAccess} from '../netlify/lib/dialogue-author-access.mjs';
 import {createModeratorAccess} from '../netlify/lib/dialogue-moderator-access.mjs';
 import {createModerationQueue} from '../netlify/lib/dialogue-moderation-queue.mjs';
 import {createAppealService} from '../netlify/lib/dialogue-appeals.mjs';
+import {createAppealQueue} from '../netlify/lib/dialogue-appeal-queue.mjs';
 import {createEntry,reviewRevision} from '../netlify/lib/dialogue-model.mjs';
 
 const origin='https://diploval.test',ID='dossier-http-b5-001',OTHER='dossier-http-b5-002';
@@ -70,8 +71,12 @@ function setup(){
   store:data,readAuthorEntry,readModeratorEntry,authorizeModerator:moderators.authorize,
   clock:()=> '2026-11-19T12:00:00Z'
  });
+ const appealQueue=createAppealQueue({
+  listCandidateAppeals:async()=>[{entryId:ID,version:1}],
+  appeals,authorize:moderators.authorize
+ });
  const handler=createDialogueInternalHandler({
-  enabled:true,origin,authorAccess,moderationQueue:queue,appealService:appeals,
+  enabled:true,origin,authorAccess,moderationQueue:queue,appealService:appeals,appealQueue,
   authorRepository:{readPrivate:readAuthorEntry,mutatePrivate:async()=>{throw Error('Unavailable in test')}},
   moderatorRepository:{readPrivate:readModeratorEntry,mutatePrivate:async()=>{throw Error('Unavailable in test')}},
   publicRepository:{readPublicReference:async()=>null},
@@ -204,4 +209,17 @@ test('pagination et paramètres mal formés : refus sans fuite',async()=>{
  assert.equal((await e.post('/moderation/appeal/decide',{
   id:ID,version:1,decision:'publish',reason:rationale
  },{staff:'staff-verified'})).status,400);
+});
+
+test('file de recours HTTP : séparation des consultations et des sessions',async()=>{
+ const e=setup();const cookie=await e.signIn();
+ await e.post('/author/appeal',{reason:appealReason},{cookie});
+ assert.equal((await e.ask('/moderation/appeals-queue')).status,401);
+ const ok=await e.ask('/moderation/appeals-queue?status=pending',{staff:'staff-verified'});
+ assert.equal(ok.status,200);
+ const contents=await ok.json();
+ assert.equal(contents.appeals.length,1);
+ assert.equal(contents.appeals[0].reference,REF);
+ assert(!JSON.stringify(contents).includes(email));
+ assert.equal((await e.ask('/moderation/appeals-queue?limit=150',{staff:'staff-verified'})).status,400);
 });
