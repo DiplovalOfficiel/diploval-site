@@ -6,9 +6,9 @@
 const ID=/^[a-z0-9][a-z0-9_-]{2,79}$/i;
 const VALID_ROLES=new Set(['observer','reviewer','supervisor']);
 const PERMISSIONS={
- observer:new Set(['lookup_private','read_private']),
- reviewer:new Set(['lookup_private','read_private','moderate']),
- supervisor:new Set(['lookup_private','read_private','moderate','withdraw'])
+ observer:new Set(['lookup_private','read_private','read_queue','read_appeal']),
+ reviewer:new Set(['lookup_private','read_private','read_queue','read_appeal','moderate','review_appeal']),
+ supervisor:new Set(['lookup_private','read_private','read_queue','read_appeal','moderate','withdraw','review_appeal','resolve_escalation'])
 };
 export function createModeratorAccess({verifySession,loadGrants}={}){
  if(typeof verifySession!=='function'||typeof loadGrants!=='function')
