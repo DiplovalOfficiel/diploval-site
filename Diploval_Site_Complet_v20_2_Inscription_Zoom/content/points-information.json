@@ -94,6 +94,86 @@
         }
       ],
       "category": "Géopolitique · Europe"
+    },
+    {
+      "visible": true,
+      "show_home": true,
+      "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
+      "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "category": "Géopolitique · Proche-Orient",
+      "status": "suivi",
+      "level": "1",
+      "opened_at": "2026-11-19T22:08",
+      "last_update": "2026-11-19T22:08",
+      "summary": "Au 19 novembre 2026, les crises à Gaza, en Cisjordanie, au Liban, en Iran et dans le Golfe demeurent distinctes mais interdépendantes. Le cessez-le-feu à Gaza reste fragilisé par les frappes et une crise humanitaire majeure. Après une frappe américaine sur l’île iranienne de Qeshm le 17 novembre, l’Iran a lancé des attaques visant des installations au Koweït et à Bahreïn. De nouvelles frappes israéliennes ont été signalées au Liban le 19 novembre. Des médiations régionales se poursuivent. Diploval retient le niveau 1 — Code One pour le risque d’extension militaire régionale, sans préjuger d’une guerre généralisée.",
+      "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
+      "why_level": "Le niveau 1 — Code One qualifie ici le risque d’extension de la crise régionale, non chacun des territoires ni une probabilité de guerre mondiale. Il repose sur la confrontation militaire directe constatée entre forces américaines et iraniennes (17–18 novembre), des attaques au Koweït et à Bahreïn, la persistance de frappes au Liban et à Gaza, la détérioration des conditions de vie civiles ainsi que les tensions sur les voies maritimes. Ces faits sont recoupés par des agences de presse et les Nations unies. Les actions, déclarations et responsabilités de chaque partie doivent rester distinguées. Des efforts diplomatiques et des mécanismes de désescalade existent ; aucun emballement supplémentaire n’est considéré comme certain. Le classement sera revu en fonction d’événements vérifiables.",
+      "watch_up": [
+        "Extension vérifiée des affrontements directs à d’autres États ou installations vitales civiles (eau, énergie, hôpitaux, ports).",
+        "Nouvelles frappes de grande ampleur causant des victimes civiles nombreuses dans plusieurs pays.",
+        "Escalade durable contre la navigation commerciale dans le détroit d’Ormuz ou la mer Rouge.",
+        "Rupture documentée des négociations accompagnée d’une intensification coordonnée des opérations militaires.",
+        "Menace nucléaire ou radiologique explicite et crédible, corroborée par des sources spécialisées."
+      ],
+      "watch_down": [
+        "Cessation vérifiable et durable des attaques directes entre l’Iran et les États-Unis et contre des pays tiers.",
+        "Accords de désescalade dotés de mécanismes de surveillance, effectivement appliqués.",
+        "Réduction confirmée des opérations à Gaza et au Liban, avec accès humanitaire plus sûr et soutenu.",
+        "Baisse durable des attaques maritimes et rétablissement de voies de circulation sûres.",
+        "Progrès diplomatiques vérifiables associant les parties concernées, sans réapparition de frappes majeures."
+      ],
+      "sources": [
+        {
+          "label": "OCHA — rapport humanitaire, 13 novembre 2026",
+          "type": "Organisation internationale",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026",
+          "note": "Données attribuées, période de référence du 3 au 9 novembre pour Gaza ; volet Cisjordanie."
+        },
+        {
+          "label": "Reuters — frappes entre l’Iran, les États-Unis et dans le Golfe, 17–18 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/bahrain-warns-potential-threat-urges-residents-seek-safety-2026-11-17/",
+          "note": "Échanges de frappes et déclarations des différentes parties."
+        },
+        {
+          "label": "Associated Press — bilan régional du 19 novembre",
+          "type": "Agence de presse",
+          "url": "https://apnews.com/article/saudi-yemen-war-iran-november-19-2026-e72472c557057943cab32010666b29bf",
+          "note": "Liban, Yémen, Arabie saoudite, Irak et détroit d’Ormuz ; distinguer affirmations militaires et faits confirmés."
+        },
+        {
+          "label": "Associated Press via OPB — démarches diplomatiques régionales, 19 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/",
+          "note": "Efforts de médiation rapportés avec attribution à des responsables régionaux anonymes."
+        }
+      ],
+      "updates": [
+        {
+          "correction": false,
+          "datetime": "2026-11-19T22:08",
+          "title": "Ouverture du suivi — frappes régionales, situation humanitaire et médiations",
+          "body": "Le rapport OCHA publié le 13 novembre décrit des frappes et tirs à Gaza malgré le cessez-le-feu d’octobre 2025, une grave détérioration humanitaire et des déplacements de population en Cisjordanie. L’agence rapporte, en les attribuant au ministère de la Santé de Gaza, 1 613 morts liés au conflit depuis l’accord jusqu’au 9 novembre : ce chiffre est attribué et ne constitue pas un décompte indépendant.\nLes 17 et 18 novembre, selon Reuters et Associated Press, des frappes ont été échangées entre les États-Unis et l’Iran autour de Qeshm et de bases ou installations dans le Golfe, et des attaques iraniennes ont visé le Koweït et Bahreïn.\nLe 19 novembre, Associated Press rapporte de nouvelles frappes israéliennes au Liban contre un site que l’armée israélienne dit lié au Hezbollah, ainsi que des attaques au Yémen et des débris d’un missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite.\nEn parallèle, des démarches diplomatiques pour éviter une nouvelle guerre de grande ampleur sont rapportées. Diploval classe le risque d’extension régionale au niveau 1 — Code One. Ce niveau ne signifie ni guerre mondiale imminente, ni recours annoncé à l’arme nucléaire. Chaque nouvelle information fera l’objet d’une vérification avant publication.",
+          "sources": [
+            {
+              "label": "OCHA — situation humanitaire, 13 novembre 2026",
+              "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026"
+            },
+            {
+              "label": "Reuters — affrontements dans le Golfe, 17–18 novembre",
+              "url": "https://www.reuters.com/world/middle-east/bahrain-warns-potential-threat-urges-residents-seek-safety-2026-11-17/"
+            },
+            {
+              "label": "Associated Press — événements du 19 novembre",
+              "url": "https://apnews.com/article/saudi-yemen-war-iran-november-19-2026-e72472c557057943cab32010666b29bf"
+            },
+            {
+              "label": "Associated Press/OPB — médiations régionales",
+              "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
