@@ -10,7 +10,16 @@
           "datetime": "2026-11-19T12:15",
           "title": "Avertissement russe concernant les personnels français en Ukraine",
           "body": "À la suite des révélations sur la mission française « Volia », Sergueï Lavrov a qualifié la présence de personnels militaires français en Ukraine de « participation directe » au conflit. Paris conteste cette qualification et présente ces missions comme limitées à la formation et à la maintenance, sans participation aux combats. Cet épisode accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, il ne constitue ni une attaque contre le territoire français ni un affrontement militaire direct France–Russie ; le niveau 2 — Vigilance renforcée est donc maintenu.",
-          "sources": []
+          "sources": [
+            {
+              "label": "Associated Press",
+              "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f"
+            },
+            {
+              "label": "Euronews — 17 novembre 2026",
+              "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war"
+            }
+          ]
         },
         {
           "correction": false,
@@ -43,7 +52,27 @@
       "status": "suivi",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
       "category": "Géopolitique · Europe",
-      "opened_at": "2026-11-19T11:50"
+      "opened_at": "2026-11-19T11:50",
+      "sources": [
+        {
+          "label": "Conseil de l’Union européenne — prolongation de l’EUMAM Ukraine",
+          "type": "Source officielle",
+          "url": "https://www.consilium.europa.eu/fr/press/press-releases/2026/11/09/ukraine-council-extends-eu-military-assistance-mission-mandate-for-two-years/",
+          "note": "Cadre officiel européen de l’assistance et de la formation militaires à l’Ukraine."
+        },
+        {
+          "label": "Associated Press — présence française en Ukraine et réaction russe",
+          "type": "Agence de presse",
+          "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f",
+          "note": "Synthèse factuelle sur la mission française, les déclarations russes et la réponse de Paris."
+        },
+        {
+          "label": "Euronews — réponse française aux déclarations de Sergueï Lavrov",
+          "type": "Média",
+          "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war",
+          "note": "Déclarations de Jean-Noël Barrot et rappel des propos russes du 17 novembre 2026."
+        }
+      ]
     }
   ]
 }
