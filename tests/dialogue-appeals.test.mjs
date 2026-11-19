@@ -216,6 +216,6 @@ test('le recours n’expose pas les journaux privés dans les projections',async
 test('un motif trop bref est refusé sans déposer de recours',async()=>{
  const e=setup();
  await assert.rejects(()=>e.appeals.submit(AUTHOR,{
-  entryId:ID,reason:'pas d’accord'
+  entryId:ID,reason:'non'
  }),/10 à 2 000/);
 });
