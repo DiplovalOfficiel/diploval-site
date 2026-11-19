@@ -11,7 +11,7 @@ const SUPERVISOR_DECISIONS=new Set(['maintain','invite_revision']);
 const clone=x=>structuredClone(x);
 const ERR=()=>new Error('Accès non autorisé.');
 const check=x=>typeof x==='string'&&x.length>=10&&x.trim().length>=10&&x.length<=2000
-  &&!/[\\u0000-\\u0008\\u000B\\u000C\\u000E-\\u001F]/.test(x);
+  &&!/[\u0000-\u0008\u000B\u000C\u000E-\u001F]/.test(x);
 const requireText=(x,label)=>{
  if(!check(x))throw Error(label+' : texte de 10 à 2 000 caractères requis.');
  return x.normalize('NFC').trim();
