@@ -37,6 +37,7 @@ jobs:
             tests/dialogue-b9-erasure-coordinator.test.mjs \
             tests/dialogue-b9-3-journal-concurrency.test.mjs \
             tests/dialogue-b9-4-locked-runner.test.mjs \
-            tests/dialogue-b9-5-fenced-projection.test.mjs
+            tests/dialogue-b9-5-fenced-projection.test.mjs \
+            tests/dialogue-b9-7-incident-recovery.test.mjs
       - name: Aucune mise en production
         run: echo "Audit local GitHub Actions uniquement. Aucun déploiement V0.3 autorisé."
