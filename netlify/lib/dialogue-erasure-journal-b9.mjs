@@ -66,7 +66,30 @@ export function createErasureCaseJournal({store,prefix='dialogue-v03-erasure-b9'
    releasedAt:clock()},prev.etag);
   return true;
  }
+ // Controlled repair: advances the fence and leaves the case locked.
+ // Caller must have independently verified the actual side effects and quiescence.
+ async function reconcileLocked({caseId,expectedRevision,newOwner,checkpoint,evidenceId}={}){
+  if(!ID.test(caseId||'')||!OWNER.test(newOwner||'')
+    ||!Number.isSafeInteger(expectedRevision)||expectedRevision<1
+    ||typeof evidenceId!=='string'||!/^[a-z0-9_-]{12,100}$/i.test(evidenceId)
+    ||!checkpoint||checkpoint.caseId!==caseId
+    ||checkpoint.state!=='running'||!Array.isArray(checkpoint.completed))
+   throw err('Réconciliation invalide.');
+  const current=await readRaw(caseId);
+  if(!current||current.data.lockStatus!=='locked'
+     ||current.data.revision!==expectedRevision||current.data.owner===newOwner)
+   throw err('Journal modifié ou verrou non disponible.');
+  const prior=current.data.checkpoint;
+  if(!prior||!Array.isArray(prior.completed)||prior.state!=='running'
+    ||checkpoint.completed.length<prior.completed.length
+    ||prior.completed.some((step,index)=>checkpoint.completed[index]!==step))
+   throw err('Checkpoint non monotone.');
+  const next={...current.data,revision:expectedRevision+1,owner:newOwner,
+    checkpoint:clone(checkpoint),reconciledAt:clock(),reconciliationEvidence:evidenceId};
+  await persist(caseId,next,current.etag);
+  return Object.freeze({caseId,newRevision:next.revision,lockStatus:'locked'});
+ }
  // Aucun 'forceUnlock' : la reprise après crash requiert un processus indépendant,
  // vérification des gestes exécutés et invalidation des exécutants précédents.
- return Object.freeze({acquire,scoped,release,inspect:async id=>clone((await readRaw(id))?.data??null)});
+ return Object.freeze({acquire,scoped,release,reconcileLocked,inspect:async id=>clone((await readRaw(id))?.data??null)});
 }
