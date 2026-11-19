@@ -101,12 +101,48 @@
     section.hidden=!list.length;if(!list.length){host.innerHTML='';return}
     host.innerHTML=list.map(p=>{const m=levelMeta(p.level),updates=(p.updates||[]).slice().sort((a,b)=>String(b.datetime||'').localeCompare(String(a.datetime||''))).slice(0,6);const href=`/points-information/${encodeURIComponent(pointSlug(p))}/`;const levelBadge=hasPointLevel(p.level)&&m?`<span class="point-level point-level-${attr(p.level)}"><b>${esc(m.label)}</b>${m.name?`<em>${esc(m.name)}</em>`:''}</span>`:'';return `<article class="point-home-card reveal"><header><div><small>${esc(p.category||'Point d’information')}</small><h3>${esc(p.title)}</h3></div>${levelBadge}</header><p class="point-summary">${esc(p.summary||'')}</p><div class="point-home-meta"><span>${esc(p.status==='stabilise'?'Stabilisé':'Suivi en cours')}</span>${p.last_update?`<span>Mis à jour ${esc(formatDateTime(p.last_update))}</span>`:''}</div>${updates.length?`<div class="point-update-scroll" tabindex="0" aria-label="Dernières mises à jour">${updates.map(u=>`<div class="point-update-line"><time>${esc(formatDateTime(u.datetime))}</time><p>${esc(u.title||u.body||'')}</p></div>`).join('')}</div>`:''}<a class="point-open" href="${href}">Ouvrir le suivi complet →</a></article>`}).join('');
   }
-  function renderSiteNotice(data){
-    const el=document.querySelector('#site-notice'),cfg=data?.temporary_notice;if(!el||!cfg||cfg.enabled!==true){if(el)el.hidden=true;return}
-    const today=parisToday(),start=dateKey(cfg.start_date),end=dateKey(cfg.end_date);if((start&&today<start)||(end&&today>end)){el.hidden=true;return}
-    const label=el.querySelector('#site-notice-label'),text=el.querySelector('#site-notice-text'),link=el.querySelector('#site-notice-link');if(label)label.textContent=(cfg.label||'Information')+' :';if(text)text.textContent=cfg.text||'';if(link){if(cfg.link){link.href=cfg.link;link.textContent=(cfg.link_label||'En savoir plus')+' →';link.hidden=false}else link.hidden=true}el.hidden=!cfg.text;
+  // Decap peut enregistrer ses dates en JJ/MM/AAAA : normaliser avant comparaison.
+  // Les anciennes valeurs ISO8601 restent acceptées.
+  function noticeDateKey(value){
+    if(value===undefined||value===null||String(value).trim()==='')return '';
+    const raw=String(value).trim();
+    const iso=raw.match(/^(\d{4})-(\d{2})-(\d{2})(?:T.*)?$/);
+    const fr=raw.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+    if(!iso&&!fr)return null;
+    const year=Number(iso?iso[1]:fr[3]),month=Number(iso?iso[2]:fr[2]),day=Number(iso?iso[3]:fr[1]);
+    if(year<2000||year>2100||month<1||month>12||day<1||day>31)return null;
+    const key=String(year).padStart(4,'0')+'-'+String(month).padStart(2,'0')+'-'+String(day).padStart(2,'0');
+    return new Date(Date.UTC(year,month-1,day)).toISOString().slice(0,10)===key?key:null;
   }
-
+  function noticeLink(value){
+    const raw=String(value||'').trim();
+    if(!raw||/[\x00-\x1F]/.test(raw))return '';
+    if(raw.startsWith('/')&&!raw.startsWith('//'))return raw;
+    if(/^https:\/\//i.test(raw)){
+      try{return new URL(raw).href}catch{return ''}
+    }
+    return '';
+  }
+  function renderSiteNotice(data){
+    const el=document.querySelector('#site-notice'),cfg=data?.temporary_notice;
+    if(!el)return;
+    el.hidden=true;
+    if(!cfg||cfg.enabled!==true)return;
+    const message=String(cfg.text||'').trim();
+    if(!message)return;
+    const today=parisToday(),start=noticeDateKey(cfg.start_date),end=noticeDateKey(cfg.end_date);
+    if(start===null||end===null||(start&&end&&start>end)
+       ||(start&&today<start)||(end&&today>end))return;
+    const label=el.querySelector('#site-notice-label'),text=el.querySelector('#site-notice-text'),link=el.querySelector('#site-notice-link');
+    if(label)label.textContent=(String(cfg.label||'Information').trim()||'Information')+' :';
+    if(text)text.textContent=message;
+    if(link){
+      const url=noticeLink(cfg.link);
+      if(url){link.href=url;link.textContent=(String(cfg.link_label||'En savoir plus').trim()||'En savoir plus')+' →';link.hidden=false}
+      else{link.hidden=true;link.removeAttribute('href')}
+    }
+    el.hidden=false;
+  }
 
   function communiqueId(c){return c.id||slugify(c.title,100)}
   function communiqueTypeLabel(t){return t==='presidence'?'Présidence de Diploval':'Diploval · Institutionnel'}
