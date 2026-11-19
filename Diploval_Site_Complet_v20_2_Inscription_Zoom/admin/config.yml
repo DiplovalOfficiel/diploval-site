@@ -427,8 +427,8 @@ collections:
                   - { label: "Niveau 3 — Surveillance active", value: "3" }
                   - { label: "Niveau 2 — Vigilance renforcée", value: "2" }
                   - { label: "Niveau 1 — Code One · Seuil critique", value: "1" }
-              - { label: "Ouverture du suivi", name: "opened_at", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" , hint: "Date et heure d’ouverture du suivi. Ce repère sert à la chronologie publique." }
-              - { label: "Dernière mise à jour", name: "last_update", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" , hint: "Date et heure de la dernière actualisation vérifiée du suivi. Mettre à jour lorsqu’un élément nouveau est publié." }
+              - { label: "Ouverture du suivi", name: "opened_at", widget: "datetime", format: "YYYY-MM-DDTHH:mm", date_format: "DD/MM/YYYY", time_format: "HH:mm" , hint: "Date et heure d’ouverture du suivi. Ce repère sert à la chronologie publique." }
+              - { label: "Dernière mise à jour", name: "last_update", widget: "datetime", format: "YYYY-MM-DDTHH:mm", date_format: "DD/MM/YYYY", time_format: "HH:mm" , hint: "Date et heure de la dernière actualisation vérifiée du suivi. Mettre à jour lorsqu’un élément nouveau est publié." }
               - { label: "Résumé", name: "summary", widget: "text" , hint: "Résumé explicatif public qui permet de comprendre le contenu avant de l’ouvrir. Rester fidèle au document sans ajouter de fait non sourcé." }
               - { label: "Description SEO (facultative)", name: "seo_description", widget: "text", required: false, hint: "Laissez vide pour reprendre le résumé. Courte description pour moteurs de recherche et aperçus. Si elle est absente, un résumé existant sert de repli selon la rubrique." }
               - { label: "Image de partage 1200 × 630 (facultative)", name: "social_image", widget: "image", required: false, choose_url: false, allow_multiple: false , hint: "Visuel utilisé lors du partage d’un lien sur les réseaux et messageries. Préférer une image horizontale 1200 × 630 ; vérifier lisibilité et droits." }
@@ -469,7 +469,7 @@ collections:
                 label_singular: "Ajouter une mise à jour"
                 summary: "{{fields.datetime}} — {{fields.title}}"
                 fields:
-                  - { label: "Date et heure", name: "datetime", widget: "datetime", date_format: "DD/MM/YYYY", time_format: "HH:mm" , hint: "Date et heure de l’événement ou de la mise à jour. Respecter la chronologie et le fuseau horaire indiqué." }
+                  - { label: "Date et heure", name: "datetime", widget: "datetime", format: "YYYY-MM-DDTHH:mm", date_format: "DD/MM/YYYY", time_format: "HH:mm" , hint: "Date et heure de l’événement ou de la mise à jour. Respecter la chronologie et le fuseau horaire indiqué." }
                   - { label: "Titre court", name: "title", widget: "string" , hint: "Titre affiché au public sur la page et dans les listes. Le modifier peut affecter une adresse calculée automatiquement : conserver l’identifiant stable." }
                   - { label: "Texte", name: "body", widget: "text" , hint: "Compte rendu de cette étape de suivi : distinguer les faits confirmés, les déclarations attribuées et les incertitudes." }
                   - { label: "Correction substantielle", name: "correction", widget: "boolean", default: false, required: false , hint: "Cochez si cette mise à jour corrige substantiellement une affirmation antérieure ; expliquer ce qui change dans le texte." }
