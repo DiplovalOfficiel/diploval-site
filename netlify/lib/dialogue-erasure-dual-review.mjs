@@ -56,7 +56,9 @@ export function createErasureTwoPersonReview({
  async function authorizeHandoff(principal,{caseId,expectedRevision,evidenceId}={}){
   if(!valid(caseId,expectedRevision,evidenceId))throw fail('Identification invalide.');
   const decision=await loadDecision({caseId,expectedRevision,evidenceId});
-  if(!decision||!valid(decision.caseId,decision.expectedRevision,decision.evidenceId)
+  if(!decision||decision.caseId!==caseId
+     ||decision.expectedRevision!==expectedRevision||decision.evidenceId!==evidenceId
+     ||!valid(decision.caseId,decision.expectedRevision,decision.evidenceId)
      ||!ACTOR.test(decision.reviewerId||'')||!ACTOR.test(decision.executorId||'')
      ||decision.reviewerId===decision.executorId||decision.status!=='approved'
      ||decision.kind!=='supervised_handoff')
