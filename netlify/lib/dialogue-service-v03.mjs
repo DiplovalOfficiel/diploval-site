@@ -68,7 +68,7 @@ const text=v=>{
 export function createDialogueInternalHandler({
  enabled=false,origin,authorAccess,authorRepository,moderatorRepository,
  publicRepository,authenticateModerator,resolveEntryIdByReference,rateLimit,
- moderationQueue=null,appealService=null
+ moderationQueue=null,appealService=null,appealQueue=null
 }={}){
  const respond=(body,status=200,extra={})=>new Response(JSON.stringify(body),{
   status,headers:{...headers,...extra}
@@ -188,6 +188,17 @@ export function createDialogueInternalHandler({
        ||!Number.isSafeInteger(cursor)||cursor<0)throw issue(400,'Pagination invalide.');
     const result=await moderationQueue.list(who.principal,{state,consultationId,limit,cursor});
     return respond(result);
+   }
+   if(path==='/moderation/appeals-queue'&&request.method==='GET'){
+    if(!appealQueue)throw issue(503,'File de recours non configurée.');
+    const who=await moderator(request);
+    const status=u.searchParams.get('status')||'pending';
+    const limit=Number(u.searchParams.get('limit')||20);
+    const cursor=Number(u.searchParams.get('cursor')||0);
+    if(!Number.isSafeInteger(limit)||limit<1||limit>25
+       ||!Number.isSafeInteger(cursor)||cursor<0)
+      throw issue(400,'Pagination de recours invalide.');
+    return respond(await appealQueue.list(who.principal,{status,limit,cursor}));
    }
    if(path==='/moderation/appeal'&&request.method==='GET'){
     if(!appealService)throw issue(503,'Service de recours non configuré.');
