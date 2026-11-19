@@ -252,3 +252,75 @@ Le texte entre crochets **ne doit pas être diffusé au public**. Aucun contenu 
 L'ordre de clôture reste : **pièce officielle de la structure → qualification écrite du responsable V0.3 → finalités et bases art. 6/9 → notice et CGU → contrats et sécurité des prestataires → tests d'exploitation isolés → décision indépendante et datée**. Les travaux de stockage et d'identité institutionnelle peuvent avancer en parallèle, mais ne sont pas à mettre en ligne.
 
 Sources principales : site https://diploval.fr/ ; CNIL https://www.cnil.fr/fr/rgpd-comment-bien-identifier-son-role ; Annuaire national https://annuaire-entreprises.data.gouv.fr/ ; RGPD articles 26 et 28 https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre4
+
+---
+
+## 11. Instruction des bases légales par finalité — P01 / P02 / P04
+**19 novembre 2026 — état : À ARBITRER / NON VALIDÉ.** Cette section formalise des options **pour avis juridique**, et non des bases juridiques déjà retenues.
+
+### 11.1. Règles préalables vérifiées
+
+1. Une **base légale de l'article 6** doit être retenue **par finalité avant la collecte** ; ne pas additionner ou présenter plusieurs bases comme interchangeables pour un même traitement sans justification.
+2. Les contributions peuvent contenir des données de l'article 9 (opinions politiques, convictions, santé, etc.), **y compris indirectement**. Une base de l'article 6 ne suffit pas : une **exception à l'interdiction de l'article 9** est également nécessaire. Le consentement explicite (art. 9.2.a), lorsqu'il est pertinent et libre, doit être spécifique et démontrable. Il ne s'obtient pas par acceptation globale des CGU.
+3. Ne pas présumer que l'« intérêt public » ou la **mission d'intérêt public** (art. 6.1.e) est une base utilisable par Diploval du seul fait de la pertinence civique du projet : cette base suppose un fondement dans le droit applicable et des missions effectivement confiées.
+4. L'**intérêt légitime** (art. 6.1.f) est une possibilité à examiner pour certaines finalités d'un responsable privé, mais requiert une analyse de nécessité et de mise en balance avec les droits des personnes ; il **ne dispense jamais de l'article 9**.
+5. Les conditions de publication, les textes libres sur des tiers, la transmission à des institutions, les données des mineurs, le retrait du consentement et les demandes de droits doivent être étudiés avant que les formulaires puissent recevoir des contributions.
+6. Les consentements sont **distincts** lorsque les finalités le demandent. Le refus d'une publication publique ne doit pas automatiquement interdire un dépôt privé si celui-ci peut être licite et techniquement maintenu, ni permettre une republication ultérieure sans fondement.
+7. Il faut distinguer les textes **anonymes au sens juridique** (réidentification non raisonnablement possible), les textes pseudonymisés et les textes simplement publiés « sans nom affiché » : ce dernier affichage n'est **pas** de l'anonymisation.
+
+### 11.2. Matrice d'arbitrage — usage exact des informations
+
+| Code | Opération concrète | Art. 6 : hypothèse à étudier | Art. 9 : analyse spécifique | Point d'arrêt |
+|---|---|---|---|---|
+| F01 | Dépôt d'une contribution privée et conservation de son texte | Consentement art. 6.1.a si libre, spécifique et sans contrainte ; examiner alternatives justifiables | Si texte sensible identifiable : consentement explicite 9.2.a ou autre exception **réellement établie** | Pas de collecte si les deux examens ne sont pas conclus |
+| F02 | Publication volontaire de la version modérée, avec nom/pseudonyme/absence de nom affiché | Consentement à la diffusion distinct à étudier | L'accord de publication n'est pas automatiquement un consentement **explicite** conforme à l'art. 9 ; revue de minimisation et des mentions de tiers | Pas de publication automatique ; choix distinct et preuve conservée |
+| F03 | Espace personnel, email de suivi, historique des versions et sessions | Base appropriée à la fourniture du suivi et à la sécurité à déterminer ; tester la nécessité d'une adresse email | Écarter tout contenu sensible des logs et index ; si inévitable, documenter l'exception | Aucune session V0.3 réelle tant que la protection fournisseur n'est pas validée |
+| F04 | Modération, traitement des signalements, contrôle de sécurité et recours | Intérêt légitime sous réserve de mise en balance, ou base propre à une obligation applicable, **à distinguer** | Les motifs peuvent révéler des données sensibles de l'auteur ou de tiers ; limitation stricte des accès | Pas d'accès généralisé aux dossiers pour l'administration |
+| F05 | Exercice des droits d'accès, rectification, effacement, limitation et opposition | Obligation légale pertinente à analyser pour la gestion des demandes ; limiter les justificatifs | Éviter l'enregistrement de pièces sensibles inutiles | Pas d'effacement présumé réussi sans preuve inter-stockages |
+| F06 | Réponses d'institutions et réutilisation par Diploval dans des rapports | Rôles, finalités et bases **séparés** pour réception d'une projection déjà publique, nouveau traitement et publication | Ne jamais transférer les textes privés/sensibles ou coordonnées à une institution par défaut | Transmission privée refusée tant que rôles, information et bases ne sont pas établis |
+| F07 | Traces d'accès, journaux de sécurité, conservation résiduelle et incidents | Intérêt légitime ou obligation applicable à documenter selon la trace concernée | Aucune donnée sensible en clair dans les journaux par défaut | Durées et suppression, y compris sauvegardes, indispensables |
+
+**Attention :** la base « consentement explicite art. 9 » ne remplace pas la base art. 6, et un simple retrait de permission de publication ne vaut pas toujours effacement de l'intégralité des données dans tous les traitements. Déterminer ce qui est effacé, conservé légalement ou anonymisé, avec durées et information préalable.
+
+### 11.3. Analyse de la conception actuelle du formulaire
+
+Dans `netlify/lib/dialogue-model.mjs`, les champs `processingAgreement===true` et `publicationAgreement` expriment deux choix distincts sur le plan technique. **Ils ne démontrent pas** encore la validité juridique d'un consentement libre, spécifique, éclairé et explicite pour la réception de données sensibles.
+
+**Évolution à étudier avant développement ou ouverture, sans décider prématurément :**
+- information initiale compréhensible, et second niveau complet accessible **avant** dépôt ;
+- absence de cases précochées ; preuve de version de la notice, contenu de la déclaration et date du choix ;
+- mécanisme de refus et de retrait clair, en explicitant la différence entre dépôt privé, publication, contact facultatif et réutilisation des textes ;
+- avertissement contre les informations identifiantes concernant des tiers et traitement de signalement/masquage ;
+- accès anonyme ou pseudonyme : distinguer absence de nom affiché, pseudonymisation et anonymat réel ;
+- éventuels modes de participation alternatifs **sans collecte sensible** à étudier.
+
+La présence d'un champ de consentement obligatoire pour tout dépôt doit être requalifiée juridiquement : un **accord de fonctionnement** ne doit pas être présenté comme une solution générale pour toutes les bases légales ni pour les données sensibles.
+
+### 11.4. Questions réservées à une validation humaine juridique
+
+| Référence | Question de décision | Justificatif de clôture | Résultat |
+|---|---|---|---|
+| JUR-08 / P01 | Pour F01–F07, quelles bases art. 6 sont applicables au responsable effectivement identifié ? | Matrice datée, décisions motivées, approbation | **NON ARBITRÉ** |
+| JUR-09 / P01 | Si des opinions politiques ou données de santé apparaissent dans les champs libres, quelle exception art. 9 couvre leur réception et leur conservation ? | Analyse juridique par finalité, conditions de preuve et de retrait | **NON ARBITRÉ** |
+| JUR-10 / P02 | Comment informer sur les éventuelles destinataires institutionnels et sur l'utilisation dans les rapports Diploval ? | Notice art. 13 détaillée validée | **NON ARBITRÉ** |
+| JUR-11 / P04 | Quels dépôts de tiers et quelles modalités de participation des mineurs sont autorisés ? | Politique écrite, mesures de minimisation et procédure de recours | **NON ARBITRÉ** |
+| JUR-12 / P01-P03 | La publication et la réutilisation des textes exigent-elles des accords distincts de la collecte privée ? | Analyse du droit des données et du droit d'auteur/licence, documents validés | **NON ARBITRÉ** |
+
+### 11.5. Sources officielles de référence
+
+- RGPD, articles 5 à 9 (notamment 6 et 9) : https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2
+- CNIL, bases légales par finalité : https://www.cnil.fr/fr/les-bases-legales/liceite-essentiel-sur-les-bases-legales
+- CNIL, modalités du consentement : https://www.cnil.fr/fr/les-bases-legales/consentement
+- CNIL, intérêt légitime et mise en balance : https://www.cnil.fr/fr/les-bases-legales/interet-legitime
+- CNIL, données sensibles : https://www.cnil.fr/fr/definition/donnee-sensible
+- CNIL, prendre en compte les bases dans l'architecture technique : https://www.cnil.fr/fr/prendre-en-compte-les-bases-legales-dans-limplementation-technique
+
+### 11.6. Effets sur la feuille de route
+
+- **P01** : instruction documentée, mais statut **OPEN** tant que F01–F07 n'ont pas une analyse juridique et une décision approuvées.
+- **P02/P03/P04** : demandes de décisions précises identifiées, **OPEN**.
+- **P14** : pièce officielle et qualification du responsable toujours attendues, **OPEN**.
+- **P05/P06** : registre/AIPD et sous-traitants à compléter à partir de cette matrice, **OPEN**.
+- **P07–P16** : inchangés.
+
+**Interdictions maintenues : aucune ouverture V0.3, aucune collecte réelle, aucune publication juridique, aucune fusion de la PR #20.**
