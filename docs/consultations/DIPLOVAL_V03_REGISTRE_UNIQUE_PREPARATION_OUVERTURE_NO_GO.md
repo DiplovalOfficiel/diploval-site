@@ -350,3 +350,26 @@ Ce projet contient :
 6. vérifier ensuite le texte dans le parcours utilisateur et le rendre accessible au clavier, au mobile et aux lecteurs d'écran.
 
 **Règle d'ouverture inchangée :** notice finalisée et approuvée + tous les points bloquants vérifiés + décision humaine datée. Aucun déploiement et aucune collecte réelle V0.3.
+
+---
+
+## 13. Projet de CGU et charte de publication — P03 (19 novembre 2026)
+
+**Livrable :** [Conditions générales de participation et charte de publication — PROJET INTERNE NON PUBLIABLE](./DIPLOVAL_V03_CGU_CHARTE_PUBLICATION_PROJET_INTERNE_NO_GO.md).
+
+Le texte projet comprend quatorze articles (objet et portée des consultations, identité, participation, dépôt privé, données, contenus, modération, droits d'auteur, citations et rapports, institutions, recours, impartialité, changements et litiges), une charte opérationnelle et huit arbitrages `CGU-01` à `CGU-08` assortis de preuves attendues.
+
+**Choix de conception proposés à arbitrer :**
+- le contributeur conserve ses droits d'auteur ; le dépôt ne vaut **pas cession générale** ;
+- la diffusion sur la consultation et la **réutilisation dans des rapports, réseaux, vidéos ou PDF** sont séparées en droit et en information ;
+- la licence éventuellement appliquée aux textes originaux Diploval **n'est pas étendue automatiquement aux contributions de tiers** ;
+- une institution invitée peut déposer un projet de réponse uniquement dans les limites de son mandat, **sans accès aux dossiers privés ni droit de publication autonome** ;
+- une décision favorable de revue éditoriale ne déclenche **aucune publication automatique** ;
+- l'impartialité exige d'apprécier les contributions par des critères documentés, et non leur seule orientation ;
+- les durées de conservation, la responsabilité juridique effective, les licences, les règles de mineurs, les recours et les bases RGPD demeurent **à valider**.
+
+**Risque à examiner en priorité :** distinguer les exceptions de citation du droit d'auteur, la permission contractuelle de reproduire un texte et la licéité RGPD de toute information personnelle réutilisée. La présence publique d'un texte ne vaut pas autorisation générale.
+
+**Statut :** P03 reste `OPEN`, ainsi que P01, P02, P04, P07, P08, P10, P13 et P14 concernés par ce projet. Le document n'est ni adopté, ni signé, ni publié. Aucun changement de `DIPLOVAL_V03_B7_gate_NO_GO.json`.
+
+**Étape suivante :** revue contradictoire de la rédaction des CGU et de la notice ensemble, choix des permissions de citation/réutilisation et règles opérationnelles de modération ; ensuite seulement adaptation des écrans de dépôt, tests fictifs, validation indépendante et décision datée.
