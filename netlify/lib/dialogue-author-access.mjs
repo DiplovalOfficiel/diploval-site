@@ -171,5 +171,11 @@ export function createAuthorAccess({store,secret,loadEntry,sendLink,clock=()=>Da
     if(!contact||!eq(proof.contactDigest,emailDigest(contact)))return false;
     return action==='read_private'||action==='revise';
   }
-  return Object.freeze({requestLink,redeemLink,authenticate,revokeSession,authorize});
+  // Résolution interne : l'identifiant du dossier ne transite pas dans le
+  // navigateur et n'est rendu qu'après authentification de la session active.
+  async function ownEntryId(principal){
+    if(!(await authorize(principal,'lookup_private')))return null;
+    return authenticated.get(principal)?.entryId||null;
+  }
+  return Object.freeze({requestLink,redeemLink,authenticate,revokeSession,authorize,ownEntryId});
 }
