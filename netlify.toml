@@ -1,5 +1,5 @@
 [build]
-  command = "node --test tests/dialogue-model.test.mjs tests/dialogue-storage.test.mjs tests/dialogue-author-access.test.mjs tests/dialogue-encrypted-store.test.mjs tests/dialogue-b2-integration.test.mjs tests/dialogue-service-v03.test.mjs tests/site-notice-admin.test.mjs && node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/generate-seo-pages.mjs && node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/check-site.mjs"
+  command = "node --test tests/dialogue-model.test.mjs tests/dialogue-storage.test.mjs tests/dialogue-author-access.test.mjs tests/dialogue-encrypted-store.test.mjs tests/dialogue-b2-integration.test.mjs tests/dialogue-service-v03.test.mjs tests/site-notice-admin.test.mjs tests/dialogue-reference-recovery.test.mjs tests/dialogue-moderator-access.test.mjs tests/dialogue-contact-index.test.mjs && node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/generate-seo-pages.mjs && node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/check-site.mjs"
   publish = "Diploval_Site_Complet_v20_2_Inscription_Zoom"
 
 [functions]
