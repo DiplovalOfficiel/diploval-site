@@ -182,7 +182,7 @@ Les bases légales de l'article 6 et les exceptions de l'article 9 sont deux exa
 
 ### 9.7. Sources officielles consultées le 19 novembre 2026
 
-- CNIL, qualification des rôles : https://cnil-d10.cnil.fr/fr/rgpd-comment-bien-identifier-son-role
+- CNIL, qualification des rôles : https://www.cnil.fr/fr/rgpd-comment-bien-identifier-son-role
 - CNIL, bases légales par finalité : https://www.cnil.fr/fr/les-bases-legales/liceite-essentiel-sur-les-bases-legales
 - RGPD, art. 6 et 9 : https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2
 - CNIL, information des personnes : https://www.cnil.fr/fr/conformite-rgpd-information-des-personnes-et-transparence
