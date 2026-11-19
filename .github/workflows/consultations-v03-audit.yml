@@ -1,0 +1,42 @@
+name: Diploval V0.3 - audit fictif B9
+on:
+  pull_request:
+    paths:
+      - 'netlify/lib/dialogue-*.mjs'
+      - 'tests/dialogue-*.test.mjs'
+      - 'docs/consultations/**'
+      - '.github/workflows/consultations-v03-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-tests:
+    name: Node 22 - tests sans données réelles
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CI: 'true'
+    steps:
+      - name: Checkout sans credentials persistants
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Vérifier le statut de blocage (NO GO)
+        run: node --test tests/dialogue-b7-audit-gate.test.mjs
+      - name: B8, B9 - tests unitaires fictifs
+        run: |
+          node --test \
+            tests/dialogue-b8-4-safety-gates.test.mjs \
+            tests/dialogue-b9-data-rights.test.mjs \
+            tests/dialogue-b9-erasure-coordinator.test.mjs \
+            tests/dialogue-b9-3-journal-concurrency.test.mjs \
+            tests/dialogue-b9-4-locked-runner.test.mjs \
+            tests/dialogue-b9-5-fenced-projection.test.mjs
+      - name: Aucune mise en production
+        run: echo "Audit local GitHub Actions uniquement. Aucun déploiement V0.3 autorisé."
