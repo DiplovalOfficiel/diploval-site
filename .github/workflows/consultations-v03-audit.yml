@@ -47,6 +47,7 @@ jobs:
             tests/dialogue-mutation-recovery-journal.test.mjs \
             tests/dialogue-author-contact-recovery-synthetic.test.mjs \
             tests/dialogue-lost-access-review.test.mjs \
-            tests/dialogue-disputed-access-review.test.mjs
+            tests/dialogue-disputed-access-review.test.mjs \
+            tests/dialogue-v03-cross-module-acceptance.test.mjs
       - name: Aucune mise en production
         run: echo "Audit local GitHub Actions uniquement. Aucun déploiement V0.3 autorisé."
