@@ -46,6 +46,23 @@
   backToTop.textContent='↑ Haut'; backToTop.hidden=true;
   document.body.append(backToTop);
   backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
+  // Les contenus complémentaires restent consultables, y compris depuis les liens profonds.
+  const deep = document.querySelector('details.home-deep');
+  const openDeepHash = () => {
+    if (!deep || !location.hash) return;
+    const id = decodeURIComponent(location.hash.slice(1));
+    const target = document.getElementById(id);
+    if (target && deep.contains(target)) {
+      deep.open = true;
+      requestAnimationFrame(() => target.scrollIntoView({block:'start'}));
+    }
+  };
+  if (deep) {
+    const hashTarget = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (!hashTarget || !deep.contains(hashTarget)) deep.open = false;
+    window.addEventListener('hashchange', openDeepHash);
+    openDeepHash();
+  }
   const updateScroll = () => {
     const y = window.scrollY;
     backToTop.hidden = y < 650;
