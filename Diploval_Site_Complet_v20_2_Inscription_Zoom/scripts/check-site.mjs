@@ -240,6 +240,39 @@ try{
   }
 }catch(e){errors.push(`Configuration CMS : contrôle des chemins impossible (${e.message})`)}
 
+// 9. Accueil mobile : éviter les marges externes appliquées à plusieurs niveaux.
+// Vérifications structurelles non visuelles (le rendu réel doit aussi être testé).
+try {
+  const home = read('index.html');
+  const css = read('institutional.css');
+  const marker = 'ACCUEIL MOBILE — contrat de mise en page unique';
+  if(css.split(marker).length !== 2){
+    errors.push('Accueil mobile : le contrat de mise en page unique est absent ou répété.');
+  }
+  if(/Audit responsive transversal 20\/11\/2026|Restaurer la pleine largeur des blocs/.test(css)){
+    errors.push('Accueil mobile : anciens correctifs de largeur empilés détectés.');
+  }
+  const contract = css.slice(css.indexOf(marker));
+  const selectors = [
+    'main > :is(', 'main > .section',
+    '.institutional-front > :is(', '.institutional-front .actualites-shell',
+    '.home-follow-grid', '.home-deep > .section',
+    '.home-small-extra > .section', '.home-more-info > .section',
+    'main > .contact'
+  ];
+  for(const selector of selectors){
+    if(!contract.includes(selector)) errors.push('Accueil mobile : règle manquante pour '+selector);
+  }
+  for(const id of ['actualites','travaux','reseaux','lettre-diploval','services','apropos','contact']){
+    if(!home.includes('id="'+id+'"')) errors.push('Accueil mobile : rubrique absente '+id);
+  }
+  if(!home.includes('/institutional.css?v=15')){
+    warnings.push('Accueil mobile : vérifier le renouvellement de version du CSS.');
+  }
+}catch(e){
+  errors.push('Contrôle accueil mobile impossible : '+e.message);
+}
+
 if(warnings.length){console.warn('Site check warnings:');warnings.forEach(x=>console.warn(' - '+x))}
 if(errors.length){console.error('Site check FAILED:');errors.forEach(x=>console.error(' - '+x));process.exit(2)}
 console.log(`Site check OK: ${htmlFiles.length} pages HTML, ${linkCount} liens et ${resourceCount} ressources contrôlés, JSON et JavaScript valides.`);
