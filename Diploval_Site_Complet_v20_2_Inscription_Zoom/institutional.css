@@ -848,9 +848,6 @@
    une seconde fois 26, 28, 32 ou 42 pixels.
    Hero et pied de page restent naturellement pleine largeur. */
 @media (max-width:760px){
-  .institutional-home{
-    --dv-home-gutter:16px;
-  }
   .institutional-home :is(
     .institutional-front,
     .home-shortcuts,
@@ -861,7 +858,7 @@
     .contact
   ),
   .institutional-home main > .section{
-    width:calc(100% - (2 * var(--dv-home-gutter)));
+    width:calc(100% - 32px);
     max-width:1120px;
     min-width:0;
     margin-left:auto;
