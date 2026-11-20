@@ -483,3 +483,71 @@
  .institutional-home .home-collapse>summary span{font-size:13px}
  .institutional-home .main-nav.nav-tiles.open a.dv-nav-item{font-size:14px;line-height:1.35}
 }
+
+/* Correctif ciblé : le summary générique utilisait une grille 35px / 1fr / 30px.
+   Les deux titres nus de l'accueil se plaçaient dans la cellule de 35px.
+   Garder les grilles voulues pour les autres accordéons (FAQ, garanties, etc.). */
+.institutional-home .participation-home__more,
+.institutional-home .home-news-more{
+  display:block;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+}
+.institutional-home .participation-home__more > summary,
+.institutional-home .home-news-more > summary{
+  display:block;
+  grid-template-columns:none;
+  width:100%;
+  min-width:0;
+  max-width:100%;
+  box-sizing:border-box;
+  padding:12px 14px;
+  min-height:44px;
+  margin:0;
+  white-space:normal;
+  word-break:normal;
+  overflow-wrap:break-word;
+  line-height:1.45;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:15px;
+  font-weight:700;
+  text-decoration:none;
+  color:#19384a;
+  background:#f4f7fa;
+  border:1px solid #c8d5d7;
+  border-radius:5px;
+  cursor:pointer;
+}
+.institutional-home .participation-home__more > summary::after,
+.institutional-home .home-news-more > summary::after{
+  content:" +";
+  color:#244f70;
+  font-weight:700;
+}
+.institutional-home .participation-home__more[open] > summary::after,
+.institutional-home .home-news-more[open] > summary::after{content:" −"}
+.institutional-home .participation-home__more > summary:hover,
+.institutional-home .home-news-more > summary:hover{
+  background:#e4edf3;
+  border-color:#244f70;
+}
+.institutional-home .participation-home__more > summary:focus-visible,
+.institutional-home .home-news-more > summary:focus-visible{
+  outline:3px solid #244f70;
+  outline-offset:2px;
+}
+.institutional-home .faq-grid summary{
+  grid-template-columns:minmax(0,1fr) 28px;
+  overflow-wrap:break-word;
+  word-break:normal;
+}
+@media(max-width:760px){
+  .institutional-home .participation-home__more > summary,
+  .institutional-home .home-news-more > summary{
+    padding:12px;
+    font-size:15px;
+    line-height:1.45;
+  }
+}
