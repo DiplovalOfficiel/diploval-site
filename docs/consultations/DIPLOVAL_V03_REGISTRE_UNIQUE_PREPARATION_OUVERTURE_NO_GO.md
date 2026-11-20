@@ -418,3 +418,23 @@ Cette étape fournit **huit propositions de décisions éditoriales ED-01 à ED-
 Les modèles de messages figurant dans la section V du projet **ne doivent pas être affichés sur le site** tant que leurs canaux, événements et règles de recours ne sont pas réellement disponibles. Aucun délai éditorial n'a été inventé.
 
 **Constat :** rédaction de la grille et des huit choix réalisée. Leur statut reste **À VALIDER** ; les 16 conditions de la grille B7 restent `OPEN`. La prochaine action utile est une relecture humaine contradictoire ciblée, puis le dossier de preuves exigées pour l'approbation P03/P13. Aucun lancement de la V0.3 n'est autorisé.
+
+---
+
+## 16. Relecture contradictoire interne de la modération et des recours — 20 novembre 2026
+
+**Réalisation documentaire :** [CGU/charte, section VI — grille de dix cas opposés, six contrôles de modération et six règles de recours](./DIPLOVAL_V03_CGU_CHARTE_PUBLICATION_PROJET_INTERNE_NO_GO.md).
+
+La revue compare des textes favorables et défavorables à une même institution, la divulgation de données privées dans une critique ou un éloge, une accusation vérifiable et une dénégation non documentée, les menaces et les critiques vigoureuses, les décisions d'un modérateur impliqué et les contestations institutionnelles. **Aucun de ces dix cas fictifs ne constitue une procédure d'exploitation testée.**
+
+**Constats à retenir avant approbation de P03/P13 :**
+- **BIAIS-01 :** ne jamais assimiler opinion divergente et manquement ;
+- **BIAIS-02 :** ne pas qualifier automatiquement une accusation de diffamation sans examen du droit, des faits et du contexte ;
+- **BIAIS-03 :** ne pas accorder de veto éditorial aux institutions invitées ;
+- **Dépendance fonctionnelle :** les issues « demande de révision » et « suspension conservatoire » exigent une vérification des fonctions réellement disponibles avant d'être annoncées au public ;
+- **Impartialité opérationnelle :** si Diploval ne dispose pas d'un second intervenant indépendant, ne pas promettre une double décision interne fictive ; prévoir une solution déclarée et documentée ;
+- **Droits RGPD :** les demandes de rectification/effacement restent distinctes des recours éditoriaux et suivent leurs exigences propres.
+
+**Huit preuves requises :** `MOD-01` à `MOD-08` (relecture habilitée, qualification juridique, correspondance au code, conflits d'intérêts, canaux/délais, essais contradictoires avec deux relecteurs, retrait sur caches/exports, cohérence RGPD). Elles sont toutes **EN ATTENTE**.
+
+**Qualification :** relecture contradictoire **interne et rédactionnelle**, **pas** un examen indépendant, **pas** une conformité attestée, **pas** une recette utilisateur. P03 et P13 restent `OPEN` comme tous les points P01–P16. La phase suivante doit rechercher les preuves manquantes et résoudre les éventuels écarts fonctionnels **sans ajouter une succession de nouvelles versions documentaires**.
