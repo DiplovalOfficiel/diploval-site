@@ -1,0 +1,97 @@
+#!/usr/bin/env python3
+"""Visual regression: mobile sections must occupy the viewport without double margins.
+
+Run against the actual public homepage and its CSS/JS using local Chromium.
+"""
+from pathlib import Path
+import os
+from playwright.sync_api import sync_playwright
+
+BASE = os.environ.get("DIPLOVAL_LAYOUT_URL", "http://127.0.0.1:8765/")
+WIDTHS = (320, 344, 360, 390, 430, 768, 1280)
+SECTIONS = (
+    "#accueil", ".home-shortcuts", ".institutional-front",
+    "#travaux", ".home-follow-grid", "#services",
+    "main > .home-deep", "main > .home-small-extra",
+    "#apropos", "main > .home-more-info", "#contact",
+)
+
+def rect(page, selector):
+    item = page.locator(selector).first
+    if item.count() == 0 or not item.is_visible():
+        return None
+    return item.evaluate("""el => {
+       const b=el.getBoundingClientRect();
+       return {x:b.left,width:b.width,right:b.right,
+               display:getComputedStyle(el).display};
+    }""")
+
+def near(value, expected, distance=2):
+    return abs(value-expected) <= distance
+
+def check(page, width, failures):
+    horizontal = page.evaluate("""() => ({
+      viewport: document.documentElement.clientWidth,
+      document: document.documentElement.scrollWidth,
+      body: document.body.scrollWidth
+    })""")
+    if horizontal["document"] > width + 2:
+        failures.append(f"{width}px: horizontal overflow, document={horizontal['document']}")
+    if width > 760:
+        return
+    for selector in SECTIONS:
+        b=rect(page,selector)
+        if not b:
+            failures.append(f"{width}px: missing/hidden section {selector}")
+        elif not (near(b["x"],0) and near(b["right"],width)):
+            failures.append(f"{width}px: {selector} x={b['x']:.1f} right={b['right']:.1f} (expected 0..{width})")
+    # The featured publication card should have a single inset of about 16px,
+    # not a second 16-42px inset from details and the old scroller.
+    container=rect(page,"#admin-featured-publications")
+    first=rect(page,"#admin-featured-publications > .work-card")
+    if container:
+        if not (near(container["x"],0) and near(container["right"],width)):
+            failures.append(f"{width}px: featured grid is not full width: {container}")
+    else:
+        failures.append(f"{width}px: featured grid not found")
+    if first:
+        if not (12 <= first["x"] <= 24 and width-24 <= first["right"] <= width-12):
+            failures.append(f"{width}px: featured card has double inset: {first}")
+    else:
+        failures.append(f"{width}px: featured publication card not found")
+    # All other cards stay within the viewport without a cut-off label.
+    for selector in ("#admin-articles-list .actualite-card",
+                     ".participation-home .pc-card",
+                     ".home-follow-grid .social-card",
+                     ".home-follow-grid .newsletter-form"):
+        item=rect(page,selector)
+        if item and (item["x"] < -2 or item["right"] > width+2):
+            failures.append(f"{width}px: {selector} extends outside viewport: {item}")
+
+def main():
+    failures=[]
+    Path("layout-screenshots").mkdir(exist_ok=True)
+    with sync_playwright() as p:
+        browser=p.chromium.launch(headless=True, args=["--no-sandbox"])
+        try:
+            for width in WIDTHS:
+                page=browser.new_page(viewport={"width":width,"height":850},
+                                      device_scale_factor=1, is_mobile=width<=430,
+                                      has_touch=width<=430)
+                page.goto(BASE,wait_until="domcontentloaded",timeout=30000)
+                page.wait_for_timeout(1200)
+                if width in (344,390,1280):
+                    page.screenshot(path=f"layout-screenshots/accueil-{width}px.png",
+                                    full_page=True, animations="disabled")
+                check(page,width,failures)
+                print(f"Responsive layout checked at {width}px")
+                page.close()
+        finally:
+            browser.close()
+    if failures:
+        for f in failures: print("ERROR:",f)
+        raise SystemExit(f"{len(failures)} responsive layout regressions")
+    print("Responsive layout OK: seven viewport widths, all sections and cards.")
+
+if __name__ == "__main__":
+    main()
