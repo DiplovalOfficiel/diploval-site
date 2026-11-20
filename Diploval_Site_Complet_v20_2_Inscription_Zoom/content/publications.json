@@ -42,7 +42,8 @@
       "seo_description": "Militaires français en Ukraine : analyse du renseignement, du droit international, de l'article 35 et des risques d'escalade. Dossier Diploval V0.1.",
       "type": "Dossier d’analyse",
       "id": "france-ukraine-russie-militaires-renseignement-droit",
-      "type_filter": "analyse"
+      "type_filter": "analyse",
+      "related_publication_label": "Voir aussi : proposition Diploval pour un processus de paix durable"
     },
     {
       "details": "Cette version publique consolidée distingue les faits établis, les limites, les hypothèses et les questions encore à instruire. Elle est ouverte à la contradiction et à la contribution citoyenne structurée. La V1.1 reste figée pendant la consultation ; les apports retenus pourront nourrir une version ultérieure clairement datée.",
