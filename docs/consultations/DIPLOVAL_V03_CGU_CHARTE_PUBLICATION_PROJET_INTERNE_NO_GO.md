@@ -137,3 +137,71 @@ La réclamation éditoriale est distincte des droits RGPD et des recours judicia
 - RGPD, art. 5 à 9 et 12 à 15 : https://www.cnil.fr/fr/reglement-europeen-protection-donnees
 
 **Décision : PROJET INTERNE NON PUBLIABLE. P01–P16 demeurent OPEN. Aucune activation V0.3, aucun changement de la V0.2 ni fusion de la PR #20.**
+
+---
+
+## IV. Revue croisée avec la notice RGPD — clauses opérationnelles proposées (20 novembre 2026)
+
+Ce rapprochement est **une revue de cohérence rédactionnelle, pas une validation juridique**. Les décisions `CC-01` à `CC-08` restent en attente. Elles n'autorisent aucune modification de formulaire ni de règles effectives avant approbation.
+
+### A. Périmètre exact des autorisations (CC-01/02/03)
+
+**CC-01 — Affichage dans la consultation** : option recommandée : consentement/autorisation de diffusion **distinct(e) du dépôt privé**, limitée à la version modérée, à la page de consultation désignée et aux traitements techniquement nécessaires à cet affichage. La base légale RGPD et, le cas échéant, la condition art. 9 **restent à déterminer**. Préciser contractuellement les droits d'exploitation de l'œuvre si elle est protégée : droit concerné, supports, destination, territoire et durée.
+
+**CC-02 — Courtes citations dans une synthèse** : ne pas présumer que la permission d'affichage permet une citation quelconque. Examiner la possibilité d'une exception légale de courte citation **cas par cas** et ses conditions, la protection des données personnelles, la nécessité de citer, le contexte, l'attribution et le risque de réidentification. À défaut d'exception applicable, obtenir une permission adéquate. Une citation réputée courte au titre du droit d'auteur peut néanmoins exposer des données personnelles.
+
+**CC-03 — Reproduction étendue dans rapports, PDF, vidéos, réseaux ou médias partenaires** : prévoir un choix de droits distinct lorsqu'il est nécessaire, avec libellé précis des usages ; aucune cession exclusive ni licence CC BY des contributions par défaut. La personne peut participer sans accorder d'autorisation pour ces usages secondaires, **sous réserve de la base juridique validée pour le dépôt**. Une possibilité d'utiliser un contenu dans une synthèse non identifiante ne doit pas être assimilée automatiquement à sa reproduction intégrale.
+
+**Point de droit à faire valider :** le Code de la propriété intellectuelle, article L131-3, impose de circonscrire les droits cédés et leur domaine d'exploitation (étendue, destination, lieu et durée). La qualification d'une autorisation non exclusive, les exceptions légales, les droits moraux et le régime des textes institutionnels nécessitent une revue spécifique. Source : https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006278958/
+
+### B. Grille de modération contradictoire (CC-04/05)
+
+| Situation fictive | Décision initiale proposée | Justification et précaution |
+|---|---|---|
+| Critique forte mais argumentée d'un ministère | Recevable sous réserve des autres critères | Le seul désaccord ou caractère défavorable n'est pas un motif de refus |
+| Opinion minoritaire défendue sans menace | Recevable sous réserve des autres critères | Appliquer les mêmes critères à toutes les orientations |
+| Texte révélant adresse/état de santé d'un tiers | Suspendre la publication, demander une version expurgée si approprié | Prévenir une divulgation injustifiée ; traiter distinctement le contenu privé déjà reçu |
+| Accusation nominative grave sans étayage | Examen circonstancié, demander des précisions ou expurger si possible | Ne pas prononcer automatiquement une qualification pénale, protéger la contradiction |
+| Menace explicite ou appel illicite à la violence | Ne pas publier ; examiner les suites légales et la sécurité | Motiver et tracer la mesure de façon proportionnée |
+| Argument contradictoire répété mais authentique | Pas de refus automatique pour répétition | Évaluer le spam/manipulation avec des indicateurs objectivables et droit de réexamen |
+| Réponse institutionnelle contestant une contribution | Examen indépendant, sans effacement automatique de la critique | Vérifier mandat, provenance, preuves et possibilité de réponse équilibrée |
+| Recours après retrait | Contrôle par un intervenant habilité et distinct lorsque nécessaire | Le recours ne vaut pas publication automatique ; respecter les droits des tiers |
+
+Pour chaque décision : `reference`, version, règle invoquée, motif contextualisé, auteur habilité, horodatage, voie de réexamen et éventuelle mesure conservatoire. **Ne pas écrire de nouvelles accusations ou données sensibles inutiles dans le journal de modération.**
+
+### C. Répartition des décisions et réponses des institutions (CC-06)
+
+| Action | Citoyen auteur | Institution mandatée | Modérateur Diploval |
+|---|---|---|---|
+| Déposer une contribution privée | Selon conditions à valider | Non sur le compte personnel d'un citoyen | Non à sa place |
+| Autoriser une publication de son texte | Oui selon les règles validées | Non à la place du citoyen | Ne peut suppléer l'absence d'autorisation applicable |
+| Lire une contribution publiée | Oui | Dans sa consultation autorisée | Oui |
+| Lire coordonnées ou historique privé d'un citoyen | Ses propres informations, via authentification | **Non par défaut** | Accès limité à la nécessité d'examen |
+| Proposer une réponse officielle | Non au nom de l'organisme | Oui, sous mandat vérifié | Peut soumettre une réponse au nom de Diploval en la distinguant clairement |
+| Publier une réponse institutionnelle | Non | **Non** | Seulement après procédure de validation distincte **non encore opérationnelle** |
+| Décider d'une réclamation contre une institution | Peut demander examen | Peut donner des éléments contradictoires | Décision motivée, avec gestion des conflits d'intérêts |
+
+### D. Retrait, effacement et documents déjà diffusés (CC-07)
+
+Distinguer : **(1)** retrait de la page et des points d'accès contrôlés, **(2)** demande RGPD d'effacement des données personnelles selon ses conditions, **(3)** cessation d'une licence ou d'une autorisation d'exploitation selon sa portée, **(4)** correction d'un rapport ou d'un export antérieurement diffusé. Ne pas promettre de supprimer de manière rétroactive des copies privées externes, tout en conservant les obligations légales éventuellement applicables aux destinataires.
+
+L'annulation d'une permission d'affichage doit déclencher l'examen d'un retrait effectif et des caches contrôlés ; le statut de l'ancien texte dans un PDF archivé ou un rapport doit être traité par une **politique explicite**, non par un automatisme inventé.
+
+### E. Liste des divergences / arbitrages non résolus (CC-08)
+
+| Référence | Incohérence ou lacune constatée entre les deux projets | Action avant approbation |
+|---|---|---|
+| REV-01 | La notice prévoit un choix d'affichage mais la portée territoriale/temporelle de l'autorisation d'auteur n'est pas fixée | Définir la portée exacte et son inscription dans la notice et les CGU |
+| REV-02 | « Sans nom affiché » peut être compris comme anonymat | Maintenir la mise en garde identique dans le formulaire, la notice, les CGU et les exports |
+| REV-03 | Le dépôt peut contenir opinions politiques ou données de tiers, sans condition art. 9 ni dispositif d'admission arrêté | Examiner art. 6/9, mesures de minimisation, champ libre et gestion des refus |
+| REV-04 | Autorisation de publier une version et réutilisation dans les rapports restent potentiellement confondues | Définir choix séparé de reproduction élargie ou exception légale documentée |
+| REV-05 | Recours éditorial sans délai établi, droits RGPD avec délai légal spécifique | Présenter les deux procédures et leurs délais distinctement |
+| REV-06 | Identité de l'éditeur, statut, contact, sous-traitants et conservation provisoires | Remplacer tous les crochets par des informations officielles et testées |
+| REV-07 | Le rôle de l'institution peut sembler lui permettre une réponse publiée | Afficher expressément « projet soumis à Diploval, aucune publication directe » |
+| REV-08 | Une revue favorable institutionnelle peut être prise pour une publication définitive | Exiger une décision finale séparée, contrôlant source, mandat, droits et consentement |
+| REV-09 | Retrait, effacement et archivage des rapports ne décrivent pas le même processus | Documenter chaque déclencheur, les délais, les copies et les preuves de correction |
+| REV-10 | Les droits sur les textes publiés par des institutions diffèrent potentiellement de ceux des citoyens | Vérifier la provenance et la compétence de l'agent à autoriser une reproduction, sans présumer une licence |
+| REV-11 | La notice vise les mineurs sans politique validée | Ne pas ouvrir aux mineurs tant que conditions et garde-fous ne sont pas arrêtés |
+| REV-12 | La lecture d'un texte publique par une institution peut évoluer en réutilisation privée par celle-ci | Définir les rôles par finalité, destinataires et interdictions contractuelles/opérationnelles |
+
+**Statut de revue :** divergences consignées, orientations proposées, **aucune correction considérée comme juridiquement acceptée**, toutes les mesures conditionnées à preuves et approbation humaine. P01, P02, P03, P04, P07, P08, P10, P13, P14 et P16 restent `OPEN`.
