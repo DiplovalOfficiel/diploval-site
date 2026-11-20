@@ -32,6 +32,7 @@ function scenario(){
  const readModeratorEntry=(p,entryId)=>repo.readPrivate(p,entryId);
  const authorizeModerator=async p=>isStaff(p);
  const appeals=createAppealService({store,readAuthorEntry,readModeratorEntry,authorizeModerator,
+  verifyIndependentReviewer:async({principal})=>principal===staffA||principal===staffB,
   clock:()=> '2026-11-19T17:00:00Z'});
  const followup=createFollowupService({
   readAuthorEntry,readModeratorEntry,authorizeModerator,
