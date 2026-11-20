@@ -421,3 +421,65 @@
   .institutional-site .main-nav.nav-tiles.open a.dv-nav-item{gap:7px;padding:11px 8px;font-size:13px;min-height:76px}
   .institutional-site .main-nav.nav-tiles.open .dv-nav-icon{width:20px;height:20px;flex-basis:20px}
 }
+
+/* Accueil v2026-11-20 : hiérarchie cohérente et sections progressives. */
+.institutional-home h1{font-size:clamp(30px,3vw,38px)!important;line-height:1.18!important;letter-spacing:-.015em!important}
+.institutional-home h2{font-size:clamp(22px,2.2vw,26px)!important;line-height:1.25!important}
+.institutional-home h3{font-size:clamp(17px,1.8vw,20px)!important;line-height:1.32!important}
+.institutional-home :is(.publication-result strong,.work-body strong,.actualite-card h3,.pc-card h3,.institutional-service .service-label){font-size:clamp(16px,1.4vw,18px)!important;line-height:1.35!important;overflow-wrap:break-word}
+.institutional-home :is(.section-heading p,.works-head>p,.institutional-pitch p,.pc-card p){line-height:1.6}
+.institutional-home :is(.publication-result,.actualite-card,.pc-card,.work-card){min-width:0}
+.institutional-home .hero{padding-top:34px;padding-bottom:32px}
+.institutional-home .institutional-pitch{max-width:60ch}
+.institutional-home .institutional-pitch p{margin:.35rem 0 .8rem}
+.institutional-home .hero-buttons{margin-top:16px}
+.institutional-home .home-shortcuts{margin-top:16px;margin-bottom:6px}
+.institutional-home .section-heading{margin-bottom:16px}
+.institutional-home .section-heading p{max-width:65ch}
+.institutional-home .home-news-more,.institutional-home .participation-home__more{margin-top:13px}
+.institutional-home .home-news-more>summary,.institutional-home .participation-home__more>summary{cursor:pointer;font-weight:700;color:#244f70;font-size:14px;line-height:1.5;padding:6px 0;text-decoration:underline;text-underline-offset:3px}
+.institutional-home .participation-home__more p{padding:8px 0 0;margin:0}
+.institutional-home .actualites-grid .actualite-card:nth-child(n+3){display:none}
+.institutional-home #actualites:has(.home-news-more[open]) .actualite-card:nth-child(n+3){display:grid}
+.institutional-home .home-news-more p{font-size:13px;color:#465d65;margin:7px 0 0}
+.institutional-home .home-collapse{border:1px solid #c8d5d7;border-radius:5px;background:#fff;margin:18px auto}
+.institutional-home .home-collapse>summary{display:flex;flex-direction:column;gap:2px;padding:17px 20px;cursor:pointer;color:#19384a;list-style:none;min-height:64px;box-sizing:border-box}
+.institutional-home .home-collapse>summary::-webkit-details-marker{display:none}
+.institutional-home .home-collapse>summary::after{content:"Afficher +";color:#244f70;font-size:13px;font-weight:700;margin-top:6px}
+.institutional-home .home-collapse[open]>summary::after{content:"Réduire −"}
+.institutional-home .home-collapse>summary strong{font-size:16px;line-height:1.4}
+.institutional-home .home-collapse>summary span{font-size:14px;line-height:1.5;color:#465d65}
+.institutional-home .home-collapse>summary:focus-visible{outline:3px solid #244f70;outline-offset:3px}
+.institutional-home .home-collapse[open]>summary{border-bottom:1px solid #c8d5d7}
+.institutional-home .home-library{width:100%;margin:18px 0}
+.institutional-home .home-library .publication-explorer{margin:0;padding:18px;border:0}
+.institutional-home .home-library .publication-note{padding-inline:18px}
+.institutional-home .home-missions{width:100%;padding:0}
+.institutional-home .home-missions .services-grid{padding:18px;box-sizing:border-box}
+.institutional-home .home-small-extra,.institutional-home .home-more-info{width:min(1120px,calc(100% - 48px));margin:20px auto}
+.institutional-home .home-small-extra>.section,.institutional-home .home-more-info>.section{width:calc(100% - 36px);margin:0 auto;padding-top:26px;padding-bottom:26px}
+.institutional-home .home-more-info>.section+.section{border-top:1px solid #c8d5d7}
+.institutional-home .home-featured{margin:14px 0}
+.institutional-home .home-featured>summary{font-size:16px;line-height:1.4}
+@media(max-width:760px){
+ .institutional-home{font-size:16px;line-height:1.6}
+ .institutional-home h1{font-size:clamp(28px,7.7vw,33px)!important;line-height:1.18!important}
+ .institutional-home h2{font-size:22px!important;line-height:1.27!important}
+ .institutional-home h3{font-size:18px!important;line-height:1.35!important}
+ .institutional-home :is(.publication-result strong,.work-body strong,.actualite-card h3,.pc-card h3,.institutional-service .service-label){font-size:16px!important;line-height:1.4!important}
+ .institutional-home :is(.section-heading p,.works-head>p,.institutional-pitch p,.about-content p,.pc-card p,.service-brief){font-size:15px;line-height:1.6}
+ .institutional-home .hero{padding:24px 18px}
+ .institutional-home .hero-buttons .button{width:100%;max-width:100%;justify-content:center;box-sizing:border-box}
+ .institutional-home .home-shortcuts{gap:8px;margin:12px auto 0}
+ .institutional-home .home-shortcuts a{min-height:82px;padding:11px}
+ .institutional-home .home-shortcuts a strong{font-size:15px}
+ .institutional-home .home-shortcuts a span{font-size:12px}
+ .institutional-home .home-library .publication-explorer{padding:12px}
+ .institutional-home .home-missions .services-grid{padding:12px}
+ .institutional-home .home-small-extra,.institutional-home .home-more-info{width:calc(100% - 32px);margin:16px auto}
+ .institutional-home .home-small-extra>.section,.institutional-home .home-more-info>.section{width:calc(100% - 26px)}
+ .institutional-home .home-collapse>summary{padding:13px 15px}
+ .institutional-home .home-collapse>summary strong{font-size:15px}
+ .institutional-home .home-collapse>summary span{font-size:13px}
+ .institutional-home .main-nav.nav-tiles.open a.dv-nav-item{font-size:14px;line-height:1.35}
+}
