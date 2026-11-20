@@ -72,26 +72,31 @@ def main():
     failures=[]
     Path("layout-screenshots").mkdir(exist_ok=True)
     with sync_playwright() as p:
-        browser=p.chromium.launch(headless=True, args=["--no-sandbox"])
-        try:
-            for width in WIDTHS:
-                page=browser.new_page(viewport={"width":width,"height":850},
-                                      device_scale_factor=1, is_mobile=width<=430,
-                                      has_touch=width<=430)
-                page.goto(BASE,wait_until="domcontentloaded",timeout=30000)
-                page.wait_for_timeout(1200)
-                if width in (344,390,1280):
-                    page.screenshot(path=f"layout-screenshots/accueil-{width}px.png",
-                                    full_page=True, animations="disabled")
-                check(page,width,failures)
-                print(f"Responsive layout checked at {width}px")
-                page.close()
-        finally:
-            browser.close()
+        for engine in (p.chromium, p.firefox):
+            options = {"headless": True}
+            if engine.name == "chromium":
+                options["args"] = ["--no-sandbox"]
+            browser=engine.launch(**options)
+            try:
+                for width in WIDTHS:
+                    mobile=width<=430 and engine.name=="chromium"
+                    page=browser.new_page(viewport={"width":width,"height":850},
+                                          device_scale_factor=1, is_mobile=mobile,
+                                          has_touch=mobile)
+                    page.goto(BASE,wait_until="domcontentloaded",timeout=30000)
+                    page.wait_for_timeout(1200)
+                    if width in (344,390,1280):
+                        page.screenshot(path=f"layout-screenshots/{engine.name}-accueil-{width}px.png",
+                                        full_page=True, animations="disabled")
+                    check(page,width,failures)
+                    print(f"{engine.name}: responsive layout checked at {width}px")
+                    page.close()
+            finally:
+                browser.close()
     if failures:
         for f in failures: print("ERROR:",f)
         raise SystemExit(f"{len(failures)} responsive layout regressions")
-    print("Responsive layout OK: seven viewport widths, all sections and cards.")
+    print("Responsive layout OK: Chromium and Firefox, seven viewport widths, all sections and cards.")
 
 if __name__ == "__main__":
     main()
