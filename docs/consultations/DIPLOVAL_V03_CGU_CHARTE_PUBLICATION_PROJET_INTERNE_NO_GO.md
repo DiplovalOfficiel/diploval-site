@@ -288,3 +288,84 @@ Les délais de traitement des demandes **RGPD** ne se confondent pas avec un dé
 Les huit décisions nécessitent une **approbation éditoriale formelle et une vérification juridique** avant toute intégration dans un formulaire public. Les mesures dépendant d'un service encore absent sont décrites comme **propositions**, non comme fonctions offertes.
 
 **État inchangé : P01–P16 OPEN, V0.3 NO GO, PR #20 brouillon.**
+
+---
+
+## VI. Relecture contradictoire des règles de modération et des recours — 20 novembre 2026
+
+**Nature :** contrôle rédactionnel et scénarios contradictoires fictifs ; **ce n'est ni un test d'exploitation, ni un avis juridique indépendant**. Les conclusions ci-dessous sont à soumettre à un responsable éditorial et à un juriste, sans les présenter comme des décisions déjà approuvées.
+
+### 1. Trois risques de biais identifiés
+
+**BIAIS-01 — Confondre contradiction et faute.** Un texte critiquant fortement Diploval ou une institution peut être recevable même si ses conclusions sont discutables. L'absence d'accord éditorial ne peut justifier un refus. À l'inverse, le caractère favorable d'un texte ne peut dispenser de contrôler la vie privée, la véracité d'une attribution ou des propos menaçants.
+
+**BIAIS-02 — Confondre accusation non prouvée et diffamation juridiquement établie.** Une mise en cause nominative mérite une revue prudente de la présentation des faits, de l'intérêt public, des éléments disponibles, du contexte et des personnes concernées. Le modérateur n'est pas un tribunal : il peut demander une formulation moins identifiante ou une documentation, sans qualifier automatiquement une infraction. En cas de menace pour la sécurité ou de divulgation injustifiée, un masquage conservatoire proportionné peut être nécessaire.
+
+**BIAIS-03 — Confondre contestation institutionnelle et droit de veto.** Une institution mise en cause doit pouvoir fournir des observations et rectifier des faits contestés ; elle ne doit jamais décider seule du retrait d'une critique citoyenne, accéder aux coordonnées privées ou imposer sa propre réponse sans examen indépendant.
+
+### 2. Matrice de cas opposés : mêmes règles, conséquences justifiées
+
+| Cas fictif comparé | Décision de travail | Contrôle contradictoire exigé |
+|---|---|---|
+| Contribution A : « La mairie doit changer de politique » ; contribution B : « La mairie agit efficacement » | Les deux recevables en principe | Même grille de pertinence, civilité et confidentialité, sans préférence de fond |
+| Éloge d'un élu avec ses coordonnées personnelles ; critique du même élu avec ses coordonnées | Ni l'éloge ni la critique ne justifient la divulgation injustifiée | Masquer les coordonnées de tiers dans les deux sens |
+| Allégation vérifiable et documentée contre un service public ; dénégation institutionnelle non sourcée | Ne pas retirer mécaniquement l'allégation ni valider mécaniquement la dénégation | Exposer les incertitudes, demander les sources, attribuer clairement les versions |
+| Accusation nominative grave sans élément vérifiable ; accusation grave assortie d'éléments sérieux | Examen humain renforcé pour les deux, décisions potentiellement différentes après analyse | Risques d'atteinte aux personnes, exactitude, nécessité de nommer, contexte ; avis juridique si nécessaire |
+| Critique exprimée avec force mais sans menace ; menace explicite envers un agent | La vigueur n'est pas la menace ; traitement différent justifié | Identifier les propos précis, éviter les jugements d'intention non étayés |
+| Contribution défavorable à Diploval mais conforme ; contribution favorable contenant des données médicales de tiers | Conserver la première admissible ; bloquer ou demander expurgation de la seconde | La protection des personnes prime sur la sympathie éditoriale |
+| Demande de correction d'un fait matériel ; exigence de retrait pour désaccord politique | Examiner et corriger l'erreur prouvée ; ne pas reconnaître de veto sur l'opinion | Trace de la correction, motif et possibilité de réponse |
+| Texte refusé par modérateur A ; recours attribué au même modérateur A | Réexamen indépendant requis dans les cas de conflit ou d'implication personnelle | Écarter le conflit d'intérêts, identifier le second intervenant |
+| Réponse institutionnelle reçue après retrait de la contribution source | Ne pas publier la réponse comme si la cible restait publique | Contrôler l'état et la version de la source juste avant toute diffusion |
+| Auteur demande retrait de publication et effacement de toutes ses données | Instruire les deux demandes séparément, sans promettre purge immédiate sans examen | Retrait de l'affichage contrôlé, exceptions RGPD éventuelles, copies, sauvegardes et délais |
+
+La grille doit être appliquée aux textes favorables **comme** défavorables à une même institution, entreprise ou personne.
+
+### 3. Procédure de modération proposée : contrôles vérifiables
+
+**M-01.** Lecture d'un texte dans un espace privé, avec accès sur besoin réel et journal minimal ; ne jamais transmettre l'intégralité du dossier à une institution invitée.
+
+**M-02.** Qualification documentée de l'objet de la consultation, du risque de divulgation de tiers, des insultes/menaces, des accusations et des droits de reproduction. Mentionner **le passage concerné et la règle invoquée**, sans recopier inutilement la donnée à risque dans un journal.
+
+**M-03.** Quatre issues rédactionnelles proposées à examiner avec le modèle technique : « approuver », « refuser avec motif », « demander une nouvelle version », « suspendre une publication existante ». **La demande de révision et les mesures conservatoires ne sont pas nécessairement implémentées comme décisions autonomes dans le service V0.3 : ne pas les annoncer avant vérification technique.**
+
+**M-04.** Le refus doit indiquer une règle précise, une explication contextualisée, la référence/version et la possibilité de contester. Aucune décision fondée uniquement sur « contraire à la ligne Diploval » ou « gêne l'institution ».
+
+**M-05.** Les publications et retraits doivent être vérifiés sur la projection publique et les caches/exportations contrôlés ; une décision enregistrée n'est pas une preuve que toutes les copies ont disparu.
+
+**M-06.** La décision doit être auditée selon une durée de conservation justifiée. Les données personnelles incluses dans les motivations doivent être strictement nécessaires.
+
+### 4. Recours : examen indépendant et séparation des domaines
+
+**R-01 — Recevabilité.** L'auteur authentifié peut contester une décision relevant des conditions de recours publiées ; un tiers concerné par un contenu doit disposer d'un canal de signalement séparé, sans accéder au dossier privé de l'auteur.
+
+**R-02 — Qualification.** Distinguer : recours contre une modération, exercice de droits RGPD, demande de correction d'un rapport, allégation de contenu manifestement illicite et signalement de sécurité. Un seul message peut nécessiter plusieurs traitements coordonnés.
+
+**R-03 — Impartialité.** Si le premier modérateur est mis en cause, s'est exprimé personnellement dans l'affaire ou détient un conflit d'intérêts, désigner une personne habilitée distincte. Si l'effectif de Diploval ne permet pas une véritable séparation, **l'absence d'indépendance doit être déclarée et une voie de revue externe ou de suspension doit être étudiée**, plutôt que feindre une double validation.
+
+**R-04 — Motivation et contradiction.** Donner à l'auteur le motif compréhensible, sans divulguer des informations personnelles de tiers ni des pièces confidentielles. Lorsqu'une institution conteste un fait, conserver la trace des éléments qu'elle communique, sans considérer sa seule affirmation comme une preuve.
+
+**R-05 — Décision et effets.** La décision de recours peut maintenir, inviter à réviser ou transmettre à un responsable compétent selon le mécanisme autorisé ; elle **n'est jamais à elle seule une opération de publication**. Toute publication exige ses propres contrôles de source, droits et consentements applicables.
+
+**R-06 — Délais.** **Ne pas inventer de délai de recours éditorial**, de durée de conservation ou de promesse de réponse sous quelques jours. Les délais RGPD ont leur régime légal propre et doivent être affichés séparément.
+
+### 5. Vérifications à apporter avant approbation de P03 et P13
+
+| Code | Preuve attendue | Statut |
+|---|---|---|
+| MOD-01 | Charte relue par une personne compétente et habilitée, avec exemples favorables/défavorables et motifs | EN ATTENTE |
+| MOD-02 | Règle de qualification d'accusations, données de tiers, menaces et mesures conservatoires revue juridiquement | EN ATTENTE |
+| MOD-03 | Vérification que chaque issue annoncée correspond à une opération réelle dans le code et l'interface | EN ATTENTE |
+| MOD-04 | Politique des conflits d'intérêts et capacité réelle de deuxième examen, y compris solution si une seule personne assure la modération | EN ATTENTE |
+| MOD-05 | Canal, délais éditoriaux, accusés et historique des recours approuvés | EN ATTENTE |
+| MOD-06 | Essais fictifs des dix situations opposées par deux relecteurs et compte rendu des écarts | EN ATTENTE |
+| MOD-07 | Procédure d'alerte et de retrait vérifiée sur pages publiques, caches et éventuels exports | EN ATTENTE |
+| MOD-08 | Réconciliation avec droits RGPD, protection des tiers, durée des journaux et preuve d'information | EN ATTENTE |
+
+**Avis de travail :** aucune contradiction ne justifie de censurer automatiquement une contribution. En revanche, le droit de participer n'implique pas un droit inconditionnel à la publication de données de tiers, de menaces ou de propos juridiquement risqués. La distinction doit rester explicite.
+
+**Sources de référence consultées :**
+- Service-Public — Injure et distinctions avec diffamation : https://www.service-public.fr/particuliers/vosdroits/F32077
+- CNIL — Droits sur les données : https://www.cnil.fr/fr/mes-demarches/les-droits-pour-maitriser-vos-donnees-personnelles
+- RGPD, chapitre III, notamment article 17 : https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3
+
+**Statut documentaire : ANALYSE CONTRADICTOIRE INTERNE EFFECTUÉE, validation indépendante et juridique NON RÉALISÉE. P01–P16 OPEN, V0.3 NO GO.**
