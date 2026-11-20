@@ -1435,3 +1435,7 @@ body main :is(p,a,h1,h2,h3,h4,summary),body footer :is(p,a,button){overflow-wrap
   .strategic-watch__legend{gap:.42rem .8rem}
   .strategic-watch__links{gap:.5rem .9rem}
 }
+
+.seo-detail-card.seo-related-publication{background:#f4f7fa;border-color:#a8b7c6;border-left:4px solid #0a2745}
+.seo-related-publication a{display:block;color:#0a2745;font-size:1rem;font-weight:750;line-height:1.5;text-decoration:underline;text-underline-offset:.18em}
+.seo-related-publication a:hover,.seo-related-publication a:focus-visible{color:#154a78}
