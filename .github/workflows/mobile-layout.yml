@@ -1,0 +1,41 @@
+name: Vérification visuelle responsive Diploval
+on:
+  pull_request:
+    paths:
+      - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/index.html'
+      - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/styles.css'
+      - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/institutional.css'
+      - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/content-admin.js'
+      - 'tests/check-responsive-layout.py'
+      - '.github/workflows/mobile-layout.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-layout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Installer Chromium pour le contrôle
+        run: |
+          python -m pip install --disable-pip-version-check 'playwright>=1.55,<2'
+          python -m playwright install chromium
+      - name: Tester l'accueil rendu dans Chromium
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 --directory Diploval_Site_Complet_v20_2_Inscription_Zoom &
+          sleep 3
+          python tests/check-responsive-layout.py
+      - name: Conserver les captures de contrôle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: captures-responsive
+          path: layout-screenshots/
+          retention-days: 5
+          if-no-files-found: ignore
