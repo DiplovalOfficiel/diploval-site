@@ -373,3 +373,25 @@ Le texte projet comprend quatorze articles (objet et portée des consultations, 
 **Statut :** P03 reste `OPEN`, ainsi que P01, P02, P04, P07, P08, P10, P13 et P14 concernés par ce projet. Le document n'est ni adopté, ni signé, ni publié. Aucun changement de `DIPLOVAL_V03_B7_gate_NO_GO.json`.
 
 **Étape suivante :** revue contradictoire de la rédaction des CGU et de la notice ensemble, choix des permissions de citation/réutilisation et règles opérationnelles de modération ; ensuite seulement adaptation des écrans de dépôt, tests fictifs, validation indépendante et décision datée.
+
+---
+
+## 14. Revue croisée de la notice RGPD et des CGU — 20 novembre 2026
+
+**Travail effectué :** confrontation des deux projets de documents, avec annexes de concordance dans :
+- [CGU et charte de publication — section IV](./DIPLOVAL_V03_CGU_CHARTE_PUBLICATION_PROJET_INTERNE_NO_GO.md) ;
+- [Notice citoyenne — section E](./DIPLOVAL_V03_NOTICE_RGPD_CITOYEN_PROJET_INTERNE_NO_GO.md).
+
+**Douze points `REV-01` à `REV-12` sont identifiés**, concernant la portée des autorisations de droits d'auteur, l'anonymat, les données sensibles, les réutilisations dans les rapports, les recours, les durées, l'identité légale, les institutions, l'archivage et la participation des mineurs. Ils constituent une **liste de vérifications, non douze incidents de production**.
+
+**Orientations non validées proposées :**
+1. Maintenir une séparation vérifiable entre dépôt privé, affichage public du texte modéré et reproduction secondaire dans les rapports, PDF, vidéos ou réseaux sociaux.
+2. Conserver les droits de l'auteur sur ses contributions et ne pas appliquer automatiquement la licence des propres publications de Diploval aux contenus citoyens et institutionnels.
+3. Fixer dans les CGU la portée juridique d'une autorisation d'exploitation requise (supports, durée, territoire, destination), et distinguer la citation légalement permise de la reproduction autorisée par contrat.
+4. Appliquer les mêmes critères de modération aux opinions opposées ; les critiques étayées ne sont pas refusées pour leur seule orientation.
+5. Exiger un mandat institutionnel vérifié et une revue éditoriale distincte ; **aucune publication directe**.
+6. Distinguer les procédures de recours éditoriaux, retrait d'affichage, effacement RGPD et correction des exports déjà diffusés.
+
+**Critères pour passer la section à « examinée juridiquement » :** validation humaine des douze points, modèle de droits d'exploitation approuvé, notice complète sans données fictives ni crochets non résolus, arbitrage des données sensibles et des mineurs, délais de recours définis, contrôle de publication/retrait et cohérence d'affichage dans l'interface.
+
+**État :** revue rédactionnelle réalisée ; validation juridique **non réalisée** ; `P01–P16=OPEN`, `release=NO_GO`, `legal_docs_published=false`. Aucun changement de la V0.2 ou activation V0.3.
