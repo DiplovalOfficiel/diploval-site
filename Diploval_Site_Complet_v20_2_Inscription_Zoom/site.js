@@ -62,23 +62,34 @@
   backToTop.textContent='↑ Haut'; backToTop.hidden=true;
   document.body.append(backToTop);
   backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
-  // Les contenus complémentaires restent consultables, y compris depuis les liens profonds.
-  const deep = document.querySelector('details.home-deep');
-  const openDeepHash = () => {
-    if (!deep || !location.hash) return;
-    const id = decodeURIComponent(location.hash.slice(1));
-    const target = document.getElementById(id);
-    if (target && deep.contains(target)) {
-      deep.open = true;
-      requestAnimationFrame(() => target.scrollIntoView({block:'start'}));
-    }
+  // Ouvrir automatiquement une rubrique repliée lorsqu'un lien y mène.
+  const foldableHome = Array.from(document.querySelectorAll('details.home-deep, details.home-collapse'));
+  const getHashTarget = () => {
+    try { return location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null; }
+    catch { return null; }
   };
-  if (deep) {
-    const hashTarget = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    if (!hashTarget || !deep.contains(hashTarget)) deep.open = false;
-    window.addEventListener('hashchange', openDeepHash);
-    openDeepHash();
-  }
+  const revealHashTarget = (target = getHashTarget()) => {
+    if (!target) return;
+    let changed = false;
+    foldableHome.forEach(folder => {
+      if (folder.contains(target) && !folder.open) { folder.open = true; changed = true; }
+    });
+    if (changed) requestAnimationFrame(() => target.scrollIntoView({block:'start'}));
+  };
+  const initialTarget = getHashTarget();
+  const deep = document.querySelector('details.home-deep');
+  if (deep && !(initialTarget && deep.contains(initialTarget))) deep.open = false;
+  window.addEventListener('hashchange', () => revealHashTarget());
+  document.addEventListener('click', event => {
+    const link = event.target.closest?.('a[href^="#"],a[href^="/#"]');
+    if (!link || !document.body.classList.contains('institutional-home')) return;
+    const href = link.getAttribute('href') || '';
+    let hash = href.startsWith('/#') ? href.slice(1) : href;
+    if (!hash || hash === '#') return;
+    try { revealHashTarget(document.getElementById(decodeURIComponent(hash.slice(1)))); } catch {}
+  });
+  revealHashTarget();
+
   const updateScroll = () => {
     const y = window.scrollY;
     backToTop.hidden = y < 650;
