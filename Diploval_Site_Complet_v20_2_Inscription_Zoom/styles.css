@@ -1439,3 +1439,20 @@ body main :is(p,a,h1,h2,h3,h4,summary),body footer :is(p,a,button){overflow-wrap
 .seo-detail-card.seo-related-publication{background:#f4f7fa;border-color:#a8b7c6;border-left:4px solid #0a2745}
 .seo-related-publication a{display:block;color:#0a2745;font-size:1rem;font-weight:750;line-height:1.5;text-decoration:underline;text-underline-offset:.18em}
 .seo-related-publication a:hover,.seo-related-publication a:focus-visible{color:#154a78}
+
+/* Ergonomie des pages détaillées et des PDF — 20 novembre 2026 */
+.seo-detail-page .main-nav a[aria-current="page"]{text-decoration:underline;text-underline-offset:5px}
+.mobile-menu-caption{display:none;font-size:13px;font-weight:700;color:#19384a}
+.back-to-top{position:fixed;z-index:1200;bottom:calc(20px + env(safe-area-inset-bottom));right:20px;padding:10px 15px;min-height:44px;border:1px solid #244f70;background:#244f70;color:#fff;border-radius:6px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 2px 12px #19384a33}
+.back-to-top[hidden]{display:none!important}
+.seo-detail-correction{padding:14px 18px;border-left:4px solid #244f70;background:#e4edf3;color:#19384a;line-height:1.65;margin:18px 0}
+.seo-detail-page main [id]{scroll-margin-top:110px}
+@media(min-width:980px){
+ .seo-detail-page .main-nav{gap:.85rem}
+ .seo-detail-page .main-nav a{font-size:.82rem}
+}
+@media(max-width:979px){
+ .mobile-menu-caption{display:block}
+ .back-to-top{right:12px;bottom:calc(12px + env(safe-area-inset-bottom))}
+ .seo-detail-page .main-nav.open{max-height:calc(100dvh - 90px);overflow:auto;overscroll-behavior:contain}
+}
