@@ -808,3 +808,36 @@
   }
   .institutional-home #admin-featured-publications .work-body{padding:10px 12px 16px}
 }
+
+/* Correctif responsive 20/11/2026 — section Actualités dans la grille d'accueil.
+   Une règle générale .institutional-home .section appliquait une seconde réduction
+   de largeur aux enfants de .institutional-front. */
+@media (max-width:760px){
+  .institutional-home .institutional-front > .section.section-actualites{
+    display:block;
+    width:100%;
+    min-width:0;
+    max-width:100%;
+    margin:0;
+    padding:16px;
+    box-sizing:border-box;
+  }
+  .institutional-home .institutional-front > .section.section-actualites .actualites-shell{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  .institutional-home .institutional-front > .section.section-actualites .section-heading,
+  .institutional-home .institutional-front > .section.section-actualites .actualites-grid,
+  .institutional-home .institutional-front > .section.section-actualites .actualite-card{
+    min-width:0;
+    max-width:100%;
+    box-sizing:border-box;
+  }
+  .institutional-home .institutional-front > .section.section-actualites .actualite-card>a{
+    min-width:0;
+  }
+}
