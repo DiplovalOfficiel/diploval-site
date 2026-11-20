@@ -993,3 +993,135 @@
     box-sizing:border-box;
   }
 }
+
+
+/* Restaurer la pleine largeur des blocs de l'accueil sur téléphone.
+   Les marges extérieures ajoutées au correctif précédent sont supprimées ;
+   la lisibilité est assurée par l'espace INTERIEUR de chaque section. */
+@media (max-width:760px){
+  .institutional-home{
+    overflow-x:clip;
+  }
+  .institutional-home :is(
+    .institutional-front,
+    .home-shortcuts,
+    .home-follow-grid,
+    .home-deep,
+    .home-small-extra,
+    .home-more-info,
+    .contact
+  ),
+  .institutional-home main > .section{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    margin-left:0;
+    margin-right:0;
+    box-sizing:border-box;
+  }
+  /* Espacement de lecture à l'intérieur, pas à l'extérieur. */
+  .institutional-home main > .section{
+    padding:24px 16px;
+  }
+  .institutional-home .institutional-front{
+    grid-template-columns:minmax(0,1fr);
+    gap:14px;
+    margin-top:16px;
+  }
+  .institutional-home .institutional-front > :is(
+    .participation-home,
+    .communiques-home,
+    .section
+  ){
+    width:100%;
+    max-width:100%;
+    margin:0;
+    padding:20px 16px;
+    border-radius:0;
+    border-left:0;
+    border-right:0;
+    box-sizing:border-box;
+  }
+  .institutional-home .institutional-front > .section.section-actualites{
+    width:100%;
+    margin:0;
+    padding:20px 16px;
+  }
+  .institutional-home .home-shortcuts{
+    padding:12px 16px;
+    margin-top:0;
+    margin-bottom:0;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;
+  }
+  .institutional-home .home-follow-grid{
+    padding:0;
+    margin-top:18px;
+    margin-bottom:22px;
+    gap:12px;
+    grid-template-columns:minmax(0,1fr);
+  }
+  .institutional-home .home-follow-grid > .section{
+    width:100%;
+    max-width:100%;
+    padding:0;
+    margin:0;
+  }
+  .institutional-home .home-follow-grid .socials-wrap,
+  .institutional-home .home-follow-grid .newsletter-shell{
+    width:100%;
+    margin:0;
+    padding:16px;
+    border-left:0;
+    border-right:0;
+    border-radius:0;
+  }
+  .institutional-home .home-deep,
+  .institutional-home .home-small-extra,
+  .institutional-home .home-more-info{
+    margin-top:16px;
+    margin-bottom:16px;
+    border-left:0;
+    border-right:0;
+    border-radius:0;
+  }
+  .institutional-home .home-deep > .section,
+  .institutional-home .home-small-extra > .section,
+  .institutional-home .home-more-info > .section{
+    width:100%;
+    margin:0;
+    padding:20px 16px;
+    box-sizing:border-box;
+  }
+  .institutional-home .contact{
+    padding:20px 16px;
+    margin-top:18px;
+    margin-bottom:24px;
+    border-left:0;
+    border-right:0;
+    border-radius:0;
+  }
+  .institutional-home :is(
+    .actualites-shell,
+    .actualites-grid,
+    .actualite-card,
+    .pc-list,
+    .pc-card,
+    .newsletter-shell,
+    .newsletter-form,
+    .services-grid,
+    .works-grid,
+    #admin-featured-publications,
+    .work-card,
+    .contact-inner
+  ){
+    min-width:0;
+    max-width:100%;
+    box-sizing:border-box;
+  }
+}
+@media (max-width:350px){
+  .institutional-home .home-shortcuts{
+    grid-template-columns:minmax(0,1fr);
+  }
+}
