@@ -5,16 +5,32 @@
   const header = document.querySelector('.site-header');
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.main-nav');
-  // Navigation commune : les liens historiques restent accessibles dans le pied de page.
+  // Menu à six tuiles sur mobile, navigation horizontale inchangée sur ordinateur.
   if (nav) {
-    const links = [['Publications','/#travaux'], ['Points d’information','/points-information'],
-      ['Participer','/propositions-contributions'], ['Nos missions','/#services'],
-      ['À propos','/#apropos'], ['Contact','/#contact']];
-    nav.innerHTML = links.map(([label,href])=>{
-      const current = (href==='/points-information' && location.pathname.startsWith('/points-information')) ||
-        (href==='/propositions-contributions' && location.pathname.startsWith('/propositions-contributions'));
-      return '<a href="'+href+'"'+(current?' aria-current="page"':'')+'>'+label+'</a>';
-    }).join('');
+    const icons = {
+      publications:'<path d="M12 7v14"/><path d="M3 18V5a2 2 0 0 1 2-2h3a4 4 0 0 1 4 4 4 4 0 0 1 4-4h3a2 2 0 0 1 2 2v13a1 1 0 0 1-1 1h-4a4 4 0 0 0-4 2 4 4 0 0 0-4-2H4a1 1 0 0 1-1-1z"/>',
+      information:'<circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M5 5a10 10 0 0 0 0 14"/><path d="M19 5a10 10 0 0 1 0 14"/>',
+      participer:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+      missions:'<rect width="20" height="14" x="2" y="7" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M2 12h20"/>',
+      apropos:'<path d="m3 10 9-7 9 7"/><path d="M4 10h16v10H4z"/><path d="M9 20v-7h6v7"/>',
+      contact:'<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/>'
+    };
+    const links = [
+      ['Publications','/#travaux','publications'],
+      ['Points d’information','/points-information','information'],
+      ['Participer','/propositions-contributions','participer'],
+      ['Nos missions','/#services','missions'],
+      ['À propos','/#apropos','apropos'],
+      ['Contact','/#contact','contact']
+    ];
+    nav.classList.add('nav-tiles');
+    nav.innerHTML='<span class="dv-nav-intro" aria-hidden="true">Explorer Diploval</span>'+
+      links.map(([label,href,type])=>{
+        const current = (href==='/points-information' && location.pathname.startsWith('/points-information')) ||
+          (href==='/propositions-contributions' && location.pathname.startsWith('/propositions-contributions'));
+        const glyph='<svg class="dv-nav-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">'+icons[type]+'</svg>';
+        return '<a class="dv-nav-item" href="'+href+'"'+(current?' aria-current="page"':'')+'>'+glyph+'<span>'+label+'</span></a>';
+      }).join('');
   }
   if (menuButton && !document.querySelector('.mobile-menu-caption'))
     menuButton.insertAdjacentHTML('beforebegin','<span class="mobile-menu-caption" aria-hidden="true">Menu</span>');
