@@ -487,3 +487,15 @@ La revue compare des textes favorables et défavorables à une même institution
 **Priorité de sécurisation proposée :** (1) indépendance réelle des recours (FONC-01/07), (2) retrait inter-supports et signalements (FONC-03/04), (3) clarification de « demande de correction » et catégories de recours (FONC-02/05), (4) publication institutionnelle séparée (FONC-06). Chaque correction doit être testée en environnement fictif, puis vérifiée par une personne indépendante avant évolution de statut.
 
 **Conditions concernées :** principalement P03, P08, P09, P10, P11, P13, P15, P16. Elles restent toutes `OPEN`, comme P01–P16. **NO GO, PR brouillon, aucune publication des CGU ni déploiement.**
+
+---
+
+## 18. FONC-01 — Verrou de contrôle indépendant ajouté au service de recours (20 novembre 2026)
+
+**Modification de code :** `netlify/lib/dialogue-appeals.mjs` exige désormais explicitement la dépendance `verifyIndependentReviewer`. Avant toute écriture d'une décision, le service demande une attestation `true` d'un vérificateur de confiance avec les données du recours, la contribution, l'identité de session et le statut. Toute réponse négative, absente ou erreur empêche la décision ; le simple libellé textuel `actor` ne suffit pas.
+
+**Tests :** `tests/dialogue-appeal-independent-review.test.mjs` (cinq cas synthétiques : absence d'adaptateur, auto-réexamen, réexamen par autre personne, identité initiale inconnue, attestation négative) et réintégration de `tests/dialogue-appeals.test.mjs` dans les tests CI, plus adaptation des jeux de test transversaux.
+
+**Limite de sécurité impérative :** le **vérificateur injecté est encore un contrat d'intégration**. L'application ne dispose pas d'une source déployée et attestée reliant une identité professionnelle immuable à la décision initiale ; dans l'audit de contribution existant, l'acteur de modération peut n'être qu'un libellé. Le service de recours n'assure donc **pas encore une indépendance réelle en production**. Un adaptateur simulé qui retourne `true` dans des tests n'est pas une preuve de séparation des fonctions. Le contrôle doit ensuite lier la source des décisions, l'identité serveur (non déclarative), l'habilitation active, l'organisation et le conflit d'intérêts, y compris après une escalade.
+
+**Statut de l'écart FONC-01 :** protection structurelle en code **ajoutée, non clôturée**. Vérifier les résultats du workflow sur le SHA qui contient cette modification. P10, P11, P13, P16 demeurent `OPEN`, comme tous les autres points. Aucun chemin V0.3 public, aucune fusion et aucune collecte réelle.
