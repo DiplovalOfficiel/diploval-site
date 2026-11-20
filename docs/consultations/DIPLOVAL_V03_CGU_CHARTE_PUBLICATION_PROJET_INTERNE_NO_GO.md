@@ -205,3 +205,86 @@ L'annulation d'une permission d'affichage doit déclencher l'examen d'un retrait
 | REV-12 | La lecture d'un texte publique par une institution peut évoluer en réutilisation privée par celle-ci | Définir les rôles par finalité, destinataires et interdictions contractuelles/opérationnelles |
 
 **Statut de revue :** divergences consignées, orientations proposées, **aucune correction considérée comme juridiquement acceptée**, toutes les mesures conditionnées à preuves et approbation humaine. P01, P02, P03, P04, P07, P08, P10, P13, P14 et P16 restent `OPEN`.
+
+---
+
+## V. Protocole éditorial applicable aux essais fictifs — choix proposés pour décision (20 novembre 2026)
+
+**Portée :** décisions préparatoires CC-01 à CC-08 / REV-01 à REV-12, **sans activation du service et sans approbation juridique**. Les essais ne doivent utiliser aucune donnée de personne réelle.
+
+### 1. Matrice de sortie des contenus
+
+| Destination | Règle proposée | Intervention humaine et preuve | Statut de conception |
+|---|---|---|---|
+| Dossier privé | Réception sans diffusion ; accès limité à l'auteur authentifié et aux modérateurs habilités | Identité et sécurité du stockage vérifiées ; finalité et base juridique validées | Non opérationnel |
+| Page de consultation | Version expressément autorisée à l'affichage et approuvée après modération | Référence, version, preuve de choix, contrôle des tiers et décision motivée | Prototype testé seulement |
+| Synthèse des thèmes sans données identifiantes | Regrouper les arguments contradictoires et expliquer la méthode, sans prétendre à la représentativité | Relecture du risque de réidentification et des données sources ; base applicable | À éprouver |
+| Courte citation dans un rapport | Exception légale de citation **seulement si ses conditions sont réunies**, ou autorisation spécifique ; protection RGPD distincte | Source, contexte, proportion, attribution si appropriée, risque de réidentification, revue juridique si sensible | Décision au cas par cas |
+| Reproduction étendue dans rapport/PDF | Autorisation de droits d'exploitation adéquate si œuvre protégée ; données personnelles licites | Supports, destination, durée, territoire, version, consentements/bases et contrôle éditorial | Aucune autorisation générale |
+| Vidéo, réseaux sociaux, communication commerciale ou partenariat | Pas d'extension automatique de la permission d'affichage | Nouvelle analyse des droits, du droit à l'image et du RGPD ; refus du contributeur respecté selon les règles applicables | Bloqué par défaut |
+| Réponse d'une institution | Projet soumis par agent mandaté ; validation éditoriale distincte ; publication finale encore absente | Mandat, consultation, source publique, version, conflit d'intérêts, contrôle éditorial et preuve | Projet uniquement |
+
+**Option de politique à soumettre à l'arbitrage :** privilégier la restitution **non identifiante** des idées et tendances dans les rapports Diploval, puis demander les droits nécessaires lorsqu'une citation substantielle ou identifiable est souhaitée. Ce choix ne dispense ni de l'analyse RGPD ni de la vérification des exceptions de droit d'auteur.
+
+### 2. Décision de modération : contrôle en six vérifications
+
+1. **Recevabilité :** vérifier la consultation et la pertinence, sans trier selon l'adhésion aux positions de Diploval.
+2. **Sécurité des personnes :** repérer divulgation injustifiée de données privées, menaces, informations sensibles ou mise en cause de tiers ; privilégier l'expurgation volontaire et la révision lorsqu'elles sont adaptées.
+3. **Qualification du risque :** distinguer propos critique, allégation factuelle, accusation grave, menace et usurpation ; ne jamais traiter une contestation d'institution comme une raison autonome de censure.
+4. **Droits de publication :** vérifier le choix de l'auteur, les droits d'exploitation applicables, la version soumise et les conditions RGPD ; un « oui » général aux CGU est insuffisant.
+5. **Motivation :** inscrire une décision d'approbation, de refus ou de demande de révision lorsque le mécanisme est autorisé, avec la règle et les éléments utiles, sans recopier de données personnelles sensibles dans le journal.
+6. **Réexamen :** informer l'auteur d'un canal de recours ; si le modérateur est directement impliqué ou en conflit d'intérêts, transmettre la contestation à un autre responsable habilité.
+
+**Aucune sanction automatique pour une critique vigoureuse, une position politique minoritaire, une dénonciation argumentée ou un désaccord institutionnel.** Un contenu potentiellement illicite est apprécié au cas par cas, selon les textes applicables et les faits disponibles.
+
+### 3. Proposition de notification au contributeur (texte de travail)
+
+**Après dépôt :** « Votre contribution a été enregistrée sous la référence [RÉFÉRENCE]. Elle n'est pas publique. Son éventuelle publication dépend de vos choix et d'un contrôle de modération. Consultez les règles et les informations relatives à vos données. »
+
+**Après approbation pour publication :** « La version [NUMÉRO] de votre contribution a été acceptée pour publication. Si votre choix de diffusion reste applicable, la mise en ligne et sa visibilité sont vérifiées séparément. » Ne pas dire « publiée » avant confirmation effective.
+
+**Après refus :** « La version [NUMÉRO] n'est pas publiée. Motif : [RÈGLE PERTINENTE ET EXPLICATION CONTEXTUALISÉE]. Vous pouvez demander un réexamen par [CANAL VALIDÉ], selon [DÉLAI ÉDITORIAL VALIDÉ]. »
+
+**Après dépôt d'une contestation :** « Votre demande de réexamen a été enregistrée sous [RÉFÉRENCE DE RECOURS]. Une nouvelle décision vous sera communiquée selon la procédure publiée. Le dépôt d'un recours ne provoque pas la publication automatique de votre texte. »
+
+**Après réception d'une réponse institutionnelle :** « [INSTITUTION IDENTIFIÉE] a proposé une réponse à votre contribution publique. Cette réponse est en cours d'examen par Diploval ; elle ne représente pas une position de Diploval. » **À activer uniquement si une notification est licite et si la fonction est réellement disponible.**
+
+Ces formulations ne comportent **aucune promesse de délai de modération**, de notification effective ou de publication automatique. Remplacer les variables seulement après validation et mise en œuvre.
+
+### 4. Parcours de contestation et règles d'impartialité
+
+| Étape | Action proposée | Contrôle humain / garde-fou |
+|---|---|---|
+| Réception | Recours identifié, raison et référence de la décision contestée ; accusé dans le dossier personnel | Pas de publication ; confidentialité du motif |
+| Qualification | Vérifier si la demande relève de la modération, d'un droit RGPD, d'une menace pour une personne ou de plusieurs domaines | Orienter vers les processus distincts sans priver la personne de ses droits |
+| Révision indépendante | Relecture du texte et de la première motivation par un second responsable lorsque c'est nécessaire | Absence de conflit d'intérêts et habilitation vérifiée |
+| Décision | Maintien du refus, invitation à une nouvelle version ou escalade motivée, selon règles approuvées | Le recours ne modifie pas directement la version publique |
+| Information | Résultat et motif accessible au contributeur authentifié | Aucune divulgation d'un tiers ni délai non autorisé |
+| Suivi | Journal minimal de statut et correction des erreurs matérielles | Conservation définie, droit de contestation externe préservé |
+
+Les délais de traitement des demandes **RGPD** ne se confondent pas avec un délai éditorial à fixer. La suspension d'un contenu menacant la sécurité d'une personne ne doit pas attendre artificiellement la fin d'un recours, sous réserve de proportionnalité.
+
+### 5. Garde-fous pour les documents et statistiques publics
+
+- Ne pas présenter une participation volontaire comme un sondage représentatif sans méthode et échantillonnage appropriés.
+- Mentionner le nombre de contributions traitées, les exclusions pertinentes, les questions, la période et les limites.
+- Décrire équitablement les arguments favorables, défavorables et nuancés, y compris ceux qui contredisent Diploval.
+- Ne pas exposer les métadonnées privées d'auteurs dans les exports, les rapports ou les réponses institutionnelles.
+- Conserver un mécanisme de rectification traçable en cas de citation erronée, de modification ou de retrait d'une source.
+
+### 6. Validation humaine attendue
+
+| Décision | Choix proposé | Statut |
+|---|---|---|
+| ED-01 | Affichage limité à la page et à la version approuvée, sous réserve d'autorisation et du RGPD | À valider |
+| ED-02 | Reproduction secondaire dans les rapports/vidéos soumise à droit approprié ou exception licite ; pas de permission générale | À valider |
+| ED-03 | Citation courte vérifiée au cas par cas, avec contrôle de vie privée | À valider |
+| ED-04 | Grille de modération à critères objectifs et motivation contextuelle | À valider |
+| ED-05 | Réexamen indépendant en cas de conflit d'intérêts, pas de publication automatique | À valider |
+| ED-06 | Réponse d'institution soumise à mandat et validation séparée, sans accès privé | À valider |
+| ED-07 | Retraits et corrections vérifiés sur points de diffusion contrôlés, sauvegardes et exports selon règles réelles | À valider |
+| ED-08 | Restitution méthodologiquement honnête, sans affirmation de représentativité non justifiée | À valider |
+
+Les huit décisions nécessitent une **approbation éditoriale formelle et une vérification juridique** avant toute intégration dans un formulaire public. Les mesures dépendant d'un service encore absent sont décrites comme **propositions**, non comme fonctions offertes.
+
+**État inchangé : P01–P16 OPEN, V0.3 NO GO, PR #20 brouillon.**
