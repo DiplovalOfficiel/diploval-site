@@ -96,30 +96,38 @@
       "category": "Géopolitique · Europe"
     },
     {
-      "visible": true,
       "show_home": true,
-      "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
-      "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
-      "category": "Géopolitique · Proche-Orient",
-      "status": "suivi",
       "level": "1",
-      "opened_at": "2026-11-19T22:08",
-      "last_update": "2026-11-19T22:08",
       "summary": "Au 19 novembre 2026, la crise régionale combine des violences persistantes dans les territoires palestiniens et au Liban, des affrontements directs entre les États-Unis et l’Iran, et des attaques dans le Golfe. Les conséquences humanitaires et les risques pesant sur les infrastructures et la navigation demeurent majeurs. Des démarches diplomatiques sont en cours, sans stabilisation générale à cette date.",
-      "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
-      "why_level": "Le Code One signale un risque critique d’extension régionale : plusieurs États sont directement engagés, des territoires tiers sont touchés et les voies maritimes stratégiques sont exposées. Il ne prédit ni une guerre mondiale ni un recours à l’arme nucléaire. Ce classement reste révisable à partir d’événements recoupés et d’une désescalade effectivement constatée.",
+      "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
+      "opened_at": "2026-11-19T22:08",
+      "updates": [
+        {
+          "correction": false,
+          "datetime": "2026-11-19T22:08",
+          "title": "19 novembre — Chronologie des faits documentés",
+          "body": "13 novembre — L’OCHA décrit une situation humanitaire toujours grave à Gaza malgré le cessez-le-feu d’octobre 2025, ainsi que des déplacements de population en Cisjordanie. Elle relaie, en l’attribuant au ministère de la Santé de Gaza, un bilan de 1 613 morts liés au conflit depuis l’accord jusqu’au 9 novembre ; il ne s’agit pas d’un décompte établi indépendamment par l’OCHA.\n17–18 novembre — Reuters et Associated Press rapportent des frappes entre les États-Unis et l’Iran autour de l’île de Qeshm et d’installations dans le Golfe. Des attaques iraniennes ont également visé le Koweït et Bahreïn.\n19 novembre — Associated Press fait état de frappes israéliennes au Liban contre une installation présentée par l’armée israélienne comme liée au Hezbollah. L’agence rapporte aussi des attaques au Yémen et des débris de missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite. Des initiatives de médiation régionale sont parallèlement signalées.",
+          "sources": []
+        }
+      ],
       "watch_up": [
         "Extension confirmée des affrontements directs à de nouveaux États ou à des infrastructures civiles vitales.",
         "Hausse majeure des victimes civiles ou attaques répétées contre les services essentiels.",
         "Perturbation durable et élargie de la navigation dans le Golfe ou en mer Rouge.",
         "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
       ],
+      "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "why_level": "Le Code One signale un risque critique d’extension régionale : plusieurs États sont directement engagés, des territoires tiers sont touchés et les voies maritimes stratégiques sont exposées. Il ne prédit ni une guerre mondiale ni un recours à l’arme nucléaire. Ce classement reste révisable à partir d’événements recoupés et d’une désescalade effectivement constatée.",
+      "visible": true,
       "watch_down": [
         "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
         "Respect contrôlé des cessez-le-feu et amélioration effective de l’accès humanitaire.",
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
+      "last_update": "2026-11-19T22:08",
+      "status": "suivi",
+      "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
         {
           "label": "OCHA — rapport humanitaire, 13 novembre 2026",
@@ -146,15 +154,8 @@
           "note": "Efforts de médiation rapportés avec attribution à des responsables régionaux anonymes."
         }
       ],
-      "updates": [
-        {
-          "correction": false,
-          "datetime": "2026-11-19T22:08",
-          "title": "19 novembre — Chronologie des faits documentés",
-          "body": "13 novembre — L’OCHA décrit une situation humanitaire toujours grave à Gaza malgré le cessez-le-feu d’octobre 2025, ainsi que des déplacements de population en Cisjordanie. Elle relaie, en l’attribuant au ministère de la Santé de Gaza, un bilan de 1 613 morts liés au conflit depuis l’accord jusqu’au 9 novembre ; il ne s’agit pas d’un décompte établi indépendamment par l’OCHA.\n17–18 novembre — Reuters et Associated Press rapportent des frappes entre les États-Unis et l’Iran autour de l’île de Qeshm et d’installations dans le Golfe. Des attaques iraniennes ont également visé le Koweït et Bahreïn.\n19 novembre — Associated Press fait état de frappes israéliennes au Liban contre une installation présentée par l’armée israélienne comme liée au Hezbollah. L’agence rapporte aussi des attaques au Yémen et des débris de missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite. Des initiatives de médiation régionale sont parallèlement signalées.",
-          "sources": []
-        }
-      ]
+      "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
+      "category": "Géopolitique · Proche-Orient"
     }
   ]
 }
