@@ -551,3 +551,150 @@
     line-height:1.45;
   }
 }
+
+
+/* Suivre Diploval : réseaux et inscriptions de nouveau visibles, compacts sur PC et mobile. */
+.institutional-home .home-follow-grid{
+  width:min(1120px,calc(100% - 48px));margin:22px auto 28px;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;align-items:start;
+}
+.institutional-home .home-follow-grid > .section{
+  width:100%;max-width:none;min-width:0;margin:0;padding:0;
+  box-sizing:border-box;
+}
+.institutional-home .home-follow-grid .socials-wrap,
+.institutional-home .home-follow-grid .newsletter-shell{
+  display:block;width:100%;min-width:0;max-width:100%;box-sizing:border-box;
+  padding:18px;margin:0;background:#fff;border:1px solid #c8d5d7;border-radius:7px;
+  box-shadow:none;
+}
+.institutional-home .home-follow-grid :is(.socials-intro,.newsletter-copy){margin:0 0 12px;min-width:0}
+.institutional-home .home-follow-grid :is(.socials-intro,.newsletter-copy) h2{
+  margin:3px 0 7px;font-size:22px!important;line-height:1.25!important;
+}
+.institutional-home .home-follow-grid :is(.socials-intro,.newsletter-copy) p:not(.eyebrow){
+  font-size:13px;line-height:1.45;margin:4px 0 0;color:#465d65;
+}
+.institutional-home .home-follow-grid .newsletter-note{
+  font-size:12px!important;line-height:1.45;
+}
+.institutional-home .home-follow-grid .socials-panel{
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;
+  width:100%;min-width:0;box-sizing:border-box;padding:0;
+  margin:0;background:none;border:0;border-radius:0;box-shadow:none;backdrop-filter:none;
+}
+.institutional-home .home-follow-grid .social-card,
+.institutional-home .home-follow-grid .social-card.is-coming{
+  display:grid;grid-template-columns:36px minmax(0,1fr) 12px;align-items:center;
+  gap:8px;min-width:0;min-height:76px;padding:10px;
+  margin:0;background:#f8fafc;border:1px solid #d5dfe5;border-radius:6px;box-shadow:none;
+  transform:none;
+}
+.institutional-home .home-follow-grid .social-card.is-coming{
+  grid-template-columns:36px minmax(0,1fr);background:#f8fafc;
+}
+.institutional-home .home-follow-grid .social-card:hover,
+.institutional-home .home-follow-grid .social-card:focus-visible{
+  border-color:#244f70;background:#edf3f7;transform:none;
+}
+.institutional-home .home-follow-grid .social-mark{
+  display:grid;place-items:center;width:34px;height:34px;padding:0;
+  font-size:21px;line-height:1;border-radius:7px;flex-shrink:0;
+}
+.institutional-home .home-follow-grid .social-mark-bluesky svg{width:23px;height:23px}
+.institutional-home .home-follow-grid .social-card-copy{min-width:0;opacity:1}
+.institutional-home .home-follow-grid .social-card-copy small{
+  font-size:10px;line-height:1.2;margin:0 0 3px;letter-spacing:.05em;font-weight:700;
+}
+.institutional-home .home-follow-grid .social-card-copy strong{
+  font-family:Arial,Helvetica,sans-serif;font-size:13px!important;
+  font-weight:700;line-height:1.3;overflow-wrap:break-word;word-break:normal;
+}
+.institutional-home .home-follow-grid .social-card-copy em{
+  font-size:11px;line-height:1.35;margin:3px 0 0;
+  overflow-wrap:break-word;word-break:normal;
+}
+.institutional-home .home-follow-grid .social-card-arrow{
+  font-size:15px;line-height:1;justify-self:center;
+}
+.institutional-home .home-follow-grid .social-card.is-coming .social-status{
+  grid-column:2;justify-self:start;margin:3px 0 0;padding:3px 6px;
+  font-size:10px;letter-spacing:0;
+}
+.institutional-home .home-follow-grid .newsletter-shell{display:grid;grid-template-columns:minmax(0,1fr);gap:4px}
+.institutional-home .home-follow-grid .newsletter-form{
+  display:grid;grid-template-columns:minmax(0,1fr);min-width:0;gap:9px;
+  padding:14px;border-radius:6px;background:#e4edf3;border:1px solid #c8d5d7;
+}
+.institutional-home .home-follow-grid .newsletter-email{min-width:0}
+.institutional-home .home-follow-grid .newsletter-email input{
+  box-sizing:border-box;width:100%;min-height:44px;padding:9px 12px;font-size:15px;
+}
+.institutional-home .home-follow-grid .newsletter-choices{
+  box-sizing:border-box;min-width:0;padding:9px 12px;
+  margin:0;border-radius:5px;background:#fff;
+}
+.institutional-home .home-follow-grid .newsletter-choices legend{
+  float:left;width:100%;margin:0 0 6px;box-sizing:border-box;
+  font-size:13px;line-height:1.4;
+}
+.institutional-home .home-follow-grid .newsletter-choices > label{
+  display:grid;grid-template-columns:20px minmax(0,1fr);
+  gap:9px;min-height:44px;padding:8px 0;align-items:start;
+  clear:both;
+}
+.institutional-home .home-follow-grid .newsletter-choices strong{
+  font-size:13px;line-height:1.35;
+}
+.institutional-home .home-follow-grid .newsletter-choices small{
+  font-size:11px;line-height:1.4;margin-top:2px;
+}
+.institutional-home .home-follow-grid .newsletter-consent{
+  display:grid;grid-template-columns:20px minmax(0,1fr);gap:9px;
+  align-items:start;font-size:12px;line-height:1.45;
+}
+.institutional-home .home-follow-grid .newsletter-privacy{font-size:12px}
+.institutional-home .home-follow-grid .newsletter-submit{
+  width:100%;min-height:44px;font-size:14px;padding:10px 12px;
+  line-height:1.3;text-align:center;justify-content:center;
+}
+.institutional-site .main-nav.nav-tiles.open a.dv-nav-item{
+  word-break:normal;overflow-wrap:break-word;hyphens:none;
+}
+.institutional-site .main-nav.nav-tiles.open a.dv-nav-item>span{
+  min-width:0;overflow-wrap:normal;word-break:normal;hyphens:none;
+}
+@media(max-width:1040px){
+  .institutional-home .home-follow-grid{grid-template-columns:minmax(0,1fr)}
+  .institutional-home .home-follow-grid .socials-panel{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media(max-width:760px){
+  .institutional-home .home-follow-grid{width:calc(100% - 32px);gap:14px;margin:18px auto 25px}
+  .institutional-home .home-follow-grid .socials-wrap,
+  .institutional-home .home-follow-grid .newsletter-shell{padding:13px}
+  .institutional-home .home-follow-grid :is(.socials-intro,.newsletter-copy) h2{
+    font-size:20px!important;
+  }
+  .institutional-home .home-follow-grid .socials-panel{
+    grid-template-columns:minmax(0,1fr);gap:7px;
+  }
+  .institutional-home .home-follow-grid .social-card,
+  .institutional-home .home-follow-grid .social-card.is-coming{
+    min-height:62px;padding:8px 9px;
+  }
+  .institutional-home .home-follow-grid .newsletter-form{padding:11px}
+  .institutional-site .main-nav.nav-tiles.open a.dv-nav-item{
+    padding:11px 9px;gap:7px;font-size:14px;min-height:72px;
+  }
+  .institutional-site .main-nav.nav-tiles.open .dv-nav-icon{
+    flex-basis:20px;width:20px;height:20px;
+  }
+}
+@media(max-width:350px){
+  .institutional-site .main-nav.nav-tiles.open a.dv-nav-item{
+    padding:10px 7px;gap:6px;font-size:13px;min-height:68px;
+  }
+}
