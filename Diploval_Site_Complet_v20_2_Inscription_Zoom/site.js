@@ -16,10 +16,10 @@
       contact:'<rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/>'
     };
     const links = [
-      ['Publications','/#travaux','publications'],
-      ['Points d’information','/points-information','information'],
+      ['Dossiers','/#travaux','publications'],
+      ['Points d’info','/points-information','information'],
       ['Participer','/propositions-contributions','participer'],
-      ['Nos missions','/#services','missions'],
+      ['Missions','/#services','missions'],
       ['À propos','/#apropos','apropos'],
       ['Contact','/#contact','contact']
     ];
