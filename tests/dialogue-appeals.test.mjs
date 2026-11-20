@@ -63,6 +63,9 @@ function setup({role='reviewer'}={}){
    return structuredClone(entry);
   },
   authorizeModerator:modAccess.authorize,
+  // Synthetic independent-attestation provider. Production must compare
+  // verified immutable staff identities against the original decision audit.
+  verifyIndependentReviewer:async({principal})=>principal?.staffId==='staff-appeal-001',
   clock:()=>at
  });
  return {appeals,records,store,modAccess,moderator,
