@@ -6,11 +6,11 @@ const slugify = v => String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'
 const textParagraphs = v => String(v||'').split(/\n\s*\n/).filter(Boolean).map(p=>`<p>${esc(p).replace(/\n/g,'<br>')}</p>`).join('');
 const dateKey = d => String(d||'').slice(0,10);
 const formatDate = d => {if(!d)return ''; const x=new Date(`${dateKey(d)}T12:00:00`); return Number.isNaN(x.getTime())?String(d):new Intl.DateTimeFormat('fr-FR',{day:'numeric',month:'long',year:'numeric'}).format(x)};
-const typeLabel = t => t==='presidence' ? 'Présidence de Diploval' : 'Diploval · Institutionnel';
-const signature = c => c.signature || (c.type==='presidence' ? 'Souix Nathorod\nPrésident de Diploval\nFranck Saubin à l’état civil' : 'Diploval\nPrésidence de Diploval');
+const typeLabel = t => t==='presidence' ? 'Communication du fondateur' : 'Communiqué de Diploval';
+const signature = c => c.signature || (c.type==='presidence' ? 'Souix Nathorod\nFondateur de Diploval\nFranck Saubin à l’état civil' : 'Diploval\nCommunication de Diploval');
 let data=[]; let filter='all';
 
-async function getData(){try{const r=await fetch('/content/communiques.json',{cache:'no-store'});if(!r.ok)throw new Error(r.status);return await r.json()}catch(e){console.warn(e);return {communiques:[]}}}
+async function getData(){try{const r=await fetch('/content/communiques.json',{cache:'no-store'});if(!r.ok)throw new Error(r.status);return await r.json()}catch(e){console.warn(e);return null}}
 function idOf(c){return c.id||slugify(c.title)}
 function publicList(){return data.filter(c=>c.visible!==false && c.status!=='Brouillon').sort((a,b)=>String(b.date).localeCompare(String(a.date)))}
 function card(c){
@@ -45,5 +45,5 @@ function renderDetail(id){
  return true;
 }
 document.querySelectorAll('.communique-filter').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.communiqueFilter;document.querySelectorAll('.communique-filter').forEach(x=>{const a=x===b;x.classList.toggle('active',a);x.setAttribute('aria-pressed',String(a))});render()}));
-getData().then(d=>{data=d.communiques||[]; const id=new URL(location.href).searchParams.get('id'); if(!(id&&renderDetail(id))) render();});
+getData().then(d=>{if(!d)return;data=d.communiques||[]; const id=new URL(location.href).searchParams.get('id'); if(!(id&&renderDetail(id))) render();});
 })();
