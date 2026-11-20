@@ -26,8 +26,8 @@ export function unifyPublicLayout(root){
     const footerPattern=/<footer\b[^>]*class=["'](?:site-footer|footer)["'][^>]*>[\s\S]*?<\/footer>/i;
     html=footerPattern.test(html)?html.replace(footerPattern,()=>footer):html.replace(/<\/body>/i,footer+'\n</body>');
     html=html.replace(/<link\b[^>]*href=["']\/institutional\.css[^"']*["'][^>]*>\s*/gi,'');
-    if(!/href=["']\/styles\.css\b/.test(html))html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/styles.css?v=32">\n</head>');
-    html=html.replace(/(["'])\/styles\.css(?:\?[^"']*)?\1/g,'"/styles.css?v=32"');
+    if(!/href=["']\/styles\.css\b/.test(html))html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/styles.css?v=37">\n</head>');
+    html=html.replace(/(["'])\/styles\.css(?:\?[^"']*)?\1/g,'"/styles.css?v=37"');
     html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/institutional.css?v=5">\n</head>');
     if(!/src=["']\/site\.js\b/.test(html))html=html.replace(/<\/body>/i,'<script src="/site.js?v=32" defer></script>\n</body>');
     html=html.replace(/(["'])\/site\.js(?:\?[^"']*)?\1/g,'"/site.js?v=32"');
