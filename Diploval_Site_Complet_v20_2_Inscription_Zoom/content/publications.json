@@ -1,6 +1,26 @@
 {
   "publications": [
     {
+      "id": "accord-cadre-ukraine-russie-v01",
+      "title": "Accord-cadre entre l’Ukraine et la Fédération de Russie",
+      "visible": true,
+      "status": "Publié",
+      "featured": true,
+      "scope": "International",
+      "scope_filter": "international",
+      "type": "Proposition",
+      "type_filter": "analyse",
+      "version": "V01",
+      "date_label": "20 novembre 2026",
+      "format": "PDF · 64 pages",
+      "embed_pdf": true,
+      "short_summary": "Première édition publique de la proposition indépendante de Diploval pour une cessation durable des hostilités et la prévention de la reprise du conflit.",
+      "summary": "Diploval soumet à la discussion une proposition d’accord-cadre sur la cessation durable des hostilités, la sécurité réciproque et la prévention de la reprise du conflit. Cette première édition publique présente les 25 articles de l’accord-cadre, une actualisation diplomatique et des protocoles préparatoires. Le texte est une proposition indépendante de Diploval, à l’état de projet non négocié.",
+      "keywords": "Ukraine, Fédération de Russie, accord-cadre, cessez-le-feu, sécurité réciproque, désescalade, diplomatie",
+      "pdf": "/assets/uploads/diploval-accord-cadre-ukraine-russie-v01.pdf",
+      "cover": "/assets/uploads/diploval-accord-cadre-ukraine-russie-v01.png"
+    },
+    {
       "participation_enabled": false,
       "short_summary": "Diploval analyse la présence militaire française en Ukraine, les activités de renseignement, le droit international, les responsabilités constitutionnelles et le contrôle parlementaire. Un dossier juridique et géopolitique de 24 pages examinant les faits, les positions diplomatiques et les risques d'escalade, destiné aux citoyens, aux élus et aux institutions.",
       "date_label": "17 novembre 2026",
@@ -20,7 +40,8 @@
       "seo_description": "Militaires français en Ukraine : analyse du renseignement, du droit international, de l'article 35 et des risques d'escalade. Dossier Diploval V0.1.",
       "type": "Dossier d’analyse",
       "id": "france-ukraine-russie-militaires-renseignement-droit",
-      "type_filter": "analyse"
+      "type_filter": "analyse",
+      "related_publication": "accord-cadre-ukraine-russie-v01"
     },
     {
       "details": "Cette version publique consolidée distingue les faits établis, les limites, les hypothèses et les questions encore à instruire. Elle est ouverte à la contradiction et à la contribution citoyenne structurée. La V1.1 reste figée pendant la consultation ; les apports retenus pourront nourrir une version ultérieure clairement datée.",
