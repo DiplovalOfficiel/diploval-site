@@ -355,3 +355,20 @@
  .institutional-site main [id]{scroll-margin-top:100px}
 }
 @media(max-width:360px){.home-shortcuts{grid-template-columns:1fr}.home-shortcuts a{min-height:70px}}
+
+/* Contenus complémentaires dépliables : conservés et accessibles. */
+.institutional-home .home-deep{width:min(1120px,calc(100% - 48px));margin:26px auto;border:1px solid #c8d5d7;background:#fff;border-radius:5px}
+.institutional-home .home-deep>summary{display:flex;flex-direction:column;gap:5px;cursor:pointer;padding:20px 24px;color:#19384a;list-style:none}
+.institutional-home .home-deep>summary::-webkit-details-marker{display:none}
+.institutional-home .home-deep>summary:focus-visible{outline:3px solid #244f70;outline-offset:3px}
+.institutional-home .home-deep>summary::after{content:"Voir les détails +";font-size:13px;font-weight:700;color:#244f70;margin-top:3px}
+.institutional-home .home-deep[open]>summary::after{content:"Masquer les détails −"}
+.institutional-home .home-deep-label{font-size:17px;font-weight:700;line-height:1.4}
+.institutional-home .home-deep-hint{font-size:13px;color:#465d65}
+.institutional-home .home-deep[open]>summary{border-bottom:1px solid #c8d5d7}
+.institutional-home .home-deep .section{width:calc(100% - 42px);margin:0 auto}
+@media(max-width:760px){
+ .institutional-home .home-deep{width:calc(100% - 32px);margin:20px auto}
+ .institutional-home .home-deep>summary{padding:16px}
+ .institutional-home .home-deep .section{width:calc(100% - 28px)}
+}
