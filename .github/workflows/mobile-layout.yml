@@ -25,7 +25,7 @@ jobs:
       - name: Installer Chromium pour le contrôle
         run: |
           python -m pip install --disable-pip-version-check 'playwright>=1.55,<2'
-          python -m playwright install chromium
+          python -m playwright install chromium firefox
       - name: Tester l'accueil rendu dans Chromium
         run: |
           python -m http.server 8765 --bind 127.0.0.1 --directory Diploval_Site_Complet_v20_2_Inscription_Zoom &
