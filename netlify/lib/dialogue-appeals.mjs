@@ -46,11 +46,13 @@ const viewModerator=appeal=>({
 });
 
 export function createAppealService({
- store,readAuthorEntry,readModeratorEntry,authorizeModerator,clock=()=>new Date().toISOString()
+ store,readAuthorEntry,readModeratorEntry,authorizeModerator,
+ verifyIndependentReviewer,clock=()=>new Date().toISOString()
 }={}){
  if(!store||typeof store.getWithMetadata!=='function'||typeof store.set!=='function'
     ||typeof readAuthorEntry!=='function'||typeof readModeratorEntry!=='function'
-    ||typeof authorizeModerator!=='function'||typeof clock!=='function'){
+    ||typeof authorizeModerator!=='function'||typeof verifyIndependentReviewer!=='function'
+    ||typeof clock!=='function'){
   throw Error('Stockage chiffré et droits de dossier nécessaires pour les recours.');
  }
  const timestamp=()=>{
@@ -125,6 +127,13 @@ export function createAppealService({
     throw Error('Conflit de recours : recharger le dossier.');
   if(stored.data.consultationId!==entry.consultationId||stored.data.reference!==entry.reference)
     throw Error('Recours incohérent avec le dossier.');
+  // A grant or display label alone cannot establish independent review.
+  // The injected trusted service must resolve immutable staff identity and
+  // compare against the original decision (and escalator when appropriate).
+  // Missing, conflicting or unverifiable identity always blocks the decision.
+  if(await verifyIndependentReviewer({principal,entry,appeal:clone(stored.data),
+    expectedStatus,decision})!==true)
+    throw Error('Indépendance du réexamen non vérifiée.');
   const at=timestamp(),next=clone(stored.data);
   next.status=decision==='escalate'?'escalated':'resolved';
   next.decision={outcome:decision,reason:rationale,at};

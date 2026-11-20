@@ -1,0 +1,126 @@
+{
+  "dossier": "Diploval - consultations citoyennes dialogiques V0.3",
+  "version": "B7.0",
+  "date": "2026-11-19",
+  "release": "NO_GO",
+  "actual_processing_enabled": false,
+  "legal_docs_published": false,
+  "definition": "Statut audité sur code GitHub, pas une attestation de conformité ni un test de l'exploitation",
+  "blocking": [
+    {
+      "id": "P01",
+      "subject": "Bases article 6 et conditions article 9 du RGPD, par finalité",
+      "state": "OPEN",
+      "owner": "Responsable juridique / responsable de traitement",
+      "evidence": "dialogue-model.mjs : processingAgreement et publicationAgreement ne suffisent pas"
+    },
+    {
+      "id": "P02",
+      "subject": "Informations art. 13 V0.3 et consentements éventuels au dépôt",
+      "state": "OPEN",
+      "owner": "Responsable de traitement",
+      "evidence": "Politique actuelle générale, sans spécificités V0.3"
+    },
+    {
+      "id": "P03",
+      "subject": "CGU, charte et règles de publication/licence des contributions validées",
+      "state": "OPEN",
+      "owner": "Diploval + relecture juridique",
+      "evidence": "Projets B7 distincts, non signés"
+    },
+    {
+      "id": "P04",
+      "subject": "Politique d'âge, de tiers et de minimisation des champs libres",
+      "state": "OPEN",
+      "owner": "Responsable de traitement",
+      "evidence": "Participation des mineurs et gestion des tiers non arbitrées"
+    },
+    {
+      "id": "P05",
+      "subject": "Registre article 30 et évaluation AIPD documentée",
+      "state": "OPEN",
+      "owner": "Responsable de traitement / conseil RGPD",
+      "evidence": "Pas d'AIPD ou registre V0.3 finalisés dans le dépôt"
+    },
+    {
+      "id": "P06",
+      "subject": "Sous-traitants, contrats art. 28, localisation et éventuels transferts",
+      "state": "OPEN",
+      "owner": "Diploval + prestataires",
+      "evidence": "Fournisseurs et garanties réelles à inventorier"
+    },
+    {
+      "id": "P07",
+      "subject": "Conservation et purges automatiques par objet, sauvegardes incluses",
+      "state": "OPEN",
+      "owner": "Technique + juridique",
+      "evidence": "Absence de politique opérationnelle de suppression V0.3"
+    },
+    {
+      "id": "P08",
+      "subject": "Droits des personnes : accès, export, rectification, retrait, effacement",
+      "state": "OPEN",
+      "owner": "Technique + RGPD",
+      "evidence": "Fonctions export/purge non développées"
+    },
+    {
+      "id": "P09",
+      "subject": "Stockage chiffré réel, secrets, rotation et restauration éprouvée",
+      "state": "OPEN",
+      "owner": "Technique / sécurité",
+      "evidence": "B2 chiffrement injectable, non déployé en production"
+    },
+    {
+      "id": "P10",
+      "subject": "Authentification professionnelle, MFA et droits testés en conditions réelles",
+      "state": "OPEN",
+      "owner": "Administrateur de sécurité",
+      "evidence": "V0.3 rôles théoriques, sans fournisseur de session réel"
+    },
+    {
+      "id": "P11",
+      "subject": "Contrôles HTTP, quotas distribués, CSRF, journal et tests adversariaux",
+      "state": "OPEN",
+      "owner": "Technique / sécurité",
+      "evidence": "Contrôleur B3 inactif, sécurité d'exploitation non démontrée"
+    },
+    {
+      "id": "P12",
+      "subject": "Flux d'e-mails facultatifs et paramètres de suivi vérifiés",
+      "state": "OPEN",
+      "owner": "Technique + responsable",
+      "evidence": "Aucun fournisseur d'envoi V0.3 branché"
+    },
+    {
+      "id": "P13",
+      "subject": "Règlement de modération, impartialité, procédures de recours appliquées",
+      "state": "OPEN",
+      "owner": "Responsable éditorial",
+      "evidence": "B5 recours en code, sans procédure d'exploitation réelle"
+    },
+    {
+      "id": "P14",
+      "subject": "Identité du responsable de traitement et mentions légales actualisées",
+      "state": "OPEN",
+      "owner": "Responsable juridique",
+      "evidence": "Site actuel mentionne SASU en cours d'immatriculation"
+    },
+    {
+      "id": "P15",
+      "subject": "Gestion d'incident, violation, réversibilité, suspension du service",
+      "state": "OPEN",
+      "owner": "Responsable de sécurité",
+      "evidence": "Pas d'exercice de crise documenté pour V0.3"
+    },
+    {
+      "id": "P16",
+      "subject": "Pilote fictif complet + test indépendant avant toute collecte",
+      "state": "OPEN",
+      "owner": "Technique + responsable",
+      "evidence": "Tests unitaires existants, aucun pilote réel approuvé"
+    }
+  ],
+  "release_rule": "Toutes les mesures bloquantes doivent passer à VERIFIED par preuve, après revue indépendante adaptée, puis recevoir une approbation humaine datée ; une fusion GitHub ne vaut pas autorisation.",
+  "reviewer": "A confirmer",
+  "approval_date": null
+}

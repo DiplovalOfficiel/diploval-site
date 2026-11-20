@@ -164,6 +164,12 @@ export function createAuthorAccess({store,secret,loadEntry,sendLink,clock=()=>Da
     if(!active||active.data.status!=='active'||active.data.expiresAt<=now()
        ||active.data.entryId!==proof.entryId
        ||!eq(active.data.contactDigest,proof.contactDigest))return false;
+    // A contact change must invalidate even previously issued opaque principals.
+    // Recheck the authoritative record on EVERY authorization, including lookup.
+    const latest=await loadEntry(proof.entryId);
+    const currentContact=toEmail(latest?.author?.privateContact);
+    if(!latest||latest.id!==proof.entryId||!currentContact
+      ||!eq(proof.contactDigest,emailDigest(currentContact)))return false;
     // Le principal n'est pas réutilisable comme simple objet JSON.
     if(action==='lookup_private')return true;
     if(!entry||entry.id!==proof.entryId)return false;
