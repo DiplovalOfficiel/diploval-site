@@ -438,3 +438,52 @@ La revue compare des textes favorables et défavorables à une même institution
 **Huit preuves requises :** `MOD-01` à `MOD-08` (relecture habilitée, qualification juridique, correspondance au code, conflits d'intérêts, canaux/délais, essais contradictoires avec deux relecteurs, retrait sur caches/exports, cohérence RGPD). Elles sont toutes **EN ATTENTE**.
 
 **Qualification :** relecture contradictoire **interne et rédactionnelle**, **pas** un examen indépendant, **pas** une conformité attestée, **pas** une recette utilisateur. P03 et P13 restent `OPEN` comme tous les points P01–P16. La phase suivante doit rechercher les preuves manquantes et résoudre les éventuels écarts fonctionnels **sans ajouter une succession de nouvelles versions documentaires**.
+
+---
+
+## 17. Correspondance des règles éditoriales avec le code V0.3 — 20 novembre 2026
+
+**Périmètre de revue :** `netlify/lib/dialogue-model.mjs`, `netlify/lib/dialogue-service-v03.mjs`, `netlify/lib/dialogue-appeals.mjs`, `netlify/lib/dialogue-followup.mjs`, `netlify/lib/dialogue-institutional-draft-review.mjs`. Relecture statique de la branche de la PR #20, **sans essai sur un service déployé, sans test indépendant et sans engagement d'une équipe réelle**.
+
+### 17.1. Matrice de concordance règle/fonction
+
+| Exigence éditoriale | Constat technique vérifié | Qualification | Action nécessaire avant ouverture |
+|---|---|---|---|
+| Décider d'accepter ou refuser une version | `reviewRevision()` et `POST /moderation/review` acceptent `approve` et `reject`, avec motif obligatoire pour le refus | **Présent en code interne** ; contrôleur désactivé | Contrôle réel des habilitations, critères éditoriaux et notification au contributeur |
+| Empêcher la publication sans choix applicable | `reviewRevision()` refuse l'approbation si `permissions.publicationAt` absent ; projection `publicView()` filtrée | **Présent en code** | Base RGPD et droits d'exploitation juridiquement établis, preuve du choix, reprise des anciennes versions |
+| Inviter l'auteur à corriger | `proposeRevision()` permet à l'auteur de soumettre une version supplémentaire ; pas de décision autonome `request_changes` dans `/moderation/review` | **Partiellement présent** | Ne pas promettre une demande de correction depuis l'administration sans parcours/documentation vérifiés |
+| Retirer une version visible | `withdrawPublication()` et `POST /moderation/withdraw` marquent `withdrawn`; `publicView()` renvoie null | **Présent au niveau modèle/dépôt** | Prouver l'invalidation des caches, copies, PDF et flux publics contrôlés, puis gérer les sauvegardes |
+| Signaler un contenu public | `createReport()` et `reviewReport()` existent ; une décision `hide` n'affecte **pas directement** la cible | **Modèle isolé, opération séparée nécessaire** | Vérifier le raccordement au flux de modération et aux mesures conservatoires |
+| Demander un recours après un rejet ou un retrait | `createAppealService.submit()` ne permet un recours que lorsque la dernière version est rejetée ou le dossier retiré ; autres demandes à traiter séparément | **Présent sur périmètre limité** | Préciser les décisions attaquables, le droit des tiers et les canaux complémentaires |
+| Réviser une décision de recours | `decide()` accepte `maintain`, `invite_revision`, `escalate` selon le statut ; cela ne publie pas la contribution | **Présent en code interne** | Contrôle de la qualification du relecteur et de l'exécution réelle de l'invitation |
+| Garantir un second examen indépendant | `decide()` consulte `authorizeModerator` puis prend un champ d'identification textuel `actor` ; **ne compare pas l'identité vérifiée du relecteur à celle du premier décideur dans l'audit de contribution** | **Non garanti par le module** | Fournir un contrôle serveur indépendant, lié à une identité professionnelle immuable et à la décision initiale, et tester les conflits d'intérêts |
+| Garantir des délais de recours | `buildFollowup()` n'affiche des objectifs que si une politique explicite `enabled` est injectée, sans les présenter comme légaux | **Projection prudente** | Définir délais éditoriaux réalistes et procédure d'exploitation, distincts des délais RGPD |
+| Contrôler une réponse institutionnelle | `createInstitutionalDraftReview()` reste désactivé par défaut ; avis favorable = `reviewed_for_separate_publication`, jamais publication | **Projet de workflow sécurisé, sans finalisation publique** | Mandat réel, identité, décision finale, contrôle source/version et traçabilité d'une diffusion éventuelle |
+
+### 17.2. Écarts prioritaires de recette
+
+| Identifiant | Priorité proposée | Écart et risque | Attestation nécessaire |
+|---|---|---|---|
+| FONC-01 | **Critique** | L'examen indépendant des recours n'est pas garanti dans `dialogue-appeals.mjs` : une personne habilitée pourrait théoriquement réexaminer sa propre décision, faute de comparaison explicite | Préciser la politique des conflits, comparer les identités serveur de manière non falsifiable, tests négatifs |
+| FONC-02 | Élevée | « Demander correction » figure dans la charte comme issue possible mais n'est pas une décision autonome de la route de modération | Adapter la promesse publique au code ou concevoir l'acte distinct après arbitrage |
+| FONC-03 | **Critique** | `withdrawn` masque la projection sans attester purge des caches, exports, sauvegardes et rapports | Recette inter-supports, responsabilité des destinataires et preuve de retrait |
+| FONC-04 | Élevée | Le résultat `hide` d'un signalement ne masque pas automatiquement la contribution | Procédure séparée contrôlée et journalisée ou limitation explicite de la fonctionnalité |
+| FONC-05 | Élevée | Les recours ne couvrent par conception que rejet/retrait, pas toutes les demandes de rectification ou contestations d'autres décisions | Règlement de recours précis, canaux RGPD/tiers distincts et tests |
+| FONC-06 | Critique avant branchement institutionnel | La réponse institutionnelle dispose d'un avis éditorial, mais pas d'une opération autonome de publication validée, ni de fournisseur de mandat attesté | Procédure d'autorisation/révalidation, identité et tests bout en bout |
+| FONC-07 | Élevée | `actor` dans l'API générique des recours est textuel ; le contrôleur HTTP le dérive de `who.label`, mais le module ne lie pas lui-même la décision à une identité authentifiée immuable | Réconciliation des identités, journal probant et politique d'habilitation |
+
+**Ces priorités sont des appréciations de travail**, non la gravité certifiée d'un incident de sécurité réel.
+
+### 17.3. Corrections documentaires à maintenir jusqu'à résolution
+
+- **CGU, article 11 / section VI :** présenter le réexamen indépendant comme une **garantie cible non opérationnelle**, jamais comme un service déjà assuré.
+- **CGU, article 7 :** distinguer rejet motivé, révision volontaire de l'auteur et demande éditoriale formelle de correction, celle-ci nécessitant un mécanisme à préciser.
+- **Notice RGPD, sections relatives au retrait et aux droits :** ne pas annoncer de suppression totale des copies et sauvegardes avant preuve d'exécution ; différencier retrait d'affichage et effacement.
+- **Instructions aux institutions :** interdire toute référence à une publication directe ou à une approbation institutionnelle équivalant à la publication.
+- **Communication sur les délais :** aucun délai éditorial ou garantie humaine d'indépendance n'est déclaré effectif sans effectif, protocole et preuve.
+
+### 17.4. Attestations et ordre d'action
+
+**Priorité de sécurisation proposée :** (1) indépendance réelle des recours (FONC-01/07), (2) retrait inter-supports et signalements (FONC-03/04), (3) clarification de « demande de correction » et catégories de recours (FONC-02/05), (4) publication institutionnelle séparée (FONC-06). Chaque correction doit être testée en environnement fictif, puis vérifiée par une personne indépendante avant évolution de statut.
+
+**Conditions concernées :** principalement P03, P08, P09, P10, P11, P13, P15, P16. Elles restent toutes `OPEN`, comme P01–P16. **NO GO, PR brouillon, aucune publication des CGU ni déploiement.**
