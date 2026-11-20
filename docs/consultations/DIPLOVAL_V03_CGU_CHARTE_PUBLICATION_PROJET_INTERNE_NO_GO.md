@@ -369,3 +369,19 @@ La grille doit être appliquée aux textes favorables **comme** défavorables à
 - RGPD, chapitre III, notamment article 17 : https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre3
 
 **Statut documentaire : ANALYSE CONTRADICTOIRE INTERNE EFFECTUÉE, validation indépendante et juridique NON RÉALISÉE. P01–P16 OPEN, V0.3 NO GO.**
+
+---
+
+## VII. Concordance technique des promesses éditoriales (20 novembre 2026)
+
+Une revue statique des modules applicatifs est consignée dans le [registre unique, section 17](./DIPLOVAL_V03_REGISTRE_UNIQUE_PREPARATION_OUVERTURE_NO_GO.md). Sept écarts `FONC-01` à `FONC-07` devront être résolus et attestés avant toute activation.
+
+**Précisions immédiatement opposables à ce brouillon (non au public) :**
+- La route de modération actuelle gère `approve` et `reject`. Une **invitation formelle à corriger** ne doit pas être décrite comme un troisième acte autonome déjà disponible ; une révision **volontaire de l'auteur** est prévue dans le modèle, sous conditions.
+- Le recours existe contre des décisions spécifiques (rejet de version ou retrait de publication). Sa revue indépendante est un **objectif d'exploitation non prouvé** : le module de décision n'interdit pas encore explicitement qu'une personne habilitée examine son propre refus. Ne pas promettre « second modérateur distinct » tant que la séparation n'est pas contrôlée par une identité serveur vérifiée.
+- `withdrawn` retire un texte de la projection publique du modèle, mais **ne démontre pas** à lui seul la suppression des caches, rapports ou sauvegardes ; ces opérations restent à tester et documenter.
+- Une décision `hide` de signalement n'exécute pas de retrait direct : sa mise en œuvre nécessite une opération séparée, habilitée et tracée.
+- Le statut d'une réponse institutionnelle `reviewed_for_separate_publication` signifie **avis éditorial favorable à une opération distincte**, jamais publication ni engagement officiel de Diploval.
+- Les délais éditoriaux, les moyens humains de réexamen et les procédures de réponse aux tiers doivent être déclarés seulement après approbation, affectation des responsabilités et essais.
+
+**État : PROJET INTERNE NON PUBLIABLE. Aucune clause n'est adoptée et aucun point P01–P16 n'est clôturé.**
