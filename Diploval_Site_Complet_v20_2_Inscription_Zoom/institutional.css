@@ -841,3 +841,155 @@
     min-width:0;
   }
 }
+
+/* Audit responsive transversal 20/11/2026
+   UN SEUL retrait horizontal par zone de l'accueil.
+   Les panneaux imbriqués utilisent la largeur du parent sans retirer
+   une seconde fois 26, 28, 32 ou 42 pixels.
+   Hero et pied de page restent naturellement pleine largeur. */
+@media (max-width:760px){
+  .institutional-home :is(
+    .institutional-front,
+    .home-shortcuts,
+    .home-follow-grid,
+    .home-deep,
+    .home-small-extra,
+    .home-more-info,
+    .contact
+  ),
+  .institutional-home main > .section{
+    width:calc(100% - 32px);
+    max-width:1120px;
+    min-width:0;
+    margin-left:auto;
+    margin-right:auto;
+    box-sizing:border-box;
+  }
+  /* La grille principale contient déjà la marge extérieure. */
+  .institutional-home .institutional-front{
+    grid-template-columns:minmax(0,1fr);
+    gap:16px;
+  }
+  .institutional-home .institutional-front > :is(
+    .participation-home,
+    .section,
+    .communiques-home
+  ){
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    margin:0;
+    padding:16px;
+    box-sizing:border-box;
+  }
+  .institutional-home .institutional-front > .section.section-actualites{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    padding:16px;
+    margin:0;
+  }
+  .institutional-home .institutional-front .actualites-shell{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+  }
+  /* Panneaux repliables : retirer les marges supplémentaires imbriquées. */
+  .institutional-home .home-deep > .section,
+  .institutional-home .home-small-extra > .section,
+  .institutional-home .home-more-info > .section{
+    width:100%;
+    max-width:100%;
+    min-width:0;
+    margin:0;
+    padding:18px 16px;
+    box-sizing:border-box;
+  }
+  .institutional-home :is(
+    .home-deep,
+    .home-small-extra,
+    .home-more-info,
+    .home-collapse,
+    .home-featured,
+    .home-library,
+    .home-missions
+  ){
+    max-width:100%;
+    min-width:0;
+    box-sizing:border-box;
+  }
+  .institutional-home .home-collapse > summary{
+    min-width:0;
+    max-width:100%;
+    box-sizing:border-box;
+  }
+  /* Sous-sections et cartes : ne jamais dépasser la largeur disponible. */
+  .institutional-home :is(
+    .actualites-grid,
+    .actualite-card,
+    .actualite-card-body,
+    .pc-list,
+    .pc-card,
+    .communiques-home__grid,
+    #admin-featured-publications,
+    .work-card,
+    .work-body,
+    .services-grid,
+    .institutional-audience-grid,
+    .institutional-production-grid,
+    .method-grid,
+    .guarantees-v207__wrap,
+    .guarantees-v207__grid,
+    .newsletter-shell,
+    .newsletter-form,
+    .socials-wrap,
+    .contact-inner,
+    .about-panel
+  ){
+    min-width:0;
+    max-width:100%;
+    box-sizing:border-box;
+  }
+  .institutional-home :is(
+    .actualite-card,
+    .pc-card,
+    .work-card,
+    .social-card,
+    .institutional-audience-grid > article,
+    .institutional-production-grid > article
+  ){
+    overflow-wrap:break-word;
+    word-break:normal;
+  }
+  .institutional-home .contact{
+    margin-top:16px;
+    margin-bottom:24px;
+    padding:18px;
+  }
+  /* La largeur des sections reste cohérente aussi à 320px. */
+  .institutional-home .home-shortcuts,
+  .institutional-home .home-follow-grid{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .institutional-home .home-shortcuts{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+@media (max-width:350px){
+  .institutional-home .home-shortcuts{
+    grid-template-columns:minmax(0,1fr);
+  }
+}
+@media (min-width:761px) and (max-width:960px){
+  .institutional-home .institutional-front{
+    grid-template-columns:minmax(0,1fr);
+  }
+  .institutional-home .institutional-front > :is(.section,.communiques-home,.participation-home){
+    width:100%;
+    min-width:0;
+    box-sizing:border-box;
+  }
+}
