@@ -30,6 +30,16 @@ def near(value, expected, distance=2):
     return abs(value-expected) <= distance
 
 def check(page, width, failures):
+    # Reproduire aussi le parcours des visiteurs qui ouvrent les panneaux.
+    for selector in (
+        "#travaux > .home-library", "#services > .home-missions",
+        "main > .home-deep", "main > .home-small-extra",
+        "main > .home-more-info",
+    ):
+        panels = page.locator(selector)
+        if panels.count():
+            panels.first.evaluate("el => { el.open = true; }")
+    page.wait_for_timeout(120)
     horizontal = page.evaluate("""() => ({
       viewport: document.documentElement.clientWidth,
       document: document.documentElement.scrollWidth,
@@ -45,6 +55,27 @@ def check(page, width, failures):
             failures.append(f"{width}px: missing/hidden section {selector}")
         elif not (near(b["x"],0) and near(b["right"],width)):
             failures.append(f"{width}px: {selector} x={b['x']:.1f} right={b['right']:.1f} (expected 0..{width})")
+    # Les panneaux supplémentaires restent bord à bord après ouverture.
+    for selector in (
+        "main > .home-deep > .section",
+        "main > .home-small-extra > .section",
+        "main > .home-more-info > .section",
+        "#travaux > .home-library",
+    ):
+        matches=page.locator(selector)
+        if not matches.count():
+            failures.append(f"{width}px: no expanded panel for {selector}")
+        for i in range(matches.count()):
+            item=matches.nth(i)
+            if not item.is_visible():
+                failures.append(f"{width}px: hidden expanded panel {selector}[{i}]")
+                continue
+            b=item.evaluate("""el => {
+                const r=el.getBoundingClientRect();
+                return {x:r.left,right:r.right,width:r.width};
+            }""")
+            if not (near(b["x"],0) and near(b["right"],width)):
+                failures.append(f"{width}px: nested {selector}[{i}] not full width: {b}")
     # The featured publication card should have a single inset of about 16px,
     # not a second 16-42px inset from details and the old scroller.
     container=rect(page,"#admin-featured-publications")
