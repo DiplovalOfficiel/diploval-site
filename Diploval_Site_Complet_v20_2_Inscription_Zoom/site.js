@@ -5,6 +5,20 @@
   const header = document.querySelector('.site-header');
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.main-nav');
+  // Navigation commune : les liens historiques restent accessibles dans le pied de page.
+  if (nav) {
+    const links = [['Publications','/#travaux'], ['Points d’information','/points-information'],
+      ['Participer','/propositions-contributions'], ['Nos missions','/#services'],
+      ['À propos','/#apropos'], ['Contact','/#contact']];
+    nav.innerHTML = links.map(([label,href])=>{
+      const current = (href==='/points-information' && location.pathname.startsWith('/points-information')) ||
+        (href==='/propositions-contributions' && location.pathname.startsWith('/propositions-contributions'));
+      return '<a href="'+href+'"'+(current?' aria-current="page"':'')+'>'+label+'</a>';
+    }).join('');
+  }
+  if (menuButton && !document.querySelector('.mobile-menu-caption'))
+    menuButton.insertAdjacentHTML('beforebegin','<span class="mobile-menu-caption" aria-hidden="true">Menu</span>');
+
   const progress = document.querySelector('.progress span');
   const year = document.querySelector('#year');
   const workDialog = document.querySelector('#work-dialog');
@@ -26,8 +40,15 @@
   if (nav) nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => toggleMenu(false)));
   document.addEventListener('keydown', event => { if (event.key === 'Escape') toggleMenu(false); });
 
+  const backToTop = document.createElement('button');
+  backToTop.type='button'; backToTop.className='back-to-top';
+  backToTop.setAttribute('aria-label','Revenir en haut de page');
+  backToTop.textContent='↑ Haut'; backToTop.hidden=true;
+  document.body.append(backToTop);
+  backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));
   const updateScroll = () => {
     const y = window.scrollY;
+    backToTop.hidden = y < 650;
     if (header) header.classList.toggle('scrolled', y > 6);
     const max = document.documentElement.scrollHeight - window.innerHeight;
     if (progress) progress.style.width = `${max > 0 ? (y / max) * 100 : 0}%`;
