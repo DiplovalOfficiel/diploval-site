@@ -395,3 +395,26 @@ Le texte projet comprend quatorze articles (objet et portée des consultations, 
 **Critères pour passer la section à « examinée juridiquement » :** validation humaine des douze points, modèle de droits d'exploitation approuvé, notice complète sans données fictives ni crochets non résolus, arbitrage des données sensibles et des mineurs, délais de recours définis, contrôle de publication/retrait et cohérence d'affichage dans l'interface.
 
 **État :** revue rédactionnelle réalisée ; validation juridique **non réalisée** ; `P01–P16=OPEN`, `release=NO_GO`, `legal_docs_published=false`. Aucun changement de la V0.2 ou activation V0.3.
+
+---
+
+## 15. Protocole éditorial et décisions proposées — 20 novembre 2026
+
+**Livrable consolidé :** [CGU et charte, section V — protocole de citations, modération et contestations](./DIPLOVAL_V03_CGU_CHARTE_PUBLICATION_PROJET_INTERNE_NO_GO.md).
+
+Cette étape fournit **huit propositions de décisions éditoriales ED-01 à ED-08** à approuver après examen juridique, sans nouveau module ni nouvelle version parallèle :
+
+| Choix éditorial | Orientation préparée | Condition(s) concernée(s) |
+|---|---|---|
+| ED-01 — Affichage | Version modérée, autorisation spécifique, page et durée/territoire à définir | P01, P02, P03 |
+| ED-02 — Réutilisation | Rapports, PDF, vidéos et réseaux : droits nécessaires ou exception démontrée, sans licence générale | P01, P03 |
+| ED-03 — Citation | Décision au cas par cas : droit de citation, proportionnalité, attribution et données personnelles | P01, P03 |
+| ED-04 — Modération | Six contrôles : recevabilité, sécurité, risques, autorisations, motif, réexamen | P04, P13 |
+| ED-05 — Contestations | Décision indépendante lorsque nécessaire, pas de publication automatique | P08, P13 |
+| ED-06 — Institutions | Mandats vérifiés ; projet non publiable sans acte éditorial séparé | P10, P13 |
+| ED-07 — Retrait | Dissocier masquage, effacement, droits d'exploitation, rapports et caches | P07, P08, P09 |
+| ED-08 — Restitution | Arguments contradictoires et limites méthodologiques ; aucune représentativité présumée | P03, P13, P16 |
+
+Les modèles de messages figurant dans la section V du projet **ne doivent pas être affichés sur le site** tant que leurs canaux, événements et règles de recours ne sont pas réellement disponibles. Aucun délai éditorial n'a été inventé.
+
+**Constat :** rédaction de la grille et des huit choix réalisée. Leur statut reste **À VALIDER** ; les 16 conditions de la grille B7 restent `OPEN`. La prochaine action utile est une relecture humaine contradictoire ciblée, puis le dossier de preuves exigées pour l'approbation P03/P13. Aucun lancement de la V0.3 n'est autorisé.
