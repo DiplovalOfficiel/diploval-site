@@ -155,3 +155,20 @@ La rédaction des cases et commandes ci-dessous constitue une **hypothèse à va
 - CNIL, modalités de consentement : https://www.cnil.fr/fr/les-bases-legales/consentement
 - CNIL, données sensibles : https://www.cnil.fr/fr/definition/donnee-sensible
 - CNIL, droits des personnes : https://www.cnil.fr/fr/passer-laction/les-droits-des-personnes-sur-leurs-donnees
+
+---
+
+# E — Concordance avec les CGU et la charte de publication (20 novembre 2026)
+
+**Document complémentaire :** [CGU et charte, section IV — revue croisée](./DIPLOVAL_V03_CGU_CHARTE_PUBLICATION_PROJET_INTERNE_NO_GO.md).
+
+Cette section de concordance n'est **pas** un nouvel accord demandé aux utilisateurs ni une base juridique approuvée.
+
+- Le **dépôt privé**, la **publication sur la page concernée** et la **reproduction dans les rapports, vidéos, PDF ou réseaux sociaux** ont des portées différentes. Toute permission de droits d'auteur requise doit être caractérisée ; les bases de traitement de données sont analysées séparément.
+- Le choix de présentation « sans nom affiché » **ne garantit pas l'anonymat** ni le droit de diffuser des informations identifiant des tiers.
+- Pour les éventuels **droits d'exploitation des œuvres protégées**, la destination, les supports, la durée et le territoire doivent être précisés dans la rédaction définitive des CGU ; les champs correspondants ne sont pas encore arrêtés.
+- Une **réponse institutionnelle** est préparée par une institution mandatée, puis examinée par Diploval. Aucune institution n'a accès de plein droit aux dossiers privés ni à une fonction de publication directe.
+- Les **recours éditoriaux** et les **droits RGPD** suivent des procédures distinctes. Les délais légaux des droits ne doivent pas être remplacés par les délais de modération non encore définis.
+- Le retrait d'affichage, la demande d'effacement RGPD, la fin d'une autorisation d'exploitation et la correction de copies déjà diffusées sont des actes distincts.
+
+**Avant toute utilisation sur un formulaire :** solder les incohérences `REV-01` à `REV-12` de la charte, arrêter les bases légales art. 6 et les exceptions art. 9 si pertinentes, documenter les choix, les durées et l'identité juridique du responsable. **P01–P16 restent OPEN ; V0.3 NO GO.**
