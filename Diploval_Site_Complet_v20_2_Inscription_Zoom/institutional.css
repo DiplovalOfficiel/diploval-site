@@ -665,7 +665,7 @@
 .institutional-site .main-nav.nav-tiles.open a.dv-nav-item>span{
   min-width:0;overflow-wrap:normal;word-break:normal;hyphens:none;
 }
-@media(max-width:1040px){
+@media(max-width:960px){
   .institutional-home .home-follow-grid{grid-template-columns:minmax(0,1fr)}
   .institutional-home .home-follow-grid .socials-panel{
     grid-template-columns:repeat(2,minmax(0,1fr));
@@ -696,5 +696,14 @@
 @media(max-width:350px){
   .institutional-site .main-nav.nav-tiles.open a.dv-nav-item{
     padding:10px 7px;gap:6px;font-size:13px;min-height:68px;
+  }
+}
+
+/* Pied de page secondaire : liens plus discrets et espacements resserrés. */
+@media(max-width:760px){
+  .institutional-site .footer-main nav{gap:7px 12px;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .institutional-site .footer-main nav a{
+    font-size:13px;line-height:1.4;padding:3px 0;
+    font-weight:500;overflow-wrap:break-word;word-break:normal;
   }
 }
