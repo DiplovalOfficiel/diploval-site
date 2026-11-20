@@ -809,223 +809,192 @@
   .institutional-home #admin-featured-publications .work-body{padding:10px 12px 16px}
 }
 
-
 /*
-  ACCUEIL MOBILE — contrat de mise en page unique, 20 novembre 2026
-  Les anciens correctifs successifs de largeur sont remplacés par cette
-  règle : fond des sections bord à bord ; 16 px d'espace dans le contenu.
-  Les cartes, formulaires et accordéons restent libres de leurs marges
-  intérieures mais ne doivent pas créer un SECOND retrait extérieur.
+  ACCUEIL MOBILE — contrat de mise en page unique (version 2)
+  Tous les FONDS DE SECTION sont bord à bord ; un seul espacement de 16px
+  s'applique au contenu. Les sous-panneaux n'enlèvent pas une seconde marge.
+  Le correctif concerne seulement l'accueil sous 761px, jamais le PC.
 */
 @media (max-width:760px){
   .institutional-home main,
-  .institutional-home main *{
-    box-sizing:border-box;
-  }
+  .institutional-home main *{box-sizing:border-box}
   .institutional-home main{
-    width:100%;
-    min-width:0;
-    max-width:100%;
-    padding:0;
-    margin:0;
+    width:100%;min-width:0;max-width:100%;padding:0;margin:0;
     background:#fff;
+    overflow-x:clip;
   }
-  /* Tous les blocs de PREMIER niveau sont bord à bord. */
+  /* Toutes les sections de niveau racine sont physiquement pleine largeur. */
   .institutional-home main > :is(
-    section,
-    nav.home-shortcuts,
-    div.institutional-front,
-    div.home-follow-grid,
-    details.home-deep,
-    details.home-small-extra,
-    details.home-more-info
+    section, nav.home-shortcuts, div.institutional-front,
+    div.home-follow-grid, details.home-deep,
+    details.home-small-extra, details.home-more-info
   ){
-    width:100%;
-    min-width:0;
-    max-width:100%;
-    margin-left:0;
-    margin-right:0;
-    box-sizing:border-box;
+    width:100%;max-width:100%;min-width:0;
+    margin-left:0;margin-right:0;
   }
-  /* Les sections principales sont les surfaces pleine largeur. */
   .institutional-home main > .section{
     padding:24px 16px;
+    border-left:0;border-right:0;border-radius:0;
     background:#fff;
-    border-left:0;
-    border-right:0;
-    border-radius:0;
   }
-  .institutional-home main > .hero{
-    width:100%;
-    max-width:100%;
-  }
+  .institutional-home main > .hero{width:100%;max-width:100%}
+  /* Quatre accès rapides : intérieur 16px, fond sans marge beige. */
   .institutional-home main > .home-shortcuts{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:8px;
-    padding:14px 16px;
-    margin-top:0;
-    margin-bottom:0;
-    background:#fff;
+    display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px;padding:14px 16px;margin:0;background:#fff;
   }
+  /* Consultations, communiqués et actualités. */
   .institutional-home .institutional-front{
-    display:grid;
-    grid-template-columns:minmax(0,1fr);
-    gap:0;
-    margin-top:0;
-    background:#fff;
+    width:100%;grid-template-columns:minmax(0,1fr);
+    gap:0;margin:0;padding:0;background:#fff;
   }
   .institutional-home .institutional-front > :is(
-    .participation-home,
-    .communiques-home,
-    .section
+    .participation-home,.communiques-home,.section
   ){
-    width:100%;
-    min-width:0;
-    max-width:100%;
-    margin:0;
-    padding:22px 16px;
-    border-left:0;
-    border-right:0;
-    border-radius:0;
+    width:100%;min-width:0;max-width:100%;
+    margin:0;padding:22px 16px;
+    border-left:0;border-right:0;border-radius:0;
   }
   .institutional-home .institutional-front > .section.section-actualites{
-    width:100%;
-    margin:0;
-    padding:22px 16px;
-    background:#fff;
+    width:100%;padding:22px 16px;margin:0;background:#fff;
   }
   .institutional-home .institutional-front .actualites-shell{
-    width:100%;
-    min-width:0;
-    max-width:100%;
-    margin:0;
-    padding:0;
-    border:0;
+    width:100%;max-width:100%;min-width:0;
+    margin:0;padding:0;border:0;
   }
-  /* Publications : le fond de section remplit l'écran.
-     Les cartes restent séparées par 16 px à l'INTERIEUR. */
+  /* Bibliothèque et publications : ne plus cumuler SECTION + DETAILS + SCROLLER. */
   .institutional-home #travaux{
-    background:#fff;
+    width:100%;min-width:0;max-width:100%;
+    margin:0;padding:0;
+    border:0;border-radius:0;background:#fff;
   }
-  .institutional-home #travaux > :is(.works-head,.institutional-details,.home-collapse){
-    min-width:0;
-    max-width:100%;
+  .institutional-home #travaux > .works-head{
+    width:100%;max-width:100%;min-width:0;
+    margin:0;padding:24px 16px 14px;
+    display:block;
   }
-  .institutional-home .home-library,
-  .institutional-home .home-missions,
-  .institutional-home .home-featured{
-    width:100%;
-    max-width:100%;
-    min-width:0;
-    margin-left:0;
-    margin-right:0;
+  .institutional-home #travaux > .institutional-details.home-featured{
+    display:block;width:100%;max-width:100%;
+    min-width:0;margin:0;padding:0;
+    border-left:0;border-right:0;border-radius:0;
+    background:#fff;box-shadow:none;
   }
-  .institutional-home .home-library .publication-explorer{
-    width:100%;
-    max-width:100%;
-    min-width:0;
+  .institutional-home #travaux > .home-featured > summary{
+    display:block;min-height:48px;
+    margin:0;padding:13px 16px;
+    border-top:1px solid #c8d5d7;
+    border-bottom:1px solid #c8d5d7;
+    background:#e4edf3;
+    font-size:16px;line-height:1.4;
   }
-  /* Suivre Diploval : deux surfaces pleines, sans gouttière beige. */
-  .institutional-home .home-follow-grid{
+  .institutional-home #travaux #admin-featured-publications{
+    display:grid;
     grid-template-columns:minmax(0,1fr);
-    gap:0;
-    margin-top:0;
-    margin-bottom:0;
-    padding:0;
+    grid-auto-flow:row;grid-auto-columns:auto;
+    gap:14px;
+    width:100%;max-width:100%;min-width:0;
+    margin:0;padding:16px;
+    overflow:visible;scroll-snap-type:none;
+  }
+  .institutional-home #travaux #admin-featured-publications > .work-card{
+    display:block;width:100%;min-width:0;max-width:100%;
+    margin:0;box-sizing:border-box;
+  }
+  .institutional-home #travaux #admin-featured-publications .work-open{
+    width:100%;max-width:100%;min-width:0;
+  }
+  .institutional-home #travaux > .home-collapse.home-library{
+    display:block;width:100%;min-width:0;max-width:100%;
+    margin:0;padding:0;
+    border-left:0;border-right:0;border-radius:0;
     background:#fff;
+  }
+  .institutional-home #travaux > .home-library > summary{
+    width:100%;min-height:48px;
+    padding:16px;border-bottom:1px solid #c8d5d7;
+    background:#fff;
+  }
+  .institutional-home #travaux .home-library .publication-explorer{
+    width:100%;max-width:100%;min-width:0;
+    margin:0;padding:16px;
+    border:0;background:#fff;
+  }
+  /* Réseaux et lettre : deux surfaces successives sans cadre extérieur. */
+  .institutional-home .home-follow-grid{
+    width:100%;max-width:100%;min-width:0;
+    grid-template-columns:minmax(0,1fr);gap:0;
+    padding:0;margin:0;background:#fff;
   }
   .institutional-home .home-follow-grid > .section{
-    width:100%;
-    min-width:0;
-    max-width:100%;
-    margin:0;
-    padding:0;
+    width:100%;min-width:0;max-width:100%;margin:0;padding:0;
   }
   .institutional-home .home-follow-grid :is(.socials-wrap,.newsletter-shell){
-    width:100%;
-    max-width:100%;
-    min-width:0;
-    margin:0;
-    padding:20px 16px;
-    border-left:0;
-    border-right:0;
-    border-radius:0;
+    width:100%;max-width:100%;min-width:0;
+    margin:0;padding:20px 16px;
+    border-left:0;border-right:0;border-radius:0;
     background:#fff;
   }
-  /* Panneaux secondaires, bord à bord et contenu espacé. */
-  .institutional-home :is(.home-deep,.home-small-extra,.home-more-info){
-    width:100%;
-    min-width:0;
-    max-width:100%;
-    margin:0;
-    padding:0;
-    background:#fff;
-    border-left:0;
-    border-right:0;
-    border-radius:0;
+  /* Missions : déplier sans ajouter de retrait sur le panneau principal. */
+  .institutional-home #services{
+    width:100%;max-width:100%;margin:0;
+    padding:24px 16px;background:#fff;
   }
-  .institutional-home :is(.home-deep,.home-small-extra,.home-more-info) > summary{
-    width:100%;
-    min-width:0;
-    max-width:100%;
-    margin:0;
-    padding:17px 16px;
-    box-sizing:border-box;
+  .institutional-home #services > .home-missions{
+    width:100%;max-width:100%;min-width:0;
+    margin:12px 0;padding:0;
+  }
+  .institutional-home #services .home-missions > summary{
+    width:100%;padding:14px 16px;
+  }
+  .institutional-home #services .home-missions .services-grid{
+    width:100%;max-width:100%;min-width:0;
+    margin:0;padding:12px 0;
+  }
+  /* Publics, méthodes, agenda, garanties, FAQ : pas de cadre imbriqué rétréci. */
+  .institutional-home main > :is(.home-deep,.home-small-extra,.home-more-info){
+    width:100%;max-width:100%;min-width:0;
+    margin:0;padding:0;background:#fff;
+    border-left:0;border-right:0;border-radius:0;
+  }
+  .institutional-home main > :is(.home-deep,.home-small-extra,.home-more-info) > summary{
+    width:100%;max-width:100%;min-width:0;
+    margin:0;padding:16px;
   }
   .institutional-home .home-deep > .section,
   .institutional-home .home-small-extra > .section,
   .institutional-home .home-more-info > .section{
-    width:100%;
-    min-width:0;
-    max-width:100%;
-    margin:0;
-    padding:20px 16px;
-    border-left:0;
-    border-right:0;
-    box-sizing:border-box;
+    width:100%;max-width:100%;min-width:0;
+    margin:0;padding:22px 16px;
+    border-left:0;border-right:0;box-sizing:border-box;
   }
-  /* À propos, missions, contact : même unité de largeur. */
-  .institutional-home main > .section.section-services,
-  .institutional-home main > .section.section-about{
-    width:100%;
-    max-width:100%;
-    margin:0;
-    padding:24px 16px;
-    background:#fff;
+  /* Fondateur et contact conservent le même bord de section. */
+  .institutional-home #apropos{
+    width:100%;max-width:100%;margin:0;
+    padding:24px 16px;background:#fff;
   }
-  .institutional-home main > .contact{
-    width:100%;
-    max-width:100%;
-    min-width:0;
-    margin:0;
-    padding:24px 16px;
+  .institutional-home main > #contact{
+    width:100%;max-width:100%;min-width:0;
+    margin:0;padding:24px 16px;
+    border-left:0;border-right:0;border-radius:0;
     background:#e1eaf0;
-    border-left:0;
-    border-right:0;
-    border-radius:0;
   }
-  /* Éléments internes : éviter toute largeur implicite qui dépasse. */
+  /* Enfants susceptibles de déborder du viewport. */
   .institutional-home main :is(
     .actualites-grid,.actualite-card,.actualite-card-body,
     .pc-list,.pc-card,.communiques-home__grid,
     #admin-featured-publications,.work-card,.work-open,.work-body,
-    .publication-explorer,.services-grid,.institutional-audience-grid,
-    .institutional-production-grid,.method-grid,
-    .guarantees-v207__wrap,.guarantees-v207__grid,
+    .publication-explorer,.services-grid,
+    .institutional-audience-grid,.institutional-production-grid,
+    .method-grid,.guarantees-v207__wrap,.guarantees-v207__grid,
     .newsletter-shell,.newsletter-form,.socials-wrap,
     .contact-inner,.about-panel
   ){
-    min-width:0;
-    max-width:100%;
-    box-sizing:border-box;
+    min-width:0;max-width:100%;box-sizing:border-box;
   }
   .institutional-home main :is(
-    .actualite-card,.pc-card,.work-card,.social-card,
-    .newsletter-form,.about-panel
+    .actualite-card,.pc-card,.work-card,.social-card,.newsletter-form,.about-panel
   ){
-    overflow-wrap:break-word;
-    word-break:normal;
+    overflow-wrap:break-word;word-break:normal;
   }
 }
 @media (max-width:350px){
@@ -1037,9 +1006,7 @@
   .institutional-home .institutional-front{
     grid-template-columns:minmax(0,1fr);
   }
-  .institutional-home .institutional-front > :is(.section,.communiques-home,.participation-home){
-    width:100%;
-    min-width:0;
-    box-sizing:border-box;
-  }
+  .institutional-home .institutional-front > :is(
+    .section,.communiques-home,.participation-home
+  ){width:100%;min-width:0;box-sizing:border-box}
 }
