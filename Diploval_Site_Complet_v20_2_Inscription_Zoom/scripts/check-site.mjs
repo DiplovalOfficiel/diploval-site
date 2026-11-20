@@ -240,38 +240,52 @@ try{
   }
 }catch(e){errors.push(`Configuration CMS : contrôle des chemins impossible (${e.message})`)}
 
-// 9. Accueil mobile : éviter les marges externes appliquées à plusieurs niveaux.
-// Vérifications structurelles non visuelles (le rendu réel doit aussi être testé).
+// 9. Accueil mobile : contrat de pleine largeur pour chaque famille de panneaux.
+// Empêche notamment le rétrécissement des publications et des accordéons.
 try {
-  const home = read('index.html');
-  const css = read('institutional.css');
-  const marker = 'ACCUEIL MOBILE — contrat de mise en page unique';
-  if(css.split(marker).length !== 2){
-    errors.push('Accueil mobile : le contrat de mise en page unique est absent ou répété.');
+  const home=read('index.html');
+  const css=read('institutional.css');
+  const marker='ACCUEIL MOBILE — contrat de mise en page unique';
+  if(css.split(marker).length!==2){
+    errors.push('Accueil mobile : contrat de largeur absent ou répété.');
   }
   if(/Audit responsive transversal 20\/11\/2026|Restaurer la pleine largeur des blocs/.test(css)){
-    errors.push('Accueil mobile : anciens correctifs de largeur empilés détectés.');
+    errors.push('Accueil mobile : un ancien correctif de largeur est réapparu.');
   }
-  const contract = css.slice(css.indexOf(marker));
-  const selectors = [
+  const contract=css.slice(css.indexOf(marker));
+  const groups=[
     'main > :is(', 'main > .section',
     '.institutional-front > :is(', '.institutional-front .actualites-shell',
-    '.home-follow-grid', '.home-deep > .section',
-    '.home-small-extra > .section', '.home-more-info > .section',
-    'main > .contact'
+    '#travaux{', '#travaux > .works-head',
+    '#travaux > .institutional-details.home-featured',
+    '#travaux #admin-featured-publications',
+    '#travaux #admin-featured-publications > .work-card',
+    '#travaux > .home-collapse.home-library',
+    '.home-library .publication-explorer',
+    '.home-follow-grid > .section',
+    '#services > .home-missions', '#services .home-missions .services-grid',
+    '.home-deep > .section', '.home-small-extra > .section',
+    '.home-more-info > .section', 'main > #contact'
   ];
-  for(const selector of selectors){
-    if(!contract.includes(selector)) errors.push('Accueil mobile : règle manquante pour '+selector);
+  for(const selector of groups){
+    if(!contract.includes(selector)){
+      errors.push('Accueil mobile : règle de largeur manquante '+selector);
+    }
   }
-  for(const id of ['actualites','travaux','reseaux','lettre-diploval','services','apropos','contact']){
-    if(!home.includes('id="'+id+'"')) errors.push('Accueil mobile : rubrique absente '+id);
+  for(const id of [
+    'accueil','propositions-contributions-home','communiques-home',
+    'actualites','travaux','reseaux','lettre-diploval','services',
+    'publics','productions','methode','agenda','apropos','garanties',
+    'faq','contact'
+  ]){
+    if(!home.includes('id="'+id+'"')){
+      errors.push('Accueil mobile : rubrique absente '+id);
+    }
   }
-  if(!home.includes('/institutional.css?v=15')){
-    warnings.push('Accueil mobile : vérifier le renouvellement de version du CSS.');
+  if(!home.includes('/institutional.css?v=16')){
+    warnings.push('Accueil mobile : contrôler la version du CSS.');
   }
-}catch(e){
-  errors.push('Contrôle accueil mobile impossible : '+e.message);
-}
+}catch(e){errors.push('Contrôle accueil mobile impossible : '+e.message)}
 
 if(warnings.length){console.warn('Site check warnings:');warnings.forEach(x=>console.warn(' - '+x))}
 if(errors.length){console.error('Site check FAILED:');errors.forEach(x=>console.error(' - '+x));process.exit(2)}
