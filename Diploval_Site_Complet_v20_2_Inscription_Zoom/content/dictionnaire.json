@@ -23,7 +23,10 @@
       "aliases": [
         "accord cadre"
       ],
-      "related": [],
+      "related": [
+        "mediation",
+        "mission-de-verification"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -38,7 +41,11 @@
       "definition": "Ensemble des ajustements destinés à réduire les conséquences des changements climatiques actuels ou attendus.",
       "details": "L’adaptation comprend notamment la gestion de l’eau, la protection contre les vagues de chaleur et l’adaptation des infrastructures.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "changement-climatique",
+        "secheresse",
+        "gestion-integree-eau"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -54,7 +61,10 @@
       "details": "L’appellation réglementaire ne signifie pas automatiquement absence totale d’impact environnemental.",
       "reference_nature": "Repère juridique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "agroecologie",
+        "intrants-agricoles"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -68,7 +78,11 @@
       "details": "Le terme n’a pas une définition unique universellement reconnue ; les pratiques et indicateurs de résultat doivent donc être explicités.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "sol-vivant",
+        "agroecologie",
+        "agroforesterie"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -82,7 +96,10 @@
       "details": "Elle s’inspire des dynamiques de régénération des écosystèmes. Ses performances dépendent notamment du contexte climatique, du sol et de la conduite du système.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "agroforesterie",
+        "restauration-ecologique"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -97,7 +114,11 @@
       "details": "Elle considère les interactions entre sols, plantes, animaux, eau et activités humaines. Elle recouvre des pratiques et des trajectoires variées.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "agroforesterie",
+        "agriculture-syntropique",
+        "sol-vivant"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -112,7 +133,11 @@
       "details": "Les arbres peuvent contribuer à la qualité des sols, à l’ombre et à la régulation de l’eau, selon les essences et la conception du système.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "agroecologie",
+        "agriculture-syntropique",
+        "biodiversite"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -140,7 +165,10 @@
       "details": "Elle se distingue de la pseudonymisation, qui permet encore une réidentification au moyen d’informations complémentaires.",
       "reference_nature": "Repère juridique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "pseudonymisation",
+        "donnees-personnelles"
+      ],
       "references": [
         {
           "label": "CNIL — Définition des données personnelles",
@@ -173,7 +201,11 @@
       "details": "Elle concerne les fonctions biologiques, hydriques, climatiques et agronomiques. Elle ne se résume pas toujours à la seule présence de béton.",
       "reference_nature": "Repère juridique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "zero-artificialisation-nette",
+        "renaturation",
+        "sol-vivant"
+      ],
       "references": [
         {
           "label": "ADEME — Artificialisation des sols",
@@ -221,7 +253,10 @@
       "details": "Le consentement n’est qu’une des bases possibles. Le responsable doit déterminer celle qui convient au traitement et respecter les autres obligations applicables.",
       "reference_nature": "Repère juridique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "reglement-general-protection-donnees",
+        "consentement-rgpd"
+      ],
       "references": [
         {
           "label": "CNIL — Bases légales des traitements",
@@ -240,7 +275,10 @@
       "definition": "Capacité des surfaces biologiquement productives à fournir des ressources renouvelables et à absorber certains déchets, selon une méthode de comptabilité écologique.",
       "details": "La biocapacité est notamment mobilisée pour calculer l’empreinte écologique et le jour du dépassement.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "empreinte-ecologique",
+        "limites-planetaires"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -255,7 +293,11 @@
       "definition": "La biodiversité, ou diversité biologique, recouvre la variabilité des organismes vivants, notamment au sein des espèces, entre les espèces et entre les écosystèmes.",
       "details": "La biodiversité comprend aussi les interactions entre les êtres vivants et leurs milieux.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "ecosysteme",
+        "especes-exotiques-envahissantes",
+        "zones-humides"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -304,7 +346,10 @@
       "aliases": [
         "cessez le feu"
       ],
-      "related": [],
+      "related": [
+        "desescalade",
+        "mission-de-verification"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -320,7 +365,11 @@
       "details": "Le réchauffement actuel est principalement dû aux émissions humaines de gaz à effet de serre. Il modifie notamment les températures, les précipitations et les extrêmes.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "adaptation-climatique",
+        "attenuation-climatique",
+        "limites-planetaires"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -351,7 +400,10 @@
       "details": "Le droit distingue notamment les conflits armés internationaux et non internationaux. Toutes les violences ne constituent pas automatiquement un conflit armé au sens juridique.",
       "reference_nature": "Repère juridique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "droit-international-humanitaire",
+        "crime-de-guerre"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -365,8 +417,16 @@
       "details": "Il ne doit pas être déduit du silence ou d’une case précochée. Un consentement valable doit pouvoir être retiré selon les règles applicables.",
       "reference_nature": "Fondement juridique identifié",
       "aliases": [],
-      "related": [],
-      "references": [],
+      "related": [
+        "base-legale-rgpd",
+        "donnees-personnelles"
+      ],
+      "references": [
+        {
+          "label": "CNIL — Consentement (RGPD)",
+          "url": "https://www.cnil.fr/fr/definition/consentement-rgpd"
+        }
+      ],
       "status": "Publié",
       "visible": true,
       "updated_at": "2026-11-21",
@@ -380,7 +440,11 @@
       "definition": "Démarche qui invite des citoyens à exprimer des avis, des arguments ou des propositions sur une question déterminée.",
       "details": "Selon le dispositif, la consultation peut être ouverte, ciblée, réglementée ou simplement volontaire. Son résultat n’est pas automatiquement une décision obligatoire.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "moderation-prealable",
+        "restitution-publique",
+        "donnees-sensibles"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -396,7 +460,10 @@
       "details": "L’eau, les soins, l’énergie, les communications ou l’alimentation peuvent nécessiter des mesures de secours et des plans adaptés.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "defaillance-en-cascade",
+        "cybersecurite"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -425,7 +492,10 @@
       "details": "La confrontation des positions ne suppose pas qu’elles disposent toutes du même niveau de preuve.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "verification-faits",
+        "transparence"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -439,7 +509,10 @@
       "definition": "Ensemble des moyens par lesquels le Parlement examine l’action du gouvernement et demande des comptes sur celle-ci.",
       "details": "Il peut notamment s’exercer par les questions, les commissions, les auditions ou les enquêtes parlementaires.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "assemblee-nationale",
+        "evaluation-politiques-publiques"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -459,7 +532,10 @@
       "aliases": [
         "CIJ"
       ],
-      "related": [],
+      "related": [
+        "cour-penale-internationale",
+        "droit-international"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -475,8 +551,16 @@
       "aliases": [
         "CPI"
       ],
-      "related": [],
-      "references": [],
+      "related": [
+        "cour-internationale-justice",
+        "crime-de-guerre"
+      ],
+      "references": [
+        {
+          "label": "Cour pénale internationale — Fonctionnement de la Cour",
+          "url": "https://www.icc-cpi.int/fr/about/how-the-court-works"
+        }
+      ],
       "status": "Publié",
       "visible": true,
       "updated_at": "2026-11-21"
@@ -489,8 +573,16 @@
       "details": "La qualification repose sur le contexte du conflit, les actes constatés, les éléments intentionnels et le droit applicable ; une accusation ne vaut pas condamnation.",
       "reference_nature": "Repère juridique",
       "aliases": [],
-      "related": [],
-      "references": [],
+      "related": [
+        "droit-international-humanitaire",
+        "cour-penale-internationale"
+      ],
+      "references": [
+        {
+          "label": "Cour pénale internationale — Statut de Rome",
+          "url": "https://www.icc-cpi.int/fr/publications/textes-juridiques-fondamentaux/statut-de-rome-de-la-cour-penale-internationale"
+        }
+      ],
       "status": "Publié",
       "visible": true,
       "updated_at": "2026-11-21"
@@ -517,7 +609,11 @@
       "details": "Il comprend notamment évaporation, condensation, précipitations, infiltration et écoulement. Les activités humaines peuvent en modifier localement le fonctionnement.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "hydrologie",
+        "infiltration",
+        "nappes-souterraines"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -532,7 +628,10 @@
       "details": "Elle se distingue de la déconcentration, qui répartit l’action des services de l’État sur le territoire.",
       "reference_nature": "Repère institutionnel",
       "aliases": [],
-      "related": [],
+      "related": [
+        "deconcentration",
+        "subsidiarite"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -546,7 +645,10 @@
       "details": "Ses objectifs, sa légalité, ses moyens et ses effets concrets peuvent faire l’objet d’évaluations distinctes.",
       "reference_nature": "Repère institutionnel",
       "aliases": [],
-      "related": [],
+      "related": [
+        "responsabilite-politique",
+        "transparence"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -561,7 +663,9 @@
       "details": "Les décisions restent prises au nom de l’État, contrairement à la décentralisation.",
       "reference_nature": "Repère institutionnel",
       "aliases": [],
-      "related": [],
+      "related": [
+        "decentralisation"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -604,7 +708,10 @@
       "details": "Un déficit annuel peut contribuer à augmenter la dette, sans que les deux notions se confondent.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "dette-publique",
+        "fiscalite"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -631,7 +738,10 @@
       "definition": "Ensemble de mesures visant à réduire l’intensité d’une confrontation ou le risque d’aggravation d’un conflit.",
       "details": "Une désescalade peut être militaire, diplomatique, politique ou économique.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "cessez-le-feu",
+        "mediation"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -647,7 +757,10 @@
       "details": "Elle doit être distinguée du déficit public, qui mesure un solde sur une période.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "deficit-public",
+        "fiscalite"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -660,7 +773,11 @@
       "definition": "Conduite des relations entre États et autres acteurs internationaux par la représentation, le dialogue et la négociation.",
       "details": "La diplomatie peut notamment chercher à prévenir les conflits, défendre des intérêts, construire des coopérations ou négocier des accords.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "mediation",
+        "accord-cadre",
+        "accord-multilateral"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -676,8 +793,17 @@
       "details": "Un nom, un identifiant, une adresse IP ou un recoupement de données peuvent permettre l’identification selon le contexte.",
       "reference_nature": "Fondement juridique identifié",
       "aliases": [],
-      "related": [],
-      "references": [],
+      "related": [
+        "traitement-donnees-personnelles",
+        "donnees-sensibles",
+        "reglement-general-protection-donnees"
+      ],
+      "references": [
+        {
+          "label": "CNIL — Donnée personnelle",
+          "url": "https://www.cnil.fr/fr/definition/donnee-personnelle"
+        }
+      ],
       "status": "Publié",
       "visible": true,
       "updated_at": "2026-11-21",
@@ -693,7 +819,11 @@
       "details": "Elles comprennent notamment des informations révélant des opinions politiques, des convictions ou l’état de santé. Des exceptions strictement encadrées existent.",
       "reference_nature": "Fondement juridique identifié",
       "aliases": [],
-      "related": [],
+      "related": [
+        "donnees-personnelles",
+        "consentement-rgpd",
+        "base-legale-rgpd"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -709,7 +839,10 @@
       "definition": "Branche du droit consacrée à l’organisation des pouvoirs publics, à leurs compétences et aux règles constitutionnelles qui les encadrent.",
       "details": "Il concerne notamment la Constitution, le fonctionnement des institutions et la protection des droits et libertés constitutionnels.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "charte-environnement",
+        "controle-parlementaire"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -724,7 +857,11 @@
       "details": "Elle ne désigne pas, à elle seule, une catégorie juridique générale et autonome reconnue partout dans ces termes.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "souverainete-alimentaire",
+        "securite-alimentaire",
+        "gestion-integree-eau"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -768,8 +905,17 @@
       "aliases": [
         "DIH"
       ],
-      "related": [],
-      "references": [],
+      "related": [
+        "conflit-arme",
+        "crime-de-guerre",
+        "cour-penale-internationale"
+      ],
+      "references": [
+        {
+          "label": "CICR — Qu’est-ce que le droit international humanitaire ?",
+          "url": "https://www.icrc.org/fr/document/quest-ce-que-le-droit-international-humanitaire"
+        }
+      ],
       "status": "Publié",
       "visible": true,
       "updated_at": "2026-11-21",
@@ -784,7 +930,11 @@
       "details": "Un écosystème peut être forestier, marin, agricole ou urbain. Ses propriétés évoluent avec les organismes et les conditions du milieu.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "biodiversite",
+        "services-ecosystemiques",
+        "continuite-ecologique"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -811,7 +961,9 @@
       "definition": "Indicateur qui estime la surface biologiquement productive nécessaire pour soutenir certaines consommations humaines et absorber leurs émissions de carbone, selon une méthodologie donnée.",
       "details": "Il s’agit d’un indicateur de comptabilité écologique, qui ne résume pas tous les impacts environnementaux.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "biocapacite"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -876,7 +1028,11 @@
       "details": "Elle se distingue du simple suivi d’exécution, qui vérifie principalement les activités ou moyens mobilisés.",
       "reference_nature": "Repère institutionnel",
       "aliases": [],
-      "related": [],
+      "related": [
+        "indicateur",
+        "decision-publique",
+        "tracabilite"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -949,7 +1105,11 @@
       "details": "Elle rapproche les besoins domestiques, agricoles, économiques et écologiques en tenant compte de leur interdépendance.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "cycle-de-leau",
+        "stress-hydrique",
+        "secheresse"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1007,7 +1167,10 @@
       "details": "Une baisse de l’inflation signifie que les prix augmentent généralement moins vite, non qu’ils diminuent nécessairement.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "pouvoir-achat",
+        "produit-interieur-brut"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1037,7 +1200,11 @@
       "aliases": [
         "IA"
       ],
-      "related": [],
+      "related": [
+        "algorithme",
+        "donnees-personnelles",
+        "verification-faits"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1152,7 +1319,10 @@
       "details": "Elle permet de vérifier le respect des règles éditoriales et de confidentialité, tout en nécessitant des critères clairs et des voies de contestation adaptées.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "consultation-citoyenne",
+        "donnees-sensibles"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1183,8 +1353,16 @@
       "aliases": [
         "ONU"
       ],
-      "related": [],
-      "references": [],
+      "related": [
+        "cour-internationale-justice",
+        "diplomatie"
+      ],
+      "references": [
+        {
+          "label": "Nations Unies — À propos de l’ONU",
+          "url": "https://www.un.org/fr/about-us"
+        }
+      ],
       "status": "Publié",
       "visible": true,
       "updated_at": "2026-11-21"
@@ -1199,7 +1377,11 @@
       "aliases": [
         "PAC"
       ],
-      "related": [],
+      "related": [
+        "souverainete-alimentaire",
+        "politique-publique",
+        "agroecologie"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1214,7 +1396,10 @@
       "details": "Elle peut associer plusieurs niveaux de gouvernement, des acteurs privés et des organismes de la société civile.",
       "reference_nature": "Repère institutionnel",
       "aliases": [],
-      "related": [],
+      "related": [
+        "evaluation-politiques-publiques",
+        "decision-publique"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1228,7 +1413,10 @@
       "details": "Son évolution dépend notamment des revenus et des prix. Elle ne décrit pas à elle seule les écarts entre ménages.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "inflation",
+        "securite-alimentaire"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1242,7 +1430,10 @@
       "details": "En droit français de l’environnement, l’article 5 de la Charte de l’environnement encadre sa mise en œuvre par les autorités publiques.",
       "reference_nature": "Fondement juridique identifié",
       "aliases": [],
-      "related": [],
+      "related": [
+        "principe-de-prevention",
+        "proportionnalite"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1259,7 +1450,10 @@
       "details": "Il se distingue du principe de précaution, qui intervient dans certaines situations d’incertitude scientifique.",
       "reference_nature": "Repère juridique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "principe-de-precaution",
+        "securite-civile"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1275,7 +1469,11 @@
       "aliases": [
         "PIB"
       ],
-      "related": [],
+      "related": [
+        "pouvoir-achat",
+        "externalite",
+        "dette-publique"
+      ],
       "references": [
         {
           "label": "Insee — Principaux indicateurs économiques",
@@ -1295,7 +1493,12 @@
       "details": "Le contrôle de proportionnalité prend des formes différentes suivant les domaines du droit.",
       "aliases": [],
       "related": [],
-      "references": [],
+      "references": [
+        {
+          "label": "EUR-Lex — Principe de proportionnalité dans l’Union européenne",
+          "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=LEGISSUM%3Aproportionality"
+        }
+      ],
       "status": "Publié",
       "visible": true,
       "updated_at": "2026-11-21",
@@ -1324,7 +1527,10 @@
       "details": "Contrairement à l’anonymisation effective, les données pseudonymisées restent en principe des données personnelles.",
       "reference_nature": "Fondement juridique identifié",
       "aliases": [],
-      "related": [],
+      "related": [
+        "anonymisation",
+        "donnees-personnelles"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1342,7 +1548,11 @@
       "aliases": [
         "RGPD"
       ],
-      "related": [],
+      "related": [
+        "donnees-personnelles",
+        "base-legale-rgpd",
+        "consentement-rgpd"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1358,7 +1568,10 @@
       "details": "Selon les situations, elle peut inclure la désimperméabilisation, la restauration de végétation ou de zones humides. Le résultat doit être évalué.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "restauration-ecologique",
+        "artificialisation-des-sols"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1417,7 +1630,10 @@
       "details": "Une restauration peut améliorer des fonctions écologiques sans reproduire exactement l’état passé du milieu.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "renaturation",
+        "ecosysteme"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1432,7 +1648,11 @@
       "details": "Elle peut expliquer les contributions recueillies, les arguments examinés, les suites retenues et les limites de l’exercice.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "consultation-citoyenne",
+        "transparence",
+        "tracabilite"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1461,7 +1681,10 @@
       "details": "Elle se distingue de la souveraineté alimentaire, qui s’intéresse aussi à la maîtrise des choix de production et d’organisation.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "souverainete-alimentaire",
+        "pouvoir-achat"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1474,7 +1697,10 @@
       "definition": "Ensemble des moyens et des actions destinés à prévenir les risques, protéger les populations et porter secours lors de situations d’urgence.",
       "details": "Elle mobilise notamment des services publics, des collectivités, des associations agréées et des citoyens.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "continuite-services-essentiels",
+        "defaillance-en-cascade"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1490,7 +1716,11 @@
       "details": "Cette notion aide à identifier des bénéfices, sans épuiser la valeur ni la diversité du vivant.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "ecosysteme",
+        "biodiversite",
+        "sol-vivant"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1505,7 +1735,11 @@
       "details": "Bactéries, champignons, racines et faune du sol jouent un rôle dans les cycles de la matière et de l’eau. La qualité du sol ne se limite pas à sa fertilité agricole.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "agroecologie",
+        "infiltration",
+        "artificialisation-des-sols"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1547,7 +1781,10 @@
       "definition": "Approche qui met l’accent sur la capacité des populations à définir leurs politiques agricoles et alimentaires et à maîtriser les conditions de leur alimentation.",
       "details": "Elle ne se confond pas avec l’autosuffisance alimentaire ni avec la sécurité alimentaire, même si ces notions sont liées.",
       "aliases": [],
-      "related": [],
+      "related": [
+        "securite-alimentaire",
+        "politique-agricole-commune"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1577,7 +1814,10 @@
       "details": "Les indicateurs de stress hydrique varient selon les organismes et les contextes d’étude.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
-      "related": [],
+      "related": [
+        "secheresse",
+        "nappes-souterraines"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1591,7 +1831,11 @@
       "details": "Dans l’Union européenne, l’article 5 du traité sur l’Union européenne fixe les conditions d’application de ce principe dans les domaines de compétence non exclusive.",
       "reference_nature": "Fondement juridique identifié",
       "aliases": [],
-      "related": [],
+      "related": [
+        "decentralisation",
+        "deconcentration",
+        "souverainete"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1608,7 +1852,10 @@
       "details": "Elle peut concerner un produit, une donnée, une procédure ou une décision publique.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "source-primaire",
+        "verification-faits"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1638,8 +1885,17 @@
       "details": "Un traitement peut être numérique ou réalisé sur papier.",
       "reference_nature": "Fondement juridique identifié",
       "aliases": [],
-      "related": [],
-      "references": [],
+      "related": [
+        "donnees-personnelles",
+        "base-legale-rgpd",
+        "pseudonymisation"
+      ],
+      "references": [
+        {
+          "label": "CNIL — Traitement de données personnelles",
+          "url": "https://www.cnil.fr/fr/definition/traitement-de-donnees-personnelles"
+        }
+      ],
       "status": "Publié",
       "visible": true,
       "updated_at": "2026-11-21",
@@ -1669,7 +1925,10 @@
       "details": "Elle nécessite de distinguer les faits établis, les hypothèses, les interprétations et les inconnues.",
       "reference_nature": "Explication générale",
       "aliases": [],
-      "related": [],
+      "related": [
+        "source-primaire",
+        "contradiction-des-arguments"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
@@ -1686,7 +1945,10 @@
       "aliases": [
         "ZAN"
       ],
-      "related": [],
+      "related": [
+        "artificialisation-des-sols",
+        "renaturation"
+      ],
       "references": [],
       "status": "Publié",
       "visible": true,
