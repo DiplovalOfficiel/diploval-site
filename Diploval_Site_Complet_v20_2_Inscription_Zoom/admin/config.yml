@@ -510,8 +510,17 @@ collections:
                 name: "category"
                 widget: "select"
                 options: ["Agriculture", "Diplomatie", "Droit", "Économie", "Environnement", "Éthique et société", "Institutions", "Numérique", "Politique", "Sciences et territoires"]
-              - { label: "Définition courte", name: "definition", widget: "text", hint: "Une ou deux phrases claires, neutres et vérifiables." }
-              - { label: "Explication complémentaire", name: "details", widget: "text", required: false, hint: "Approfondissement en langage courant, éventuellement avec plusieurs paragraphes." }
+              - label: "Nature de la définition de référence"
+                name: "reference_nature"
+                widget: "select"
+                default: "Explication générale"
+                hint: "Ne pas présenter une explication de Diploval comme un texte officiel. Réserver « Fondement juridique identifié » aux notions reposant sur une source juridique vérifiable."
+                options: ["Explication générale", "Repère juridique", "Repère scientifique", "Repère institutionnel", "Fondement juridique identifié"]
+              - { label: "Définition de référence", name: "definition", widget: "text", hint: "Expliquer le sens établi en langage accessible, sans y intégrer la position particulière de Diploval." }
+              - { label: "Explication complémentaire de référence", name: "details", widget: "text", required: false, hint: "Précisions neutres. Distinguer les règles, les usages et les controverses." }
+              - { label: "Texte juridique de référence — intitulé", name: "reference_source_label", widget: "string", required: false, hint: "Obligatoire si « Fondement juridique identifié ». Citer la loi, le traité ou l’article précis, pas uniquement le nom d’une institution." }
+              - { label: "Texte juridique de référence — lien https", name: "reference_source_url", widget: "string", required: false, hint: "Lien vers le texte officiel vérifié. Une référence juridique identifiée sans lien valide bloque la génération du site." }
+              - { label: "Lecture Diploval — fondements du vivant", name: "diploval_view", widget: "text", required: false, hint: "Présenter clairement l’approche propre à Diploval, distincte du sens juridique ou scientifique. Ne remplir que si cette lecture apporte quelque chose. Faire référence aux fondements du vivant sans réécrire la définition officielle." }
               - label: "Autres formes ou sigles reconnus"
                 name: "aliases"
                 widget: "list"
