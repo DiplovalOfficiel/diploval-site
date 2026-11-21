@@ -35,6 +35,13 @@ export function generateDico(root, {head,layout,org,website,breadcrumb,addMap}) 
     if (!entry.term || !entry.definition || !entry.category) throw Error('Dico : terme, catégorie ou définition manquante : ' + entry.slug);
     if (!['Brouillon', 'Publié'].includes(entry.status)) throw Error('Dico : statut incorrect : ' + entry.slug);
     if (entry.references && !Array.isArray(entry.references)) throw Error('Dico : références incorrectes : ' + entry.slug);
+    const kinds = ['Explication générale','Repère juridique','Repère scientifique','Repère institutionnel','Fondement juridique identifié'];
+    if (entry.reference_nature && !kinds.includes(entry.reference_nature)) throw Error('Dico : nature de référence incorrecte : ' + entry.slug);
+    if (entry.reference_nature === 'Fondement juridique identifié' &&
+      !(entry.reference_source_label && safeExternal(entry.reference_source_url))) {
+      throw Error('Dico : référence juridique officielle manquante : ' + entry.slug);
+    }
+    if (entry.diploval_view && typeof entry.diploval_view !== 'string') throw Error('Dico : lecture Diploval invalide : ' + entry.slug);
     slugs.add(entry.slug);
   }
   const entries = raw.entries.filter(published).sort((a,b) => a.term.localeCompare(b.term, 'fr', {sensitivity:'base'}));
@@ -69,9 +76,9 @@ export function generateDico(root, {head,layout,org,website,breadcrumb,addMap}) 
     '<p id="dico-count" role="status" aria-live="polite">' + entries.length + ' définitions disponibles</p>' +
     '<div id="dico-groups">' + groups + '</div>' +
     '<p id="dico-empty" hidden>Aucun terme ne correspond à cette recherche.</p></div>';
-  const side = '<div class="seo-detail-card"><h2>Comment utiliser le Dico ?</h2><p>Cliquez sur un terme pour consulter sa définition complète, ses précisions et les publications associées.</p><p>Le dictionnaire s’enrichit progressivement, après vérification des entrées.</p><p>Une définition explique un mot ; nos dossiers examinent les faits, les débats et les propositions.</p></div>';
+  const side = '<div class="seo-detail-card"><h2>Comment utiliser le Dico ?</h2><p>Chaque fiche présente le sens de référence d’un terme et, lorsque c’est utile, la manière dont Diploval l’aborde.</p><p>Une interprétation propre à Diploval ne remplace jamais une définition juridique, scientifique ou institutionnelle établie.</p><p>Les références sont indiquées lorsque des textes précis peuvent être identifiés.</p></div>';
   let indexHtml = head({title:'Le Dico Diploval — mots et expressions expliqués',desc:'Comprendre les mots du droit, de la diplomatie, des institutions, de l’économie et du vivant. Définitions classées de A à Z et recherche.',url:indexUrl,image:webImage,jsonld:indexGraph}) +
-    layout({back:['Accueil','/'],eyebrow:'Ressources pour comprendre',title:'Le Dico Diploval',lead:'Les mots et expressions de nos publications, expliqués simplement.',body,side});
+    layout({back:['Accueil','/'],eyebrow:'Ressources pour comprendre',title:'Le Dico Diploval',lead:'Des définitions accessibles, des références et, lorsque c’est pertinent, le regard de Diploval sur les conditions du vivant.',body,side});
   indexHtml = extra(indexHtml).replace('</body>', '<script src="/dico.js?v=1" defer></script></body>');
   write('dico/index.html',indexHtml);
   addMap(indexUrl);
@@ -97,16 +104,26 @@ export function generateDico(root, {head,layout,org,website,breadcrumb,addMap}) 
       phrases.some(term => termIsIn(term, [p.title,p.summary,p.short_summary,p.keywords].filter(Boolean).join(' ')))).slice(0,5);
     const usedIn = matches.length ? '<h2>Dans les publications Diploval</h2><ul>' +
       matches.map(p => '<li><a href="/publications/' + encodeURIComponent(publicationId(p)) + '/">' + esc(p.title) + '</a></li>').join('') + '</ul>' : '';
-    const main = '<div class="dv-dico-definition"><p class="dv-dico-category">' + esc(entry.category) + '</p><p class="dv-dico-short">' + esc(entry.definition) + '</p>' +
-      (entry.details ? '<h2>Pour mieux comprendre</h2>' + paragraphs(entry.details) : '') +
+    const sourceLink = entry.reference_source_label && safeExternal(entry.reference_source_url)
+      ? '<p class="dv-dico-official"><strong>Texte de référence :</strong> <a href="' + esc(entry.reference_source_url) + '" target="_blank" rel="noopener noreferrer">' + esc(entry.reference_source_label) + '</a></p>' : '';
+    const perspective = entry.diploval_view
+      ? '<section class="dv-dico-perspective" aria-labelledby="dico-perspective-title"><h2 id="dico-perspective-title">Lecture Diploval — fondements du vivant</h2>' +
+        paragraphs(entry.diploval_view) +
+        '<p class="dv-dico-perspective-note">Cette lecture présente l’approche éditoriale de Diploval. Elle ne remplace pas la définition de référence ni les textes de droit applicables. <a href="/publications/charte/">Consulter notre Charte des fondamentaux du vivant</a>.</p></section>' : '';
+    const main = '<div class="dv-dico-definition"><p class="dv-dico-category">' + esc(entry.category) + '</p>' +
+      '<section class="dv-dico-reference" aria-labelledby="dico-reference-title"><h2 id="dico-reference-title">Définition de référence</h2>' +
+      '<p class="dv-dico-reference-kind">' + esc(entry.reference_nature || 'Explication générale') + '</p>' +
+      '<p class="dv-dico-short">' + esc(entry.definition) + '</p>' +
+      (entry.details ? '<h3>Pour mieux comprendre</h3>' + paragraphs(entry.details) : '') +
+      sourceLink + '</section>' + perspective +
       ((entry.aliases || []).length ? '<p class="dv-dico-aliases"><strong>Autres formulations :</strong> ' + esc(entry.aliases.join(' · ')) + '</p>' : '') +
       relatedHtml + usedIn + sourceHtml +
       '<p class="dv-dico-return"><a href="/dico/">← Revenir au Dico</a></p></div>';
-    const aside = '<div class="seo-detail-card"><h2>À propos de cette définition</h2><p>Une explication synthétique, à replacer dans son contexte juridique, politique ou scientifique.</p>' +
+    const aside = '<div class="seo-detail-card"><h2>À propos de cette fiche</h2><p>La définition de référence décrit le sens établi ou documenté du terme. Lorsque Diploval propose sa propre lecture, elle est identifiée séparément et n’a pas de valeur juridique officielle.</p>' +
       (publishedDate ? '<p>Révisée le ' + esc(publishedDate) + '</p>' : '') +
       '<p><a href="mailto:contact@diploval.fr?subject=' + encodeURIComponent('Correction Dico : ' + entry.term) + '">Signaler une imprécision</a></p></div>';
     const html = extra(head({title:entry.term+' — Le Dico Diploval',desc:entry.definition.slice(0,155),url,image:webImage,jsonld:graph}) +
-      layout({back:['Le Dico Diploval','/dico/'],eyebrow:'Dictionnaire · '+entry.category,title:entry.term,lead:entry.definition,body:main,side:aside}));
+      layout({back:['Le Dico Diploval','/dico/'],eyebrow:'Dictionnaire · '+entry.category,title:entry.term,lead:'Définition, contexte et lecture du vivant',body:main,side:aside}));
     write('dico/'+entry.slug+'/index.html',html);
     addMap(url,publishedDate);
   }
