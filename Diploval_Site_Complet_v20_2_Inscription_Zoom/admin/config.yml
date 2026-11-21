@@ -486,3 +486,55 @@ collections:
                     fields:
                       - { label: "Nom", name: "label", widget: "string" , hint: "Nom court ou intitulé affiché dans l’interface. Choisir un texte compréhensible pour une personne extérieure au projet." }
                       - { label: "Lien", name: "url", widget: "string" , hint: "Adresse complète de la source ou du lien, de préférence en https://. Tester le lien avant publication et vérifier qu’il pointe vers le bon document." }
+
+  - name: "dictionnaire_admin"
+    label: "Le Dico Diploval"
+    files:
+      - label: "Mots et expressions"
+        name: "dictionnaire"
+        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/dictionnaire.json"
+        format: "json"
+        fields:
+          - label: "Définitions"
+            name: "entries"
+            widget: "list"
+            collapsed: true
+            add_to_top: true
+            summary: "{{fields.term}} — {{fields.status}}"
+            label_singular: "Ajouter un terme"
+            hint: "Les nouvelles définitions restent invisibles tant que leur statut et leur visibilité ne sont pas validés. Les liens dans les textes sont ensuite produits automatiquement."
+            fields:
+              - { label: "Terme ou expression", name: "term", widget: "string" }
+              - { label: "Identifiant permanent", name: "slug", widget: "string", hint: "Lettres minuscules non accentuées, chiffres et tirets (ex. droit-international). Ne jamais modifier après publication." }
+              - label: "Catégorie"
+                name: "category"
+                widget: "select"
+                options: ["Agriculture", "Diplomatie", "Droit", "Économie", "Environnement", "Éthique et société", "Institutions", "Numérique", "Politique", "Sciences et territoires"]
+              - { label: "Définition courte", name: "definition", widget: "text", hint: "Une ou deux phrases claires, neutres et vérifiables." }
+              - { label: "Explication complémentaire", name: "details", widget: "text", required: false, hint: "Approfondissement en langage courant, éventuellement avec plusieurs paragraphes." }
+              - label: "Autres formes ou sigles reconnus"
+                name: "aliases"
+                widget: "list"
+                required: false
+                field: { label: "Autre forme", name: "alias", widget: "string" }
+                hint: "Ex. DIH pour Droit international humanitaire. Éviter les abréviations ambiguës."
+              - label: "Voir aussi — identifiants des autres entrées"
+                name: "related"
+                widget: "list"
+                required: false
+                field: { label: "Identifiant associé", name: "slug", widget: "string" }
+              - label: "Références vérifiables"
+                name: "references"
+                widget: "list"
+                required: false
+                collapsed: true
+                fields:
+                  - { label: "Intitulé de la référence", name: "label", widget: "string" }
+                  - { label: "Lien https", name: "url", widget: "string" }
+              - { label: "Dernière révision", name: "updated_at", widget: "datetime", required: false, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+              - label: "Statut éditorial"
+                name: "status"
+                widget: "select"
+                default: "Brouillon"
+                options: ["Brouillon", "Publié"]
+              - { label: "Visible publiquement", name: "visible", widget: "boolean", default: false, hint: "La publication requiert à la fois le statut Publié et cette case cochée. Les brouillons ne sont pas affichés ni liés automatiquement." }
