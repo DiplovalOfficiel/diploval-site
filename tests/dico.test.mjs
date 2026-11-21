@@ -76,3 +76,18 @@ test('Toutes les fiches publiques et références croisées sont cohérentes', (
   }
 });
 
+test('Le Dico est présenté dans un encadré visible sur l’accueil, avec son visuel et un accès direct', () => {
+  const home = fs.readFileSync(path.join(root,'index.html'),'utf8');
+  const header = fs.readFileSync(path.join(root,'scripts/templates/site-header.template'),'utf8');
+  const css = fs.readFileSync(path.join(root,'dico-spotlight.css'),'utf8');
+  const visual = fs.readFileSync(path.join(root,'assets/dico-diplo-visuel.svg'),'utf8');
+  assert.match(home, /class="dico-spotlight"/);
+  assert.match(home, /id="dico-spotlight-title"/);
+  assert.match(home, /Explorer le dictionnaire/);
+  assert.match(home, /src="\/assets\/dico-diplo-visuel\.svg"/);
+  assert.match(header, />Dico Diplo<\/a>/);
+  assert.match(css, /@media\(max-width:820px\)/);
+  assert.match(visual, /data:image\/webp;base64,/);
+  assert.ok(home.indexOf('class="dico-spotlight"') < home.indexOf('class="institutional-front"'), 'Encadré placé trop bas dans l’accueil');
+});
+
