@@ -27,3 +27,17 @@
 .dv-dico-autolink:hover,.dv-dico-autolink:focus-visible{text-decoration-style:solid;color:#8b5428}
 .dv-dico-entry[hidden],.dv-dico-group[hidden],#dico-empty[hidden]{display:none!important}
 @media(max-width:640px){.dv-dico-entry{padding:.75rem}.dv-dico-alpha{gap:.25rem}.dv-dico-alpha a,.dv-dico-alpha span{min-width:1.55rem}}
+
+/* Deux lectures clairement séparées : sens de référence et interprétation Diploval. */
+.dv-dico-reference,.dv-dico-perspective{margin:1.2rem 0 1.65rem;padding:1.15rem 1.3rem;border-radius:.7rem;overflow-wrap:anywhere}
+.dv-dico-reference{border:1px solid #cfdae1;background:#fff}
+.dv-dico-perspective{border-left:3px solid #a8744f;background:#f8f6f2}
+.dv-dico-reference h2,.dv-dico-perspective h2{font-size:1.35rem;line-height:1.25;margin:.05rem 0 .65rem}
+.dv-dico-reference h3{font-size:1.1rem;line-height:1.3;margin:1.1rem 0 .45rem}
+.dv-dico-reference-kind{font-size:.86rem;line-height:1.35;color:#536778;font-weight:650;margin:0 0 .8rem}
+.dv-dico-reference .dv-dico-short{margin:.2rem 0 .85rem}
+.dv-dico-official{font-size:.92rem;border-top:1px solid #e0e7e9;padding-top:.85rem;margin:1.05rem 0 .15rem}
+.dv-dico-perspective p{line-height:1.7}
+.dv-dico-perspective-note{font-size:.87rem;color:#566676;border-top:1px solid #ddd6cb;padding-top:.75rem;margin-top:.9rem}
+.dv-dico-perspective a,.dv-dico-official a{overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:.15em}
+@media(max-width:640px){.dv-dico-reference,.dv-dico-perspective{padding:.9rem 1rem}}
