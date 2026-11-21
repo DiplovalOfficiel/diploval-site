@@ -12,10 +12,11 @@ Le Dico est un dictionnaire citoyen distinct des dossiers de recherche et de la 
 
 ## Création d'une fiche
 1. Ajouter le mot ou l'expression, et choisir un identifiant permanent en minuscules non accentuées et avec des tirets.
-2. Rédiger une définition courte claire et l'explication complémentaire ; préciser le sens juridique ou scientifique.
-3. Ajouter les variantes non ambiguës (sigles compris) et, si nécessaire, des références vérifiables.
-4. Vérifier les termes associés et les éventuels renvois vers des publications.
-5. Mettre « Publié » et « Visible publiquement » après relecture. Conserver les brouillons invisibles.
+2. Indiquer la **nature de la définition de référence** : explication générale, repère juridique, scientifique ou institutionnel. Ne choisir « Fondement juridique identifié » qu'avec un titre de texte exact et un lien officiel vérifiable (deux champs dédiés obligatoires).
+3. Rédiger la définition de référence et les précisions **sans y mélanger la lecture éditoriale propre à Diploval**. Lorsqu'une notion dispose d'un fondement légal, distinguer la citation normative d'une paraphrase.
+4. Utiliser, si pertinent, le champ **« Lecture Diploval — fondements du vivant »** pour expliciter l'approche de Diploval. Ce champ est optionnel : ne pas forcer une lecture originale artificielle sur chaque terme. Les références à la Charte servent à expliciter nos valeurs, sans prétendre remplacer le droit positif.
+5. Ajouter les variantes non ambiguës (sigles compris), les références vérifiables et les termes associés.
+6. Mettre « Publié » et « Visible publiquement » après relecture. Conserver les brouillons invisibles.
 
 ## Liens automatiques
 - Sur les pages HTML générées, le script `dico-links.js` lit les fiches publiées et transforme au plus 12 premières occurrences utiles en liens vers les définitions.
@@ -36,3 +37,9 @@ Les fiches de définition peuvent renvoyer aux publications dont le titre, la pr
 - Vérifier navigation mobile, recherche A–Z, contraste, versions d'URL, PDF intégré et sitemap.
 - Faire relire les définitions par un responsable éditorial avant leur mise en ligne.
 - Ne pas publier la future encyclopédie comme si elle existait déjà.
+
+## Présentation publique des deux niveaux
+- La section « Définition de référence » est toujours affichée. Elle est étiquetée selon la nature de son fondement, avec renvoi au texte juridique lorsque disponible.
+- La section « Lecture Diploval — fondements du vivant » apparaît uniquement si le champ est rempli. Elle porte une mention explicite d’interprétation éditoriale et un lien vers la Charte.
+- Le contenu de Diploval n’est jamais publié sous l’étiquette « définition officielle ». Une source juridique précise est nécessaire pour qualifier une définition de « fondement juridique identifié ».
+- Les pages du Dico gardent un affichage sobre, contrasté, lisible sur mobile, compatible avec la recherche alphabétique et les liens automatiques.
