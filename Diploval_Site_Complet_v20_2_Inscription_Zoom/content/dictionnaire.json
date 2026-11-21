@@ -1,0 +1,2181 @@
+{
+  "entries": [
+    {
+      "slug": "accord-multilateral",
+      "term": "Accord multilatéral",
+      "category": "Diplomatie",
+      "definition": "Accord conclu entre plus de deux parties, souvent des États ou des organisations internationales.",
+      "details": "Il peut porter sur la coopération, les échanges, la paix ou des obligations communes. Sa valeur juridique dépend du contenu et du cadre de conclusion.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "accord-cadre",
+      "term": "Accord-cadre",
+      "category": "Diplomatie",
+      "definition": "Texte qui fixe des principes, des objectifs et des mécanismes généraux en vue d’un accord plus précis.",
+      "details": "Un accord-cadre peut prévoir des étapes, des protocoles ou des négociations ultérieures. Sa portée juridique dépend notamment de ses termes, de ses signataires et de l’intention de créer des obligations.",
+      "aliases": [
+        "accord cadre"
+      ],
+      "related": [
+        "mediation",
+        "mission-de-verification"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Explication générale",
+      "diploval_view": "Dans ses propositions de règlement des conflits, Diploval examine aussi la protection effective des populations, des infrastructures civiles et des conditions du vivant, ainsi que les garanties permettant de vérifier l’application de l’accord."
+    },
+    {
+      "slug": "adaptation-climatique",
+      "term": "Adaptation climatique",
+      "category": "Environnement",
+      "definition": "Ensemble des ajustements destinés à réduire les conséquences des changements climatiques actuels ou attendus.",
+      "details": "L’adaptation comprend notamment la gestion de l’eau, la protection contre les vagues de chaleur et l’adaptation des infrastructures.",
+      "aliases": [],
+      "related": [
+        "changement-climatique",
+        "secheresse",
+        "gestion-integree-eau"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère scientifique",
+      "diploval_view": "Diploval considère l’eau, les sols, la biodiversité et les équilibres territoriaux comme des conditions préalables aux choix d’aménagement. L’efficacité d’une adaptation doit être appréciée sur le terrain et dans la durée."
+    },
+    {
+      "slug": "agriculture-biologique",
+      "term": "Agriculture biologique",
+      "category": "Agriculture",
+      "definition": "Mode de production agricole soumis à un cahier des charges réglementé, avec des règles concernant notamment les intrants et les pratiques d’élevage.",
+      "details": "L’appellation réglementaire ne signifie pas automatiquement absence totale d’impact environnemental.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "agroecologie",
+        "intrants-agricoles"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "agriculture-regenerative",
+      "term": "Agriculture régénératrice",
+      "category": "Agriculture",
+      "definition": "Ensemble d’approches agricoles cherchant à restaurer ou améliorer des fonctions des sols et des écosystèmes.",
+      "details": "Le terme n’a pas une définition unique universellement reconnue ; les pratiques et indicateurs de résultat doivent donc être explicités.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "sol-vivant",
+        "agroecologie",
+        "agroforesterie"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "agriculture-syntropique",
+      "term": "Agriculture syntropique",
+      "category": "Agriculture",
+      "definition": "Pratique agroforestière visant à organiser les cultures et les arbres selon leurs interactions et leur succession dans le temps.",
+      "details": "Elle s’inspire des dynamiques de régénération des écosystèmes. Ses performances dépendent notamment du contexte climatique, du sol et de la conduite du système.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "agroforesterie",
+        "restauration-ecologique"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval s’intéresse à ces approches sans les présenter comme des solutions universelles : leurs effets doivent être mesurés localement."
+    },
+    {
+      "slug": "agroecologie",
+      "term": "Agroécologie",
+      "category": "Agriculture",
+      "definition": "Approche qui mobilise les principes de l’écologie pour concevoir et faire évoluer les systèmes agricoles.",
+      "details": "Elle considère les interactions entre sols, plantes, animaux, eau et activités humaines. Elle recouvre des pratiques et des trajectoires variées.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "agroforesterie",
+        "agriculture-syntropique",
+        "sol-vivant"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Pour Diploval, l’évaluation d’une pratique agroécologique doit considérer les résultats observés : état des sols, eau, biodiversité, travail et revenu des producteurs."
+    },
+    {
+      "slug": "agroforesterie",
+      "term": "Agroforesterie",
+      "category": "Agriculture",
+      "definition": "Association volontaire d’arbres avec des cultures ou des activités d’élevage sur un même espace de production.",
+      "details": "Les arbres peuvent contribuer à la qualité des sols, à l’ombre et à la régulation de l’eau, selon les essences et la conception du système.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "agroecologie",
+        "agriculture-syntropique",
+        "biodiversite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "algorithme",
+      "term": "Algorithme",
+      "category": "Numérique",
+      "definition": "Suite d’instructions destinées à résoudre un problème ou à produire un résultat selon des étapes définies.",
+      "details": "Un algorithme peut être exécuté par un humain ou un ordinateur ; il ne relève pas nécessairement de l’intelligence artificielle.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "anonymisation",
+      "term": "Anonymisation",
+      "category": "Numérique",
+      "definition": "Transformation de données visant à rendre impossible l’identification d’une personne par des moyens raisonnablement susceptibles d’être utilisés.",
+      "details": "Elle se distingue de la pseudonymisation, qui permet encore une réidentification au moyen d’informations complémentaires.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "pseudonymisation",
+        "donnees-personnelles"
+      ],
+      "references": [
+        {
+          "label": "CNIL — Définition des données personnelles",
+          "url": "https://www.cnil.fr/fr/definition/donnee-personnelle"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "arbitrage",
+      "term": "Arbitrage",
+      "category": "Droit",
+      "definition": "Mode de règlement d’un différend par une ou plusieurs personnes choisies pour trancher selon les règles convenues.",
+      "details": "En droit, la décision arbitrale peut avoir une portée obligatoire selon le cadre applicable. Le mot est aussi utilisé plus largement pour désigner un choix entre priorités.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "artificialisation-des-sols",
+      "term": "Artificialisation des sols",
+      "category": "Environnement",
+      "definition": "Altération durable des fonctions écologiques d’un sol, notamment par son occupation ou son utilisation.",
+      "details": "Elle concerne les fonctions biologiques, hydriques, climatiques et agronomiques. Elle ne se résume pas toujours à la seule présence de béton.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "zero-artificialisation-nette",
+        "renaturation",
+        "sol-vivant"
+      ],
+      "references": [
+        {
+          "label": "ADEME — Artificialisation des sols",
+          "url": "https://batizoom.ademe.fr/chiffres-cles/artificialisation-des-sols"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Dans l’approche Diploval, un projet d’aménagement doit d’abord examiner ce que le sol permet au vivant et au territoire, avant d’envisager sa transformation."
+    },
+    {
+      "slug": "assemblee-nationale",
+      "term": "Assemblée nationale",
+      "category": "Institutions",
+      "definition": "Assemblée du Parlement français composée de députés élus au suffrage universel direct.",
+      "details": "Elle examine et vote les textes de loi, contrôle l’action du gouvernement et participe à l’évaluation des politiques publiques.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "attenuation-climatique",
+      "term": "Atténuation du changement climatique",
+      "category": "Environnement",
+      "definition": "Actions destinées à réduire les émissions de gaz à effet de serre ou à augmenter leur absorption.",
+      "details": "Elle se distingue de l’adaptation, qui vise à faire face aux effets du changement climatique déjà présents ou attendus.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "base-legale-rgpd",
+      "term": "Base légale du traitement (RGPD)",
+      "category": "Droit",
+      "definition": "Fondement juridique autorisant un traitement de données personnelles dans les conditions prévues par le RGPD.",
+      "details": "Le consentement n’est qu’une des bases possibles. Le responsable doit déterminer celle qui convient au traitement et respecter les autres obligations applicables.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "reglement-general-protection-donnees",
+        "consentement-rgpd"
+      ],
+      "references": [
+        {
+          "label": "CNIL — Bases légales des traitements",
+          "url": "https://www.cnil.fr/fr/les-bases-legales/liceite-essentiel-sur-les-bases-legales"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Pour Diploval, la participation citoyenne exige une justification précise des traitements et une information compréhensible, sans confondre participation volontaire et consentement juridique."
+    },
+    {
+      "slug": "bassin-versant",
+      "term": "Bassin versant",
+      "category": "Environnement",
+      "definition": "Territoire dont les eaux de surface convergent vers un même cours d’eau, un lac ou un point de sortie.",
+      "details": "Ses limites sont liées au relief ; les circulations souterraines peuvent parfois suivre d’autres chemins.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "hydrologie",
+        "cycle-de-leau",
+        "gestion-integree-eau"
+      ],
+      "references": [
+        {
+          "label": "Office français de la biodiversité — Glossaire",
+          "url": "https://ofb.gouv.fr/glossaire"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval privilégie une lecture de l’eau à l’échelle du bassin, qui met en relation pluies, sols, usages et écosystèmes."
+    },
+    {
+      "slug": "biocapacite",
+      "term": "Biocapacité",
+      "category": "Environnement",
+      "definition": "Capacité des surfaces biologiquement productives à fournir des ressources renouvelables et à absorber certains déchets, selon une méthode de comptabilité écologique.",
+      "details": "La biocapacité est notamment mobilisée pour calculer l’empreinte écologique et le jour du dépassement.",
+      "aliases": [],
+      "related": [
+        "empreinte-ecologique",
+        "limites-planetaires"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère scientifique",
+      "diploval_view": "Diploval considère cet indicateur comme un signal utile de pression écologique, sans en faire une mesure exhaustive. Les résultats doivent être rapprochés des réalités territoriales, des inégalités et des limites méthodologiques."
+    },
+    {
+      "slug": "biodiversite",
+      "term": "Biodiversité",
+      "category": "Environnement",
+      "definition": "La biodiversité, ou diversité biologique, recouvre la variabilité des organismes vivants, notamment au sein des espèces, entre les espèces et entre les écosystèmes.",
+      "details": "La biodiversité comprend aussi les interactions entre les êtres vivants et leurs milieux.",
+      "aliases": [],
+      "related": [
+        "ecosysteme",
+        "especes-exotiques-envahissantes",
+        "zones-humides"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Fondement juridique identifié",
+      "diploval_view": "Pour Diploval, la biodiversité n’est pas seulement un inventaire d’espèces ou une ressource économique. Elle exprime des relations entre êtres vivants et milieux qui conditionnent la possibilité même de vivre.",
+      "reference_source_label": "Code de l’environnement, article L. 110-1",
+      "reference_source_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043975398/2026-02-21"
+    },
+    {
+      "slug": "biosecurite",
+      "term": "Biosécurité",
+      "category": "Environnement",
+      "definition": "Ensemble de mesures destinées à prévenir ou limiter les risques biologiques pour les humains, les animaux, les végétaux ou les écosystèmes.",
+      "details": "Son sens et ses pratiques varient selon les secteurs, notamment la santé, l’agriculture et la protection des milieux.",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère scientifique",
+      "diploval_view": "L’approche Diploval privilégie la prévention, la surveillance et des réponses proportionnées aux risques. Elle examine aussi les conséquences des interventions sur les espèces, les milieux et les activités humaines."
+    },
+    {
+      "slug": "cadmium",
+      "term": "Cadmium",
+      "category": "Environnement",
+      "definition": "Élément chimique métallique toxique dont certaines expositions présentent des risques pour la santé.",
+      "details": "Il peut notamment être présent dans certains sols et entrer dans la chaîne alimentaire. Les risques dépendent des niveaux et des durées d’exposition.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval examine le cheminement des substances depuis les activités économiques jusqu’aux sols, aux aliments et aux organismes, afin d’identifier les responsabilités et les moyens de prévention."
+    },
+    {
+      "slug": "cessez-le-feu",
+      "term": "Cessez-le-feu",
+      "category": "Diplomatie",
+      "definition": "Arrêt convenu ou imposé des hostilités, pour une durée déterminée ou indéterminée.",
+      "details": "Un cessez-le-feu n’équivaut pas nécessairement à un traité de paix ni à un règlement politique du conflit.",
+      "aliases": [
+        "cessez le feu"
+      ],
+      "related": [
+        "desescalade",
+        "mission-de-verification"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Explication générale",
+      "diploval_view": "Dans une démarche de paix durable, Diploval s’intéresse aux garanties qui protègent réellement les personnes, les milieux et les infrastructures indispensables à la vie, au-delà de l’arrêt immédiat des combats."
+    },
+    {
+      "slug": "changement-climatique",
+      "term": "Changement climatique",
+      "category": "Environnement",
+      "definition": "Modification durable des caractéristiques du climat à l’échelle d’une région ou de la planète.",
+      "details": "Le réchauffement actuel est principalement dû aux émissions humaines de gaz à effet de serre. Il modifie notamment les températures, les précipitations et les extrêmes.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "adaptation-climatique",
+        "attenuation-climatique",
+        "limites-planetaires"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "charte-environnement",
+      "term": "Charte de l’environnement",
+      "category": "Droit",
+      "definition": "Texte de valeur constitutionnelle en France qui énonce des droits et des devoirs relatifs à la protection de l’environnement.",
+      "details": "Elle a été intégrée au bloc de constitutionnalité en 2005 et comporte dix articles.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval l’utilise comme un fondement juridique à articuler avec l’état des connaissances et les réalités écologiques des territoires.",
+      "reference_source_label": "Charte de l’environnement, loi constitutionnelle du 1er mars 2005 — Légifrance",
+      "reference_source_url": "https://www.legifrance.gouv.fr/contenu/menu/droit-national-en-vigueur/constitution/charte-de-l-environnement"
+    },
+    {
+      "slug": "conflit-arme",
+      "term": "Conflit armé",
+      "category": "Diplomatie",
+      "definition": "Situation d’affrontement relevant du droit international humanitaire en raison de l’implication de forces étatiques ou de groupes armés, selon des critères juridiques.",
+      "details": "Le droit distingue notamment les conflits armés internationaux et non internationaux. Toutes les violences ne constituent pas automatiquement un conflit armé au sens juridique.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "droit-international-humanitaire",
+        "crime-de-guerre"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "consentement-rgpd",
+      "term": "Consentement (RGPD)",
+      "category": "Droit",
+      "definition": "Manifestation de volonté libre, spécifique, éclairée et univoque par laquelle une personne accepte un traitement déterminé de ses données.",
+      "details": "Il ne doit pas être déduit du silence ou d’une case précochée. Un consentement valable doit pouvoir être retiré selon les règles applicables.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [
+        "base-legale-rgpd",
+        "donnees-personnelles"
+      ],
+      "references": [
+        {
+          "label": "CNIL — Consentement (RGPD)",
+          "url": "https://www.cnil.fr/fr/definition/consentement-rgpd"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_source_label": "RGPD, article 4, point 11 — EUR-Lex",
+      "reference_source_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32016R0679"
+    },
+    {
+      "slug": "consultation-citoyenne",
+      "term": "Consultation citoyenne",
+      "category": "Institutions",
+      "definition": "Démarche qui invite des citoyens à exprimer des avis, des arguments ou des propositions sur une question déterminée.",
+      "details": "Selon le dispositif, la consultation peut être ouverte, ciblée, réglementée ou simplement volontaire. Son résultat n’est pas automatiquement une décision obligatoire.",
+      "aliases": [],
+      "related": [
+        "moderation-prealable",
+        "restitution-publique",
+        "donnees-sensibles"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère institutionnel",
+      "diploval_view": "Diploval conçoit la consultation comme un échange structuré, accessible et contradictoire. Les contributions doivent être examinées, les suites rendues compréhensibles et les garanties de confidentialité respectées."
+    },
+    {
+      "slug": "continuite-services-essentiels",
+      "term": "Continuité des services essentiels",
+      "category": "Sciences et territoires",
+      "definition": "Capacité à maintenir ou rétablir des services indispensables lors d’une perturbation.",
+      "details": "L’eau, les soins, l’énergie, les communications ou l’alimentation peuvent nécessiter des mesures de secours et des plans adaptés.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "defaillance-en-cascade",
+        "cybersecurite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval évalue les dépendances entre infrastructures et les solutions de secours réellement accessibles aux personnes en situation de crise."
+    },
+    {
+      "slug": "continuite-ecologique",
+      "term": "Continuité écologique",
+      "category": "Environnement",
+      "definition": "Possibilité pour les espèces, les sédiments et certains processus naturels de circuler ou de fonctionner entre des milieux reliés.",
+      "details": "Elle est particulièrement importante pour les cours d’eau et les corridors écologiques. Les mesures de restauration doivent tenir compte des usages et des milieux concernés.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "contradiction-des-arguments",
+      "term": "Contradiction des arguments",
+      "category": "Éthique et société",
+      "definition": "Examen d’arguments différents ou opposés afin de vérifier les faits, tester des hypothèses et éclairer les désaccords.",
+      "details": "La confrontation des positions ne suppose pas qu’elles disposent toutes du même niveau de preuve.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "verification-faits",
+        "transparence"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval recherche la contradiction documentée pour distinguer ce qui résiste à la vérification des affirmations simplement répétées."
+    },
+    {
+      "slug": "controle-parlementaire",
+      "term": "Contrôle parlementaire",
+      "category": "Institutions",
+      "definition": "Ensemble des moyens par lesquels le Parlement examine l’action du gouvernement et demande des comptes sur celle-ci.",
+      "details": "Il peut notamment s’exercer par les questions, les commissions, les auditions ou les enquêtes parlementaires.",
+      "aliases": [],
+      "related": [
+        "assemblee-nationale",
+        "evaluation-politiques-publiques"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Fondement juridique identifié",
+      "diploval_view": "Pour Diploval, le contrôle ne se mesure pas seulement à l’existence de procédures. Il importe aussi de regarder les informations accessibles, les contradictions examinées et les conséquences réelles des décisions.",
+      "reference_source_label": "Constitution du 4 octobre 1958, article 24",
+      "reference_source_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000019241014?init=true"
+    },
+    {
+      "slug": "cour-internationale-justice",
+      "term": "Cour internationale de Justice (CIJ)",
+      "category": "Institutions",
+      "definition": "Organe judiciaire principal de l’Organisation des Nations unies, chargé de régler certains différends juridiques entre États et de donner des avis consultatifs.",
+      "details": "Elle ne juge pas directement des personnes physiques pour des crimes internationaux. Elle se distingue de la Cour pénale internationale.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [
+        "CIJ"
+      ],
+      "related": [
+        "cour-penale-internationale",
+        "droit-international"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "cour-penale-internationale",
+      "term": "Cour pénale internationale (CPI)",
+      "category": "Institutions",
+      "definition": "Juridiction pénale internationale permanente pouvant juger des personnes pour certains crimes internationaux relevant de sa compétence.",
+      "details": "Sa compétence est soumise aux conditions du Statut de Rome et à d’autres règles applicables. Elle n’est pas une juridiction de l’ONU.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [
+        "CPI"
+      ],
+      "related": [
+        "cour-internationale-justice",
+        "crime-de-guerre"
+      ],
+      "references": [
+        {
+          "label": "Cour pénale internationale — Fonctionnement de la Cour",
+          "url": "https://www.icc-cpi.int/fr/about/how-the-court-works"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "crime-de-guerre",
+      "term": "Crime de guerre",
+      "category": "Droit",
+      "definition": "Violation grave de certaines règles du droit international humanitaire engageant une responsabilité pénale individuelle lorsqu’en sont réunis les éléments juridiques.",
+      "details": "La qualification repose sur le contexte du conflit, les actes constatés, les éléments intentionnels et le droit applicable ; une accusation ne vaut pas condamnation.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "droit-international-humanitaire",
+        "cour-penale-internationale"
+      ],
+      "references": [
+        {
+          "label": "Cour pénale internationale — Statut de Rome",
+          "url": "https://www.icc-cpi.int/fr/publications/textes-juridiques-fondamentaux/statut-de-rome-de-la-cour-penale-internationale"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "cybersecurite",
+      "term": "Cybersécurité",
+      "category": "Numérique",
+      "definition": "Ensemble des pratiques et moyens visant à protéger les systèmes informatiques, les réseaux et les données contre des incidents ou attaques.",
+      "details": "Elle repose sur la prévention, la détection, la réponse aux incidents et la capacité de rétablissement.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "cycle-de-leau",
+      "term": "Cycle de l’eau",
+      "category": "Environnement",
+      "definition": "Ensemble des circulations et transformations de l’eau entre atmosphère, sols, cours d’eau, océans et êtres vivants.",
+      "details": "Il comprend notamment évaporation, condensation, précipitations, infiltration et écoulement. Les activités humaines peuvent en modifier localement le fonctionnement.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "hydrologie",
+        "infiltration",
+        "nappes-souterraines"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Pour Diploval, la gestion de l’eau ne doit pas être réduite au volume prélevé : qualité des sols, végétation, nappes et cycles écologiques doivent aussi être examinés."
+    },
+    {
+      "slug": "decentralisation",
+      "term": "Décentralisation",
+      "category": "Institutions",
+      "definition": "Organisation par laquelle l’État confie des compétences à des collectivités dotées d’une personnalité juridique et d’autorités propres.",
+      "details": "Elle se distingue de la déconcentration, qui répartit l’action des services de l’État sur le territoire.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [
+        "deconcentration",
+        "subsidiarite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "decision-publique",
+      "term": "Décision publique",
+      "category": "Institutions",
+      "definition": "Choix adopté par une autorité publique dans l’exercice de ses compétences.",
+      "details": "Ses objectifs, sa légalité, ses moyens et ses effets concrets peuvent faire l’objet d’évaluations distinctes.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [
+        "responsabilite-politique",
+        "transparence"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval cherche à relier les décisions annoncées aux ressources mobilisées, à leur application et à leurs effets observés sur les populations et les milieux."
+    },
+    {
+      "slug": "deconcentration",
+      "term": "Déconcentration",
+      "category": "Institutions",
+      "definition": "Organisation administrative dans laquelle l’État confie des responsabilités à ses représentants ou services territoriaux.",
+      "details": "Les décisions restent prises au nom de l’État, contrairement à la décentralisation.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [
+        "decentralisation"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "decret",
+      "term": "Décret",
+      "category": "Droit",
+      "definition": "Acte réglementaire ou individuel pris par le président de la République ou par le Premier ministre, selon les compétences prévues par le droit français.",
+      "details": "Un décret doit respecter les normes supérieures qui lui sont applicables ; tous les décrets n’ont pas la même portée.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "defaillance-en-cascade",
+      "term": "Défaillance en cascade",
+      "category": "Sciences et territoires",
+      "definition": "Enchaînement de dysfonctionnements au cours duquel la panne d’un élément provoque ou aggrave d’autres pannes.",
+      "details": "Elle peut apparaître dans les réseaux électriques, informatiques, sanitaires ou logistiques.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval examine les points de dépendance critiques et l’existence de solutions de repli indépendantes."
+    },
+    {
+      "slug": "deficit-public",
+      "term": "Déficit public",
+      "category": "Économie",
+      "definition": "Situation dans laquelle les dépenses des administrations publiques dépassent leurs recettes sur une période donnée.",
+      "details": "Un déficit annuel peut contribuer à augmenter la dette, sans que les deux notions se confondent.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "dette-publique",
+        "fiscalite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "deliberation",
+      "term": "Délibération",
+      "category": "Institutions",
+      "definition": "Processus de discussion et d’examen de plusieurs options avant une décision, ou décision formellement adoptée par un organe collégial.",
+      "details": "Le sens varie selon qu’il s’agit d’un débat citoyen ou d’un acte juridique d’une assemblée.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "desescalade",
+      "term": "Désescalade",
+      "category": "Diplomatie",
+      "definition": "Ensemble de mesures visant à réduire l’intensité d’une confrontation ou le risque d’aggravation d’un conflit.",
+      "details": "Une désescalade peut être militaire, diplomatique, politique ou économique.",
+      "aliases": [],
+      "related": [
+        "cessez-le-feu",
+        "mediation"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Explication générale",
+      "diploval_view": "Diploval envisage la désescalade comme une succession de mesures vérifiables qui réduisent les risques pour les populations, restaurent les canaux de dialogue et préservent les conditions matérielles de la paix."
+    },
+    {
+      "slug": "dette-publique",
+      "term": "Dette publique",
+      "category": "Économie",
+      "definition": "Ensemble des emprunts et autres engagements financiers enregistrés comme dette des administrations publiques selon les règles statistiques retenues.",
+      "details": "Elle doit être distinguée du déficit public, qui mesure un solde sur une période.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "deficit-public",
+        "fiscalite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "diplomatie",
+      "term": "Diplomatie",
+      "category": "Diplomatie",
+      "definition": "Conduite des relations entre États et autres acteurs internationaux par la représentation, le dialogue et la négociation.",
+      "details": "La diplomatie peut notamment chercher à prévenir les conflits, défendre des intérêts, construire des coopérations ou négocier des accords.",
+      "aliases": [],
+      "related": [
+        "mediation",
+        "accord-cadre",
+        "accord-multilateral"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Explication générale",
+      "diploval_view": "La diplomatie éthique du vivant défendue par Diploval cherche à rapprocher les acteurs et les échelles de décision, sans dissocier les intérêts humains des milieux dont ils dépendent."
+    },
+    {
+      "slug": "donnees-personnelles",
+      "term": "Données personnelles",
+      "category": "Numérique",
+      "definition": "Informations se rapportant à une personne physique identifiée ou identifiable, directement ou indirectement.",
+      "details": "Un nom, un identifiant, une adresse IP ou un recoupement de données peuvent permettre l’identification selon le contexte.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [
+        "traitement-donnees-personnelles",
+        "donnees-sensibles",
+        "reglement-general-protection-donnees"
+      ],
+      "references": [
+        {
+          "label": "CNIL — Donnée personnelle",
+          "url": "https://www.cnil.fr/fr/definition/donnee-personnelle"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval considère la protection des données comme une condition de confiance, notamment lorsque les contributions portent sur des opinions sensibles.",
+      "reference_source_label": "RGPD, article 4, point 1 — EUR-Lex",
+      "reference_source_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32016R0679"
+    },
+    {
+      "slug": "donnees-sensibles",
+      "term": "Données sensibles (RGPD)",
+      "category": "Droit",
+      "definition": "Catégories particulières de données personnelles dont le traitement fait l’objet de protections renforcées au titre de l’article 9 du RGPD.",
+      "details": "Elles comprennent notamment des informations révélant des opinions politiques, des convictions ou l’état de santé. Des exceptions strictement encadrées existent.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [
+        "donnees-personnelles",
+        "consentement-rgpd",
+        "base-legale-rgpd"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Les consultations citoyennes doivent éviter de collecter des informations sensibles inutiles et prévoir des garanties renforcées pour les données qui peuvent en révéler.",
+      "reference_source_label": "RGPD, article 9 — EUR-Lex",
+      "reference_source_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32016R0679"
+    },
+    {
+      "slug": "droit-constitutionnel",
+      "term": "Droit constitutionnel",
+      "category": "Droit",
+      "definition": "Branche du droit consacrée à l’organisation des pouvoirs publics, à leurs compétences et aux règles constitutionnelles qui les encadrent.",
+      "details": "Il concerne notamment la Constitution, le fonctionnement des institutions et la protection des droits et libertés constitutionnels.",
+      "aliases": [],
+      "related": [
+        "charte-environnement",
+        "controle-parlementaire"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère juridique"
+    },
+    {
+      "slug": "droit-d-usage-vital",
+      "term": "Droit d’usage vital",
+      "category": "Droit",
+      "definition": "Expression employée pour discuter d’un accès minimal aux ressources indispensables à l’existence, notamment l’eau, l’alimentation ou l’abri.",
+      "details": "Elle ne désigne pas, à elle seule, une catégorie juridique générale et autonome reconnue partout dans ces termes.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "souverainete-alimentaire",
+        "securite-alimentaire",
+        "gestion-integree-eau"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval explore la possibilité de garantir, par des instruments juridiques adaptés, l’accès effectif aux conditions indispensables à la vie, sans confondre cette proposition avec le droit déjà en vigueur."
+    },
+    {
+      "slug": "droit-de-recours",
+      "term": "Droit de recours",
+      "category": "Droit",
+      "definition": "Possibilité de contester une décision ou de saisir une autorité ou une juridiction selon les voies prévues par le droit.",
+      "details": "Les délais, les conditions de recevabilité et l’étendue du contrôle varient selon le recours.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "droit-international",
+      "term": "Droit international",
+      "category": "Droit",
+      "definition": "Ensemble de règles qui encadrent principalement les relations entre États et autres sujets du droit international.",
+      "details": "Il comprend notamment les traités, les règles coutumières et des principes généraux de droit reconnus.",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère juridique"
+    },
+    {
+      "slug": "droit-international-humanitaire",
+      "term": "Droit international humanitaire",
+      "category": "Droit",
+      "definition": "Règles applicables pendant les conflits armés qui cherchent à limiter les souffrances et à protéger les personnes qui ne participent pas, ou plus, aux hostilités.",
+      "details": "Il encadre également les moyens et méthodes de guerre. Son application ne dépend pas de la légalité du recours initial à la force.",
+      "aliases": [
+        "DIH"
+      ],
+      "related": [
+        "conflit-arme",
+        "crime-de-guerre",
+        "cour-penale-internationale"
+      ],
+      "references": [
+        {
+          "label": "CICR — Qu’est-ce que le droit international humanitaire ?",
+          "url": "https://www.icrc.org/fr/document/quest-ce-que-le-droit-international-humanitaire"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère juridique",
+      "diploval_view": "Diploval accorde une attention particulière à l’application effective de ces règles : protection des civils, des personnes vulnérables, des services essentiels et des conditions de vie, avec des faits distingués des allégations."
+    },
+    {
+      "slug": "ecocide",
+      "term": "Écocide",
+      "category": "Droit",
+      "definition": "Terme utilisé pour qualifier des atteintes particulièrement graves à l’environnement ; sa définition et sa portée pénale varient selon les systèmes juridiques.",
+      "details": "Il faut distinguer les usages militants, les propositions de crime international et les infractions effectivement prévues par le droit applicable.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "principe-pollueur-payeur",
+        "responsabilite-internationale"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval examine les responsabilités à partir des dommages documentés, sans attribuer une qualification pénale avant l’analyse des éléments juridiques pertinents."
+    },
+    {
+      "slug": "ecosysteme",
+      "term": "Écosystème",
+      "category": "Environnement",
+      "definition": "Ensemble formé par des êtres vivants, leur environnement et les interactions qui les relient.",
+      "details": "Un écosystème peut être forestier, marin, agricole ou urbain. Ses propriétés évoluent avec les organismes et les conditions du milieu.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "biodiversite",
+        "services-ecosystemiques",
+        "continuite-ecologique"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "el-nino",
+      "term": "El Niño",
+      "category": "Environnement",
+      "definition": "Phase d’un phénomène naturel couplant l’océan et l’atmosphère du Pacifique équatorial, caractérisée notamment par un réchauffement anormal des eaux de surface de certaines régions.",
+      "details": "Il influence les régimes climatiques dans différentes parties du monde, mais ne produit pas les mêmes effets partout ni à chaque épisode.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [
+        "El Nino"
+      ],
+      "related": [
+        "changement-climatique",
+        "adaptation-climatique"
+      ],
+      "references": [
+        {
+          "label": "Météo-France — El Niño et La Niña",
+          "url": "https://education.meteofrance.fr/changement-climatique/el-nino-et-la-nina"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "empreinte-carbone",
+      "term": "Empreinte carbone",
+      "category": "Environnement",
+      "definition": "Estimation des émissions de gaz à effet de serre associées à une activité, un produit, une organisation ou une consommation.",
+      "details": "Son périmètre de calcul doit être précisé. Elle est généralement exprimée en équivalent dioxyde de carbone.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "empreinte-ecologique",
+      "term": "Empreinte écologique",
+      "category": "Environnement",
+      "definition": "Indicateur qui estime la surface biologiquement productive nécessaire pour soutenir certaines consommations humaines et absorber leurs émissions de carbone, selon une méthodologie donnée.",
+      "details": "Il s’agit d’un indicateur de comptabilité écologique, qui ne résume pas tous les impacts environnementaux.",
+      "aliases": [],
+      "related": [
+        "biocapacite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère scientifique",
+      "diploval_view": "Diploval utilise cet indicateur pour éclairer les tensions entre activités humaines et capacités de régénération, tout en rappelant qu’il ne remplace pas une analyse complète de la biodiversité, de l’eau ou des sols."
+    },
+    {
+      "slug": "engagement-electoral",
+      "term": "Engagement électoral",
+      "category": "Politique",
+      "definition": "Promesse ou orientation annoncée publiquement par une personne ou une formation candidate à une élection.",
+      "details": "Un engagement politique n’a pas toujours de force juridique obligatoire et peut être affecté par les institutions, les circonstances ou les majorités nécessaires.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "responsabilite-politique",
+        "transparence"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval propose de mieux tracer les engagements et d’expliquer publiquement les changements de position ou les renoncements, sans interdire l’évolution des idées."
+    },
+    {
+      "slug": "engrais-phosphates",
+      "term": "Engrais phosphatés",
+      "category": "Agriculture",
+      "definition": "Fertilisants apportant du phosphore aux plantes, élément nécessaire à leur croissance.",
+      "details": "Selon leur origine et leur fabrication, ils peuvent contenir d’autres substances. Leur usage doit être adapté aux besoins des cultures et à l’état des sols.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "especes-exotiques-envahissantes",
+      "term": "Espèces exotiques envahissantes",
+      "category": "Environnement",
+      "definition": "Espèces introduites hors de leur aire de répartition naturelle dont l’installation et la propagation menacent notamment la biodiversité locale.",
+      "details": "Toute espèce introduite n’est pas nécessairement envahissante. L’évaluation dépend des effets observés.",
+      "aliases": [
+        "espèce exotique envahissante",
+        "EEE"
+      ],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère scientifique",
+      "diploval_view": "Diploval distingue l’origine d’une espèce de ses effets réellement documentés. La gestion du risque doit reposer sur des observations, la prévention et la proportionnalité plutôt que sur la seule idée d’une espèce « venue d’ailleurs »."
+    },
+    {
+      "slug": "etat-de-droit",
+      "term": "État de droit",
+      "category": "Droit",
+      "definition": "Principe d’organisation politique selon lequel les pouvoirs publics sont soumis au droit et peuvent être contrôlés par des juridictions indépendantes.",
+      "details": "Il suppose notamment des règles accessibles, des recours effectifs et la protection des droits fondamentaux.",
+      "aliases": [
+        "état de droit"
+      ],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère juridique",
+      "diploval_view": "Diploval examine l’État de droit à travers ses effets concrets : accès aux recours, égalité de traitement, transparence des décisions et protection effective des libertés."
+    },
+    {
+      "slug": "ethique",
+      "term": "Éthique",
+      "category": "Éthique et société",
+      "definition": "Réflexion sur les choix, les valeurs et les conséquences des actions, visant à déterminer ce qu’il est justifié de faire.",
+      "details": "Elle se distingue du droit positif : une conduite peut être légale sans que tous ses effets soient jugés souhaitables.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "generations-futures",
+        "biodiversite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "La diplomatie éthique du vivant de Diploval examine les conséquences d’un choix sur les relations humaines, les autres êtres vivants et les conditions de leur existence."
+    },
+    {
+      "slug": "evaluation-politiques-publiques",
+      "term": "Évaluation des politiques publiques",
+      "category": "Institutions",
+      "definition": "Démarche visant à analyser les résultats, les effets, les coûts et les limites d’une action publique.",
+      "details": "Elle se distingue du simple suivi d’exécution, qui vérifie principalement les activités ou moyens mobilisés.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [
+        "indicateur",
+        "decision-publique",
+        "tracabilite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "La méthode Diploval confronte les annonces, les dispositifs, leur mise en œuvre et les effets observables sur les personnes et les conditions du vivant."
+    },
+    {
+      "slug": "externalite",
+      "term": "Externalité",
+      "category": "Économie",
+      "definition": "Effet d’une activité économique sur des personnes ou des milieux qui n’est pas entièrement pris en compte dans la décision ou le prix de marché.",
+      "details": "Une externalité peut être positive ou négative, par exemple un bénéfice collectif ou une pollution.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval cherche à rendre visibles les coûts subis par les territoires et les milieux, même lorsqu’ils sont absents des bilans économiques immédiats."
+    },
+    {
+      "slug": "facturation-electronique",
+      "term": "Facturation électronique",
+      "category": "Numérique",
+      "definition": "Émission, transmission et réception de factures sous forme électronique selon des formats et procédures adaptés.",
+      "details": "Les règles d’obligation et le calendrier de déploiement peuvent évoluer ; ils doivent être vérifiés au moment de leur application.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "faune-sauvage",
+      "term": "Faune sauvage",
+      "category": "Environnement",
+      "definition": "Ensemble des animaux vivant à l’état sauvage dans un milieu, sans être définis par une relation de garde domestique.",
+      "details": "Les statuts juridiques et les mesures de protection varient selon les espèces, les territoires et les circonstances.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "biodiversite",
+        "ecosysteme"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval s’intéresse aux habitats, aux déplacements et aux besoins des animaux, en complément des catégories juridiques qui régissent leur protection."
+    },
+    {
+      "slug": "fiscalite",
+      "term": "Fiscalité",
+      "category": "Économie",
+      "definition": "Ensemble des règles et des prélèvements relatifs aux impôts et autres contributions publiques.",
+      "details": "La fiscalité finance des politiques publiques et influence les comportements et la répartition des ressources.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "generations-futures",
+      "term": "Générations futures",
+      "category": "Éthique et société",
+      "definition": "Personnes qui vivront après les générations actuelles et dont les conditions d’existence peuvent être affectées par les décisions prises aujourd’hui.",
+      "details": "La notion intervient notamment dans les réflexions sur l’environnement, la dette, les ressources et la responsabilité à long terme.",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Explication générale",
+      "diploval_view": "Les décisions présentes devraient être examinées à l’aune des conditions d’existence qu’elles laissent aux générations futures : eau, sols, climat, biodiversité, institutions et capacités de choix."
+    },
+    {
+      "slug": "gestion-integree-eau",
+      "term": "Gestion intégrée de l’eau",
+      "category": "Environnement",
+      "definition": "Approche qui coordonne les usages de l’eau et la protection des milieux à l’échelle d’un territoire ou d’un bassin.",
+      "details": "Elle rapproche les besoins domestiques, agricoles, économiques et écologiques en tenant compte de leur interdépendance.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "cycle-de-leau",
+        "stress-hydrique",
+        "secheresse"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval privilégie l’étude du bassin et du fonctionnement des écosystèmes, avant l’arbitrage des usages et des infrastructures."
+    },
+    {
+      "slug": "hydrologie",
+      "term": "Hydrologie",
+      "category": "Sciences et territoires",
+      "definition": "Science qui étudie la présence, la circulation, la répartition et les propriétés de l’eau sur Terre.",
+      "details": "Elle examine notamment les pluies, les écoulements, les nappes et les interactions avec les sols et les milieux.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "indicateur",
+      "term": "Indicateur",
+      "category": "Sciences et territoires",
+      "definition": "Mesure ou information choisie pour décrire un état, suivre une évolution ou apprécier un résultat.",
+      "details": "Un indicateur ne résume jamais à lui seul toute la réalité qu’il cherche à représenter.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "La méthode Diploval associe les chiffres à leurs limites, aux observations de terrain et aux effets sur les conditions du vivant."
+    },
+    {
+      "slug": "infiltration",
+      "term": "Infiltration de l’eau",
+      "category": "Environnement",
+      "definition": "Pénétration de l’eau à travers la surface du sol et sa circulation vers les couches plus profondes.",
+      "details": "Elle dépend notamment de la structure du sol, de sa couverture végétale, de son humidité et de l’intensité des pluies.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "inflation",
+      "term": "Inflation",
+      "category": "Économie",
+      "definition": "Hausse générale et durable du niveau des prix dans une économie.",
+      "details": "Une baisse de l’inflation signifie que les prix augmentent généralement moins vite, non qu’ils diminuent nécessairement.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "pouvoir-achat",
+        "produit-interieur-brut"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "institution-publique",
+      "term": "Institution publique",
+      "category": "Institutions",
+      "definition": "Organisme ou autorité intervenant dans l’organisation et l’exercice de fonctions collectives ou de pouvoirs publics.",
+      "details": "Le terme recouvre des structures de statuts et de compétences différents ; son sens précis dépend du contexte.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "intelligence-artificielle",
+      "term": "Intelligence artificielle (IA)",
+      "category": "Numérique",
+      "definition": "Ensemble de techniques informatiques permettant à des systèmes de réaliser certaines tâches qui nécessitent habituellement des capacités humaines, comme classer, générer ou prédire.",
+      "details": "Les systèmes d’IA sont très divers ; leurs performances, limites et risques dépendent de leurs objectifs et de leurs données.",
+      "reference_nature": "Explication générale",
+      "aliases": [
+        "IA"
+      ],
+      "related": [
+        "algorithme",
+        "donnees-personnelles",
+        "verification-faits"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval prévoit le contrôle humain des analyses et de la publication, notamment pour les contenus juridiques et les contributions citoyennes."
+    },
+    {
+      "slug": "intrants-agricoles",
+      "term": "Intrants agricoles",
+      "category": "Agriculture",
+      "definition": "Produits ou ressources utilisés dans un système de production agricole, tels que semences, fertilisants ou produits de protection des cultures.",
+      "details": "Leur nature, leur origine et leur utilisation varient selon les systèmes de production.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "jour-du-depassement",
+      "term": "Jour du dépassement",
+      "category": "Environnement",
+      "definition": "Date calculée à partir de l’empreinte écologique et de la biocapacité, à laquelle la consommation annuelle estimée de ressources et services écologiques dépasse la régénération estimée pour l’année.",
+      "details": "Il s’agit d’un indicateur pédagogique fondé sur une méthode particulière, non d’un jour où toutes les ressources physiques disparaissent.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "empreinte-ecologique",
+        "biocapacite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval l’utilise pour interroger les déséquilibres écologiques, tout en en exposant les limites méthodologiques et les inégalités de consommation."
+    },
+    {
+      "slug": "jurisprudence",
+      "term": "Jurisprudence",
+      "category": "Droit",
+      "definition": "Ensemble des décisions rendues par les juridictions, ainsi que les solutions qui s’en dégagent pour interpréter et appliquer le droit.",
+      "details": "La portée de ces décisions varie selon les systèmes juridiques et les juridictions.",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère juridique"
+    },
+    {
+      "slug": "etiquette-ecologique",
+      "term": "Label environnemental",
+      "category": "Environnement",
+      "definition": "Signe ou dispositif d’information attestant, selon un référentiel donné, certaines caractéristiques environnementales d’un produit ou service.",
+      "details": "Les critères, les contrôles et la portée des labels sont très différents. Un label ne prouve pas à lui seul l’absence de tout impact.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "limites-planetaires",
+      "term": "Limites planétaires",
+      "category": "Environnement",
+      "definition": "Cadre scientifique qui identifie plusieurs grands processus du système Terre et les pressions susceptibles de compromettre sa stabilité.",
+      "details": "Il sert à discuter des risques globaux, mais ne fournit pas à lui seul des seuils directement applicables à chaque territoire.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval considère ce cadre comme un repère de vigilance qu’il faut confronter aux situations locales, aux capacités de régénération et aux conditions du vivant."
+    },
+    {
+      "slug": "mandat",
+      "term": "Mandat",
+      "category": "Institutions",
+      "definition": "Mission ou pouvoir confié à une personne ou à un organe pour agir dans un cadre déterminé.",
+      "details": "Il peut s’agir d’un mandat électif, diplomatique, judiciaire ou contractuel ; leurs règles diffèrent.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "mediation",
+      "term": "Médiation",
+      "category": "Diplomatie",
+      "definition": "Démarche dans laquelle un tiers aide des parties en désaccord à dialoguer et à rechercher une issue acceptable.",
+      "details": "Le médiateur facilite la négociation mais n’impose pas nécessairement une décision.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval privilégie les processus où les engagements sont vérifiables et où les conséquences sur les populations et les conditions de paix sont examinées."
+    },
+    {
+      "slug": "migrations-contraintes",
+      "term": "Migrations contraintes",
+      "category": "Éthique et société",
+      "definition": "Déplacements de personnes rendus nécessaires ou fortement poussés par des menaces, des violences, des privations ou des conditions de vie devenues intenables.",
+      "details": "Le terme est descriptif et ne correspond pas à lui seul à un statut juridique uniforme ; la protection applicable dépend de la situation de chaque personne.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "droit-d-usage-vital",
+        "securite-alimentaire"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval étudie les liens entre accès à l’eau, terres, alimentation, conflits et déplacements, sans réduire les trajectoires migratoires à une cause unique."
+    },
+    {
+      "slug": "mission-de-verification",
+      "term": "Mission de vérification",
+      "category": "Diplomatie",
+      "definition": "Dispositif chargé d’observer et de contrôler l’exécution de certains engagements selon un mandat défini.",
+      "details": "Son efficacité dépend notamment de l’accès aux informations, de l’indépendance, des moyens et des procédures de signalement.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "moderation-prealable",
+      "term": "Modération préalable",
+      "category": "Numérique",
+      "definition": "Examen d’une contribution avant sa publication dans un espace accessible au public.",
+      "details": "Elle permet de vérifier le respect des règles éditoriales et de confidentialité, tout en nécessitant des critères clairs et des voies de contestation adaptées.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "consultation-citoyenne",
+        "donnees-sensibles"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Sur Diploval, une contribution n’a pas vocation à devenir publique automatiquement : la modération doit protéger les participants sans étouffer la contradiction argumentée."
+    },
+    {
+      "slug": "nappes-souterraines",
+      "term": "Nappes souterraines",
+      "category": "Environnement",
+      "definition": "Volumes d’eau présents dans les pores et les fractures de formations géologiques souterraines.",
+      "details": "Elles se rechargent selon les pluies, les infiltrations, la géologie et les usages ; leur renouvellement peut être lent.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "organisation-nations-unies",
+      "term": "Organisation des Nations unies (ONU)",
+      "category": "Institutions",
+      "definition": "Organisation internationale créée en 1945 pour favoriser la paix, la coopération et le respect de principes inscrits dans sa Charte.",
+      "details": "Elle rassemble des États membres et comprend différents organes, programmes et institutions associées.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [
+        "ONU"
+      ],
+      "related": [
+        "cour-internationale-justice",
+        "diplomatie"
+      ],
+      "references": [
+        {
+          "label": "Nations Unies — À propos de l’ONU",
+          "url": "https://www.un.org/fr/about-us"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "politique-agricole-commune",
+      "term": "Politique agricole commune (PAC)",
+      "category": "Agriculture",
+      "definition": "Politique de l’Union européenne qui organise des soutiens, des règles et des objectifs relatifs à l’agriculture et aux territoires ruraux.",
+      "details": "Elle comporte différents instruments et évolue au fil des périodes de programmation et des décisions européennes et nationales.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [
+        "PAC"
+      ],
+      "related": [
+        "souverainete-alimentaire",
+        "politique-publique",
+        "agroecologie"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval examine la PAC à partir de ses effets concrets sur les revenus, les usages du sol, la disponibilité de l’eau et les possibilités de transition des exploitations."
+    },
+    {
+      "slug": "politique-publique",
+      "term": "Politique publique",
+      "category": "Institutions",
+      "definition": "Ensemble de décisions, de moyens et d’actions engagés par des autorités publiques pour répondre à un problème collectif.",
+      "details": "Elle peut associer plusieurs niveaux de gouvernement, des acteurs privés et des organismes de la société civile.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [
+        "evaluation-politiques-publiques",
+        "decision-publique"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "pouvoir-achat",
+      "term": "Pouvoir d’achat",
+      "category": "Économie",
+      "definition": "Quantité de biens et de services qu’un revenu permet d’acheter compte tenu du niveau des prix.",
+      "details": "Son évolution dépend notamment des revenus et des prix. Elle ne décrit pas à elle seule les écarts entre ménages.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "inflation",
+        "securite-alimentaire"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "principe-de-precaution",
+      "term": "Principe de précaution",
+      "category": "Droit",
+      "definition": "Principe qui, dans les conditions prévues par le droit, permet de prendre des mesures face à un risque de dommage grave malgré une incertitude scientifique.",
+      "details": "En droit français de l’environnement, l’article 5 de la Charte de l’environnement encadre sa mise en œuvre par les autorités publiques.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [
+        "principe-de-prevention",
+        "proportionnalite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval associe l’incertitude à une obligation d’examen rigoureux des risques, des mesures envisagées et de leurs conséquences, sans transformer la précaution en refus systématique d’agir.",
+      "reference_source_label": "Charte de l’environnement, article 5 — Légifrance",
+      "reference_source_url": "https://www.legifrance.gouv.fr/contenu/menu/droit-national-en-vigueur/constitution/charte-de-l-environnement"
+    },
+    {
+      "slug": "principe-de-prevention",
+      "term": "Principe de prévention",
+      "category": "Environnement",
+      "definition": "Principe qui privilégie les actions destinées à éviter ou réduire les atteintes dont les risques sont connus.",
+      "details": "Il se distingue du principe de précaution, qui intervient dans certaines situations d’incertitude scientifique.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "principe-de-precaution",
+        "securite-civile"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "principe-pollueur-payeur",
+      "term": "Principe pollueur-payeur",
+      "category": "Droit",
+      "definition": "Principe selon lequel les frais liés à la prévention, à la réduction et à la lutte contre une pollution doivent être supportés par son auteur, dans les conditions fixées par le droit.",
+      "details": "Il figure notamment dans les principes généraux du Code de l’environnement français.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [
+        "principe-de-prevention",
+        "ecocide"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval s’intéresse au coût complet des atteintes aux milieux, notamment aux dépenses reportées sur les habitants, les collectivités et les générations futures.",
+      "reference_source_label": "Code de l’environnement, article L. 110-1 — Légifrance",
+      "reference_source_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043975398/2026-02-21"
+    },
+    {
+      "slug": "produit-interieur-brut",
+      "term": "Produit intérieur brut (PIB)",
+      "category": "Économie",
+      "definition": "Indicateur qui mesure la richesse créée par la production de biens et services au sein d’une économie sur une période.",
+      "details": "Il renseigne sur l’activité économique, mais ne mesure pas directement la qualité de vie, les inégalités ou l’état des écosystèmes.",
+      "reference_nature": "Explication générale",
+      "aliases": [
+        "PIB"
+      ],
+      "related": [
+        "pouvoir-achat",
+        "externalite",
+        "dette-publique"
+      ],
+      "references": [
+        {
+          "label": "Insee — Principaux indicateurs économiques",
+          "url": "https://www.insee.fr/fr/statistiques/4277765"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval utilise le PIB comme indicateur économique parmi d’autres, sans en faire une mesure suffisante de la santé des territoires ou du vivant."
+    },
+    {
+      "slug": "proportionnalite",
+      "term": "Proportionnalité",
+      "category": "Droit",
+      "definition": "Principe selon lequel une mesure doit présenter un rapport approprié avec l’objectif poursuivi et ne pas aller au-delà de ce qui est nécessaire selon le cadre applicable.",
+      "details": "Le contrôle de proportionnalité prend des formes différentes suivant les domaines du droit.",
+      "aliases": [],
+      "related": [],
+      "references": [
+        {
+          "label": "EUR-Lex — Principe de proportionnalité dans l’Union européenne",
+          "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=LEGISSUM%3Aproportionality"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère juridique",
+      "diploval_view": "Dans ses analyses, Diploval confronte les objectifs annoncés, les moyens engagés et leurs effets réels sur les personnes, les territoires et les milieux, sans substituer cette démarche au contrôle juridique compétent."
+    },
+    {
+      "slug": "protocole",
+      "term": "Protocole",
+      "category": "Diplomatie",
+      "definition": "Ensemble organisé de règles, d’étapes ou de modalités pratiques convenues pour une action ou un accord.",
+      "details": "Son sens varie selon les contextes, notamment diplomatiques, scientifiques, techniques ou juridiques.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "pseudonymisation",
+      "term": "Pseudonymisation",
+      "category": "Numérique",
+      "definition": "Traitement de données personnelles de manière qu’elles ne puissent plus être attribuées à une personne précise sans informations supplémentaires conservées séparément.",
+      "details": "Contrairement à l’anonymisation effective, les données pseudonymisées restent en principe des données personnelles.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [
+        "anonymisation",
+        "donnees-personnelles"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_source_label": "RGPD, article 4, point 5 — EUR-Lex",
+      "reference_source_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32016R0679"
+    },
+    {
+      "slug": "recours-effectif",
+      "term": "Recours effectif",
+      "category": "Droit",
+      "definition": "Possibilité réelle de saisir une autorité compétente, notamment une juridiction, pour faire examiner une atteinte alléguée à un droit.",
+      "details": "Son effectivité dépend notamment de l’accès à la procédure, des garanties d’examen et de la possibilité d’obtenir une réponse utile.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "droit-de-recours",
+        "etat-de-droit"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval examine non seulement l’existence d’un recours dans les textes, mais sa possibilité d’usage par les personnes concernées."
+    },
+    {
+      "slug": "reglement-general-protection-donnees",
+      "term": "Règlement général sur la protection des données (RGPD)",
+      "category": "Droit",
+      "definition": "Règlement de l’Union européenne encadrant le traitement des données personnelles et les droits des personnes concernées.",
+      "details": "Il impose notamment des principes de licéité, de transparence, de minimisation et de sécurité, avec des obligations variables selon les traitements.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [
+        "RGPD"
+      ],
+      "related": [
+        "donnees-personnelles",
+        "base-legale-rgpd",
+        "consentement-rgpd"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_source_label": "Règlement (UE) 2016/679 — EUR-Lex",
+      "reference_source_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32016R0679"
+    },
+    {
+      "slug": "renaturation",
+      "term": "Renaturation",
+      "category": "Environnement",
+      "definition": "Actions visant à redonner à un milieu transformé des fonctions écologiques ou une dynamique plus proche de son fonctionnement naturel.",
+      "details": "Selon les situations, elle peut inclure la désimperméabilisation, la restauration de végétation ou de zones humides. Le résultat doit être évalué.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "restauration-ecologique",
+        "artificialisation-des-sols"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "resilience",
+      "term": "Résilience",
+      "category": "Sciences et territoires",
+      "definition": "Capacité d’une personne, d’un système ou d’un territoire à faire face à une perturbation, à s’y adapter et à maintenir ou retrouver des fonctions essentielles.",
+      "details": "La résilience ne signifie pas nécessairement un retour à l’état antérieur.",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère scientifique",
+      "diploval_view": "Diploval ne réduit pas la résilience à la capacité de supporter des crises. Il s’agit aussi de préserver et de restaurer les fonctions écologiques et sociales qui rendent la vie durablement possible."
+    },
+    {
+      "slug": "responsabilite-internationale",
+      "term": "Responsabilité internationale",
+      "category": "Droit",
+      "definition": "Régime juridique qui examine les conséquences d’un fait internationalement illicite attribuable à un État ou à un autre sujet du droit international.",
+      "details": "Il faut distinguer l’attribution du comportement, l’existence d’une violation et les conséquences juridiques éventuelles.",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère juridique",
+      "diploval_view": "Dans son analyse des conflits, Diploval distingue les faits vérifiés, les qualifications juridiques, les obligations applicables et les conséquences pour les populations et les milieux."
+    },
+    {
+      "slug": "responsabilite-politique",
+      "term": "Responsabilité politique",
+      "category": "Politique",
+      "definition": "Obligation pour un responsable ou une institution de rendre compte de ses choix et, selon le régime, d’en assumer des conséquences politiques.",
+      "details": "Elle est distincte de la responsabilité civile, pénale ou internationale.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval défend la traçabilité des engagements, des changements de position et des décisions publiques, avec une information accessible aux citoyens."
+    },
+    {
+      "slug": "restauration-ecologique",
+      "term": "Restauration écologique",
+      "category": "Environnement",
+      "definition": "Processus visant à favoriser le rétablissement d’un écosystème dégradé, endommagé ou détruit.",
+      "details": "Une restauration peut améliorer des fonctions écologiques sans reproduire exactement l’état passé du milieu.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "renaturation",
+        "ecosysteme"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "L’approche Diploval invite à examiner non seulement les surfaces restaurées, mais également les fonctions retrouvées et la stabilité du résultat dans le temps."
+    },
+    {
+      "slug": "restitution-publique",
+      "term": "Restitution publique",
+      "category": "Institutions",
+      "definition": "Présentation accessible des résultats d’une étude, d’une enquête ou d’une consultation au public.",
+      "details": "Elle peut expliquer les contributions recueillies, les arguments examinés, les suites retenues et les limites de l’exercice.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "consultation-citoyenne",
+        "transparence",
+        "tracabilite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval souhaite rendre intelligible le devenir des contributions, y compris lorsque certaines propositions ne sont pas retenues."
+    },
+    {
+      "slug": "secheresse",
+      "term": "Sécheresse",
+      "category": "Environnement",
+      "definition": "Situation caractérisée par un déficit prolongé d’eau par rapport aux conditions habituelles d’un lieu.",
+      "details": "On distingue notamment les sécheresses météorologique, agricole et hydrologique, qui ne surviennent pas forcément au même moment.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "securite-alimentaire",
+      "term": "Sécurité alimentaire",
+      "category": "Agriculture",
+      "definition": "Situation dans laquelle les personnes disposent d’un accès physique, social et économique à une alimentation suffisante, sûre et nutritive.",
+      "details": "Elle se distingue de la souveraineté alimentaire, qui s’intéresse aussi à la maîtrise des choix de production et d’organisation.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "souverainete-alimentaire",
+        "pouvoir-achat"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "securite-civile",
+      "term": "Sécurité civile",
+      "category": "Institutions",
+      "definition": "Ensemble des moyens et des actions destinés à prévenir les risques, protéger les populations et porter secours lors de situations d’urgence.",
+      "details": "Elle mobilise notamment des services publics, des collectivités, des associations agréées et des citoyens.",
+      "aliases": [],
+      "related": [
+        "continuite-services-essentiels",
+        "defaillance-en-cascade"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère institutionnel",
+      "diploval_view": "Diploval envisage la préparation aux crises en tenant compte des interdépendances entre personnes, eau, sols, biodiversité, réseaux et services essentiels."
+    },
+    {
+      "slug": "services-ecosystemiques",
+      "term": "Services écosystémiques",
+      "category": "Environnement",
+      "definition": "Contributions des écosystèmes au bien-être et aux activités humaines, telles que la pollinisation, la régulation de l’eau ou certaines ressources.",
+      "details": "Cette notion aide à identifier des bénéfices, sans épuiser la valeur ni la diversité du vivant.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "ecosysteme",
+        "biodiversite",
+        "sol-vivant"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval utilise cette notion comme outil d’analyse, tout en refusant de réduire les êtres vivants à leur seule utilité économique pour les humains."
+    },
+    {
+      "slug": "sol-vivant",
+      "term": "Sol vivant",
+      "category": "Environnement",
+      "definition": "Sol abritant des organismes et des interactions biologiques qui participent à son fonctionnement.",
+      "details": "Bactéries, champignons, racines et faune du sol jouent un rôle dans les cycles de la matière et de l’eau. La qualité du sol ne se limite pas à sa fertilité agricole.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "agroecologie",
+        "infiltration",
+        "artificialisation-des-sols"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "source-primaire",
+      "term": "Source primaire",
+      "category": "Éthique et société",
+      "definition": "Document, donnée ou témoignage produit directement par un acteur ou une institution impliquée dans les faits étudiés.",
+      "details": "Une source primaire n’est pas automatiquement exacte ni suffisante ; elle doit être datée, contextualisée et confrontée à d’autres éléments.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "souverainete",
+      "term": "Souveraineté",
+      "category": "Politique",
+      "definition": "Autorité suprême exercée dans un ordre politique, notamment par un État sur son territoire, sous réserve des obligations juridiques qui lui sont applicables.",
+      "details": "La souveraineté étatique doit être distinguée de la souveraineté populaire et de la souveraineté nationale.",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Repère juridique",
+      "diploval_view": "Diploval associe l’autonomie de décision à la responsabilité des effets sur les autres territoires et sur les conditions du vivant. La souveraineté ne supprime pas les interdépendances écologiques ni les obligations juridiques."
+    },
+    {
+      "slug": "souverainete-alimentaire",
+      "term": "Souveraineté alimentaire",
+      "category": "Agriculture",
+      "definition": "Approche qui met l’accent sur la capacité des populations à définir leurs politiques agricoles et alimentaires et à maîtriser les conditions de leur alimentation.",
+      "details": "Elle ne se confond pas avec l’autosuffisance alimentaire ni avec la sécurité alimentaire, même si ces notions sont liées.",
+      "aliases": [],
+      "related": [
+        "securite-alimentaire",
+        "politique-agricole-commune"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_nature": "Explication générale",
+      "diploval_view": "Pour Diploval, la souveraineté alimentaire implique d’examiner conjointement les revenus des producteurs, l’accès effectif à l’alimentation, la qualité des sols, la disponibilité de l’eau et la capacité des territoires à décider."
+    },
+    {
+      "slug": "souverainete-energetique",
+      "term": "Souveraineté énergétique",
+      "category": "Politique",
+      "definition": "Capacité d’un État ou d’un territoire à orienter ses choix énergétiques et à réduire ses dépendances jugées critiques.",
+      "details": "Elle n’implique pas nécessairement une production entièrement nationale ou une absence d’échanges.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "stress-hydrique",
+      "term": "Stress hydrique",
+      "category": "Environnement",
+      "definition": "Situation de tension lorsque les besoins en eau dépassent les ressources disponibles, ou lorsque l’accès à une eau de qualité devient insuffisant.",
+      "details": "Les indicateurs de stress hydrique varient selon les organismes et les contextes d’étude.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "secheresse",
+        "nappes-souterraines"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "subsidiarite",
+      "term": "Subsidiarité",
+      "category": "Institutions",
+      "definition": "Principe qui consiste à ne faire intervenir un niveau de décision supérieur que lorsque le niveau inférieur ne peut pas atteindre suffisamment les objectifs concernés.",
+      "details": "Dans l’Union européenne, l’article 5 du traité sur l’Union européenne fixe les conditions d’application de ce principe dans les domaines de compétence non exclusive.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [
+        "decentralisation",
+        "deconcentration",
+        "souverainete"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval examine à quelle échelle une action peut être efficace tout en respectant les interdépendances entre territoires et les conditions du vivant.",
+      "reference_source_label": "Traité sur l’Union européenne, article 5 — EUR-Lex",
+      "reference_source_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=celex%3A12012M005"
+    },
+    {
+      "slug": "tracabilite",
+      "term": "Traçabilité",
+      "category": "Sciences et territoires",
+      "definition": "Possibilité de retrouver les étapes, les origines ou les modifications d’un objet, d’une décision ou d’une information.",
+      "details": "Elle peut concerner un produit, une donnée, une procédure ou une décision publique.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "source-primaire",
+        "verification-faits"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval l’applique aux versions des dossiers, à leurs sources et aux décisions de restitution des consultations."
+    },
+    {
+      "slug": "traite-de-paix",
+      "term": "Traité de paix",
+      "category": "Diplomatie",
+      "definition": "Accord international visant à mettre fin juridiquement à un conflit ou à en régler certaines conséquences.",
+      "details": "Un traité peut prévoir des engagements territoriaux, des mécanismes de sécurité, des réparations ou des procédures de suivi. Il ne garantit pas à lui seul une paix durable.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval considère la mise en œuvre, la protection des civils, les droits et la reconstruction des conditions du vivant comme des éléments de vérification de la durabilité d’un règlement."
+    },
+    {
+      "slug": "traitement-donnees-personnelles",
+      "term": "Traitement de données personnelles",
+      "category": "Numérique",
+      "definition": "Opération ou ensemble d’opérations effectuées sur des données personnelles, y compris collecte, conservation, consultation, utilisation ou suppression.",
+      "details": "Un traitement peut être numérique ou réalisé sur papier.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [
+        "donnees-personnelles",
+        "base-legale-rgpd",
+        "pseudonymisation"
+      ],
+      "references": [
+        {
+          "label": "CNIL — Traitement de données personnelles",
+          "url": "https://www.cnil.fr/fr/definition/traitement-de-donnees-personnelles"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "reference_source_label": "RGPD, article 4, point 2 — EUR-Lex",
+      "reference_source_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32016R0679"
+    },
+    {
+      "slug": "transparence",
+      "term": "Transparence publique",
+      "category": "Institutions",
+      "definition": "Principe selon lequel certaines informations sur l’action des autorités et leurs décisions doivent être accessibles et compréhensibles.",
+      "details": "Elle doit être conciliée avec les protections légitimes, notamment la vie privée, la sécurité et les secrets protégés par le droit.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Pour Diploval, la transparence inclut les motifs des arbitrages, les méthodes utilisées et les limites connues des dossiers."
+    },
+    {
+      "slug": "verification-faits",
+      "term": "Vérification des faits",
+      "category": "Éthique et société",
+      "definition": "Démarche consistant à confronter une affirmation à des sources fiables, des documents et des éléments contrôlables.",
+      "details": "Elle nécessite de distinguer les faits établis, les hypothèses, les interprétations et les inconnues.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "source-primaire",
+        "contradiction-des-arguments"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval cherche à documenter les contradictions et à corriger publiquement les erreurs substantielles plutôt qu’à protéger une conclusion préétablie."
+    },
+    {
+      "slug": "zero-artificialisation-nette",
+      "term": "Zéro artificialisation nette (ZAN)",
+      "category": "Environnement",
+      "definition": "Objectif de limitation de l’artificialisation des sols, visant à compenser l’artificialisation résiduelle par des actions de renaturation.",
+      "details": "Les échéances et règles opérationnelles dépendent des textes en vigueur ; elles doivent être vérifiées à la date d’un dossier.",
+      "reference_nature": "Repère juridique",
+      "aliases": [
+        "ZAN"
+      ],
+      "related": [
+        "artificialisation-des-sols",
+        "renaturation"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "zone-demilitarisee",
+      "term": "Zone démilitarisée",
+      "category": "Diplomatie",
+      "definition": "Espace dans lequel certaines activités ou présences militaires sont interdites ou limitées par un accord ou un régime juridique.",
+      "details": "Les modalités de contrôle, les exceptions et les garanties dépendent du texte applicable.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "zones-humides",
+      "term": "Zones humides",
+      "category": "Environnement",
+      "definition": "Milieux dans lesquels l’eau est présente de manière permanente ou temporaire et conditionne les sols, les végétations et les fonctions écologiques.",
+      "details": "Elles contribuent notamment à la biodiversité et à certains régimes de circulation de l’eau. Leur identification juridique peut suivre des critères précis.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Dans la réflexion Diploval, les zones humides sont d’abord des milieux vivants dont les fonctions devraient être étudiées avant les projets d’aménagement."
+    }
+  ]
+}
