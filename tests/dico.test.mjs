@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../Diploval_Site_Complet_v20_2_Inscription_Zoom');
 const doc = JSON.parse(fs.readFileSync(path.join(root,'content/dictionnaire.json'),'utf8'));
 
 test('Le Dico expose une liste de définitions structurées', () => {
