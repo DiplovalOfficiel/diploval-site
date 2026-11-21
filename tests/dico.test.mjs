@@ -47,6 +47,14 @@ test('Les nouveaux mots sont publiés seulement après double validation', () =>
   assert.match(linking,/e\.status === 'Publié' && e\.visible === true/);
 });
 
+test('Les fiches dans l’index signalent clairement comment lire la définition complète', () => {
+  const generator = fs.readFileSync(path.join(root,'scripts/generate-dico.mjs'),'utf8');
+  const css = fs.readFileSync(path.join(root,'dico.css'),'utf8');
+  assert.match(generator,/Voir la définition complète/);
+  assert.match(generator,/dv-dico-more/);
+  assert.match(css,/dv-dico-entry \.dv-dico-more/);
+});
+
 test('La navigation et les scripts du Dico sont reliés', () => {
   const template = fs.readFileSync(path.join(root,'scripts/templates/site-header.template'),'utf8');
   assert.match(template,/href="\/dico\/"/);
