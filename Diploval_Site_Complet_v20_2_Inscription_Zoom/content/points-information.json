@@ -106,6 +106,20 @@
       "updates": [
         {
           "correction": false,
+          "datetime": "2026-11-21T09:18",
+          "title": "20 novembre — Hodeïda : frappes sur le port et menaces contre les ports saoudiens",
+          "body": "La coalition dirigée par l’Arabie saoudite a déclaré avoir frappé le port de Hodeïda, au Yémen, le 20 novembre. Elle affirme avoir visé des capacités utilisées pour le transport d’armes et de missiles. Reuters confirme l’annonce de la frappe, mais la finalité militaire exacte et l’étendue des dégâts ne sont pas vérifiées indépendamment. Le ministre yéménite de l’Information a affirmé que le port restait opérationnel. Les Houthis ont menacé de viser des ports saoudiens de la mer Rouge et ont revendiqué des attaques contre une centrale électrique et un port dans le sud de l’Arabie saoudite ; la coalition affirme avoir intercepté deux missiles. Le bilan civil et les conséquences sur l’approvisionnement de la population restent à établir. L’événement accroît la vigilance sur les infrastructures portuaires et la sécurité maritime.",
+          "sources": []
+        },
+        {
+          "correction": false,
+          "datetime": "2026-11-21T09:18",
+          "title": "18 novembre — OCHA : capacités hospitalières et abris endommagés à Gaza",
+          "body": "Le rapport humanitaire de l’OCHA publié le 18 novembre précise plusieurs faits antérieurs à l’ouverture de ce suivi. Selon l’OMS citée par l’OCHA, une frappe israélienne du 12 novembre sur le service de chirurgie de l’hôpital Nasser, à Khan Younès, a causé six morts et au moins 27 blessés ; les installations chirurgicales ont subi d’importants dégâts. Le ministère de la Santé de Gaza fait état de 1 650 morts signalés depuis le cessez-le-feu d’octobre 2025 au 16 novembre, contre 1 613 au 9 novembre : ce bilan est attribué à cette autorité et n’est pas un décompte indépendant de l’OCHA. Les évaluations provisoires de l’OCHA indiquent qu’environ 226 000 personnes ont pu être touchées par les pluies des 6 au 8 novembre et que plus de 40 000 abris ont subi des dommages. Il s’agit d’un complément documentaire sur la crise humanitaire, et non d’événements tous survenus le 18 novembre.",
+          "sources": []
+        },
+        {
+          "correction": false,
           "datetime": "2026-11-19T22:08",
           "title": "Situation au 19 novembre — faits et évolutions",
           "body": "Gaza et Cisjordanie — Dans son rapport du 13 novembre, l’OCHA décrit une situation humanitaire toujours grave à Gaza malgré le cessez-le-feu d’octobre 2025. L’agence signale également des déplacements de population et des violences en Cisjordanie. Le bilan de 1 613 morts depuis l’accord jusqu’au 9 novembre, qu’elle relaie, est attribué au ministère de la Santé de Gaza et ne constitue pas un décompte indépendant de l’OCHA.\nIran et pays du Golfe, 17–18 novembre — Selon Reuters et Associated Press, des forces américaines ont frappé un site militaire sur l’île iranienne de Qeshm. Les autorités iraniennes revendiquent des attaques contre des installations militaires américaines situées à Bahreïn et au Koweït. Ces éléments concernent des installations à l’étranger, non le territoire des États-Unis ; les effets exacts de certaines attaques restent à confirmer.\nLiban et péninsule Arabique, 19 novembre — Associated Press rapporte de nouvelles frappes israéliennes au Liban contre une installation que l’armée israélienne présente comme liée au Hezbollah. L’agence fait aussi état d’attaques au Yémen et de débris de missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite.\nVolet diplomatique — Des démarches de médiation régionales sont signalées. Leur portée doit être évaluée à partir d’accords précis, de leur application effective et de leurs conséquences pour les civils.",
@@ -127,7 +141,7 @@
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
-      "last_update": "2026-11-19T22:08",
+      "last_update": "2026-11-21T09:18",
       "status": "suivi",
       "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
@@ -154,6 +168,18 @@
           "type": "Agence de presse",
           "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/",
           "note": "Efforts de médiation rapportés avec attribution à des responsables régionaux anonymes."
+        },
+        {
+          "label": "OCHA — rapport humanitaire du 18 novembre 2026",
+          "type": "Organisation internationale",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-18-november-2026",
+          "note": "Hôpital Nasser, bilan rapporté par le ministère de la Santé de Gaza, pluies et abris."
+        },
+        {
+          "label": "Reuters — frappes sur Hodeïda et tensions en mer Rouge, 20 novembre 2026",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/yemens-houthis-threaten-strike-saudi-red-sea-ports-2026-11-20/",
+          "note": "Annonces et revendications attribuées à la coalition, aux Houthis et au ministre yéménite de l’Information."
         }
       ],
       "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
