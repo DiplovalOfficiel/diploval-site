@@ -1,6 +1,20 @@
 {
   "entries": [
     {
+      "slug": "accord-multilateral",
+      "term": "Accord multilatéral",
+      "category": "Diplomatie",
+      "definition": "Accord conclu entre plus de deux parties, souvent des États ou des organisations internationales.",
+      "details": "Il peut porter sur la coopération, les échanges, la paix ou des obligations communes. Sa valeur juridique dépend du contenu et du cadre de conclusion.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
       "slug": "accord-cadre",
       "term": "Accord-cadre",
       "category": "Diplomatie",
@@ -105,6 +119,20 @@
       "updated_at": "2026-11-21"
     },
     {
+      "slug": "arbitrage",
+      "term": "Arbitrage",
+      "category": "Droit",
+      "definition": "Mode de règlement d’un différend par une ou plusieurs personnes choisies pour trancher selon les règles convenues.",
+      "details": "En droit, la décision arbitrale peut avoir une portée obligatoire selon le cadre applicable. Le mot est aussi utilisé plus largement pour désigner un choix entre priorités.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
       "slug": "artificialisation-des-sols",
       "term": "Artificialisation des sols",
       "category": "Environnement",
@@ -123,6 +151,20 @@
       "visible": true,
       "updated_at": "2026-11-21",
       "diploval_view": "Dans l’approche Diploval, un projet d’aménagement doit d’abord examiner ce que le sol permet au vivant et au territoire, avant d’envisager sa transformation."
+    },
+    {
+      "slug": "assemblee-nationale",
+      "term": "Assemblée nationale",
+      "category": "Institutions",
+      "definition": "Assemblée du Parlement français composée de députés élus au suffrage universel direct.",
+      "details": "Elle examine et vote les textes de loi, contrôle l’action du gouvernement et participe à l’évaluation des politiques publiques.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
     },
     {
       "slug": "attenuation-climatique",
@@ -232,6 +274,37 @@
       "updated_at": "2026-11-21"
     },
     {
+      "slug": "charte-environnement",
+      "term": "Charte de l’environnement",
+      "category": "Droit",
+      "definition": "Texte de valeur constitutionnelle en France qui énonce des droits et des devoirs relatifs à la protection de l’environnement.",
+      "details": "Elle a été intégrée au bloc de constitutionnalité en 2005 et comporte dix articles.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval l’utilise comme un fondement juridique à articuler avec l’état des connaissances et les réalités écologiques des territoires.",
+      "reference_source_label": "Charte de l’environnement, loi constitutionnelle du 1er mars 2005 — Légifrance",
+      "reference_source_url": "https://www.legifrance.gouv.fr/contenu/menu/droit-national-en-vigueur/constitution/charte-de-l-environnement"
+    },
+    {
+      "slug": "conflit-arme",
+      "term": "Conflit armé",
+      "category": "Diplomatie",
+      "definition": "Situation d’affrontement relevant du droit international humanitaire en raison de l’implication de forces étatiques ou de groupes armés, selon des critères juridiques.",
+      "details": "Le droit distingue notamment les conflits armés internationaux et non internationaux. Toutes les violences ne constituent pas automatiquement un conflit armé au sens juridique.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
       "slug": "consultation-citoyenne",
       "term": "Consultation citoyenne",
       "category": "Institutions",
@@ -278,6 +351,52 @@
       "reference_source_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000019241014?init=true"
     },
     {
+      "slug": "cour-internationale-justice",
+      "term": "Cour internationale de Justice (CIJ)",
+      "category": "Institutions",
+      "definition": "Organe judiciaire principal de l’Organisation des Nations unies, chargé de régler certains différends juridiques entre États et de donner des avis consultatifs.",
+      "details": "Elle ne juge pas directement des personnes physiques pour des crimes internationaux. Elle se distingue de la Cour pénale internationale.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [
+        "CIJ"
+      ],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "cour-penale-internationale",
+      "term": "Cour pénale internationale (CPI)",
+      "category": "Institutions",
+      "definition": "Juridiction pénale internationale permanente pouvant juger des personnes pour certains crimes internationaux relevant de sa compétence.",
+      "details": "Sa compétence est soumise aux conditions du Statut de Rome et à d’autres règles applicables. Elle n’est pas une juridiction de l’ONU.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [
+        "CPI"
+      ],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "crime-de-guerre",
+      "term": "Crime de guerre",
+      "category": "Droit",
+      "definition": "Violation grave de certaines règles du droit international humanitaire engageant une responsabilité pénale individuelle lorsqu’en sont réunis les éléments juridiques.",
+      "details": "La qualification repose sur le contexte du conflit, les actes constatés, les éléments intentionnels et le droit applicable ; une accusation ne vaut pas condamnation.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
       "slug": "cycle-de-leau",
       "term": "Cycle de l’eau",
       "category": "Environnement",
@@ -293,6 +412,77 @@
       "diploval_view": "Pour Diploval, la gestion de l’eau ne doit pas être réduite au volume prélevé : qualité des sols, végétation, nappes et cycles écologiques doivent aussi être examinés."
     },
     {
+      "slug": "decentralisation",
+      "term": "Décentralisation",
+      "category": "Institutions",
+      "definition": "Organisation par laquelle l’État confie des compétences à des collectivités dotées d’une personnalité juridique et d’autorités propres.",
+      "details": "Elle se distingue de la déconcentration, qui répartit l’action des services de l’État sur le territoire.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "decision-publique",
+      "term": "Décision publique",
+      "category": "Institutions",
+      "definition": "Choix adopté par une autorité publique dans l’exercice de ses compétences.",
+      "details": "Ses objectifs, sa légalité, ses moyens et ses effets concrets peuvent faire l’objet d’évaluations distinctes.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval cherche à relier les décisions annoncées aux ressources mobilisées, à leur application et à leurs effets observés sur les populations et les milieux."
+    },
+    {
+      "slug": "deconcentration",
+      "term": "Déconcentration",
+      "category": "Institutions",
+      "definition": "Organisation administrative dans laquelle l’État confie des responsabilités à ses représentants ou services territoriaux.",
+      "details": "Les décisions restent prises au nom de l’État, contrairement à la décentralisation.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "decret",
+      "term": "Décret",
+      "category": "Droit",
+      "definition": "Acte réglementaire ou individuel pris par le président de la République ou par le Premier ministre, selon les compétences prévues par le droit français.",
+      "details": "Un décret doit respecter les normes supérieures qui lui sont applicables ; tous les décrets n’ont pas la même portée.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "deficit-public",
+      "term": "Déficit public",
+      "category": "Économie",
+      "definition": "Situation dans laquelle les dépenses des administrations publiques dépassent leurs recettes sur une période donnée.",
+      "details": "Un déficit annuel peut contribuer à augmenter la dette, sans que les deux notions se confondent.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
       "slug": "desescalade",
       "term": "Désescalade",
       "category": "Diplomatie",
@@ -306,6 +496,20 @@
       "updated_at": "2026-11-21",
       "reference_nature": "Explication générale",
       "diploval_view": "Diploval envisage la désescalade comme une succession de mesures vérifiables qui réduisent les risques pour les populations, restaurent les canaux de dialogue et préservent les conditions matérielles de la paix."
+    },
+    {
+      "slug": "dette-publique",
+      "term": "Dette publique",
+      "category": "Économie",
+      "definition": "Ensemble des emprunts et autres engagements financiers enregistrés comme dette des administrations publiques selon les règles statistiques retenues.",
+      "details": "Elle doit être distinguée du déficit public, qui mesure un solde sur une période.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
     },
     {
       "slug": "diplomatie",
@@ -335,6 +539,35 @@
       "visible": true,
       "updated_at": "2026-11-21",
       "reference_nature": "Repère juridique"
+    },
+    {
+      "slug": "droit-d-usage-vital",
+      "term": "Droit d’usage vital",
+      "category": "Droit",
+      "definition": "Expression employée pour discuter d’un accès minimal aux ressources indispensables à l’existence, notamment l’eau, l’alimentation ou l’abri.",
+      "details": "Elle ne désigne pas, à elle seule, une catégorie juridique générale et autonome reconnue partout dans ces termes.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval explore la possibilité de garantir, par des instruments juridiques adaptés, l’accès effectif aux conditions indispensables à la vie, sans confondre cette proposition avec le droit déjà en vigueur."
+    },
+    {
+      "slug": "droit-de-recours",
+      "term": "Droit de recours",
+      "category": "Droit",
+      "definition": "Possibilité de contester une décision ou de saisir une autorité ou une juridiction selon les voies prévues par le droit.",
+      "details": "Les délais, les conditions de recevabilité et l’étendue du contrôle varient selon le recours.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
     },
     {
       "slug": "droit-international",
@@ -460,6 +693,50 @@
       "diploval_view": "Diploval examine l’État de droit à travers ses effets concrets : accès aux recours, égalité de traitement, transparence des décisions et protection effective des libertés."
     },
     {
+      "slug": "evaluation-politiques-publiques",
+      "term": "Évaluation des politiques publiques",
+      "category": "Institutions",
+      "definition": "Démarche visant à analyser les résultats, les effets, les coûts et les limites d’une action publique.",
+      "details": "Elle se distingue du simple suivi d’exécution, qui vérifie principalement les activités ou moyens mobilisés.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "La méthode Diploval confronte les annonces, les dispositifs, leur mise en œuvre et les effets observables sur les personnes et les conditions du vivant."
+    },
+    {
+      "slug": "externalite",
+      "term": "Externalité",
+      "category": "Économie",
+      "definition": "Effet d’une activité économique sur des personnes ou des milieux qui n’est pas entièrement pris en compte dans la décision ou le prix de marché.",
+      "details": "Une externalité peut être positive ou négative, par exemple un bénéfice collectif ou une pollution.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval cherche à rendre visibles les coûts subis par les territoires et les milieux, même lorsqu’ils sont absents des bilans économiques immédiats."
+    },
+    {
+      "slug": "fiscalite",
+      "term": "Fiscalité",
+      "category": "Économie",
+      "definition": "Ensemble des règles et des prélèvements relatifs aux impôts et autres contributions publiques.",
+      "details": "La fiscalité finance des politiques publiques et influence les comportements et la répartition des ressources.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
       "slug": "generations-futures",
       "term": "Générations futures",
       "category": "Éthique et société",
@@ -510,6 +787,34 @@
       "definition": "Pénétration de l’eau à travers la surface du sol et sa circulation vers les couches plus profondes.",
       "details": "Elle dépend notamment de la structure du sol, de sa couverture végétale, de son humidité et de l’intensité des pluies.",
       "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "inflation",
+      "term": "Inflation",
+      "category": "Économie",
+      "definition": "Hausse générale et durable du niveau des prix dans une économie.",
+      "details": "Une baisse de l’inflation signifie que les prix augmentent généralement moins vite, non qu’ils diminuent nécessairement.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "institution-publique",
+      "term": "Institution publique",
+      "category": "Institutions",
+      "definition": "Organisme ou autorité intervenant dans l’organisation et l’exercice de fonctions collectives ou de pouvoirs publics.",
+      "details": "Le terme recouvre des structures de statuts et de compétences différents ; son sens précis dépend du contexte.",
+      "reference_nature": "Repère institutionnel",
       "aliases": [],
       "related": [],
       "references": [],
@@ -575,6 +880,49 @@
       "diploval_view": "Diploval considère ce cadre comme un repère de vigilance qu’il faut confronter aux situations locales, aux capacités de régénération et aux conditions du vivant."
     },
     {
+      "slug": "mandat",
+      "term": "Mandat",
+      "category": "Institutions",
+      "definition": "Mission ou pouvoir confié à une personne ou à un organe pour agir dans un cadre déterminé.",
+      "details": "Il peut s’agir d’un mandat électif, diplomatique, judiciaire ou contractuel ; leurs règles diffèrent.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "mediation",
+      "term": "Médiation",
+      "category": "Diplomatie",
+      "definition": "Démarche dans laquelle un tiers aide des parties en désaccord à dialoguer et à rechercher une issue acceptable.",
+      "details": "Le médiateur facilite la négociation mais n’impose pas nécessairement une décision.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval privilégie les processus où les engagements sont vérifiables et où les conséquences sur les populations et les conditions de paix sont examinées."
+    },
+    {
+      "slug": "mission-de-verification",
+      "term": "Mission de vérification",
+      "category": "Diplomatie",
+      "definition": "Dispositif chargé d’observer et de contrôler l’exécution de certains engagements selon un mandat défini.",
+      "details": "Son efficacité dépend notamment de l’accès aux informations, de l’indépendance, des moyens et des procédures de signalement.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
       "slug": "nappes-souterraines",
       "term": "Nappes souterraines",
       "category": "Environnement",
@@ -582,6 +930,22 @@
       "details": "Elles se rechargent selon les pluies, les infiltrations, la géologie et les usages ; leur renouvellement peut être lent.",
       "reference_nature": "Repère scientifique",
       "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "organisation-nations-unies",
+      "term": "Organisation des Nations unies (ONU)",
+      "category": "Institutions",
+      "definition": "Organisation internationale créée en 1945 pour favoriser la paix, la coopération et le respect de principes inscrits dans sa Charte.",
+      "details": "Elle rassemble des États membres et comprend différents organes, programmes et institutions associées.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [
+        "ONU"
+      ],
       "related": [],
       "references": [],
       "status": "Publié",
@@ -604,6 +968,34 @@
       "visible": true,
       "updated_at": "2026-11-21",
       "diploval_view": "Diploval examine la PAC à partir de ses effets concrets sur les revenus, les usages du sol, la disponibilité de l’eau et les possibilités de transition des exploitations."
+    },
+    {
+      "slug": "politique-publique",
+      "term": "Politique publique",
+      "category": "Institutions",
+      "definition": "Ensemble de décisions, de moyens et d’actions engagés par des autorités publiques pour répondre à un problème collectif.",
+      "details": "Elle peut associer plusieurs niveaux de gouvernement, des acteurs privés et des organismes de la société civile.",
+      "reference_nature": "Repère institutionnel",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "pouvoir-achat",
+      "term": "Pouvoir d’achat",
+      "category": "Économie",
+      "definition": "Quantité de biens et de services qu’un revenu permet d’acheter compte tenu du niveau des prix.",
+      "details": "Son évolution dépend notamment des revenus et des prix. Elle ne décrit pas à elle seule les écarts entre ménages.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
     },
     {
       "slug": "principe-de-precaution",
@@ -637,6 +1029,28 @@
       "updated_at": "2026-11-21"
     },
     {
+      "slug": "produit-interieur-brut",
+      "term": "Produit intérieur brut (PIB)",
+      "category": "Économie",
+      "definition": "Indicateur qui mesure la richesse créée par la production de biens et services au sein d’une économie sur une période.",
+      "details": "Il renseigne sur l’activité économique, mais ne mesure pas directement la qualité de vie, les inégalités ou l’état des écosystèmes.",
+      "reference_nature": "Explication générale",
+      "aliases": [
+        "PIB"
+      ],
+      "related": [],
+      "references": [
+        {
+          "label": "Insee — Principaux indicateurs économiques",
+          "url": "https://www.insee.fr/fr/statistiques/4277765"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval utilise le PIB comme indicateur économique parmi d’autres, sans en faire une mesure suffisante de la santé des territoires ou du vivant."
+    },
+    {
       "slug": "proportionnalite",
       "term": "Proportionnalité",
       "category": "Droit",
@@ -650,6 +1064,20 @@
       "updated_at": "2026-11-21",
       "reference_nature": "Repère juridique",
       "diploval_view": "Dans ses analyses, Diploval confronte les objectifs annoncés, les moyens engagés et leurs effets réels sur les personnes, les territoires et les milieux, sans substituer cette démarche au contrôle juridique compétent."
+    },
+    {
+      "slug": "protocole",
+      "term": "Protocole",
+      "category": "Diplomatie",
+      "definition": "Ensemble organisé de règles, d’étapes ou de modalités pratiques convenues pour une action ou un accord.",
+      "details": "Son sens varie selon les contextes, notamment diplomatiques, scientifiques, techniques ou juridiques.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
     },
     {
       "slug": "renaturation",
@@ -696,6 +1124,21 @@
       "diploval_view": "Dans son analyse des conflits, Diploval distingue les faits vérifiés, les qualifications juridiques, les obligations applicables et les conséquences pour les populations et les milieux."
     },
     {
+      "slug": "responsabilite-politique",
+      "term": "Responsabilité politique",
+      "category": "Politique",
+      "definition": "Obligation pour un responsable ou une institution de rendre compte de ses choix et, selon le régime, d’en assumer des conséquences politiques.",
+      "details": "Elle est distincte de la responsabilité civile, pénale ou internationale.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval défend la traçabilité des engagements, des changements de position et des décisions publiques, avec une information accessible aux citoyens."
+    },
+    {
       "slug": "restauration-ecologique",
       "term": "Restauration écologique",
       "category": "Environnement",
@@ -717,6 +1160,20 @@
       "definition": "Situation caractérisée par un déficit prolongé d’eau par rapport aux conditions habituelles d’un lieu.",
       "details": "On distingue notamment les sécheresses météorologique, agricole et hydrologique, qui ne surviennent pas forcément au même moment.",
       "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "securite-alimentaire",
+      "term": "Sécurité alimentaire",
+      "category": "Agriculture",
+      "definition": "Situation dans laquelle les personnes disposent d’un accès physique, social et économique à une alimentation suffisante, sûre et nutritive.",
+      "details": "Elle se distingue de la souveraineté alimentaire, qui s’intéresse aussi à la maîtrise des choix de production et d’organisation.",
+      "reference_nature": "Explication générale",
       "aliases": [],
       "related": [],
       "references": [],
@@ -799,6 +1256,20 @@
       "diploval_view": "Pour Diploval, la souveraineté alimentaire implique d’examiner conjointement les revenus des producteurs, l’accès effectif à l’alimentation, la qualité des sols, la disponibilité de l’eau et la capacité des territoires à décider."
     },
     {
+      "slug": "souverainete-energetique",
+      "term": "Souveraineté énergétique",
+      "category": "Politique",
+      "definition": "Capacité d’un État ou d’un territoire à orienter ses choix énergétiques et à réduire ses dépendances jugées critiques.",
+      "details": "Elle n’implique pas nécessairement une production entièrement nationale ou une absence d’échanges.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
       "slug": "stress-hydrique",
       "term": "Stress hydrique",
       "category": "Environnement",
@@ -813,6 +1284,38 @@
       "updated_at": "2026-11-21"
     },
     {
+      "slug": "subsidiarite",
+      "term": "Subsidiarité",
+      "category": "Institutions",
+      "definition": "Principe qui consiste à ne faire intervenir un niveau de décision supérieur que lorsque le niveau inférieur ne peut pas atteindre suffisamment les objectifs concernés.",
+      "details": "Dans l’Union européenne, l’article 5 du traité sur l’Union européenne fixe les conditions d’application de ce principe dans les domaines de compétence non exclusive.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval examine à quelle échelle une action peut être efficace tout en respectant les interdépendances entre territoires et les conditions du vivant.",
+      "reference_source_label": "Traité sur l’Union européenne, article 5 — EUR-Lex",
+      "reference_source_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=celex%3A12012M005"
+    },
+    {
+      "slug": "traité-de-paix",
+      "term": "Traité de paix",
+      "category": "Diplomatie",
+      "definition": "Accord international visant à mettre fin juridiquement à un conflit ou à en régler certaines conséquences.",
+      "details": "Un traité peut prévoir des engagements territoriaux, des mécanismes de sécurité, des réparations ou des procédures de suivi. Il ne garantit pas à lui seul une paix durable.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval considère la mise en œuvre, la protection des civils, les droits et la reconstruction des conditions du vivant comme des éléments de vérification de la durabilité d’un règlement."
+    },
+    {
       "slug": "zero-artificialisation-nette",
       "term": "Zéro artificialisation nette (ZAN)",
       "category": "Environnement",
@@ -822,6 +1325,20 @@
       "aliases": [
         "ZAN"
       ],
+      "related": [],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "zone-demilitarisee",
+      "term": "Zone démilitarisée",
+      "category": "Diplomatie",
+      "definition": "Espace dans lequel certaines activités ou présences militaires sont interdites ou limitées par un accord ou un régime juridique.",
+      "details": "Les modalités de contrôle, les exceptions et les garanties dépendent du texte applicable.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
       "related": [],
       "references": [],
       "status": "Publié",
