@@ -1,0 +1,29 @@
+.dv-dico{width:100%;max-width:100%;color:#16334b}
+.dv-dico-label{display:block;font-weight:700;margin-bottom:.5rem}
+#dico-search{display:block;width:100%;max-width:100%;box-sizing:border-box;padding:.9rem 1rem;border:1px solid #9caebc;border-radius:.65rem;background:#fff;color:#102c43;font:inherit}
+#dico-search:focus-visible{outline:3px solid #9b6538;outline-offset:2px}
+.dv-dico-alpha{display:flex;flex-wrap:wrap;gap:.4rem;margin:1.2rem 0;padding:.8rem 0;border-top:1px solid #dce4e9;border-bottom:1px solid #dce4e9}
+.dv-dico-alpha a,.dv-dico-alpha span{display:inline-flex;align-items:center;justify-content:center;min-width:1.7rem;min-height:1.9rem;padding:.2rem .35rem;border-radius:.35rem;font-weight:700;text-decoration:none}
+.dv-dico-alpha a{background:#eef3f6;color:#163b5a}
+.dv-dico-alpha a:hover,.dv-dico-alpha a:focus-visible{background:#163b5a;color:white}
+.dv-dico-alpha span{color:#84929e}
+#dico-count{font-size:.94rem;color:#3b586b}
+.dv-dico-group{margin:1.8rem 0;scroll-margin-top:7rem}
+.dv-dico-group h2{font-size:1.4rem;border-bottom:2px solid #d7b391;padding-bottom:.4rem}
+.dv-dico-group ul{list-style:none;padding:0;margin:0;display:grid;gap:.65rem}
+.dv-dico-entry{padding:.85rem 1rem;border:1px solid #dce4e9;border-radius:.7rem;background:#fff}
+.dv-dico-entry a{text-decoration:none;display:grid;gap:.35rem;color:#173e5a}
+.dv-dico-entry a strong{font-size:1.08rem}
+.dv-dico-entry a span{color:#314f61;font-weight:400;line-height:1.5}
+.dv-dico-entry a:hover strong,.dv-dico-entry a:focus-visible strong{text-decoration:underline}
+.dv-dico-entry small{display:block;color:#697e8b;margin-top:.5rem}
+.dv-dico-definition{max-width:72ch}
+.dv-dico-definition h2{margin-top:1.7rem}
+.dv-dico-short{font-size:1.17rem;line-height:1.65;font-weight:600}
+.dv-dico-category{color:#6e5137;font-size:.92rem;letter-spacing:.02em;font-weight:700}
+.dv-dico-aliases{font-size:.94rem}
+.dv-dico-return{border-top:1px solid #dde5e9;padding-top:1rem;margin-top:2rem}
+.dv-dico-autolink{text-decoration:underline;text-decoration-style:dotted;text-decoration-thickness:1.5px;text-underline-offset:.18em;color:#174f79;font-weight:inherit}
+.dv-dico-autolink:hover,.dv-dico-autolink:focus-visible{text-decoration-style:solid;color:#8b5428}
+.dv-dico-entry[hidden],.dv-dico-group[hidden],#dico-empty[hidden]{display:none!important}
+@media(max-width:640px){.dv-dico-entry{padding:.75rem}.dv-dico-alpha{gap:.25rem}.dv-dico-alpha a,.dv-dico-alpha span{min-width:1.55rem}}
