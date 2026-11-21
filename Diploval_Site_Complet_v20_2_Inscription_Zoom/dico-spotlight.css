@@ -1,0 +1,20 @@
+/* Dico Diplo — découverte en page d'accueil, charte Diploval */
+.dico-spotlight,.dico-spotlight *{box-sizing:border-box}
+.dico-spotlight{width:min(1180px,calc(100% - 36px));margin:clamp(1.5rem,3vw,2.8rem) auto 1.8rem;display:grid;grid-template-columns:minmax(0,0.98fr) minmax(0,1.02fr);align-items:stretch;min-width:0;overflow:hidden;border-radius:20px;border:1px solid rgba(195,147,112,.32);background:linear-gradient(115deg,#0b2034 0%,#102d44 56%,#163b51 100%);box-shadow:0 14px 36px rgba(9,33,53,.14)}
+.dico-spotlight__media{min-width:0;display:flex;align-items:center;padding:1.05rem .2rem 1.05rem 1.05rem}
+.dico-spotlight__media a{display:block;width:100%;max-width:100%;border-radius:12px;overflow:hidden}
+.dico-spotlight__media a:focus-visible{outline:3px solid #edb689;outline-offset:4px}
+.dico-spotlight__media img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#0b2034;border-radius:12px}
+.dico-spotlight__content{min-width:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:clamp(1.25rem,3.2vw,2.7rem);color:#f8f2ea}
+.dico-spotlight__kicker{margin:0 0 .65rem;color:#deb18c;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;font-weight:800}
+.dico-spotlight__content h2{margin:0 0 .85rem;color:#fff6eb;font-size:clamp(1.75rem,3.3vw,2.8rem);line-height:1.12;letter-spacing:-.015em;font-weight:600}
+.dico-spotlight__content h2 em{font-style:normal;color:#edaa7e}
+.dico-spotlight__content>p:not(.dico-spotlight__kicker){margin:0 0 1rem;line-height:1.65;color:#e8edf1;font-size:clamp(.91rem,1.2vw,1rem)}
+.dico-spotlight__content .dico-spotlight__meta{font-size:.76rem!important;color:#d6c3b4!important;font-weight:650;letter-spacing:.01em}
+.dico-spotlight__action{display:inline-flex;align-items:center;justify-content:center;gap:.9rem;min-height:45px;padding:.72rem 1.2rem;border-radius:9px;background:#e9b28d;color:#152d42;font-size:.93rem;font-weight:800;line-height:1.3;text-decoration:none;transition:background .15s ease,transform .15s ease}
+.dico-spotlight__action:hover{background:#f5c9aa;transform:translateY(-1px)}
+.dico-spotlight__action:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.main-nav a.nav-dico-diplo{color:#97572d;font-weight:850}
+@media(min-width:980px){.main-nav a.nav-dico-diplo{border-bottom:2px solid #bd815d}}
+@media(max-width:820px){.dico-spotlight{grid-template-columns:1fr;max-width:670px}.dico-spotlight__media{padding:.8rem .8rem 0}.dico-spotlight__content{padding:1.05rem 1.4rem 1.4rem}.dico-spotlight__content h2{font-size:clamp(1.75rem,6vw,2.15rem)}}
+@media(max-width:460px){.dico-spotlight{width:calc(100% - 28px);border-radius:15px;margin:1.2rem auto}.dico-spotlight__media{padding:.55rem .55rem 0}.dico-spotlight__content{padding:1rem 1.05rem 1.15rem}.dico-spotlight__content>p:not(.dico-spotlight__kicker){font-size:.91rem}.dico-spotlight__action{width:100%}}
