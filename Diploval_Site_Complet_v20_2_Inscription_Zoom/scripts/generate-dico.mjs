@@ -60,7 +60,7 @@ export function generateDico(root, {head,layout,org,website,breadcrumb,addMap}) 
   const groups = grouping.map(letter => {
     const cards = entries.filter(e => firstLetter(e.term) === letter).map(e =>
       '<li class="dv-dico-entry" data-dico-search="' + esc([e.term, e.category, e.definition, ...(e.aliases || [])].join(' ')) + '">' +
-      '<a href="/dico/' + e.slug + '/"><strong>' + esc(e.term) + '</strong><span>' + esc(e.definition) + '</span></a>' +
+      '<a href="/dico/' + e.slug + '/"><strong>' + esc(e.term) + '</strong><span>' + esc(e.definition) + '</span><span class="dv-dico-more">Voir la définition complète <span aria-hidden="true">→</span></span></a>' +
       '<small>' + esc(e.category) + '</small></li>').join('');
     return '<section class="dv-dico-group" id="dico-' + letter + '" data-dico-group><h2>' + letter + '</h2><ul>' + cards + '</ul></section>';
   }).join('');
