@@ -10,6 +10,6 @@
 <span></span><span></span><span></span>
 </button>
 </div>
-<nav aria-label="Navigation principale" class="main-nav" id="main-nav"><a href="/#travaux">Publications</a><a href="/dico/">Le Dico</a><a href="/propositions-contributions">Contribuer</a><a href="/#services">Nos services</a><a href="/#publics">Pour qui ?</a><a href="/#methode">Notre méthode</a><a href="/points-information">Points d’information</a><a href="/#apropos">Diploval</a><a href="/#contact">Contact</a></nav>
+<nav aria-label="Navigation principale" class="main-nav" id="main-nav"><a href="/#travaux">Publications</a><a class="nav-dico-diplo" href="/dico/">Dico Diplo</a><a href="/propositions-contributions">Contribuer</a><a href="/#services">Nos services</a><a href="/#publics">Pour qui ?</a><a href="/#methode">Notre méthode</a><a href="/points-information">Points d’information</a><a href="/#apropos">Diploval</a><a href="/#contact">Contact</a></nav>
 </div>
 </header>
