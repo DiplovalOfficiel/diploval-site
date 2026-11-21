@@ -9,7 +9,7 @@ const doc = JSON.parse(fs.readFileSync(path.join(root,'content/dictionnaire.json
 
 test('Le Dico expose une liste de définitions structurées', () => {
   assert.ok(Array.isArray(doc.entries));
-  assert.ok(doc.entries.length >= 20);
+  assert.ok(doc.entries.length >= 120);
   const slugs = new Set();
   for (const item of doc.entries) {
     assert.match(item.slug,/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
@@ -62,3 +62,17 @@ test('La navigation et les scripts du Dico sont reliés', () => {
   assert.match(build,/generateDico\(root/);
   assert.match(build,/dico-links\.js/);
 });
+
+test('Toutes les fiches publiques et références croisées sont cohérentes', () => {
+  const ids = new Set(doc.entries.map(e=>e.slug));
+  assert.equal(ids.size,doc.entries.length,'Identifiants de fiches dupliqués');
+  assert.ok(doc.entries.every(e=>e.status==='Publié' && e.visible===true));
+  for (const e of doc.entries) {
+    assert.ok(e.related.every(id=>ids.has(id) && id!==e.slug),'Renvoi inexistant ou vers soi-même : '+e.slug);
+    for (const source of e.references||[]) {
+      assert.ok(source.label,'Source sans intitulé : '+e.slug);
+      assert.match(source.url,/^https:\/\//,'Source sans URL sécurisée : '+e.slug);
+    }
+  }
+});
+
