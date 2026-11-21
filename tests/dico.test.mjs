@@ -21,7 +21,23 @@ test('Le Dico expose une liste de définitions structurées', () => {
     assert.ok(Array.isArray(item.aliases||[]));
     assert.ok(Array.isArray(item.related||[]));
     assert.ok(Array.isArray(item.references||[]));
+    assert.ok(['Explication générale','Repère juridique','Repère scientifique','Repère institutionnel','Fondement juridique identifié'].includes(item.reference_nature), 'Nature de référence : '+item.slug);
+    if (item.reference_nature === 'Fondement juridique identifié') {
+      assert.ok(item.reference_source_label,'Texte juridique non identifié : '+item.slug);
+      assert.match(item.reference_source_url||'',/^https:\/\//,'Lien vers le texte juridique manquant : '+item.slug);
+    }
+    if (item.diploval_view !== undefined) assert.ok(typeof item.diploval_view === 'string');
   }
+});
+
+test('Les deux lectures restent distinctes des textes officiels', () => {
+  const generator = fs.readFileSync(path.join(root,'scripts/generate-dico.mjs'),'utf8');
+  assert.match(generator,/Définition de référence/);
+  assert.match(generator,/Lecture Diploval — fondements du vivant/);
+  assert.match(generator,/Elle ne remplace pas la définition de référence/);
+  assert.match(generator,/référence juridique officielle manquante/);
+  assert.ok(doc.entries.filter(e => e.diploval_view).length >= 10);
+  assert.ok(doc.entries.some(e => e.slug === 'biodiversite' && e.reference_source_url.includes('legifrance.gouv.fr')));
 });
 
 test('Les nouveaux mots sont publiés seulement après double validation', () => {
