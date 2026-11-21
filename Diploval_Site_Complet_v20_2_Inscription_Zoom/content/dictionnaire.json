@@ -269,6 +269,30 @@
       "diploval_view": "Pour Diploval, la participation citoyenne exige une justification précise des traitements et une information compréhensible, sans confondre participation volontaire et consentement juridique."
     },
     {
+      "slug": "bassin-versant",
+      "term": "Bassin versant",
+      "category": "Environnement",
+      "definition": "Territoire dont les eaux de surface convergent vers un même cours d’eau, un lac ou un point de sortie.",
+      "details": "Ses limites sont liées au relief ; les circulations souterraines peuvent parfois suivre d’autres chemins.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "hydrologie",
+        "cycle-de-leau",
+        "gestion-integree-eau"
+      ],
+      "references": [
+        {
+          "label": "Office français de la biodiversité — Glossaire",
+          "url": "https://ofb.gouv.fr/glossaire"
+        }
+      ],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval privilégie une lecture de l’eau à l’échelle du bassin, qui met en relation pluies, sols, usages et écosystèmes."
+    },
+    {
       "slug": "biocapacite",
       "term": "Biocapacité",
       "category": "Environnement",
@@ -923,6 +947,24 @@
       "diploval_view": "Diploval accorde une attention particulière à l’application effective de ces règles : protection des civils, des personnes vulnérables, des services essentiels et des conditions de vie, avec des faits distingués des allégations."
     },
     {
+      "slug": "ecocide",
+      "term": "Écocide",
+      "category": "Droit",
+      "definition": "Terme utilisé pour qualifier des atteintes particulièrement graves à l’environnement ; sa définition et sa portée pénale varient selon les systèmes juridiques.",
+      "details": "Il faut distinguer les usages militants, les propositions de crime international et les infractions effectivement prévues par le droit applicable.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "principe-pollueur-payeur",
+        "responsabilite-internationale"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval examine les responsabilités à partir des dommages documentés, sans attribuer une qualification pénale avant l’analyse des éléments juridiques pertinents."
+    },
+    {
       "slug": "ecosysteme",
       "term": "Écosystème",
       "category": "Environnement",
@@ -936,6 +978,30 @@
         "continuite-ecologique"
       ],
       "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "el-nino",
+      "term": "El Niño",
+      "category": "Environnement",
+      "definition": "Phase d’un phénomène naturel couplant l’océan et l’atmosphère du Pacifique équatorial, caractérisée notamment par un réchauffement anormal des eaux de surface de certaines régions.",
+      "details": "Il influence les régimes climatiques dans différentes parties du monde, mais ne produit pas les mêmes effets partout ni à chaque épisode.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [
+        "El Nino"
+      ],
+      "related": [
+        "changement-climatique",
+        "adaptation-climatique"
+      ],
+      "references": [
+        {
+          "label": "Météo-France — El Niño et La Niña",
+          "url": "https://education.meteofrance.fr/changement-climatique/el-nino-et-la-nina"
+        }
+      ],
       "status": "Publié",
       "visible": true,
       "updated_at": "2026-11-21"
@@ -970,6 +1036,24 @@
       "updated_at": "2026-11-21",
       "reference_nature": "Repère scientifique",
       "diploval_view": "Diploval utilise cet indicateur pour éclairer les tensions entre activités humaines et capacités de régénération, tout en rappelant qu’il ne remplace pas une analyse complète de la biodiversité, de l’eau ou des sols."
+    },
+    {
+      "slug": "engagement-electoral",
+      "term": "Engagement électoral",
+      "category": "Politique",
+      "definition": "Promesse ou orientation annoncée publiquement par une personne ou une formation candidate à une élection.",
+      "details": "Un engagement politique n’a pas toujours de force juridique obligatoire et peut être affecté par les institutions, les circonstances ou les majorités nécessaires.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "responsabilite-politique",
+        "transparence"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval propose de mieux tracer les engagements et d’expliquer publiquement les changements de position ou les renoncements, sans interdire l’évolution des idées."
     },
     {
       "slug": "engrais-phosphates",
@@ -1021,6 +1105,24 @@
       "diploval_view": "Diploval examine l’État de droit à travers ses effets concrets : accès aux recours, égalité de traitement, transparence des décisions et protection effective des libertés."
     },
     {
+      "slug": "ethique",
+      "term": "Éthique",
+      "category": "Éthique et société",
+      "definition": "Réflexion sur les choix, les valeurs et les conséquences des actions, visant à déterminer ce qu’il est justifié de faire.",
+      "details": "Elle se distingue du droit positif : une conduite peut être légale sans que tous ses effets soient jugés souhaitables.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "generations-futures",
+        "biodiversite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "La diplomatie éthique du vivant de Diploval examine les conséquences d’un choix sur les relations humaines, les autres êtres vivants et les conditions de leur existence."
+    },
+    {
       "slug": "evaluation-politiques-publiques",
       "term": "Évaluation des politiques publiques",
       "category": "Institutions",
@@ -1067,6 +1169,24 @@
       "status": "Publié",
       "visible": true,
       "updated_at": "2026-11-21"
+    },
+    {
+      "slug": "faune-sauvage",
+      "term": "Faune sauvage",
+      "category": "Environnement",
+      "definition": "Ensemble des animaux vivant à l’état sauvage dans un milieu, sans être définis par une relation de garde domestique.",
+      "details": "Les statuts juridiques et les mesures de protection varient selon les espèces, les territoires et les circonstances.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "biodiversite",
+        "ecosysteme"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval s’intéresse aux habitats, aux déplacements et aux besoins des animaux, en complément des catégories juridiques qui régissent leur protection."
     },
     {
       "slug": "fiscalite",
@@ -1226,6 +1346,24 @@
       "updated_at": "2026-11-21"
     },
     {
+      "slug": "jour-du-depassement",
+      "term": "Jour du dépassement",
+      "category": "Environnement",
+      "definition": "Date calculée à partir de l’empreinte écologique et de la biocapacité, à laquelle la consommation annuelle estimée de ressources et services écologiques dépasse la régénération estimée pour l’année.",
+      "details": "Il s’agit d’un indicateur pédagogique fondé sur une méthode particulière, non d’un jour où toutes les ressources physiques disparaissent.",
+      "reference_nature": "Repère scientifique",
+      "aliases": [],
+      "related": [
+        "empreinte-ecologique",
+        "biocapacite"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval l’utilise pour interroger les déséquilibres écologiques, tout en en exposant les limites méthodologiques et les inégalités de consommation."
+    },
+    {
       "slug": "jurisprudence",
       "term": "Jurisprudence",
       "category": "Droit",
@@ -1296,6 +1434,24 @@
       "visible": true,
       "updated_at": "2026-11-21",
       "diploval_view": "Diploval privilégie les processus où les engagements sont vérifiables et où les conséquences sur les populations et les conditions de paix sont examinées."
+    },
+    {
+      "slug": "migrations-contraintes",
+      "term": "Migrations contraintes",
+      "category": "Éthique et société",
+      "definition": "Déplacements de personnes rendus nécessaires ou fortement poussés par des menaces, des violences, des privations ou des conditions de vie devenues intenables.",
+      "details": "Le terme est descriptif et ne correspond pas à lui seul à un statut juridique uniforme ; la protection applicable dépend de la situation de chaque personne.",
+      "reference_nature": "Explication générale",
+      "aliases": [],
+      "related": [
+        "droit-d-usage-vital",
+        "securite-alimentaire"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval étudie les liens entre accès à l’eau, terres, alimentation, conflits et déplacements, sans réduire les trajectoires migratoires à une cause unique."
     },
     {
       "slug": "mission-de-verification",
@@ -1460,6 +1616,26 @@
       "updated_at": "2026-11-21"
     },
     {
+      "slug": "principe-pollueur-payeur",
+      "term": "Principe pollueur-payeur",
+      "category": "Droit",
+      "definition": "Principe selon lequel les frais liés à la prévention, à la réduction et à la lutte contre une pollution doivent être supportés par son auteur, dans les conditions fixées par le droit.",
+      "details": "Il figure notamment dans les principes généraux du Code de l’environnement français.",
+      "reference_nature": "Fondement juridique identifié",
+      "aliases": [],
+      "related": [
+        "principe-de-prevention",
+        "ecocide"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval s’intéresse au coût complet des atteintes aux milieux, notamment aux dépenses reportées sur les habitants, les collectivités et les générations futures.",
+      "reference_source_label": "Code de l’environnement, article L. 110-1 — Légifrance",
+      "reference_source_url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043975398/2026-02-21"
+    },
+    {
       "slug": "produit-interieur-brut",
       "term": "Produit intérieur brut (PIB)",
       "category": "Économie",
@@ -1537,6 +1713,24 @@
       "updated_at": "2026-11-21",
       "reference_source_label": "RGPD, article 4, point 5 — EUR-Lex",
       "reference_source_url": "https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32016R0679"
+    },
+    {
+      "slug": "recours-effectif",
+      "term": "Recours effectif",
+      "category": "Droit",
+      "definition": "Possibilité réelle de saisir une autorité compétente, notamment une juridiction, pour faire examiner une atteinte alléguée à un droit.",
+      "details": "Son effectivité dépend notamment de l’accès à la procédure, des garanties d’examen et de la possibilité d’obtenir une réponse utile.",
+      "reference_nature": "Repère juridique",
+      "aliases": [],
+      "related": [
+        "droit-de-recours",
+        "etat-de-droit"
+      ],
+      "references": [],
+      "status": "Publié",
+      "visible": true,
+      "updated_at": "2026-11-21",
+      "diploval_view": "Diploval examine non seulement l’existence d’un recours dans les textes, mais sa possibilité d’usage par les personnes concernées."
     },
     {
       "slug": "reglement-general-protection-donnees",
