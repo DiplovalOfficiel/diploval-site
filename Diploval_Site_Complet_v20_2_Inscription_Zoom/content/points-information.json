@@ -105,6 +105,27 @@
       "opened_at": "2026-11-19T22:08",
       "updates": [
         {
+          "datetime": "2026-11-22T13:31",
+          "title": "22 novembre — Sanaa : frappe signalée sur une installation de carburant",
+          "correction": false,
+          "body": "Dans la nuit du 21 au 22 novembre, les autorités sanitaires administrées par les Houthis ont signalé une frappe aérienne sur une installation de carburant exploitée par la compagnie pétrolière publique à Sanaa. Leur porte-parole fait état de six employés blessés et de dommages au bâtiment de l’entreprise. Associated Press rapporte ces déclarations. L’auteur de la frappe, l’étendue exacte des dégâts et le bilan indépendant ne sont pas établis ; une attribution à l’Arabie saoudite ne doit pas être présentée comme un fait confirmé.",
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-22T13:31",
+          "title": "22 novembre — Cisjordanie : incendies de véhicules et de propriétés palestiniennes",
+          "correction": false,
+          "body": "Dans la nuit du 21 au 22 novembre, plusieurs véhicules et biens appartenant à des Palestiniens ont été incendiés dans des localités de Cisjordanie occupée. Des colons israéliens sont soupçonnés d’avoir participé à ces attaques. La police israélienne a annoncé une enquête sur les incendies et des inscriptions retrouvées sur place. Gadi Eisenkot a condamné ces actes en les qualifiant, dans une déclaration politique, de « terrorisme juif » ; cette qualification ne vaut pas décision judiciaire. Les responsabilités individuelles restent à établir.",
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-22T13:31",
+          "title": "22 novembre — Bahreïn : deux blessés signalés après les attaques du 21 novembre",
+          "correction": false,
+          "body": "Le ministère de l’Intérieur de Bahreïn a révisé le bilan des attaques attribuées à l’Iran survenues le 21 novembre : deux personnes sont désormais signalées blessées, un résident pakistanais dans un état critique et un citoyen bahreïni dans un état stable. Cette annonce du 22 novembre corrige le premier bilan public faisant état de dommages matériels sans blessés signalés ; elle ne correspond pas à une nouvelle attaque survenue ce dimanche. Les Gardiens de la révolution iraniens revendiquent des attaques visant des positions militaires américaines sur le territoire bahreïni, sans confirmation indépendante de leurs résultats.",
+          "sources": []
+        },
+        {
           "correction": false,
           "datetime": "2026-11-21T09:18",
           "title": "20 novembre — Hodeïda : frappes sur le port et menaces contre les ports saoudiens",
@@ -141,7 +162,7 @@
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
-      "last_update": "2026-11-21T09:18",
+      "last_update": "2026-11-22T13:31",
       "status": "suivi",
       "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
@@ -180,6 +201,18 @@
           "type": "Agence de presse",
           "url": "https://www.reuters.com/world/middle-east/yemens-houthis-threaten-strike-saudi-red-sea-ports-2026-11-20/",
           "note": "Annonces et revendications attribuées à la coalition, aux Houthis et au ministre yéménite de l’Information."
+        },
+        {
+          "label": "Associated Press — Sanaa et violences en Cisjordanie, 22 novembre 2026",
+          "type": "Agence de presse",
+          "url": "https://apnews.com/article/mideast-houthis-west-bank-november-22-2026-8d1680a23d592667db1ce1969b55b4f2",
+          "note": "Informations attribuées aux autorités houthies et enquête annoncée par la police israélienne."
+        },
+        {
+          "label": "Reuters — Bahreïn : bilan révisé des attaques du 21 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
+          "note": "Deux blessés selon le ministère de l’Intérieur du Bahreïn ; revendications des Gardiens de la révolution attribuées."
         }
       ],
       "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
