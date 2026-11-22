@@ -9,6 +9,22 @@
       "updates": [
         {
           "correction": false,
+          "datetime": "2026-11-22T13:45",
+          "title": "Sécurité européenne : Washington propose d’élargir les discussions",
+          "body": "Les émissaires américains ont proposé de discuter de la sécurité européenne après la guerre. Moscou soutient cette piste et réaffirme ses exigences antérieures. Le 21 novembre, Volodymyr Zelensky a dit douter que Vladimir Poutine soit prêt à faire des compromis. Il a demandé que soient fixés la date et l’ordre du jour du prochain cycle de pourparlers. Diploval maintient le niveau 2 — Vigilance renforcée.",
+          "sources": [
+            {
+              "label": "Associated Press — proposition américaine sur la sécurité européenne, 20 novembre",
+              "url": "https://apnews.com/article/60752c921b031be80b1f7a9e83455a0e"
+            },
+            {
+              "label": "Reuters — déclarations de Volodymyr Zelensky, 21 novembre",
+              "url": "https://www.reuters.com/world/europe/trump-told-european-leaders-they-were-spending-lot-ukraine-zelenskiy-says-2026-11-21/"
+            }
+          ]
+        },
+        {
+          "correction": false,
           "datetime": "2026-11-19T21:50",
           "title": "Berlin : accélération simultanée des négociations et du soutien militaire à l’Ukraine",
           "body": "Le 19 novembre 2026, la séquence diplomatique s’est intensifiée autour de l’Ukraine, notamment à Berlin, avec une coordination renforcée entre l’Ukraine, plusieurs États européens, les institutions européennes et les représentants américains. Dans le même temps, plusieurs pays européens ont confirmé la poursuite ou le renforcement de leur soutien militaire à l’Ukraine, notamment en matière de défense aérienne, de drones, de capacités navales et d’équipements. La France continue également son soutien militaire déjà engagé, notamment via des capacités aériennes, des munitions et des systèmes de défense. Cette double dynamique — négociations plus actives et soutien militaire maintenu — constitue un facteur important de vigilance : elle peut soutenir une future négociation, mais elle entretient aussi un risque d’incident ou d’escalade pendant la phase de discussion. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
@@ -70,7 +86,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-19T21:50",
+      "last_update": "2026-11-22T13:45",
       "status": "suivi",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
       "sources": [
