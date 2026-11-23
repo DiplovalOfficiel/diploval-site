@@ -77,28 +77,37 @@ const pointEntriesHtml=entries=>{
 function pointHistoryHtml(id){
   const versions=previousVersions.filter(v=>v.point_slug===id&&v.point)
     .sort((a,b)=>String(b.recorded_at||'').localeCompare(String(a.recorded_at||'')));
-  const introductory='<section id="historique-versions" class="seo-detail-history" style="margin-top:2rem">'
-    +'<h2>Historique des versions</h2>'
-    +'<p>Les précédentes éditions restent consultables avec leur synthèse, leur niveau de vigilance, leurs étapes et leurs sources. Les dates correspondent à l’enregistrement dans le dépôt Diploval ; elles ne garantissent pas l’heure exacte du déploiement public.</p>';
-  if(!versions.length)return introductory+'<p>Aucune version antérieure enregistrée pour ce suivi.</p></section>';
+  const introductory='<section id="historique-versions" class="dv-history" aria-labelledby="dv-history-heading">'
+    +'<div class="dv-history__header"><p class="dv-history__eyebrow">Traçabilité éditoriale</p>'
+    +'<h2 id="dv-history-heading">Historique des versions</h2>'
+    +'<p>Retrouver ce que Diploval publiait à chaque étape. Cliquer sur une date pour déplier l’ancienne édition et faire défiler son contenu.</p>'
+    +'<p class="dv-history__hint">Les dates correspondent aux enregistrements dans GitHub, pas nécessairement à la mise en ligne effective.</p></div>';
+  if(!versions.length)return introductory+'<p>Aucune édition antérieure conservée pour ce suivi.</p></section>';
   const views=versions.map(v=>{
-    const old=v.point,notes=pointChronology(old.updates),refs=(old.sources||[]).filter(s=>s.label&&s.url);
+    const old=v.point,notes=pointChronology(old.updates),refs=(old.sources||[]).filter(x=>x.label&&x.url);
     const github='https://github.com/DiplovalOfficiel/diploval-site/blob/'+encodeURIComponent(v.commit_sha)
       +'/Diploval_Site_Complet_v20_2_Inscription_Zoom/content/points-information.json';
-    const historyNote=String(v.recorded_at||'').replace('T',' à ').replace('Z',' UTC');
-    return '<details class="seo-history-edition" style="padding:1rem 0;border-top:1px solid #bdc9d4">'
-      +'<summary style="cursor:pointer"><strong>'+esc(historyNote)+'</strong> — '+esc(v.label||'Édition antérieure')
-      +' · Niveau '+esc(old.level||'sans classement')+' · '+notes.length+' étapes</summary>'
-      +'<div style="margin:1rem 0 1.3rem"><h3>Synthèse de cette édition</h3>'
-      +paras(old.summary||'')+'<h3>Justification du niveau</h3>'+paras(old.why_level||'')
-      +'<details><summary style="cursor:pointer">Consulter les étapes ('+notes.length+')</summary>'
-      +pointEntriesHtml(notes)+'</details>'
-      +(refs.length?'<details><summary style="cursor:pointer">Sources conservées ('+refs.length+')</summary>'
-        +'<ul class="seo-source-list">'+refs.map(s=>'<li><a href="'+esc(s.url)+'" rel="noopener noreferrer" target="_blank">'+esc(s.label)+'</a></li>').join('')+'</ul></details>':'')
-      +'<p style="margin-top:1rem"><a href="'+esc(github)+'" target="_blank" rel="noopener noreferrer">Consulter la version originale sur GitHub</a></p>'
+    let when=String(v.recorded_at||'');
+    try{when=new Intl.DateTimeFormat('fr-FR',{timeZone:'Europe/Paris',day:'numeric',month:'long',year:'numeric',hour:'2-digit',minute:'2-digit'}).format(new Date(v.recorded_at))}catch{}
+    const entryLabel=notes.length+' étape'+(notes.length>1?'s':'');
+    return '<details class="dv-history__edition" name="dv-history-'+esc(id)+'">'
+      +'<summary><span class="dv-history__summary-main"><strong class="dv-history__date">'+esc(when)+'</strong>'
+      +'<span class="dv-history__subtitle">'+esc(v.label||'Édition conservée')
+      +' · Niveau '+esc(old.level||'non classé')+' · '+entryLabel+'</span></span>'
+      +'<span class="dv-history__chevron" aria-hidden="true">+</span></summary>'
+      +'<div class="dv-history__body"><h3>Synthèse de cette édition</h3>'+paras(old.summary||'')
+      +'<h4>Pourquoi ce niveau à cette date ?</h4>'+paras(old.why_level||'')
+      +'<details class="dv-history__subdetails"><summary>Lire les '+entryLabel+' de cette édition</summary>'
+      +'<div class="dv-history__subbody">'+pointEntriesHtml(notes)+'</div></details>'
+      +(refs.length?'<details class="dv-history__subdetails"><summary>Consulter les sources ('+refs.length+')</summary>'
+        +'<div class="dv-history__subbody"><ul class="seo-source-list">'
+        +refs.map(x=>'<li><a href="'+esc(x.url)+'" rel="noopener noreferrer" target="_blank">'+esc(x.label)+'</a></li>').join('')
+        +'</ul></div></details>':'')
+      +'<p class="dv-history__footer"><a href="'+esc(github)+'" target="_blank" rel="noopener noreferrer">'
+      +'Voir le fichier original de cette version sur GitHub</a></p>'
       +'</div></details>';
   }).join('');
-  return introductory+'<p><strong>'+versions.length+' éditions précédentes disponibles.</strong></p>'+views+'</section>';
+  return introductory+'<div class="dv-history__list" aria-label="Éditions antérieures">'+views+'</div></section>';
 }
 for(const p of points.filter(x=>x.visible!==false)){
   const id=p.slug||slugify(p.title);
@@ -114,16 +123,18 @@ for(const p of points.filter(x=>x.visible!==false)){
     breadcrumb([['Accueil',SITE+'/'],['Points d’information',SITE+'/points-information'],[p.title,url]])]};
   const timeline=p.updates?.length?'<h2>Chronologie des faits</h2>'+pointEntriesHtml(p.updates):'';
   const body='<h2>Situation suivie</h2>'+paras(p.summary||'')
+    +'<p class="dv-history__quicklink"><a href="#historique-versions">Consulter les versions précédentes</a></p>'
     +(p.why_level?'<h2>Éléments d’appréciation</h2>'+paras(p.why_level):'')
-    +timeline+pointHistoryHtml(id);
+    +timeline;
   const sources=(p.sources||[]).filter(s=>s.label&&s.url);
   const side=relatedPublicationCard(p)
     +'<div class="seo-detail-card"><h3>Statut</h3><p>'+esc([p.status,p.level&&p.level!=='aucun'?'Niveau '+p.level:'',p.last_update?'Mis à jour '+p.last_update:''].filter(Boolean).join(' · '))+'</p></div>'
     +(sources.length?'<div class="seo-detail-card"><h3>Sources principales</h3><ul class="seo-source-list">'+sources.map(s=>'<li><a href="'+esc(s.url)+'" rel="noopener noreferrer">'+esc(s.label)+'</a></li>').join('')+'</ul></div>':'');
   const html=head({title:p.title+' — Point d’information Diploval',desc,url,image:img,type:'article',jsonld:graph,articleDate:dp})
+    .replace('</head>','<link rel="stylesheet" href="/points-history.css?v=1"></head>')
     +layout({back:['Tous les points d’information','/points-information'],eyebrow:p.category||'Point d’information',
       title:p.title,lead:p.summary||'',meta:[p.status,p.level&&p.level!=='aucun'?'Niveau '+p.level:'',p.last_update?'Mis à jour '+p.last_update:''],
-      body,side,after:shareBlock(p.title,url)});
+      body,side,after:pointHistoryHtml(id)+shareBlock(p.title,url)});
   write('points-information/'+id+'/index.html',html);
   addMap(url,dm);
 }
