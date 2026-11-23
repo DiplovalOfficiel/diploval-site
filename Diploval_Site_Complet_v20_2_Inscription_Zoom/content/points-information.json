@@ -8,20 +8,6 @@
       "opened_at": "2026-11-19T11:50",
       "updates": [
         {
-          "datetime": "2026-11-23T11:35",
-          "title": "23 novembre — Moscou propose des contacts exploratoires avec les Européens",
-          "body": "Le 19 novembre, Vladimir Poutine a déclaré avoir invité des représentants européens à Moscou pour clarifier leur position avant d’arrêter le format de futures négociations sur l’Ukraine. Il ne s’agit pas d’une rencontre déjà tenue : à la date de cette mise à jour, aucune date ou participation définitive n’est confirmée. Le sommet Trump–Poutine–Xi du même jour à Shenzhen a abouti à une déclaration générale sur les risques nucléaires et la coopération internationale, sans accord spécifique sur l’Ukraine ni sur l’Iran.",
-          "correction": false,
-          "sources": []
-        },
-        {
-          "datetime": "2026-11-23T11:35",
-          "title": "23 novembre — Bilan des pourparlers d’Abu Dhabi des 10–11 novembre",
-          "body": "Les délégations ukrainienne et russe se sont retrouvées les 10 et 11 novembre à Abu Dhabi sous médiation américaine, après neuf mois d’interruption des négociations directes. Les parties sont parvenues à un accord de principe sur un important échange de prisonniers, dont les modalités et la réalisation restent à vérifier séparément. Aucune avancée décisive n’a été annoncée concernant le territoire ou les garanties de sécurité.",
-          "correction": false,
-          "sources": []
-        },
-        {
           "correction": false,
           "datetime": "2026-11-22T13:45",
           "title": "Sécurité européenne : Washington propose d’élargir les discussions",
@@ -35,19 +21,41 @@
               "label": "Reuters — déclarations de Volodymyr Zelensky, 21 novembre",
               "url": "https://www.reuters.com/world/europe/trump-told-european-leaders-they-were-spending-lot-ukraine-zelenskiy-says-2026-11-21/"
             }
-          ]
+          ],
+          "event_date": "2026-11-21",
+          "event_label": "20–21 novembre 2026"
+        },
+        {
+          "datetime": "2026-11-23T11:35",
+          "title": "Moscou propose des contacts exploratoires avec les Européens",
+          "body": "Le 19 novembre, Vladimir Poutine a déclaré avoir invité des représentants européens à Moscou pour clarifier leur position avant d’arrêter le format de futures négociations sur l’Ukraine. Il ne s’agit pas d’une rencontre déjà tenue : à la date de cette mise à jour, aucune date ou participation définitive n’est confirmée. Le sommet Trump–Poutine–Xi du même jour à Shenzhen a abouti à une déclaration générale sur les risques nucléaires et la coopération internationale, sans accord spécifique sur l’Ukraine ni sur l’Iran.",
+          "correction": false,
+          "sources": [],
+          "event_date": "2026-11-19",
+          "event_label": "19 novembre 2026 — annonce d’invitation"
         },
         {
           "correction": false,
           "datetime": "2026-11-19T21:50",
-          "title": "19 novembre — Berlin : projets précis de garanties de sécurité",
+          "title": "Berlin : projets de garanties de sécurité",
           "body": "À Berlin, la Coalition des volontaires, l’Ukraine et les États-Unis ont confirmé leur intention de coordonner le soutien militaire, financier et diplomatique à Kyiv. La déclaration publiée par l’Élysée expose plusieurs garanties envisagées une fois un cessez-le-feu entré en vigueur : mécanisme de surveillance conduit par les États-Unis, force multinationale européenne soutenue par Washington et engagements juridiquement contraignants soumis aux procédures nationales. Ces dispositifs restent des propositions conditionnelles. L’équipe européenne désignée le 13 novembre associe les institutions de l’UE à la France, l’Allemagne, l’Italie, la Pologne et le Royaume-Uni.",
           "sources": [
             {
               "label": "Élysée — déclaration conjointe du 19 novembre",
               "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine"
             }
-          ]
+          ],
+          "event_date": "2026-11-19",
+          "event_label": "19 novembre 2026"
+        },
+        {
+          "correction": false,
+          "datetime": "2026-11-19T11:51",
+          "title": "Niveau 2 maintenu — bilan initial des négociations et des risques",
+          "body": "Les échanges diplomatiques restent ouverts et plusieurs propositions de cessez-le-feu, de garanties de sécurité et de désescalade continuent d’être examinées. Aucun accord général n’est toutefois conclu à ce jour. L’activité militaire demeure élevée, mais aucun élément suffisamment établi ne justifie un passage au Code One. Diploval maintient donc le niveau 2 — Vigilance renforcée et poursuit le suivi des négociations et du risque d’escalade régionale.",
+          "sources": [],
+          "event_date": "2026-11-19",
+          "event_label": "19 novembre 2026 — point de situation initial"
         },
         {
           "correction": false,
@@ -63,14 +71,18 @@
               "label": "Euronews — 17 novembre 2026",
               "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war"
             }
-          ]
+          ],
+          "event_date": "2026-11-17",
+          "event_label": "17 novembre 2026 — déclarations"
         },
         {
+          "datetime": "2026-11-23T11:35",
+          "title": "Abu Dhabi : bilan des négociations et annonce d’échange de prisonniers",
+          "body": "Les délégations ukrainienne et russe se sont retrouvées les 10 et 11 novembre à Abu Dhabi sous médiation américaine, après neuf mois d’interruption des négociations directes. Les parties sont parvenues à un accord de principe sur un important échange de prisonniers, dont les modalités et la réalisation restent à vérifier séparément. Aucune avancée décisive n’a été annoncée concernant le territoire ou les garanties de sécurité.",
           "correction": false,
-          "datetime": "2026-11-19T11:51",
-          "title": "Niveau 2 maintenu — négociations actives, risque militaire toujours élevé",
-          "body": "Les échanges diplomatiques restent ouverts et plusieurs propositions de cessez-le-feu, de garanties de sécurité et de désescalade continuent d’être examinées. Aucun accord général n’est toutefois conclu à ce jour. L’activité militaire demeure élevée, mais aucun élément suffisamment établi ne justifie un passage au Code One. Diploval maintient donc le niveau 2 — Vigilance renforcée et poursuit le suivi des négociations et du risque d’escalade régionale.",
-          "sources": []
+          "sources": [],
+          "event_date": "2026-11-11",
+          "event_label": "10–11 novembre 2026 — pourparlers"
         }
       ],
       "watch_up": [
