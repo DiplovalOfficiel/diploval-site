@@ -1,0 +1,1555 @@
+{
+  "schema_version": 1,
+  "description": "Versions éditoriales conservées à partir de commits réels du dépôt GitHub Diploval, depuis l'ouverture des suivis. Les dates recorded_at proviennent des commits (UTC). Les snapshots représentent les états enregistrés dans le dépôt, sans prétendre prouver l’heure du déploiement public.",
+  "versions": [
+    {
+      "point_slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "recorded_at": "2026-11-23T10:52:36Z",
+      "label": "Chronologie corrigée du 23 novembre",
+      "commit_sha": "981314620816bf9d95e3658ff10ae12bcece0ebe",
+      "point": {
+        "show_home": true,
+        "level": "1",
+        "summary": "Au 19 novembre 2026, la situation reste préoccupante à Gaza et en Cisjordanie, où les civils subissent les conséquences des violences, des déplacements et des restrictions. Des frappes sont également signalées au Liban, tandis que les tensions militaires touchent l’Iran et plusieurs pays du Golfe. Les initiatives diplomatiques se poursuivent sans stabilisation régionale durable. Diploval suit séparément les faits militaires, les enjeux humanitaires et les efforts de désescalade.",
+        "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
+        "opened_at": "2026-11-19T22:08",
+        "updates": [
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "Sanaa : frappe signalée sur une installation de carburant",
+            "correction": false,
+            "body": "Dans la nuit du 21 au 22 novembre, les autorités sanitaires administrées par les Houthis ont signalé une frappe aérienne sur une installation de carburant exploitée par la compagnie pétrolière publique à Sanaa. Leur porte-parole fait état de six employés blessés et de dommages au bâtiment de l’entreprise. Associated Press rapporte ces déclarations. L’auteur de la frappe, l’étendue exacte des dégâts et le bilan indépendant ne sont pas établis ; une attribution à l’Arabie saoudite ne doit pas être présentée comme un fait confirmé.",
+            "sources": [],
+            "event_date": "2026-11-22",
+            "event_label": "21–22 novembre 2026"
+          },
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "Cisjordanie : incendies de véhicules et de propriétés palestiniennes",
+            "correction": false,
+            "body": "Dans la nuit du 21 au 22 novembre, plusieurs véhicules et biens appartenant à des Palestiniens ont été incendiés dans des localités de Cisjordanie occupée. Des colons israéliens sont soupçonnés d’avoir participé à ces attaques. La police israélienne a annoncé une enquête sur les incendies et des inscriptions retrouvées sur place. Gadi Eisenkot a condamné ces actes en les qualifiant, dans une déclaration politique, de « terrorisme juif » ; cette qualification ne vaut pas décision judiciaire. Les responsabilités individuelles restent à établir.",
+            "sources": [],
+            "event_date": "2026-11-22",
+            "event_label": "21–22 novembre 2026"
+          },
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "Bahreïn : bilan corrigé des attaques du 21 novembre",
+            "correction": false,
+            "body": "Le ministère de l’Intérieur de Bahreïn a révisé le bilan des attaques attribuées à l’Iran survenues le 21 novembre : deux personnes sont désormais signalées blessées, un résident pakistanais dans un état critique et un citoyen bahreïni dans un état stable. Cette annonce du 22 novembre corrige le premier bilan public faisant état de dommages matériels sans blessés signalés ; elle ne correspond pas à une nouvelle attaque survenue ce dimanche. Les Gardiens de la révolution iraniens revendiquent des attaques visant des positions militaires américaines sur le territoire bahreïni, sans confirmation indépendante de leurs résultats.",
+            "sources": [],
+            "event_date": "2026-11-22",
+            "event_label": "22 novembre 2026 — révision du bilan du 21 novembre"
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "Déclaration Allemagne–Qatar et suivi nucléaire iranien",
+            "body": "Lors de la visite de l’émir du Qatar en Allemagne les 20–21 novembre, les deux gouvernements ont publié une déclaration commune favorable à une solution à deux États, à l’accès humanitaire à Gaza, à la liberté de navigation et à une issue négociée au Yémen. Ils ont annoncé une coopération bilatérale en matière de médiation, non un accord de paix entre belligérants. Lors de la réunion du Conseil des gouverneurs de l’AIEA du 18 au 20 novembre, la France, l’Allemagne, le Royaume-Uni et les États-Unis ont demandé à l’Iran de rétablir l’accès des inspecteurs aux sites concernés, citant des lacunes persistantes dans la vérification des matières nucléaires. Ces difficultés ne démontrent pas un recours imminent à l’arme nucléaire. Une rencontre ministérielle UE–pays du Golfe est envisagée en décembre, sans date exacte confirmée.",
+            "correction": false,
+            "sources": [],
+            "event_date": "2026-11-21",
+            "event_label": "18–21 novembre 2026"
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "Contacts Washington–Doha–Téhéran et médiation",
+            "body": "Le 19 novembre à Berlin, selon deux sources citées par Axios, les émissaires américains Steve Witkoff et Jared Kushner ont rencontré des responsables qataris afin d’examiner la reprise des négociations avec l’Iran. Selon un responsable iranien cité par Reuters, une délégation qatarie s’est rendue à Téhéran le 20 novembre. Les contacts diplomatiques se poursuivent, mais ni nouveau cessez-le-feu ni date de négociation directe ne sont confirmés.",
+            "correction": false,
+            "sources": [],
+            "event_date": "2026-11-20",
+            "event_label": "19–20 novembre 2026"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-21T09:18",
+            "title": "Hodeïda : frappes sur le port et menaces contre les ports saoudiens",
+            "body": "La coalition dirigée par l’Arabie saoudite a déclaré avoir frappé le port de Hodeïda, au Yémen, le 20 novembre. Elle affirme avoir visé des capacités utilisées pour le transport d’armes et de missiles. Reuters confirme l’annonce de la frappe, mais la finalité militaire exacte et l’étendue des dégâts ne sont pas vérifiées indépendamment. Le ministre yéménite de l’Information a affirmé que le port restait opérationnel. Les Houthis ont menacé de viser des ports saoudiens de la mer Rouge et ont revendiqué des attaques contre une centrale électrique et un port dans le sud de l’Arabie saoudite ; la coalition affirme avoir intercepté deux missiles. Le bilan civil et les conséquences sur l’approvisionnement de la population restent à établir. L’événement accroît la vigilance sur les infrastructures portuaires et la sécurité maritime.",
+            "sources": [],
+            "event_date": "2026-11-20",
+            "event_label": "20 novembre 2026"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T22:08",
+            "title": "Situation initiale — Gaza, Cisjordanie, Iran, Liban et Golfe",
+            "body": "Gaza et Cisjordanie — Dans son rapport du 13 novembre, l’OCHA décrit une situation humanitaire toujours grave à Gaza malgré le cessez-le-feu d’octobre 2025. L’agence signale également des déplacements de population et des violences en Cisjordanie. Le bilan de 1 613 morts depuis l’accord jusqu’au 9 novembre, qu’elle relaie, est attribué au ministère de la Santé de Gaza et ne constitue pas un décompte indépendant de l’OCHA.\nIran et pays du Golfe, 17–18 novembre — Selon Reuters et Associated Press, des forces américaines ont frappé un site militaire sur l’île iranienne de Qeshm. Les autorités iraniennes revendiquent des attaques contre des installations militaires américaines situées à Bahreïn et au Koweït. Ces éléments concernent des installations à l’étranger, non le territoire des États-Unis ; les effets exacts de certaines attaques restent à confirmer.\nLiban et péninsule Arabique, 19 novembre — Associated Press rapporte de nouvelles frappes israéliennes au Liban contre une installation que l’armée israélienne présente comme liée au Hezbollah. L’agence fait aussi état d’attaques au Yémen et de débris de missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite.\nVolet diplomatique — Des démarches de médiation régionales sont signalées. Leur portée doit être évaluée à partir d’accords précis, de leur application effective et de leurs conséquences pour les civils.",
+            "sources": [],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026 — point de situation initial"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-21T09:18",
+            "title": "OCHA : capacités hospitalières et abris endommagés à Gaza",
+            "body": "Le rapport humanitaire de l’OCHA publié le 18 novembre précise plusieurs faits antérieurs à l’ouverture de ce suivi. Selon l’OMS citée par l’OCHA, une frappe israélienne du 12 novembre sur le service de chirurgie de l’hôpital Nasser, à Khan Younès, a causé six morts et au moins 27 blessés ; les installations chirurgicales ont subi d’importants dégâts. Le ministère de la Santé de Gaza fait état de 1 650 morts signalés depuis le cessez-le-feu d’octobre 2025 au 16 novembre, contre 1 613 au 9 novembre : ce bilan est attribué à cette autorité et n’est pas un décompte indépendant de l’OCHA. Les évaluations provisoires de l’OCHA indiquent qu’environ 226 000 personnes ont pu être touchées par les pluies des 6 au 8 novembre et que plus de 40 000 abris ont subi des dommages. Il s’agit d’un complément documentaire sur la crise humanitaire, et non d’événements tous survenus le 18 novembre.",
+            "sources": [],
+            "event_date": "2026-11-18",
+            "event_label": "18 novembre 2026 — rapport sur des faits antérieurs"
+          }
+        ],
+        "watch_up": [
+          "Extension confirmée des affrontements directs à de nouveaux États ou à des infrastructures civiles vitales.",
+          "Hausse majeure des victimes civiles ou attaques répétées contre les services essentiels.",
+          "Perturbation durable et élargie de la navigation dans le Golfe ou en mer Rouge.",
+          "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
+        ],
+        "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+        "why_level": "Le niveau 1 — Code One concerne le risque d’extension régionale : plusieurs foyers de conflit coexistent, certains affrontements impliquent directement des forces étatiques, et des infrastructures ainsi que des voies de navigation stratégiques sont exposées. Ce classement ne signifie pas qu’une guerre mondiale ou une attaque contre le territoire des États-Unis est imminente. Il pourra évoluer selon les faits vérifiés et les mesures de désescalade réellement appliquées.",
+        "visible": true,
+        "watch_down": [
+          "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
+          "Respect contrôlé des cessez-le-feu et amélioration effective de l’accès humanitaire.",
+          "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
+          "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
+        ],
+        "last_update": "2026-11-23T11:35",
+        "status": "suivi",
+        "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
+        "sources": [
+          {
+            "label": "OCHA — rapport humanitaire, 13 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026",
+            "note": "Données attribuées, période de référence du 3 au 9 novembre pour Gaza ; volet Cisjordanie."
+          },
+          {
+            "label": "Reuters — frappes entre l’Iran, les États-Unis et dans le Golfe, 17–18 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-potential-threat-urges-residents-seek-safety-2026-11-17/",
+            "note": "Échanges de frappes et déclarations des différentes parties."
+          },
+          {
+            "label": "Associated Press — bilan régional du 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/saudi-yemen-war-iran-november-19-2026-e72472c557057943cab32010666b29bf",
+            "note": "Liban, Yémen, Arabie saoudite, Irak et détroit d’Ormuz ; distinguer affirmations militaires et faits confirmés."
+          },
+          {
+            "label": "Associated Press via OPB — démarches diplomatiques régionales, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/",
+            "note": "Efforts de médiation rapportés avec attribution à des responsables régionaux anonymes."
+          },
+          {
+            "label": "OCHA — rapport humanitaire du 18 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-18-november-2026",
+            "note": "Hôpital Nasser, bilan rapporté par le ministère de la Santé de Gaza, pluies et abris."
+          },
+          {
+            "label": "Reuters — frappes sur Hodeïda et tensions en mer Rouge, 20 novembre 2026",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/yemens-houthis-threaten-strike-saudi-red-sea-ports-2026-11-20/",
+            "note": "Annonces et revendications attribuées à la coalition, aux Houthis et au ministre yéménite de l’Information."
+          },
+          {
+            "label": "Associated Press — Sanaa et violences en Cisjordanie, 22 novembre 2026",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/mideast-houthis-west-bank-november-22-2026-8d1680a23d592667db1ce1969b55b4f2",
+            "note": "Informations attribuées aux autorités houthies et enquête annoncée par la police israélienne."
+          },
+          {
+            "label": "Reuters — Bahreïn : bilan révisé des attaques du 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
+            "note": "Deux blessés selon le ministère de l’Intérieur du Bahreïn ; revendications des Gardiens de la révolution attribuées."
+          },
+          {
+            "label": "Axios — rencontre entre émissaires américains et représentants du Qatar, 20 novembre",
+            "type": "Média",
+            "url": "https://www.axios.com/2026/11/20/witkoff-kushner-meet-qatari-mediators-iran",
+            "note": "Rencontre rapportée par deux sources ; aucun accord annoncé."
+          },
+          {
+            "label": "Reuters — contacts irano-qataris, 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/qatari-delegation-visits-tehran-talks-iranian-official-says-2026-11-21/",
+            "note": "Visite attribuée à une déclaration d’un responsable iranien."
+          },
+          {
+            "label": "Qatar — déclaration conjointe avec l’Allemagne, 21 novembre",
+            "type": "Source officielle",
+            "url": "https://mofa.gov.qa/en/latest-articles/statements/joint-declarationon-the-occasion-of-the-state-visit-of-the-emir-of-the-state-of-qatarto-the-federal-republic-of-germany",
+            "note": "Gaza, Yémen, navigation et coopération pour la médiation."
+          },
+          {
+            "label": "France, Allemagne, Royaume-Uni et États-Unis — déclaration au Conseil des gouverneurs de l’AIEA",
+            "type": "Source officielle",
+            "url": "https://www.gov.uk/government/speeches/quad-statement-to-iaea-board-of-governors-november-2026",
+            "note": "Position des quatre pays et référence aux rapports de l’AIEA."
+          },
+          {
+            "label": "Conseil de l’UE — conclusions Affaires étrangères, 16 novembre",
+            "type": "Source officielle",
+            "url": "https://www.consilium.europa.eu/en/meetings/fac/2026/11/16/",
+            "note": "Annonce de la prochaine concertation avec les pays du Golfe."
+          }
+        ],
+        "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
+        "category": "Géopolitique · Proche-Orient"
+      }
+    },
+    {
+      "point_slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "recorded_at": "2026-11-23T10:41:42Z",
+      "label": "Ajouts diplomatiques du 23 novembre",
+      "commit_sha": "31690472210bcd9f1d5d9ad3bfb6734da1f04006",
+      "point": {
+        "show_home": true,
+        "level": "1",
+        "summary": "Au 19 novembre 2026, la situation reste préoccupante à Gaza et en Cisjordanie, où les civils subissent les conséquences des violences, des déplacements et des restrictions. Des frappes sont également signalées au Liban, tandis que les tensions militaires touchent l’Iran et plusieurs pays du Golfe. Les initiatives diplomatiques se poursuivent sans stabilisation régionale durable. Diploval suit séparément les faits militaires, les enjeux humanitaires et les efforts de désescalade.",
+        "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
+        "opened_at": "2026-11-19T22:08",
+        "updates": [
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "23 novembre — Contacts Washington–Doha–Téhéran et médiation",
+            "body": "Le 19 novembre à Berlin, selon deux sources citées par Axios, les émissaires américains Steve Witkoff et Jared Kushner ont rencontré des responsables qataris afin d’examiner la reprise des négociations avec l’Iran. Selon un responsable iranien cité par Reuters, une délégation qatarie s’est rendue à Téhéran le 20 novembre. Les contacts diplomatiques se poursuivent, mais ni nouveau cessez-le-feu ni date de négociation directe ne sont confirmés.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "23 novembre — Positions Allemagne–Qatar et surveillance nucléaire",
+            "body": "Lors de la visite de l’émir du Qatar en Allemagne les 20–21 novembre, les deux gouvernements ont publié une déclaration commune favorable à une solution à deux États, à l’accès humanitaire à Gaza, à la liberté de navigation et à une issue négociée au Yémen. Ils ont annoncé une coopération bilatérale en matière de médiation, non un accord de paix entre belligérants. Lors de la réunion du Conseil des gouverneurs de l’AIEA du 18 au 20 novembre, la France, l’Allemagne, le Royaume-Uni et les États-Unis ont demandé à l’Iran de rétablir l’accès des inspecteurs aux sites concernés, citant des lacunes persistantes dans la vérification des matières nucléaires. Ces difficultés ne démontrent pas un recours imminent à l’arme nucléaire. Une rencontre ministérielle UE–pays du Golfe est envisagée en décembre, sans date exacte confirmée.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "22 novembre — Sanaa : frappe signalée sur une installation de carburant",
+            "correction": false,
+            "body": "Dans la nuit du 21 au 22 novembre, les autorités sanitaires administrées par les Houthis ont signalé une frappe aérienne sur une installation de carburant exploitée par la compagnie pétrolière publique à Sanaa. Leur porte-parole fait état de six employés blessés et de dommages au bâtiment de l’entreprise. Associated Press rapporte ces déclarations. L’auteur de la frappe, l’étendue exacte des dégâts et le bilan indépendant ne sont pas établis ; une attribution à l’Arabie saoudite ne doit pas être présentée comme un fait confirmé.",
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "22 novembre — Cisjordanie : incendies de véhicules et de propriétés palestiniennes",
+            "correction": false,
+            "body": "Dans la nuit du 21 au 22 novembre, plusieurs véhicules et biens appartenant à des Palestiniens ont été incendiés dans des localités de Cisjordanie occupée. Des colons israéliens sont soupçonnés d’avoir participé à ces attaques. La police israélienne a annoncé une enquête sur les incendies et des inscriptions retrouvées sur place. Gadi Eisenkot a condamné ces actes en les qualifiant, dans une déclaration politique, de « terrorisme juif » ; cette qualification ne vaut pas décision judiciaire. Les responsabilités individuelles restent à établir.",
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "22 novembre — Bahreïn : deux blessés signalés après les attaques du 21 novembre",
+            "correction": false,
+            "body": "Le ministère de l’Intérieur de Bahreïn a révisé le bilan des attaques attribuées à l’Iran survenues le 21 novembre : deux personnes sont désormais signalées blessées, un résident pakistanais dans un état critique et un citoyen bahreïni dans un état stable. Cette annonce du 22 novembre corrige le premier bilan public faisant état de dommages matériels sans blessés signalés ; elle ne correspond pas à une nouvelle attaque survenue ce dimanche. Les Gardiens de la révolution iraniens revendiquent des attaques visant des positions militaires américaines sur le territoire bahreïni, sans confirmation indépendante de leurs résultats.",
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-21T09:18",
+            "title": "20 novembre — Hodeïda : frappes sur le port et menaces contre les ports saoudiens",
+            "body": "La coalition dirigée par l’Arabie saoudite a déclaré avoir frappé le port de Hodeïda, au Yémen, le 20 novembre. Elle affirme avoir visé des capacités utilisées pour le transport d’armes et de missiles. Reuters confirme l’annonce de la frappe, mais la finalité militaire exacte et l’étendue des dégâts ne sont pas vérifiées indépendamment. Le ministre yéménite de l’Information a affirmé que le port restait opérationnel. Les Houthis ont menacé de viser des ports saoudiens de la mer Rouge et ont revendiqué des attaques contre une centrale électrique et un port dans le sud de l’Arabie saoudite ; la coalition affirme avoir intercepté deux missiles. Le bilan civil et les conséquences sur l’approvisionnement de la population restent à établir. L’événement accroît la vigilance sur les infrastructures portuaires et la sécurité maritime.",
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-21T09:18",
+            "title": "18 novembre — OCHA : capacités hospitalières et abris endommagés à Gaza",
+            "body": "Le rapport humanitaire de l’OCHA publié le 18 novembre précise plusieurs faits antérieurs à l’ouverture de ce suivi. Selon l’OMS citée par l’OCHA, une frappe israélienne du 12 novembre sur le service de chirurgie de l’hôpital Nasser, à Khan Younès, a causé six morts et au moins 27 blessés ; les installations chirurgicales ont subi d’importants dégâts. Le ministère de la Santé de Gaza fait état de 1 650 morts signalés depuis le cessez-le-feu d’octobre 2025 au 16 novembre, contre 1 613 au 9 novembre : ce bilan est attribué à cette autorité et n’est pas un décompte indépendant de l’OCHA. Les évaluations provisoires de l’OCHA indiquent qu’environ 226 000 personnes ont pu être touchées par les pluies des 6 au 8 novembre et que plus de 40 000 abris ont subi des dommages. Il s’agit d’un complément documentaire sur la crise humanitaire, et non d’événements tous survenus le 18 novembre.",
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T22:08",
+            "title": "Situation au 19 novembre — faits et évolutions",
+            "body": "Gaza et Cisjordanie — Dans son rapport du 13 novembre, l’OCHA décrit une situation humanitaire toujours grave à Gaza malgré le cessez-le-feu d’octobre 2025. L’agence signale également des déplacements de population et des violences en Cisjordanie. Le bilan de 1 613 morts depuis l’accord jusqu’au 9 novembre, qu’elle relaie, est attribué au ministère de la Santé de Gaza et ne constitue pas un décompte indépendant de l’OCHA.\nIran et pays du Golfe, 17–18 novembre — Selon Reuters et Associated Press, des forces américaines ont frappé un site militaire sur l’île iranienne de Qeshm. Les autorités iraniennes revendiquent des attaques contre des installations militaires américaines situées à Bahreïn et au Koweït. Ces éléments concernent des installations à l’étranger, non le territoire des États-Unis ; les effets exacts de certaines attaques restent à confirmer.\nLiban et péninsule Arabique, 19 novembre — Associated Press rapporte de nouvelles frappes israéliennes au Liban contre une installation que l’armée israélienne présente comme liée au Hezbollah. L’agence fait aussi état d’attaques au Yémen et de débris de missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite.\nVolet diplomatique — Des démarches de médiation régionales sont signalées. Leur portée doit être évaluée à partir d’accords précis, de leur application effective et de leurs conséquences pour les civils.",
+            "sources": []
+          }
+        ],
+        "watch_up": [
+          "Extension confirmée des affrontements directs à de nouveaux États ou à des infrastructures civiles vitales.",
+          "Hausse majeure des victimes civiles ou attaques répétées contre les services essentiels.",
+          "Perturbation durable et élargie de la navigation dans le Golfe ou en mer Rouge.",
+          "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
+        ],
+        "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+        "why_level": "Le niveau 1 — Code One concerne le risque d’extension régionale : plusieurs foyers de conflit coexistent, certains affrontements impliquent directement des forces étatiques, et des infrastructures ainsi que des voies de navigation stratégiques sont exposées. Ce classement ne signifie pas qu’une guerre mondiale ou une attaque contre le territoire des États-Unis est imminente. Il pourra évoluer selon les faits vérifiés et les mesures de désescalade réellement appliquées.",
+        "visible": true,
+        "watch_down": [
+          "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
+          "Respect contrôlé des cessez-le-feu et amélioration effective de l’accès humanitaire.",
+          "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
+          "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
+        ],
+        "last_update": "2026-11-23T11:35",
+        "status": "suivi",
+        "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
+        "sources": [
+          {
+            "label": "OCHA — rapport humanitaire, 13 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026",
+            "note": "Données attribuées, période de référence du 3 au 9 novembre pour Gaza ; volet Cisjordanie."
+          },
+          {
+            "label": "Reuters — frappes entre l’Iran, les États-Unis et dans le Golfe, 17–18 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-potential-threat-urges-residents-seek-safety-2026-11-17/",
+            "note": "Échanges de frappes et déclarations des différentes parties."
+          },
+          {
+            "label": "Associated Press — bilan régional du 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/saudi-yemen-war-iran-november-19-2026-e72472c557057943cab32010666b29bf",
+            "note": "Liban, Yémen, Arabie saoudite, Irak et détroit d’Ormuz ; distinguer affirmations militaires et faits confirmés."
+          },
+          {
+            "label": "Associated Press via OPB — démarches diplomatiques régionales, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/",
+            "note": "Efforts de médiation rapportés avec attribution à des responsables régionaux anonymes."
+          },
+          {
+            "label": "OCHA — rapport humanitaire du 18 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-18-november-2026",
+            "note": "Hôpital Nasser, bilan rapporté par le ministère de la Santé de Gaza, pluies et abris."
+          },
+          {
+            "label": "Reuters — frappes sur Hodeïda et tensions en mer Rouge, 20 novembre 2026",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/yemens-houthis-threaten-strike-saudi-red-sea-ports-2026-11-20/",
+            "note": "Annonces et revendications attribuées à la coalition, aux Houthis et au ministre yéménite de l’Information."
+          },
+          {
+            "label": "Associated Press — Sanaa et violences en Cisjordanie, 22 novembre 2026",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/mideast-houthis-west-bank-november-22-2026-8d1680a23d592667db1ce1969b55b4f2",
+            "note": "Informations attribuées aux autorités houthies et enquête annoncée par la police israélienne."
+          },
+          {
+            "label": "Reuters — Bahreïn : bilan révisé des attaques du 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
+            "note": "Deux blessés selon le ministère de l’Intérieur du Bahreïn ; revendications des Gardiens de la révolution attribuées."
+          },
+          {
+            "label": "Axios — rencontre entre émissaires américains et représentants du Qatar, 20 novembre",
+            "type": "Média",
+            "url": "https://www.axios.com/2026/11/20/witkoff-kushner-meet-qatari-mediators-iran",
+            "note": "Rencontre rapportée par deux sources ; aucun accord annoncé."
+          },
+          {
+            "label": "Reuters — contacts irano-qataris, 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/qatari-delegation-visits-tehran-talks-iranian-official-says-2026-11-21/",
+            "note": "Visite attribuée à une déclaration d’un responsable iranien."
+          },
+          {
+            "label": "Qatar — déclaration conjointe avec l’Allemagne, 21 novembre",
+            "type": "Source officielle",
+            "url": "https://mofa.gov.qa/en/latest-articles/statements/joint-declarationon-the-occasion-of-the-state-visit-of-the-emir-of-the-state-of-qatarto-the-federal-republic-of-germany",
+            "note": "Gaza, Yémen, navigation et coopération pour la médiation."
+          },
+          {
+            "label": "France, Allemagne, Royaume-Uni et États-Unis — déclaration au Conseil des gouverneurs de l’AIEA",
+            "type": "Source officielle",
+            "url": "https://www.gov.uk/government/speeches/quad-statement-to-iaea-board-of-governors-november-2026",
+            "note": "Position des quatre pays et référence aux rapports de l’AIEA."
+          },
+          {
+            "label": "Conseil de l’UE — conclusions Affaires étrangères, 16 novembre",
+            "type": "Source officielle",
+            "url": "https://www.consilium.europa.eu/en/meetings/fac/2026/11/16/",
+            "note": "Annonce de la prochaine concertation avec les pays du Golfe."
+          }
+        ],
+        "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
+        "category": "Géopolitique · Proche-Orient"
+      }
+    },
+    {
+      "point_slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "recorded_at": "2026-11-22T12:33:45Z",
+      "label": "Ajouts du 22 novembre",
+      "commit_sha": "29cef9e6e31593d21d67363a6e0e4aaa6b572542",
+      "point": {
+        "show_home": true,
+        "level": "1",
+        "summary": "Au 19 novembre 2026, la situation reste préoccupante à Gaza et en Cisjordanie, où les civils subissent les conséquences des violences, des déplacements et des restrictions. Des frappes sont également signalées au Liban, tandis que les tensions militaires touchent l’Iran et plusieurs pays du Golfe. Les initiatives diplomatiques se poursuivent sans stabilisation régionale durable. Diploval suit séparément les faits militaires, les enjeux humanitaires et les efforts de désescalade.",
+        "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
+        "opened_at": "2026-11-19T22:08",
+        "updates": [
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "22 novembre — Sanaa : frappe signalée sur une installation de carburant",
+            "correction": false,
+            "body": "Dans la nuit du 21 au 22 novembre, les autorités sanitaires administrées par les Houthis ont signalé une frappe aérienne sur une installation de carburant exploitée par la compagnie pétrolière publique à Sanaa. Leur porte-parole fait état de six employés blessés et de dommages au bâtiment de l’entreprise. Associated Press rapporte ces déclarations. L’auteur de la frappe, l’étendue exacte des dégâts et le bilan indépendant ne sont pas établis ; une attribution à l’Arabie saoudite ne doit pas être présentée comme un fait confirmé.",
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "22 novembre — Cisjordanie : incendies de véhicules et de propriétés palestiniennes",
+            "correction": false,
+            "body": "Dans la nuit du 21 au 22 novembre, plusieurs véhicules et biens appartenant à des Palestiniens ont été incendiés dans des localités de Cisjordanie occupée. Des colons israéliens sont soupçonnés d’avoir participé à ces attaques. La police israélienne a annoncé une enquête sur les incendies et des inscriptions retrouvées sur place. Gadi Eisenkot a condamné ces actes en les qualifiant, dans une déclaration politique, de « terrorisme juif » ; cette qualification ne vaut pas décision judiciaire. Les responsabilités individuelles restent à établir.",
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "22 novembre — Bahreïn : deux blessés signalés après les attaques du 21 novembre",
+            "correction": false,
+            "body": "Le ministère de l’Intérieur de Bahreïn a révisé le bilan des attaques attribuées à l’Iran survenues le 21 novembre : deux personnes sont désormais signalées blessées, un résident pakistanais dans un état critique et un citoyen bahreïni dans un état stable. Cette annonce du 22 novembre corrige le premier bilan public faisant état de dommages matériels sans blessés signalés ; elle ne correspond pas à une nouvelle attaque survenue ce dimanche. Les Gardiens de la révolution iraniens revendiquent des attaques visant des positions militaires américaines sur le territoire bahreïni, sans confirmation indépendante de leurs résultats.",
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-21T09:18",
+            "title": "20 novembre — Hodeïda : frappes sur le port et menaces contre les ports saoudiens",
+            "body": "La coalition dirigée par l’Arabie saoudite a déclaré avoir frappé le port de Hodeïda, au Yémen, le 20 novembre. Elle affirme avoir visé des capacités utilisées pour le transport d’armes et de missiles. Reuters confirme l’annonce de la frappe, mais la finalité militaire exacte et l’étendue des dégâts ne sont pas vérifiées indépendamment. Le ministre yéménite de l’Information a affirmé que le port restait opérationnel. Les Houthis ont menacé de viser des ports saoudiens de la mer Rouge et ont revendiqué des attaques contre une centrale électrique et un port dans le sud de l’Arabie saoudite ; la coalition affirme avoir intercepté deux missiles. Le bilan civil et les conséquences sur l’approvisionnement de la population restent à établir. L’événement accroît la vigilance sur les infrastructures portuaires et la sécurité maritime.",
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-21T09:18",
+            "title": "18 novembre — OCHA : capacités hospitalières et abris endommagés à Gaza",
+            "body": "Le rapport humanitaire de l’OCHA publié le 18 novembre précise plusieurs faits antérieurs à l’ouverture de ce suivi. Selon l’OMS citée par l’OCHA, une frappe israélienne du 12 novembre sur le service de chirurgie de l’hôpital Nasser, à Khan Younès, a causé six morts et au moins 27 blessés ; les installations chirurgicales ont subi d’importants dégâts. Le ministère de la Santé de Gaza fait état de 1 650 morts signalés depuis le cessez-le-feu d’octobre 2025 au 16 novembre, contre 1 613 au 9 novembre : ce bilan est attribué à cette autorité et n’est pas un décompte indépendant de l’OCHA. Les évaluations provisoires de l’OCHA indiquent qu’environ 226 000 personnes ont pu être touchées par les pluies des 6 au 8 novembre et que plus de 40 000 abris ont subi des dommages. Il s’agit d’un complément documentaire sur la crise humanitaire, et non d’événements tous survenus le 18 novembre.",
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T22:08",
+            "title": "Situation au 19 novembre — faits et évolutions",
+            "body": "Gaza et Cisjordanie — Dans son rapport du 13 novembre, l’OCHA décrit une situation humanitaire toujours grave à Gaza malgré le cessez-le-feu d’octobre 2025. L’agence signale également des déplacements de population et des violences en Cisjordanie. Le bilan de 1 613 morts depuis l’accord jusqu’au 9 novembre, qu’elle relaie, est attribué au ministère de la Santé de Gaza et ne constitue pas un décompte indépendant de l’OCHA.\nIran et pays du Golfe, 17–18 novembre — Selon Reuters et Associated Press, des forces américaines ont frappé un site militaire sur l’île iranienne de Qeshm. Les autorités iraniennes revendiquent des attaques contre des installations militaires américaines situées à Bahreïn et au Koweït. Ces éléments concernent des installations à l’étranger, non le territoire des États-Unis ; les effets exacts de certaines attaques restent à confirmer.\nLiban et péninsule Arabique, 19 novembre — Associated Press rapporte de nouvelles frappes israéliennes au Liban contre une installation que l’armée israélienne présente comme liée au Hezbollah. L’agence fait aussi état d’attaques au Yémen et de débris de missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite.\nVolet diplomatique — Des démarches de médiation régionales sont signalées. Leur portée doit être évaluée à partir d’accords précis, de leur application effective et de leurs conséquences pour les civils.",
+            "sources": []
+          }
+        ],
+        "watch_up": [
+          "Extension confirmée des affrontements directs à de nouveaux États ou à des infrastructures civiles vitales.",
+          "Hausse majeure des victimes civiles ou attaques répétées contre les services essentiels.",
+          "Perturbation durable et élargie de la navigation dans le Golfe ou en mer Rouge.",
+          "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
+        ],
+        "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+        "why_level": "Le niveau 1 — Code One concerne le risque d’extension régionale : plusieurs foyers de conflit coexistent, certains affrontements impliquent directement des forces étatiques, et des infrastructures ainsi que des voies de navigation stratégiques sont exposées. Ce classement ne signifie pas qu’une guerre mondiale ou une attaque contre le territoire des États-Unis est imminente. Il pourra évoluer selon les faits vérifiés et les mesures de désescalade réellement appliquées.",
+        "visible": true,
+        "watch_down": [
+          "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
+          "Respect contrôlé des cessez-le-feu et amélioration effective de l’accès humanitaire.",
+          "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
+          "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
+        ],
+        "last_update": "2026-11-22T13:31",
+        "status": "suivi",
+        "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
+        "sources": [
+          {
+            "label": "OCHA — rapport humanitaire, 13 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026",
+            "note": "Données attribuées, période de référence du 3 au 9 novembre pour Gaza ; volet Cisjordanie."
+          },
+          {
+            "label": "Reuters — frappes entre l’Iran, les États-Unis et dans le Golfe, 17–18 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-potential-threat-urges-residents-seek-safety-2026-11-17/",
+            "note": "Échanges de frappes et déclarations des différentes parties."
+          },
+          {
+            "label": "Associated Press — bilan régional du 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/saudi-yemen-war-iran-november-19-2026-e72472c557057943cab32010666b29bf",
+            "note": "Liban, Yémen, Arabie saoudite, Irak et détroit d’Ormuz ; distinguer affirmations militaires et faits confirmés."
+          },
+          {
+            "label": "Associated Press via OPB — démarches diplomatiques régionales, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/",
+            "note": "Efforts de médiation rapportés avec attribution à des responsables régionaux anonymes."
+          },
+          {
+            "label": "OCHA — rapport humanitaire du 18 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-18-november-2026",
+            "note": "Hôpital Nasser, bilan rapporté par le ministère de la Santé de Gaza, pluies et abris."
+          },
+          {
+            "label": "Reuters — frappes sur Hodeïda et tensions en mer Rouge, 20 novembre 2026",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/yemens-houthis-threaten-strike-saudi-red-sea-ports-2026-11-20/",
+            "note": "Annonces et revendications attribuées à la coalition, aux Houthis et au ministre yéménite de l’Information."
+          },
+          {
+            "label": "Associated Press — Sanaa et violences en Cisjordanie, 22 novembre 2026",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/mideast-houthis-west-bank-november-22-2026-8d1680a23d592667db1ce1969b55b4f2",
+            "note": "Informations attribuées aux autorités houthies et enquête annoncée par la police israélienne."
+          },
+          {
+            "label": "Reuters — Bahreïn : bilan révisé des attaques du 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
+            "note": "Deux blessés selon le ministère de l’Intérieur du Bahreïn ; revendications des Gardiens de la révolution attribuées."
+          }
+        ],
+        "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
+        "category": "Géopolitique · Proche-Orient"
+      }
+    },
+    {
+      "point_slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "recorded_at": "2026-11-21T08:19:39Z",
+      "label": "Ajouts du 21 novembre",
+      "commit_sha": "4341e4b5144ab86495f949a8bc18fb750c171849",
+      "point": {
+        "show_home": true,
+        "level": "1",
+        "summary": "Au 19 novembre 2026, la situation reste préoccupante à Gaza et en Cisjordanie, où les civils subissent les conséquences des violences, des déplacements et des restrictions. Des frappes sont également signalées au Liban, tandis que les tensions militaires touchent l’Iran et plusieurs pays du Golfe. Les initiatives diplomatiques se poursuivent sans stabilisation régionale durable. Diploval suit séparément les faits militaires, les enjeux humanitaires et les efforts de désescalade.",
+        "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
+        "opened_at": "2026-11-19T22:08",
+        "updates": [
+          {
+            "correction": false,
+            "datetime": "2026-11-21T09:18",
+            "title": "20 novembre — Hodeïda : frappes sur le port et menaces contre les ports saoudiens",
+            "body": "La coalition dirigée par l’Arabie saoudite a déclaré avoir frappé le port de Hodeïda, au Yémen, le 20 novembre. Elle affirme avoir visé des capacités utilisées pour le transport d’armes et de missiles. Reuters confirme l’annonce de la frappe, mais la finalité militaire exacte et l’étendue des dégâts ne sont pas vérifiées indépendamment. Le ministre yéménite de l’Information a affirmé que le port restait opérationnel. Les Houthis ont menacé de viser des ports saoudiens de la mer Rouge et ont revendiqué des attaques contre une centrale électrique et un port dans le sud de l’Arabie saoudite ; la coalition affirme avoir intercepté deux missiles. Le bilan civil et les conséquences sur l’approvisionnement de la population restent à établir. L’événement accroît la vigilance sur les infrastructures portuaires et la sécurité maritime.",
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-21T09:18",
+            "title": "18 novembre — OCHA : capacités hospitalières et abris endommagés à Gaza",
+            "body": "Le rapport humanitaire de l’OCHA publié le 18 novembre précise plusieurs faits antérieurs à l’ouverture de ce suivi. Selon l’OMS citée par l’OCHA, une frappe israélienne du 12 novembre sur le service de chirurgie de l’hôpital Nasser, à Khan Younès, a causé six morts et au moins 27 blessés ; les installations chirurgicales ont subi d’importants dégâts. Le ministère de la Santé de Gaza fait état de 1 650 morts signalés depuis le cessez-le-feu d’octobre 2025 au 16 novembre, contre 1 613 au 9 novembre : ce bilan est attribué à cette autorité et n’est pas un décompte indépendant de l’OCHA. Les évaluations provisoires de l’OCHA indiquent qu’environ 226 000 personnes ont pu être touchées par les pluies des 6 au 8 novembre et que plus de 40 000 abris ont subi des dommages. Il s’agit d’un complément documentaire sur la crise humanitaire, et non d’événements tous survenus le 18 novembre.",
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T22:08",
+            "title": "Situation au 19 novembre — faits et évolutions",
+            "body": "Gaza et Cisjordanie — Dans son rapport du 13 novembre, l’OCHA décrit une situation humanitaire toujours grave à Gaza malgré le cessez-le-feu d’octobre 2025. L’agence signale également des déplacements de population et des violences en Cisjordanie. Le bilan de 1 613 morts depuis l’accord jusqu’au 9 novembre, qu’elle relaie, est attribué au ministère de la Santé de Gaza et ne constitue pas un décompte indépendant de l’OCHA.\nIran et pays du Golfe, 17–18 novembre — Selon Reuters et Associated Press, des forces américaines ont frappé un site militaire sur l’île iranienne de Qeshm. Les autorités iraniennes revendiquent des attaques contre des installations militaires américaines situées à Bahreïn et au Koweït. Ces éléments concernent des installations à l’étranger, non le territoire des États-Unis ; les effets exacts de certaines attaques restent à confirmer.\nLiban et péninsule Arabique, 19 novembre — Associated Press rapporte de nouvelles frappes israéliennes au Liban contre une installation que l’armée israélienne présente comme liée au Hezbollah. L’agence fait aussi état d’attaques au Yémen et de débris de missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite.\nVolet diplomatique — Des démarches de médiation régionales sont signalées. Leur portée doit être évaluée à partir d’accords précis, de leur application effective et de leurs conséquences pour les civils.",
+            "sources": []
+          }
+        ],
+        "watch_up": [
+          "Extension confirmée des affrontements directs à de nouveaux États ou à des infrastructures civiles vitales.",
+          "Hausse majeure des victimes civiles ou attaques répétées contre les services essentiels.",
+          "Perturbation durable et élargie de la navigation dans le Golfe ou en mer Rouge.",
+          "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
+        ],
+        "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+        "why_level": "Le niveau 1 — Code One concerne le risque d’extension régionale : plusieurs foyers de conflit coexistent, certains affrontements impliquent directement des forces étatiques, et des infrastructures ainsi que des voies de navigation stratégiques sont exposées. Ce classement ne signifie pas qu’une guerre mondiale ou une attaque contre le territoire des États-Unis est imminente. Il pourra évoluer selon les faits vérifiés et les mesures de désescalade réellement appliquées.",
+        "visible": true,
+        "watch_down": [
+          "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
+          "Respect contrôlé des cessez-le-feu et amélioration effective de l’accès humanitaire.",
+          "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
+          "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
+        ],
+        "last_update": "2026-11-21T09:18",
+        "status": "suivi",
+        "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
+        "sources": [
+          {
+            "label": "OCHA — rapport humanitaire, 13 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026",
+            "note": "Données attribuées, période de référence du 3 au 9 novembre pour Gaza ; volet Cisjordanie."
+          },
+          {
+            "label": "Reuters — frappes entre l’Iran, les États-Unis et dans le Golfe, 17–18 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-potential-threat-urges-residents-seek-safety-2026-11-17/",
+            "note": "Échanges de frappes et déclarations des différentes parties."
+          },
+          {
+            "label": "Associated Press — bilan régional du 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/saudi-yemen-war-iran-november-19-2026-e72472c557057943cab32010666b29bf",
+            "note": "Liban, Yémen, Arabie saoudite, Irak et détroit d’Ormuz ; distinguer affirmations militaires et faits confirmés."
+          },
+          {
+            "label": "Associated Press via OPB — démarches diplomatiques régionales, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/",
+            "note": "Efforts de médiation rapportés avec attribution à des responsables régionaux anonymes."
+          },
+          {
+            "label": "OCHA — rapport humanitaire du 18 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-18-november-2026",
+            "note": "Hôpital Nasser, bilan rapporté par le ministère de la Santé de Gaza, pluies et abris."
+          },
+          {
+            "label": "Reuters — frappes sur Hodeïda et tensions en mer Rouge, 20 novembre 2026",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/yemens-houthis-threaten-strike-saudi-red-sea-ports-2026-11-20/",
+            "note": "Annonces et revendications attribuées à la coalition, aux Houthis et au ministre yéménite de l’Information."
+          }
+        ],
+        "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
+        "category": "Géopolitique · Proche-Orient"
+      }
+    },
+    {
+      "point_slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "recorded_at": "2026-11-20T08:30:46Z",
+      "label": "Synthèse rééquilibrée du 20 novembre",
+      "commit_sha": "a166e9e3343d3c461889619810f986e40b540623",
+      "point": {
+        "show_home": true,
+        "level": "1",
+        "summary": "Au 19 novembre 2026, la situation reste préoccupante à Gaza et en Cisjordanie, où les civils subissent les conséquences des violences, des déplacements et des restrictions. Des frappes sont également signalées au Liban, tandis que les tensions militaires touchent l’Iran et plusieurs pays du Golfe. Les initiatives diplomatiques se poursuivent sans stabilisation régionale durable. Diploval suit séparément les faits militaires, les enjeux humanitaires et les efforts de désescalade.",
+        "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
+        "opened_at": "2026-11-19T22:08",
+        "updates": [
+          {
+            "correction": false,
+            "datetime": "2026-11-19T22:08",
+            "title": "Situation au 19 novembre — faits et évolutions",
+            "body": "Gaza et Cisjordanie — Dans son rapport du 13 novembre, l’OCHA décrit une situation humanitaire toujours grave à Gaza malgré le cessez-le-feu d’octobre 2025. L’agence signale également des déplacements de population et des violences en Cisjordanie. Le bilan de 1 613 morts depuis l’accord jusqu’au 9 novembre, qu’elle relaie, est attribué au ministère de la Santé de Gaza et ne constitue pas un décompte indépendant de l’OCHA.\nIran et pays du Golfe, 17–18 novembre — Selon Reuters et Associated Press, des forces américaines ont frappé un site militaire sur l’île iranienne de Qeshm. Les autorités iraniennes revendiquent des attaques contre des installations militaires américaines situées à Bahreïn et au Koweït. Ces éléments concernent des installations à l’étranger, non le territoire des États-Unis ; les effets exacts de certaines attaques restent à confirmer.\nLiban et péninsule Arabique, 19 novembre — Associated Press rapporte de nouvelles frappes israéliennes au Liban contre une installation que l’armée israélienne présente comme liée au Hezbollah. L’agence fait aussi état d’attaques au Yémen et de débris de missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite.\nVolet diplomatique — Des démarches de médiation régionales sont signalées. Leur portée doit être évaluée à partir d’accords précis, de leur application effective et de leurs conséquences pour les civils.",
+            "sources": []
+          }
+        ],
+        "watch_up": [
+          "Extension confirmée des affrontements directs à de nouveaux États ou à des infrastructures civiles vitales.",
+          "Hausse majeure des victimes civiles ou attaques répétées contre les services essentiels.",
+          "Perturbation durable et élargie de la navigation dans le Golfe ou en mer Rouge.",
+          "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
+        ],
+        "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+        "why_level": "Le niveau 1 — Code One concerne le risque d’extension régionale : plusieurs foyers de conflit coexistent, certains affrontements impliquent directement des forces étatiques, et des infrastructures ainsi que des voies de navigation stratégiques sont exposées. Ce classement ne signifie pas qu’une guerre mondiale ou une attaque contre le territoire des États-Unis est imminente. Il pourra évoluer selon les faits vérifiés et les mesures de désescalade réellement appliquées.",
+        "visible": true,
+        "watch_down": [
+          "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
+          "Respect contrôlé des cessez-le-feu et amélioration effective de l’accès humanitaire.",
+          "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
+          "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
+        ],
+        "last_update": "2026-11-19T22:08",
+        "status": "suivi",
+        "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
+        "sources": [
+          {
+            "label": "OCHA — rapport humanitaire, 13 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026",
+            "note": "Données attribuées, période de référence du 3 au 9 novembre pour Gaza ; volet Cisjordanie."
+          },
+          {
+            "label": "Reuters — frappes entre l’Iran, les États-Unis et dans le Golfe, 17–18 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-potential-threat-urges-residents-seek-safety-2026-11-17/",
+            "note": "Échanges de frappes et déclarations des différentes parties."
+          },
+          {
+            "label": "Associated Press — bilan régional du 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/saudi-yemen-war-iran-november-19-2026-e72472c557057943cab32010666b29bf",
+            "note": "Liban, Yémen, Arabie saoudite, Irak et détroit d’Ormuz ; distinguer affirmations militaires et faits confirmés."
+          },
+          {
+            "label": "Associated Press via OPB — démarches diplomatiques régionales, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/",
+            "note": "Efforts de médiation rapportés avec attribution à des responsables régionaux anonymes."
+          }
+        ],
+        "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
+        "category": "Géopolitique · Proche-Orient"
+      }
+    },
+    {
+      "point_slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "recorded_at": "2026-11-19T21:13:16Z",
+      "label": "Ouverture du suivi",
+      "commit_sha": "64590bf99dec1e9b1e46b913fc05fd59703c8fba",
+      "point": {
+        "visible": true,
+        "show_home": true,
+        "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
+        "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+        "category": "Géopolitique · Proche-Orient",
+        "status": "suivi",
+        "level": "1",
+        "opened_at": "2026-11-19T22:08",
+        "last_update": "2026-11-19T22:08",
+        "summary": "Au 19 novembre 2026, les crises à Gaza, en Cisjordanie, au Liban, en Iran et dans le Golfe demeurent distinctes mais interdépendantes. Le cessez-le-feu à Gaza reste fragilisé par les frappes et une crise humanitaire majeure. Après une frappe américaine sur l’île iranienne de Qeshm le 17 novembre, l’Iran a lancé des attaques visant des installations au Koweït et à Bahreïn. De nouvelles frappes israéliennes ont été signalées au Liban le 19 novembre. Des médiations régionales se poursuivent. Diploval retient le niveau 1 — Code One pour le risque d’extension militaire régionale, sans préjuger d’une guerre généralisée.",
+        "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
+        "why_level": "Le niveau 1 — Code One qualifie ici le risque d’extension de la crise régionale, non chacun des territoires ni une probabilité de guerre mondiale. Il repose sur la confrontation militaire directe constatée entre forces américaines et iraniennes (17–18 novembre), des attaques au Koweït et à Bahreïn, la persistance de frappes au Liban et à Gaza, la détérioration des conditions de vie civiles ainsi que les tensions sur les voies maritimes. Ces faits sont recoupés par des agences de presse et les Nations unies. Les actions, déclarations et responsabilités de chaque partie doivent rester distinguées. Des efforts diplomatiques et des mécanismes de désescalade existent ; aucun emballement supplémentaire n’est considéré comme certain. Le classement sera revu en fonction d’événements vérifiables.",
+        "watch_up": [
+          "Extension vérifiée des affrontements directs à d’autres États ou installations vitales civiles (eau, énergie, hôpitaux, ports).",
+          "Nouvelles frappes de grande ampleur causant des victimes civiles nombreuses dans plusieurs pays.",
+          "Escalade durable contre la navigation commerciale dans le détroit d’Ormuz ou la mer Rouge.",
+          "Rupture documentée des négociations accompagnée d’une intensification coordonnée des opérations militaires.",
+          "Menace nucléaire ou radiologique explicite et crédible, corroborée par des sources spécialisées."
+        ],
+        "watch_down": [
+          "Cessation vérifiable et durable des attaques directes entre l’Iran et les États-Unis et contre des pays tiers.",
+          "Accords de désescalade dotés de mécanismes de surveillance, effectivement appliqués.",
+          "Réduction confirmée des opérations à Gaza et au Liban, avec accès humanitaire plus sûr et soutenu.",
+          "Baisse durable des attaques maritimes et rétablissement de voies de circulation sûres.",
+          "Progrès diplomatiques vérifiables associant les parties concernées, sans réapparition de frappes majeures."
+        ],
+        "sources": [
+          {
+            "label": "OCHA — rapport humanitaire, 13 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026",
+            "note": "Données attribuées, période de référence du 3 au 9 novembre pour Gaza ; volet Cisjordanie."
+          },
+          {
+            "label": "Reuters — frappes entre l’Iran, les États-Unis et dans le Golfe, 17–18 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-potential-threat-urges-residents-seek-safety-2026-11-17/",
+            "note": "Échanges de frappes et déclarations des différentes parties."
+          },
+          {
+            "label": "Associated Press — bilan régional du 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/saudi-yemen-war-iran-november-19-2026-e72472c557057943cab32010666b29bf",
+            "note": "Liban, Yémen, Arabie saoudite, Irak et détroit d’Ormuz ; distinguer affirmations militaires et faits confirmés."
+          },
+          {
+            "label": "Associated Press via OPB — démarches diplomatiques régionales, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/",
+            "note": "Efforts de médiation rapportés avec attribution à des responsables régionaux anonymes."
+          }
+        ],
+        "updates": [
+          {
+            "correction": false,
+            "datetime": "2026-11-19T22:08",
+            "title": "Ouverture du suivi — frappes régionales, situation humanitaire et médiations",
+            "body": "Le rapport OCHA publié le 13 novembre décrit des frappes et tirs à Gaza malgré le cessez-le-feu d’octobre 2025, une grave détérioration humanitaire et des déplacements de population en Cisjordanie. L’agence rapporte, en les attribuant au ministère de la Santé de Gaza, 1 613 morts liés au conflit depuis l’accord jusqu’au 9 novembre : ce chiffre est attribué et ne constitue pas un décompte indépendant.\nLes 17 et 18 novembre, selon Reuters et Associated Press, des frappes ont été échangées entre les États-Unis et l’Iran autour de Qeshm et de bases ou installations dans le Golfe, et des attaques iraniennes ont visé le Koweït et Bahreïn.\nLe 19 novembre, Associated Press rapporte de nouvelles frappes israéliennes au Liban contre un site que l’armée israélienne dit lié au Hezbollah, ainsi que des attaques au Yémen et des débris d’un missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite.\nEn parallèle, des démarches diplomatiques pour éviter une nouvelle guerre de grande ampleur sont rapportées. Diploval classe le risque d’extension régionale au niveau 1 — Code One. Ce niveau ne signifie ni guerre mondiale imminente, ni recours annoncé à l’arme nucléaire. Chaque nouvelle information fera l’objet d’une vérification avant publication.",
+            "sources": [
+              {
+                "label": "OCHA — situation humanitaire, 13 novembre 2026",
+                "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026"
+              },
+              {
+                "label": "Reuters — affrontements dans le Golfe, 17–18 novembre",
+                "url": "https://www.reuters.com/world/middle-east/bahrain-warns-potential-threat-urges-residents-seek-safety-2026-11-17/"
+              },
+              {
+                "label": "Associated Press — événements du 19 novembre",
+                "url": "https://apnews.com/article/saudi-yemen-war-iran-november-19-2026-e72472c557057943cab32010666b29bf"
+              },
+              {
+                "label": "Associated Press/OPB — médiations régionales",
+                "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "point_slug": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "recorded_at": "2026-11-23T11:39:47Z",
+      "label": "Incidents en Baltique et en Pologne",
+      "commit_sha": "230b54f7cacda4f2bc08d5594eb0c7b00cc3bda8",
+      "point": {
+        "show_home": true,
+        "level": "2",
+        "summary": "Les efforts diplomatiques pour un éventuel cessez-le-feu se poursuivent sans accord général, tandis que la guerre produit des incidents de sécurité au voisinage immédiat de plusieurs États de l’OTAN. Le 20 novembre, trois missiles russes sont tombés en Pologne ; le 21 novembre, une attaque de drones contre un cargo russe dans le golfe de Finlande a entraîné une intervention maritime multinationale et une possible violation de l’espace aérien finlandais par un hélicoptère russe. Le soutien militaire européen à l’Ukraine et les tensions concernant la présence de personnels français demeurent des facteurs de vigilance. Ces développements justifient un réexamen renforcé du risque de débordement, sans preuve à ce stade d’un affrontement militaire direct Russie–OTAN. Diploval maintient le niveau 2 — Vigilance renforcée.",
+        "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
+        "opened_at": "2026-11-19T11:50",
+        "updates": [
+          {
+            "datetime": "2026-11-23T12:37",
+            "event_date": "2026-11-23",
+            "event_label": "23 novembre 2026",
+            "title": "Réaction du Kremlin et consultations annoncées à l’OTAN",
+            "body": "Le Kremlin a accusé l’Ukraine d’« activité terroriste » en mer Baltique à la suite de l’attaque du cargo russe Sparta II, selon Reuters. Il s’agit de la qualification employée par Moscou, non d’une conclusion juridique indépendante. Après l’entrée de missiles russes en Pologne le 20 novembre, une réunion du Conseil de l’Atlantique Nord est annoncée à Bruxelles le 23 novembre. Aucun résultat de cette réunion, aucune décision opérationnelle nouvelle ni aucun affrontement direct Russie–OTAN ne sont confirmés par les sources disponibles au moment de cette actualisation.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T12:37",
+            "event_date": "2026-11-21",
+            "event_label": "21–22 novembre 2026",
+            "title": "Golfe de Finlande : le Sparta II touché et un survol russe suspecté",
+            "body": "Le 21 novembre, les forces finlandaises ont détecté une attaque de drones contre le cargo russe Sparta II, en eaux internationales à l’ouest de l’île de Suursaari/Gogland. Le navire, exploité par une entreprise liée à la logistique militaire russe, a pris feu avant de dériver dans les eaux territoriales finlandaises. Ses 16 membres d’équipage ont été évacués et un blessé léger a été signalé ; un remorqueur russe a commencé à l’évacuer le 22 novembre, avec l’aide des secours finlandais, russes et estoniens. Les autorités finlandaises jugent probable une responsabilité ukrainienne, non encore confirmée par Kyiv au moment des rapports cités. Elles enquêtent aussi sur une possible intrusion d’un hélicoptère russe jusqu’à 4,1 kilomètres dans leur espace aérien, potentiellement liée aux opérations de secours. Aucune confrontation armée avec les forces de l’OTAN ni pollution pétrolière confirmée n’a été signalée. La nature exacte du chargement du cargo reste inconnue.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-22T13:45",
+            "title": "Sécurité européenne : Washington propose d’élargir les discussions",
+            "body": "Les émissaires américains ont proposé de discuter de la sécurité européenne après la guerre. Moscou soutient cette piste et réaffirme ses exigences antérieures. Le 21 novembre, Volodymyr Zelensky a dit douter que Vladimir Poutine soit prêt à faire des compromis. Il a demandé que soient fixés la date et l’ordre du jour du prochain cycle de pourparlers. Diploval maintient le niveau 2 — Vigilance renforcée.",
+            "sources": [
+              {
+                "label": "Associated Press — proposition américaine sur la sécurité européenne, 20 novembre",
+                "url": "https://apnews.com/article/60752c921b031be80b1f7a9e83455a0e"
+              },
+              {
+                "label": "Reuters — déclarations de Volodymyr Zelensky, 21 novembre",
+                "url": "https://www.reuters.com/world/europe/trump-told-european-leaders-they-were-spending-lot-ukraine-zelenskiy-says-2026-11-21/"
+              }
+            ],
+            "event_date": "2026-11-21",
+            "event_label": "20–21 novembre 2026"
+          },
+          {
+            "datetime": "2026-11-23T12:37",
+            "event_date": "2026-11-20",
+            "event_label": "20 novembre 2026 — identification judiciaire annoncée le 22",
+            "title": "Pologne : trois missiles de croisière russes Kh-101 tombés sur le territoire",
+            "body": "Le 20 novembre, trois engins russes ont pénétré l’espace aérien polonais et sont tombés près de Nowy Lipowiec, Rudnik nad Sanem et Mołodycz. Le 22 novembre, les procureurs polonais ont indiqué que l’examen préliminaire des débris avait identifié les trois engins comme des missiles de croisière russes Kh-101, et non deux missiles et un drone comme envisagé initialement. Les autorités polonaises n’ont signalé ni victime ni dommage à une infrastructure critique. Le gouvernement polonais soupçonne une provocation, notamment à proximité d’exercices militaires alliés, mais l’intentionnalité de la trajectoire n’est pas établie à ce stade. L’OTAN a dénoncé cette violation et annoncé des consultations. Cet épisode rapproche concrètement le risque militaire d’un territoire allié, sans constituer en soi une confrontation armée directe OTAN–Russie.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "Moscou propose des contacts exploratoires avec les Européens",
+            "body": "Le 19 novembre, Vladimir Poutine a déclaré avoir invité des représentants européens à Moscou pour clarifier leur position avant d’arrêter le format de futures négociations sur l’Ukraine. Il ne s’agit pas d’une rencontre déjà tenue : à la date de cette mise à jour, aucune date ou participation définitive n’est confirmée. Le sommet Trump–Poutine–Xi du même jour à Shenzhen a abouti à une déclaration générale sur les risques nucléaires et la coopération internationale, sans accord spécifique sur l’Ukraine ni sur l’Iran.",
+            "correction": false,
+            "sources": [],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026 — annonce d’invitation"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T21:50",
+            "title": "Berlin : projets de garanties de sécurité",
+            "body": "À Berlin, la Coalition des volontaires, l’Ukraine et les États-Unis ont confirmé leur intention de coordonner le soutien militaire, financier et diplomatique à Kyiv. La déclaration publiée par l’Élysée expose plusieurs garanties envisagées une fois un cessez-le-feu entré en vigueur : mécanisme de surveillance conduit par les États-Unis, force multinationale européenne soutenue par Washington et engagements juridiquement contraignants soumis aux procédures nationales. Ces dispositifs restent des propositions conditionnelles. L’équipe européenne désignée le 13 novembre associe les institutions de l’UE à la France, l’Allemagne, l’Italie, la Pologne et le Royaume-Uni.",
+            "sources": [
+              {
+                "label": "Élysée — déclaration conjointe du 19 novembre",
+                "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine"
+              }
+            ],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T11:51",
+            "title": "Niveau 2 maintenu — bilan initial des négociations et des risques",
+            "body": "Les échanges diplomatiques restent ouverts et plusieurs propositions de cessez-le-feu, de garanties de sécurité et de désescalade continuent d’être examinées. Aucun accord général n’est toutefois conclu à ce jour. L’activité militaire demeure élevée, mais aucun élément suffisamment établi ne justifie un passage au Code One. Diploval maintient donc le niveau 2 — Vigilance renforcée et poursuit le suivi des négociations et du risque d’escalade régionale.",
+            "sources": [],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026 — point de situation initial"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T12:15",
+            "title": "Avertissement russe concernant les personnels français en Ukraine",
+            "body": "À la suite des révélations sur la mission française « Volia », Sergueï Lavrov a qualifié la présence de personnels militaires français en Ukraine de « participation directe » au conflit. Paris conteste cette qualification et présente ces missions comme limitées à la formation et à la maintenance, sans participation aux combats. Cet épisode accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, il ne constitue ni une attaque contre le territoire français ni un affrontement militaire direct France–Russie ; le niveau 2 — Vigilance renforcée est donc maintenu.",
+            "sources": [
+              {
+                "label": "Associated Press",
+                "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f"
+              },
+              {
+                "label": "Euronews — 17 novembre 2026",
+                "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war"
+              }
+            ],
+            "event_date": "2026-11-17",
+            "event_label": "17 novembre 2026 — déclarations"
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "Abu Dhabi : bilan des négociations et annonce d’échange de prisonniers",
+            "body": "Les délégations ukrainienne et russe se sont retrouvées les 10 et 11 novembre à Abu Dhabi sous médiation américaine, après neuf mois d’interruption des négociations directes. Les parties sont parvenues à un accord de principe sur un important échange de prisonniers, dont les modalités et la réalisation restent à vérifier séparément. Aucune avancée décisive n’a été annoncée concernant le territoire ou les garanties de sécurité.",
+            "correction": false,
+            "sources": [],
+            "event_date": "2026-11-11",
+            "event_label": "10–11 novembre 2026 — pourparlers"
+          }
+        ],
+        "watch_up": [
+          "Frappe russe entraînant des morts ou blessés parmi les personnels militaires français présents en Ukraine, notamment si le caractère intentionnel ou ciblé est établi.",
+          "Menace russe explicitement étendue des personnels français présents en Ukraine à des objectifs militaires ou civils situés sur le territoire français ou celui d’un État de l’OTAN.",
+          "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.",
+          "Affrontement militaire direct entre forces russes et forces françaises ou de l’OTAN.",
+          "Multiplication coordonnée d’incidents graves dans plusieurs États alliés.",
+          "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
+          "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
+        ],
+        "why_level": "Le niveau 2 — Vigilance renforcée — reste applicable, mais le risque d’incident impliquant l’OTAN augmente. Les trois missiles russes tombés en Pologne le 20 novembre attestent une violation grave du territoire d’un pays allié ; les autorités polonaises n’ont signalé aucune victime ni destruction d’infrastructure critique. Dans le golfe de Finlande, la frappe sur un cargo russe en eaux internationales, sa dérive vers les eaux finlandaises et le survol russe suspecté accroissent la sensibilité militaire et environnementale de la Baltique. Les secours ont toutefois impliqué une coopération entre autorités finlandaises, estoniennes et russes ; aucun combat direct entre les forces de l’OTAN et celles de la Russie n’est établi. La présence de personnels militaires français en Ukraine pour des missions déclarées de formation et de maintenance et les avertissements russes antérieurs demeurent d’autres risques de friction. Le Code One devrait être réexaminé immédiatement en cas d’attaque délibérée contre un État de l’OTAN avec victimes ou dégâts significatifs, de confrontation armée directe, de répétition coordonnée d’incidents graves ou de modification stratégique vérifiable. La réunion annoncée du Conseil de l’Atlantique Nord le 23 novembre devra être examinée dès que ses résultats seront connus.",
+        "visible": true,
+        "watch_down": [
+          "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
+          "Réduction durable des frappes et des incidents transfrontaliers.",
+          "Mise en place effective d’un mécanisme commun de surveillance.",
+          "Accord sur des mesures de désescalade militaire ou énergétique.",
+          "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
+          "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
+        ],
+        "last_update": "2026-11-23T12:37",
+        "status": "suivi",
+        "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
+        "sources": [
+          {
+            "label": "Conseil de l’Union européenne — prolongation de l’EUMAM Ukraine",
+            "type": "Source officielle",
+            "url": "https://www.consilium.europa.eu/fr/press/press-releases/2026/11/09/ukraine-council-extends-eu-military-assistance-mission-mandate-for-two-years/",
+            "note": "Cadre officiel européen de l’assistance et de la formation militaires à l’Ukraine."
+          },
+          {
+            "label": "Associated Press — présence française en Ukraine et réaction russe",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f",
+            "note": "Synthèse factuelle sur la mission française, les déclarations russes et la réponse de Paris."
+          },
+          {
+            "label": "Euronews — réponse française aux déclarations de Sergueï Lavrov",
+            "type": "Média",
+            "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war",
+            "note": "Déclarations de Jean-Noël Barrot et rappel des propos russes du 17 novembre 2026."
+          },
+          {
+            "label": "Reuters — Poutine propose la venue de représentants européens à Moscou, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/china/putin-says-russia-invited-europeans-moscow-clarify-position-ukraine-talks-2026-11-19/",
+            "note": "Invitation déclarée, pas rencontre confirmée."
+          },
+          {
+            "label": "Élysée — déclaration conjointe de Berlin, 19 novembre",
+            "type": "Source officielle",
+            "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine",
+            "note": "Projets de garanties de sécurité conditionnels."
+          },
+          {
+            "label": "Gouvernement allemand — Coalition des volontaires et composition E5",
+            "type": "Source officielle",
+            "url": "https://www.bundesregierung.de/breg-fr/service/coalition-volontaires-berlin-2461998",
+            "note": "Réunion du 19 novembre et représentation européenne décidée le 13."
+          },
+          {
+            "label": "Reuters — pourparlers et accord de principe d’échange de prisonniers à Abu Dhabi, 11 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
+            "note": "Accord annoncé, mise en œuvre à confirmer."
+          },
+          {
+            "label": "Reuters — sommet Trump–Poutine–Xi et déclaration de Shenzhen, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/china/trumps-historic-meeting-with-xi-putin-headlines-asia-trip-2026-11-18/",
+            "note": "Déclaration sans accord propre au conflit ukrainien."
+          },
+          {
+            "label": "Parquet polonais — enquête sur les trois engins tombés en Pologne, 21 novembre",
+            "type": "Source officielle",
+            "url": "https://www.gov.pl/web/po-lublin/aktualny-stan-czynnosci-procesowych-w-sprawie-ujawnienia-obiektow-latajacych-na-terenie-wojewodztwa-lubelskiego-i-podkarpackiego",
+            "note": "Enquête et lieux de chute ; conclusions préliminaires ensuite précisées par Reuters."
+          },
+          {
+            "label": "Ministère polonais de la Défense — bilan du 20 novembre 2026",
+            "type": "Source officielle",
+            "url": "https://www.gov.pl/web/obrona-narodowa/wicepremier-w-kosiniak-kamysz-o-naruszeniu-polskiej-przestrzeni-powietrznej",
+            "note": "Absence de victimes et de dommages signalés aux infrastructures critiques."
+          },
+          {
+            "label": "Reuters — identification des trois missiles russes Kh-101, 22 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/three-russian-missiles-flew-into-poland-friday-prosecutors-say-2026-11-22/",
+            "note": "Information attribuée aux procureurs polonais ; réunion OTAN annoncée."
+          },
+          {
+            "label": "Reuters — Sparta II, golfe de Finlande et survol suspecté, 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/russia-says-cargo-vessel-struck-by-drones-finland-says-it-is-fire-its-waters-2026-11-21/",
+            "note": "Constats finlandais, responsabilités présumées et incertitudes sur la cargaison."
+          },
+          {
+            "label": "Reuters — remorquage du Sparta II, 22 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/europe/russian-cargo-ship-still-fire-off-finland-after-attack-2026-11-22/",
+            "note": "Secours multinationaux, évacuation et remorquage."
+          },
+          {
+            "label": "AFP — Finlande : hélicoptère russe soupçonné de survol, 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.afp.com/en/russian-cargo-ship-catches-fire-after-ukrainian-strike-baltic",
+            "note": "Déclaration du ministre finlandais et estimation de 4,1 kilomètres."
+          },
+          {
+            "label": "Reuters — déclaration du Kremlin sur la mer Baltique, 23 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/europe/kremlin-accuses-ukraine-terrorist-activity-baltic-after-cargo-ship-drone-strike-2026-11-23/",
+            "note": "Qualification de Moscou attribuée, pas établie juridiquement."
+          },
+          {
+            "label": "Reuters — position de l’OTAN après les incidents en Pologne, 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/nato-will-defend-every-inch-polish-territory-rutte-says-2026-11-21/",
+            "note": "Déclaration du secrétaire général et consultations annoncées."
+          }
+        ],
+        "category": "Géopolitique · Europe",
+        "related_publication": "accord-cadre-ukraine-russie-v01",
+        "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix."
+      }
+    },
+    {
+      "point_slug": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "recorded_at": "2026-11-23T10:53:32Z",
+      "label": "Chronologie corrigée du 23 novembre",
+      "commit_sha": "4d4c26146026f7af5965f61e2fc64174ce965556",
+      "point": {
+        "show_home": true,
+        "level": "2",
+        "summary": "Les discussions diplomatiques se poursuivent et se structurent davantage autour d’un possible cessez-le-feu et d’un règlement plus large. Plusieurs canaux associent désormais l’Ukraine, les États-Unis et des États européens, tandis que la Chine et la Russie restent impliquées dans des échanges parallèles. Dans le même temps, le soutien militaire européen à l’Ukraine se poursuit et certaines capacités sont renforcées. La présence de personnels militaires français en Ukraine et la qualification russe de cette présence comme « participation directe » maintiennent en outre un risque d’incident impliquant directement la France. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+        "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
+        "opened_at": "2026-11-19T11:50",
+        "updates": [
+          {
+            "correction": false,
+            "datetime": "2026-11-22T13:45",
+            "title": "Sécurité européenne : Washington propose d’élargir les discussions",
+            "body": "Les émissaires américains ont proposé de discuter de la sécurité européenne après la guerre. Moscou soutient cette piste et réaffirme ses exigences antérieures. Le 21 novembre, Volodymyr Zelensky a dit douter que Vladimir Poutine soit prêt à faire des compromis. Il a demandé que soient fixés la date et l’ordre du jour du prochain cycle de pourparlers. Diploval maintient le niveau 2 — Vigilance renforcée.",
+            "sources": [
+              {
+                "label": "Associated Press — proposition américaine sur la sécurité européenne, 20 novembre",
+                "url": "https://apnews.com/article/60752c921b031be80b1f7a9e83455a0e"
+              },
+              {
+                "label": "Reuters — déclarations de Volodymyr Zelensky, 21 novembre",
+                "url": "https://www.reuters.com/world/europe/trump-told-european-leaders-they-were-spending-lot-ukraine-zelenskiy-says-2026-11-21/"
+              }
+            ],
+            "event_date": "2026-11-21",
+            "event_label": "20–21 novembre 2026"
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "Moscou propose des contacts exploratoires avec les Européens",
+            "body": "Le 19 novembre, Vladimir Poutine a déclaré avoir invité des représentants européens à Moscou pour clarifier leur position avant d’arrêter le format de futures négociations sur l’Ukraine. Il ne s’agit pas d’une rencontre déjà tenue : à la date de cette mise à jour, aucune date ou participation définitive n’est confirmée. Le sommet Trump–Poutine–Xi du même jour à Shenzhen a abouti à une déclaration générale sur les risques nucléaires et la coopération internationale, sans accord spécifique sur l’Ukraine ni sur l’Iran.",
+            "correction": false,
+            "sources": [],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026 — annonce d’invitation"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T21:50",
+            "title": "Berlin : projets de garanties de sécurité",
+            "body": "À Berlin, la Coalition des volontaires, l’Ukraine et les États-Unis ont confirmé leur intention de coordonner le soutien militaire, financier et diplomatique à Kyiv. La déclaration publiée par l’Élysée expose plusieurs garanties envisagées une fois un cessez-le-feu entré en vigueur : mécanisme de surveillance conduit par les États-Unis, force multinationale européenne soutenue par Washington et engagements juridiquement contraignants soumis aux procédures nationales. Ces dispositifs restent des propositions conditionnelles. L’équipe européenne désignée le 13 novembre associe les institutions de l’UE à la France, l’Allemagne, l’Italie, la Pologne et le Royaume-Uni.",
+            "sources": [
+              {
+                "label": "Élysée — déclaration conjointe du 19 novembre",
+                "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine"
+              }
+            ],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T11:51",
+            "title": "Niveau 2 maintenu — bilan initial des négociations et des risques",
+            "body": "Les échanges diplomatiques restent ouverts et plusieurs propositions de cessez-le-feu, de garanties de sécurité et de désescalade continuent d’être examinées. Aucun accord général n’est toutefois conclu à ce jour. L’activité militaire demeure élevée, mais aucun élément suffisamment établi ne justifie un passage au Code One. Diploval maintient donc le niveau 2 — Vigilance renforcée et poursuit le suivi des négociations et du risque d’escalade régionale.",
+            "sources": [],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026 — point de situation initial"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T12:15",
+            "title": "Avertissement russe concernant les personnels français en Ukraine",
+            "body": "À la suite des révélations sur la mission française « Volia », Sergueï Lavrov a qualifié la présence de personnels militaires français en Ukraine de « participation directe » au conflit. Paris conteste cette qualification et présente ces missions comme limitées à la formation et à la maintenance, sans participation aux combats. Cet épisode accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, il ne constitue ni une attaque contre le territoire français ni un affrontement militaire direct France–Russie ; le niveau 2 — Vigilance renforcée est donc maintenu.",
+            "sources": [
+              {
+                "label": "Associated Press",
+                "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f"
+              },
+              {
+                "label": "Euronews — 17 novembre 2026",
+                "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war"
+              }
+            ],
+            "event_date": "2026-11-17",
+            "event_label": "17 novembre 2026 — déclarations"
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "Abu Dhabi : bilan des négociations et annonce d’échange de prisonniers",
+            "body": "Les délégations ukrainienne et russe se sont retrouvées les 10 et 11 novembre à Abu Dhabi sous médiation américaine, après neuf mois d’interruption des négociations directes. Les parties sont parvenues à un accord de principe sur un important échange de prisonniers, dont les modalités et la réalisation restent à vérifier séparément. Aucune avancée décisive n’a été annoncée concernant le territoire ou les garanties de sécurité.",
+            "correction": false,
+            "sources": [],
+            "event_date": "2026-11-11",
+            "event_label": "10–11 novembre 2026 — pourparlers"
+          }
+        ],
+        "watch_up": [
+          "Frappe russe entraînant des morts ou blessés parmi les personnels militaires français présents en Ukraine, notamment si le caractère intentionnel ou ciblé est établi.",
+          "Menace russe explicitement étendue des personnels français présents en Ukraine à des objectifs militaires ou civils situés sur le territoire français ou celui d’un État de l’OTAN.",
+          "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.",
+          "Affrontement militaire direct entre forces russes et forces françaises ou de l’OTAN.",
+          "Multiplication coordonnée d’incidents graves dans plusieurs États alliés.",
+          "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
+          "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
+        ],
+        "why_level": "Le niveau 2 traduit une situation de tension élevée mais encore contenue. Les opérations militaires restent intenses, les risques d’incident à proximité de l’espace euro-atlantique persistent et aucun cessez-le-feu général n’est en vigueur. Un élément nouveau renforce toutefois la vigilance : la présence confirmée de personnels militaires français en Ukraine pour des missions limitées de formation et de maintenance, ainsi que la qualification russe de cette présence comme « participation directe » au conflit. Moscou considère par ailleurs que des forces étrangères présentes en Ukraine peuvent constituer des cibles militaires. Cette situation accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, aucun affrontement militaire direct entre la France ou l’OTAN et la Russie, aucune attaque contre le territoire français et aucun changement majeur de posture stratégique ne justifient le passage au Code One.",
+        "visible": true,
+        "watch_down": [
+          "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
+          "Réduction durable des frappes et des incidents transfrontaliers.",
+          "Mise en place effective d’un mécanisme commun de surveillance.",
+          "Accord sur des mesures de désescalade militaire ou énergétique.",
+          "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
+          "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
+        ],
+        "last_update": "2026-11-23T11:35",
+        "status": "suivi",
+        "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
+        "sources": [
+          {
+            "label": "Conseil de l’Union européenne — prolongation de l’EUMAM Ukraine",
+            "type": "Source officielle",
+            "url": "https://www.consilium.europa.eu/fr/press/press-releases/2026/11/09/ukraine-council-extends-eu-military-assistance-mission-mandate-for-two-years/",
+            "note": "Cadre officiel européen de l’assistance et de la formation militaires à l’Ukraine."
+          },
+          {
+            "label": "Associated Press — présence française en Ukraine et réaction russe",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f",
+            "note": "Synthèse factuelle sur la mission française, les déclarations russes et la réponse de Paris."
+          },
+          {
+            "label": "Euronews — réponse française aux déclarations de Sergueï Lavrov",
+            "type": "Média",
+            "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war",
+            "note": "Déclarations de Jean-Noël Barrot et rappel des propos russes du 17 novembre 2026."
+          },
+          {
+            "label": "Reuters — Poutine propose la venue de représentants européens à Moscou, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/china/putin-says-russia-invited-europeans-moscow-clarify-position-ukraine-talks-2026-11-19/",
+            "note": "Invitation déclarée, pas rencontre confirmée."
+          },
+          {
+            "label": "Élysée — déclaration conjointe de Berlin, 19 novembre",
+            "type": "Source officielle",
+            "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine",
+            "note": "Projets de garanties de sécurité conditionnels."
+          },
+          {
+            "label": "Gouvernement allemand — Coalition des volontaires et composition E5",
+            "type": "Source officielle",
+            "url": "https://www.bundesregierung.de/breg-fr/service/coalition-volontaires-berlin-2461998",
+            "note": "Réunion du 19 novembre et représentation européenne décidée le 13."
+          },
+          {
+            "label": "Reuters — pourparlers et accord de principe d’échange de prisonniers à Abu Dhabi, 11 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
+            "note": "Accord annoncé, mise en œuvre à confirmer."
+          },
+          {
+            "label": "Reuters — sommet Trump–Poutine–Xi et déclaration de Shenzhen, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/china/trumps-historic-meeting-with-xi-putin-headlines-asia-trip-2026-11-18/",
+            "note": "Déclaration sans accord propre au conflit ukrainien."
+          }
+        ],
+        "category": "Géopolitique · Europe",
+        "related_publication": "accord-cadre-ukraine-russie-v01",
+        "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix."
+      }
+    },
+    {
+      "point_slug": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "recorded_at": "2026-11-23T10:41:42Z",
+      "label": "Ajouts diplomatiques du 23 novembre",
+      "commit_sha": "31690472210bcd9f1d5d9ad3bfb6734da1f04006",
+      "point": {
+        "show_home": true,
+        "level": "2",
+        "summary": "Les discussions diplomatiques se poursuivent et se structurent davantage autour d’un possible cessez-le-feu et d’un règlement plus large. Plusieurs canaux associent désormais l’Ukraine, les États-Unis et des États européens, tandis que la Chine et la Russie restent impliquées dans des échanges parallèles. Dans le même temps, le soutien militaire européen à l’Ukraine se poursuit et certaines capacités sont renforcées. La présence de personnels militaires français en Ukraine et la qualification russe de cette présence comme « participation directe » maintiennent en outre un risque d’incident impliquant directement la France. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+        "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
+        "opened_at": "2026-11-19T11:50",
+        "updates": [
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "23 novembre — Moscou propose des contacts exploratoires avec les Européens",
+            "body": "Le 19 novembre, Vladimir Poutine a déclaré avoir invité des représentants européens à Moscou pour clarifier leur position avant d’arrêter le format de futures négociations sur l’Ukraine. Il ne s’agit pas d’une rencontre déjà tenue : à la date de cette mise à jour, aucune date ou participation définitive n’est confirmée. Le sommet Trump–Poutine–Xi du même jour à Shenzhen a abouti à une déclaration générale sur les risques nucléaires et la coopération internationale, sans accord spécifique sur l’Ukraine ni sur l’Iran.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "23 novembre — Bilan des pourparlers d’Abu Dhabi des 10–11 novembre",
+            "body": "Les délégations ukrainienne et russe se sont retrouvées les 10 et 11 novembre à Abu Dhabi sous médiation américaine, après neuf mois d’interruption des négociations directes. Les parties sont parvenues à un accord de principe sur un important échange de prisonniers, dont les modalités et la réalisation restent à vérifier séparément. Aucune avancée décisive n’a été annoncée concernant le territoire ou les garanties de sécurité.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-22T13:45",
+            "title": "Sécurité européenne : Washington propose d’élargir les discussions",
+            "body": "Les émissaires américains ont proposé de discuter de la sécurité européenne après la guerre. Moscou soutient cette piste et réaffirme ses exigences antérieures. Le 21 novembre, Volodymyr Zelensky a dit douter que Vladimir Poutine soit prêt à faire des compromis. Il a demandé que soient fixés la date et l’ordre du jour du prochain cycle de pourparlers. Diploval maintient le niveau 2 — Vigilance renforcée.",
+            "sources": [
+              {
+                "label": "Associated Press — proposition américaine sur la sécurité européenne, 20 novembre",
+                "url": "https://apnews.com/article/60752c921b031be80b1f7a9e83455a0e"
+              },
+              {
+                "label": "Reuters — déclarations de Volodymyr Zelensky, 21 novembre",
+                "url": "https://www.reuters.com/world/europe/trump-told-european-leaders-they-were-spending-lot-ukraine-zelenskiy-says-2026-11-21/"
+              }
+            ]
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T21:50",
+            "title": "19 novembre — Berlin : projets précis de garanties de sécurité",
+            "body": "À Berlin, la Coalition des volontaires, l’Ukraine et les États-Unis ont confirmé leur intention de coordonner le soutien militaire, financier et diplomatique à Kyiv. La déclaration publiée par l’Élysée expose plusieurs garanties envisagées une fois un cessez-le-feu entré en vigueur : mécanisme de surveillance conduit par les États-Unis, force multinationale européenne soutenue par Washington et engagements juridiquement contraignants soumis aux procédures nationales. Ces dispositifs restent des propositions conditionnelles. L’équipe européenne désignée le 13 novembre associe les institutions de l’UE à la France, l’Allemagne, l’Italie, la Pologne et le Royaume-Uni.",
+            "sources": [
+              {
+                "label": "Élysée — déclaration conjointe du 19 novembre",
+                "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine"
+              }
+            ]
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T12:15",
+            "title": "Avertissement russe concernant les personnels français en Ukraine",
+            "body": "À la suite des révélations sur la mission française « Volia », Sergueï Lavrov a qualifié la présence de personnels militaires français en Ukraine de « participation directe » au conflit. Paris conteste cette qualification et présente ces missions comme limitées à la formation et à la maintenance, sans participation aux combats. Cet épisode accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, il ne constitue ni une attaque contre le territoire français ni un affrontement militaire direct France–Russie ; le niveau 2 — Vigilance renforcée est donc maintenu.",
+            "sources": [
+              {
+                "label": "Associated Press",
+                "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f"
+              },
+              {
+                "label": "Euronews — 17 novembre 2026",
+                "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war"
+              }
+            ]
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T11:51",
+            "title": "Niveau 2 maintenu — négociations actives, risque militaire toujours élevé",
+            "body": "Les échanges diplomatiques restent ouverts et plusieurs propositions de cessez-le-feu, de garanties de sécurité et de désescalade continuent d’être examinées. Aucun accord général n’est toutefois conclu à ce jour. L’activité militaire demeure élevée, mais aucun élément suffisamment établi ne justifie un passage au Code One. Diploval maintient donc le niveau 2 — Vigilance renforcée et poursuit le suivi des négociations et du risque d’escalade régionale.",
+            "sources": []
+          }
+        ],
+        "watch_up": [
+          "Frappe russe entraînant des morts ou blessés parmi les personnels militaires français présents en Ukraine, notamment si le caractère intentionnel ou ciblé est établi.",
+          "Menace russe explicitement étendue des personnels français présents en Ukraine à des objectifs militaires ou civils situés sur le territoire français ou celui d’un État de l’OTAN.",
+          "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.",
+          "Affrontement militaire direct entre forces russes et forces françaises ou de l’OTAN.",
+          "Multiplication coordonnée d’incidents graves dans plusieurs États alliés.",
+          "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
+          "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
+        ],
+        "why_level": "Le niveau 2 traduit une situation de tension élevée mais encore contenue. Les opérations militaires restent intenses, les risques d’incident à proximité de l’espace euro-atlantique persistent et aucun cessez-le-feu général n’est en vigueur. Un élément nouveau renforce toutefois la vigilance : la présence confirmée de personnels militaires français en Ukraine pour des missions limitées de formation et de maintenance, ainsi que la qualification russe de cette présence comme « participation directe » au conflit. Moscou considère par ailleurs que des forces étrangères présentes en Ukraine peuvent constituer des cibles militaires. Cette situation accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, aucun affrontement militaire direct entre la France ou l’OTAN et la Russie, aucune attaque contre le territoire français et aucun changement majeur de posture stratégique ne justifient le passage au Code One.",
+        "visible": true,
+        "watch_down": [
+          "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
+          "Réduction durable des frappes et des incidents transfrontaliers.",
+          "Mise en place effective d’un mécanisme commun de surveillance.",
+          "Accord sur des mesures de désescalade militaire ou énergétique.",
+          "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
+          "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
+        ],
+        "last_update": "2026-11-23T11:35",
+        "status": "suivi",
+        "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
+        "sources": [
+          {
+            "label": "Conseil de l’Union européenne — prolongation de l’EUMAM Ukraine",
+            "type": "Source officielle",
+            "url": "https://www.consilium.europa.eu/fr/press/press-releases/2026/11/09/ukraine-council-extends-eu-military-assistance-mission-mandate-for-two-years/",
+            "note": "Cadre officiel européen de l’assistance et de la formation militaires à l’Ukraine."
+          },
+          {
+            "label": "Associated Press — présence française en Ukraine et réaction russe",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f",
+            "note": "Synthèse factuelle sur la mission française, les déclarations russes et la réponse de Paris."
+          },
+          {
+            "label": "Euronews — réponse française aux déclarations de Sergueï Lavrov",
+            "type": "Média",
+            "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war",
+            "note": "Déclarations de Jean-Noël Barrot et rappel des propos russes du 17 novembre 2026."
+          },
+          {
+            "label": "Reuters — Poutine propose la venue de représentants européens à Moscou, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/china/putin-says-russia-invited-europeans-moscow-clarify-position-ukraine-talks-2026-11-19/",
+            "note": "Invitation déclarée, pas rencontre confirmée."
+          },
+          {
+            "label": "Élysée — déclaration conjointe de Berlin, 19 novembre",
+            "type": "Source officielle",
+            "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine",
+            "note": "Projets de garanties de sécurité conditionnels."
+          },
+          {
+            "label": "Gouvernement allemand — Coalition des volontaires et composition E5",
+            "type": "Source officielle",
+            "url": "https://www.bundesregierung.de/breg-fr/service/coalition-volontaires-berlin-2461998",
+            "note": "Réunion du 19 novembre et représentation européenne décidée le 13."
+          },
+          {
+            "label": "Reuters — pourparlers et accord de principe d’échange de prisonniers à Abu Dhabi, 11 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
+            "note": "Accord annoncé, mise en œuvre à confirmer."
+          },
+          {
+            "label": "Reuters — sommet Trump–Poutine–Xi et déclaration de Shenzhen, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/china/trumps-historic-meeting-with-xi-putin-headlines-asia-trip-2026-11-18/",
+            "note": "Déclaration sans accord propre au conflit ukrainien."
+          }
+        ],
+        "category": "Géopolitique · Europe",
+        "related_publication": "accord-cadre-ukraine-russie-v01",
+        "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix."
+      }
+    },
+    {
+      "point_slug": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "recorded_at": "2026-11-22T12:42:28Z",
+      "label": "Suivi diplomatique du 22 novembre",
+      "commit_sha": "194c1706cf49429d9c3cd1535e6ed49d063b3379",
+      "point": {
+        "show_home": true,
+        "level": "2",
+        "summary": "Les discussions diplomatiques se poursuivent et se structurent davantage autour d’un possible cessez-le-feu et d’un règlement plus large. Plusieurs canaux associent désormais l’Ukraine, les États-Unis et des États européens, tandis que la Chine et la Russie restent impliquées dans des échanges parallèles. Dans le même temps, le soutien militaire européen à l’Ukraine se poursuit et certaines capacités sont renforcées. La présence de personnels militaires français en Ukraine et la qualification russe de cette présence comme « participation directe » maintiennent en outre un risque d’incident impliquant directement la France. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+        "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
+        "opened_at": "2026-11-19T11:50",
+        "updates": [
+          {
+            "correction": false,
+            "datetime": "2026-11-22T13:45",
+            "title": "Sécurité européenne : Washington propose d’élargir les discussions",
+            "body": "Les émissaires américains ont proposé de discuter de la sécurité européenne après la guerre. Moscou soutient cette piste et réaffirme ses exigences antérieures. Le 21 novembre, Volodymyr Zelensky a dit douter que Vladimir Poutine soit prêt à faire des compromis. Il a demandé que soient fixés la date et l’ordre du jour du prochain cycle de pourparlers. Diploval maintient le niveau 2 — Vigilance renforcée.",
+            "sources": [
+              {
+                "label": "Associated Press — proposition américaine sur la sécurité européenne, 20 novembre",
+                "url": "https://apnews.com/article/60752c921b031be80b1f7a9e83455a0e"
+              },
+              {
+                "label": "Reuters — déclarations de Volodymyr Zelensky, 21 novembre",
+                "url": "https://www.reuters.com/world/europe/trump-told-european-leaders-they-were-spending-lot-ukraine-zelenskiy-says-2026-11-21/"
+              }
+            ]
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T21:50",
+            "title": "Berlin : accélération simultanée des négociations et du soutien militaire à l’Ukraine",
+            "body": "Le 19 novembre 2026, la séquence diplomatique s’est intensifiée autour de l’Ukraine, notamment à Berlin, avec une coordination renforcée entre l’Ukraine, plusieurs États européens, les institutions européennes et les représentants américains. Dans le même temps, plusieurs pays européens ont confirmé la poursuite ou le renforcement de leur soutien militaire à l’Ukraine, notamment en matière de défense aérienne, de drones, de capacités navales et d’équipements. La France continue également son soutien militaire déjà engagé, notamment via des capacités aériennes, des munitions et des systèmes de défense. Cette double dynamique — négociations plus actives et soutien militaire maintenu — constitue un facteur important de vigilance : elle peut soutenir une future négociation, mais elle entretient aussi un risque d’incident ou d’escalade pendant la phase de discussion. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+            "sources": [
+              {
+                "label": "Présidence de l’Ukraine — échanges diplomatiques du 19 novembre 2026",
+                "url": "https://www.president.gov.ua/en/news/speeches"
+              },
+              {
+                "label": "Conseil de l’Union européenne — soutien militaire à l’Ukraine",
+                "url": "https://www.consilium.europa.eu/en/policies/military-support-ukraine/"
+              },
+              {
+                "label": "Gouvernement britannique — nouvelles annonces de soutien à l’Ukraine",
+                "url": "https://www.gov.uk/search/news-and-communications?organisations%5B%5D=prime-ministers-office-10-downing-street"
+              }
+            ]
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T12:15",
+            "title": "Avertissement russe concernant les personnels français en Ukraine",
+            "body": "À la suite des révélations sur la mission française « Volia », Sergueï Lavrov a qualifié la présence de personnels militaires français en Ukraine de « participation directe » au conflit. Paris conteste cette qualification et présente ces missions comme limitées à la formation et à la maintenance, sans participation aux combats. Cet épisode accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, il ne constitue ni une attaque contre le territoire français ni un affrontement militaire direct France–Russie ; le niveau 2 — Vigilance renforcée est donc maintenu.",
+            "sources": [
+              {
+                "label": "Associated Press",
+                "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f"
+              },
+              {
+                "label": "Euronews — 17 novembre 2026",
+                "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war"
+              }
+            ]
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T11:51",
+            "title": "Niveau 2 maintenu — négociations actives, risque militaire toujours élevé",
+            "body": "Les échanges diplomatiques restent ouverts et plusieurs propositions de cessez-le-feu, de garanties de sécurité et de désescalade continuent d’être examinées. Aucun accord général n’est toutefois conclu à ce jour. L’activité militaire demeure élevée, mais aucun élément suffisamment établi ne justifie un passage au Code One. Diploval maintient donc le niveau 2 — Vigilance renforcée et poursuit le suivi des négociations et du risque d’escalade régionale.",
+            "sources": []
+          }
+        ],
+        "watch_up": [
+          "Frappe russe entraînant des morts ou blessés parmi les personnels militaires français présents en Ukraine, notamment si le caractère intentionnel ou ciblé est établi.",
+          "Menace russe explicitement étendue des personnels français présents en Ukraine à des objectifs militaires ou civils situés sur le territoire français ou celui d’un État de l’OTAN.",
+          "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.",
+          "Affrontement militaire direct entre forces russes et forces françaises ou de l’OTAN.",
+          "Multiplication coordonnée d’incidents graves dans plusieurs États alliés.",
+          "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
+          "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
+        ],
+        "why_level": "Le niveau 2 traduit une situation de tension élevée mais encore contenue. Les opérations militaires restent intenses, les risques d’incident à proximité de l’espace euro-atlantique persistent et aucun cessez-le-feu général n’est en vigueur. Un élément nouveau renforce toutefois la vigilance : la présence confirmée de personnels militaires français en Ukraine pour des missions limitées de formation et de maintenance, ainsi que la qualification russe de cette présence comme « participation directe » au conflit. Moscou considère par ailleurs que des forces étrangères présentes en Ukraine peuvent constituer des cibles militaires. Cette situation accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, aucun affrontement militaire direct entre la France ou l’OTAN et la Russie, aucune attaque contre le territoire français et aucun changement majeur de posture stratégique ne justifient le passage au Code One.",
+        "visible": true,
+        "watch_down": [
+          "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
+          "Réduction durable des frappes et des incidents transfrontaliers.",
+          "Mise en place effective d’un mécanisme commun de surveillance.",
+          "Accord sur des mesures de désescalade militaire ou énergétique.",
+          "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
+          "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
+        ],
+        "last_update": "2026-11-22T13:45",
+        "status": "suivi",
+        "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
+        "sources": [
+          {
+            "label": "Conseil de l’Union européenne — prolongation de l’EUMAM Ukraine",
+            "type": "Source officielle",
+            "url": "https://www.consilium.europa.eu/fr/press/press-releases/2026/11/09/ukraine-council-extends-eu-military-assistance-mission-mandate-for-two-years/",
+            "note": "Cadre officiel européen de l’assistance et de la formation militaires à l’Ukraine."
+          },
+          {
+            "label": "Associated Press — présence française en Ukraine et réaction russe",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f",
+            "note": "Synthèse factuelle sur la mission française, les déclarations russes et la réponse de Paris."
+          },
+          {
+            "label": "Euronews — réponse française aux déclarations de Sergueï Lavrov",
+            "type": "Média",
+            "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war",
+            "note": "Déclarations de Jean-Noël Barrot et rappel des propos russes du 17 novembre 2026."
+          }
+        ],
+        "category": "Géopolitique · Europe",
+        "related_publication": "accord-cadre-ukraine-russie-v01",
+        "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix."
+      }
+    },
+    {
+      "point_slug": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "recorded_at": "2026-11-19T21:06:46Z",
+      "label": "Point de situation du 19 novembre",
+      "commit_sha": "17b5c49c2e9ab2a3a6c9ccd285cc5fbea88ec0c4",
+      "point": {
+        "show_home": true,
+        "level": "2",
+        "summary": "Les discussions diplomatiques se poursuivent et se structurent davantage autour d’un possible cessez-le-feu et d’un règlement plus large. Plusieurs canaux associent désormais l’Ukraine, les États-Unis et des États européens, tandis que la Chine et la Russie restent impliquées dans des échanges parallèles. Dans le même temps, le soutien militaire européen à l’Ukraine se poursuit et certaines capacités sont renforcées. La présence de personnels militaires français en Ukraine et la qualification russe de cette présence comme « participation directe » maintiennent en outre un risque d’incident impliquant directement la France. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+        "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
+        "opened_at": "2026-11-19T11:50",
+        "updates": [
+          {
+            "correction": false,
+            "datetime": "2026-11-19T21:50",
+            "title": "Berlin : accélération simultanée des négociations et du soutien militaire à l’Ukraine",
+            "body": "Le 19 novembre 2026, la séquence diplomatique s’est intensifiée autour de l’Ukraine, notamment à Berlin, avec une coordination renforcée entre l’Ukraine, plusieurs États européens, les institutions européennes et les représentants américains. Dans le même temps, plusieurs pays européens ont confirmé la poursuite ou le renforcement de leur soutien militaire à l’Ukraine, notamment en matière de défense aérienne, de drones, de capacités navales et d’équipements. La France continue également son soutien militaire déjà engagé, notamment via des capacités aériennes, des munitions et des systèmes de défense. Cette double dynamique — négociations plus actives et soutien militaire maintenu — constitue un facteur important de vigilance : elle peut soutenir une future négociation, mais elle entretient aussi un risque d’incident ou d’escalade pendant la phase de discussion. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+            "sources": [
+              {
+                "label": "Présidence de l’Ukraine — échanges diplomatiques du 19 novembre 2026",
+                "url": "https://www.president.gov.ua/en/news/speeches"
+              },
+              {
+                "label": "Conseil de l’Union européenne — soutien militaire à l’Ukraine",
+                "url": "https://www.consilium.europa.eu/en/policies/military-support-ukraine/"
+              },
+              {
+                "label": "Gouvernement britannique — nouvelles annonces de soutien à l’Ukraine",
+                "url": "https://www.gov.uk/search/news-and-communications?organisations%5B%5D=prime-ministers-office-10-downing-street"
+              }
+            ]
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T12:15",
+            "title": "Avertissement russe concernant les personnels français en Ukraine",
+            "body": "À la suite des révélations sur la mission française « Volia », Sergueï Lavrov a qualifié la présence de personnels militaires français en Ukraine de « participation directe » au conflit. Paris conteste cette qualification et présente ces missions comme limitées à la formation et à la maintenance, sans participation aux combats. Cet épisode accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, il ne constitue ni une attaque contre le territoire français ni un affrontement militaire direct France–Russie ; le niveau 2 — Vigilance renforcée est donc maintenu.",
+            "sources": [
+              {
+                "label": "Associated Press",
+                "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f"
+              },
+              {
+                "label": "Euronews — 17 novembre 2026",
+                "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war"
+              }
+            ]
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T11:51",
+            "title": "Niveau 2 maintenu — négociations actives, risque militaire toujours élevé",
+            "body": "Les échanges diplomatiques restent ouverts et plusieurs propositions de cessez-le-feu, de garanties de sécurité et de désescalade continuent d’être examinées. Aucun accord général n’est toutefois conclu à ce jour. L’activité militaire demeure élevée, mais aucun élément suffisamment établi ne justifie un passage au Code One. Diploval maintient donc le niveau 2 — Vigilance renforcée et poursuit le suivi des négociations et du risque d’escalade régionale.",
+            "sources": []
+          }
+        ],
+        "watch_up": [
+          "Frappe russe entraînant des morts ou blessés parmi les personnels militaires français présents en Ukraine, notamment si le caractère intentionnel ou ciblé est établi.",
+          "Menace russe explicitement étendue des personnels français présents en Ukraine à des objectifs militaires ou civils situés sur le territoire français ou celui d’un État de l’OTAN.",
+          "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.",
+          "Affrontement militaire direct entre forces russes et forces françaises ou de l’OTAN.",
+          "Multiplication coordonnée d’incidents graves dans plusieurs États alliés.",
+          "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
+          "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
+        ],
+        "why_level": "Le niveau 2 traduit une situation de tension élevée mais encore contenue. Les opérations militaires restent intenses, les risques d’incident à proximité de l’espace euro-atlantique persistent et aucun cessez-le-feu général n’est en vigueur. Un élément nouveau renforce toutefois la vigilance : la présence confirmée de personnels militaires français en Ukraine pour des missions limitées de formation et de maintenance, ainsi que la qualification russe de cette présence comme « participation directe » au conflit. Moscou considère par ailleurs que des forces étrangères présentes en Ukraine peuvent constituer des cibles militaires. Cette situation accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, aucun affrontement militaire direct entre la France ou l’OTAN et la Russie, aucune attaque contre le territoire français et aucun changement majeur de posture stratégique ne justifient le passage au Code One.",
+        "visible": true,
+        "watch_down": [
+          "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
+          "Réduction durable des frappes et des incidents transfrontaliers.",
+          "Mise en place effective d’un mécanisme commun de surveillance.",
+          "Accord sur des mesures de désescalade militaire ou énergétique.",
+          "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
+          "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
+        ],
+        "last_update": "2026-11-19T21:50",
+        "status": "suivi",
+        "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
+        "sources": [
+          {
+            "label": "Conseil de l’Union européenne — prolongation de l’EUMAM Ukraine",
+            "type": "Source officielle",
+            "url": "https://www.consilium.europa.eu/fr/press/press-releases/2026/11/09/ukraine-council-extends-eu-military-assistance-mission-mandate-for-two-years/",
+            "note": "Cadre officiel européen de l’assistance et de la formation militaires à l’Ukraine."
+          },
+          {
+            "label": "Associated Press — présence française en Ukraine et réaction russe",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f",
+            "note": "Synthèse factuelle sur la mission française, les déclarations russes et la réponse de Paris."
+          },
+          {
+            "label": "Euronews — réponse française aux déclarations de Sergueï Lavrov",
+            "type": "Média",
+            "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war",
+            "note": "Déclarations de Jean-Noël Barrot et rappel des propos russes du 17 novembre 2026."
+          }
+        ],
+        "category": "Géopolitique · Europe"
+      }
+    },
+    {
+      "point_slug": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "recorded_at": "2026-11-19T10:58:59Z",
+      "label": "Ouverture du suivi",
+      "commit_sha": "4e09ba3cab50db06ca1c254eb0ae9ff024a8d74d",
+      "point": {
+        "show_home": true,
+        "level": "2",
+        "summary": "Les discussions diplomatiques se poursuivent autour d’un possible cessez-le-feu et d’un règlement plus large, mais aucun accord général n’est conclu. Les principaux blocages restent les territoires, les garanties de sécurité et les conditions de vérification. Parallèlement, l’intensité militaire demeure élevée et plusieurs incidents continuent d’entretenir un risque d’escalade régionale. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+        "updates": [
+          {
+            "correction": false,
+            "datetime": "19/11/2026T11:51",
+            "title": "Niveau 2 maintenu — négociations actives, risque militaire toujours élevé",
+            "body": "Les échanges diplomatiques restent ouverts et plusieurs propositions de cessez-le-feu, de garanties de sécurité et de désescalade continuent d’être examinées. Aucun accord général n’est toutefois conclu à ce jour. L’activité militaire demeure élevée, mais aucun élément suffisamment établi ne justifie un passage au Code One. Diploval maintient donc le niveau 2 — Vigilance renforcée et poursuit le suivi des négociations et du risque d’escalade régionale.",
+            "sources": []
+          }
+        ],
+        "watch_up": [
+          "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.  Affrontement militaire direct entre forces russes et forces de l’OTAN.  Multiplication coordonnée d’incidents graves dans plusieurs États alliés.  Changement majeur et vérifiable de posture nucléaire ou stratégique.  Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
+        ],
+        "why_level": "Le niveau 2 traduit une situation de tension élevée mais encore contenue. Les opérations militaires restent intenses, les risques d’incident à proximité de l’espace euro-atlantique persistent et aucun cessez-le-feu général n’est en vigueur. En revanche, les canaux diplomatiques restent ouverts et aucun affrontement militaire direct Russie–OTAN ni changement majeur de posture stratégique ne justifie actuellement le passage au Code One.",
+        "visible": true,
+        "watch_down": [
+          "Entrée en vigueur d’un cessez-le-feu général vérifiable.  Réduction durable des frappes et des incidents transfrontaliers.  Mise en place effective d’un mécanisme commun de surveillance.  Accord sur des mesures de désescalade militaire ou énergétique.  Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
+        ],
+        "last_update": "19/11/2026T11:50",
+        "status": "suivi",
+        "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
+        "category": "Géopolitique · Europe"
+      }
+    }
+  ]
+}
