@@ -3,10 +3,28 @@
     {
       "show_home": true,
       "level": "2",
-      "summary": "Les discussions diplomatiques se poursuivent et se structurent davantage autour d’un possible cessez-le-feu et d’un règlement plus large. Plusieurs canaux associent désormais l’Ukraine, les États-Unis et des États européens, tandis que la Chine et la Russie restent impliquées dans des échanges parallèles. Dans le même temps, le soutien militaire européen à l’Ukraine se poursuit et certaines capacités sont renforcées. La présence de personnels militaires français en Ukraine et la qualification russe de cette présence comme « participation directe » maintiennent en outre un risque d’incident impliquant directement la France. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+      "summary": "Les efforts diplomatiques pour un éventuel cessez-le-feu se poursuivent sans accord général, tandis que la guerre produit des incidents de sécurité au voisinage immédiat de plusieurs États de l’OTAN. Le 20 novembre, trois missiles russes sont tombés en Pologne ; le 21 novembre, une attaque de drones contre un cargo russe dans le golfe de Finlande a entraîné une intervention maritime multinationale et une possible violation de l’espace aérien finlandais par un hélicoptère russe. Le soutien militaire européen à l’Ukraine et les tensions concernant la présence de personnels français demeurent des facteurs de vigilance. Ces développements justifient un réexamen renforcé du risque de débordement, sans preuve à ce stade d’un affrontement militaire direct Russie–OTAN. Diploval maintient le niveau 2 — Vigilance renforcée.",
       "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
       "opened_at": "2026-11-19T11:50",
       "updates": [
+        {
+          "datetime": "2026-11-23T12:37",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026",
+          "title": "Réaction du Kremlin et consultations annoncées à l’OTAN",
+          "body": "Le Kremlin a accusé l’Ukraine d’« activité terroriste » en mer Baltique à la suite de l’attaque du cargo russe Sparta II, selon Reuters. Il s’agit de la qualification employée par Moscou, non d’une conclusion juridique indépendante. Après l’entrée de missiles russes en Pologne le 20 novembre, une réunion du Conseil de l’Atlantique Nord est annoncée à Bruxelles le 23 novembre. Aucun résultat de cette réunion, aucune décision opérationnelle nouvelle ni aucun affrontement direct Russie–OTAN ne sont confirmés par les sources disponibles au moment de cette actualisation.",
+          "correction": false,
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-23T12:37",
+          "event_date": "2026-11-21",
+          "event_label": "21–22 novembre 2026",
+          "title": "Golfe de Finlande : le Sparta II touché et un survol russe suspecté",
+          "body": "Le 21 novembre, les forces finlandaises ont détecté une attaque de drones contre le cargo russe Sparta II, en eaux internationales à l’ouest de l’île de Suursaari/Gogland. Le navire, exploité par une entreprise liée à la logistique militaire russe, a pris feu avant de dériver dans les eaux territoriales finlandaises. Ses 16 membres d’équipage ont été évacués et un blessé léger a été signalé ; un remorqueur russe a commencé à l’évacuer le 22 novembre, avec l’aide des secours finlandais, russes et estoniens. Les autorités finlandaises jugent probable une responsabilité ukrainienne, non encore confirmée par Kyiv au moment des rapports cités. Elles enquêtent aussi sur une possible intrusion d’un hélicoptère russe jusqu’à 4,1 kilomètres dans leur espace aérien, potentiellement liée aux opérations de secours. Aucune confrontation armée avec les forces de l’OTAN ni pollution pétrolière confirmée n’a été signalée. La nature exacte du chargement du cargo reste inconnue.",
+          "correction": false,
+          "sources": []
+        },
         {
           "correction": false,
           "datetime": "2026-11-22T13:45",
@@ -24,6 +42,15 @@
           ],
           "event_date": "2026-11-21",
           "event_label": "20–21 novembre 2026"
+        },
+        {
+          "datetime": "2026-11-23T12:37",
+          "event_date": "2026-11-20",
+          "event_label": "20 novembre 2026 — identification judiciaire annoncée le 22",
+          "title": "Pologne : trois missiles de croisière russes Kh-101 tombés sur le territoire",
+          "body": "Le 20 novembre, trois engins russes ont pénétré l’espace aérien polonais et sont tombés près de Nowy Lipowiec, Rudnik nad Sanem et Mołodycz. Le 22 novembre, les procureurs polonais ont indiqué que l’examen préliminaire des débris avait identifié les trois engins comme des missiles de croisière russes Kh-101, et non deux missiles et un drone comme envisagé initialement. Les autorités polonaises n’ont signalé ni victime ni dommage à une infrastructure critique. Le gouvernement polonais soupçonne une provocation, notamment à proximité d’exercices militaires alliés, mais l’intentionnalité de la trajectoire n’est pas établie à ce stade. L’OTAN a dénoncé cette violation et annoncé des consultations. Cet épisode rapproche concrètement le risque militaire d’un territoire allié, sans constituer en soi une confrontation armée directe OTAN–Russie.",
+          "correction": false,
+          "sources": []
         },
         {
           "datetime": "2026-11-23T11:35",
@@ -94,7 +121,7 @@
         "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
         "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
       ],
-      "why_level": "Le niveau 2 traduit une situation de tension élevée mais encore contenue. Les opérations militaires restent intenses, les risques d’incident à proximité de l’espace euro-atlantique persistent et aucun cessez-le-feu général n’est en vigueur. Un élément nouveau renforce toutefois la vigilance : la présence confirmée de personnels militaires français en Ukraine pour des missions limitées de formation et de maintenance, ainsi que la qualification russe de cette présence comme « participation directe » au conflit. Moscou considère par ailleurs que des forces étrangères présentes en Ukraine peuvent constituer des cibles militaires. Cette situation accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, aucun affrontement militaire direct entre la France ou l’OTAN et la Russie, aucune attaque contre le territoire français et aucun changement majeur de posture stratégique ne justifient le passage au Code One.",
+      "why_level": "Le niveau 2 — Vigilance renforcée — reste applicable, mais le risque d’incident impliquant l’OTAN augmente. Les trois missiles russes tombés en Pologne le 20 novembre attestent une violation grave du territoire d’un pays allié ; les autorités polonaises n’ont signalé aucune victime ni destruction d’infrastructure critique. Dans le golfe de Finlande, la frappe sur un cargo russe en eaux internationales, sa dérive vers les eaux finlandaises et le survol russe suspecté accroissent la sensibilité militaire et environnementale de la Baltique. Les secours ont toutefois impliqué une coopération entre autorités finlandaises, estoniennes et russes ; aucun combat direct entre les forces de l’OTAN et celles de la Russie n’est établi. La présence de personnels militaires français en Ukraine pour des missions déclarées de formation et de maintenance et les avertissements russes antérieurs demeurent d’autres risques de friction. Le Code One devrait être réexaminé immédiatement en cas d’attaque délibérée contre un État de l’OTAN avec victimes ou dégâts significatifs, de confrontation armée directe, de répétition coordonnée d’incidents graves ou de modification stratégique vérifiable. La réunion annoncée du Conseil de l’Atlantique Nord le 23 novembre devra être examinée dès que ses résultats seront connus.",
       "visible": true,
       "watch_down": [
         "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
@@ -104,7 +131,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-23T11:35",
+      "last_update": "2026-11-23T12:37",
       "status": "suivi",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
       "sources": [
@@ -155,6 +182,54 @@
           "type": "Agence de presse",
           "url": "https://www.reuters.com/world/china/trumps-historic-meeting-with-xi-putin-headlines-asia-trip-2026-11-18/",
           "note": "Déclaration sans accord propre au conflit ukrainien."
+        },
+        {
+          "label": "Parquet polonais — enquête sur les trois engins tombés en Pologne, 21 novembre",
+          "type": "Source officielle",
+          "url": "https://www.gov.pl/web/po-lublin/aktualny-stan-czynnosci-procesowych-w-sprawie-ujawnienia-obiektow-latajacych-na-terenie-wojewodztwa-lubelskiego-i-podkarpackiego",
+          "note": "Enquête et lieux de chute ; conclusions préliminaires ensuite précisées par Reuters."
+        },
+        {
+          "label": "Ministère polonais de la Défense — bilan du 20 novembre 2026",
+          "type": "Source officielle",
+          "url": "https://www.gov.pl/web/obrona-narodowa/wicepremier-w-kosiniak-kamysz-o-naruszeniu-polskiej-przestrzeni-powietrznej",
+          "note": "Absence de victimes et de dommages signalés aux infrastructures critiques."
+        },
+        {
+          "label": "Reuters — identification des trois missiles russes Kh-101, 22 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/three-russian-missiles-flew-into-poland-friday-prosecutors-say-2026-11-22/",
+          "note": "Information attribuée aux procureurs polonais ; réunion OTAN annoncée."
+        },
+        {
+          "label": "Reuters — Sparta II, golfe de Finlande et survol suspecté, 21 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/russia-says-cargo-vessel-struck-by-drones-finland-says-it-is-fire-its-waters-2026-11-21/",
+          "note": "Constats finlandais, responsabilités présumées et incertitudes sur la cargaison."
+        },
+        {
+          "label": "Reuters — remorquage du Sparta II, 22 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/europe/russian-cargo-ship-still-fire-off-finland-after-attack-2026-11-22/",
+          "note": "Secours multinationaux, évacuation et remorquage."
+        },
+        {
+          "label": "AFP — Finlande : hélicoptère russe soupçonné de survol, 21 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.afp.com/en/russian-cargo-ship-catches-fire-after-ukrainian-strike-baltic",
+          "note": "Déclaration du ministre finlandais et estimation de 4,1 kilomètres."
+        },
+        {
+          "label": "Reuters — déclaration du Kremlin sur la mer Baltique, 23 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/europe/kremlin-accuses-ukraine-terrorist-activity-baltic-after-cargo-ship-drone-strike-2026-11-23/",
+          "note": "Qualification de Moscou attribuée, pas établie juridiquement."
+        },
+        {
+          "label": "Reuters — position de l’OTAN après les incidents en Pologne, 21 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/nato-will-defend-every-inch-polish-territory-rutte-says-2026-11-21/",
+          "note": "Déclaration du secrétaire général et consultations annoncées."
         }
       ],
       "category": "Géopolitique · Europe",
