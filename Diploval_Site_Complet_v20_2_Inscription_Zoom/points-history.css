@@ -1,0 +1,150 @@
+/* Points d’information Diploval — archives éditoriales accessibles sur PC et mobile.
+   Isolation des résumés : le style général summary utilise une grille 35px/1fr/30px. */
+.dv-history,
+#historique-versions {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  scroll-margin-top: 112px;
+}
+.dv-history {
+  margin: 2rem auto 1.4rem;
+  padding: clamp(1rem, 2.3vw, 1.65rem);
+  background: #f8fafb;
+  border: 1px solid #cbd8df;
+  border-radius: 12px;
+  color: #19384a;
+}
+.dv-history__header {margin-bottom: 1.1rem;}
+.dv-history__header h2 {margin: .2rem 0 .55rem; font-size: clamp(1.3rem, 2.3vw, 1.65rem); color: #12364c;}
+.dv-history__header p {font-size: .95rem;line-height: 1.6;margin: .4rem 0;max-width: 78ch;}
+.dv-history__eyebrow {font-size: .74rem!important;letter-spacing: .09em;text-transform: uppercase;font-weight: 800;color: #83502f!important;}
+.dv-history__hint {color: #506674; }
+.dv-history__list {display:grid;gap:.65rem;min-width:0;}
+.dv-history__edition {
+  min-width:0;
+  max-width:100%;
+  background:#fff;
+  border:1px solid #d4dfe5;
+  border-radius:10px;
+  overflow:hidden;
+}
+.dv-history__edition[open]{border-color:#87a4b6;box-shadow:0 4px 14px rgba(11,42,64,.06);}
+.dv-history .dv-history__edition > summary,
+.dv-history .dv-history__subdetails > summary,
+#historique-versions .point-history-entry > summary,
+#historique-versions .point-history-entry details > summary {
+  display:flex !important;
+  grid-template-columns:none !important;
+  flex-flow:row nowrap;
+  align-items:center;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  box-sizing:border-box;
+  gap:.85rem;
+  padding:.9rem 1rem;
+  margin:0;
+  text-align:left;
+  color:#18394d;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:.97rem;
+  line-height:1.4;
+  list-style:none;
+  overflow-wrap:break-word;
+  word-break:normal;
+  white-space:normal;
+  cursor:pointer;
+}
+.dv-history summary::-webkit-details-marker,
+#historique-versions .point-history-entry summary::-webkit-details-marker{display:none;}
+.dv-history__edition > summary:focus-visible,
+.dv-history__subdetails > summary:focus-visible,
+#historique-versions .point-history-entry summary:focus-visible{
+  outline:3px solid #b87447;outline-offset:-3px;
+}
+.dv-history__edition > summary:hover,
+.dv-history__subdetails > summary:hover{background:#eff5f8;}
+.dv-history__summary-main{display:block;min-width:0;flex:1 1 auto;}
+.dv-history__date{
+  display:block;
+  font-size:1rem;
+  line-height:1.4;
+  font-weight:800;
+  font-variant-numeric:tabular-nums;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.dv-history__subtitle{
+  display:block;
+  font-size:.82rem;
+  font-weight:500;
+  color:#496272;
+  line-height:1.55;
+  margin-top:.2rem;
+}
+.dv-history__chevron{
+  display:inline-flex;
+  flex:0 0 1.7rem;
+  justify-content:center;
+  align-items:center;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:1.4rem;
+  line-height:1;
+  font-weight:400;
+  color:#8e5636;
+  transition:transform .16s ease;
+}
+.dv-history__edition[open] > summary .dv-history__chevron {transform:rotate(45deg);}
+.dv-history__body{
+  box-sizing:border-box;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+  border-top:1px solid #dce5ea;
+  padding:1rem 1.05rem 1.2rem;
+  max-height:min(66vh,680px);
+  overflow-y:auto;
+  overflow-x:hidden;
+  overscroll-behavior:contain;
+  scrollbar-width:thin;
+  scrollbar-color:#9aafbf #eef3f5;
+  overflow-wrap:break-word;
+}
+.dv-history__body h3,.dv-history__body h4{color:#15394e;font-family:Arial,Helvetica,sans-serif;font-size:1rem;font-weight:750;margin:1rem 0 .55rem;}
+.dv-history__body h3:first-child{margin-top:0;}
+.dv-history__body p,.dv-history__body li{font-size:.93rem;line-height:1.68;overflow-wrap:break-word;}
+.dv-history__subdetails{
+  min-width:0;
+  border:1px solid #d4e0e6;
+  border-radius:8px;
+  margin:.8rem 0;
+  background:#fbfcfd;
+}
+.dv-history .dv-history__subdetails > summary{font-size:.91rem;font-weight:750;padding:.75rem .85rem;}
+.dv-history__subdetails > summary::after{content:"＋";margin-left:auto;color:#8e5636;font-size:1.1rem;}
+.dv-history__subdetails[open] > summary::after{content:"−";}
+.dv-history__subbody{padding:.85rem;border-top:1px solid #dbe4e9;min-width:0;}
+.dv-history__body a{color:#205579;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;}
+.dv-history__footer{margin:.95rem 0 0;font-size:.84rem;}
+.dv-history__list .seo-timeline{min-width:0;}
+.dv-history__list .seo-timeline article{min-width:0;overflow-wrap:break-word;}
+/* Secondary dynamic view (the main directory's JS fallback). */
+#historique-versions .point-history-entry{min-width:0;max-width:100%;border:1px solid #d5e0e6;border-radius:9px;background:#fff;margin:.55rem 0;}
+#historique-versions .point-history-entry > summary{padding:.9rem 1rem;}
+#historique-versions .point-history-entry > div{min-width:0;max-height:65vh;overflow-y:auto;overflow-x:hidden;padding:1rem;box-sizing:border-box;}
+#historique-versions .point-history-entry details > summary{padding:.7rem .8rem;}
+@media(max-width:760px){
+  .dv-history{margin:1.1rem auto;padding:.85rem;border-radius:10px;}
+  .dv-history .dv-history__edition > summary,
+  .dv-history .dv-history__subdetails > summary {padding:.85rem .75rem;gap:.55rem;min-height:52px;}
+  .dv-history__date{font-size:.94rem;}
+  .dv-history__subtitle{font-size:.79rem;}
+  .dv-history__body{max-height:none;overflow:visible;padding:.9rem .75rem 1rem;overscroll-behavior:auto;}
+  .dv-history__subbody{padding:.7rem;}
+  #historique-versions .point-history-entry > div{max-height:none;overflow:visible;}
+}
+@media(prefers-reduced-motion:reduce){
+  .dv-history__chevron{transition:none;}
+}
