@@ -56,8 +56,77 @@ if(fs.existsSync(pubDir))for(const entry of fs.readdirSync(pubDir,{withFileTypes
 for(const p of pubs.filter(isPublic)){const id=publicationId(p);const url=`${SITE}/publications/${encodeURIComponent(id)}/`;const img=abs(p.social_image||p.cover);const desc=description(p.seo_description,p.summary||p.short_summary);const dp=frExactDate(p.date_label);const graph={'@context':'https://schema.org','@graph':[org,website,{'@type':'Report','@id':url+'#work',url,'headline':p.title,'description':desc,...(dp?{'datePublished':dp}:{}),...(p.version?{'version':p.version}:{}),'inLanguage':'fr-FR','isAccessibleForFree':true,'author':{'@id':`${SITE}/#organization`},'publisher':{'@id':`${SITE}/#organization`},'image':img,'mainEntityOfPage':url,...(p.pdf?{'encoding':{'@type':'MediaObject','contentUrl':abs(p.pdf),'encodingFormat':'application/pdf'}}:{})},breadcrumb([['Accueil',`${SITE}/`],['Travaux',`${SITE}/#travaux`],[p.title,url]])]};const editorialNote=id==='accord-cadre-ukraine-russie-v01' ? '<p class="seo-detail-correction"><strong>Note éditoriale (20 novembre 2026).</strong> À la page 4 du PDF V01, l’intitulé « Matrice de consolidation avant publication » correspond à une étape de préparation et est resté dans la première édition publique. Ce libellé n’affecte ni le statut public ni le contenu de la proposition. Le PDF original reste accessible pour la traçabilité.</p>' : '';
 const body=`<h2 id="resume-publication">Présentation</h2><p>${esc(p.summary||p.short_summary||'')}</p>${editorialNote}${p.details?`<h2>À propos de ce document</h2>${paras(p.details)}`:''}`;let actions='';if(p.pdf)actions+=`<a class="button button-outline" href="#resume-publication">Lire le résumé</a>`;if(p.pdf)actions+=`<a class="button button-document" href="${p.embed_pdf!==false?'#lecteur-pdf':'/'+p.pdf.replace(/^\//,'')}" data-pdf-native-href="/${p.pdf.replace(/^\//,'')}">${p.embed_pdf!==false?'Lire le PDF sur cette page':'Ouvrir le PDF'} →</a><a class="button button-outline" href="/${p.pdf.replace(/^\//,'')}" download>Télécharger le PDF</a>`;if(p.participation_enabled&&p.participation_url)actions+=`<a class="button button-copper" href="${esc(p.participation_url)}">${esc(p.participation_status||'Contribuer')} →</a>`;actions+=`<a class="button button-outline" href="mailto:contact@diploval.fr?subject=${encodeURIComponent('À propos du document — '+p.title)}">Contacter Diploval</a>`;const side=`${coverCard(p.cover,p.title)}${actionCard(actions)}${relatedPublicationCard(p)}<div class="seo-detail-card"><h3>Repères</h3><p>${esc([p.status,p.version,p.date_label,p.scope,p.format].filter(Boolean).join(' · '))}</p></div>`;const reader=p.pdf&&p.embed_pdf!==false?pdfReader(p.pdf,'Lire le document'):'';const html=head({title:`${p.title} — Diploval`,desc,url,image:img,type:'article',jsonld:graph,articleDate:dp})+layout({back:['Tous les travaux','/#travaux'],eyebrow:p.type||'Publication',title:p.title,lead:p.short_summary||p.summary||'',meta:[p.status,p.version,p.date_label,p.scope,p.format],body,side,after:reader+shareBlock(p.title,url)});write(`publications/${id}/index.html`,html);addMap(url,dp)}
 
+
 const points=readJson('content/points-information.json',{points:[]}).points||[];
-for(const p of points.filter(x=>x.visible!==false)){const id=p.slug||slugify(p.title);const url=`${SITE}/points-information/${encodeURIComponent(id)}/`;const img=abs(p.social_image);const desc=description(p.seo_description,p.summary);const dp=safeDate(p.opened_at);const dm=safeDate(p.last_update)||dp;const graph={'@context':'https://schema.org','@graph':[org,website,{'@type':'Article','@id':url+'#article',url,'headline':p.title,'description':desc,...(dp?{'datePublished':dp}:{}),...(dm?{'dateModified':dm}:{}),'inLanguage':'fr-FR','author':{'@id':`${SITE}/#organization`},'publisher':{'@id':`${SITE}/#organization`},'image':img,'mainEntityOfPage':url},breadcrumb([['Accueil',`${SITE}/`],['Points d’information',`${SITE}/points-information`],[p.title,url]])]};const ups=(p.updates||[]).slice().sort((a,b)=>String(b.datetime||'').localeCompare(String(a.datetime||'')));const timeline=ups.length?`<h2>Chronologie</h2><div class="seo-timeline">${ups.map(u=>`<article><time>${esc(String(u.datetime||'').replace('T',' '))}</time><h3>${esc(u.title||'Mise à jour')}</h3>${paras(u.body||'')}</article>`).join('')}</div>`:'';const body=`<h2>Situation suivie</h2><p>${esc(p.summary||'')}</p>${p.why_level?`<h2>Éléments d’appréciation</h2><p>${esc(p.why_level)}</p>`:''}${timeline}`;const sources=(p.sources||[]).filter(s=>s.label&&s.url);const side=`${relatedPublicationCard(p)}<div class="seo-detail-card"><h3>Statut</h3><p>${esc([p.status,p.level&&p.level!=='aucun'?`Niveau ${p.level}`:'',p.last_update?`Mis à jour ${p.last_update}`:''].filter(Boolean).join(' · '))}</p></div>${sources.length?`<div class="seo-detail-card"><h3>Sources principales</h3><ul class="seo-source-list">${sources.map(s=>`<li><a href="${esc(s.url)}" rel="noopener noreferrer">${esc(s.label)}</a></li>`).join('')}</ul></div>`:''}`;const html=head({title:`${p.title} — Point d’information Diploval`,desc,url,image:img,type:'article',jsonld:graph,articleDate:dp})+layout({back:["Tous les points d’information",'/points-information'],eyebrow:p.category||'Point d’information',title:p.title,lead:p.summary||'',meta:[p.status,p.level&&p.level!=='aucun'?`Niveau ${p.level}`:'',p.last_update?`Mis à jour ${p.last_update}`:''],body,side,after:shareBlock(p.title,url)});write(`points-information/${id}/index.html`,html);addMap(url,dm)}
+// Versions éditoriales issues des commits GitHub, rendues consultables même sans JavaScript.
+const previousVersions=readJson('content/points-information-versions.json',{versions:[]}).versions||[];
+const pointChronology=entries=>(entries||[]).slice().sort((a,b)=>
+  String(b.event_date||b.datetime||'').slice(0,10).localeCompare(String(a.event_date||a.datetime||'').slice(0,10))
+  ||String(b.datetime||'').localeCompare(String(a.datetime||'')));
+const pointEntryDate=u=>u.event_label||u.event_date||String(u.datetime||'').replace('T',' ');
+const pointEntriesHtml=entries=>{
+  const ups=pointChronology(entries);
+  if(!ups.length)return'<p>Aucune étape enregistrée dans cette édition.</p>';
+  return '<div class="seo-timeline">'+ups.map(u=>
+    '<article><time>Faits : '+esc(pointEntryDate(u))+'</time>'
+    +(u.datetime?'<p><small>Ajouté au suivi : '+esc(String(u.datetime).replace('T',' à '))+'</small></p>':'')
+    +'<h3>'+esc(u.title||'Mise à jour')+'</h3>'+paras(u.body||'')
+    +(u.correction?'<p><strong>Correction substantielle signalée.</strong></p>':'')
+    +'</article>').join('')+'</div>';
+};
+function pointHistoryHtml(id){
+  const versions=previousVersions.filter(v=>v.point_slug===id&&v.point)
+    .sort((a,b)=>String(b.recorded_at||'').localeCompare(String(a.recorded_at||'')));
+  const introductory='<section id="historique-versions" class="seo-detail-history" style="margin-top:2rem">'
+    +'<h2>Historique des versions</h2>'
+    +'<p>Les précédentes éditions restent consultables avec leur synthèse, leur niveau de vigilance, leurs étapes et leurs sources. Les dates correspondent à l’enregistrement dans le dépôt Diploval ; elles ne garantissent pas l’heure exacte du déploiement public.</p>';
+  if(!versions.length)return introductory+'<p>Aucune version antérieure enregistrée pour ce suivi.</p></section>';
+  const views=versions.map(v=>{
+    const old=v.point,notes=pointChronology(old.updates),refs=(old.sources||[]).filter(s=>s.label&&s.url);
+    const github='https://github.com/DiplovalOfficiel/diploval-site/blob/'+encodeURIComponent(v.commit_sha)
+      +'/Diploval_Site_Complet_v20_2_Inscription_Zoom/content/points-information.json';
+    const historyNote=String(v.recorded_at||'').replace('T',' à ').replace('Z',' UTC');
+    return '<details class="seo-history-edition" style="padding:1rem 0;border-top:1px solid #bdc9d4">'
+      +'<summary style="cursor:pointer"><strong>'+esc(historyNote)+'</strong> — '+esc(v.label||'Édition antérieure')
+      +' · Niveau '+esc(old.level||'sans classement')+' · '+notes.length+' étapes</summary>'
+      +'<div style="margin:1rem 0 1.3rem"><h3>Synthèse de cette édition</h3>'
+      +paras(old.summary||'')+'<h3>Justification du niveau</h3>'+paras(old.why_level||'')
+      +'<details><summary style="cursor:pointer">Consulter les étapes ('+notes.length+')</summary>'
+      +pointEntriesHtml(notes)+'</details>'
+      +(refs.length?'<details><summary style="cursor:pointer">Sources conservées ('+refs.length+')</summary>'
+        +'<ul class="seo-source-list">'+refs.map(s=>'<li><a href="'+esc(s.url)+'" rel="noopener noreferrer" target="_blank">'+esc(s.label)+'</a></li>').join('')+'</ul></details>':'')
+      +'<p style="margin-top:1rem"><a href="'+esc(github)+'" target="_blank" rel="noopener noreferrer">Consulter la version originale sur GitHub</a></p>'
+      +'</div></details>';
+  }).join('');
+  return introductory+'<p><strong>'+versions.length+' éditions précédentes disponibles.</strong></p>'+views+'</section>';
+}
+for(const p of points.filter(x=>x.visible!==false)){
+  const id=p.slug||slugify(p.title);
+  const url=SITE+'/points-information/'+encodeURIComponent(id)+'/';
+  const img=abs(p.social_image),desc=description(p.seo_description,p.summary);
+  const dp=safeDate(p.opened_at),dm=safeDate(p.last_update)||dp;
+  const graph={'@context':'https://schema.org','@graph':[org,website,
+    {'@type':'Article','@id':url+'#article',url,'headline':p.title,'description':desc,
+      ...(dp?{'datePublished':dp}:{}),...(dm?{'dateModified':dm}:{}),
+      'inLanguage':'fr-FR','author':{'@id':SITE+'/#organization'},
+      'publisher':{'@id':SITE+'/#organization'},
+      'image':img,'mainEntityOfPage':url},
+    breadcrumb([['Accueil',SITE+'/'],['Points d’information',SITE+'/points-information'],[p.title,url]])]};
+  const timeline=p.updates?.length?'<h2>Chronologie des faits</h2>'+pointEntriesHtml(p.updates):'';
+  const body='<h2>Situation suivie</h2>'+paras(p.summary||'')
+    +(p.why_level?'<h2>Éléments d’appréciation</h2>'+paras(p.why_level):'')
+    +timeline+pointHistoryHtml(id);
+  const sources=(p.sources||[]).filter(s=>s.label&&s.url);
+  const side=relatedPublicationCard(p)
+    +'<div class="seo-detail-card"><h3>Statut</h3><p>'+esc([p.status,p.level&&p.level!=='aucun'?'Niveau '+p.level:'',p.last_update?'Mis à jour '+p.last_update:''].filter(Boolean).join(' · '))+'</p></div>'
+    +(sources.length?'<div class="seo-detail-card"><h3>Sources principales</h3><ul class="seo-source-list">'+sources.map(s=>'<li><a href="'+esc(s.url)+'" rel="noopener noreferrer">'+esc(s.label)+'</a></li>').join('')+'</ul></div>':'');
+  const html=head({title:p.title+' — Point d’information Diploval',desc,url,image:img,type:'article',jsonld:graph,articleDate:dp})
+    +layout({back:['Tous les points d’information','/points-information'],eyebrow:p.category||'Point d’information',
+      title:p.title,lead:p.summary||'',meta:[p.status,p.level&&p.level!=='aucun'?'Niveau '+p.level:'',p.last_update?'Mis à jour '+p.last_update:''],
+      body,side,after:shareBlock(p.title,url)});
+  write('points-information/'+id+'/index.html',html);
+  addMap(url,dm);
+}
 
 const comms=readJson('content/communiques.json',{communiques:[]}).communiques||[];
 for(const c of comms.filter(x=>x.visible!==false && x.status!=='Brouillon')){const id=c.id||slugify(c.title);const url=`${SITE}/communiques/${encodeURIComponent(id)}/`;const img=abs(c.social_image||c.cover);const desc=description(c.seo_description,c.summary);const dp=safeDate(c.date);const pres=c.type==='presidence';const author=pres?{'@type':'Person','name':'Souix Nathorod','alternateName':'Franck Saubin','jobTitle':'Fondateur de Diploval'}:{'@id':`${SITE}/#organization`};const graph={'@context':'https://schema.org','@graph':[org,website,{'@type':'Article','@id':url+'#article',url,'headline':c.title,'description':desc,...(dp?{'datePublished':dp,'dateModified':dp}:{}),'inLanguage':'fr-FR','author':author,'publisher':{'@id':`${SITE}/#organization`},'image':img,'articleSection':pres?'Communication du fondateur':'Communiqué de Diploval','mainEntityOfPage':url},breadcrumb([['Accueil',`${SITE}/`],['Communiqués',`${SITE}/communiques`],[c.title,url]])]};const sig=c.signature|| (pres?'Souix Nathorod\nFondateur de Diploval\nFranck Saubin à l’état civil':'Diploval\nCommunication de Diploval');const body=`${paras(c.body||'')}${c.correction_note?`<div class="communique-correction"><strong>Correction / mise à jour :</strong> ${esc(c.correction_note)}</div>`:''}<p class="seo-signature">${esc(sig).replace(/\n/g,'<br>')}</p>`;let actions='';if(c.pdf)actions+=`<a class="button button-document" href="${c.embed_pdf!==false?'#lecteur-pdf':'/'+c.pdf.replace(/^\//,'')}" data-pdf-native-href="/${c.pdf.replace(/^\//,'')}">${c.embed_pdf!==false?'Lire le PDF sur cette page':'Ouvrir le PDF officiel'} →</a><a class="button button-outline" href="/${c.pdf.replace(/^\//,'')}" download>Télécharger le PDF</a>`;const side=`${coverCard(c.cover,c.title)}${actions?actionCard(actions):''}<div class="seo-detail-card"><h3>Statut du texte</h3><p>${esc(pres?'Communication du fondateur de Diploval':'Communiqué de Diploval')}</p></div>`;const reader=c.pdf&&c.embed_pdf!==false?pdfReader(c.pdf,'Document officiel'):'';const html=head({title:`${c.title} — ${pres?'Fondateur de Diploval':'Diploval'}`,desc,url,image:img,type:'article',author:pres?'Souix Nathorod':'Diploval',jsonld:graph,articleDate:dp})+layout({back:['Tous les communiqués','/communiques'],eyebrow:pres?'Communication du fondateur':'Communiqué de Diploval',title:c.title,lead:c.summary||'',meta:[c.date,c.scope],body,side,after:reader+shareBlock(c.title,url)});write(`communiques/${id}/index.html`,html);addMap(url,dp)}
