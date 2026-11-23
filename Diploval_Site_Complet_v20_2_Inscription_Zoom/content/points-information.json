@@ -8,6 +8,20 @@
       "opened_at": "2026-11-19T11:50",
       "updates": [
         {
+          "datetime": "2026-11-23T11:35",
+          "title": "23 novembre — Moscou propose des contacts exploratoires avec les Européens",
+          "body": "Le 19 novembre, Vladimir Poutine a déclaré avoir invité des représentants européens à Moscou pour clarifier leur position avant d’arrêter le format de futures négociations sur l’Ukraine. Il ne s’agit pas d’une rencontre déjà tenue : à la date de cette mise à jour, aucune date ou participation définitive n’est confirmée. Le sommet Trump–Poutine–Xi du même jour à Shenzhen a abouti à une déclaration générale sur les risques nucléaires et la coopération internationale, sans accord spécifique sur l’Ukraine ni sur l’Iran.",
+          "correction": false,
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-23T11:35",
+          "title": "23 novembre — Bilan des pourparlers d’Abu Dhabi des 10–11 novembre",
+          "body": "Les délégations ukrainienne et russe se sont retrouvées les 10 et 11 novembre à Abu Dhabi sous médiation américaine, après neuf mois d’interruption des négociations directes. Les parties sont parvenues à un accord de principe sur un important échange de prisonniers, dont les modalités et la réalisation restent à vérifier séparément. Aucune avancée décisive n’a été annoncée concernant le territoire ou les garanties de sécurité.",
+          "correction": false,
+          "sources": []
+        },
+        {
           "correction": false,
           "datetime": "2026-11-22T13:45",
           "title": "Sécurité européenne : Washington propose d’élargir les discussions",
@@ -26,20 +40,12 @@
         {
           "correction": false,
           "datetime": "2026-11-19T21:50",
-          "title": "Berlin : accélération simultanée des négociations et du soutien militaire à l’Ukraine",
-          "body": "Le 19 novembre 2026, la séquence diplomatique s’est intensifiée autour de l’Ukraine, notamment à Berlin, avec une coordination renforcée entre l’Ukraine, plusieurs États européens, les institutions européennes et les représentants américains. Dans le même temps, plusieurs pays européens ont confirmé la poursuite ou le renforcement de leur soutien militaire à l’Ukraine, notamment en matière de défense aérienne, de drones, de capacités navales et d’équipements. La France continue également son soutien militaire déjà engagé, notamment via des capacités aériennes, des munitions et des systèmes de défense. Cette double dynamique — négociations plus actives et soutien militaire maintenu — constitue un facteur important de vigilance : elle peut soutenir une future négociation, mais elle entretient aussi un risque d’incident ou d’escalade pendant la phase de discussion. Diploval maintient donc le niveau 2 — Vigilance renforcée.",
+          "title": "19 novembre — Berlin : projets précis de garanties de sécurité",
+          "body": "À Berlin, la Coalition des volontaires, l’Ukraine et les États-Unis ont confirmé leur intention de coordonner le soutien militaire, financier et diplomatique à Kyiv. La déclaration publiée par l’Élysée expose plusieurs garanties envisagées une fois un cessez-le-feu entré en vigueur : mécanisme de surveillance conduit par les États-Unis, force multinationale européenne soutenue par Washington et engagements juridiquement contraignants soumis aux procédures nationales. Ces dispositifs restent des propositions conditionnelles. L’équipe européenne désignée le 13 novembre associe les institutions de l’UE à la France, l’Allemagne, l’Italie, la Pologne et le Royaume-Uni.",
           "sources": [
             {
-              "label": "Présidence de l’Ukraine — échanges diplomatiques du 19 novembre 2026",
-              "url": "https://www.president.gov.ua/en/news/speeches"
-            },
-            {
-              "label": "Conseil de l’Union européenne — soutien militaire à l’Ukraine",
-              "url": "https://www.consilium.europa.eu/en/policies/military-support-ukraine/"
-            },
-            {
-              "label": "Gouvernement britannique — nouvelles annonces de soutien à l’Ukraine",
-              "url": "https://www.gov.uk/search/news-and-communications?organisations%5B%5D=prime-ministers-office-10-downing-street"
+              "label": "Élysée — déclaration conjointe du 19 novembre",
+              "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine"
             }
           ]
         },
@@ -86,7 +92,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-22T13:45",
+      "last_update": "2026-11-23T11:35",
       "status": "suivi",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
       "sources": [
@@ -107,6 +113,36 @@
           "type": "Média",
           "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war",
           "note": "Déclarations de Jean-Noël Barrot et rappel des propos russes du 17 novembre 2026."
+        },
+        {
+          "label": "Reuters — Poutine propose la venue de représentants européens à Moscou, 19 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/china/putin-says-russia-invited-europeans-moscow-clarify-position-ukraine-talks-2026-11-19/",
+          "note": "Invitation déclarée, pas rencontre confirmée."
+        },
+        {
+          "label": "Élysée — déclaration conjointe de Berlin, 19 novembre",
+          "type": "Source officielle",
+          "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine",
+          "note": "Projets de garanties de sécurité conditionnels."
+        },
+        {
+          "label": "Gouvernement allemand — Coalition des volontaires et composition E5",
+          "type": "Source officielle",
+          "url": "https://www.bundesregierung.de/breg-fr/service/coalition-volontaires-berlin-2461998",
+          "note": "Réunion du 19 novembre et représentation européenne décidée le 13."
+        },
+        {
+          "label": "Reuters — pourparlers et accord de principe d’échange de prisonniers à Abu Dhabi, 11 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
+          "note": "Accord annoncé, mise en œuvre à confirmer."
+        },
+        {
+          "label": "Reuters — sommet Trump–Poutine–Xi et déclaration de Shenzhen, 19 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/china/trumps-historic-meeting-with-xi-putin-headlines-asia-trip-2026-11-18/",
+          "note": "Déclaration sans accord propre au conflit ukrainien."
         }
       ],
       "category": "Géopolitique · Europe",
@@ -120,6 +156,20 @@
       "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
       "opened_at": "2026-11-19T22:08",
       "updates": [
+        {
+          "datetime": "2026-11-23T11:35",
+          "title": "23 novembre — Contacts Washington–Doha–Téhéran et médiation",
+          "body": "Le 19 novembre à Berlin, selon deux sources citées par Axios, les émissaires américains Steve Witkoff et Jared Kushner ont rencontré des responsables qataris afin d’examiner la reprise des négociations avec l’Iran. Selon un responsable iranien cité par Reuters, une délégation qatarie s’est rendue à Téhéran le 20 novembre. Les contacts diplomatiques se poursuivent, mais ni nouveau cessez-le-feu ni date de négociation directe ne sont confirmés.",
+          "correction": false,
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-23T11:35",
+          "title": "23 novembre — Positions Allemagne–Qatar et surveillance nucléaire",
+          "body": "Lors de la visite de l’émir du Qatar en Allemagne les 20–21 novembre, les deux gouvernements ont publié une déclaration commune favorable à une solution à deux États, à l’accès humanitaire à Gaza, à la liberté de navigation et à une issue négociée au Yémen. Ils ont annoncé une coopération bilatérale en matière de médiation, non un accord de paix entre belligérants. Lors de la réunion du Conseil des gouverneurs de l’AIEA du 18 au 20 novembre, la France, l’Allemagne, le Royaume-Uni et les États-Unis ont demandé à l’Iran de rétablir l’accès des inspecteurs aux sites concernés, citant des lacunes persistantes dans la vérification des matières nucléaires. Ces difficultés ne démontrent pas un recours imminent à l’arme nucléaire. Une rencontre ministérielle UE–pays du Golfe est envisagée en décembre, sans date exacte confirmée.",
+          "correction": false,
+          "sources": []
+        },
         {
           "datetime": "2026-11-22T13:31",
           "title": "22 novembre — Sanaa : frappe signalée sur une installation de carburant",
@@ -178,7 +228,7 @@
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
-      "last_update": "2026-11-22T13:31",
+      "last_update": "2026-11-23T11:35",
       "status": "suivi",
       "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
@@ -229,6 +279,36 @@
           "type": "Agence de presse",
           "url": "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
           "note": "Deux blessés selon le ministère de l’Intérieur du Bahreïn ; revendications des Gardiens de la révolution attribuées."
+        },
+        {
+          "label": "Axios — rencontre entre émissaires américains et représentants du Qatar, 20 novembre",
+          "type": "Média",
+          "url": "https://www.axios.com/2026/11/20/witkoff-kushner-meet-qatari-mediators-iran",
+          "note": "Rencontre rapportée par deux sources ; aucun accord annoncé."
+        },
+        {
+          "label": "Reuters — contacts irano-qataris, 21 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/qatari-delegation-visits-tehran-talks-iranian-official-says-2026-11-21/",
+          "note": "Visite attribuée à une déclaration d’un responsable iranien."
+        },
+        {
+          "label": "Qatar — déclaration conjointe avec l’Allemagne, 21 novembre",
+          "type": "Source officielle",
+          "url": "https://mofa.gov.qa/en/latest-articles/statements/joint-declarationon-the-occasion-of-the-state-visit-of-the-emir-of-the-state-of-qatarto-the-federal-republic-of-germany",
+          "note": "Gaza, Yémen, navigation et coopération pour la médiation."
+        },
+        {
+          "label": "France, Allemagne, Royaume-Uni et États-Unis — déclaration au Conseil des gouverneurs de l’AIEA",
+          "type": "Source officielle",
+          "url": "https://www.gov.uk/government/speeches/quad-statement-to-iaea-board-of-governors-november-2026",
+          "note": "Position des quatre pays et référence aux rapports de l’AIEA."
+        },
+        {
+          "label": "Conseil de l’UE — conclusions Affaires étrangères, 16 novembre",
+          "type": "Source officielle",
+          "url": "https://www.consilium.europa.eu/en/meetings/fac/2026/11/16/",
+          "note": "Annonce de la prochaine concertation avec les pays du Golfe."
         }
       ],
       "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
