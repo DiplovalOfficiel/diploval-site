@@ -148,3 +148,8 @@
 @media(prefers-reduced-motion:reduce){
   .dv-history__chevron{transition:none;}
 }
+
+/* Quick access to historical editions from the current summary. */
+.dv-history__quicklink{margin:.6rem 0 1.4rem!important;}
+.dv-history__quicklink a{display:inline-flex;align-items:center;min-height:44px;padding:.48rem .9rem;background:#eaf2f6;border:1px solid #b9ccd8;border-radius:7px;color:#174765;font-size:.9rem;font-weight:700;text-decoration:none;}
+.dv-history__quicklink a:hover,.dv-history__quicklink a:focus-visible{background:#dcebf2;text-decoration:underline;}
