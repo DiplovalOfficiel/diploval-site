@@ -4,6 +4,7 @@
   const typeField=document.getElementById('contribution-type');
   const contribution=form?.querySelector('[name="contribution"]');
   const email=form?.querySelector('[name="email"]');
+  const openFirst=form?.dataset.openFirst==='true';
   const errorBox=document.createElement('div');
   errorBox.className='dp-form-error';
   errorBox.setAttribute('role','alert');
@@ -53,22 +54,22 @@
   function review(){
     const target=document.getElementById('dp-review');if(!target||!form)return;
     const dl=document.createElement('dl');
-    [['Type de contribution',typeField?.value],['Votre contribution',contribution?.value],['Partie concernée',form.elements.partie_dossier?.value],['Source ou référence',form.elements.source?.value],['Alternative proposée',form.elements.alternative?.value]].forEach(([label,value])=>{const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=value?.trim()||'Non renseigné';dl.append(dt,dd)});
+    [['Type de contribution',openFirst?'Expression libre':typeField?.value],['Votre contribution',contribution?.value],['Pistes sélectionnées',openFirst?[...form.querySelectorAll('.dp-openfirst-choice input:checked')].map(x=>x.value).join(' ; '):''],['Réaction aux pistes',form.elements.pistes_commentaire?.value],['Partie concernée',form.elements.partie_dossier?.value],['Source ou référence',form.elements.source?.value],['Alternative proposée',form.elements.alternative?.value]].filter(([label])=>openFirst||!['Pistes sélectionnées','Réaction aux pistes'].includes(label)).forEach(([label,value])=>{const dt=document.createElement('dt'),dd=document.createElement('dd');dt.textContent=label;dd.textContent=value?.trim()||'Non renseigné';dl.append(dt,dd)});
     target.replaceChildren(dl);
   }
   function step(n){clearError();document.querySelectorAll('.dp-formstep').forEach(x=>x.classList.toggle('active',x.dataset.formstep==n));document.querySelectorAll('.dp-stepbtn').forEach(x=>{const active=x.dataset.step==n;x.classList.toggle('active',active);if(active)x.setAttribute('aria-current','step');else x.removeAttribute('aria-current')});if(Number(n)===4)review();const heading=document.querySelector('.dp-formstep.active h3');if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true})}}
   document.querySelectorAll('.dp-choice').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.dp-choice').forEach(x=>{x.classList.remove('selected');x.setAttribute('aria-pressed','false')});b.classList.add('selected');b.setAttribute('aria-pressed','true');if(typeField)typeField.value=b.textContent.trim();clearError()}));
   document.querySelectorAll('[data-next]').forEach(b=>b.addEventListener('click',()=>{
     const current=b.closest('.dp-formstep')?.dataset.formstep;
-    if(current==='1' && !typeField?.value){showError('Choisissez d’abord le type de contribution.',document.querySelector('.dp-choice'));return}
-    if(current==='2' && !contribution?.value.trim()){showError('Expliquez votre contribution avant de continuer.',contribution);return}
+    if(current==='1' && !openFirst && !typeField?.value){showError('Choisissez d’abord le type de contribution.',document.querySelector('.dp-choice'));return}
+    if((current==='2' && !openFirst || current==='1' && openFirst) && !contribution?.value.trim()){showError('Expliquez votre contribution avant de continuer.',contribution);return}
     step(b.dataset.next)
   }));
   document.querySelectorAll('[data-prev]').forEach(b=>b.addEventListener('click',()=>step(b.dataset.prev)));
   document.querySelectorAll('.dp-stepbtn').forEach(b=>b.addEventListener('click',()=>{
     const target=Number(b.dataset.step||1);
-    if(target>1 && !typeField?.value){step(1);showError('Choisissez d’abord le type de contribution.',document.querySelector('.dp-choice'));return}
-    if(target>2 && !contribution?.value.trim()){step(2);showError('Expliquez votre contribution avant de continuer.',contribution);return}
+    if(target>1 && !openFirst && !typeField?.value){step(1);showError('Choisissez d’abord le type de contribution.',document.querySelector('.dp-choice'));return}
+    if((target>2&&!openFirst||target>1&&openFirst) && !contribution?.value.trim()){step(openFirst?1:2);showError('Expliquez votre contribution avant de continuer.',contribution);return}
     step(target)
   }));
   const today=()=>{const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Paris',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()).reduce((a,x)=>{a[x.type]=x.value;return a},{});return `${parts.year}-${parts.month}-${parts.day}`};
@@ -78,8 +79,8 @@
   form?.addEventListener('submit',event=>{
     clearError();
     if(!isOpen()){event.preventDefault();refreshAvailability();return}
-    if(!typeField?.value){event.preventDefault();step(1);showError('Choisissez le type de contribution.',document.querySelector('.dp-choice'));return}
-    if(!contribution?.value.trim()){event.preventDefault();step(2);showError('Votre contribution ne peut pas être vide.',contribution);return}
+    if(!openFirst && !typeField?.value){event.preventDefault();step(1);showError('Choisissez le type de contribution.',document.querySelector('.dp-choice'));return}
+    if(!contribution?.value.trim()){event.preventDefault();step(openFirst?1:2);showError('Votre contribution ne peut pas être vide.',contribution);return}
     if(!email?.checkValidity()){event.preventDefault();step(4);email?.reportValidity();return}
     const acknowledgement=form.querySelector('[name="acknowledgement"]');
     if(!acknowledgement?.checked){event.preventDefault();step(4);showError('Confirmez la relecture de votre contribution et la prise de connaissance de l’utilisation de vos coordonnées.',acknowledgement);return}
