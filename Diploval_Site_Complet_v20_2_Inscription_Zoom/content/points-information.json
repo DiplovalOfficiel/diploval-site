@@ -3,16 +3,61 @@
     {
       "show_home": true,
       "level": "2",
-      "summary": "Les efforts diplomatiques pour un éventuel cessez-le-feu se poursuivent sans accord général, tandis que la guerre produit des incidents de sécurité au voisinage immédiat de plusieurs États de l’OTAN. Le 20 novembre, trois missiles russes sont tombés en Pologne ; le 21 novembre, une attaque de drones contre un cargo russe dans le golfe de Finlande a entraîné une intervention maritime multinationale et une possible violation de l’espace aérien finlandais par un hélicoptère russe. Le soutien militaire européen à l’Ukraine et les tensions concernant la présence de personnels français demeurent des facteurs de vigilance. Ces développements justifient un réexamen renforcé du risque de débordement, sans preuve à ce stade d’un affrontement militaire direct Russie–OTAN. Diploval maintient le niveau 2 — Vigilance renforcée.",
+      "summary": "Les négociations sur un éventuel cessez-le-feu se poursuivent sans accord général. Plusieurs incidents récents ont accru les tensions avec des États membres de l’OTAN : missiles russes tombés en Pologne, incident maritime dans le golfe de Finlande et accusations russes contre l’Estonie. Le 23 novembre, la Pologne a annoncé la mise à disposition d’un AWACS de l’OTAN. L’Ukraine a par ailleurs revendiqué des attaques navales contre des bâtiments russes en Libye, tandis que de nouvelles victimes civiles sont signalées sur son territoire. Diploval maintient le niveau 2 — Vigilance renforcée et un réexamen prioritaire des risques de débordement.",
       "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
       "opened_at": "2026-11-19T11:50",
       "updates": [
+        {
+          "datetime": "2026-11-23T19:46",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026",
+          "title": "Pologne–OTAN : AWACS annoncé après la réunion de Bruxelles",
+          "body": "Après les consultations du Conseil de l’Atlantique Nord du 23 novembre sur les trois missiles russes Kh-101 tombés en Pologne le 20 novembre, le vice-ministre polonais de la Défense Paweł Zalewski a annoncé qu’un avion AWACS de surveillance et d’alerte avancée de l’OTAN serait mis à disposition de la Pologne. Il s’agit d’une réponse défensive concrète annoncée, sans engagement militaire direct contre la Russie. Le calendrier précis et la mise en œuvre opérationnelle restent à confirmer ; Varsovie n’a pas annoncé d’invocation de l’article 4 dans les sources consultées.",
+          "correction": false,
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-23T19:46",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026",
+          "title": "Russie–Estonie : accusations et tensions autour de la fermeture de frontière",
+          "body": "Le ministère russe des Affaires étrangères accuse l’Estonie d’actions « à la limite du déclenchement d’une guerre ouverte », et affirme que son territoire permettrait le passage de drones ukrainiens. Ces accusations sont celles de Moscou et ne sont pas établies indépendamment ; Tallinn les rejette. Le gouvernement estonien a décidé le 20 novembre de suspendre les passages routiers frontaliers avec la Russie à compter du 1er décembre, invoquant des préoccupations de sécurité. Il s’agit d’une escalade rhétorique et diplomatique, non d’un affrontement militaire direct confirmé.",
+          "correction": false,
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-23T19:46",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026",
+          "title": "Commission européenne : proposition d’un 22e paquet de sanctions",
+          "body": "La présidente de la Commission européenne a présenté le 23 novembre un projet de 22e paquet de sanctions contre la Russie, visant notamment des institutions financières, des plateformes de cryptomonnaies et les possibilités de contournement des restrictions, ainsi que des mesures concernant des compétitions sportives. Il s’agit d’une proposition européenne, qui n’équivaut pas à l’entrée en vigueur de l’ensemble des mesures ; elle dépend encore de la procédure d’adoption.",
+          "correction": false,
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-23T19:46",
+          "event_date": "2026-11-23",
+          "event_label": "22–23 novembre 2026 — bilans communiqués les 23",
+          "title": "Ukraine : nouvelles victimes civiles près de Kyiv et à Zaporijjia",
+          "body": "Le bilan d’une attaque russe du 22 novembre ayant touché un immeuble résidentiel à Dymer, près de Kyiv, est monté à onze morts le 23 novembre, selon les autorités ukrainiennes citées par Reuters ; des survivants ont été extraits des décombres. Associated Press rapporte également trois morts après une frappe sur un hôpital à Zaporijjia le 23 novembre, selon l’administration militaire régionale. Ces bilans sont attribués aux autorités locales et doivent rester susceptibles d’être révisés. Les conséquences pour les civils et les établissements de santé justifient une mise à jour humanitaire distincte.",
+          "correction": false,
+          "sources": []
+        },
         {
           "datetime": "2026-11-23T12:37",
           "event_date": "2026-11-23",
           "event_label": "23 novembre 2026",
           "title": "Réaction du Kremlin et consultations annoncées à l’OTAN",
           "body": "Le Kremlin a accusé l’Ukraine d’« activité terroriste » en mer Baltique à la suite de l’attaque du cargo russe Sparta II, selon Reuters. Il s’agit de la qualification employée par Moscou, non d’une conclusion juridique indépendante. Après l’entrée de missiles russes en Pologne le 20 novembre, une réunion du Conseil de l’Atlantique Nord est annoncée à Bruxelles le 23 novembre. Aucun résultat de cette réunion, aucune décision opérationnelle nouvelle ni aucun affrontement direct Russie–OTAN ne sont confirmés par les sources disponibles au moment de cette actualisation.",
+          "correction": false,
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-23T19:46",
+          "event_date": "2026-11-22",
+          "event_label": "22 novembre 2026 — revendication officielle le 23",
+          "title": "Libye : attaques ukrainiennes revendiquées contre deux navires russes à Benghazi",
+          "body": "Le 23 novembre, le président ukrainien Volodymyr Zelensky a revendiqué une opération menée la veille par des drones navals ukrainiens près de Benghazi, en Libye, contre la corvette russe Merkury et le cargo MV Angara. Reuters a vérifié des images montrant les frappes et des incendies ; Zelensky affirme que la corvette a coulé, tandis que le gouvernement de l’est libyen a signalé une attaque et demandé une enquête. Les autorités libyennes ont dénoncé l’opération. L’état final des navires, le bilan humain et les responsabilités territoriales éventuelles restent à documenter ; cette extension géographique ne constitue pas, en elle-même, un affrontement avec l’OTAN.",
           "correction": false,
           "sources": []
         },
@@ -121,7 +166,7 @@
         "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
         "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
       ],
-      "why_level": "Le niveau 2 — Vigilance renforcée — reste applicable, mais le risque d’incident impliquant l’OTAN augmente. Les trois missiles russes tombés en Pologne le 20 novembre attestent une violation grave du territoire d’un pays allié ; les autorités polonaises n’ont signalé aucune victime ni destruction d’infrastructure critique. Dans le golfe de Finlande, la frappe sur un cargo russe en eaux internationales, sa dérive vers les eaux finlandaises et le survol russe suspecté accroissent la sensibilité militaire et environnementale de la Baltique. Les secours ont toutefois impliqué une coopération entre autorités finlandaises, estoniennes et russes ; aucun combat direct entre les forces de l’OTAN et celles de la Russie n’est établi. La présence de personnels militaires français en Ukraine pour des missions déclarées de formation et de maintenance et les avertissements russes antérieurs demeurent d’autres risques de friction. Le Code One devrait être réexaminé immédiatement en cas d’attaque délibérée contre un État de l’OTAN avec victimes ou dégâts significatifs, de confrontation armée directe, de répétition coordonnée d’incidents graves ou de modification stratégique vérifiable. La réunion annoncée du Conseil de l’Atlantique Nord le 23 novembre devra être examinée dès que ses résultats seront connus.",
+      "why_level": "Les missiles russes tombés en Pologne, les incidents en mer Baltique, les tensions russo-estoniennes et la mise à disposition annoncée d’un AWACS de l’OTAN témoignent d’une aggravation du risque d’incident impliquant un pays allié. Les attaques ukrainiennes revendiquées contre des navires russes en Libye montrent également une extension géographique du conflit. Pour autant, les éléments vérifiés ne démontrent pas à cette heure une attaque intentionnelle aux conséquences graves contre un État de l’OTAN ni un affrontement militaire direct Russie–OTAN. Les garanties de sécurité et pourparlers restent sans cessez-le-feu général appliqué. Le niveau 2 est maintenu, avec réévaluation immédiate requise en cas de confrontation directe, d’attaque attribuée ayant des conséquences majeures sur un territoire allié ou de changement stratégique documenté.",
       "visible": true,
       "watch_down": [
         "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
@@ -131,7 +176,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-23T12:37",
+      "last_update": "2026-11-23T19:46",
       "status": "suivi",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
       "sources": [
@@ -230,6 +275,48 @@
           "type": "Agence de presse",
           "url": "https://www.reuters.com/world/nato-will-defend-every-inch-polish-territory-rutte-says-2026-11-21/",
           "note": "Déclaration du secrétaire général et consultations annoncées."
+        },
+        {
+          "label": "Reuters — AWACS annoncé pour la Pologne après la réunion OTAN, 23 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/business/aerospace-defense/nato-send-early-warning-system-aircraft-poland-after-missiles-incident-2026-11-23/",
+          "note": "Annonce du vice-ministre polonais de la Défense, mise en œuvre à suivre."
+        },
+        {
+          "label": "Ministère estonien des Affaires étrangères — fermeture de la frontière, 20 novembre",
+          "type": "Source officielle",
+          "url": "https://www.vm.ee/en/news/foreign-minister-tsahkna-border-closure-russias-hostile-activities-against-estonia-and-europe",
+          "note": "Décision de Tallinn ; fermeture prévue à partir du 1er décembre."
+        },
+        {
+          "label": "Reuters/AFP via RTÉ — accusations russes contre l’Estonie, 23 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.rte.ie/news/world/2026/1123/1600353-russia-estonia-finland/",
+          "note": "Propos russes attribués et position estonienne."
+        },
+        {
+          "label": "Commission européenne — proposition de 22e paquet de sanctions, 23 novembre",
+          "type": "Source officielle",
+          "url": "https://cyprus.representation.ec.europa.eu/news/statement-president-von-der-leyen-22nd-package-sanctions-against-russia-2026-11-23_en",
+          "note": "Présentation par Ursula von der Leyen : proposition, non adoption."
+        },
+        {
+          "label": "Reuters — deux bâtiments russes attaqués en Libye, 23 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/europe/zelenskiy-says-ukraine-sank-russian-corvette-near-libyas-coast-hit-cargo-ship-2026-11-23/",
+          "note": "Vidéos vérifiées ; naufrage revendiqué et enquête demandée."
+        },
+        {
+          "label": "Reuters — Dymer, bilan des victimes civiles révisé, 23 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/russian-attack-ukraines-dymer-kyiv-region-kills-11-official-says-2026-11-23/",
+          "note": "Onze morts selon les autorités ukrainiennes."
+        },
+        {
+          "label": "Associated Press — frappe sur un hôpital à Zaporijjia, 23 novembre",
+          "type": "Agence de presse",
+          "url": "https://apnews.com/article/c382f8eb06dca7d87e89bc6c18ba7d61",
+          "note": "Trois morts selon l’administration ukrainienne."
         }
       ],
       "category": "Géopolitique · Europe",
@@ -239,10 +326,37 @@
     {
       "show_home": true,
       "level": "1",
-      "summary": "Au 19 novembre 2026, la situation reste préoccupante à Gaza et en Cisjordanie, où les civils subissent les conséquences des violences, des déplacements et des restrictions. Des frappes sont également signalées au Liban, tandis que les tensions militaires touchent l’Iran et plusieurs pays du Golfe. Les initiatives diplomatiques se poursuivent sans stabilisation régionale durable. Diploval suit séparément les faits militaires, les enjeux humanitaires et les efforts de désescalade.",
+      "summary": "Au 23 novembre 2026, les violences et besoins humanitaires persistent à Gaza et en Cisjordanie. Le décès confirmé d’un employé de l’UNRWA lors d’une frappe à Gaza accentue les préoccupations sur la protection des services essentiels. Les tensions militaires et maritimes continuent d’impliquer l’Iran, les États-Unis, le Yémen et plusieurs pays du Golfe ; certaines attaques contre des installations énergétiques demeurent seulement revendiquées. Les médiations régionales se poursuivent, sans accord nouveau vérifiable de désescalade générale.",
       "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
       "opened_at": "2026-11-19T22:08",
       "updates": [
+        {
+          "datetime": "2026-11-23T19:46",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026",
+          "title": "Gaza : un employé de l’UNRWA tué près d’une installation d’eau",
+          "body": "Reuters rapporte au moins trois morts lors de deux frappes israéliennes distinctes dans la bande de Gaza, le 23 novembre, selon les autorités sanitaires locales et l’UNRWA. Parmi les victimes figure Adel Al-Helo, employé de l’UNRWA qui participait à des activités près d’un puits à Jabalia ; l’agence des Nations unies a confirmé son décès. Une autre frappe sur un véhicule à Gaza-ville a causé deux morts selon les secours. L’armée israélienne a indiqué examiner les informations relatives au premier incident. Cet épisode touche la sécurité de personnels et de services humanitaires essentiels ; les circonstances militaires exactes restent à établir.",
+          "correction": false,
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-23T19:46",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026",
+          "title": "Iran–États-Unis : nouvelles déclarations sur le blocus naval",
+          "body": "Le porte-parole du ministère iranien des Affaires étrangères Esmaeil Baghaei a déclaré le 23 novembre que Téhéran entendait recourir à tous les moyens disponibles pour s’opposer au blocus naval imposé par les États-Unis, qu’il qualifie d’agression militaire. Reuters rapporte cette position officielle ; elle ne prouve pas, à elle seule, une nouvelle frappe, un incident naval supplémentaire ou la rupture des négociations indirectes. La liberté de navigation et le risque d’interception armée demeurent sous surveillance renforcée.",
+          "correction": false,
+          "sources": []
+        },
+        {
+          "datetime": "2026-11-23T19:46",
+          "event_date": "2026-11-22",
+          "event_label": "22 novembre 2026",
+          "title": "Arabie saoudite : attaque revendiquée sur la raffinerie de Rabigh",
+          "body": "Les Houthis ont annoncé le 22 novembre avoir mené une opération visant la raffinerie de Rabigh, sur la côte saoudienne de la mer Rouge, et revendiquent un impact direct. Reuters a confirmé la revendication mais n’a pas établi l’existence de dommages ni leur étendue. Aucune confirmation saoudienne n’était disponible dans la dépêche examinée. Cette entrée constitue donc un signal concernant une infrastructure énergétique vitale, et non la confirmation qu’une raffinerie a été frappée ou endommagée.",
+          "correction": false,
+          "sources": []
+        },
         {
           "datetime": "2026-11-22T13:31",
           "title": "Sanaa : frappe signalée sur une installation de carburant",
@@ -323,7 +437,7 @@
         "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
       ],
       "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
-      "why_level": "Le niveau 1 — Code One concerne le risque d’extension régionale : plusieurs foyers de conflit coexistent, certains affrontements impliquent directement des forces étatiques, et des infrastructures ainsi que des voies de navigation stratégiques sont exposées. Ce classement ne signifie pas qu’une guerre mondiale ou une attaque contre le territoire des États-Unis est imminente. Il pourra évoluer selon les faits vérifiés et les mesures de désescalade réellement appliquées.",
+      "why_level": "Le niveau 1 — Code One concerne le risque d’extension régionale : plusieurs fronts restent actifs, les affrontements impliquent des forces étatiques, le blocus naval et les menaces contre les voies maritimes exposent les échanges et les infrastructures essentielles. Les frappes causant des victimes civiles et la vulnérabilité des services humanitaires aggravent la situation. Une revendication d’attaque n’équivaut cependant pas à la confirmation d’un impact ni d’une destruction. Ce classement ne signifie pas qu’une guerre mondiale ou une attaque sur le territoire des États-Unis est imminente ; il sera réévalué sur la base de faits nouveaux vérifiés et de l’application réelle des médiations.",
       "visible": true,
       "watch_down": [
         "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
@@ -331,7 +445,7 @@
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
-      "last_update": "2026-11-23T11:35",
+      "last_update": "2026-11-23T19:46",
       "status": "suivi",
       "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
@@ -412,6 +526,24 @@
           "type": "Source officielle",
           "url": "https://www.consilium.europa.eu/en/meetings/fac/2026/11/16/",
           "note": "Annonce de la prochaine concertation avec les pays du Golfe."
+        },
+        {
+          "label": "Reuters — Gaza : trois morts dont un employé de l’UNRWA, 23 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/israeli-strike-kills-worker-with-un-palestinian-agency-gaza-agency-says-2026-11-23/",
+          "note": "Décès confirmé par l’UNRWA et bilans attribués aux autorités sanitaires."
+        },
+        {
+          "label": "Reuters — Iran et blocus naval américain, 23 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/iran-says-it-will-use-all-available-tools-confront-us-naval-blockade-2026-11-23/",
+          "note": "Déclaration officielle iranienne, non annonce d’attaque."
+        },
+        {
+          "label": "Reuters — revendication houthie concernant Rabigh, 22 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-rabigh-oil-refinery-2026-11-22/",
+          "note": "Impacts et dommages non confirmés indépendamment."
         }
       ],
       "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
