@@ -157,60 +157,76 @@
       "opened_at": "2026-11-19T22:08",
       "updates": [
         {
-          "datetime": "2026-11-23T11:35",
-          "title": "23 novembre — Contacts Washington–Doha–Téhéran et médiation",
-          "body": "Le 19 novembre à Berlin, selon deux sources citées par Axios, les émissaires américains Steve Witkoff et Jared Kushner ont rencontré des responsables qataris afin d’examiner la reprise des négociations avec l’Iran. Selon un responsable iranien cité par Reuters, une délégation qatarie s’est rendue à Téhéran le 20 novembre. Les contacts diplomatiques se poursuivent, mais ni nouveau cessez-le-feu ni date de négociation directe ne sont confirmés.",
-          "correction": false,
-          "sources": []
-        },
-        {
-          "datetime": "2026-11-23T11:35",
-          "title": "23 novembre — Positions Allemagne–Qatar et surveillance nucléaire",
-          "body": "Lors de la visite de l’émir du Qatar en Allemagne les 20–21 novembre, les deux gouvernements ont publié une déclaration commune favorable à une solution à deux États, à l’accès humanitaire à Gaza, à la liberté de navigation et à une issue négociée au Yémen. Ils ont annoncé une coopération bilatérale en matière de médiation, non un accord de paix entre belligérants. Lors de la réunion du Conseil des gouverneurs de l’AIEA du 18 au 20 novembre, la France, l’Allemagne, le Royaume-Uni et les États-Unis ont demandé à l’Iran de rétablir l’accès des inspecteurs aux sites concernés, citant des lacunes persistantes dans la vérification des matières nucléaires. Ces difficultés ne démontrent pas un recours imminent à l’arme nucléaire. Une rencontre ministérielle UE–pays du Golfe est envisagée en décembre, sans date exacte confirmée.",
-          "correction": false,
-          "sources": []
-        },
-        {
           "datetime": "2026-11-22T13:31",
-          "title": "22 novembre — Sanaa : frappe signalée sur une installation de carburant",
+          "title": "Sanaa : frappe signalée sur une installation de carburant",
           "correction": false,
           "body": "Dans la nuit du 21 au 22 novembre, les autorités sanitaires administrées par les Houthis ont signalé une frappe aérienne sur une installation de carburant exploitée par la compagnie pétrolière publique à Sanaa. Leur porte-parole fait état de six employés blessés et de dommages au bâtiment de l’entreprise. Associated Press rapporte ces déclarations. L’auteur de la frappe, l’étendue exacte des dégâts et le bilan indépendant ne sont pas établis ; une attribution à l’Arabie saoudite ne doit pas être présentée comme un fait confirmé.",
-          "sources": []
+          "sources": [],
+          "event_date": "2026-11-22",
+          "event_label": "21–22 novembre 2026"
         },
         {
           "datetime": "2026-11-22T13:31",
-          "title": "22 novembre — Cisjordanie : incendies de véhicules et de propriétés palestiniennes",
+          "title": "Cisjordanie : incendies de véhicules et de propriétés palestiniennes",
           "correction": false,
           "body": "Dans la nuit du 21 au 22 novembre, plusieurs véhicules et biens appartenant à des Palestiniens ont été incendiés dans des localités de Cisjordanie occupée. Des colons israéliens sont soupçonnés d’avoir participé à ces attaques. La police israélienne a annoncé une enquête sur les incendies et des inscriptions retrouvées sur place. Gadi Eisenkot a condamné ces actes en les qualifiant, dans une déclaration politique, de « terrorisme juif » ; cette qualification ne vaut pas décision judiciaire. Les responsabilités individuelles restent à établir.",
-          "sources": []
+          "sources": [],
+          "event_date": "2026-11-22",
+          "event_label": "21–22 novembre 2026"
         },
         {
           "datetime": "2026-11-22T13:31",
-          "title": "22 novembre — Bahreïn : deux blessés signalés après les attaques du 21 novembre",
+          "title": "Bahreïn : bilan corrigé des attaques du 21 novembre",
           "correction": false,
           "body": "Le ministère de l’Intérieur de Bahreïn a révisé le bilan des attaques attribuées à l’Iran survenues le 21 novembre : deux personnes sont désormais signalées blessées, un résident pakistanais dans un état critique et un citoyen bahreïni dans un état stable. Cette annonce du 22 novembre corrige le premier bilan public faisant état de dommages matériels sans blessés signalés ; elle ne correspond pas à une nouvelle attaque survenue ce dimanche. Les Gardiens de la révolution iraniens revendiquent des attaques visant des positions militaires américaines sur le territoire bahreïni, sans confirmation indépendante de leurs résultats.",
-          "sources": []
+          "sources": [],
+          "event_date": "2026-11-22",
+          "event_label": "22 novembre 2026 — révision du bilan du 21 novembre"
+        },
+        {
+          "datetime": "2026-11-23T11:35",
+          "title": "Déclaration Allemagne–Qatar et suivi nucléaire iranien",
+          "body": "Lors de la visite de l’émir du Qatar en Allemagne les 20–21 novembre, les deux gouvernements ont publié une déclaration commune favorable à une solution à deux États, à l’accès humanitaire à Gaza, à la liberté de navigation et à une issue négociée au Yémen. Ils ont annoncé une coopération bilatérale en matière de médiation, non un accord de paix entre belligérants. Lors de la réunion du Conseil des gouverneurs de l’AIEA du 18 au 20 novembre, la France, l’Allemagne, le Royaume-Uni et les États-Unis ont demandé à l’Iran de rétablir l’accès des inspecteurs aux sites concernés, citant des lacunes persistantes dans la vérification des matières nucléaires. Ces difficultés ne démontrent pas un recours imminent à l’arme nucléaire. Une rencontre ministérielle UE–pays du Golfe est envisagée en décembre, sans date exacte confirmée.",
+          "correction": false,
+          "sources": [],
+          "event_date": "2026-11-21",
+          "event_label": "18–21 novembre 2026"
+        },
+        {
+          "datetime": "2026-11-23T11:35",
+          "title": "Contacts Washington–Doha–Téhéran et médiation",
+          "body": "Le 19 novembre à Berlin, selon deux sources citées par Axios, les émissaires américains Steve Witkoff et Jared Kushner ont rencontré des responsables qataris afin d’examiner la reprise des négociations avec l’Iran. Selon un responsable iranien cité par Reuters, une délégation qatarie s’est rendue à Téhéran le 20 novembre. Les contacts diplomatiques se poursuivent, mais ni nouveau cessez-le-feu ni date de négociation directe ne sont confirmés.",
+          "correction": false,
+          "sources": [],
+          "event_date": "2026-11-20",
+          "event_label": "19–20 novembre 2026"
         },
         {
           "correction": false,
           "datetime": "2026-11-21T09:18",
-          "title": "20 novembre — Hodeïda : frappes sur le port et menaces contre les ports saoudiens",
+          "title": "Hodeïda : frappes sur le port et menaces contre les ports saoudiens",
           "body": "La coalition dirigée par l’Arabie saoudite a déclaré avoir frappé le port de Hodeïda, au Yémen, le 20 novembre. Elle affirme avoir visé des capacités utilisées pour le transport d’armes et de missiles. Reuters confirme l’annonce de la frappe, mais la finalité militaire exacte et l’étendue des dégâts ne sont pas vérifiées indépendamment. Le ministre yéménite de l’Information a affirmé que le port restait opérationnel. Les Houthis ont menacé de viser des ports saoudiens de la mer Rouge et ont revendiqué des attaques contre une centrale électrique et un port dans le sud de l’Arabie saoudite ; la coalition affirme avoir intercepté deux missiles. Le bilan civil et les conséquences sur l’approvisionnement de la population restent à établir. L’événement accroît la vigilance sur les infrastructures portuaires et la sécurité maritime.",
-          "sources": []
-        },
-        {
-          "correction": false,
-          "datetime": "2026-11-21T09:18",
-          "title": "18 novembre — OCHA : capacités hospitalières et abris endommagés à Gaza",
-          "body": "Le rapport humanitaire de l’OCHA publié le 18 novembre précise plusieurs faits antérieurs à l’ouverture de ce suivi. Selon l’OMS citée par l’OCHA, une frappe israélienne du 12 novembre sur le service de chirurgie de l’hôpital Nasser, à Khan Younès, a causé six morts et au moins 27 blessés ; les installations chirurgicales ont subi d’importants dégâts. Le ministère de la Santé de Gaza fait état de 1 650 morts signalés depuis le cessez-le-feu d’octobre 2025 au 16 novembre, contre 1 613 au 9 novembre : ce bilan est attribué à cette autorité et n’est pas un décompte indépendant de l’OCHA. Les évaluations provisoires de l’OCHA indiquent qu’environ 226 000 personnes ont pu être touchées par les pluies des 6 au 8 novembre et que plus de 40 000 abris ont subi des dommages. Il s’agit d’un complément documentaire sur la crise humanitaire, et non d’événements tous survenus le 18 novembre.",
-          "sources": []
+          "sources": [],
+          "event_date": "2026-11-20",
+          "event_label": "20 novembre 2026"
         },
         {
           "correction": false,
           "datetime": "2026-11-19T22:08",
-          "title": "Situation au 19 novembre — faits et évolutions",
+          "title": "Situation initiale — Gaza, Cisjordanie, Iran, Liban et Golfe",
           "body": "Gaza et Cisjordanie — Dans son rapport du 13 novembre, l’OCHA décrit une situation humanitaire toujours grave à Gaza malgré le cessez-le-feu d’octobre 2025. L’agence signale également des déplacements de population et des violences en Cisjordanie. Le bilan de 1 613 morts depuis l’accord jusqu’au 9 novembre, qu’elle relaie, est attribué au ministère de la Santé de Gaza et ne constitue pas un décompte indépendant de l’OCHA.\nIran et pays du Golfe, 17–18 novembre — Selon Reuters et Associated Press, des forces américaines ont frappé un site militaire sur l’île iranienne de Qeshm. Les autorités iraniennes revendiquent des attaques contre des installations militaires américaines situées à Bahreïn et au Koweït. Ces éléments concernent des installations à l’étranger, non le territoire des États-Unis ; les effets exacts de certaines attaques restent à confirmer.\nLiban et péninsule Arabique, 19 novembre — Associated Press rapporte de nouvelles frappes israéliennes au Liban contre une installation que l’armée israélienne présente comme liée au Hezbollah. L’agence fait aussi état d’attaques au Yémen et de débris de missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite.\nVolet diplomatique — Des démarches de médiation régionales sont signalées. Leur portée doit être évaluée à partir d’accords précis, de leur application effective et de leurs conséquences pour les civils.",
-          "sources": []
+          "sources": [],
+          "event_date": "2026-11-19",
+          "event_label": "19 novembre 2026 — point de situation initial"
+        },
+        {
+          "correction": false,
+          "datetime": "2026-11-21T09:18",
+          "title": "OCHA : capacités hospitalières et abris endommagés à Gaza",
+          "body": "Le rapport humanitaire de l’OCHA publié le 18 novembre précise plusieurs faits antérieurs à l’ouverture de ce suivi. Selon l’OMS citée par l’OCHA, une frappe israélienne du 12 novembre sur le service de chirurgie de l’hôpital Nasser, à Khan Younès, a causé six morts et au moins 27 blessés ; les installations chirurgicales ont subi d’importants dégâts. Le ministère de la Santé de Gaza fait état de 1 650 morts signalés depuis le cessez-le-feu d’octobre 2025 au 16 novembre, contre 1 613 au 9 novembre : ce bilan est attribué à cette autorité et n’est pas un décompte indépendant de l’OCHA. Les évaluations provisoires de l’OCHA indiquent qu’environ 226 000 personnes ont pu être touchées par les pluies des 6 au 8 novembre et que plus de 40 000 abris ont subi des dommages. Il s’agit d’un complément documentaire sur la crise humanitaire, et non d’événements tous survenus le 18 novembre.",
+          "sources": [],
+          "event_date": "2026-11-18",
+          "event_label": "18 novembre 2026 — rapport sur des faits antérieurs"
         }
       ],
       "watch_up": [
