@@ -4,6 +4,238 @@
   "versions": [
     {
       "point_slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "recorded_at": "2026-11-23T19:02:39Z",
+      "label": "Édition du 23 novembre — Gaza, Iran et sécurité régionale",
+      "commit_sha": "489c65d9e4cb0701c6067665e4eec66099cdc83b",
+      "point": {
+        "show_home": true,
+        "level": "1",
+        "summary": "Au 23 novembre 2026, les violences et besoins humanitaires persistent à Gaza et en Cisjordanie. Le décès confirmé d’un employé de l’UNRWA lors d’une frappe à Gaza accentue les préoccupations sur la protection des services essentiels. Les tensions militaires et maritimes continuent d’impliquer l’Iran, les États-Unis, le Yémen et plusieurs pays du Golfe ; certaines attaques contre des installations énergétiques demeurent seulement revendiquées. Les médiations régionales se poursuivent, sans accord nouveau vérifiable de désescalade générale.",
+        "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
+        "opened_at": "2026-11-19T22:08",
+        "updates": [
+          {
+            "datetime": "2026-11-23T19:46",
+            "event_date": "2026-11-23",
+            "event_label": "23 novembre 2026",
+            "title": "Gaza : un employé de l’UNRWA tué près d’une installation d’eau",
+            "body": "Reuters rapporte au moins trois morts lors de deux frappes israéliennes distinctes dans la bande de Gaza, le 23 novembre, selon les autorités sanitaires locales et l’UNRWA. Parmi les victimes figure Adel Al-Helo, employé de l’UNRWA qui participait à des activités près d’un puits à Jabalia ; l’agence des Nations unies a confirmé son décès. Une autre frappe sur un véhicule à Gaza-ville a causé deux morts selon les secours. L’armée israélienne a indiqué examiner les informations relatives au premier incident. Cet épisode touche la sécurité de personnels et de services humanitaires essentiels ; les circonstances militaires exactes restent à établir.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T19:46",
+            "event_date": "2026-11-23",
+            "event_label": "23 novembre 2026",
+            "title": "Iran–États-Unis : nouvelles déclarations sur le blocus naval",
+            "body": "Le porte-parole du ministère iranien des Affaires étrangères Esmaeil Baghaei a déclaré le 23 novembre que Téhéran entendait recourir à tous les moyens disponibles pour s’opposer au blocus naval imposé par les États-Unis, qu’il qualifie d’agression militaire. Reuters rapporte cette position officielle ; elle ne prouve pas, à elle seule, une nouvelle frappe, un incident naval supplémentaire ou la rupture des négociations indirectes. La liberté de navigation et le risque d’interception armée demeurent sous surveillance renforcée.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T19:46",
+            "event_date": "2026-11-22",
+            "event_label": "22 novembre 2026",
+            "title": "Arabie saoudite : attaque revendiquée sur la raffinerie de Rabigh",
+            "body": "Les Houthis ont annoncé le 22 novembre avoir mené une opération visant la raffinerie de Rabigh, sur la côte saoudienne de la mer Rouge, et revendiquent un impact direct. Reuters a confirmé la revendication mais n’a pas établi l’existence de dommages ni leur étendue. Aucune confirmation saoudienne n’était disponible dans la dépêche examinée. Cette entrée constitue donc un signal concernant une infrastructure énergétique vitale, et non la confirmation qu’une raffinerie a été frappée ou endommagée.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "Sanaa : frappe signalée sur une installation de carburant",
+            "correction": false,
+            "body": "Dans la nuit du 21 au 22 novembre, les autorités sanitaires administrées par les Houthis ont signalé une frappe aérienne sur une installation de carburant exploitée par la compagnie pétrolière publique à Sanaa. Leur porte-parole fait état de six employés blessés et de dommages au bâtiment de l’entreprise. Associated Press rapporte ces déclarations. L’auteur de la frappe, l’étendue exacte des dégâts et le bilan indépendant ne sont pas établis ; une attribution à l’Arabie saoudite ne doit pas être présentée comme un fait confirmé.",
+            "sources": [],
+            "event_date": "2026-11-22",
+            "event_label": "21–22 novembre 2026"
+          },
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "Cisjordanie : incendies de véhicules et de propriétés palestiniennes",
+            "correction": false,
+            "body": "Dans la nuit du 21 au 22 novembre, plusieurs véhicules et biens appartenant à des Palestiniens ont été incendiés dans des localités de Cisjordanie occupée. Des colons israéliens sont soupçonnés d’avoir participé à ces attaques. La police israélienne a annoncé une enquête sur les incendies et des inscriptions retrouvées sur place. Gadi Eisenkot a condamné ces actes en les qualifiant, dans une déclaration politique, de « terrorisme juif » ; cette qualification ne vaut pas décision judiciaire. Les responsabilités individuelles restent à établir.",
+            "sources": [],
+            "event_date": "2026-11-22",
+            "event_label": "21–22 novembre 2026"
+          },
+          {
+            "datetime": "2026-11-22T13:31",
+            "title": "Bahreïn : bilan corrigé des attaques du 21 novembre",
+            "correction": false,
+            "body": "Le ministère de l’Intérieur de Bahreïn a révisé le bilan des attaques attribuées à l’Iran survenues le 21 novembre : deux personnes sont désormais signalées blessées, un résident pakistanais dans un état critique et un citoyen bahreïni dans un état stable. Cette annonce du 22 novembre corrige le premier bilan public faisant état de dommages matériels sans blessés signalés ; elle ne correspond pas à une nouvelle attaque survenue ce dimanche. Les Gardiens de la révolution iraniens revendiquent des attaques visant des positions militaires américaines sur le territoire bahreïni, sans confirmation indépendante de leurs résultats.",
+            "sources": [],
+            "event_date": "2026-11-22",
+            "event_label": "22 novembre 2026 — révision du bilan du 21 novembre"
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "Déclaration Allemagne–Qatar et suivi nucléaire iranien",
+            "body": "Lors de la visite de l’émir du Qatar en Allemagne les 20–21 novembre, les deux gouvernements ont publié une déclaration commune favorable à une solution à deux États, à l’accès humanitaire à Gaza, à la liberté de navigation et à une issue négociée au Yémen. Ils ont annoncé une coopération bilatérale en matière de médiation, non un accord de paix entre belligérants. Lors de la réunion du Conseil des gouverneurs de l’AIEA du 18 au 20 novembre, la France, l’Allemagne, le Royaume-Uni et les États-Unis ont demandé à l’Iran de rétablir l’accès des inspecteurs aux sites concernés, citant des lacunes persistantes dans la vérification des matières nucléaires. Ces difficultés ne démontrent pas un recours imminent à l’arme nucléaire. Une rencontre ministérielle UE–pays du Golfe est envisagée en décembre, sans date exacte confirmée.",
+            "correction": false,
+            "sources": [],
+            "event_date": "2026-11-21",
+            "event_label": "18–21 novembre 2026"
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "Contacts Washington–Doha–Téhéran et médiation",
+            "body": "Le 19 novembre à Berlin, selon deux sources citées par Axios, les émissaires américains Steve Witkoff et Jared Kushner ont rencontré des responsables qataris afin d’examiner la reprise des négociations avec l’Iran. Selon un responsable iranien cité par Reuters, une délégation qatarie s’est rendue à Téhéran le 20 novembre. Les contacts diplomatiques se poursuivent, mais ni nouveau cessez-le-feu ni date de négociation directe ne sont confirmés.",
+            "correction": false,
+            "sources": [],
+            "event_date": "2026-11-20",
+            "event_label": "19–20 novembre 2026"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-21T09:18",
+            "title": "Hodeïda : frappes sur le port et menaces contre les ports saoudiens",
+            "body": "La coalition dirigée par l’Arabie saoudite a déclaré avoir frappé le port de Hodeïda, au Yémen, le 20 novembre. Elle affirme avoir visé des capacités utilisées pour le transport d’armes et de missiles. Reuters confirme l’annonce de la frappe, mais la finalité militaire exacte et l’étendue des dégâts ne sont pas vérifiées indépendamment. Le ministre yéménite de l’Information a affirmé que le port restait opérationnel. Les Houthis ont menacé de viser des ports saoudiens de la mer Rouge et ont revendiqué des attaques contre une centrale électrique et un port dans le sud de l’Arabie saoudite ; la coalition affirme avoir intercepté deux missiles. Le bilan civil et les conséquences sur l’approvisionnement de la population restent à établir. L’événement accroît la vigilance sur les infrastructures portuaires et la sécurité maritime.",
+            "sources": [],
+            "event_date": "2026-11-20",
+            "event_label": "20 novembre 2026"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T22:08",
+            "title": "Situation initiale — Gaza, Cisjordanie, Iran, Liban et Golfe",
+            "body": "Gaza et Cisjordanie — Dans son rapport du 13 novembre, l’OCHA décrit une situation humanitaire toujours grave à Gaza malgré le cessez-le-feu d’octobre 2025. L’agence signale également des déplacements de population et des violences en Cisjordanie. Le bilan de 1 613 morts depuis l’accord jusqu’au 9 novembre, qu’elle relaie, est attribué au ministère de la Santé de Gaza et ne constitue pas un décompte indépendant de l’OCHA.\nIran et pays du Golfe, 17–18 novembre — Selon Reuters et Associated Press, des forces américaines ont frappé un site militaire sur l’île iranienne de Qeshm. Les autorités iraniennes revendiquent des attaques contre des installations militaires américaines situées à Bahreïn et au Koweït. Ces éléments concernent des installations à l’étranger, non le territoire des États-Unis ; les effets exacts de certaines attaques restent à confirmer.\nLiban et péninsule Arabique, 19 novembre — Associated Press rapporte de nouvelles frappes israéliennes au Liban contre une installation que l’armée israélienne présente comme liée au Hezbollah. L’agence fait aussi état d’attaques au Yémen et de débris de missile tombés à Riyad, selon la coalition dirigée par l’Arabie saoudite.\nVolet diplomatique — Des démarches de médiation régionales sont signalées. Leur portée doit être évaluée à partir d’accords précis, de leur application effective et de leurs conséquences pour les civils.",
+            "sources": [],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026 — point de situation initial"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-21T09:18",
+            "title": "OCHA : capacités hospitalières et abris endommagés à Gaza",
+            "body": "Le rapport humanitaire de l’OCHA publié le 18 novembre précise plusieurs faits antérieurs à l’ouverture de ce suivi. Selon l’OMS citée par l’OCHA, une frappe israélienne du 12 novembre sur le service de chirurgie de l’hôpital Nasser, à Khan Younès, a causé six morts et au moins 27 blessés ; les installations chirurgicales ont subi d’importants dégâts. Le ministère de la Santé de Gaza fait état de 1 650 morts signalés depuis le cessez-le-feu d’octobre 2025 au 16 novembre, contre 1 613 au 9 novembre : ce bilan est attribué à cette autorité et n’est pas un décompte indépendant de l’OCHA. Les évaluations provisoires de l’OCHA indiquent qu’environ 226 000 personnes ont pu être touchées par les pluies des 6 au 8 novembre et que plus de 40 000 abris ont subi des dommages. Il s’agit d’un complément documentaire sur la crise humanitaire, et non d’événements tous survenus le 18 novembre.",
+            "sources": [],
+            "event_date": "2026-11-18",
+            "event_label": "18 novembre 2026 — rapport sur des faits antérieurs"
+          }
+        ],
+        "watch_up": [
+          "Extension confirmée des affrontements directs à de nouveaux États ou à des infrastructures civiles vitales.",
+          "Hausse majeure des victimes civiles ou attaques répétées contre les services essentiels.",
+          "Perturbation durable et élargie de la navigation dans le Golfe ou en mer Rouge.",
+          "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
+        ],
+        "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
+        "why_level": "Le niveau 1 — Code One concerne le risque d’extension régionale : plusieurs fronts restent actifs, les affrontements impliquent des forces étatiques, le blocus naval et les menaces contre les voies maritimes exposent les échanges et les infrastructures essentielles. Les frappes causant des victimes civiles et la vulnérabilité des services humanitaires aggravent la situation. Une revendication d’attaque n’équivaut cependant pas à la confirmation d’un impact ni d’une destruction. Ce classement ne signifie pas qu’une guerre mondiale ou une attaque sur le territoire des États-Unis est imminente ; il sera réévalué sur la base de faits nouveaux vérifiés et de l’application réelle des médiations.",
+        "visible": true,
+        "watch_down": [
+          "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
+          "Respect contrôlé des cessez-le-feu et amélioration effective de l’accès humanitaire.",
+          "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
+          "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
+        ],
+        "last_update": "2026-11-23T19:46",
+        "status": "suivi",
+        "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
+        "sources": [
+          {
+            "label": "OCHA — rapport humanitaire, 13 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026",
+            "note": "Données attribuées, période de référence du 3 au 9 novembre pour Gaza ; volet Cisjordanie."
+          },
+          {
+            "label": "Reuters — frappes entre l’Iran, les États-Unis et dans le Golfe, 17–18 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-potential-threat-urges-residents-seek-safety-2026-11-17/",
+            "note": "Échanges de frappes et déclarations des différentes parties."
+          },
+          {
+            "label": "Associated Press — bilan régional du 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/saudi-yemen-war-iran-november-19-2026-e72472c557057943cab32010666b29bf",
+            "note": "Liban, Yémen, Arabie saoudite, Irak et détroit d’Ormuz ; distinguer affirmations militaires et faits confirmés."
+          },
+          {
+            "label": "Associated Press via OPB — démarches diplomatiques régionales, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.opb.org/article/2026/11/18/mideast-nations-ramp-up-efforts-to-avert-all-out-war-as-israel-urges-iran-strikes-officials-say/",
+            "note": "Efforts de médiation rapportés avec attribution à des responsables régionaux anonymes."
+          },
+          {
+            "label": "OCHA — rapport humanitaire du 18 novembre 2026",
+            "type": "Organisation internationale",
+            "url": "https://www.ochaopt.org/content/humanitarian-situation-report-18-november-2026",
+            "note": "Hôpital Nasser, bilan rapporté par le ministère de la Santé de Gaza, pluies et abris."
+          },
+          {
+            "label": "Reuters — frappes sur Hodeïda et tensions en mer Rouge, 20 novembre 2026",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/yemens-houthis-threaten-strike-saudi-red-sea-ports-2026-11-20/",
+            "note": "Annonces et revendications attribuées à la coalition, aux Houthis et au ministre yéménite de l’Information."
+          },
+          {
+            "label": "Associated Press — Sanaa et violences en Cisjordanie, 22 novembre 2026",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/mideast-houthis-west-bank-november-22-2026-8d1680a23d592667db1ce1969b55b4f2",
+            "note": "Informations attribuées aux autorités houthies et enquête annoncée par la police israélienne."
+          },
+          {
+            "label": "Reuters — Bahreïn : bilan révisé des attaques du 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
+            "note": "Deux blessés selon le ministère de l’Intérieur du Bahreïn ; revendications des Gardiens de la révolution attribuées."
+          },
+          {
+            "label": "Axios — rencontre entre émissaires américains et représentants du Qatar, 20 novembre",
+            "type": "Média",
+            "url": "https://www.axios.com/2026/11/20/witkoff-kushner-meet-qatari-mediators-iran",
+            "note": "Rencontre rapportée par deux sources ; aucun accord annoncé."
+          },
+          {
+            "label": "Reuters — contacts irano-qataris, 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/qatari-delegation-visits-tehran-talks-iranian-official-says-2026-11-21/",
+            "note": "Visite attribuée à une déclaration d’un responsable iranien."
+          },
+          {
+            "label": "Qatar — déclaration conjointe avec l’Allemagne, 21 novembre",
+            "type": "Source officielle",
+            "url": "https://mofa.gov.qa/en/latest-articles/statements/joint-declarationon-the-occasion-of-the-state-visit-of-the-emir-of-the-state-of-qatarto-the-federal-republic-of-germany",
+            "note": "Gaza, Yémen, navigation et coopération pour la médiation."
+          },
+          {
+            "label": "France, Allemagne, Royaume-Uni et États-Unis — déclaration au Conseil des gouverneurs de l’AIEA",
+            "type": "Source officielle",
+            "url": "https://www.gov.uk/government/speeches/quad-statement-to-iaea-board-of-governors-november-2026",
+            "note": "Position des quatre pays et référence aux rapports de l’AIEA."
+          },
+          {
+            "label": "Conseil de l’UE — conclusions Affaires étrangères, 16 novembre",
+            "type": "Source officielle",
+            "url": "https://www.consilium.europa.eu/en/meetings/fac/2026/11/16/",
+            "note": "Annonce de la prochaine concertation avec les pays du Golfe."
+          },
+          {
+            "label": "Reuters — Gaza : trois morts dont un employé de l’UNRWA, 23 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/israeli-strike-kills-worker-with-un-palestinian-agency-gaza-agency-says-2026-11-23/",
+            "note": "Décès confirmé par l’UNRWA et bilans attribués aux autorités sanitaires."
+          },
+          {
+            "label": "Reuters — Iran et blocus naval américain, 23 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/iran-says-it-will-use-all-available-tools-confront-us-naval-blockade-2026-11-23/",
+            "note": "Déclaration officielle iranienne, non annonce d’attaque."
+          },
+          {
+            "label": "Reuters — revendication houthie concernant Rabigh, 22 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-rabigh-oil-refinery-2026-11-22/",
+            "note": "Impacts et dommages non confirmés indépendamment."
+          }
+        ],
+        "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
+        "category": "Géopolitique · Proche-Orient"
+      }
+    },
+    {
+      "point_slug": "proche-orient-israel-palestine-iran-escalade-regionale",
       "recorded_at": "2026-11-23T10:52:36Z",
       "label": "Chronologie corrigée du 23 novembre",
       "commit_sha": "981314620816bf9d95e3658ff10ae12bcece0ebe",
