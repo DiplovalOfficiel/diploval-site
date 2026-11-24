@@ -737,6 +737,335 @@
     },
     {
       "point_slug": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "recorded_at": "2026-11-23T19:02:39Z",
+      "label": "Édition du 23 novembre — incidents, OTAN, Libye et tensions européennes",
+      "commit_sha": "489c65d9e4cb0701c6067665e4eec66099cdc83b",
+      "point": {
+        "show_home": true,
+        "level": "2",
+        "summary": "Les négociations sur un éventuel cessez-le-feu se poursuivent sans accord général. Plusieurs incidents récents ont accru les tensions avec des États membres de l’OTAN : missiles russes tombés en Pologne, incident maritime dans le golfe de Finlande et accusations russes contre l’Estonie. Le 23 novembre, la Pologne a annoncé la mise à disposition d’un AWACS de l’OTAN. L’Ukraine a par ailleurs revendiqué des attaques navales contre des bâtiments russes en Libye, tandis que de nouvelles victimes civiles sont signalées sur son territoire. Diploval maintient le niveau 2 — Vigilance renforcée et un réexamen prioritaire des risques de débordement.",
+        "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
+        "opened_at": "2026-11-19T11:50",
+        "updates": [
+          {
+            "datetime": "2026-11-23T19:46",
+            "event_date": "2026-11-23",
+            "event_label": "23 novembre 2026",
+            "title": "Pologne–OTAN : AWACS annoncé après la réunion de Bruxelles",
+            "body": "Après les consultations du Conseil de l’Atlantique Nord du 23 novembre sur les trois missiles russes Kh-101 tombés en Pologne le 20 novembre, le vice-ministre polonais de la Défense Paweł Zalewski a annoncé qu’un avion AWACS de surveillance et d’alerte avancée de l’OTAN serait mis à disposition de la Pologne. Il s’agit d’une réponse défensive concrète annoncée, sans engagement militaire direct contre la Russie. Le calendrier précis et la mise en œuvre opérationnelle restent à confirmer ; Varsovie n’a pas annoncé d’invocation de l’article 4 dans les sources consultées.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T19:46",
+            "event_date": "2026-11-23",
+            "event_label": "23 novembre 2026",
+            "title": "Russie–Estonie : accusations et tensions autour de la fermeture de frontière",
+            "body": "Le ministère russe des Affaires étrangères accuse l’Estonie d’actions « à la limite du déclenchement d’une guerre ouverte », et affirme que son territoire permettrait le passage de drones ukrainiens. Ces accusations sont celles de Moscou et ne sont pas établies indépendamment ; Tallinn les rejette. Le gouvernement estonien a décidé le 20 novembre de suspendre les passages routiers frontaliers avec la Russie à compter du 1er décembre, invoquant des préoccupations de sécurité. Il s’agit d’une escalade rhétorique et diplomatique, non d’un affrontement militaire direct confirmé.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T19:46",
+            "event_date": "2026-11-23",
+            "event_label": "23 novembre 2026",
+            "title": "Commission européenne : proposition d’un 22e paquet de sanctions",
+            "body": "La présidente de la Commission européenne a présenté le 23 novembre un projet de 22e paquet de sanctions contre la Russie, visant notamment des institutions financières, des plateformes de cryptomonnaies et les possibilités de contournement des restrictions, ainsi que des mesures concernant des compétitions sportives. Il s’agit d’une proposition européenne, qui n’équivaut pas à l’entrée en vigueur de l’ensemble des mesures ; elle dépend encore de la procédure d’adoption.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T19:46",
+            "event_date": "2026-11-23",
+            "event_label": "22–23 novembre 2026 — bilans communiqués les 23",
+            "title": "Ukraine : nouvelles victimes civiles près de Kyiv et à Zaporijjia",
+            "body": "Le bilan d’une attaque russe du 22 novembre ayant touché un immeuble résidentiel à Dymer, près de Kyiv, est monté à onze morts le 23 novembre, selon les autorités ukrainiennes citées par Reuters ; des survivants ont été extraits des décombres. Associated Press rapporte également trois morts après une frappe sur un hôpital à Zaporijjia le 23 novembre, selon l’administration militaire régionale. Ces bilans sont attribués aux autorités locales et doivent rester susceptibles d’être révisés. Les conséquences pour les civils et les établissements de santé justifient une mise à jour humanitaire distincte.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T12:37",
+            "event_date": "2026-11-23",
+            "event_label": "23 novembre 2026",
+            "title": "Réaction du Kremlin et consultations annoncées à l’OTAN",
+            "body": "Le Kremlin a accusé l’Ukraine d’« activité terroriste » en mer Baltique à la suite de l’attaque du cargo russe Sparta II, selon Reuters. Il s’agit de la qualification employée par Moscou, non d’une conclusion juridique indépendante. Après l’entrée de missiles russes en Pologne le 20 novembre, une réunion du Conseil de l’Atlantique Nord est annoncée à Bruxelles le 23 novembre. Aucun résultat de cette réunion, aucune décision opérationnelle nouvelle ni aucun affrontement direct Russie–OTAN ne sont confirmés par les sources disponibles au moment de cette actualisation.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T19:46",
+            "event_date": "2026-11-22",
+            "event_label": "22 novembre 2026 — revendication officielle le 23",
+            "title": "Libye : attaques ukrainiennes revendiquées contre deux navires russes à Benghazi",
+            "body": "Le 23 novembre, le président ukrainien Volodymyr Zelensky a revendiqué une opération menée la veille par des drones navals ukrainiens près de Benghazi, en Libye, contre la corvette russe Merkury et le cargo MV Angara. Reuters a vérifié des images montrant les frappes et des incendies ; Zelensky affirme que la corvette a coulé, tandis que le gouvernement de l’est libyen a signalé une attaque et demandé une enquête. Les autorités libyennes ont dénoncé l’opération. L’état final des navires, le bilan humain et les responsabilités territoriales éventuelles restent à documenter ; cette extension géographique ne constitue pas, en elle-même, un affrontement avec l’OTAN.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T12:37",
+            "event_date": "2026-11-21",
+            "event_label": "21–22 novembre 2026",
+            "title": "Golfe de Finlande : le Sparta II touché et un survol russe suspecté",
+            "body": "Le 21 novembre, les forces finlandaises ont détecté une attaque de drones contre le cargo russe Sparta II, en eaux internationales à l’ouest de l’île de Suursaari/Gogland. Le navire, exploité par une entreprise liée à la logistique militaire russe, a pris feu avant de dériver dans les eaux territoriales finlandaises. Ses 16 membres d’équipage ont été évacués et un blessé léger a été signalé ; un remorqueur russe a commencé à l’évacuer le 22 novembre, avec l’aide des secours finlandais, russes et estoniens. Les autorités finlandaises jugent probable une responsabilité ukrainienne, non encore confirmée par Kyiv au moment des rapports cités. Elles enquêtent aussi sur une possible intrusion d’un hélicoptère russe jusqu’à 4,1 kilomètres dans leur espace aérien, potentiellement liée aux opérations de secours. Aucune confrontation armée avec les forces de l’OTAN ni pollution pétrolière confirmée n’a été signalée. La nature exacte du chargement du cargo reste inconnue.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-22T13:45",
+            "title": "Sécurité européenne : Washington propose d’élargir les discussions",
+            "body": "Les émissaires américains ont proposé de discuter de la sécurité européenne après la guerre. Moscou soutient cette piste et réaffirme ses exigences antérieures. Le 21 novembre, Volodymyr Zelensky a dit douter que Vladimir Poutine soit prêt à faire des compromis. Il a demandé que soient fixés la date et l’ordre du jour du prochain cycle de pourparlers. Diploval maintient le niveau 2 — Vigilance renforcée.",
+            "sources": [
+              {
+                "label": "Associated Press — proposition américaine sur la sécurité européenne, 20 novembre",
+                "url": "https://apnews.com/article/60752c921b031be80b1f7a9e83455a0e"
+              },
+              {
+                "label": "Reuters — déclarations de Volodymyr Zelensky, 21 novembre",
+                "url": "https://www.reuters.com/world/europe/trump-told-european-leaders-they-were-spending-lot-ukraine-zelenskiy-says-2026-11-21/"
+              }
+            ],
+            "event_date": "2026-11-21",
+            "event_label": "20–21 novembre 2026"
+          },
+          {
+            "datetime": "2026-11-23T12:37",
+            "event_date": "2026-11-20",
+            "event_label": "20 novembre 2026 — identification judiciaire annoncée le 22",
+            "title": "Pologne : trois missiles de croisière russes Kh-101 tombés sur le territoire",
+            "body": "Le 20 novembre, trois engins russes ont pénétré l’espace aérien polonais et sont tombés près de Nowy Lipowiec, Rudnik nad Sanem et Mołodycz. Le 22 novembre, les procureurs polonais ont indiqué que l’examen préliminaire des débris avait identifié les trois engins comme des missiles de croisière russes Kh-101, et non deux missiles et un drone comme envisagé initialement. Les autorités polonaises n’ont signalé ni victime ni dommage à une infrastructure critique. Le gouvernement polonais soupçonne une provocation, notamment à proximité d’exercices militaires alliés, mais l’intentionnalité de la trajectoire n’est pas établie à ce stade. L’OTAN a dénoncé cette violation et annoncé des consultations. Cet épisode rapproche concrètement le risque militaire d’un territoire allié, sans constituer en soi une confrontation armée directe OTAN–Russie.",
+            "correction": false,
+            "sources": []
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "Moscou propose des contacts exploratoires avec les Européens",
+            "body": "Le 19 novembre, Vladimir Poutine a déclaré avoir invité des représentants européens à Moscou pour clarifier leur position avant d’arrêter le format de futures négociations sur l’Ukraine. Il ne s’agit pas d’une rencontre déjà tenue : à la date de cette mise à jour, aucune date ou participation définitive n’est confirmée. Le sommet Trump–Poutine–Xi du même jour à Shenzhen a abouti à une déclaration générale sur les risques nucléaires et la coopération internationale, sans accord spécifique sur l’Ukraine ni sur l’Iran.",
+            "correction": false,
+            "sources": [],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026 — annonce d’invitation"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T21:50",
+            "title": "Berlin : projets de garanties de sécurité",
+            "body": "À Berlin, la Coalition des volontaires, l’Ukraine et les États-Unis ont confirmé leur intention de coordonner le soutien militaire, financier et diplomatique à Kyiv. La déclaration publiée par l’Élysée expose plusieurs garanties envisagées une fois un cessez-le-feu entré en vigueur : mécanisme de surveillance conduit par les États-Unis, force multinationale européenne soutenue par Washington et engagements juridiquement contraignants soumis aux procédures nationales. Ces dispositifs restent des propositions conditionnelles. L’équipe européenne désignée le 13 novembre associe les institutions de l’UE à la France, l’Allemagne, l’Italie, la Pologne et le Royaume-Uni.",
+            "sources": [
+              {
+                "label": "Élysée — déclaration conjointe du 19 novembre",
+                "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine"
+              }
+            ],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T11:51",
+            "title": "Niveau 2 maintenu — bilan initial des négociations et des risques",
+            "body": "Les échanges diplomatiques restent ouverts et plusieurs propositions de cessez-le-feu, de garanties de sécurité et de désescalade continuent d’être examinées. Aucun accord général n’est toutefois conclu à ce jour. L’activité militaire demeure élevée, mais aucun élément suffisamment établi ne justifie un passage au Code One. Diploval maintient donc le niveau 2 — Vigilance renforcée et poursuit le suivi des négociations et du risque d’escalade régionale.",
+            "sources": [],
+            "event_date": "2026-11-19",
+            "event_label": "19 novembre 2026 — point de situation initial"
+          },
+          {
+            "correction": false,
+            "datetime": "2026-11-19T12:15",
+            "title": "Avertissement russe concernant les personnels français en Ukraine",
+            "body": "À la suite des révélations sur la mission française « Volia », Sergueï Lavrov a qualifié la présence de personnels militaires français en Ukraine de « participation directe » au conflit. Paris conteste cette qualification et présente ces missions comme limitées à la formation et à la maintenance, sans participation aux combats. Cet épisode accroît le risque qu’une frappe russe implique directement des personnels français et provoque une crise bilatérale France–Russie. À ce stade, il ne constitue ni une attaque contre le territoire français ni un affrontement militaire direct France–Russie ; le niveau 2 — Vigilance renforcée est donc maintenu.",
+            "sources": [
+              {
+                "label": "Associated Press",
+                "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f"
+              },
+              {
+                "label": "Euronews — 17 novembre 2026",
+                "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war"
+              }
+            ],
+            "event_date": "2026-11-17",
+            "event_label": "17 novembre 2026 — déclarations"
+          },
+          {
+            "datetime": "2026-11-23T11:35",
+            "title": "Abu Dhabi : bilan des négociations et annonce d’échange de prisonniers",
+            "body": "Les délégations ukrainienne et russe se sont retrouvées les 10 et 11 novembre à Abu Dhabi sous médiation américaine, après neuf mois d’interruption des négociations directes. Les parties sont parvenues à un accord de principe sur un important échange de prisonniers, dont les modalités et la réalisation restent à vérifier séparément. Aucune avancée décisive n’a été annoncée concernant le territoire ou les garanties de sécurité.",
+            "correction": false,
+            "sources": [],
+            "event_date": "2026-11-11",
+            "event_label": "10–11 novembre 2026 — pourparlers"
+          }
+        ],
+        "watch_up": [
+          "Frappe russe entraînant des morts ou blessés parmi les personnels militaires français présents en Ukraine, notamment si le caractère intentionnel ou ciblé est établi.",
+          "Menace russe explicitement étendue des personnels français présents en Ukraine à des objectifs militaires ou civils situés sur le territoire français ou celui d’un État de l’OTAN.",
+          "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.",
+          "Affrontement militaire direct entre forces russes et forces françaises ou de l’OTAN.",
+          "Multiplication coordonnée d’incidents graves dans plusieurs États alliés.",
+          "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
+          "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
+        ],
+        "why_level": "Les missiles russes tombés en Pologne, les incidents en mer Baltique, les tensions russo-estoniennes et la mise à disposition annoncée d’un AWACS de l’OTAN témoignent d’une aggravation du risque d’incident impliquant un pays allié. Les attaques ukrainiennes revendiquées contre des navires russes en Libye montrent également une extension géographique du conflit. Pour autant, les éléments vérifiés ne démontrent pas à cette heure une attaque intentionnelle aux conséquences graves contre un État de l’OTAN ni un affrontement militaire direct Russie–OTAN. Les garanties de sécurité et pourparlers restent sans cessez-le-feu général appliqué. Le niveau 2 est maintenu, avec réévaluation immédiate requise en cas de confrontation directe, d’attaque attribuée ayant des conséquences majeures sur un territoire allié ou de changement stratégique documenté.",
+        "visible": true,
+        "watch_down": [
+          "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
+          "Réduction durable des frappes et des incidents transfrontaliers.",
+          "Mise en place effective d’un mécanisme commun de surveillance.",
+          "Accord sur des mesures de désescalade militaire ou énergétique.",
+          "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
+          "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
+        ],
+        "last_update": "2026-11-23T19:46",
+        "status": "suivi",
+        "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
+        "sources": [
+          {
+            "label": "Conseil de l’Union européenne — prolongation de l’EUMAM Ukraine",
+            "type": "Source officielle",
+            "url": "https://www.consilium.europa.eu/fr/press/press-releases/2026/11/09/ukraine-council-extends-eu-military-assistance-mission-mandate-for-two-years/",
+            "note": "Cadre officiel européen de l’assistance et de la formation militaires à l’Ukraine."
+          },
+          {
+            "label": "Associated Press — présence française en Ukraine et réaction russe",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/france-russia-ukraine-lavrov-military-afc33d7b112ceb781932a7d00396373f",
+            "note": "Synthèse factuelle sur la mission française, les déclarations russes et la réponse de Paris."
+          },
+          {
+            "label": "Euronews — réponse française aux déclarations de Sergueï Lavrov",
+            "type": "Média",
+            "url": "https://www.euronews.com/2026/11/17/french-foreign-minister-slams-lavrov-accusations-about-direct-participation-in-ukraine-war",
+            "note": "Déclarations de Jean-Noël Barrot et rappel des propos russes du 17 novembre 2026."
+          },
+          {
+            "label": "Reuters — Poutine propose la venue de représentants européens à Moscou, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/china/putin-says-russia-invited-europeans-moscow-clarify-position-ukraine-talks-2026-11-19/",
+            "note": "Invitation déclarée, pas rencontre confirmée."
+          },
+          {
+            "label": "Élysée — déclaration conjointe de Berlin, 19 novembre",
+            "type": "Source officielle",
+            "url": "https://www.elysee.fr/emmanuel-macron/2026/11/19/declaration-conjointe-des-chefs-detat-et-de-gouvernement-de-lallemagne-de-la-france-du-royaume-uni-et-de-lukraine",
+            "note": "Projets de garanties de sécurité conditionnels."
+          },
+          {
+            "label": "Gouvernement allemand — Coalition des volontaires et composition E5",
+            "type": "Source officielle",
+            "url": "https://www.bundesregierung.de/breg-fr/service/coalition-volontaires-berlin-2461998",
+            "note": "Réunion du 19 novembre et représentation européenne décidée le 13."
+          },
+          {
+            "label": "Reuters — pourparlers et accord de principe d’échange de prisonniers à Abu Dhabi, 11 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/europe/us-russia-ukraine-start-second-day-abu-dhabi-peace-talks-2026-11-11/",
+            "note": "Accord annoncé, mise en œuvre à confirmer."
+          },
+          {
+            "label": "Reuters — sommet Trump–Poutine–Xi et déclaration de Shenzhen, 19 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/china/trumps-historic-meeting-with-xi-putin-headlines-asia-trip-2026-11-18/",
+            "note": "Déclaration sans accord propre au conflit ukrainien."
+          },
+          {
+            "label": "Parquet polonais — enquête sur les trois engins tombés en Pologne, 21 novembre",
+            "type": "Source officielle",
+            "url": "https://www.gov.pl/web/po-lublin/aktualny-stan-czynnosci-procesowych-w-sprawie-ujawnienia-obiektow-latajacych-na-terenie-wojewodztwa-lubelskiego-i-podkarpackiego",
+            "note": "Enquête et lieux de chute ; conclusions préliminaires ensuite précisées par Reuters."
+          },
+          {
+            "label": "Ministère polonais de la Défense — bilan du 20 novembre 2026",
+            "type": "Source officielle",
+            "url": "https://www.gov.pl/web/obrona-narodowa/wicepremier-w-kosiniak-kamysz-o-naruszeniu-polskiej-przestrzeni-powietrznej",
+            "note": "Absence de victimes et de dommages signalés aux infrastructures critiques."
+          },
+          {
+            "label": "Reuters — identification des trois missiles russes Kh-101, 22 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/three-russian-missiles-flew-into-poland-friday-prosecutors-say-2026-11-22/",
+            "note": "Information attribuée aux procureurs polonais ; réunion OTAN annoncée."
+          },
+          {
+            "label": "Reuters — Sparta II, golfe de Finlande et survol suspecté, 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/russia-says-cargo-vessel-struck-by-drones-finland-says-it-is-fire-its-waters-2026-11-21/",
+            "note": "Constats finlandais, responsabilités présumées et incertitudes sur la cargaison."
+          },
+          {
+            "label": "Reuters — remorquage du Sparta II, 22 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/europe/russian-cargo-ship-still-fire-off-finland-after-attack-2026-11-22/",
+            "note": "Secours multinationaux, évacuation et remorquage."
+          },
+          {
+            "label": "AFP — Finlande : hélicoptère russe soupçonné de survol, 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.afp.com/en/russian-cargo-ship-catches-fire-after-ukrainian-strike-baltic",
+            "note": "Déclaration du ministre finlandais et estimation de 4,1 kilomètres."
+          },
+          {
+            "label": "Reuters — déclaration du Kremlin sur la mer Baltique, 23 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/europe/kremlin-accuses-ukraine-terrorist-activity-baltic-after-cargo-ship-drone-strike-2026-11-23/",
+            "note": "Qualification de Moscou attribuée, pas établie juridiquement."
+          },
+          {
+            "label": "Reuters — position de l’OTAN après les incidents en Pologne, 21 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/nato-will-defend-every-inch-polish-territory-rutte-says-2026-11-21/",
+            "note": "Déclaration du secrétaire général et consultations annoncées."
+          },
+          {
+            "label": "Reuters — AWACS annoncé pour la Pologne après la réunion OTAN, 23 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/business/aerospace-defense/nato-send-early-warning-system-aircraft-poland-after-missiles-incident-2026-11-23/",
+            "note": "Annonce du vice-ministre polonais de la Défense, mise en œuvre à suivre."
+          },
+          {
+            "label": "Ministère estonien des Affaires étrangères — fermeture de la frontière, 20 novembre",
+            "type": "Source officielle",
+            "url": "https://www.vm.ee/en/news/foreign-minister-tsahkna-border-closure-russias-hostile-activities-against-estonia-and-europe",
+            "note": "Décision de Tallinn ; fermeture prévue à partir du 1er décembre."
+          },
+          {
+            "label": "Reuters/AFP via RTÉ — accusations russes contre l’Estonie, 23 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.rte.ie/news/world/2026/1123/1600353-russia-estonia-finland/",
+            "note": "Propos russes attribués et position estonienne."
+          },
+          {
+            "label": "Commission européenne — proposition de 22e paquet de sanctions, 23 novembre",
+            "type": "Source officielle",
+            "url": "https://cyprus.representation.ec.europa.eu/news/statement-president-von-der-leyen-22nd-package-sanctions-against-russia-2026-11-23_en",
+            "note": "Présentation par Ursula von der Leyen : proposition, non adoption."
+          },
+          {
+            "label": "Reuters — deux bâtiments russes attaqués en Libye, 23 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/europe/zelenskiy-says-ukraine-sank-russian-corvette-near-libyas-coast-hit-cargo-ship-2026-11-23/",
+            "note": "Vidéos vérifiées ; naufrage revendiqué et enquête demandée."
+          },
+          {
+            "label": "Reuters — Dymer, bilan des victimes civiles révisé, 23 novembre",
+            "type": "Agence de presse",
+            "url": "https://www.reuters.com/world/russian-attack-ukraines-dymer-kyiv-region-kills-11-official-says-2026-11-23/",
+            "note": "Onze morts selon les autorités ukrainiennes."
+          },
+          {
+            "label": "Associated Press — frappe sur un hôpital à Zaporijjia, 23 novembre",
+            "type": "Agence de presse",
+            "url": "https://apnews.com/article/c382f8eb06dca7d87e89bc6c18ba7d61",
+            "note": "Trois morts selon l’administration ukrainienne."
+          }
+        ],
+        "category": "Géopolitique · Europe",
+        "related_publication": "accord-cadre-ukraine-russie-v01",
+        "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix."
+      }
+    },
+    {
+      "point_slug": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
       "recorded_at": "2026-11-23T11:39:47Z",
       "label": "Incidents en Baltique et en Pologne",
       "commit_sha": "230b54f7cacda4f2bc08d5594eb0c7b00cc3bda8",
