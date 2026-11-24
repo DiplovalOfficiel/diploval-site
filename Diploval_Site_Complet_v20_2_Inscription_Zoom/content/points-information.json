@@ -8,7 +8,7 @@
       "opened_at": "2026-11-19T11:50",
       "updates": [
         {
-          "datetime": "2026-11-24T10:19",
+          "datetime": "2026-11-24T10:39",
           "event_date": "2026-11-24",
           "event_label": "Nuit du 23 au 24 novembre 2026",
           "title": "Pologne — Nouvelle intrusion de drone dans l’espace aérien polonais",
@@ -30,7 +30,7 @@
           ]
         },
         {
-          "datetime": "2026-11-24T10:19",
+          "datetime": "2026-11-24T10:39",
           "event_date": "2026-11-24",
           "event_label": "Nuit du 23 au 24 novembre 2026",
           "title": "Zaporijjia — Deux morts et 40 blessés annoncés après les frappes russes",
@@ -46,7 +46,7 @@
           ]
         },
         {
-          "datetime": "2026-11-24T10:19",
+          "datetime": "2026-11-24T10:39",
           "event_date": "2026-11-23",
           "event_label": "23 novembre 2026 — enquête journalistique, pas lancement confirmé",
           "title": "Espace — Renseignement rapporté sur un possible satellite russe à capacité nucléaire",
@@ -74,7 +74,7 @@
           ]
         },
         {
-          "datetime": "2026-11-24T10:19",
+          "datetime": "2026-11-24T10:39",
           "event_date": "2026-11-23",
           "event_label": "23 novembre 2026 — déclaration de l’UE sur des faits accumulés",
           "title": "Mer Noire — L’Union européenne alerte sur les attaques contre les navires commerciaux",
@@ -171,7 +171,7 @@
           "event_label": "20–21 novembre 2026"
         },
         {
-          "datetime": "2026-11-24T10:19",
+          "datetime": "2026-11-24T10:39",
           "event_date": "2026-11-20",
           "event_label": "20 novembre 2026 — attribution publique d’un projet déjoué le 25 septembre",
           "title": "Danemark — Projet d’assassinat déjoué, attribué aux services russes",
@@ -252,7 +252,7 @@
           "event_label": "17 novembre 2026 — déclarations"
         },
         {
-          "datetime": "2026-11-24T10:19",
+          "datetime": "2026-11-24T10:39",
           "event_date": "2026-11-16",
           "event_label": "14–16 novembre 2026 — tentative et attribution officielle",
           "title": "Estonie — Tentative d’incendie d’une entreprise de défense, attribuée au GRU",
@@ -296,7 +296,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-24T10:19",
+      "last_update": "2026-11-24T10:39",
       "status": "suivi",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
       "sources": [
