@@ -286,6 +286,7 @@
         "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
         "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
       ],
+      "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix.",
       "why_level": "Le niveau 2 — Vigilance renforcée — est maintenu au 24 novembre. La répétition des intrusions en Pologne, les incidents maritimes et aériens en Baltique, la réponse défensive de l’OTAN, les menaces russes envers les personnels militaires français présents en Ukraine et les opérations hybrides attribuées par les autorités danoise et estonienne justifient une réévaluation prioritaire. Les données présentées le 23 novembre par l’Union européenne sur la sécurité des navires en mer Noire renforcent également la surveillance. Ces éléments n’ont pas tous le même statut : les violations de l’espace polonais sont déclarées par les autorités polonaises ; les responsabilités des opérations hybrides relèvent d’attributions officielles ; le projet de satellite nucléaire est rapporté par une enquête sur des renseignements non publiquement confirmés. Aucun affrontement militaire direct Russie–OTAN, aucune attaque délibérée grave contre un État allié et aucun changement nucléaire effectif ne sont démontrés par les vérifications disponibles. Le Code One reste une possibilité de décision préventive si la convergence des risques s’aggrave ou si un franchissement majeur est établi ; il ne signifierait pas nécessairement qu’une guerre générale a commencé. Les mécanismes de retenue observés et les canaux diplomatiques encore actifs doivent rester pris en compte.",
       "visible": true,
       "watch_down": [
@@ -298,6 +299,7 @@
       ],
       "last_update": "2026-11-24T10:39",
       "status": "suivi",
+      "related_publication": "accord-cadre-ukraine-russie-v01",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
       "sources": [
         {
@@ -499,15 +501,13 @@
           "note": "Convocation diplomatique, attribution au GRU et décision de fermeture frontalière annoncée."
         }
       ],
-      "category": "Géopolitique · Europe",
-      "related_publication": "accord-cadre-ukraine-russie-v01",
-      "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix."
+      "category": "Géopolitique · Europe"
     },
     {
       "show_home": true,
       "level": "1",
       "summary": "Au 24 novembre 2026, le Code One reste en vigueur pour le Proche-Orient. À Gaza, de nouvelles frappes ont fait au moins six morts selon les autorités sanitaires locales malgré le cessez-le-feu fragile. Au Yémen, des frappes signalées contre des installations de télécommunications à Hodeïda ont donné lieu à des bilans houthies successifs non vérifiés indépendamment. Dans le détroit d'Ormuz, l'Iran affirme que trois pétroliers ont heurté des mines, sans confirmation indépendante des impacts ; des investigations américaines portent aussi sur de possibles cyberattaques contre des navires, sans responsabilité établie. Les États-Unis ont annoncé de nouvelles sanctions financières contre des réseaux iraniens, tandis que des échanges avec le Qatar maintiennent ouverte une voie diplomatique. Diploval distingue les faits établis, les revendications et les enquêtes en cours.",
-      "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
+      "social_image": "/assets/uploads/diploval-_-tensions-au-proche-orient.png",
       "opened_at": "2026-11-19T22:08",
       "updates": [
         {
