@@ -702,10 +702,92 @@
     {
       "show_home": true,
       "level": "1",
-      "summary": "Au 24 novembre 2026, le Code One reste en vigueur pour le Proche-Orient. À Gaza, de nouvelles frappes ont fait au moins six morts selon les autorités sanitaires locales malgré le cessez-le-feu fragile. Au Yémen, des frappes signalées contre des installations de télécommunications à Hodeïda ont donné lieu à des bilans houthies successifs non vérifiés indépendamment. Dans le détroit d'Ormuz, l'Iran affirme que trois pétroliers ont heurté des mines, sans confirmation indépendante des impacts ; des investigations américaines portent aussi sur de possibles cyberattaques contre des navires, sans responsabilité établie. Les États-Unis ont annoncé de nouvelles sanctions financières contre des réseaux iraniens, tandis que des échanges avec le Qatar maintiennent ouverte une voie diplomatique. Diploval distingue les faits établis, les revendications et les enquêtes en cours.",
+      "summary": "Au 24 novembre 2026, le Code One est maintenu. Une nouvelle attaque contre le quartier financier de Riyad a fait des blessés selon les autorités saoudiennes. La progression houthie vers Aden est rapportée par les autorités yéménites. UKMTO confirme un incident impliquant trois navires dans le détroit d’Ormuz, sans confirmer la revendication iranienne de mines. À Gaza, de nouvelles victimes et le décès d’un responsable de la sécurité intérieure du Hamas sont rapportés. La France a condamné les violences de colons en Cisjordanie. Les conditions posées par Téhéran compliquent les négociations, tandis que la médiation qatarie demeure active.",
       "social_image": "/assets/uploads/diploval-_-tensions-au-proche-orient.png",
       "opened_at": "2026-11-19T22:08",
       "updates": [
+        {
+          "datetime": "2026-11-24T17:52",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026",
+          "title": "Arabie saoudite — Nouvelle attaque contre une tour du quartier financier de Riyad",
+          "body": "La coalition dirigée par l’Arabie saoudite rapporte une nouvelle attaque contre une tour du quartier financier de Riyad. Les secours saoudiens font état de onze blessés. Reuters et le Financial Times identifient le bâtiment comme le siège du fonds souverain saoudien, déjà visé le 19 novembre. L’attaque s’inscrit dans le contexte des hostilités avec les Houthis ; Associated Press précise qu’aucune revendication immédiate n’était connue dans sa dépêche. L’attribution ne doit donc pas être assimilée à une revendication vérifiée.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Reuters — nouvelle attaque contre une tour de Riyad, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://www.reuters.com/world/middle-east/saudi-led-coalition-says-tower-riyadh-finance-district-targeted-by-terrorist-2026-11-24/",
+              "note": "Attaque et bilan rapportés ; attribution à distinguer d’une revendication."
+            },
+            {
+              "label": "Financial Times — attaque contre le siège du fonds souverain saoudien",
+              "type": "Média",
+              "url": "https://www.ft.com/content/ecdf59b6-c78b-4703-bc26-8d085d7b9d24",
+              "note": "Identification du bâtiment et contexte."
+            },
+            {
+              "label": "Associated Press — Aden, Iran et Gaza, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://apnews.com/article/ba01cb036a849ba69873da5000ee08d5",
+              "note": "Déclarations des autorités yéménites et iraniennes et bilans attribués aux sources locales."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T17:52",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — déclaration militaire rapportée",
+          "title": "Yémen — Progression houthie vers Aden",
+          "body": "Associated Press rapporte que les forces houthies progressent vers Aden, siège du gouvernement internationalement reconnu du Yémen, selon un porte-parole militaire yéménite. Les autorités gouvernementales déclarent renforcer la défense de la ville. La progression rapportée constitue un facteur de risque pour les institutions et les populations locales ; son ampleur exacte reste à vérifier indépendamment.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Associated Press — Aden, Iran et Gaza, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://apnews.com/article/ba01cb036a849ba69873da5000ee08d5",
+              "note": "Déclarations des autorités yéménites et iraniennes et bilans attribués aux sources locales."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T17:52",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — déclaration iranienne",
+          "title": "Iran–États-Unis — Conditions posées à la reprise des négociations",
+          "body": "Le président du Parlement iranien Mohammad Bagher Ghalibaf réaffirme, selon la télévision d’État iranienne citée par Associated Press, que Téhéran ne négociera pas avec Washington avant satisfaction de sept conditions. Leur liste complète n’a pas été rendue publique par les autorités ; les médias d’État évoquent notamment la fin du blocus naval, la levée des sanctions et la restitution d’avoirs. Cette déclaration ne démontre pas la fermeture de tous les canaux de médiation.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Associated Press — Aden, Iran et Gaza, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://apnews.com/article/ba01cb036a849ba69873da5000ee08d5",
+              "note": "Déclarations des autorités yéménites et iraniennes et bilans attribués aux sources locales."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T17:52",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — complément au bilan du matin",
+          "title": "Gaza — Décès d’un responsable de la sécurité intérieure du Hamas et nouvelles victimes rapportées",
+          "body": "Reuters rapporte le décès de Naeem Abu Nahel, responsable de la sécurité intérieure du Hamas, dans une frappe israélienne. Associated Press rapporte également de nouvelles victimes dans plusieurs frappes intervenues entre lundi soir et mardi matin, selon les autorités locales. Les périodes et périmètres des bilans diffèrent : ils ne doivent pas être additionnés à ceux de l’édition du matin. Le cessez-le-feu demeure fragile.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Reuters — décès d’un responsable de la sécurité intérieure du Hamas, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://www.reuters.com/world/middle-east/israeli-airstrike-kills-senior-hamas-security-official-gaza-hamas-sources-say-2026-11-24/",
+              "note": "Identification attribuée aux sources du Hamas ; complément à l’édition du matin."
+            },
+            {
+              "label": "Associated Press — Aden, Iran et Gaza, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://apnews.com/article/ba01cb036a849ba69873da5000ee08d5",
+              "note": "Déclarations des autorités yéménites et iraniennes et bilans attribués aux sources locales."
+            }
+          ]
+        },
         {
           "datetime": "2026-11-24T10:44",
           "event_date": "2026-11-24",
@@ -735,6 +817,38 @@
               "type": "Agence de presse",
               "url": "https://www.reuters.com/world/middle-east/us-eyes-iran-possible-culprit-dozens-new-cyberattacks-against-ships-wsj-reports-2026-11-24/",
               "note": "Enquête et soupçons rapportés, non attribution vérifiée."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T17:52",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026 — avis UKMTO diffusé le 24",
+          "title": "Détroit d’Ormuz — Trois navires touchés selon un rapport maritime vérifié",
+          "body": "L’organisme britannique UKMTO indique dans son avis 219-26 avoir reçu un rapport vérifié concernant trois navires touchés par des projectiles de nature indéterminée dans le détroit d’Ormuz. Cette confirmation maritime ne permet pas d’établir l’identité de l’auteur, la nature précise des projectiles ni un lien certain avec la revendication iranienne concernant des mines déjà consignée au registre. Les deux informations restent distinctes.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "UKMTO — avis maritime 219-26, incident du 23 novembre",
+              "type": "Source officielle",
+              "url": "https://www.ukmto.org/recent-incidents?gsid=745e071d-c4fc-42ab-8dca-d38952901465",
+              "note": "Rapport vérifié concernant trois navires, nature des projectiles non établie."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T17:52",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026 — déclaration sur les faits des 21–22 novembre",
+          "title": "France — Condamnation des violences de colons en Cisjordanie",
+          "body": "Le ministère français de l’Europe et des Affaires étrangères condamne les attaques perpétrées dans plusieurs localités palestiniennes pendant la nuit du 21 au 22 novembre. Il demande aux autorités israéliennes de poursuivre les auteurs et de protéger les civils conformément au droit international. Cette déclaration constitue un complément diplomatique aux violences déjà documentées dans le registre, et non un nouvel incident.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "France Diplomatie — déclaration sur les attaques de colons en Cisjordanie, 23 novembre",
+              "type": "Source officielle",
+              "url": "https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/israelpalestine-attaques-de-colons-israeliens-en-cisjordanie-durant-la-nuit-du-21-au-22-novembre",
+              "note": "Position officielle française et rappel du droit international."
             }
           ]
         },
@@ -927,7 +1041,7 @@
         "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
       ],
       "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
-      "why_level": "Le niveau 1 — Code One reste justifié par la pluralité de fronts militaires régionaux actifs, les atteintes répétées aux populations et services essentiels, les échanges de frappes entre forces étatiques ou alliées, et les risques pesant sur le détroit d'Ormuz, la mer Rouge et les infrastructures énergétiques et humanitaires. Le 24 novembre, les nouvelles victimes signalées à Gaza et les informations sur les frappes à Hodeïda confirment la persistance de violences importantes. Les revendications iraniennes concernant des pétroliers et les accusations de cyberattaques ne sont toutefois pas des confirmations indépendantes de leurs auteurs, mécanismes ou bilans. Les entretiens États-Unis–Qatar constituent un facteur de désescalade à suivre. Le Code One est un signal de risque critique de propagation régionale, et non une affirmation qu'une guerre mondiale serait imminente.",
+      "why_level": "Le niveau 1 — Code One demeure motivé par la pluralité des fronts actifs, les risques pour les populations et les infrastructures civiles, ainsi que les incidents maritimes documentés. Les nouvelles informations du 24 novembre sur Riyad, Aden, Ormuz et Gaza ne montrent pas de désescalade durable. Les attributions militaires, déclarations des parties et bilans locaux restent distingués des confirmations indépendantes. Les démarches de médiation restent un facteur modérateur. Le niveau Diploval qualifie le risque de propagation régionale et ne signifie pas qu’une guerre mondiale est imminente.",
       "visible": true,
       "watch_down": [
         "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
@@ -935,7 +1049,7 @@
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
-      "last_update": "2026-11-24T10:44",
+      "last_update": "2026-11-24T17:52",
       "status": "suivi",
       "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
@@ -1088,6 +1202,42 @@
           "type": "Agence de presse",
           "url": "https://apnews.com/article/16e0c2cb05347cfcac068ec4aebb363f",
           "note": "Rencontres du 23 novembre ; état des médiations et absence d'accord annoncé."
+        },
+        {
+          "label": "Reuters — nouvelle attaque contre une tour de Riyad, 24 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/saudi-led-coalition-says-tower-riyadh-finance-district-targeted-by-terrorist-2026-11-24/",
+          "note": "Attaque et bilan rapportés ; attribution à distinguer d’une revendication."
+        },
+        {
+          "label": "Financial Times — attaque contre le siège du fonds souverain saoudien",
+          "type": "Média",
+          "url": "https://www.ft.com/content/ecdf59b6-c78b-4703-bc26-8d085d7b9d24",
+          "note": "Identification du bâtiment et contexte."
+        },
+        {
+          "label": "Associated Press — Aden, Iran et Gaza, 24 novembre",
+          "type": "Agence de presse",
+          "url": "https://apnews.com/article/ba01cb036a849ba69873da5000ee08d5",
+          "note": "Déclarations des autorités yéménites et iraniennes et bilans attribués aux sources locales."
+        },
+        {
+          "label": "Reuters — décès d’un responsable de la sécurité intérieure du Hamas, 24 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/israeli-airstrike-kills-senior-hamas-security-official-gaza-hamas-sources-say-2026-11-24/",
+          "note": "Identification attribuée aux sources du Hamas ; complément à l’édition du matin."
+        },
+        {
+          "label": "UKMTO — avis maritime 219-26, incident du 23 novembre",
+          "type": "Source officielle",
+          "url": "https://www.ukmto.org/recent-incidents?gsid=745e071d-c4fc-42ab-8dca-d38952901465",
+          "note": "Rapport vérifié concernant trois navires, nature des projectiles non établie."
+        },
+        {
+          "label": "France Diplomatie — déclaration sur les attaques de colons en Cisjordanie, 23 novembre",
+          "type": "Source officielle",
+          "url": "https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/israelpalestine-attaques-de-colons-israeliens-en-cisjordanie-durant-la-nuit-du-21-au-22-novembre",
+          "note": "Position officielle française et rappel du droit international."
         }
       ],
       "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
