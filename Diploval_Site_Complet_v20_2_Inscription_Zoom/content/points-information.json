@@ -3,10 +3,146 @@
     {
       "show_home": true,
       "level": "2",
-      "summary": "Au 24 novembre 2026, la guerre en Ukraine se poursuit sans cessez-le-feu général et le risque de débordement vers les pays de l’OTAN fait l’objet d’un réexamen prioritaire. Après les trois missiles russes tombés en Pologne le 20 novembre, l’armée polonaise signale une nouvelle intrusion de drone dans la nuit du 23 au 24 ; l’OTAN a autorisé le renforcement de sa surveillance aérienne. Des incidents en Baltique, des attributions officielles d’opérations hybrides au Danemark et en Estonie, ainsi que les avertissements russes concernant des militaires français présents en Ukraine, constituent des facteurs distincts d’escalade. Une enquête allemande rapporte des évaluations de renseignement sur un possible satellite russe à capacité nucléaire, sans lancement confirmé. Les frappes touchant des civils ukrainiens se poursuivent. Diploval maintient le niveau 2 — Vigilance renforcée et documente les conditions d’un éventuel Code One préventif.",
+      "summary": "Au 24 novembre 2026, la guerre en Ukraine se poursuit sans cessez-le-feu général. Le risque de débordement vers des États de l'OTAN demeure élevé : violations répétées de l'espace polonais, renforcement défensif allié, menaces hybrides attribuées aux services russes et avertissements visant les militaires français présents en Ukraine. Cet après-midi, Zelensky a confirmé l'attaque ukrainienne du Sparta II en Baltique, suscitant des préoccupations norvégiennes, tandis que l'Italie a officiellement exprimé ses inquiétudes sur les opérations ukrainiennes en Libye. Le Royaume-Uni a alerté ses entreprises de défense contre les risques de sabotage russe et la Pologne a convoqué l'ambassadeur russe. Un rendez-vous Rutte–Trump est annoncé pour le 25 novembre ; les besoins financiers ukrainiens pour 2027 sont chiffrés à 115 milliards d'euros selon Kyiv. Le bilan des blessés à Zaporijjia a été révisé à 48 selon AP. Diploval maintient le niveau 2 — Vigilance renforcée et poursuit l'examen documenté d'un éventuel Code One préventif.",
       "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
       "opened_at": "2026-11-19T11:50",
       "updates": [
+        {
+          "datetime": "2026-11-24T17:39",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — confirmation d'une opération du 21 novembre",
+          "title": "Baltique — Zelensky confirme l'attaque ukrainienne du Sparta II ; mise en garde norvégienne",
+          "body": "Le président ukrainien Volodymyr Zelensky a reconnu le 24 novembre la responsabilité ukrainienne dans la frappe de drone du 21 novembre contre le cargo russe Sparta II, dans le golfe de Finlande. Kyiv présente l'opération comme visant un navire participant aux activités logistiques militaires russes, qualification ukrainienne qui ne suffit pas à trancher à elle seule la légalité de la frappe. Le ministre norvégien de la Défense Tore Sandvik a confirmé des échanges avec Kyiv sur la nécessité de préserver la stabilité des zones maritimes voisines. Cette confirmation d'attribution et la réaction d'un État allié sont nouvelles ; les faits de l'attaque et l'intervention finlandaise demeurent documentés dans la chronologie du 21 novembre.",
+          "sources": [
+            {
+              "label": "Kyiv Independent — Zelensky confirme la frappe du Sparta II, 24 novembre",
+              "type": "Média",
+              "url": "https://kyivindependent.com/zelensky-confirms-ukrainian-attack-on-russian-ship-in-gulf-of-finland/",
+              "note": "Confirmation présidentielle rapportée dans l'entretien avec Bloomberg."
+            },
+            {
+              "label": "Reuters — déclaration du ministre norvégien de la Défense, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/24/norway-says-there-is-dialogue-with-ukraine-regarding-need-for-stability-in-our-near-areas",
+              "note": "Inquiétude norvégienne sur la stabilité maritime."
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-24T17:39",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — alerte gouvernementale officielle",
+          "title": "Royaume-Uni — Alerte contre les risques de sabotage visant les fournisseurs de l'Ukraine",
+          "body": "Le gouvernement britannique, le ministère de la Défense et la National Protective Security Authority, service relevant du MI5, ont rendu publique une alerte destinée aux entreprises soutenant matériellement les forces ukrainiennes. Les autorités britanniques attribuent à l'État russe et à ses intermédiaires une hausse des tentatives de sabotage contre les infrastructures européennes liées à la défense. Des séances d'information de sécurité sont organisées les 24 et 25 novembre avec des dirigeants d'entreprises de défense et d'infrastructures essentielles. L'alerte officielle confirme la préoccupation des autorités britanniques ; elle n'annonce pas qu'une nouvelle attaque aurait été menée aujourd'hui sur le sol britannique.",
+          "sources": [
+            {
+              "label": "Gouvernement britannique — alerte et séances d'information, 24 novembre",
+              "type": "Source officielle",
+              "url": "https://www.gov.uk/government/news/ceos-from-sensitive-sectors-receive-briefings-on-russia-threats",
+              "note": "Alerte NPSA et échanges avec les entreprises critiques."
+            },
+            {
+              "label": "Reuters — avertissement MI5 et ministère britannique de la Défense",
+              "type": "Agence de presse",
+              "url": "https://www.lse.co.uk/news/uk-warns-of-russian-sabotage-threat-to-companies-that-supply-ukraine-y2vp5gi1mw5ef53.html",
+              "note": "Recoupement de la communication gouvernementale."
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-24T17:39",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — entretien téléphonique ministériel",
+          "title": "Italie–Ukraine — Rome s'inquiète des frappes ukrainiennes en Libye",
+          "body": "Le ministère italien des Affaires étrangères confirme qu'Antonio Tajani s'est entretenu avec Andrii Sybiha pour exprimer la préoccupation de Rome après des opérations militaires ukrainiennes revendiquées dans l'est de la Libye, près de Benghazi. Tajani demande de prévenir une extension du conflit à la Méditerranée et rappelle l'importance du respect de la souveraineté libyenne. Le ministère italien confirme en même temps son soutien à la défense de l'Ukraine et à une paix durable. Le ministère ukrainien souligne de son côté les enjeux de sécurité maritime et le droit de l'Ukraine à se défendre. Cette divergence d'appréciation ne représente pas une rupture de l'alliance politique entre Rome et Kyiv.",
+          "sources": [
+            {
+              "label": "Italie — ministère des Affaires étrangères, communiqué du 24 novembre",
+              "type": "Source officielle",
+              "url": "https://www.esteri.it/it/sala_stampa/archivionotizie/comunicati/2026/11/tajani-parla-con-sybiha-espressa-preoccupazione-per-azioni-militari-in-libia/",
+              "note": "Entretien Tajani–Sybiha, souveraineté de la Libye et risque méditerranéen."
+            },
+            {
+              "label": "Ukrinform — compte rendu de l'entretien Sybiha–Tajani",
+              "type": "Agence de presse",
+              "url": "https://www.ukrinform.net/amp/rubric-polytics/4188092-sybiha-tajani-discuss-security-in-black-and-mediterranean-seas-following-strikes-on-russian-vessels-off-libya.html",
+              "note": "Éléments communiqués par la partie ukrainienne."
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-24T17:39",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — démarche diplomatique de Varsovie",
+          "title": "Pologne — Ambassadeur russe convoqué après les violations de l'espace aérien",
+          "body": "Le ministère polonais des Affaires étrangères a convoqué l'ambassadeur russe à Varsovie le 24 novembre, après les trois missiles russes tombés en Pologne le 20 novembre et la nouvelle intrusion de drone dans la nuit du 23 au 24. Selon le porte-parole ministériel cité par Reuters, une note de protestation particulièrement ferme lui a été remise. Cette démarche constitue une réaction diplomatique nouvelle à des incidents déjà documentés dans le suivi. La qualification d'incursion intentionnelle avancée par des responsables polonais demeure leur appréciation, distincte d'une conclusion indépendante sur les intentions russes. Aucun échange de tirs Russie–Pologne n'est établi par cette convocation.",
+          "sources": [
+            {
+              "label": "Reuters — intrusion du drone et convocation du diplomate russe, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://www.reuters.com/business/aerospace-defense/russian-unmanned-aerial-vehicle-briefly-violated-polish-airspace-polish-armed-2026-11-23/",
+              "note": "Annonce confirmée par un porte-parole polonais dans la dépêche actualisée."
+            },
+            {
+              "label": "The Guardian — suivi diplomatique européen du 24 novembre",
+              "type": "Média",
+              "url": "https://www.theguardian.com/world/live/2026/nov/24/russia-ukraine-poland-drone-patriots-latest-news-updates",
+              "note": "Compte rendu de la protestation polonaise."
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-24T17:39",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — annonce officielle d'une réunion prévue le 25",
+          "title": "OTAN–États-Unis — Rencontre Rutte–Trump annoncée pour le 25 novembre",
+          "body": "L'OTAN a annoncé officiellement que son secrétaire général Mark Rutte se rend les 24 et 25 novembre en Floride et doit rencontrer le président américain Donald Trump le mercredi 25 novembre à Mar-a-Lago, ainsi que d'autres responsables américains. Il s'agit d'un rendez-vous annoncé, et non d'un résultat diplomatique déjà obtenu. Le communiqué ne précise pas une décision d'engagement militaire contre la Russie ; il ne permet pas non plus d'affirmer que le dossier ukrainien sera l'unique objet de l'entretien.",
+          "sources": [
+            {
+              "label": "OTAN — avis officiel aux médias, 24 novembre",
+              "type": "Source officielle",
+              "url": "https://www.nato.int/fr/news-and-events/events/media-advisories/2026/11/24/nato-secretary-general-to-visit-the-united-states-of-america",
+              "note": "Réunion annoncée pour le 25 novembre, ordre du jour non détaillé."
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-24T17:39",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — estimation et engagements annoncés",
+          "title": "Ukraine — Zelensky chiffre à 115 milliards d'euros les besoins extérieurs pour 2027",
+          "body": "Le président ukrainien Volodymyr Zelensky indique que son pays aura besoin de 115 milliards d'euros de soutien extérieur en 2027. Selon les chiffres qu'il présente, environ 90 milliards d'euros font l'objet d'engagements européens ou sont considérés comme acquis, et 25 milliards restent à identifier. Reuters rapporte cette annonce et précise que ces sommes s'inscrivent dans les efforts de financement de la guerre et de l'économie ukrainienne. Les engagements cités ne doivent pas être assimilés à des fonds déjà intégralement versés. Ce point éclaire la soutenabilité économique et la dimension européenne du conflit sans constituer, en soi, un motif d'élévation du niveau d'alerte.",
+          "sources": [
+            {
+              "label": "Reuters — besoins ukrainiens de 115 milliards d'euros pour 2027, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://www.reuters.com/business/finance/ukraine-needs-125-billion-external-support-2027-zelenskiy-says-2026-11-24/",
+              "note": "Montants déclarés par Zelensky ; distinction engagements et versements."
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-24T17:39",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — bilan plus récent communiqué dans la journée",
+          "title": "Zaporijjia — Bilan de blessés revu à 48, contre 40 dans l'édition du matin",
+          "body": "Actualisation du bilan de la frappe russe nocturne à Zaporijjia déjà décrite dans le suivi du 24 novembre : Associated Press rapporte deux civils tués et 48 blessés, dont quatre enfants, selon les autorités ukrainiennes. Le chiffre de 40 blessés figurant dans notre entrée du matin correspondait à un bilan antérieur et n'était pas une erreur de transcription ; il est conservé dans la chronologie et complété par cette mise à jour datée. Les chiffres restent provisoires et attribués aux autorités locales.",
+          "sources": [
+            {
+              "label": "Associated Press — 2 morts et 48 blessés à Zaporijjia, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://apnews.com/article/russia-ukraine-libya-sea-drone-attacks-bfff959fb4c7415f9473b34e78a4f750",
+              "note": "Bilan plus récent cité par les autorités ukrainiennes et rapporté par AP."
+            }
+          ],
+          "correction": true
+        },
         {
           "datetime": "2026-11-24T10:39",
           "event_date": "2026-11-24",
@@ -287,7 +423,7 @@
         "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
       ],
       "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix.",
-      "why_level": "Le niveau 2 — Vigilance renforcée — est maintenu au 24 novembre. La répétition des intrusions en Pologne, les incidents maritimes et aériens en Baltique, la réponse défensive de l’OTAN, les menaces russes envers les personnels militaires français présents en Ukraine et les opérations hybrides attribuées par les autorités danoise et estonienne justifient une réévaluation prioritaire. Les données présentées le 23 novembre par l’Union européenne sur la sécurité des navires en mer Noire renforcent également la surveillance. Ces éléments n’ont pas tous le même statut : les violations de l’espace polonais sont déclarées par les autorités polonaises ; les responsabilités des opérations hybrides relèvent d’attributions officielles ; le projet de satellite nucléaire est rapporté par une enquête sur des renseignements non publiquement confirmés. Aucun affrontement militaire direct Russie–OTAN, aucune attaque délibérée grave contre un État allié et aucun changement nucléaire effectif ne sont démontrés par les vérifications disponibles. Le Code One reste une possibilité de décision préventive si la convergence des risques s’aggrave ou si un franchissement majeur est établi ; il ne signifierait pas nécessairement qu’une guerre générale a commencé. Les mécanismes de retenue observés et les canaux diplomatiques encore actifs doivent rester pris en compte.",
+      "why_level": "Niveau 2 maintenu au 24 novembre. La combinaison des intrusions russes rapportées en Pologne, des avertissements visant des militaires français en Ukraine, des opérations hybrides attribuées par les États européens et des mesures défensives de l'OTAN constitue un risque significatif d'escalade. La reconnaissance ukrainienne de la frappe contre le Sparta II dans le golfe de Finlande et les opérations revendiquées près de Benghazi démontrent aussi que le débordement géographique peut résulter d'opérations ukrainiennes ; la Norvège et l'Italie ont exprimé des préoccupations officielles. Aucune confrontation armée directe Russie–OTAN n'est établie à cette heure ; le statut et la légalité de chaque opération doivent être appréciés séparément et ne sont pas déterminés par la seule déclaration d'une partie. Le projet allégué de satellite nucléaire russe n'est pas confirmé publiquement. La convocation diplomatique de l'ambassadeur russe ne constitue pas un affrontement armé, et des canaux de dialogue restent actifs. Le Code One doit pouvoir répondre à une convergence préventive de risques critiques, mais son élévation reste soumise à une validation éditoriale documentée ; il n'est pas déclenché par les informations actuelles.",
       "visible": true,
       "watch_down": [
         "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
@@ -297,7 +433,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-24T10:39",
+      "last_update": "2026-11-24T17:39",
       "status": "suivi",
       "related_publication": "accord-cadre-ukraine-russie-v01",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
@@ -499,6 +635,66 @@
           "url": "https://www.vm.ee/en/news/ministry-foreign-affairs-summons-russian-charge-daffaires-over-attempted-act-sabotage",
           "type": "Source officielle",
           "note": "Convocation diplomatique, attribution au GRU et décision de fermeture frontalière annoncée."
+        },
+        {
+          "label": "Kyiv Independent — Zelensky confirme la frappe du Sparta II, 24 novembre",
+          "type": "Média",
+          "url": "https://kyivindependent.com/zelensky-confirms-ukrainian-attack-on-russian-ship-in-gulf-of-finland/",
+          "note": "Confirmation présidentielle rapportée dans l'entretien avec Bloomberg."
+        },
+        {
+          "label": "Reuters — déclaration du ministre norvégien de la Défense, 24 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/24/norway-says-there-is-dialogue-with-ukraine-regarding-need-for-stability-in-our-near-areas",
+          "note": "Inquiétude norvégienne sur la stabilité maritime."
+        },
+        {
+          "label": "Gouvernement britannique — alerte et séances d'information, 24 novembre",
+          "type": "Source officielle",
+          "url": "https://www.gov.uk/government/news/ceos-from-sensitive-sectors-receive-briefings-on-russia-threats",
+          "note": "Alerte NPSA et échanges avec les entreprises critiques."
+        },
+        {
+          "label": "Reuters — avertissement MI5 et ministère britannique de la Défense",
+          "type": "Agence de presse",
+          "url": "https://www.lse.co.uk/news/uk-warns-of-russian-sabotage-threat-to-companies-that-supply-ukraine-y2vp5gi1mw5ef53.html",
+          "note": "Recoupement de la communication gouvernementale."
+        },
+        {
+          "label": "Italie — ministère des Affaires étrangères, communiqué du 24 novembre",
+          "type": "Source officielle",
+          "url": "https://www.esteri.it/it/sala_stampa/archivionotizie/comunicati/2026/11/tajani-parla-con-sybiha-espressa-preoccupazione-per-azioni-militari-in-libia/",
+          "note": "Entretien Tajani–Sybiha, souveraineté de la Libye et risque méditerranéen."
+        },
+        {
+          "label": "Ukrinform — compte rendu de l'entretien Sybiha–Tajani",
+          "type": "Agence de presse",
+          "url": "https://www.ukrinform.net/amp/rubric-polytics/4188092-sybiha-tajani-discuss-security-in-black-and-mediterranean-seas-following-strikes-on-russian-vessels-off-libya.html",
+          "note": "Éléments communiqués par la partie ukrainienne."
+        },
+        {
+          "label": "The Guardian — suivi diplomatique européen du 24 novembre",
+          "type": "Média",
+          "url": "https://www.theguardian.com/world/live/2026/nov/24/russia-ukraine-poland-drone-patriots-latest-news-updates",
+          "note": "Compte rendu de la protestation polonaise."
+        },
+        {
+          "label": "OTAN — avis officiel aux médias, 24 novembre",
+          "type": "Source officielle",
+          "url": "https://www.nato.int/fr/news-and-events/events/media-advisories/2026/11/24/nato-secretary-general-to-visit-the-united-states-of-america",
+          "note": "Réunion annoncée pour le 25 novembre, ordre du jour non détaillé."
+        },
+        {
+          "label": "Reuters — besoins ukrainiens de 115 milliards d'euros pour 2027, 24 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/business/finance/ukraine-needs-125-billion-external-support-2027-zelenskiy-says-2026-11-24/",
+          "note": "Montants déclarés par Zelensky ; distinction engagements et versements."
+        },
+        {
+          "label": "Associated Press — 2 morts et 48 blessés à Zaporijjia, 24 novembre",
+          "type": "Agence de presse",
+          "url": "https://apnews.com/article/russia-ukraine-libya-sea-drone-attacks-bfff959fb4c7415f9473b34e78a4f750",
+          "note": "Bilan plus récent cité par les autorités ukrainiennes et rapporté par AP."
         }
       ],
       "category": "Géopolitique · Europe"
