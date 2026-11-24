@@ -506,10 +506,124 @@
     {
       "show_home": true,
       "level": "1",
-      "summary": "Au 23 novembre 2026, les violences et besoins humanitaires persistent à Gaza et en Cisjordanie. Le décès confirmé d’un employé de l’UNRWA lors d’une frappe à Gaza accentue les préoccupations sur la protection des services essentiels. Les tensions militaires et maritimes continuent d’impliquer l’Iran, les États-Unis, le Yémen et plusieurs pays du Golfe ; certaines attaques contre des installations énergétiques demeurent seulement revendiquées. Les médiations régionales se poursuivent, sans accord nouveau vérifiable de désescalade générale.",
+      "summary": "Au 24 novembre 2026, le Code One reste en vigueur pour le Proche-Orient. À Gaza, de nouvelles frappes ont fait au moins six morts selon les autorités sanitaires locales malgré le cessez-le-feu fragile. Au Yémen, des frappes signalées contre des installations de télécommunications à Hodeïda ont donné lieu à des bilans houthies successifs non vérifiés indépendamment. Dans le détroit d'Ormuz, l'Iran affirme que trois pétroliers ont heurté des mines, sans confirmation indépendante des impacts ; des investigations américaines portent aussi sur de possibles cyberattaques contre des navires, sans responsabilité établie. Les États-Unis ont annoncé de nouvelles sanctions financières contre des réseaux iraniens, tandis que des échanges avec le Qatar maintiennent ouverte une voie diplomatique. Diploval distingue les faits établis, les revendications et les enquêtes en cours.",
       "social_image": "/assets/uploads/briefing-diploval-_-proche-orient-sous-tension.png",
       "opened_at": "2026-11-19T22:08",
       "updates": [
+        {
+          "datetime": "2026-11-24T10:43",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026",
+          "title": "Gaza — Six personnes tuées lors de deux frappes israéliennes le 24 novembre",
+          "body": "Selon des soignants et des responsables locaux cités par Reuters, deux frappes israéliennes ont tué au moins six Palestiniens à Gaza : trois personnes près d'un poste de police à Khan Younès, dont deux agents selon le ministère de l'Intérieur dirigé par le Hamas, et trois autres près du corridor de Netzarim. Cinq blessés ont été signalés à Khan Younès. L'armée israélienne affirme avoir visé des combattants dans les deux secteurs, sans apporter de précisions supplémentaires. Ces violences surviennent malgré le cessez-le-feu d'octobre 2025, dont Israël et le Hamas s'accusent mutuellement de ne pas respecter les dispositions. Le bilan reste attribué aux sources locales.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Reuters — Gaza : au moins six morts dans deux frappes du 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://www.reuters.com/world/middle-east/israeli-airstrike-kills-least-three-palestinians-southern-gaza-medics-say-2026-11-24/",
+              "note": "Bilans attribués aux autorités locales ; justification militaire israélienne également rapportée."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T10:43",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre 2026 — enquête rapportée, responsabilité non établie",
+          "title": "Sécurité maritime — Enquête américaine sur des cyberattaques présumées contre des pétroliers",
+          "body": "Reuters rapporte une enquête du Wall Street Journal selon laquelle les autorités américaines examinent une possible implication iranienne dans des cyberattaques touchant des dizaines de navires transportant des produits énergétiques, certains ayant également reçu des menaces. L'Iran est cité comme suspect par les sources de l'enquête, mais Reuters n'a pas pu vérifier indépendamment ces informations ; d'autres auteurs potentiels sont également évoqués. Il ne s'agit pas d'une attribution officielle démontrée ni d'une preuve de nouveaux sabotages iraniens. Cette information est conservée comme signal de vigilance, distinct des incidents maritimes physiquement documentés.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Reuters — informations du WSJ sur des cyberattaques maritimes, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://www.reuters.com/world/middle-east/us-eyes-iran-possible-culprit-dozens-new-cyberattacks-against-ships-wsj-reports-2026-11-24/",
+              "note": "Enquête et soupçons rapportés, non attribution vérifiée."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T10:43",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026 — déclarations relayées le 24",
+          "title": "Détroit d'Ormuz — Trois pétroliers annoncés touchés par des mines, sans confirmation indépendante",
+          "body": "Les Gardiens de la révolution iraniens ont déclaré lundi 23 novembre que trois pétroliers ayant emprunté des routes qu'ils qualifient de non autorisées avaient heurté des mines et pris feu dans le détroit d'Ormuz. Reuters et Anadolu ont rapporté cette déclaration iranienne. Aucune liste vérifiée des trois navires ni constat indépendant de leurs dommages n'accompagne cette revendication. L'organisme britannique UKMTO signale par ailleurs des incidents contre des navires dans la région, mais ces avis ne confirment pas à eux seuls l'emploi de mines dans les trois cas revendiqués. La sécurité du transit maritime demeure un facteur critique du Code One.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Reuters — revendication iranienne concernant trois pétroliers, 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://www.reuters.com/business/energy/oil-holds-near-three-month-low-rising-supply-offsets-hormuz-threat-2026-11-24/",
+              "note": "Revendication rapportée au sujet du 23 novembre."
+            },
+            {
+              "label": "Anadolu — déclaration de la marine des Gardiens de la révolution",
+              "type": "Agence de presse",
+              "url": "https://www.aa.com.tr/en/middle-east/iran-s-revolutionary-guard-corps-navy-says-mine-blasts-set-3-oil-tankers-ablaze-in-strait-of-hormuz/4135182",
+              "note": "Déclaration iranienne, impacts non vérifiés."
+            },
+            {
+              "label": "UKMTO — signalements officiels d'incidents maritimes",
+              "type": "Source officielle",
+              "url": "https://www.ukmto.org/recent-incidents",
+              "note": "Avis de sécurité maritime distincts des revendications iraniennes."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T10:43",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026 — bilan houthi révisé",
+          "title": "Yémen — Frappes signalées sur les télécommunications à Hodeïda",
+          "body": "Des frappes ont été signalées le 23 novembre contre des installations de télécommunications et d'autres sites à Hodeïda, dans l'ouest du Yémen. Les autorités houthies les attribuent à la coalition dirigée par l'Arabie saoudite. Leurs bilans successifs ont varié : Associated Press rapportait initialement onze morts et dix-neuf blessés ; des comptes rendus ultérieurs citant les autorités houthies faisaient état de dix-sept morts et onze blessés. Les Houthis évoquent aussi des attaques contre des véhicules civils dans le gouvernorat de Lahj. Ni le nombre définitif de victimes ni les circonstances de chaque frappe n'ont pu être vérifiés indépendamment, et aucune réaction saoudienne n'était rapportée dans les dépêches consultées.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Associated Press — frappes alléguées à Hodeïda et Lahj, 23 novembre",
+              "type": "Agence de presse",
+              "url": "https://apnews.com/article/c2cb6de3515f887a5786c1147e918489",
+              "note": "Bilan préliminaire et absence de vérification indépendante."
+            },
+            {
+              "label": "AFP reprise par Dawn — bilan houthi révisé à dix-sept morts",
+              "type": "Agence de presse",
+              "url": "https://www.dawn.com/news/2046665/houthis-say-air-strikes-by-saudi-led-coalition-kill-17-in-yemen",
+              "note": "Bilan plus récent attribué au ministère houthi, sans confirmation indépendante."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T10:43",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026 — mesures adoptées par les États-Unis",
+          "title": "Iran — Nouvelles sanctions américaines contre des réseaux financiers",
+          "body": "Le département du Trésor des États-Unis a annoncé le 23 novembre des sanctions visant plus de deux douzaines de maisons de change, de sociétés écrans et de responsables qu'il accuse de participer au système bancaire parallèle utilisé pour contourner les restrictions visant l'Iran. Les sanctions financières sont une décision américaine effective, à distinguer des allégations fondant les inscriptions individuelles et d'une action militaire. Washington renforce ainsi sa pression économique alors que les négociations sur la crise régionale et le blocus naval restent sans accord.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Département du Trésor américain — Operation Economic Outcast, 23 novembre",
+              "type": "Source officielle",
+              "url": "https://home.treasury.gov/news/press-releases/sb0699",
+              "note": "Communiqué officiel sur les désignations et leur motivation."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T10:43",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026 — rencontres diplomatiques à Washington",
+          "title": "États-Unis–Qatar — Entretiens de Vance et Rubio sur la médiation avec l'Iran",
+          "body": "Le vice-président américain JD Vance et le secrétaire d'État Marco Rubio se sont entretenus séparément avec le Premier ministre qatari Mohammed ben Abdelrahmane Al-Thani à Washington le 23 novembre. Selon le compte rendu du département d'État rapporté par Associated Press, Rubio a salué les efforts de médiation du Qatar et la coordination pour la stabilité régionale. Ces échanges montrent que des canaux diplomatiques restent ouverts en dépit des tensions américano-iraniennes. Aucun accord de cessez-le-feu ni reprise officielle des négociations directes n'a été annoncé à l'issue de ces rencontres.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Associated Press — rencontres États-Unis–Qatar, publié le 24 novembre",
+              "type": "Agence de presse",
+              "url": "https://apnews.com/article/16e0c2cb05347cfcac068ec4aebb363f",
+              "note": "Rencontres du 23 novembre ; état des médiations et absence d'accord annoncé."
+            }
+          ]
+        },
         {
           "datetime": "2026-11-23T19:46",
           "event_date": "2026-11-23",
@@ -617,7 +731,7 @@
         "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
       ],
       "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
-      "why_level": "Le niveau 1 — Code One concerne le risque d’extension régionale : plusieurs fronts restent actifs, les affrontements impliquent des forces étatiques, le blocus naval et les menaces contre les voies maritimes exposent les échanges et les infrastructures essentielles. Les frappes causant des victimes civiles et la vulnérabilité des services humanitaires aggravent la situation. Une revendication d’attaque n’équivaut cependant pas à la confirmation d’un impact ni d’une destruction. Ce classement ne signifie pas qu’une guerre mondiale ou une attaque sur le territoire des États-Unis est imminente ; il sera réévalué sur la base de faits nouveaux vérifiés et de l’application réelle des médiations.",
+      "why_level": "Le niveau 1 — Code One reste justifié par la pluralité de fronts militaires régionaux actifs, les atteintes répétées aux populations et services essentiels, les échanges de frappes entre forces étatiques ou alliées, et les risques pesant sur le détroit d'Ormuz, la mer Rouge et les infrastructures énergétiques et humanitaires. Le 24 novembre, les nouvelles victimes signalées à Gaza et les informations sur les frappes à Hodeïda confirment la persistance de violences importantes. Les revendications iraniennes concernant des pétroliers et les accusations de cyberattaques ne sont toutefois pas des confirmations indépendantes de leurs auteurs, mécanismes ou bilans. Les entretiens États-Unis–Qatar constituent un facteur de désescalade à suivre. Le Code One est un signal de risque critique de propagation régionale, et non une affirmation qu'une guerre mondiale serait imminente.",
       "visible": true,
       "watch_down": [
         "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
@@ -625,7 +739,7 @@
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
-      "last_update": "2026-11-23T19:46",
+      "last_update": "2026-11-24T10:43",
       "status": "suivi",
       "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
@@ -724,6 +838,60 @@
           "type": "Agence de presse",
           "url": "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-rabigh-oil-refinery-2026-11-22/",
           "note": "Impacts et dommages non confirmés indépendamment."
+        },
+        {
+          "label": "Reuters — Gaza : au moins six morts dans deux frappes du 24 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/israeli-airstrike-kills-least-three-palestinians-southern-gaza-medics-say-2026-11-24/",
+          "note": "Bilans attribués aux autorités locales ; justification militaire israélienne également rapportée."
+        },
+        {
+          "label": "Reuters — informations du WSJ sur des cyberattaques maritimes, 24 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/world/middle-east/us-eyes-iran-possible-culprit-dozens-new-cyberattacks-against-ships-wsj-reports-2026-11-24/",
+          "note": "Enquête et soupçons rapportés, non attribution vérifiée."
+        },
+        {
+          "label": "Reuters — revendication iranienne concernant trois pétroliers, 24 novembre",
+          "type": "Agence de presse",
+          "url": "https://www.reuters.com/business/energy/oil-holds-near-three-month-low-rising-supply-offsets-hormuz-threat-2026-11-24/",
+          "note": "Revendication rapportée au sujet du 23 novembre."
+        },
+        {
+          "label": "Anadolu — déclaration de la marine des Gardiens de la révolution",
+          "type": "Agence de presse",
+          "url": "https://www.aa.com.tr/en/middle-east/iran-s-revolutionary-guard-corps-navy-says-mine-blasts-set-3-oil-tankers-ablaze-in-strait-of-hormuz/4135182",
+          "note": "Déclaration iranienne, impacts non vérifiés."
+        },
+        {
+          "label": "UKMTO — signalements officiels d'incidents maritimes",
+          "type": "Source officielle",
+          "url": "https://www.ukmto.org/recent-incidents",
+          "note": "Avis de sécurité maritime distincts des revendications iraniennes."
+        },
+        {
+          "label": "Associated Press — frappes alléguées à Hodeïda et Lahj, 23 novembre",
+          "type": "Agence de presse",
+          "url": "https://apnews.com/article/c2cb6de3515f887a5786c1147e918489",
+          "note": "Bilan préliminaire et absence de vérification indépendante."
+        },
+        {
+          "label": "AFP reprise par Dawn — bilan houthi révisé à dix-sept morts",
+          "type": "Agence de presse",
+          "url": "https://www.dawn.com/news/2046665/houthis-say-air-strikes-by-saudi-led-coalition-kill-17-in-yemen",
+          "note": "Bilan plus récent attribué au ministère houthi, sans confirmation indépendante."
+        },
+        {
+          "label": "Département du Trésor américain — Operation Economic Outcast, 23 novembre",
+          "type": "Source officielle",
+          "url": "https://home.treasury.gov/news/press-releases/sb0699",
+          "note": "Communiqué officiel sur les désignations et leur motivation."
+        },
+        {
+          "label": "Associated Press — rencontres États-Unis–Qatar, publié le 24 novembre",
+          "type": "Agence de presse",
+          "url": "https://apnews.com/article/16e0c2cb05347cfcac068ec4aebb363f",
+          "note": "Rencontres du 23 novembre ; état des médiations et absence d'accord annoncé."
         }
       ],
       "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
