@@ -3,10 +3,92 @@
     {
       "show_home": true,
       "level": "2",
-      "summary": "Les négociations sur un éventuel cessez-le-feu se poursuivent sans accord général. Plusieurs incidents récents ont accru les tensions avec des États membres de l’OTAN : missiles russes tombés en Pologne, incident maritime dans le golfe de Finlande et accusations russes contre l’Estonie. Le 23 novembre, la Pologne a annoncé la mise à disposition d’un AWACS de l’OTAN. L’Ukraine a par ailleurs revendiqué des attaques navales contre des bâtiments russes en Libye, tandis que de nouvelles victimes civiles sont signalées sur son territoire. Diploval maintient le niveau 2 — Vigilance renforcée et un réexamen prioritaire des risques de débordement.",
+      "summary": "Au 24 novembre 2026, la guerre en Ukraine se poursuit sans cessez-le-feu général et le risque de débordement vers les pays de l’OTAN fait l’objet d’un réexamen prioritaire. Après les trois missiles russes tombés en Pologne le 20 novembre, l’armée polonaise signale une nouvelle intrusion de drone dans la nuit du 23 au 24 ; l’OTAN a autorisé le renforcement de sa surveillance aérienne. Des incidents en Baltique, des attributions officielles d’opérations hybrides au Danemark et en Estonie, ainsi que les avertissements russes concernant des militaires français présents en Ukraine, constituent des facteurs distincts d’escalade. Une enquête allemande rapporte des évaluations de renseignement sur un possible satellite russe à capacité nucléaire, sans lancement confirmé. Les frappes touchant des civils ukrainiens se poursuivent. Diploval maintient le niveau 2 — Vigilance renforcée et documente les conditions d’un éventuel Code One préventif.",
       "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
       "opened_at": "2026-11-19T11:50",
       "updates": [
+        {
+          "datetime": "2026-11-24T10:19",
+          "event_date": "2026-11-24",
+          "event_label": "Nuit du 23 au 24 novembre 2026",
+          "title": "Pologne — Nouvelle intrusion de drone dans l’espace aérien polonais",
+          "body": "L’armée polonaise a annoncé qu’un drone russe a brièvement pénétré son espace aérien pendant les frappes contre l’Ukraine. Une autorisation d’abattage a été donnée, mais le tir n’a pas été effectué lorsque l’appareil a changé de trajectoire vers l’est : les militaires ont pris en compte le risque pour les civils au sol. Le vice-ministre Paweł Zalewski estime l’incursion probablement intentionnelle ; cette appréciation ne constitue pas une preuve indépendante de l’intention russe. Après les trois missiles Kh-101 tombés en Pologne le 20 novembre, il s’agit d’un nouvel incident aérien sur le territoire d’un État de l’OTAN, sans affrontement armé direct confirmé. Les autorités polonaises avaient diffusé une alerte préventive à la population le 23 novembre.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Reuters — intrusion et décision de ne pas tirer, 24 novembre",
+              "url": "https://www.reuters.com/business/aerospace-defense/russian-unmanned-aerial-vehicle-briefly-violated-polish-airspace-polish-armed-2026-11-23/",
+              "type": "Agence de presse",
+              "note": "Informations attribuées à l’armée et au vice-ministre polonais."
+            },
+            {
+              "label": "Centre gouvernemental de sécurité polonais — alerte du 23 novembre",
+              "url": "https://www.gov.pl/web/rcb/alert-rcb---atak-z-powietrza-2311",
+              "type": "Source officielle",
+              "note": "Alerte préventive liée aux frappes contre l’Ukraine ; absence de menace déclarée sur le sol polonais au moment de l’alerte."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T10:19",
+          "event_date": "2026-11-24",
+          "event_label": "Nuit du 23 au 24 novembre 2026",
+          "title": "Zaporijjia — Deux morts et 40 blessés annoncés après les frappes russes",
+          "body": "Selon le gouverneur régional ukrainien Mykhailo Semikin, une attaque russe nocturne contre Zaporijjia a fait deux morts et 40 blessés, dont quatre enfants, au bilan communiqué le 24 novembre. Des immeubles, des habitations, des voitures et des infrastructures de transport ont subi des dégâts. Il s’agit d’un bilan ukrainien repris par Reuters, susceptible d’être révisé, et distinct des décès signalés lors d’une frappe sur une clinique le 23 novembre. Les accusations et bilans des parties ne remplacent pas une enquête indépendante.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Reuters — bilan de Zaporijjia actualisé le 24 novembre",
+              "url": "https://www.reuters.com/world/russian-attack-kills-2-people-wounds-22-ukraines-zaporizhzhia-official-says-2026-11-24/",
+              "type": "Agence de presse",
+              "note": "Deux morts, quarante blessés dont quatre enfants, selon le gouverneur régional ukrainien."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T10:19",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026 — enquête journalistique, pas lancement confirmé",
+          "title": "Espace — Renseignement rapporté sur un possible satellite russe à capacité nucléaire",
+          "body": "Une enquête conjointe de NDR, WDR et Süddeutsche Zeitung publiée le 23 novembre rapporte que des services occidentaux et militaires allemands ont partagé une évaluation selon laquelle la Russie pourrait lancer avant la fin de 2026 un satellite présenté comme capable d’emporter un dispositif nucléaire (désigné Sputnik-S dans l’enquête). Le gouvernement russe rejette ces accusations ; la Bundeswehr n’a pas confirmé publiquement les détails du programme. Interrogé le 23 novembre, le secrétaire général de l’OTAN a indiqué que l’Alliance suivait et adaptait continuellement ses capacités de défense, y compris spatiales, sans confirmer publiquement ce scénario. Aucune mise en orbite ni présence d’une arme nucléaire russe dans l’espace n’est établie. Ce renseignement demeure une alerte stratégique non vérifiée indépendamment, distincte d’un changement de posture nucléaire constaté.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "NDR/WDR — enquête sur le projet allégué, 23 novembre",
+              "url": "https://www.tagesschau.de/investigativ/ndr-wdr/satellit-russland-100.html",
+              "type": "Enquête journalistique",
+              "note": "Évaluations de renseignement rapportées, non preuve de lancement."
+            },
+            {
+              "label": "OTAN — conférence de presse du 23 novembre",
+              "url": "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/joint-press-conference-by-the-secretary-general-with-the-federal-chancellor-of-germany",
+              "type": "Déclaration officielle",
+              "note": "Réponse du secrétaire général sur la défense dans l’espace et les incidents."
+            },
+            {
+              "label": "Reuters — réponse de l’OTAN, 23 novembre",
+              "url": "https://www.reuters.com/business/aerospace-defense/asked-about-russian-satellite-reports-nato-says-it-constantly-assesses-situation-2026-11-23/",
+              "type": "Agence de presse",
+              "note": "L’OTAN ne confirme pas publiquement le scénario de lancement."
+            }
+          ]
+        },
+        {
+          "datetime": "2026-11-24T10:19",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre 2026 — déclaration de l’UE sur des faits accumulés",
+          "title": "Mer Noire — L’Union européenne alerte sur les attaques contre les navires commerciaux",
+          "body": "Dans une déclaration prononcée au Conseil de sécurité des Nations unies le 23 novembre, l’Union européenne indique que les attaques contre les navires et infrastructures portuaires en mer Noire se sont intensifiées. Selon les chiffres présentés par l’UE, 40 marins seraient morts ou portés disparus depuis l’été ; neuf navires auraient été attaqués en octobre dans les eaux d’un État membre de l’UE, dont quatre auraient coulé. Ces chiffres et l’attribution de certaines attaques à la Russie constituent des déclarations diplomatiques officielles, non un inventaire indépendamment établi ici. Il faut individualiser les attaques et leurs responsables ; l’alerte concerne notamment la sécurité maritime autour de la Roumanie et de la Bulgarie.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Union européenne — déclaration au Conseil de sécurité de l’ONU, 23 novembre",
+              "url": "https://www.eeas.europa.eu/delegations/un-new-york/eu-statement-un-security-council-maintenance-peace-and-security-ukraine-7_en",
+              "type": "Déclaration officielle",
+              "note": "Bilan maritime présenté par l’Union européenne, à attribuer explicitement."
+            }
+          ]
+        },
         {
           "datetime": "2026-11-23T19:46",
           "event_date": "2026-11-23",
@@ -89,6 +171,28 @@
           "event_label": "20–21 novembre 2026"
         },
         {
+          "datetime": "2026-11-24T10:19",
+          "event_date": "2026-11-20",
+          "event_label": "20 novembre 2026 — attribution publique d’un projet déjoué le 25 septembre",
+          "title": "Danemark — Projet d’assassinat déjoué, attribué aux services russes",
+          "body": "Le 20 novembre, le service danois de renseignement intérieur PET a rendu publique son évaluation selon laquelle les services russes auraient organisé un projet d’assassinat visant un ressortissant américano-ukrainien lors d’un concert au Danemark le 25 septembre 2026. Le PET et la police déclarent avoir empêché le passage à l’acte ; deux personnes sont mises en cause pénalement. L’existence de l’enquête et de l’attribution par le PET est documentée ; le rôle des suspects et leur responsabilité pénale sont examinés par la justice. Le PET précise que cet épisode ne démontre pas l’existence d’une menace générale d’assassinat contre la population danoise. C’est un facteur de risque hybride visant un État allié, et non une attaque militaire ouverte.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Renseignement danois PET — communiqué du 20 novembre",
+              "url": "https://pet.dk/en/about-pet/news-list/russia-uses-danish-criminal-networks-in-assassination-attempt-on-danish-soil/2026/11/20",
+              "type": "Source officielle",
+              "note": "Évaluation des services, fait déjoué en septembre et procédure judiciaire en cours."
+            },
+            {
+              "label": "Associated Press — accusation danoise, 20 novembre",
+              "url": "https://apnews.com/article/03494b78067c9572120deac038addd23",
+              "type": "Agence de presse",
+              "note": "Corroboration de l’annonce gouvernementale."
+            }
+          ]
+        },
+        {
           "datetime": "2026-11-23T12:37",
           "event_date": "2026-11-20",
           "event_label": "20 novembre 2026 — identification judiciaire annoncée le 22",
@@ -148,6 +252,22 @@
           "event_label": "17 novembre 2026 — déclarations"
         },
         {
+          "datetime": "2026-11-24T10:19",
+          "event_date": "2026-11-16",
+          "event_label": "14–16 novembre 2026 — tentative et attribution officielle",
+          "title": "Estonie — Tentative d’incendie d’une entreprise de défense, attribuée au GRU",
+          "body": "Le ministère estonien des Affaires étrangères a annoncé avoir convoqué le représentant russe le 16 novembre après une tentative d’incendie contre Threod Systems, entreprise de défense, dans la nuit du 14 novembre. Le service estonien de sécurité intérieure attribue la préparation de l’opération au renseignement militaire russe (GRU). Plusieurs suspects ont été interpellés, mais l’attribution émane des autorités estoniennes et les responsabilités pénales devront être établies judiciairement. L’Estonie a également annoncé son intention de fermer ses passages frontaliers routiers avec la Russie à partir du 1er décembre. Ce fait ancien est ajouté comme contexte documenté des menaces hybrides, pas comme nouvelle attaque du 24 novembre.",
+          "correction": false,
+          "sources": [
+            {
+              "label": "Ministère estonien des Affaires étrangères — 16 novembre",
+              "url": "https://www.vm.ee/en/news/ministry-foreign-affairs-summons-russian-charge-daffaires-over-attempted-act-sabotage",
+              "type": "Source officielle",
+              "note": "Convocation diplomatique, attribution au GRU et décision de fermeture frontalière annoncée."
+            }
+          ]
+        },
+        {
           "datetime": "2026-11-23T11:35",
           "title": "Abu Dhabi : bilan des négociations et annonce d’échange de prisonniers",
           "body": "Les délégations ukrainienne et russe se sont retrouvées les 10 et 11 novembre à Abu Dhabi sous médiation américaine, après neuf mois d’interruption des négociations directes. Les parties sont parvenues à un accord de principe sur un important échange de prisonniers, dont les modalités et la réalisation restent à vérifier séparément. Aucune avancée décisive n’a été annoncée concernant le territoire ou les garanties de sécurité.",
@@ -166,7 +286,7 @@
         "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
         "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
       ],
-      "why_level": "Les missiles russes tombés en Pologne, les incidents en mer Baltique, les tensions russo-estoniennes et la mise à disposition annoncée d’un AWACS de l’OTAN témoignent d’une aggravation du risque d’incident impliquant un pays allié. Les attaques ukrainiennes revendiquées contre des navires russes en Libye montrent également une extension géographique du conflit. Pour autant, les éléments vérifiés ne démontrent pas à cette heure une attaque intentionnelle aux conséquences graves contre un État de l’OTAN ni un affrontement militaire direct Russie–OTAN. Les garanties de sécurité et pourparlers restent sans cessez-le-feu général appliqué. Le niveau 2 est maintenu, avec réévaluation immédiate requise en cas de confrontation directe, d’attaque attribuée ayant des conséquences majeures sur un territoire allié ou de changement stratégique documenté.",
+      "why_level": "Le niveau 2 — Vigilance renforcée — est maintenu au 24 novembre. La répétition des intrusions en Pologne, les incidents maritimes et aériens en Baltique, la réponse défensive de l’OTAN, les menaces russes envers les personnels militaires français présents en Ukraine et les opérations hybrides attribuées par les autorités danoise et estonienne justifient une réévaluation prioritaire. Les données présentées le 23 novembre par l’Union européenne sur la sécurité des navires en mer Noire renforcent également la surveillance. Ces éléments n’ont pas tous le même statut : les violations de l’espace polonais sont déclarées par les autorités polonaises ; les responsabilités des opérations hybrides relèvent d’attributions officielles ; le projet de satellite nucléaire est rapporté par une enquête sur des renseignements non publiquement confirmés. Aucun affrontement militaire direct Russie–OTAN, aucune attaque délibérée grave contre un État allié et aucun changement nucléaire effectif ne sont démontrés par les vérifications disponibles. Le Code One reste une possibilité de décision préventive si la convergence des risques s’aggrave ou si un franchissement majeur est établi ; il ne signifierait pas nécessairement qu’une guerre générale a commencé. Les mécanismes de retenue observés et les canaux diplomatiques encore actifs doivent rester pris en compte.",
       "visible": true,
       "watch_down": [
         "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
@@ -176,7 +296,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-23T19:46",
+      "last_update": "2026-11-24T10:19",
       "status": "suivi",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
       "sources": [
@@ -317,6 +437,66 @@
           "type": "Agence de presse",
           "url": "https://apnews.com/article/c382f8eb06dca7d87e89bc6c18ba7d61",
           "note": "Trois morts selon l’administration ukrainienne."
+        },
+        {
+          "label": "Reuters — intrusion et décision de ne pas tirer, 24 novembre",
+          "url": "https://www.reuters.com/business/aerospace-defense/russian-unmanned-aerial-vehicle-briefly-violated-polish-airspace-polish-armed-2026-11-23/",
+          "type": "Agence de presse",
+          "note": "Informations attribuées à l’armée et au vice-ministre polonais."
+        },
+        {
+          "label": "Centre gouvernemental de sécurité polonais — alerte du 23 novembre",
+          "url": "https://www.gov.pl/web/rcb/alert-rcb---atak-z-powietrza-2311",
+          "type": "Source officielle",
+          "note": "Alerte préventive liée aux frappes contre l’Ukraine ; absence de menace déclarée sur le sol polonais au moment de l’alerte."
+        },
+        {
+          "label": "Reuters — bilan de Zaporijjia actualisé le 24 novembre",
+          "url": "https://www.reuters.com/world/russian-attack-kills-2-people-wounds-22-ukraines-zaporizhzhia-official-says-2026-11-24/",
+          "type": "Agence de presse",
+          "note": "Deux morts, quarante blessés dont quatre enfants, selon le gouverneur régional ukrainien."
+        },
+        {
+          "label": "NDR/WDR — enquête sur le projet allégué, 23 novembre",
+          "url": "https://www.tagesschau.de/investigativ/ndr-wdr/satellit-russland-100.html",
+          "type": "Enquête journalistique",
+          "note": "Évaluations de renseignement rapportées, non preuve de lancement."
+        },
+        {
+          "label": "OTAN — conférence de presse du 23 novembre",
+          "url": "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/joint-press-conference-by-the-secretary-general-with-the-federal-chancellor-of-germany",
+          "type": "Déclaration officielle",
+          "note": "Réponse du secrétaire général sur la défense dans l’espace et les incidents."
+        },
+        {
+          "label": "Reuters — réponse de l’OTAN, 23 novembre",
+          "url": "https://www.reuters.com/business/aerospace-defense/asked-about-russian-satellite-reports-nato-says-it-constantly-assesses-situation-2026-11-23/",
+          "type": "Agence de presse",
+          "note": "L’OTAN ne confirme pas publiquement le scénario de lancement."
+        },
+        {
+          "label": "Union européenne — déclaration au Conseil de sécurité de l’ONU, 23 novembre",
+          "url": "https://www.eeas.europa.eu/delegations/un-new-york/eu-statement-un-security-council-maintenance-peace-and-security-ukraine-7_en",
+          "type": "Déclaration officielle",
+          "note": "Bilan maritime présenté par l’Union européenne, à attribuer explicitement."
+        },
+        {
+          "label": "Renseignement danois PET — communiqué du 20 novembre",
+          "url": "https://pet.dk/en/about-pet/news-list/russia-uses-danish-criminal-networks-in-assassination-attempt-on-danish-soil/2026/11/20",
+          "type": "Source officielle",
+          "note": "Évaluation des services, fait déjoué en septembre et procédure judiciaire en cours."
+        },
+        {
+          "label": "Associated Press — accusation danoise, 20 novembre",
+          "url": "https://apnews.com/article/03494b78067c9572120deac038addd23",
+          "type": "Agence de presse",
+          "note": "Corroboration de l’annonce gouvernementale."
+        },
+        {
+          "label": "Ministère estonien des Affaires étrangères — 16 novembre",
+          "url": "https://www.vm.ee/en/news/ministry-foreign-affairs-summons-russian-charge-daffaires-over-attempted-act-sabotage",
+          "type": "Source officielle",
+          "note": "Convocation diplomatique, attribution au GRU et décision de fermeture frontalière annoncée."
         }
       ],
       "category": "Géopolitique · Europe",
