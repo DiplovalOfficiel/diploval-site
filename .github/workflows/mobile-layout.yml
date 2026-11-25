@@ -5,6 +5,7 @@ on:
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/index.html'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/styles.css'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/institutional.css'
+      - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/charte-v21.css'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/content-admin.js'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/**'
       - 'tests/check-responsive-layout.py'
