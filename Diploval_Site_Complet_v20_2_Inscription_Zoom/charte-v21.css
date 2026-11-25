@@ -233,3 +233,32 @@ body.institutional-site{background:var(--dv-ivory);color:var(--text)}
 @media(max-width:760px){
   .institutional-home .participation-home .pc-card{grid-template-columns:minmax(0,1fr)}
 }
+
+/* V2.3 — navigation numérotée uniquement sur les petits écrans.
+   Les sections originales et leurs ancres sont conservées. */
+.dv-mobile-nav,.dv-agenda-empty{display:none}
+@media(max-width:760px){
+  .institutional-home .dv-mobile-nav{
+    display:block;min-width:0;box-sizing:border-box;width:100%;
+    padding:14px 16px;margin:0;background:#062039;color:#f5f0e6;
+    border-top:1px solid #b77b47;border-bottom:2px solid #b77b47;
+  }
+  .institutional-home .agenda-shell>.dv-mobile-nav{border-radius:8px;margin-bottom:14px}
+  .institutional-home .dv-mobile-nav__label{font-weight:700;font-size:.85rem;color:#e5bb92;margin:0 0 8px}
+  .institutional-home .dv-mobile-nav__buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:8px}
+  .institutional-home .dv-mobile-nav button{
+    display:inline-grid;place-items:center;width:44px;min-width:44px;height:44px;
+    border:1px solid #e5bb92;border-radius:50%;background:#153e5c;color:#fff;
+    font:700 16px Arial,Helvetica,sans-serif;cursor:pointer;padding:0;
+  }
+  .institutional-home .dv-mobile-nav button[aria-pressed="true"]{background:#e5bb92;color:#062039}
+  .institutional-home .dv-mobile-nav button:focus-visible{outline:3px solid #fff;outline-offset:2px}
+  .institutional-home .dv-mobile-nav__hint{font-size:.75rem;text-align:center;color:#e5eaf0;margin:8px 0 0}
+  .institutional-home .dv-mobile-panel.dv-mobile-inactive{display:none!important}
+  .institutional-home .dv-agenda-empty:not(.dv-mobile-inactive){
+    display:block;background:#f5f0e6;color:#253647;border:1px solid #ded5c7;border-radius:6px;padding:12px;margin:8px 0;
+  }
+  .institutional-home .agenda-shell:has(#admin-agenda-next:not([hidden])) .dv-agenda-empty-next,
+  .institutional-home .agenda-shell:has(#admin-agenda-more:not([hidden])) .dv-agenda-empty-more,
+  .institutional-home .agenda-shell:has(#admin-agenda-past:not([hidden])) .dv-agenda-empty-past{display:none!important}
+}

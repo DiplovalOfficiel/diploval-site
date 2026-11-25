@@ -67,6 +67,8 @@ def check(page, width, failures):
             failures.append(f"{width}px: no expanded panel for {selector}")
         for i in range(matches.count()):
             item=matches.nth(i)
+            if item.evaluate("el => el.hasAttribute('data-dv-panel')"):
+                item.evaluate("el => el.parentElement.querySelector('.dv-mobile-nav button[data-dv-index=\"'+el.dataset.dvPanel+'\"]').click()")
             if not item.is_visible():
                 failures.append(f"{width}px: hidden expanded panel {selector}[{i}]")
                 continue
@@ -137,7 +139,7 @@ def check_public_pages(browser, width, failures):
                 continue
             if page.locator(".site-header .brand img[src='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: logo commun absent sur {route}")
-            if page.locator("link[href='/charte-v21.css?v=2']").count() != 1:
+            if page.locator("link[href='/charte-v21.css?v=3']").count() != 1:
                 failures.append(f"{width}px: charte globale absente sur {route}")
             if page.locator("link[rel='icon'][href='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: emblème absent ou répété sur {route}")
@@ -177,6 +179,81 @@ def check_home_modules(page, width, failures):
     if dico.locator("h2").evaluate("el => getComputedStyle(el).color") != "rgb(245, 240, 230)":
         failures.append(f"{width}px: titre Dico illisible ou non harmonisé")
 
+
+def check_mobile_navigation(page, width, failures):
+    groups = ((".home-deep", 4), (".home-small-extra", 3), (".home-more-info", 2))
+    for selector, count in groups:
+        owner=page.locator(selector)
+        owner.evaluate("el => el.open = true")
+        nav=owner.locator(".dv-mobile-nav")
+        if nav.count()!=1 or nav.locator("button").count()!=count:
+            failures.append(f"{width}px: navigation incomplète {selector}")
+            continue
+        if width>760:
+            if nav.is_visible():
+                failures.append(f"{width}px: navigation mobile visible sur PC {selector}")
+            if owner.locator(".dv-mobile-panel:not([hidden])").count() and selector!=".home-small-extra":
+                for el in owner.locator(".dv-mobile-panel").all():
+                    if not el.is_visible():
+                        failures.append(f"{width}px: contenu PC masqué {selector}")
+            continue
+        for i in range(count):
+            nav.locator("button").nth(i).evaluate("el => el.click()")
+            if nav.locator("button[aria-pressed='true']").count()!=1 or nav.locator("button").nth(i).get_attribute("aria-pressed")!="true":
+                failures.append(f"{width}px: sélection du panneau {i+1} impossible {selector}")
+            for el in owner.locator(".dv-mobile-panel").all():
+                if el.get_attribute("data-dv-panel")!=str(i) and el.is_visible():
+                    failures.append(f"{width}px: panneau inactif visible {selector}")
+            if not any(el.is_visible() for el in owner.locator(f'.dv-mobile-panel[data-dv-panel="{i}"]').all()):
+                failures.append(f"{width}px: panneau actif vide {selector}")
+    if width<=760:
+        page.evaluate("location.hash='#methode'")
+        page.wait_for_timeout(200)
+        if not page.locator("#methode").is_visible():
+            failures.append(f"{width}px: lien direct vers la méthode inopérant")
+        page.evaluate("location.hash='#faq'")
+        page.wait_for_timeout(200)
+        if not page.locator("#faq").is_visible():
+            failures.append(f"{width}px: lien direct vers les questions inopérant")
+
+
+def check_opening(browser, width, failures):
+    page=browser.new_page(viewport={"width":width,"height":850}, reduced_motion="no-preference")
+    try:
+        page.goto(BASE,wait_until="domcontentloaded",timeout=30000)
+        intro=page.locator("#dv-opening")
+        try:
+            intro.wait_for(state="visible",timeout=2500)
+        except Exception:
+            failures.append(f"{width}px: introduction absente")
+            return
+        if not intro.locator("img").evaluate("el => el.complete && el.naturalWidth > 0"):
+            intro.locator("img").evaluate("el => el.decode()")
+        intro.wait_for(state="hidden",timeout=5000)
+        page.reload(wait_until="domcontentloaded")
+        page.wait_for_timeout(200)
+        if intro.is_visible():
+            failures.append(f"{width}px: introduction rejouée dans la session")
+    finally:
+        page.close()
+    page=browser.new_page(viewport={"width":width,"height":850}, reduced_motion="no-preference")
+    try:
+        page.goto(BASE,wait_until="domcontentloaded")
+        page.locator("#dv-opening .dv-opening-skip").click(timeout=3000)
+        if page.locator("#dv-opening").is_visible():
+            failures.append(f"{width}px: impossible de passer l’introduction")
+    finally:
+        page.close()
+    for motion, suffix in (("reduce",""),("no-preference","#methode")):
+        page=browser.new_page(viewport={"width":width,"height":850}, reduced_motion=motion)
+        try:
+            page.goto(BASE+suffix,wait_until="domcontentloaded")
+            page.wait_for_timeout(200)
+            if page.locator("#dv-opening").is_visible():
+                failures.append(f"{width}px: introduction non désactivée ({motion}, {suffix})")
+        finally:
+            page.close()
+
 def main():
     failures=[]
     Path("layout-screenshots").mkdir(exist_ok=True)
@@ -192,6 +269,7 @@ def main():
                     page=browser.new_page(viewport={"width":width,"height":850},
                                           device_scale_factor=1, is_mobile=mobile,
                                           has_touch=mobile)
+                    page.add_init_script("sessionStorage.setItem('diploval-opening-v1','1')")
                     page.goto(BASE,wait_until="domcontentloaded",timeout=30000)
                     page.wait_for_timeout(1200)
                     if width in (344,390,1280):
@@ -200,10 +278,12 @@ def main():
                     check(page,width,failures)
                     check_identity(page,width,failures)
                     check_home_modules(page,width,failures)
+                    check_mobile_navigation(page,width,failures)
                     print(f"{engine.name}: responsive layout checked at {width}px")
                     page.close()
                 for width in (344, 1280):
                     check_public_pages(browser,width,failures)
+                    check_opening(browser,width,failures)
             finally:
                 browser.close()
     if failures:

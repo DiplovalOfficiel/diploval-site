@@ -6,6 +6,8 @@ on:
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/styles.css'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/institutional.css'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/charte-v21.css'
+      - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/intro-diploval-v23.*'
+      - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/navigation-mobile-v23.js'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/content-admin.js'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/**'
       - 'tests/**'

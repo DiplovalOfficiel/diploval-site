@@ -31,7 +31,7 @@ export function unifyPublicLayout(root){
     html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/institutional.css?v=17">\n</head>');
     // La charte V2.1 est chargée en dernier sur toutes les pages publiques.
     html=html.replace(/<link\b[^>]*href=["']\/charte-v21\.css[^"']*["'][^>]*>\s*/gi,'');
-    html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/charte-v21.css?v=2">\n</head>');
+    html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/charte-v21.css?v=3">\n</head>');
     // Nouveau monogramme : conserver l'ancien favicon PNG en secours.
     html=html.replace(/<link\b[^>]*href=["']\/assets\/diploval-embleme-v2\.webp[^"']*["'][^>]*>\s*/gi,'');
     html=html.replace(/<\/head>/i,'<link rel="icon" type="image/webp" sizes="96x96" href="/assets/diploval-embleme-v2.webp">\n</head>');
