@@ -103,10 +103,12 @@ def check(page, width, failures):
 def check_identity(page, width, failures):
     # Vérifier le rendu du logo commun et de la présentation à quatre panneaux.
     logo = page.locator(".site-header .brand img").first
-    if not logo.count() or not logo.get_attribute("src").endswith("/diploval-logo-v2.webp"):
+    if not logo.count() or not logo.get_attribute("src").endswith("/diploval-embleme-v2.webp"):
         failures.append(f"{width}px: nouveau logo absent")
     elif not logo.evaluate("el => el.complete && el.naturalWidth > 0"):
         failures.append(f"{width}px: logo non chargé")
+    if page.locator(".site-header").evaluate("el => getComputedStyle(el).backgroundColor") != "rgb(6, 32, 57)":
+        failures.append(f"{width}px: en-tête institutionnel bleu nuit absent")
     track = page.locator(".dv-v2-intro__track")
     if not track.count() or track.locator(".dv-v2-intro__panel").count() != 4:
         failures.append(f"{width}px: présentation institutionnelle incomplète")
@@ -133,8 +135,10 @@ def check_public_pages(browser, width, failures):
             if not response or response.status >= 400:
                 failures.append(f"{width}px: page indisponible {route}")
                 continue
-            if page.locator(".site-header .brand img[src='/assets/diploval-logo-v2.webp']").count() != 1:
+            if page.locator(".site-header .brand img[src='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: logo commun absent sur {route}")
+            if page.locator("link[href='/charte-v21.css?v=1']").count() != 1:
+                failures.append(f"{width}px: charte globale absente sur {route}")
             if page.locator("link[rel='icon'][href='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: emblème absent ou répété sur {route}")
             if page.evaluate("document.documentElement.scrollWidth > document.documentElement.clientWidth + 2"):
