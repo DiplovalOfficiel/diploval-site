@@ -1,10 +1,10 @@
 {
   "temporary_notice": {
     "enabled": true,
-    "label": "Information",
-    "text": "Diploval procède actuellement à des améliorations techniques de son site. Certaines fonctionnalités peuvent être temporairement perturbées. Merci de votre compréhension.",
-    "start_date": "19/11/2026",
-    "end_date": "20/11/2026",
+    "label": "Innovation en cours — ODI",
+    "text": "Diploval expérimente actuellement son futur Observatoire diplomatique international. Des perturbations techniques ponctuelles peuvent survenir durant cette phase de tests et de simulations. Merci de votre compréhension.",
+    "start_date": "25/11/2026",
+    "end_date": "",
     "link": "",
     "link_label": ""
   }
