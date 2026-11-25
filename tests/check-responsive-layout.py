@@ -139,7 +139,7 @@ def check_public_pages(browser, width, failures):
                 continue
             if page.locator(".site-header .brand img[src='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: logo commun absent sur {route}")
-            if page.locator("link[href='/charte-v21.css?v=4']").count() != 1:
+            if page.locator("link[href='/charte-v21.css?v=5']").count() != 1:
                 failures.append(f"{width}px: charte globale absente sur {route}")
             if page.locator("link[rel='icon'][href='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: emblème absent ou répété sur {route}")
@@ -189,7 +189,13 @@ def check_mobile_navigation(page, width, failures):
         if nav.count()!=1 or nav.locator("button").count()!=count:
             failures.append(f"{width}px: navigation incomplète {selector}")
             continue
+        pager=owner.locator(".dv-mobile-pager")
+        if pager.count()!=1:
+            failures.append(f"{width}px: navigation de fin absente {selector}")
+            continue
         if width>760:
+            if pager.is_visible():
+                failures.append(f"{width}px: navigation de fin visible sur PC {selector}")
             if nav.is_visible():
                 failures.append(f"{width}px: navigation mobile visible sur PC {selector}")
             if owner.locator(".dv-mobile-panel:not([hidden])").count() and selector!=".home-small-extra":
@@ -206,6 +212,20 @@ def check_mobile_navigation(page, width, failures):
                     failures.append(f"{width}px: panneau inactif visible {selector}")
             if not any(el.is_visible() for el in owner.locator(f'.dv-mobile-panel[data-dv-panel="{i}"]').all()):
                 failures.append(f"{width}px: panneau actif vide {selector}")
+        nav.locator("button").first.evaluate("el => el.click()")
+        for i in range(1,count):
+            pager.locator(".dv-mobile-pager-next").click()
+            page.wait_for_timeout(180)
+            if nav.locator("button").nth(i).get_attribute("aria-pressed")!="true":
+                failures.append(f"{width}px: bouton suivant inopérant {selector}")
+            if nav.evaluate("el => el.getBoundingClientRect().top < document.querySelector('.site-header').getBoundingClientRect().bottom - 2 || el.getBoundingClientRect().bottom > innerHeight"):
+                failures.append(f"{width}px: navigation hors écran après suivant {selector}")
+        if pager.locator(".dv-mobile-pager-next").is_visible():
+            failures.append(f"{width}px: bouton suivant visible en fin {selector}")
+        pager.locator(".dv-mobile-pager-prev").click()
+        page.wait_for_timeout(180)
+        if nav.locator("button").nth(count-2).get_attribute("aria-pressed")!="true":
+            failures.append(f"{width}px: bouton précédent inopérant {selector}")
     if width<=760:
         page.evaluate("location.hash='#methode'")
         page.wait_for_timeout(200)
@@ -248,6 +268,8 @@ def check_opening(browser, width, failures):
             return
         if not intro.locator("img").evaluate("el => el.complete && el.naturalWidth > 0"):
             intro.locator("img").evaluate("el => el.decode()")
+        if intro.locator(".dv-opening-scene").evaluate("el => getComputedStyle(el).outlineStyle") != "none":
+            failures.append(f"{width}px: cadre visible sur la scène d’introduction")
         intro.wait_for(state="hidden",timeout=5000)
         page.reload(wait_until="domcontentloaded")
         page.wait_for_timeout(200)
