@@ -5,9 +5,11 @@ on:
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/index.html'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/styles.css'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/institutional.css'
+      - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/charte-v21.css'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/content-admin.js'
       - 'Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/**'
-      - 'tests/check-responsive-layout.py'
+      - 'tests/**'
+      - 'netlify.toml'
       - '.github/workflows/mobile-layout.yml'
   workflow_dispatch:
 
@@ -27,10 +29,9 @@ jobs:
         run: |
           python -m pip install --disable-pip-version-check 'playwright>=1.55,<2'
           python -m playwright install chromium firefox
-      - name: Générer les pages publiques et vérifier les liens
+      - name: Exécuter les mêmes tests et la même construction que Netlify
         run: |
-          node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/generate-seo-pages.mjs
-          node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/check-site.mjs
+          node --test tests/dialogue-model.test.mjs tests/dialogue-storage.test.mjs tests/dialogue-author-access.test.mjs tests/dialogue-encrypted-store.test.mjs tests/dialogue-b2-integration.test.mjs tests/dialogue-service-v03.test.mjs tests/site-notice-admin.test.mjs tests/dialogue-reference-recovery.test.mjs tests/dialogue-moderator-access.test.mjs tests/dialogue-contact-index.test.mjs tests/dialogue-moderation-queue.test.mjs tests/dialogue-appeals.test.mjs tests/dialogue-b5-service.test.mjs tests/dialogue-appeal-queue.test.mjs tests/dialogue-b5-preview.test.mjs tests/dialogue-followup.test.mjs tests/dialogue-contributor-responses.test.mjs tests/dialogue-b6-service.test.mjs tests/dialogue-b6-preview.test.mjs && node --test tests/dico.test.mjs && node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/generate-seo-pages.mjs && node Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/check-site.mjs
       - name: Tester les pages rendues dans Chromium et Firefox
         run: |
           python -m http.server 8765 --bind 127.0.0.1 --directory Diploval_Site_Complet_v20_2_Inscription_Zoom &

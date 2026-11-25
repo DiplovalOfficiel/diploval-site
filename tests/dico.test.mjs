@@ -88,6 +88,7 @@ test('Le Dico est présenté dans un encadré visible sur l’accueil, avec son 
   assert.match(header, />Dico Diplo<\/a>/);
   assert.match(css, /@media\(max-width:820px\)/);
   assert.match(visual, /data:image\/webp;base64,/);
-  assert.ok(home.indexOf('class="dico-spotlight"') < home.indexOf('class="institutional-front"'), 'Encadré placé trop bas dans l’accueil');
+  // V2.2 : Dico et consultations forment les deux premiers modules de la grille.
+  assert.match(home, /<div class="institutional-front">\s*<section class="dico-spotlight"[^>]*>[\s\S]*?<\/section>\s*<section[^>]*class="participation-home reveal"[^>]*id="propositions-contributions-home"/, 'Dico et consultations doivent être des sections voisines de la grille');
 });
 

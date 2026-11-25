@@ -137,7 +137,7 @@ def check_public_pages(browser, width, failures):
                 continue
             if page.locator(".site-header .brand img[src='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: logo commun absent sur {route}")
-            if page.locator("link[href='/charte-v21.css?v=1']").count() != 1:
+            if page.locator("link[href='/charte-v21.css?v=2']").count() != 1:
                 failures.append(f"{width}px: charte globale absente sur {route}")
             if page.locator("link[rel='icon'][href='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: emblème absent ou répété sur {route}")
@@ -145,6 +145,37 @@ def check_public_pages(browser, width, failures):
                 failures.append(f"{width}px: débordement horizontal sur {route}")
         finally:
             page.close()
+
+
+def check_home_modules(page, width, failures):
+    dico = page.locator(".dico-spotlight")
+    participation = page.locator("#propositions-contributions-home")
+    watch = page.locator("#strategic-watch")
+    if not dico.is_visible() or not participation.is_visible():
+        failures.append(f"{width}px: cartes découverte absentes")
+        return
+    d, p = dico.bounding_box(), participation.bounding_box()
+    if width >= 961:
+        if abs(d["y"] - p["y"]) > 3 or abs(d["width"] - p["width"]) > 3 or d["x"] + d["width"] > p["x"] + 2:
+            failures.append(f"{width}px: Dico et consultations non alignés côte à côte")
+    elif d["y"] + d["height"] > p["y"] + 2:
+        failures.append(f"{width}px: cartes découverte non empilées")
+    if not watch.is_visible():
+        failures.append(f"{width}px: module situations suivies absent")
+        return
+    b = watch.bounding_box()
+    if width >= 961:
+        ref = page.locator(".home-shortcuts").bounding_box()
+        if abs(b["x"] - ref["x"]) > 3 or abs(b["width"] - ref["width"]) > 3:
+            failures.append(f"{width}px: module de suivi désaligné des accès rapides")
+    for selector in (".strategic-watch__main", ".strategic-watch__help", ".dico-spotlight", "#propositions-contributions-home"):
+        for el in page.locator(selector).all():
+            if el.is_visible() and el.evaluate("el => el.scrollWidth > el.clientWidth + 3"):
+                failures.append(f"{width}px: débordement interne {selector}")
+    if watch.locator(".strategic-watch__item").count() < 1:
+        failures.append(f"{width}px: aucune situation affichée")
+    if dico.locator("h2").evaluate("el => getComputedStyle(el).color") != "rgb(245, 240, 230)":
+        failures.append(f"{width}px: titre Dico illisible ou non harmonisé")
 
 def main():
     failures=[]
@@ -168,6 +199,7 @@ def main():
                                         full_page=True, animations="disabled")
                     check(page,width,failures)
                     check_identity(page,width,failures)
+                    check_home_modules(page,width,failures)
                     print(f"{engine.name}: responsive layout checked at {width}px")
                     page.close()
                 for width in (344, 1280):
