@@ -31,7 +31,7 @@ export function unifyPublicLayout(root){
     html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/institutional.css?v=17">\n</head>');
     // La charte V2.1 est chargée en dernier sur toutes les pages publiques.
     html=html.replace(/<link\b[^>]*href=["']\/charte-v21\.css[^"']*["'][^>]*>\s*/gi,'');
-    html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/charte-v21.css?v=4">\n</head>');
+    html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/charte-v21.css?v=5">\n</head>');
     // Nouveau monogramme : conserver l'ancien favicon PNG en secours.
     html=html.replace(/<link\b[^>]*href=["']\/assets\/diploval-embleme-v2\.webp[^"']*["'][^>]*>\s*/gi,'');
     html=html.replace(/<\/head>/i,'<link rel="icon" type="image/webp" sizes="96x96" href="/assets/diploval-embleme-v2.webp">\n</head>');
@@ -43,6 +43,7 @@ export function unifyPublicLayout(root){
     if(missing.length)html=html.replace(/<script\b[^>]*src="\/site\.js[^>]*>/i,m=>missing.join('\n')+'\n'+m);
     if(file!==path.join(root,'index.html'))html=html.replace(/href="#garanties"/g,'href="/#garanties"');
     html=html.replace(/\/intro-diploval-v23\.js\?v=1/g,"/intro-diploval-v23.js?v=2");
+    html=html.replace(/\/navigation-mobile-v23\.js\?v=1/g,"/navigation-mobile-v23.js?v=2");
     fs.writeFileSync(file,html);
   }
   console.log(`Common public layout applied: ${files.length} HTML pages`);
