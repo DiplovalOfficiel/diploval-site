@@ -9,7 +9,9 @@
   }catch{return;}
   let timer;
   const close=()=>{clearTimeout(timer);if(dialog.open)dialog.close();};
-  dialog.querySelector('.dv-opening-skip')?.addEventListener('click',close);
+  dialog.querySelector('.dv-opening-skip')?.remove();
+  const scene=dialog.querySelector('.dv-opening-scene');
+  if(scene){scene.tabIndex=-1;scene.setAttribute('autofocus','');}
   dialog.addEventListener('cancel',e=>{e.preventDefault();close();});
   dialog.addEventListener('animationend',e=>{if(e.target===dialog&&e.animationName==='dv-opening-exit')close();});
   motion.addEventListener('change',e=>{if(e.matches)close();});
