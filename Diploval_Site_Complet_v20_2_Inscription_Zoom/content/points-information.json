@@ -3,10 +3,96 @@
     {
       "show_home": true,
       "level": "2",
-      "summary": "Au 24 novembre 2026, la guerre en Ukraine se poursuit sans cessez-le-feu général. Le risque de débordement vers des États de l'OTAN demeure élevé : violations répétées de l'espace polonais, renforcement défensif allié, menaces hybrides attribuées aux services russes et avertissements visant les militaires français présents en Ukraine. Cet après-midi, Zelensky a confirmé l'attaque ukrainienne du Sparta II en Baltique, suscitant des préoccupations norvégiennes, tandis que l'Italie a officiellement exprimé ses inquiétudes sur les opérations ukrainiennes en Libye. Le Royaume-Uni a alerté ses entreprises de défense contre les risques de sabotage russe et la Pologne a convoqué l'ambassadeur russe. Un rendez-vous Rutte–Trump est annoncé pour le 25 novembre ; les besoins financiers ukrainiens pour 2027 sont chiffrés à 115 milliards d'euros selon Kyiv. Le bilan des blessés à Zaporijjia a été révisé à 48 selon AP. Diploval maintient le niveau 2 — Vigilance renforcée et poursuit l'examen documenté d'un éventuel Code One préventif.",
+      "summary": "Au 25 novembre 2026, la guerre se poursuit sans cessez-le-feu général. Le risque de débordement international reste élevé, notamment après les incidents en Pologne et en Baltique. Deux militaires libyens sont annoncés morts à la suite de l’opération ukrainienne à Benghazi ; l’armée libyenne menace de riposter. Moscou annonce des représailles après les frappes contre ses raffineries. De nouvelles victimes sont signalées à Odessa et Kyiv. L’ONU alerte sur les réseaux essentiels et la navigation civile. La participation européenne aux prochains pourparlers reste indéterminée. Diploval maintient le niveau 2 — Vigilance renforcée et poursuit l’examen documenté d’un éventuel Code One. Les bilans et déclarations sont attribués à leurs sources.",
       "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
       "opened_at": "2026-11-19T11:50",
       "updates": [
+        {
+          "datetime": "2026-11-25T11:45",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre — bilan annoncé, dépêches des 24 et 25",
+          "title": "Libye — Décès de deux militaires libyens et menace de représailles",
+          "body": "L’Armée nationale libyenne annonce la mort de deux militaires blessés lors de l’opération ukrainienne du 22 novembre à Benghazi, déjà documentée dans notre chronologie. Elle menace de répondre, sans action de représailles confirmée. Le gouvernement de Tripoli condamne cette opération ; Kyiv invoque l’article 51 de la Charte des Nations unies. Cet argument ne tranche pas la question du respect de la souveraineté libyenne. La mission de l’ONU en Libye appelle au respect de celle-ci. Le bilan reste attribué aux autorités libyennes.",
+          "sources": [
+            {
+              "label": "Reuters — position ukrainienne et bilan libyen",
+              "url": "https://www.reuters.com/world/europe/ukraine-insists-attack-russian-ships-libya-was-self-defence-2026-11-24/",
+              "note": "Déclarations des parties.",
+              "type": "Agence de presse"
+            },
+            {
+              "label": "Associated Press — décès de deux officiers",
+              "url": "https://apnews.com/article/5719d6750c0619695c7f23a373cecd7b",
+              "note": "Bilan attribué à l’armée libyenne.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-25T11:45",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre au soir — bilans relayés le 25",
+          "title": "Odessa et Kyiv — Nouvelles victimes signalées",
+          "body": "Le gouverneur d’Odessa annonce deux morts et trois blessés, dont un enfant, après une frappe russe. À Kyiv, le maire signale deux blessés et un incendie dans un immeuble résidentiel. Reuters rapporte ces bilans sans avoir pu les vérifier indépendamment.",
+          "sources": [
+            {
+              "label": "Reuters — Odessa et Kyiv",
+              "url": "https://www.reuters.com/world/russian-strike-kills-two-people-ukraines-odesa-region-governor-says-2026-11-25/",
+              "note": "Bilans locaux provisoires.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-25T11:45",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre — déclaration présidentielle",
+          "title": "Russie — Poutine annonce des représailles après les frappes sur les raffineries",
+          "body": "Vladimir Poutine annonce une réponse russe aux attaques ukrainiennes contre les installations de raffinage. Kyiv conditionne l’arrêt de ses frappes énergétiques à une cessation réciproque. La déclaration ne confirme ni la nature ni la réalisation de nouvelles représailles.",
+          "sources": [
+            {
+              "label": "Reuters — déclaration de Poutine",
+              "url": "https://www.reuters.com/business/energy/putin-says-ukraine-hits-russian-oil-plants-despite-trumps-requests-promises-2026-11-24/",
+              "note": "Menace déclarée, non opération confirmée.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-25T11:45",
+          "event_date": "2026-11-24",
+          "event_label": "24 novembre — réaffirmation diplomatique",
+          "title": "Négociations — Participation européenne toujours indéterminée",
+          "body": "Dmitri Peskov réaffirme les réserves russes quant à la contribution européenne aux pourparlers. Aucun calendrier pour le prochain cycle n’est arrêté selon le porte-parole. Cette position prolonge les réserves antérieures de Moscou et ne constitue pas une rupture nouvelle des négociations.",
+          "sources": [
+            {
+              "label": "Anadolu — déclaration du Kremlin",
+              "url": "https://mobil.aa.com.tr/en/world/russia-so-far-sees-no-added-value-in-europe-s-participation-in-ukraine-peace-talks-kremlin/4135797",
+              "note": "Position attribuée au Kremlin.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-25T11:45",
+          "event_date": "2026-11-23",
+          "event_label": "23 novembre — complément institutionnel",
+          "title": "ONU — Alerte sur les infrastructures essentielles et la navigation",
+          "body": "Rosemary DiCarlo avertit le Conseil de sécurité que les attaques contre les réseaux énergétiques aggravent les besoins humanitaires, notamment par les perturbations de l’électricité, du chauffage et de l’eau. Elle souligne également les risques pour la navigation civile et les exportations alimentaires en mer Noire. Ce complément institutionnel porte sur des faits accumulés, et non sur un incident nouveau du 25 novembre.",
+          "sources": [
+            {
+              "label": "Nations unies — synthèse officielle du 23 novembre",
+              "url": "https://dppa.un.org/en/news/todays-top-news-ukraine-libya-central-africa",
+              "note": "Synthèse institutionnelle accessible ; discours intégral non rouvert.",
+              "type": "Source officielle"
+            }
+          ],
+          "correction": false
+        },
         {
           "datetime": "2026-11-24T17:39",
           "event_date": "2026-11-24",
@@ -423,7 +509,7 @@
         "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
       ],
       "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix.",
-      "why_level": "Niveau 2 maintenu au 24 novembre. La combinaison des intrusions russes rapportées en Pologne, des avertissements visant des militaires français en Ukraine, des opérations hybrides attribuées par les États européens et des mesures défensives de l'OTAN constitue un risque significatif d'escalade. La reconnaissance ukrainienne de la frappe contre le Sparta II dans le golfe de Finlande et les opérations revendiquées près de Benghazi démontrent aussi que le débordement géographique peut résulter d'opérations ukrainiennes ; la Norvège et l'Italie ont exprimé des préoccupations officielles. Aucune confrontation armée directe Russie–OTAN n'est établie à cette heure ; le statut et la légalité de chaque opération doivent être appréciés séparément et ne sont pas déterminés par la seule déclaration d'une partie. Le projet allégué de satellite nucléaire russe n'est pas confirmé publiquement. La convocation diplomatique de l'ambassadeur russe ne constitue pas un affrontement armé, et des canaux de dialogue restent actifs. Le Code One doit pouvoir répondre à une convergence préventive de risques critiques, mais son élévation reste soumise à une validation éditoriale documentée ; il n'est pas déclenché par les informations actuelles.",
+      "why_level": "Niveau 2 maintenu au 25 novembre. La combinaison des intrusions russes rapportées en Pologne, des avertissements visant des militaires français en Ukraine, des opérations hybrides attribuées par les États européens et des mesures défensives de l'OTAN constitue un risque significatif d'escalade. La reconnaissance ukrainienne de la frappe contre le Sparta II dans le golfe de Finlande et les opérations revendiquées près de Benghazi démontrent aussi que le débordement géographique peut résulter d'opérations ukrainiennes ; la Norvège et l'Italie ont exprimé des préoccupations officielles. Aucune confrontation armée directe Russie–OTAN n'est établie à cette heure ; le statut et la légalité de chaque opération doivent être appréciés séparément et ne sont pas déterminés par la seule déclaration d'une partie. Le projet allégué de satellite nucléaire russe n'est pas confirmé publiquement. La convocation diplomatique de l'ambassadeur russe ne constitue pas un affrontement armé, et des canaux de dialogue restent actifs. Le Code One doit pouvoir répondre à une convergence préventive de risques critiques, mais son élévation reste soumise à une validation éditoriale documentée ; il n'est pas déclenché par les informations actuelles. Les décès annoncés en Libye et les nouvelles menaces de représailles renforcent la vigilance, sans établir de confrontation directe Russie–OTAN ni de rupture définitive du dialogue.",
       "visible": true,
       "watch_down": [
         "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
@@ -433,7 +519,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-24T17:39",
+      "last_update": "2026-11-25T11:45",
       "status": "suivi",
       "related_publication": "accord-cadre-ukraine-russie-v01",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
@@ -695,6 +781,42 @@
           "type": "Agence de presse",
           "url": "https://apnews.com/article/russia-ukraine-libya-sea-drone-attacks-bfff959fb4c7415f9473b34e78a4f750",
           "note": "Bilan plus récent cité par les autorités ukrainiennes et rapporté par AP."
+        },
+        {
+          "label": "Reuters — position ukrainienne et bilan libyen",
+          "url": "https://www.reuters.com/world/europe/ukraine-insists-attack-russian-ships-libya-was-self-defence-2026-11-24/",
+          "note": "Déclarations des parties.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Associated Press — décès de deux officiers",
+          "url": "https://apnews.com/article/5719d6750c0619695c7f23a373cecd7b",
+          "note": "Bilan attribué à l’armée libyenne.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Reuters — Odessa et Kyiv",
+          "url": "https://www.reuters.com/world/russian-strike-kills-two-people-ukraines-odesa-region-governor-says-2026-11-25/",
+          "note": "Bilans locaux provisoires.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Reuters — déclaration de Poutine",
+          "url": "https://www.reuters.com/business/energy/putin-says-ukraine-hits-russian-oil-plants-despite-trumps-requests-promises-2026-11-24/",
+          "note": "Menace déclarée, non opération confirmée.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Anadolu — déclaration du Kremlin",
+          "url": "https://mobil.aa.com.tr/en/world/russia-so-far-sees-no-added-value-in-europe-s-participation-in-ukraine-peace-talks-kremlin/4135797",
+          "note": "Position attribuée au Kremlin.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Nations unies — synthèse officielle du 23 novembre",
+          "url": "https://dppa.un.org/en/news/todays-top-news-ukraine-libya-central-africa",
+          "note": "Synthèse institutionnelle accessible ; discours intégral non rouvert.",
+          "type": "Source officielle"
         }
       ],
       "category": "Géopolitique · Europe"
