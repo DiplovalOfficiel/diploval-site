@@ -13,6 +13,11 @@
     const hint=document.createElement('p');hint.className='dv-mobile-nav__hint';hint.textContent='Faites glisser ou choisissez un numéro.';
     nav.append(label,buttons,hint);
     insertAfter.after(nav);
+    const footer=document.createElement('nav');
+    footer.className='dv-mobile-pager';footer.setAttribute('aria-label','Continuer la lecture des rubriques');
+    const prev=document.createElement('button'),next=document.createElement('button');
+    prev.type=next.type='button';prev.className='dv-mobile-pager-prev';next.className='dv-mobile-pager-next';
+    footer.append(prev,next);container.append(footer);
     let active=0;
     const controls=entries.map((entry,i)=>{
       const button=document.createElement('button');button.type='button';button.textContent=String(i+1);
@@ -26,7 +31,22 @@
       entries.forEach((entry,j)=>entry.nodes.forEach(n=>n.classList.toggle('dv-mobile-inactive',j!==active)));
       controls.forEach((b,j)=>b.setAttribute('aria-pressed',String(j===active)));
       label.textContent=(active+1)+' / '+entries.length+' — '+entries[active].label;
+      prev.hidden=active===0;next.hidden=active===entries.length-1;
+      prev.textContent=active>0?'← '+entries[active-1].label:'';
+      next.textContent=active<entries.length-1?entries[active+1].label+' →':'';
     }
+    function continueTo(i){
+      if(!mq.matches||i<0||i>=entries.length)return;
+      select(i);
+      requestAnimationFrame(()=>{
+        controls[active].focus({preventScroll:true});
+        const header=document.querySelector('.site-header');
+        const offset=header?header.getBoundingClientRect().height:0;
+        window.scrollTo({top:Math.max(0,window.scrollY+nav.getBoundingClientRect().top-offset-8),behavior:'instant'});
+      });
+    }
+    prev.addEventListener('click',()=>continueTo(active-1));
+    next.addEventListener('click',()=>continueTo(active+1));
     controls.forEach((button,i)=>button.addEventListener('click',()=>select(i)));
     nav.addEventListener('keydown',e=>{
       if(!mq.matches||!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;
@@ -42,8 +62,7 @@
       if(!touch||!mq.matches||!e.changedTouches.length){touch=null;return;}
       const t=e.changedTouches[0],dx=t.clientX-touch.x,dy=t.clientY-touch.y;touch=null;
       if(Math.abs(dx)<65||Math.abs(dx)<Math.abs(dy)*1.6)return;
-      const old=active;select(active+(dx<0?1:-1));
-      if(old!==active&&nav.getBoundingClientRect().top<0)nav.scrollIntoView({block:'start',behavior:'auto'});
+      continueTo(active+(dx<0?1:-1));
     },{passive:true});
     select(0);groups.push({owner,entries,select});
   }
