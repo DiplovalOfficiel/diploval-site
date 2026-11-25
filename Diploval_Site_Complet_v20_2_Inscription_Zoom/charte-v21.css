@@ -223,3 +223,13 @@ body.institutional-site{background:var(--dv-ivory);color:var(--text)}
   .institutional-home .institutional-front>:is(.communiques-home,.section-actualites){align-self:stretch;border-radius:12px}
   .institutional-home .home-follow-grid>:is(.section){align-self:stretch}
 }
+
+/* V2.2.1 — supprimer l'ancien ornement débordant du cadre des consultations.
+   Le cercle absolu à right:-95px élargissait scrollWidth même sous overflow:hidden. */
+.institutional-home .institutional-front>.participation-home::after{content:none}
+.institutional-home .participation-home :is(.pc-list,.pc-card,.pc-card>div,.pc-actions,.pc-chip,.participation-home__head,.participation-home__more){min-width:0;max-width:100%;box-sizing:border-box}
+.institutional-home .participation-home .pc-chip{white-space:normal;overflow-wrap:anywhere}
+.institutional-home .participation-home .pc-actions .button{max-width:100%;white-space:normal;overflow-wrap:anywhere}
+@media(max-width:760px){
+  .institutional-home .participation-home .pc-card{grid-template-columns:minmax(0,1fr)}
+}
