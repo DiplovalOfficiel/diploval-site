@@ -1,0 +1,106 @@
+/* DIPLOVAL V2.1 — charte publique globale.
+   Les couleurs des niveaux de vigilance, des états de formulaire et des statuts
+   éditoriaux sont volontairement exclues des règles de marque. */
+:root {
+  --dv-navy:#062039;--dv-blue:#153e5c;--dv-copper:#b77b47;
+  --dv-copper-light:#e5bb92;--dv-copper-text:#814721;
+  --dv-ivory:#f5f0e6;--dv-paper:#fbf8f2;--dv-border:#ded5c7;
+  --ink:#062039;--ink-2:#153e5c;--paper:#f5f0e6;--line:#ded5c7;
+  --text:#253647;--muted:#465d65;
+}
+body.institutional-site{background:var(--dv-ivory);color:var(--text)}
+/* Identité permanente : emblème seul et nom en vrai texte. */
+.institutional-site .site-header{
+  background:#062039;color:#f5f0e6;border-top:0;border-bottom:3px solid #b77b47;
+  box-shadow:0 4px 16px #06203920;
+}
+.institutional-site .header-inner{gap:12px;align-items:center}
+.institutional-site .brand{
+  display:inline-flex;align-items:center;gap:12px;flex:0 0 auto;
+  width:auto;max-width:100%;background:none;overflow:visible;
+}
+.institutional-site .brand img{width:66px;height:66px;object-fit:contain;flex:0 0 66px;border-radius:9px}
+.institutional-site .dv-brand-name{
+  font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.45rem,2.4vw,2rem);
+  color:#f5f0e6;letter-spacing:.07em;font-weight:500;white-space:nowrap;line-height:1.15;
+}
+.institutional-site .institutional-brandline{color:#e5bb92;font-size:.87rem;line-height:1.45}
+.institutional-site .header-contact{
+  background:#e5bb92;color:#062039;border:1px solid #e5bb92;border-radius:7px;
+}
+.institutional-site .header-contact:hover{background:#f5f0e6;color:#062039}
+.institutional-site .menu-toggle span{background:#f5f0e6}
+.institutional-site .mobile-menu-caption{color:#f5f0e6}
+.institutional-site .site-header :focus-visible{outline:3px solid #e5bb92;outline-offset:3px}
+@media(min-width:980px){
+  .institutional-site .main-nav{background:transparent;border-top:1px solid #ffffff28;gap:clamp(.75rem,2vw,1.65rem);flex-wrap:wrap;padding:8px 0}
+  .institutional-site .main-nav a{color:#f5f0e6;font-weight:600;line-height:1.35;min-height:44px;display:flex;align-items:center;border-bottom:2px solid transparent}
+  .institutional-site .main-nav a:hover,.institutional-site .main-nav a[aria-current="page"]{color:#e5bb92;border-bottom-color:#e5bb92;text-decoration:none}
+}
+@media(min-width:761px) and (max-width:979px){
+  .institutional-site .main-nav:not(.open){background:transparent;border-top-color:#ffffff28}
+  .institutional-site .main-nav:not(.open) a{color:#f5f0e6}
+}
+@media(max-width:979px){
+  .institutional-site .main-nav.nav-tiles.open{background:#f5f0e6;border-color:#b77b47}
+  .institutional-site .main-nav.nav-tiles.open .dv-nav-intro{color:#062039}
+  .institutional-site .main-nav.nav-tiles.open a.dv-nav-item{background:#062039;color:#f5f0e6;border-color:#153e5c}
+  .institutional-site .main-nav.nav-tiles.open a.dv-nav-item:hover,.institutional-site .main-nav.nav-tiles.open a.dv-nav-item[aria-current="page"]{background:#153e5c;border-color:#b77b47;color:#fff}
+}
+@media(max-width:760px){
+  .institutional-site .brand{max-width:calc(100% - 70px);gap:7px}
+  .institutional-site .brand img{width:48px;height:48px;flex-basis:48px}
+  .institutional-site .dv-brand-name{font-size:clamp(1.06rem,4vw,1.4rem);letter-spacing:.04em}
+}
+/* Accueil : couleur structurante, pas uniquement un encadré. */
+.institutional-home .hero{background:linear-gradient(120deg,#f5f0e6 0%,#fff 66%,#e4edf3 100%);border-bottom:1px solid #ded5c7}
+.institutional-home .dv-v2-intro{background:linear-gradient(140deg,#062039,#153e5c);border:1px solid #b77b47;box-shadow:0 12px 26px #06203918}
+.institutional-home .dv-pitch-kicker{color:#814721;font-size:.8rem;font-weight:750;letter-spacing:.06em;text-transform:uppercase}
+.institutional-home .home-shortcuts a{
+  background:#153e5c;color:#f5f0e6;border:1px solid #153e5c;border-top:3px solid #b77b47;border-radius:9px;
+  box-shadow:0 4px 12px #06203912;
+}
+.institutional-home .home-shortcuts a strong{color:#fff}
+.institutional-home .home-shortcuts a span{color:#e3eaf0}
+.institutional-home .home-shortcuts a:hover,.institutional-home .home-shortcuts a:focus-visible{background:#062039;color:#fff;border-color:#b77b47}
+.institutional-home .institutional-front>.participation-home{background:#e9e0d1;border-top:3px solid #b77b47}
+.institutional-home .institutional-front>:is(.section,.communiques-home){background:#fffdf9;border-top:3px solid #b77b47}
+.institutional-home :is(.home-deep,.home-collapse,.home-small-extra,.home-more-info)>summary{background:#153e5c;color:#fff;border-radius:6px}
+.institutional-home :is(.home-deep,.home-collapse,.home-small-extra,.home-more-info)>summary :is(strong,b,h2,h3,span){color:#f5f0e6!important}
+.institutional-home :is(.home-deep,.home-collapse,.home-small-extra,.home-more-info)>summary::after{color:#e5bb92}
+.institutional-home :is(.section-heading,.works-head,.participation-home__head,.communiques-home__head,.agenda-head,.guarantees-v207__head){border-inline-start:3px solid #b77b47;padding-inline-start:12px}
+.institutional-home :is(.section-heading,.works-head,.participation-home__head,.communiques-home__head,.agenda-head) :is(h2,h3){color:#062039}
+.institutional-home :is(.section-heading,.works-head,.participation-home__head,.communiques-home__head,.agenda-head) .eyebrow{color:#814721}
+/* Pages intérieures : bandeau de titre commun, contenu de lecture clair. */
+.institutional-site main :is(.seo-detail-hero,.points-hero,.communiques-hero,.pc-hero,.dp-hero){
+  background:linear-gradient(120deg,#062039,#153e5c);color:#f5f0e6;border-bottom:3px solid #b77b47;
+}
+.institutional-site main :is(.seo-detail-hero,.points-hero,.communiques-hero,.pc-hero,.dp-hero) h1{color:#f5f0e6}
+.institutional-site main :is(.seo-detail-hero,.points-hero,.communiques-hero,.pc-hero,.dp-hero) .eyebrow{color:#e5bb92}
+.institutional-site :is(.seo-detail-hero .seo-detail-lead,.points-hero-inner>p:not(.eyebrow),.communiques-hero .communiques-wrap>p:not(.eyebrow),.pc-hero .pc-lead,.dp-hero .dp-lead,.dp-hero .dp-calendar){color:#e5eaf0}
+.institutional-site :is(.seo-detail-hero .seo-detail-back,.dp-hero .dp-back,.dp-hero .dp-grid>div>a:not(.button)){color:#e5bb92;text-decoration:underline;text-underline-offset:3px}
+.institutional-site .seo-detail-hero .seo-detail-meta span{background:#f5f0e6;color:#062039;border-color:#ded5c7}
+.institutional-site :is(.points-hero .points-principle,.communiques-hero .communiques-principle,.pc-hero .pc-principle,.dp-hero .dp-freeze){background:#f5f0e6;color:#253647;border:1px solid #ded5c7;border-inline-start:3px solid #b77b47}
+.institutional-site :is(.points-hero .points-principle,.communiques-hero .communiques-principle,.pc-hero .pc-principle,.dp-hero .dp-freeze) :is(strong,span,p){color:#253647}
+.institutional-site :is(.points-page-section,.pc-section,.communiques-section) .eyebrow{color:#814721}
+.institutional-site :is(.points-page-section,.pc-section,.communiques-section) h2{color:#062039}
+/* Surfaces de lecture, cartes, commandes — pas de modification des états d'alerte. */
+.institutional-site :is(.seo-detail-body,.seo-detail-card,.pc-card,.pc-info,.communique-card,.point-list-card,.point-method-card,.points-method-card,.dv-dico-entry,.publication-result,.work-card,.actualite-card,.institutional-service,.social-card,.agenda-card){
+  border-radius:9px;border-color:#ded5c7;box-shadow:0 4px 15px #0620390b;
+}
+.institutional-site :is(.seo-detail-card,.pc-info,.points-method-card,.institutional-service,.dv-dico-entry){border-top:2px solid #b77b47}
+.institutional-site :is(.button-primary,.button-copper){background:#062039!important;border-color:#062039!important;color:#fff!important;border-radius:7px}
+.institutional-site :is(.button-primary,.button-copper):hover{background:#153e5c!important;border-color:#b77b47!important}
+.institutional-site .button-outline{background:#fff;color:#062039;border:1px solid #a46c42;border-radius:7px}
+.institutional-site .button-outline:hover{background:#f5f0e6;border-color:#814721;color:#062039}
+.institutional-site .site-footer{background:#062039;border-top:4px solid #b77b47}
+.institutional-site .site-footer :is(a,button):hover{color:#e5bb92}
+/* Défilement tactile conservé ; contrôles compacts avec état actif. */
+.dv-v2-intro__track.dv-enhanced{scrollbar-width:none}
+.dv-v2-intro__track.dv-enhanced::-webkit-scrollbar{display:none}
+.institutional-home .dv-v2-intro__nav{justify-content:center;gap:.5rem}
+.institutional-home .dv-v2-intro__nav a{border-radius:50%;width:44px;height:44px;min-width:44px}
+.institutional-home .dv-v2-intro__nav a[aria-current="true"]{background:#e5bb92;color:#062039;border-color:#e5bb92;font-weight:800}
+.institutional-home .dv-v2-intro__nav a:hover{border-color:#e5bb92}
+.institutional-home .dv-v2-intro__hint{text-align:center}
+@media(prefers-reduced-motion:reduce){.institutional-site *, .dv-v2-intro__track{scroll-behavior:auto!important}}

@@ -2,7 +2,7 @@
 <header class="site-header" id="top">
 <div class="header-inner">
 <a aria-label="Diploval, retour à l’accueil" class="brand" href="/#accueil">
-<img alt="Diploval" decoding="async" height="140" src="/assets/diploval-logo-v2.webp" width="280">
+<img alt="" decoding="async" height="96" src="/assets/diploval-embleme-v2.webp" width="96"><span class="dv-brand-name">DIPLOVAL</span>
 </a><span class="institutional-brandline">L’intelligence institutionnelle au service du vivant</span>
 <div class="header-actions">
 <a class="header-contact" href="mailto:contact@diploval.fr?subject=Prise%20de%20contact%20avec%20Diploval">Nous contacter</a>
