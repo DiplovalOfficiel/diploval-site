@@ -67,6 +67,8 @@ def check(page, width, failures):
             failures.append(f"{width}px: no expanded panel for {selector}")
         for i in range(matches.count()):
             item=matches.nth(i)
+            if item.evaluate("el => el.hasAttribute('data-dv-panel')"):
+                item.evaluate("el => el.parentElement.querySelector('.dv-mobile-nav button[data-dv-index=\"'+el.dataset.dvPanel+'\"]').click()")
             if not item.is_visible():
                 failures.append(f"{width}px: hidden expanded panel {selector}[{i}]")
                 continue
@@ -137,7 +139,7 @@ def check_public_pages(browser, width, failures):
                 continue
             if page.locator(".site-header .brand img[src='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: logo commun absent sur {route}")
-            if page.locator("link[href='/charte-v21.css?v=2']").count() != 1:
+            if page.locator("link[href='/charte-v21.css?v=3']").count() != 1:
                 failures.append(f"{width}px: charte globale absente sur {route}")
             if page.locator("link[rel='icon'][href='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: emblème absent ou répété sur {route}")
@@ -177,6 +179,43 @@ def check_home_modules(page, width, failures):
     if dico.locator("h2").evaluate("el => getComputedStyle(el).color") != "rgb(245, 240, 230)":
         failures.append(f"{width}px: titre Dico illisible ou non harmonisé")
 
+
+def check_mobile_navigation(page, width, failures):
+    groups = ((".home-deep", 4), (".home-small-extra", 3), (".home-more-info", 2))
+    for selector, count in groups:
+        owner=page.locator(selector)
+        owner.evaluate("el => el.open = true")
+        nav=owner.locator(".dv-mobile-nav")
+        if nav.count()!=1 or nav.locator("button").count()!=count:
+            failures.append(f"{width}px: navigation incomplète {selector}")
+            continue
+        if width>760:
+            if nav.is_visible():
+                failures.append(f"{width}px: navigation mobile visible sur PC {selector}")
+            if owner.locator(".dv-mobile-panel:not([hidden])").count() and selector!=".home-small-extra":
+                for el in owner.locator(".dv-mobile-panel").all():
+                    if not el.is_visible():
+                        failures.append(f"{width}px: contenu PC masqué {selector}")
+            continue
+        for i in range(count):
+            nav.locator("button").nth(i).evaluate("el => el.click()")
+            if nav.locator("button[aria-pressed='true']").count()!=1 or nav.locator("button").nth(i).get_attribute("aria-pressed")!="true":
+                failures.append(f"{width}px: sélection du panneau {i+1} impossible {selector}")
+            for el in owner.locator(".dv-mobile-panel").all():
+                if el.get_attribute("data-dv-panel")!=str(i) and el.is_visible():
+                    failures.append(f"{width}px: panneau inactif visible {selector}")
+            if not any(el.is_visible() for el in owner.locator(f'.dv-mobile-panel[data-dv-panel="{i}"]').all()):
+                failures.append(f"{width}px: panneau actif vide {selector}")
+    if width<=760:
+        page.evaluate("location.hash='#methode'")
+        page.wait_for_timeout(200)
+        if not page.locator("#methode").is_visible():
+            failures.append(f"{width}px: lien direct vers la méthode inopérant")
+        page.evaluate("location.hash='#faq'")
+        page.wait_for_timeout(200)
+        if not page.locator("#faq").is_visible():
+            failures.append(f"{width}px: lien direct vers les questions inopérant")
+
 def main():
     failures=[]
     Path("layout-screenshots").mkdir(exist_ok=True)
@@ -200,6 +239,7 @@ def main():
                     check(page,width,failures)
                     check_identity(page,width,failures)
                     check_home_modules(page,width,failures)
+                    check_mobile_navigation(page,width,failures)
                     print(f"{engine.name}: responsive layout checked at {width}px")
                     page.close()
                 for width in (344, 1280):
