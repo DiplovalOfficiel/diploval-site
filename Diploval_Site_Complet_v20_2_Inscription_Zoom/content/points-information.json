@@ -824,10 +824,80 @@
     {
       "show_home": true,
       "level": "1",
-      "summary": "Au 24 novembre 2026, le Code One est maintenu. Une nouvelle attaque contre le quartier financier de Riyad a fait des blessés selon les autorités saoudiennes. La progression houthie vers Aden est rapportée par les autorités yéménites. UKMTO confirme un incident impliquant trois navires dans le détroit d’Ormuz, sans confirmer la revendication iranienne de mines. À Gaza, de nouvelles victimes et le décès d’un responsable de la sécurité intérieure du Hamas sont rapportés. La France a condamné les violences de colons en Cisjordanie. Les conditions posées par Téhéran compliquent les négociations, tandis que la médiation qatarie demeure active.",
+      "summary": "Au 25 novembre 2026, le Code One demeure en vigueur. La coalition saoudienne annonce de nouvelles opérations à Hodeïda après un avertissement d’évacuation ; les Houthis renouvellent leurs menaces contre les ports saoudiens. Riyad annonce des interceptions de drones à Ras Tanura, où les Houthis revendiquent une attaque contre une raffinerie. L’Iran affirme que deux pétroliers supplémentaires ont heurté des mines à Ormuz, sans confirmation indépendante. Les préoccupations concernant Gaza, la Cisjordanie et les populations yéménites persistent. Les démarches de médiation restent ouvertes. Diploval distingue les annonces des parties des faits indépendamment établis.",
       "social_image": "/assets/uploads/diploval-_-tensions-au-proche-orient.png",
       "opened_at": "2026-11-19T22:08",
       "updates": [
+        {
+          "datetime": "2026-11-25T11:45",
+          "event_date": "2026-11-25",
+          "event_label": "25 novembre 2026",
+          "title": "Yémen — Avertissement d’évacuation et frappes annoncées à Hodeïda",
+          "body": "La coalition dirigée par Riyad a annoncé des opérations à Hodeïda après un avertissement d’évacuation. Elle présente ses cibles comme militaires. Les effets sur les civils et l’acheminement des biens essentiels par ce port ne sont pas établis. Cette évolution renforce les préoccupations humanitaires.",
+          "sources": [
+            {
+              "label": "Reuters repris par The News — Hodeïda et menaces portuaires, 25 novembre",
+              "url": "https://www.thenews.pk/liveblog/us-israel-strike-iran",
+              "note": "Dépêches attribuant les annonces aux parties.",
+              "type": "Agence de presse"
+            },
+            {
+              "label": "Reuters — avertissement d’évacuation",
+              "url": "https://www.reuters.com/world/middle-east/saudi-led-coalition-issues-evacuation-warning-yemens-hodeidah-port-2026-11-24/",
+              "note": "Annonce de la coalition.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-25T11:45",
+          "event_date": "2026-11-25",
+          "event_label": "25 novembre 2026",
+          "title": "Mer Rouge — Menaces houthies renouvelées contre les ports saoudiens",
+          "body": "Les Houthis ont renouvelé leurs menaces de représailles contre les installations portuaires saoudiennes en cas d’attaque à Hodeïda. Cette déclaration ne confirme pas une attaque effective contre ces ports. Elle accroît l’incertitude concernant la navigation commerciale.",
+          "sources": [
+            {
+              "label": "Reuters repris par The News — Hodeïda et menaces portuaires, 25 novembre",
+              "url": "https://www.thenews.pk/liveblog/us-israel-strike-iran",
+              "note": "Dépêches attribuant les annonces aux parties.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-25T11:45",
+          "event_date": "2026-11-25",
+          "event_label": "25 novembre 2026",
+          "title": "Arabie saoudite — Interceptions annoncées et revendication visant Ras Tanura",
+          "body": "La coalition saoudienne rapporte avoir intercepté quatre drones à Ras Tanura, sans victime dans son évaluation initiale. Les Houthis revendiquent une attaque contre la raffinerie ; Reuters rapporte des observations satellitaires de fumée, sans confirmation saoudienne de dommages à la raffinerie. Les revendications et les constatations restent distinctes.",
+          "sources": [
+            {
+              "label": "Reuters — revendication houthie et réponse saoudienne",
+              "url": "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-oil-refinery-riyadh-financial-district-2026-11-25/",
+              "note": "Déclarations contradictoires et observations satellitaires.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-25T11:45",
+          "event_date": "2026-11-25",
+          "event_label": "25 novembre 2026",
+          "title": "Ormuz — Deux pétroliers supplémentaires annoncés touchés par des mines",
+          "body": "La marine des Gardiens de la révolution affirme que deux pétroliers ont heurté des mines le 25 novembre. Reuters rapporte cette déclaration. Les identités des navires, la cause des dommages et le caractère distinct de ces incidents par rapport aux signalements précédents restent à confirmer indépendamment. Aucun cumul définitif n’est établi.",
+          "sources": [
+            {
+              "label": "Reuters — déclaration iranienne sur Ormuz",
+              "url": "https://www.reuters.com/world/iran-says-ships-hit-mines-hormuz-warns-vessels-coordinate-passage-2026-11-25/",
+              "note": "Revendication iranienne non corroborée indépendamment.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
         {
           "datetime": "2026-11-24T17:52",
           "event_date": "2026-11-24",
@@ -1163,7 +1233,7 @@
         "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
       ],
       "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
-      "why_level": "Le niveau 1 — Code One demeure motivé par la pluralité des fronts actifs, les risques pour les populations et les infrastructures civiles, ainsi que les incidents maritimes documentés. Les nouvelles informations du 24 novembre sur Riyad, Aden, Ormuz et Gaza ne montrent pas de désescalade durable. Les attributions militaires, déclarations des parties et bilans locaux restent distingués des confirmations indépendantes. Les démarches de médiation restent un facteur modérateur. Le niveau Diploval qualifie le risque de propagation régionale et ne signifie pas qu’une guerre mondiale est imminente.",
+      "why_level": "Le niveau 1 — Code One demeure motivé par la pluralité des fronts actifs, les risques pour les populations et les infrastructures civiles, ainsi que les incidents maritimes documentés. Les nouvelles informations du 24 novembre sur Riyad, Aden, Ormuz et Gaza ne montrent pas de désescalade durable. Les attributions militaires, déclarations des parties et bilans locaux restent distingués des confirmations indépendantes. Les démarches de médiation restent un facteur modérateur. Le niveau Diploval qualifie le risque de propagation régionale et ne signifie pas qu’une guerre mondiale est imminente. Les développements du 25 novembre renforcent les préoccupations maritimes et humanitaires sans démontrer une désescalade durable.",
       "visible": true,
       "watch_down": [
         "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
@@ -1171,7 +1241,7 @@
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
-      "last_update": "2026-11-24T17:52",
+      "last_update": "2026-11-25T11:45",
       "status": "suivi",
       "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
@@ -1360,6 +1430,30 @@
           "type": "Source officielle",
           "url": "https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/israelpalestine-attaques-de-colons-israeliens-en-cisjordanie-durant-la-nuit-du-21-au-22-novembre",
           "note": "Position officielle française et rappel du droit international."
+        },
+        {
+          "label": "Reuters repris par The News — Hodeïda et menaces portuaires, 25 novembre",
+          "url": "https://www.thenews.pk/liveblog/us-israel-strike-iran",
+          "note": "Dépêches attribuant les annonces aux parties.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Reuters — avertissement d’évacuation",
+          "url": "https://www.reuters.com/world/middle-east/saudi-led-coalition-issues-evacuation-warning-yemens-hodeidah-port-2026-11-24/",
+          "note": "Annonce de la coalition.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Reuters — revendication houthie et réponse saoudienne",
+          "url": "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-oil-refinery-riyadh-financial-district-2026-11-25/",
+          "note": "Déclarations contradictoires et observations satellitaires.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Reuters — déclaration iranienne sur Ormuz",
+          "url": "https://www.reuters.com/world/iran-says-ships-hit-mines-hormuz-warns-vessels-coordinate-passage-2026-11-25/",
+          "note": "Revendication iranienne non corroborée indépendamment.",
+          "type": "Agence de presse"
         }
       ],
       "seo_description": "Situation du Proche-Orient au 19 novembre 2026 : Gaza, Cisjordanie, Iran, Golfe, Liban. Sources, chronologie et justification du niveau de vigilance Diploval.",
