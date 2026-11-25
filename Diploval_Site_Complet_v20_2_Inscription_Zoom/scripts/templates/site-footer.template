@@ -1,7 +1,7 @@
 <footer class="site-footer">
 <div class="footer-main">
 <a class="footer-brand" href="/#top"><img alt="Diploval" decoding="async" height="452" src="/assets/logo-diploval.jpg" width="899"></a>
-<p>Des analyses, des outils et des espaces de dialogue pour aider à décider sans perdre le vivant en chemin.</p>
+<p>L’intelligence institutionnelle au service du vivant. Conseil, analyse, ingénierie institutionnelle, diplomatie et innovation.</p>
 <nav aria-label="Navigation de pied de page"><a href="/#services">Services et missions</a><a href="/#publics">Pour qui ?</a>
 <a href="/#methode">Méthode</a><a href="/points-information">Points d’information</a>
 <a href="/#travaux">Travaux</a><a href="/dico/">Dico Diplo</a><a href="/communiques">Communiqués</a><a href="/#agenda">Agenda</a>
@@ -19,6 +19,6 @@
 <button class="legal-open" type="button">Mentions légales</button>
 <button class="privacy-open" type="button">Données personnelles</button>
 <button class="publication-open" type="button">Publications &amp; réutilisation</button>
-<span>Au vivant qui nous unit.</span>
+<span>Penser local, projeter global.</span>
 </div>
 </footer>
