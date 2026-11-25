@@ -3,7 +3,7 @@
 <div class="header-inner">
 <a aria-label="Diploval, retour à l’accueil" class="brand" href="/#accueil">
 <img alt="Diploval" decoding="async" height="452" src="/assets/logo-diploval.jpg" width="899">
-</a><span class="institutional-brandline">Analyse, décision &amp; intérêt général</span>
+</a><span class="institutional-brandline">L’intelligence institutionnelle au service du vivant</span>
 <div class="header-actions">
 <a class="header-contact" href="mailto:contact@diploval.fr?subject=Prise%20de%20contact%20avec%20Diploval">Nous contacter</a>
 <button aria-controls="main-nav" aria-expanded="false" aria-label="Ouvrir le menu" class="menu-toggle" type="button">
