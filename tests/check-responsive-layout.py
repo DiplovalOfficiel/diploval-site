@@ -99,6 +99,49 @@ def check(page, width, failures):
         if item and (item["x"] < -2 or item["right"] > width+2):
             failures.append(f"{width}px: {selector} extends outside viewport: {item}")
 
+
+def check_identity(page, width, failures):
+    # Vérifier le rendu du logo commun et de la présentation à quatre panneaux.
+    logo = page.locator(".site-header .brand img").first
+    if not logo.count() or not logo.get_attribute("src").endswith("/diploval-logo-v2.webp"):
+        failures.append(f"{width}px: nouveau logo absent")
+    elif not logo.evaluate("el => el.complete && el.naturalWidth > 0"):
+        failures.append(f"{width}px: logo non chargé")
+    track = page.locator(".dv-v2-intro__track")
+    if not track.count() or track.locator(".dv-v2-intro__panel").count() != 4:
+        failures.append(f"{width}px: présentation institutionnelle incomplète")
+        return
+    if not track.evaluate("el => el.scrollWidth > el.clientWidth"):
+        failures.append(f"{width}px: panneaux non défilants")
+    if not track.locator("h1").count() or "au service du vivant" not in track.locator("h1").inner_text().lower():
+        failures.append(f"{width}px: signature institutionnelle absente")
+    page.locator('.dv-v2-intro__nav a[href="#dv-v2-panel-2"]').click()
+    page.wait_for_timeout(650)
+    if not track.evaluate("el => el.scrollLeft > el.clientWidth * 0.5"):
+        failures.append(f"{width}px: navigation vers le deuxième panneau impossible")
+    page.locator('.dv-v2-intro__nav a[href="#dv-v2-panel-1"]').click()
+    page.wait_for_timeout(650)
+
+def check_public_pages(browser, width, failures):
+    # Pages statiques et générées : une seule identité, aucune largeur débordante.
+    for route in ("points-information.html", "propositions-contributions.html",
+                  "communiques.html", "publications/charte/", "dico/"):
+        page = browser.new_page(viewport={"width":width,"height":850})
+        try:
+            response = page.goto(BASE.rstrip("/") + "/" + route, wait_until="domcontentloaded", timeout=30000)
+            page.wait_for_timeout(500)
+            if not response or response.status >= 400:
+                failures.append(f"{width}px: page indisponible {route}")
+                continue
+            if page.locator(".site-header .brand img[src='/assets/diploval-logo-v2.webp']").count() != 1:
+                failures.append(f"{width}px: logo commun absent sur {route}")
+            if page.locator("link[rel='icon'][href='/assets/diploval-embleme-v2.webp']").count() != 1:
+                failures.append(f"{width}px: emblème absent ou répété sur {route}")
+            if page.evaluate("document.documentElement.scrollWidth > document.documentElement.clientWidth + 2"):
+                failures.append(f"{width}px: débordement horizontal sur {route}")
+        finally:
+            page.close()
+
 def main():
     failures=[]
     Path("layout-screenshots").mkdir(exist_ok=True)
@@ -120,8 +163,11 @@ def main():
                         page.screenshot(path=f"layout-screenshots/{engine.name}-accueil-{width}px.png",
                                         full_page=True, animations="disabled")
                     check(page,width,failures)
+                    check_identity(page,width,failures)
                     print(f"{engine.name}: responsive layout checked at {width}px")
                     page.close()
+                for width in (344, 1280):
+                    check_public_pages(browser,width,failures)
             finally:
                 browser.close()
     if failures:

@@ -1493,3 +1493,52 @@ body main :is(p,a,h1,h2,h3,h4,summary),body footer :is(p,a,button){overflow-wrap
   .seo-detail-page .main-nav.nav-tiles.open a.dv-nav-item{gap:7px;padding:11px 8px;font-size:13px;min-height:76px}
   .seo-detail-page .main-nav.nav-tiles.open .dv-nav-icon{width:20px;height:20px;flex-basis:20px}
 }
+
+
+/* Diploval V2.0 — préversion de l'identité institutionnelle.
+   Palette de marque distincte des couleurs fonctionnelles d'alerte. */
+:root {
+  --dv-navy:#062039;
+  --dv-blue:#153e5c;
+  --dv-copper:#b77b47;
+  --dv-copper-text:#8e4d25;
+  --dv-ivory:#f5f0e6;
+  --dv-olive:#687b43;
+  --ink:var(--dv-navy);
+  --ink-2:var(--dv-blue);
+  --paper:var(--dv-ivory);
+  --text:#253647;
+  --muted:#465d65;
+}
+.site-header{border-bottom:2px solid var(--dv-copper)}
+.footer{border-top:2px solid var(--dv-copper)}
+:where(a,button,input,select,textarea,summary):focus-visible{
+  outline:3px solid #326ea0;outline-offset:3px;
+}
+.dv-v2-intro{
+  color:var(--dv-ivory);background:var(--dv-navy);
+  border:1px solid var(--dv-blue);border-radius:16px;
+  padding:clamp(1rem,3vw,1.6rem);min-width:0;
+}
+.dv-v2-intro__label{margin:0 0 .7rem;color:#e3bb94;font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;font-weight:750}
+.dv-v2-intro__track{
+  display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:1rem;
+  scrollbar-color:#c69a72 #153e5c;scroll-padding-inline:0;
+  overscroll-behavior-inline:contain;min-width:0;padding-bottom:.55rem;
+}
+.dv-v2-intro__panel{flex:0 0 100%;min-width:0;scroll-snap-align:start;scroll-margin-top:110px}
+.dv-v2-intro__panel h1,.dv-v2-intro__panel h2{
+  color:#f5f0e6;font-family:Georgia,'Times New Roman',serif;
+  font-size:clamp(1.65rem,3.5vw,2.6rem);line-height:1.2;
+  margin:0 0 .65rem;letter-spacing:-.02em;font-weight:500;
+}
+.dv-v2-intro__panel p{color:#e5eaf0;font-size:.96rem;line-height:1.65;margin:0}
+.dv-v2-intro__nav{display:flex;align-items:center;flex-wrap:wrap;gap:.4rem;margin-top:.75rem}
+.dv-v2-intro__nav a{
+  color:#f5f0e6;display:inline-grid;place-items:center;
+  min-width:44px;min-height:44px;border:1px solid #a87b54;border-radius:8px;font-weight:700;
+}
+.dv-v2-intro__nav a:hover,.dv-v2-intro__nav a:focus-visible{background:#244f70;color:#fff}
+.dv-v2-intro__hint{color:#d6dfe8;font-size:.75rem;margin:.45rem 0 0}
+.dv-v2-intro__signature{color:#e3bb94;font-size:.82rem;border-top:1px solid #a87b54;margin:.8rem 0 0;padding-top:.7rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.dv-v2-intro__track{scroll-behavior:auto}}

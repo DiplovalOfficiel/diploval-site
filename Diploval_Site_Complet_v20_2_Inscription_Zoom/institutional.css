@@ -1010,3 +1010,27 @@
     .section,.communiques-home,.participation-home
   ){width:100%;min-width:0;box-sizing:border-box}
 }
+
+
+/* V2.0 — harmonisation institutionnelle, sans modification des alertes. */
+:root{--ink:#062039;--ink-2:#153e5c;--paper:#f5f0e6;--dv-copper:#b77b47;--dv-copper-text:#8e4d25}
+.institutional-site{background:#f5f0e6}
+.institutional-site .site-header{border-top-color:#062039;border-bottom:2px solid #b77b47}
+.institutional-site .institutional-brandline{color:#153e5c}
+.institutional-site .site-footer{background:#062039;border-top:2px solid #b77b47}
+.institutional-site .main-nav a[aria-current="page"]{text-decoration-color:#b77b47}
+.institutional-home .hero{background:linear-gradient(120deg,#f5f0e6,#fff)}
+.institutional-home .dv-v2-intro{background:#062039;color:#f5f0e6}
+.institutional-home .dv-v2-intro__panel h1,.institutional-home .dv-v2-intro__panel h2{color:#f5f0e6!important;font-family:Georgia,"Times New Roman",serif!important;font-size:clamp(1.55rem,3vw,2.25rem)!important;line-height:1.2!important;margin:0 0 .65rem}
+.institutional-home .dv-v2-intro__panel p{color:#e5eaf0}
+.institutional-home .dv-v2-intro__nav a{color:#f5f0e6}
+.institutional-home .dv-v2-intro__nav a:focus-visible{outline-color:#e3bb94}
+.institutional-home .dv-v2-intro__signature{color:#e3bb94}
+.institutional-home .dv-v2-intro__track{scroll-snap-type:x mandatory}
+@media(max-width:760px){.institutional-home .institutional-hero{min-width:0;grid-template-columns:minmax(0,1fr);gap:1rem}.institutional-home .dv-v2-intro{width:100%;max-width:100%;padding:1rem}}
+
+/* V2.0 — logo web, préserver les dimensions et la navigation mobile. */
+.institutional-site .brand{width:156px;max-width:100%;border-radius:4px}
+.institutional-site .brand img{width:100%;height:auto;mix-blend-mode:normal;border-radius:4px}
+.institutional-site .site-footer a.footer-brand{background:#062039;padding:0;border:1px solid #b77b47;border-radius:5px;overflow:hidden}
+@media(max-width:760px){.institutional-site .brand{width:128px;max-width:48%}}
