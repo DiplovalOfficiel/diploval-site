@@ -282,7 +282,7 @@ try {
       errors.push('Accueil mobile : rubrique absente '+id);
     }
   }
-  if(!home.includes('/institutional.css?v=16')){
+  if(!home.includes('/institutional.css?v=17')){
     warnings.push('Accueil mobile : contrôler la version du CSS.');
   }
 }catch(e){errors.push('Contrôle accueil mobile impossible : '+e.message)}
