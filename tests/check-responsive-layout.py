@@ -139,7 +139,7 @@ def check_public_pages(browser, width, failures):
                 continue
             if page.locator(".site-header .brand img[src='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: logo commun absent sur {route}")
-            if page.locator("link[href='/charte-v21.css?v=3']").count() != 1:
+            if page.locator("link[href='/charte-v21.css?v=4']").count() != 1:
                 failures.append(f"{width}px: charte globale absente sur {route}")
             if page.locator("link[rel='icon'][href='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: emblème absent ou répété sur {route}")
@@ -217,6 +217,25 @@ def check_mobile_navigation(page, width, failures):
             failures.append(f"{width}px: lien direct vers les questions inopérant")
 
 
+def check_summary_contrast(page, width, failures):
+    for summary in page.locator(".institutional-home main :is(.home-deep,.home-collapse,.home-small-extra,.home-more-info)>summary").all():
+        if not summary.is_visible():
+            continue
+        ratio = summary.evaluate("""el => {
+          function lum(rgb) {
+            const a=rgb.match(/[0-9.]+/g).slice(0,3).map(x=>Number(x)/255).map(x=>x<=.04045?x/12.92:((x+.055)/1.055)**2.4);
+            return .2126*a[0]+.7152*a[1]+.0722*a[2];
+          }
+          const bg=lum(getComputedStyle(el).backgroundColor);
+          return Math.min(...[...el.children].map(n=>{const fg=lum(getComputedStyle(n).color);return (Math.max(bg,fg)+.05)/(Math.min(bg,fg)+.05)}));
+        }""")
+        if ratio < 4.5:
+            failures.append(f"{width}px: contraste insuffisant du panneau {summary.inner_text()} ({ratio:.2f})")
+    if width <= 760:
+        for image in page.locator("#admin-featured-publications .work-open>img").all():
+            if image.is_visible() and image.bounding_box()["height"] > 115:
+                failures.append(f"{width}px: couverture trop haute pour la liste compacte")
+
 def check_opening(browser, width, failures):
     page=browser.new_page(viewport={"width":width,"height":850}, reduced_motion="no-preference")
     try:
@@ -239,9 +258,11 @@ def check_opening(browser, width, failures):
     page=browser.new_page(viewport={"width":width,"height":850}, reduced_motion="no-preference")
     try:
         page.goto(BASE,wait_until="domcontentloaded")
-        page.locator("#dv-opening .dv-opening-skip").click(timeout=3000)
-        if page.locator("#dv-opening").is_visible():
-            failures.append(f"{width}px: impossible de passer l’introduction")
+        page.locator("#dv-opening").wait_for(state="visible",timeout=2500)
+        if page.locator("#dv-opening .dv-opening-skip").count():
+            failures.append(f"{width}px: bouton Passer superflu")
+        page.keyboard.press("Escape")
+        page.locator("#dv-opening").wait_for(state="hidden",timeout=1000)
     finally:
         page.close()
     for motion, suffix in (("reduce",""),("no-preference","#methode")):
@@ -278,6 +299,7 @@ def main():
                     check(page,width,failures)
                     check_identity(page,width,failures)
                     check_home_modules(page,width,failures)
+                    check_summary_contrast(page,width,failures)
                     check_mobile_navigation(page,width,failures)
                     print(f"{engine.name}: responsive layout checked at {width}px")
                     page.close()
