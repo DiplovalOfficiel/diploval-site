@@ -1,0 +1,59 @@
+/* Diploval — ouverture institutionnelle, 4 s maximum, sans média lourd. */
+#dv-opening:not([open]){display:none!important}
+#dv-opening[open]{
+  position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;
+  margin:0;border:0;border-radius:0;padding:0;box-sizing:border-box;
+  display:grid;place-items:center;overflow:hidden;color:#f5f0e6;
+  background:radial-gradient(ellipse at 50% 38%,#173b55 0%,#0a263e 35%,#041425 76%);
+  animation:dv-opening-exit 4s linear both;
+}
+#dv-opening::backdrop{background:transparent}
+#dv-opening .dv-opening-scene{
+  position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:0;width:min(90%,680px);margin:auto;padding:24px 10px;
+  text-align:center;box-sizing:border-box;
+}
+#dv-opening .dv-opening-emblem{
+  position:relative;display:grid;place-items:center;width:clamp(132px,30vw,190px);
+  height:clamp(132px,30vw,190px);margin-bottom:14px;
+}
+#dv-opening .dv-opening-emblem img{
+  position:relative;z-index:1;display:block;width:83%;height:83%;object-fit:contain;
+  border-radius:50%;box-shadow:0 0 34px #dca57425;
+  animation:dv-opening-emblem 1.45s cubic-bezier(.2,.7,.25,1) both;
+}
+#dv-opening .dv-opening-orbit{
+  position:absolute;inset:0;border-radius:50%;border:1px solid #e5bb9260;
+  background:conic-gradient(from 0deg,transparent 0%,transparent 60%,#b77b4720 75%,#e5bb92b0 91%,transparent 100%);
+  box-shadow:0 0 30px #b77b4725,inset 0 0 12px #b77b4725;
+  animation:dv-opening-orbit 2.25s cubic-bezier(.15,.7,.3,1) both;
+}
+#dv-opening .dv-opening-name{
+  font:500 clamp(2rem,8vw,4.5rem)/1.15 Georgia,"Times New Roman",serif;
+  letter-spacing:clamp(.08em,1.15vw,.17em);color:#f5f0e6;
+  text-indent:.12em;text-shadow:0 3px 16px #0004;
+  animation:dv-opening-name .9s .8s cubic-bezier(.2,.7,.25,1) both;
+}
+#dv-opening .dv-opening-line{
+  width:min(230px,65%);height:1px;margin:17px 0 16px;
+  background:linear-gradient(90deg,transparent,#e5bb92,transparent);
+  animation:dv-opening-line .75s 1.45s ease-out both;
+}
+#dv-opening .dv-opening-signature{
+  max-width:32em;margin:0;font:400 clamp(1rem,3.5vw,1.4rem)/1.5 Georgia,"Times New Roman",serif;
+  color:#e5bb92;animation:dv-opening-signature .85s 1.85s ease-out both;
+}
+#dv-opening .dv-opening-skip{
+  position:absolute;right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));
+  z-index:2;min-height:44px;padding:8px 16px;border:1px solid #e5bb9270;border-radius:5px;
+  background:#062039;color:#f5f0e6;font:500 .85rem Arial,Helvetica,sans-serif;cursor:pointer;
+}
+#dv-opening .dv-opening-skip:focus-visible{outline:2px solid #e5bb92;outline-offset:3px}
+@keyframes dv-opening-emblem{from{opacity:0;transform:scale(.85);filter:brightness(.65)}to{opacity:1;transform:scale(1);filter:brightness(1)}}
+@keyframes dv-opening-orbit{from{opacity:0;transform:rotate(-110deg) scale(.93)}35%{opacity:.9}to{opacity:.45;transform:rotate(85deg) scale(1)}}
+@keyframes dv-opening-name{from{opacity:0;transform:translateY(9px);filter:blur(3px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes dv-opening-line{from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}
+@keyframes dv-opening-signature{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dv-opening-exit{0%,88%{opacity:1}100%{opacity:0}}
+@media(prefers-reduced-motion:reduce){#dv-opening[open]{display:none!important}}
+@media(max-height:430px){#dv-opening .dv-opening-emblem{width:92px;height:92px;margin-bottom:6px}#dv-opening .dv-opening-name{font-size:2rem}#dv-opening .dv-opening-line{margin:8px 0}#dv-opening .dv-opening-signature{font-size:1rem}}

@@ -216,6 +216,44 @@ def check_mobile_navigation(page, width, failures):
         if not page.locator("#faq").is_visible():
             failures.append(f"{width}px: lien direct vers les questions inopérant")
 
+
+def check_opening(browser, width, failures):
+    page=browser.new_page(viewport={"width":width,"height":850}, reduced_motion="no-preference")
+    try:
+        page.goto(BASE,wait_until="domcontentloaded",timeout=30000)
+        intro=page.locator("#dv-opening")
+        try:
+            intro.wait_for(state="visible",timeout=2500)
+        except Exception:
+            failures.append(f"{width}px: introduction absente")
+            return
+        if not intro.locator("img").evaluate("el => el.complete && el.naturalWidth > 0"):
+            intro.locator("img").evaluate("el => el.decode()")
+        intro.wait_for(state="hidden",timeout=5000)
+        page.reload(wait_until="domcontentloaded")
+        page.wait_for_timeout(200)
+        if intro.is_visible():
+            failures.append(f"{width}px: introduction rejouée dans la session")
+    finally:
+        page.close()
+    page=browser.new_page(viewport={"width":width,"height":850}, reduced_motion="no-preference")
+    try:
+        page.goto(BASE,wait_until="domcontentloaded")
+        page.locator("#dv-opening .dv-opening-skip").click(timeout=3000)
+        if page.locator("#dv-opening").is_visible():
+            failures.append(f"{width}px: impossible de passer l’introduction")
+    finally:
+        page.close()
+    for motion, suffix in (("reduce",""),("no-preference","#methode")):
+        page=browser.new_page(viewport={"width":width,"height":850}, reduced_motion=motion)
+        try:
+            page.goto(BASE+suffix,wait_until="domcontentloaded")
+            page.wait_for_timeout(200)
+            if page.locator("#dv-opening").is_visible():
+                failures.append(f"{width}px: introduction non désactivée ({motion}, {suffix})")
+        finally:
+            page.close()
+
 def main():
     failures=[]
     Path("layout-screenshots").mkdir(exist_ok=True)
@@ -231,6 +269,7 @@ def main():
                     page=browser.new_page(viewport={"width":width,"height":850},
                                           device_scale_factor=1, is_mobile=mobile,
                                           has_touch=mobile)
+                    page.add_init_script("sessionStorage.setItem('diploval-opening-v1','1')")
                     page.goto(BASE,wait_until="domcontentloaded",timeout=30000)
                     page.wait_for_timeout(1200)
                     if width in (344,390,1280):
@@ -244,6 +283,7 @@ def main():
                     page.close()
                 for width in (344, 1280):
                     check_public_pages(browser,width,failures)
+                    check_opening(browser,width,failures)
             finally:
                 browser.close()
     if failures:
