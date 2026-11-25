@@ -139,7 +139,7 @@ def check_public_pages(browser, width, failures):
                 continue
             if page.locator(".site-header .brand img[src='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: logo commun absent sur {route}")
-            if page.locator("link[href='/charte-v21.css?v=3']").count() != 1:
+            if page.locator("link[href='/charte-v21.css?v=4']").count() != 1:
                 failures.append(f"{width}px: charte globale absente sur {route}")
             if page.locator("link[rel='icon'][href='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: emblème absent ou répété sur {route}")
