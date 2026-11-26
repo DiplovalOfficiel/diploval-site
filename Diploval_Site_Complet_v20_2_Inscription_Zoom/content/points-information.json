@@ -3,10 +3,26 @@
     {
       "show_home": true,
       "level": "2",
-      "summary": "Au 26 novembre 2026, la guerre se poursuit sans cessez-le-feu général. Le risque de débordement international reste élevé, notamment après les incidents en Pologne et en Baltique. Deux militaires libyens sont annoncés morts à la suite de l’opération ukrainienne à Benghazi ; l’armée libyenne menace de riposter. Moscou annonce des représailles après les frappes contre ses raffineries. De nouvelles victimes sont signalées à Odessa et Kyiv. L’ONU alerte sur les réseaux essentiels et la navigation civile. La participation européenne aux prochains pourparlers reste indéterminée. Diploval maintient le niveau 2 — Vigilance renforcée et poursuit l’examen documenté d’un éventuel Code One. Les bilans et déclarations sont attribués à leurs sources. Édition du soir : de nouveaux dommages énergétiques et une interruption de l’alimentation externe de la centrale de Zaporijjia sont rapportés ; Friedrich Merz alerte sur la sécurité européenne. Trump et Rutte appellent à éviter l’élargissement de la guerre et à rechercher rapidement la paix, sans annoncer d’accord. Un appel de 34 États et de l’Union européenne concernant les agents antiémeute en Ukraine renforce la dimension juridique du dossier ; l’attribution de l’incident reste à établir.",
+      "summary": "Au 26 novembre 2026, la guerre se poursuit sans cessez-le-feu général. Le risque de débordement international reste élevé, notamment après les incidents en Pologne et en Baltique. Deux militaires libyens sont annoncés morts à la suite de l’opération ukrainienne à Benghazi ; l’armée libyenne menace de riposter. Moscou annonce des représailles après les frappes contre ses raffineries. De nouvelles victimes sont signalées à Odessa et Kyiv. L’ONU alerte sur les réseaux essentiels et la navigation civile. La participation européenne aux prochains pourparlers reste indéterminée. Diploval maintient le niveau 2 — Vigilance renforcée et poursuit l’examen documenté d’un éventuel Code One. Les bilans et déclarations sont attribués à leurs sources. Édition du soir : de nouveaux dommages énergétiques et une interruption de l’alimentation externe de la centrale de Zaporijjia sont rapportés ; Friedrich Merz alerte sur la sécurité européenne. Trump et Rutte appellent à éviter l’élargissement de la guerre et à rechercher rapidement la paix, sans annoncer d’accord. Un appel de 34 États et de l’Union européenne concernant les agents antiémeute en Ukraine renforce la dimension juridique du dossier ; l’attribution de l’incident reste à établir. La Maison-Blanche annonce neuf nouvelles réunifications familiales dans le cadre de la médiation humanitaire américaine.",
       "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
       "opened_at": "2026-11-19T11:50",
       "updates": [
+        {
+          "datetime": "2026-11-26T10:10",
+          "event_date": "2026-11-25",
+          "event_label": "25 novembre — complément documentaire du 26 novembre",
+          "title": "Diplomatie humanitaire — Neuf nouvelles réunifications familiales annoncées",
+          "body": "La Maison-Blanche annonce que neuf enfants ont retrouvé leurs familles le 25 novembre grâce à la médiation de Melania Trump, portant à 43 le total annoncé dans le cadre de cette initiative. Washington affirme avoir bénéficié de la coopération des dirigeants russe et ukrainien. Cette avancée humanitaire ciblée ne constitue pas un accord général de paix ; une confirmation ukrainienne distincte reste à recueillir.",
+          "sources": [
+            {
+              "label": "Maison-Blanche — communiqué du 25 novembre",
+              "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-secures-reunification-of-nine-additional-children-with-their-families/",
+              "note": "Annonce officielle américaine.",
+              "type": "Source officielle"
+            }
+          ],
+          "correction": false
+        },
         {
           "datetime": "2026-11-26T08:20",
           "event_date": "2026-11-25",
@@ -585,7 +601,7 @@
         "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable."
       ],
       "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix.",
-      "why_level": "Niveau 2 maintenu au 25 novembre. La combinaison des intrusions russes rapportées en Pologne, des avertissements visant des militaires français en Ukraine, des opérations hybrides attribuées par les États européens et des mesures défensives de l'OTAN constitue un risque significatif d'escalade. La reconnaissance ukrainienne de la frappe contre le Sparta II dans le golfe de Finlande et les opérations revendiquées près de Benghazi démontrent aussi que le débordement géographique peut résulter d'opérations ukrainiennes ; la Norvège et l'Italie ont exprimé des préoccupations officielles. Aucune confrontation armée directe Russie–OTAN n'est établie à cette heure ; le statut et la légalité de chaque opération doivent être appréciés séparément et ne sont pas déterminés par la seule déclaration d'une partie. Le projet allégué de satellite nucléaire russe n'est pas confirmé publiquement. La convocation diplomatique de l'ambassadeur russe ne constitue pas un affrontement armé, et des canaux de dialogue restent actifs. Le Code One doit pouvoir répondre à une convergence préventive de risques critiques, mais son élévation reste soumise à une validation éditoriale documentée ; il n'est pas déclenché par les informations actuelles. Les décès annoncés en Libye et les nouvelles menaces de représailles renforcent la vigilance, sans établir de confrontation directe Russie–OTAN ni de rupture définitive du dialogue. Les développements énergétiques et les déclarations allemandes du 25 novembre renforcent la vigilance sans établir une confrontation directe Russie–OTAN. La déclaration conjointe rapportée le 26 novembre constitue un signal diplomatique modérateur, sans désescalade effective établie. Les constatations chimiques rapportées et l’appel international renforcent les préoccupations juridiques sans établir une extension directe du conflit à l’OTAN.",
+      "why_level": "Niveau 2 maintenu au 25 novembre. La combinaison des intrusions russes rapportées en Pologne, des avertissements visant des militaires français en Ukraine, des opérations hybrides attribuées par les États européens et des mesures défensives de l'OTAN constitue un risque significatif d'escalade. La reconnaissance ukrainienne de la frappe contre le Sparta II dans le golfe de Finlande et les opérations revendiquées près de Benghazi démontrent aussi que le débordement géographique peut résulter d'opérations ukrainiennes ; la Norvège et l'Italie ont exprimé des préoccupations officielles. Aucune confrontation armée directe Russie–OTAN n'est établie à cette heure ; le statut et la légalité de chaque opération doivent être appréciés séparément et ne sont pas déterminés par la seule déclaration d'une partie. Le projet allégué de satellite nucléaire russe n'est pas confirmé publiquement. La convocation diplomatique de l'ambassadeur russe ne constitue pas un affrontement armé, et des canaux de dialogue restent actifs. Le Code One doit pouvoir répondre à une convergence préventive de risques critiques, mais son élévation reste soumise à une validation éditoriale documentée ; il n'est pas déclenché par les informations actuelles. Les décès annoncés en Libye et les nouvelles menaces de représailles renforcent la vigilance, sans établir de confrontation directe Russie–OTAN ni de rupture définitive du dialogue. Les développements énergétiques et les déclarations allemandes du 25 novembre renforcent la vigilance sans établir une confrontation directe Russie–OTAN. La déclaration conjointe rapportée le 26 novembre constitue un signal diplomatique modérateur, sans désescalade effective établie. Les constatations chimiques rapportées et l’appel international renforcent les préoccupations juridiques sans établir une extension directe du conflit à l’OTAN. Cette avancée humanitaire ciblée ne constitue pas une désescalade militaire générale.",
       "visible": true,
       "watch_down": [
         "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
@@ -595,7 +611,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-26T08:20",
+      "last_update": "2026-11-26T10:10",
       "status": "suivi",
       "related_publication": "accord-cadre-ukraine-russie-v01",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
@@ -929,6 +945,12 @@
           "url": "https://www.reuters.com/world/dozens-countries-call-russia-halt-alleged-use-riot-agent-ukraine-war-2026-11-25/",
           "note": "Compte rendu des constatations de l’OIAC et des positions des États ; rapport original non consulté.",
           "type": "Agence de presse"
+        },
+        {
+          "label": "Maison-Blanche — communiqué du 25 novembre",
+          "url": "https://www.whitehouse.gov/briefings-statements/2026/11/first-lady-melania-trump-secures-reunification-of-nine-additional-children-with-their-families/",
+          "note": "Annonce officielle américaine.",
+          "type": "Source officielle"
         }
       ],
       "category": "Géopolitique · Europe"
@@ -936,10 +958,48 @@
     {
       "show_home": true,
       "level": "1",
-      "summary": "Au 26 novembre 2026, le Code One demeure en vigueur. La coalition saoudienne annonce de nouvelles opérations à Hodeïda après un avertissement d’évacuation ; les Houthis renouvellent leurs menaces contre les ports saoudiens. Riyad annonce des interceptions de drones à Ras Tanura, où les Houthis revendiquent une attaque contre une raffinerie. L’Iran affirme que deux pétroliers supplémentaires ont heurté des mines à Ormuz, sans confirmation indépendante. Les préoccupations concernant Gaza, la Cisjordanie et les populations yéménites persistent. Les démarches de médiation restent ouvertes. Diploval distingue les annonces des parties des faits indépendamment établis. Édition du soir : Londres a adopté des sanctions contre Ansar Allah et quatre responsables, avec dispositions humanitaires ; une proposition iranienne conditionnelle de réouverture d’Ormuz sous 48 heures est rapportée, sans accord conclu. Le gouvernement iranien annonce des mesures face à la hausse des prix ; les données officielles rapportées indiquent une forte pression alimentaire. Trump et Rutte ont évoqué la guerre en Iran sans annoncer de résultat précis. De nouvelles victimes sont rapportées à Gaza et à Taëz ; les Houthis revendiquent des attaques portuaires sans confirmation indépendante des dommages. Washington et Riyad poursuivent leurs consultations sur la navigation et le Liban.",
+      "summary": "Au 26 novembre 2026, le Code One demeure en vigueur. La coalition saoudienne annonce de nouvelles opérations à Hodeïda après un avertissement d’évacuation ; les Houthis renouvellent leurs menaces contre les ports saoudiens. Riyad annonce des interceptions de drones à Ras Tanura, où les Houthis revendiquent une attaque contre une raffinerie. L’Iran affirme que deux pétroliers supplémentaires ont heurté des mines à Ormuz, sans confirmation indépendante. Les préoccupations concernant Gaza, la Cisjordanie et les populations yéménites persistent. Les démarches de médiation restent ouvertes. Diploval distingue les annonces des parties des faits indépendamment établis. Édition du soir : Londres a adopté des sanctions contre Ansar Allah et quatre responsables, avec dispositions humanitaires ; une proposition iranienne conditionnelle de réouverture d’Ormuz sous 48 heures est rapportée, sans accord conclu. Le gouvernement iranien annonce des mesures face à la hausse des prix ; les données officielles rapportées indiquent une forte pression alimentaire. Trump et Rutte ont évoqué la guerre en Iran sans annoncer de résultat précis. De nouvelles victimes sont rapportées à Gaza et à Taëz ; les Houthis revendiquent des attaques portuaires sans confirmation indépendante des dommages. Washington et Riyad poursuivent leurs consultations sur la navigation et le Liban. De nouvelles victimes sont signalées à Gaza le 26 novembre ; un incident maritime sans dommage déclaré est rapporté au large de Dubaï.",
       "social_image": "/assets/uploads/diploval-_-tensions-au-proche-orient.png",
       "opened_at": "2026-11-19T22:08",
       "updates": [
+        {
+          "datetime": "2026-11-26T10:10",
+          "event_date": "2026-11-26",
+          "event_label": "26 novembre 2026",
+          "title": "Gaza — Nouvelles frappes nocturnes et victimes signalées",
+          "body": "Associated Press rapporte huit morts palestiniens selon les responsables hospitaliers, après de nouvelles frappes à Gaza. Les autorités israéliennes annoncent avoir tué un responsable du Hamas, Khaled Abu Nada. Le statut de toutes les victimes et les circonstances des frappes restent à établir. Ces événements sont distincts des frappes du 25 novembre déjà recensées.",
+          "sources": [
+            {
+              "label": "Associated Press — bilan du 26 novembre",
+              "url": "https://apnews.com/article/gaza-iran-israel-uae-hormuz-november-26-2026-522676f17532b878878ff7a4347d0e31",
+              "note": "Dépêche ouverte ; informations attribuées aux hôpitaux, autorités israéliennes et UKMTO.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-26T10:10",
+          "event_date": "2026-11-26",
+          "event_label": "26 novembre 2026",
+          "title": "Golfe — Explosion signalée à proximité d’un pétrolier au large de Dubaï",
+          "body": "Le service britannique UKMTO, cité par Reuters et Associated Press, indique avoir reçu un signalement d’explosion à proximité d’un pétrolier au large de Dubaï. Aucun dommage au navire ni impact environnemental n’est signalé ; l’équipage est indemne. L’origine de l’incident et son attribution restent inconnues. Il ne s’agit pas d’un impact confirmé sur le navire.",
+          "sources": [
+            {
+              "label": "Reuters via Arab News — 26 novembre",
+              "url": "https://www.arabnews.com/middle-east/ukmto-reports-explosion-near-tanker-west-of-dubai-3014072",
+              "note": "Dépêche citant l’avis UKMTO ; avis original non consulté.",
+              "type": "Agence de presse"
+            },
+            {
+              "label": "Associated Press — bilan du 26 novembre",
+              "url": "https://apnews.com/article/gaza-iran-israel-uae-hormuz-november-26-2026-522676f17532b878878ff7a4347d0e31",
+              "note": "Dépêche ouverte ; informations attribuées aux hôpitaux, autorités israéliennes et UKMTO.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
         {
           "datetime": "2026-11-26T08:20",
           "event_date": "2026-11-25",
@@ -1469,7 +1529,7 @@
         "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
       ],
       "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
-      "why_level": "Le niveau 1 — Code One demeure motivé par la pluralité des fronts actifs, les risques pour les populations et les infrastructures civiles, ainsi que les incidents maritimes documentés. Les nouvelles informations du 24 novembre sur Riyad, Aden, Ormuz et Gaza ne montrent pas de désescalade durable. Les attributions militaires, déclarations des parties et bilans locaux restent distingués des confirmations indépendantes. Les démarches de médiation restent un facteur modérateur. Le niveau Diploval qualifie le risque de propagation régionale et ne signifie pas qu’une guerre mondiale est imminente. Les développements du 25 novembre renforcent les préoccupations maritimes et humanitaires sans démontrer une désescalade durable. L’ouverture diplomatique conditionnelle concernant Ormuz ne suffit pas à constater une désescalade effective. La pression économique sur les ménages iraniens demeure préoccupante ; aucun nouvel accord sur Ormuz n’est établi. Les nouveaux bilans civils et revendications portuaires ne permettent pas de constater une désescalade durable.",
+      "why_level": "Le niveau 1 — Code One demeure motivé par la pluralité des fronts actifs, les risques pour les populations et les infrastructures civiles, ainsi que les incidents maritimes documentés. Les nouvelles informations du 24 novembre sur Riyad, Aden, Ormuz et Gaza ne montrent pas de désescalade durable. Les attributions militaires, déclarations des parties et bilans locaux restent distingués des confirmations indépendantes. Les démarches de médiation restent un facteur modérateur. Le niveau Diploval qualifie le risque de propagation régionale et ne signifie pas qu’une guerre mondiale est imminente. Les développements du 25 novembre renforcent les préoccupations maritimes et humanitaires sans démontrer une désescalade durable. L’ouverture diplomatique conditionnelle concernant Ormuz ne suffit pas à constater une désescalade effective. La pression économique sur les ménages iraniens demeure préoccupante ; aucun nouvel accord sur Ormuz n’est établi. Les nouveaux bilans civils et revendications portuaires ne permettent pas de constater une désescalade durable. La persistance des violences et des incidents maritimes ne permet pas de constater une désescalade durable.",
       "visible": true,
       "watch_down": [
         "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
@@ -1477,7 +1537,7 @@
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
-      "last_update": "2026-11-26T08:20",
+      "last_update": "2026-11-26T10:10",
       "status": "suivi",
       "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
@@ -1725,6 +1785,18 @@
           "label": "Associated Press — synthèse du 25 novembre",
           "url": "https://apnews.com/article/6995de4ee91278459742a359eeb7439e",
           "note": "Bilans locaux et déclarations des parties.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Associated Press — bilan du 26 novembre",
+          "url": "https://apnews.com/article/gaza-iran-israel-uae-hormuz-november-26-2026-522676f17532b878878ff7a4347d0e31",
+          "note": "Dépêche ouverte ; informations attribuées aux hôpitaux, autorités israéliennes et UKMTO.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Reuters via Arab News — 26 novembre",
+          "url": "https://www.arabnews.com/middle-east/ukmto-reports-explosion-near-tanker-west-of-dubai-3014072",
+          "note": "Dépêche citant l’avis UKMTO ; avis original non consulté.",
           "type": "Agence de presse"
         }
       ],
