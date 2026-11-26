@@ -1,6 +1,32 @@
 {
   "publications": [
     {
+      "id": "la-guerre-la-paix-et-les-interets-de-pouvoir",
+      "title": "La guerre, la paix et les intérêts de pouvoir",
+      "type": "Synthèse",
+      "type_filter": "analyse",
+      "scope": "International",
+      "scope_filter": "international",
+      "status": "Publié",
+      "version": "V0.2.0",
+      "date_label": "26 novembre 2026",
+      "format": "PDF · 5 pages",
+      "visible": true,
+      "featured": true,
+      "participation_enabled": false,
+      "embed_pdf": true,
+      "short_summary": "Sommes-nous aussi organisés pour construire la paix que pour préparer la guerre ? Première synthèse intermédiaire d’une étude indépendante et contradictoire de Diploval.",
+      "summary": "Diploval engage une recherche stratégique, juridique, économique et diplomatique sur les moyens consacrés à la prévention et au règlement des conflits, les intérêts particuliers et les responsabilités institutionnelles. Le conflit Russie–Ukraine constitue le principal terrain d’investigation initial. Cette synthèse examine les dépenses militaires, les moyens de médiation, les activités de représentation d’intérêts et la préparation civile, au regard des libertés fondamentales et des conditions d’existence du vivant. Elle distingue les constats documentés des hypothèses restant à démontrer. Il ne s’agit pas du rapport intégral ni d’une attribution de responsabilité causale à des intérêts industriels.",
+      "details": "Première synthèse publique intermédiaire, V0.2.0, datée du 26 novembre 2026. La recherche se poursuit selon un sommaire de 49 chapitres et une méthodologie contradictoire. Le document expose les limites du corpus actuel.",
+      "keywords": "guerre, paix, diplomatie préventive, médiation, Russie, Ukraine, ONU, OTAN, industrie de défense, lobbying, droit international, résilience civile, intérêts particuliers, conditions d’existence du vivant, Diploval",
+      "seo_description": "Diploval étudie les moyens de paix, les intérêts de pouvoir et la préparation civile face à la guerre Russie–Ukraine. Synthèse intermédiaire V0.2.0.",
+      "related_publication": "accord-cadre-ukraine-russie-v01",
+      "related_publication_label": "Voir aussi : proposition Diploval pour un processus de paix durable",
+      "pdf": "/assets/uploads/Diploval-la-guerre-la-paix-et-les-interets-de-pouvoir-V0.2.0.pdf",
+      "cover": "/assets/uploads/diploval-guerre-paix-interets-pouvoir-partage.jpg",
+      "social_image": "/assets/uploads/diploval-guerre-paix-interets-pouvoir-partage.jpg"
+    },
+    {
       "short_summary": "Première édition publique de la proposition indépendante de Diploval pour une cessation durable des hostilités et la prévention de la reprise du conflit.",
       "date_label": "20 novembre 2026",
       "scope_filter": "international",
