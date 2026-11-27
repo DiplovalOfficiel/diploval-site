@@ -373,12 +373,48 @@ def check_world_watch(browser, width, failures):
                 failures.append(prefix + " ouverture de fiche inopérante")
             page.locator('#ww-AFR-01 .ww-back-map').click()
             before = svg.get_attribute("viewBox")
+            marker = pin.locator('.ww-dot')
+            diameter = marker.bounding_box()['width']
             page.locator('#ww-zoom-in').click()
             if svg.get_attribute("viewBox") == before:
                 failures.append(prefix + " commande zoom inopérante")
+            if abs(marker.bounding_box()['width'] - diameter) > .6:
+                failures.append(prefix + " taille du repère modifiée par le zoom")
+            page.locator('#ww-zoom-out').click()
+            if abs(marker.bounding_box()['width'] - diameter) > .6:
+                failures.append(prefix + " taille du repère modifiée par le dézoom")
             page.locator('#ww-fit').click()
             if svg.get_attribute("viewBox") != before:
                 failures.append(prefix + " recentrage inopérant")
+            # Pointer gesture simulation exercises both-finger geometry in both browsers.
+            box = svg.bounding_box()
+            cx, cy = box['x'] + box['width']/2, box['y'] + box['height']/2
+            def pointer(event, ident, x, y):
+                svg.dispatch_event(event, {"pointerId": ident, "pointerType": "touch", "clientX": x, "clientY": y, "bubbles": True, "cancelable": True, "buttons": 0 if event == "pointerup" else 1})
+            pointer("pointerdown", 101, cx-25, cy)
+            pointer("pointerdown", 102, cx+25, cy)
+            pointer("pointermove", 101, cx-45, cy)
+            pointer("pointermove", 102, cx+45, cy)
+            pointer("pointerup", 101, cx-45, cy)
+            pointer("pointerup", 102, cx+45, cy)
+            if float(svg.get_attribute("viewBox").split()[2]) >= float(before.split()[2]):
+                failures.append(prefix + " pincement inopérant")
+            if abs(marker.bounding_box()['width'] - diameter) > .6:
+                failures.append(prefix + " taille du repère modifiée au pincement")
+            prior = svg.get_attribute("viewBox")
+            pointer("pointerdown", 103, cx, cy)
+            pointer("pointermove", 103, cx+16, cy+12)
+            pointer("pointerup", 103, cx+16, cy+12)
+            if svg.get_attribute("viewBox") == prior:
+                failures.append(prefix + " déplacement inopérant")
+            page.locator('#ww-fit').click()
+            # Wheel zoom, with cursor anchored on the selected area.
+            svg.dispatch_event("wheel", {"deltaY": -150, "clientX": cx, "clientY": cy, "bubbles": True, "cancelable": True})
+            if float(svg.get_attribute("viewBox").split()[2]) >= float(before.split()[2]):
+                failures.append(prefix + " zoom molette inopérant")
+            if abs(marker.bounding_box()['width'] - diameter) > .6:
+                failures.append(prefix + " taille du repère modifiée à la molette")
+            page.locator('#ww-fit').click()
             # Exercise an actual pointer tap at the visible dot centre.
             pin.locator('.ww-dot').scroll_into_view_if_needed()
             dot = pin.locator('.ww-dot').bounding_box()
