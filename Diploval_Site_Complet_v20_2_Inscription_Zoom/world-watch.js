@@ -1,28 +1,24 @@
-'use strict';
-const q=document.querySelector('#world-query'),r=document.querySelector('#world-region'),reset=document.querySelector('#world-reset'),status=document.querySelector('#world-result'),entries=Array.from(document.querySelectorAll('[data-world-entry]')),map=document.querySelector('#ww-map'),pins=Array.from(document.querySelectorAll('[data-world-pin]'));
+(()=>{'use strict';
+const q=document.querySelector('#world-query'),r=document.querySelector('#world-region'),reset=document.querySelector('#world-reset'),status=document.querySelector('#world-result'),entries=Array.from(document.querySelectorAll('[data-world-entry]')),map=document.querySelector('#ww-map'),pins=Array.from(document.querySelectorAll('[data-world-pin]')),selectedText=document.querySelector('#ww-map-selected'),open=document.querySelector('#ww-map-open'),zoomIn=document.querySelector('#ww-zoom-in'),zoomOut=document.querySelector('#ww-zoom-out'),fit=document.querySelector('#ww-fit');
+if(!q||!r||!reset||!status||!map||!selectedText||!open)return;
 const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim();
-const byId=new Map(pins.map(p=>[p.dataset.worldPin,p]));
-function fitRegion(){
- if(!map)return;
- const chosen=r.value?entries.filter(e=>e.dataset.region===r.value).map(e=>byId.get(e.dataset.worldEntry)).filter(Boolean):[];
- let view=[0,0,720,360];
- if(chosen.length){
-  const xs=chosen.map(p=>Number(p.dataset.x)),ys=chosen.map(p=>Number(p.dataset.y));
-  const loX=Math.min(...xs),hiX=Math.max(...xs),loY=Math.min(...ys),hiY=Math.max(...ys);
-  const w=Math.min(720,Math.max(100,hiX-loX+40,(hiY-loY+40)*2)),h=w/2;
-  view=[Math.max(0,Math.min(720-w,(loX+hiX-w)/2)),Math.max(0,Math.min(360-h,(loY+hiY-h)/2)),w,h];
- }
- map.setAttribute('viewBox',view.join(' '));
- for(const pin of pins){const dot=pin.querySelector('circle');if(dot)dot.setAttribute('r',String(Math.max(1.7,4.3*view[2]/720)));}
-}
-function filter(){
- let count=0;for(const e of entries){const show=(!r.value||e.dataset.region===r.value)&&normalize(e.textContent).includes(normalize(q.value));e.hidden=!show;const pin=byId.get(e.dataset.worldEntry);if(pin){pin.classList.toggle('ww-pin-hidden',!show);pin.setAttribute('aria-hidden',String(!show));pin.setAttribute('tabindex',show?'0':'-1');}if(show)count++;}
- status.textContent=count+' dossier'+(count===1?'':'s')+' affiché'+(count===1?'':'s');
-}
-if(q&&r&&reset&&status){
- q.addEventListener('input',filter);
- r.addEventListener('change',()=>{filter();fitRegion();});
- reset.addEventListener('click',()=>{q.value='';r.value='';filter();fitRegion();q.focus()});
- for(const pin of pins)pin.addEventListener('click',()=>{const target=document.getElementById('ww-'+pin.dataset.worldPin);if(target&&!target.hidden)target.focus({preventScroll:true});});
- filter();fitRegion();
-}
+const byId=new Map(pins.map(p=>[p.dataset.worldPin,p])), byEntry=new Map(entries.map(e=>[e.dataset.worldEntry,e]));
+let view=[0,0,720,360],selected=null;
+const clamp=(v,min,max)=>Math.max(min,Math.min(max,v));
+function setView(x,y,w){w=clamp(w,60,720);let h=w/2;view=[clamp(x,0,720-w),clamp(y,0,360-h),w,h];map.setAttribute('viewBox',view.join(' '));sizePins();if(zoomIn)zoomIn.disabled=w<=60;if(zoomOut)zoomOut.disabled=w>=720}
+function sizePins(){const ctm=map.getScreenCTM(),scale=ctm?Math.abs(ctm.a):0;if(!scale)return;for(const pin of pins){pin.querySelector('.ww-dot')?.setAttribute('r',String(4.7/scale));pin.querySelector('.ww-hit')?.setAttribute('r',String(18/scale))}}
+function visiblePins(){return pins.filter(p=>!p.classList.contains('ww-pin-hidden'))}
+function fitVisible(){const chosen=visiblePins();if((!q.value.trim()&&!r.value)||!chosen.length){setView(0,0,720);return}const xs=chosen.map(p=>Number(p.dataset.x)),ys=chosen.map(p=>Number(p.dataset.y));const loX=Math.min(...xs),hiX=Math.max(...xs),loY=Math.min(...ys),hiY=Math.max(...ys);const w=Math.min(720,Math.max(100,hiX-loX+50,(hiY-loY+40)*2));setView((loX+hiX-w)/2,(loY+hiY-w/2)/2,w)}
+function clearSelection(){selected?.classList.remove('ww-selected');selected=null;selectedText.textContent='Sélectionnez un repère sur la carte.';open.hidden=true}
+function selectPin(pin){const target=byEntry.get(pin.dataset.worldPin);if(!target||target.hidden)return;clearSelection();selected=pin;pin.classList.add('ww-selected');selectedText.textContent=target.querySelector('h3')?.textContent||pin.dataset.worldPin;open.href='#'+target.id;open.hidden=false}
+function showEntry(target){if(!target)return;if(target.hidden){q.value='';r.value='';filter();fitVisible()}history.replaceState(null,'','#'+target.id);target.focus({preventScroll:true});target.scrollIntoView({block:'start',behavior:'auto'})}
+function filter(){let count=0;const term=normalize(q.value);for(const e of entries){const search=normalize(e.dataset.worldEntry+' '+e.dataset.region+' '+(e.querySelector('h3')?.textContent||''));const show=(!r.value||e.dataset.region===r.value)&&search.includes(term);e.hidden=!show;const pin=byId.get(e.dataset.worldEntry);if(pin){pin.classList.toggle('ww-pin-hidden',!show);pin.setAttribute('aria-hidden',String(!show));pin.setAttribute('tabindex',show?'0':'-1')}if(show)count++}status.textContent=count+' dossier'+(count===1?'':'s')+' affiché'+(count===1?'':'s');if(selected&&selected.classList.contains('ww-pin-hidden'))clearSelection()}
+function zoom(factor){const w=clamp(view[2]*factor,60,720);const cx=selected?Number(selected.dataset.x):view[0]+view[2]/2,cy=selected?Number(selected.dataset.y):view[1]+view[3]/2;setView(cx-w/2,cy-w/4,w)}
+q.addEventListener('input',()=>{filter();fitVisible()});r.addEventListener('change',()=>{filter();fitVisible()});reset.addEventListener('click',()=>{q.value='';r.value='';clearSelection();filter();fitVisible();q.focus()});
+zoomIn?.addEventListener('click',()=>zoom(.65));zoomOut?.addEventListener('click',()=>zoom(1/.65));fit?.addEventListener('click',fitVisible);
+for(const pin of pins){pin.addEventListener('click',ev=>{ev.preventDefault();let best=pin;if(ev.detail&&Number.isFinite(ev.clientX)){const ctm=map.getScreenCTM();if(ctm){let distance=Infinity;for(const p of visiblePins()){const x=Number(p.dataset.x),y=Number(p.dataset.y);const d=Math.hypot(ctm.a*x+ctm.c*y+ctm.e-ev.clientX,ctm.b*x+ctm.d*y+ctm.f-ev.clientY);if(d<distance){distance=d;best=p}}}}selectPin(best)});pin.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();selectPin(pin)}})}
+open.addEventListener('click',ev=>{if(selected){ev.preventDefault();showEntry(byEntry.get(selected.dataset.worldPin))}});
+for(const link of document.querySelectorAll('.ww-register a[href^="#ww-"]:not(.ww-back-map)'))link.addEventListener('click',ev=>{const target=document.getElementById(link.hash.slice(1));if(target){ev.preventDefault();showEntry(target)}});
+window.addEventListener('resize',sizePins);if(typeof ResizeObserver!=='undefined')new ResizeObserver(sizePins).observe(map);
+filter();fitVisible();
+})();
