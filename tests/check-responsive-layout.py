@@ -330,23 +330,53 @@ def check_world_watch(browser, width, failures):
             failures.append(prefix + " Code One Soudan absent ou dupliqué")
         if page.locator('[data-world-alert]').count() != 1 or page.locator('.ww-pin-level-1').count() != 2 or page.locator('.ww-pin-level-2').count() != 1 or page.locator('[data-regional-alert]').count() != 2:
             failures.append(prefix + " nouveaux niveaux non validés ou doublons")
-        if page.locator('#ww-AFR-01 .ww-analysis a[href^="https://"]').count() < 3:
+        if page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology) a[href^="https://"]').count() < 3:
             failures.append(prefix + " sources Soudan insuffisantes")
-        if page.locator('#ww-AFR-02 .ww-analysis a[href^="https://"]').count() < 2:
+        if page.locator('#ww-AFR-02 .ww-analysis:not(.ww-chronology) a[href^="https://"]').count() < 2:
             failures.append(prefix + " sources Soudan du Sud insuffisantes")
         if "aucun niveau attribué" not in page.locator('#ww-AFR-02 .ww-state').inner_text():
             failures.append(prefix + " niveau Soudan du Sud attribué sans validation")
         for ident in ("AFR-01", "AFR-02"):
-            label = page.locator(f'#ww-{ident} .ww-summary-label')
+            label = page.locator(f'#ww-{ident} .ww-analysis:not(.ww-chronology) .ww-summary-label')
             if label.count() != 1 or label.evaluate("el => el.getBoundingClientRect().width < 125 || el.getBoundingClientRect().height > 90"):
                 failures.append(prefix + " libellé accordéon trop étroit ou découpé")
         for slug in ("russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade","proche-orient-israel-palestine-iran-escalade-regionale"):
             if page.locator(f'main a.ww-link[href="/points-information/{slug}/"]').count() != 1:
                 failures.append(prefix + " suivi régional dupliqué")
-        page.locator('#ww-AFR-01 .ww-analysis summary').click()
-        if not page.locator('#ww-AFR-01 .ww-analysis a').first.is_visible():
+        page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology) summary').click()
+        if not page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology) a').first.is_visible():
             failures.append(prefix + " sources non accessibles")
-        page.locator('#ww-AFR-01 .ww-analysis summary').click()
+        page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology) summary').click()
+        # The newest update is the test clock reference; no dependency on the CI wall clock.
+        if page.locator('.ww-chronology').count() != total or page.locator('.ww-dates').count() != total:
+            failures.append(prefix + " chronologies ou dates manquantes")
+        timestamps = page.locator('[data-ww-update]').evaluate_all("els => els.map(e => Number(e.dataset.wwTime))")
+        if not timestamps:
+            failures.append(prefix + " évolutions historiques manquantes")
+        else:
+            now = max(timestamps) + 1000
+            page.evaluate("(now) => { Date.now = () => now; }", now)
+            for period, hours in (("24",24),("168",168),("720",720),("all",None)):
+                page.locator(f'[data-ww-period="{period}"]').click()
+                expected = sum(ms <= now and (hours is None or now-ms < hours*3600000) for ms in timestamps)
+                if page.locator('[data-ww-update]:visible').count() != min(12,expected):
+                    failures.append(prefix + f" filtre temporel {period} incorrect")
+                if page.locator('#ww-news-more').is_visible() != (expected>12):
+                    failures.append(prefix + " pagination incorrecte")
+            if page.locator('#ww-news-more').is_visible():
+                page.locator('#ww-news-more').click()
+                if page.locator('[data-ww-update]:visible').count() != min(24,len(timestamps)):
+                    failures.append(prefix + " affichage de la suite incorrect")
+            page.locator('[data-ww-period="24"]').click()
+            rings = page.locator('[data-ww-last-evolution]').evaluate_all("(els) => els.filter(e => Number(e.dataset.wwLastEvolution)<=Date.now() && Date.now()-Number(e.dataset.wwLastEvolution)<86400000).length")
+            if page.locator('.ww-pin.ww-recent').count() != rings:
+                failures.append(prefix + " anneaux des nouveautés incorrects")
+            link = page.locator('[data-ww-update]:visible [data-ww-event-link]').first
+            href = link.get_attribute("href")
+            link.click()
+            target = page.locator(href)
+            if not target.is_visible() or page.evaluate("location.hash") != href:
+                failures.append(prefix + " ouverture de la chronologie depuis une nouveauté impossible")
         q = page.locator("#world-query")
         region = page.locator("#world-region")
         svg = page.locator("#ww-map")
@@ -382,11 +412,15 @@ def check_world_watch(browser, width, failures):
             before = svg.get_attribute("viewBox")
             marker = pin.locator('.ww-dot')
             diameter = marker.bounding_box()['width']
+            ring = pin.locator('.ww-recent-ring')
+            ring_width = ring.evaluate('el => el.getBoundingClientRect().width')
             page.locator('#ww-zoom-in').click()
             if svg.get_attribute("viewBox") == before:
                 failures.append(prefix + " commande zoom inopérante")
             if abs(marker.bounding_box()['width'] - diameter) > .6:
                 failures.append(prefix + " taille du repère modifiée par le zoom")
+            if abs(ring.evaluate('el => el.getBoundingClientRect().width') - ring_width) > .6:
+                failures.append(prefix + " taille de l’anneau modifiée par le zoom")
             page.locator('#ww-zoom-out').click()
             if abs(marker.bounding_box()['width'] - diameter) > .6:
                 failures.append(prefix + " taille du repère modifiée par le dézoom")
