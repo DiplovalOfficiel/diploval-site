@@ -477,7 +477,15 @@ def check_world_watch(browser, width, failures):
             item = rect(page, selector)
             if not item or item["x"] < -2 or item["right"] > width + 2:
                 failures.append(prefix + f" bloc hors écran {selector}: {item}")
-        page.screenshot(path=f"layout-screenshots/{browser.browser_type.name}-monde-{width}px.png", full_page=True, animations="disabled")
+        # Long historical registers can exceed Firefox's 32767px screenshot limit.
+        # All functional and overflow assertions above remain unchanged.
+        # Capture bounded viewports at the top, the news, the map and a dossier.
+        page.locator('.ww-chronology[open]').evaluate_all("els => els.forEach(el => el.open = false)")
+        page.evaluate("window.scrollTo(0,0)")
+        page.screenshot(path=f"layout-screenshots/{browser.browser_type.name}-monde-{width}px.png", animations="disabled")
+        for selector, suffix in ((".ww-news", "nouveautes"), (".ww-map-shell", "carte"), ("#ww-AFR-01", "fiche")):
+            page.locator(selector).evaluate("el => el.scrollIntoView({block:'start',behavior:'instant'})")
+            page.screenshot(path=f"layout-screenshots/{browser.browser_type.name}-monde-{width}px-{suffix}.png", animations="disabled")
         print(f"{browser.browser_type.name}: monde sous vigilance checked at {width}px")
     except Exception as exc:
         failures.append(prefix + f" erreur de contrôle: {exc}")
