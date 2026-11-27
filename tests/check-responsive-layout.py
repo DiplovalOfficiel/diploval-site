@@ -321,7 +321,7 @@ def check_world_watch(browser, width, failures):
             failures.append(prefix + " URL canonique incorrecte")
         if page.locator('[data-world-alert="AFR-01"] .ww-level-1').count() != 1:
             failures.append(prefix + " Code One Soudan absent ou dupliqué")
-        if page.locator('[data-world-alert]').count() != 1 or page.locator('.ww-pin-level-1').count() != 1:
+        if page.locator('[data-world-alert]').count() != 1 or page.locator('.ww-pin-level-1').count() != 2 or page.locator('.ww-pin-level-2').count() != 1 or page.locator('[data-regional-alert]').count() != 2:
             failures.append(prefix + " nouveaux niveaux non validés ou doublons")
         if page.locator('#ww-AFR-01 .ww-analysis a[href^="https://"]').count() < 3:
             failures.append(prefix + " sources Soudan insuffisantes")
@@ -329,6 +329,13 @@ def check_world_watch(browser, width, failures):
             failures.append(prefix + " sources Soudan du Sud insuffisantes")
         if "aucun niveau attribué" not in page.locator('#ww-AFR-02 .ww-state').inner_text():
             failures.append(prefix + " niveau Soudan du Sud attribué sans validation")
+        for ident in ("AFR-01", "AFR-02"):
+            label = page.locator(f'#ww-{ident} .ww-summary-label')
+            if label.count() != 1 or label.evaluate("el => el.getBoundingClientRect().width < 125 || el.getBoundingClientRect().height > 90"):
+                failures.append(prefix + " libellé accordéon trop étroit ou découpé")
+        for slug in ("russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade","proche-orient-israel-palestine-iran-escalade-regionale"):
+            if page.locator(f'main a.ww-link[href="/points-information/{slug}/"]').count() != 1:
+                failures.append(prefix + " suivi régional dupliqué")
         page.locator('#ww-AFR-01 .ww-analysis summary').click()
         if not page.locator('#ww-AFR-01 .ww-analysis a').first.is_visible():
             failures.append(prefix + " sources non accessibles")
@@ -359,8 +366,27 @@ def check_world_watch(browser, width, failures):
         if pin.count() == 1:
             pin.focus()
             page.keyboard.press("Enter")
+            if not page.locator('#ww-map-open').is_visible() or page.locator('#ww-map-open').get_attribute('href') != '#ww-AFR-01':
+                failures.append(prefix + " sélection clavier du repère inopérante")
+            page.locator('#ww-map-open').click()
             if page.evaluate("location.hash") != "#ww-AFR-01":
-                failures.append(prefix + " navigation clavier du repère inopérante")
+                failures.append(prefix + " ouverture de fiche inopérante")
+            page.locator('#ww-AFR-01 .ww-back-map').click()
+            before = svg.get_attribute("viewBox")
+            page.locator('#ww-zoom-in').click()
+            if svg.get_attribute("viewBox") == before:
+                failures.append(prefix + " commande zoom inopérante")
+            page.locator('#ww-fit').click()
+            if svg.get_attribute("viewBox") != before:
+                failures.append(prefix + " recentrage inopérant")
+            # Exercise an actual pointer tap at the visible dot centre.
+            dot = pin.locator('.ww-dot').bounding_box()
+            if dot:
+                page.mouse.click(dot['x'] + dot['width']/2, dot['y'] + dot['height']/2)
+                if page.locator('#ww-map-open').get_attribute('href') != '#ww-AFR-01':
+                    failures.append(prefix + " sélection par pointeur inopérante")
+            else:
+                failures.append(prefix + " repère non visible")
         else:
             failures.append(prefix + " repère de référence absent")
         page.locator("#world-reset").click()
