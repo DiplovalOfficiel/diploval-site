@@ -331,3 +331,30 @@ body.institutional-site{background:var(--dv-ivory);color:var(--text)}
   .institutional-home .dv-mobile-pager button[hidden]{display:none!important}
   .institutional-home .dv-mobile-pager button:focus-visible{outline:3px solid #326ea0;outline-offset:2px}
 }
+
+/* V2.6 — parité éditoriale : mêmes informations et actions sur tous les écrans. */
+.institutional-site .header-contact{display:inline-flex;align-items:center;justify-content:center;min-height:44px}
+.institutional-home #publication-list .scope-label{display:inline-flex;max-width:100%;white-space:normal;align-self:flex-start}
+.institutional-home .agenda-shell .dv-agenda-empty{display:block;background:#f5f0e6;color:#253647;border:1px solid #ded5c7;border-radius:6px;padding:12px;margin:8px 0}
+.institutional-home .agenda-shell:has(#admin-agenda-next:not([hidden])) .dv-agenda-empty-next,
+.institutional-home .agenda-shell:has(#admin-agenda-more:not([hidden])) .dv-agenda-empty-more,
+.institutional-home .agenda-shell:has(#admin-agenda-past:not([hidden])) .dv-agenda-empty-past{display:none!important}
+@media(max-width:760px){
+  .institutional-site .header-inner{gap:4px 8px;padding-bottom:8px}
+  .institutional-site .brand{max-width:100%;flex:0 0 auto}
+  .institutional-site .header-actions{gap:4px}
+  .institutional-site .menu-toggle{width:44px;height:44px}
+  .institutional-site .mobile-menu-caption{display:none}
+  .institutional-site .institutional-brandline{display:block;order:1;flex:0 0 100%;max-width:100%;font-size:12px;line-height:1.35;text-align:center;color:#e5bb92}
+  .institutional-site .main-nav{order:2}
+  .institutional-site .main-nav.nav-tiles.open{max-height:calc(100dvh - 120px)}
+  .institutional-home .participation-home .pc-card{grid-template-columns:58px minmax(0,1fr);gap:8px 10px;padding:10px}
+  .institutional-home .participation-home .pc-card>img{display:block;width:58px;height:auto;max-height:85px;grid-column:1;grid-row:1;object-fit:contain}
+  .institutional-home .participation-home .pc-card>div:not(.pc-actions){grid-column:2;min-width:0}
+  .institutional-home .participation-home .pc-actions{grid-column:1/-1}
+  .institutional-home .agenda-shell .dv-agenda-empty.dv-mobile-inactive{display:none!important}
+}
+@media(max-width:440px){
+  .institutional-site .header-contact{width:44px;min-width:44px;padding:0;font-size:0;line-height:1}
+  .institutional-site .header-contact::before{content:"✉";font-size:21px;line-height:1}
+}

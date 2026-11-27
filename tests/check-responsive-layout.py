@@ -126,6 +126,50 @@ def check_identity(page, width, failures):
     page.locator('.dv-v2-intro__nav a[href="#dv-v2-panel-1"]').click()
     page.wait_for_timeout(650)
 
+EXPECTED_MENU = {"/#travaux", "/dico/", "/points-information",
+                 "/propositions-contributions", "/#services", "/#publics",
+                 "/#methode", "/#apropos", "/#contact"}
+
+def check_header_parity(page,width,failures):
+    for selector in (".site-header .institutional-brandline", ".site-header .header-contact"):
+        if not page.locator(selector).is_visible():
+            failures.append(f"{width}px: information ou contact masqué {selector}")
+    nav=page.locator(".site-header .main-nav")
+    if width<=760:
+        page.locator(".menu-toggle").click()
+    try:
+        links=nav.locator("a")
+        hrefs={a.get_attribute("href") for a in links.all()}
+        if not EXPECTED_MENU.issubset(hrefs):
+            failures.append(f"{width}px: destinations absentes {EXPECTED_MENU-hrefs}")
+        for a in links.all():
+            if not a.is_visible():
+                failures.append(f"{width}px: destination inaccessible {a.get_attribute('href')}")
+    finally:
+        if width<=760:
+            page.locator(".menu-toggle").click()
+
+def check_home_parity(page,width,failures):
+    page.locator(".home-library").evaluate("el => el.open=true")
+    results=page.locator("#publication-list .publication-result:not([hidden]) .scope-label")
+    if not results.count():
+        failures.append(f"{width}px: aucune échelle documentaire")
+    for label in results.all():
+        if not label.is_visible():
+            failures.append(f"{width}px: échelle documentaire masquée")
+    covers=page.locator(".participation-home .pc-card>img")
+    for img in covers.all():
+        if not img.is_visible():
+            failures.append(f"{width}px: couverture de consultation masquée")
+    page.locator(".home-small-extra").evaluate("el => el.open=true")
+    for i,kind in enumerate(("next","more","past")):
+        if width<=760:
+            page.locator(".home-small-extra .dv-mobile-nav button").nth(i).evaluate("el => el.click()")
+        source=page.locator("#admin-agenda-"+kind)
+        empty=page.locator(".dv-agenda-empty-"+kind)
+        if source.get_attribute("hidden") is not None and not empty.is_visible():
+            failures.append(f"{width}px: état vide agenda absent {kind}")
+
 def check_public_pages(browser, width, failures):
     # Pages statiques et générées : une seule identité, aucune largeur débordante.
     for route in ("points-information.html", "propositions-contributions.html",
@@ -137,9 +181,10 @@ def check_public_pages(browser, width, failures):
             if not response or response.status >= 400:
                 failures.append(f"{width}px: page indisponible {route}")
                 continue
+            check_header_parity(page,width,failures)
             if page.locator(".site-header .brand img[src='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: logo commun absent sur {route}")
-            if page.locator("link[href='/charte-v21.css?v=5']").count() != 1:
+            if page.locator("link[href='/charte-v21.css?v=6']").count() != 1:
                 failures.append(f"{width}px: charte globale absente sur {route}")
             if page.locator("link[rel='icon'][href='/assets/diploval-embleme-v2.webp']").count() != 1:
                 failures.append(f"{width}px: emblème absent ou répété sur {route}")
@@ -323,6 +368,8 @@ def main():
                     check_home_modules(page,width,failures)
                     check_summary_contrast(page,width,failures)
                     check_mobile_navigation(page,width,failures)
+                    check_header_parity(page,width,failures)
+                    check_home_parity(page,width,failures)
                     print(f"{engine.name}: responsive layout checked at {width}px")
                     page.close()
                 for width in (344, 1280):

@@ -5,9 +5,12 @@
   const header = document.querySelector('.site-header');
   const menuButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.main-nav');
-  // Menu à six tuiles sur mobile, navigation horizontale inchangée sur ordinateur.
+  // Conserver la même liste de destinations sur ordinateur et téléphone.
   if (nav) {
     const icons = {
+      dictionnaire:'<path d="M4 19V5a2 2 0 0 1 2-2h14v16H6a2 2 0 0 0 0 4h14"/><path d="M8 7h8M8 11h6"/>',
+      publics:'<circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 20v-2a6 6 0 0 1 12 0v2M16 14a4 4 0 0 1 5 4v2"/>',
+      methode:'<path d="m9 11 3 3 7-7M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/>',
       publications:'<path d="M12 7v14"/><path d="M3 18V5a2 2 0 0 1 2-2h3a4 4 0 0 1 4 4 4 4 0 0 1 4-4h3a2 2 0 0 1 2 2v13a1 1 0 0 1-1 1h-4a4 4 0 0 0-4 2 4 4 0 0 0-4-2H4a1 1 0 0 1-1-1z"/>',
       information:'<circle cx="12" cy="12" r="2"/><path d="M8.5 8.5a5 5 0 0 0 0 7"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M5 5a10 10 0 0 0 0 14"/><path d="M19 5a10 10 0 0 1 0 14"/>',
       participer:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
@@ -17,16 +20,19 @@
     };
     const links = [
       ['Dossiers','/#travaux','publications'],
+      ['Dico Diplo','/dico/','dictionnaire'],
       ['Points d’info','/points-information','information'],
       ['Participer','/propositions-contributions','participer'],
       ['Missions','/#services','missions'],
+      ['Pour qui ?','/#publics','publics'],
+      ['Notre méthode','/#methode','methode'],
       ['À propos','/#apropos','apropos'],
       ['Contact','/#contact','contact']
     ];
     nav.classList.add('nav-tiles');
     nav.innerHTML='<span class="dv-nav-intro" aria-hidden="true">Explorer Diploval</span>'+
       links.map(([label,href,type])=>{
-        const current = (href==='/points-information' && location.pathname.startsWith('/points-information')) ||
+        const current = (href==='/dico/' && location.pathname.startsWith('/dico/')) || (href==='/points-information' && location.pathname.startsWith('/points-information')) ||
           (href==='/propositions-contributions' && location.pathname.startsWith('/propositions-contributions'));
         const glyph='<svg class="dv-nav-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">'+icons[type]+'</svg>';
         return '<a class="dv-nav-item" href="'+href+'"'+(current?' aria-current="page"':'')+'>'+glyph+'<span>'+label+'</span></a>';

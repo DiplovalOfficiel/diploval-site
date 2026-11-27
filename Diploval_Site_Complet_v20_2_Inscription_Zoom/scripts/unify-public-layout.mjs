@@ -31,12 +31,12 @@ export function unifyPublicLayout(root){
     html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/institutional.css?v=17">\n</head>');
     // La charte V2.1 est chargée en dernier sur toutes les pages publiques.
     html=html.replace(/<link\b[^>]*href=["']\/charte-v21\.css[^"']*["'][^>]*>\s*/gi,'');
-    html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/charte-v21.css?v=5">\n</head>');
+    html=html.replace(/<\/head>/i,'<link rel="stylesheet" href="/charte-v21.css?v=6">\n</head>');
     // Nouveau monogramme : conserver l'ancien favicon PNG en secours.
     html=html.replace(/<link\b[^>]*href=["']\/assets\/diploval-embleme-v2\.webp[^"']*["'][^>]*>\s*/gi,'');
     html=html.replace(/<\/head>/i,'<link rel="icon" type="image/webp" sizes="96x96" href="/assets/diploval-embleme-v2.webp">\n</head>');
-    if(!/src=["']\/site\.js\b/.test(html))html=html.replace(/<\/body>/i,'<script src="/site.js?v=32" defer></script>\n</body>');
-    html=html.replace(/(["'])\/site\.js(?:\?[^"']*)?\1/g,'"/site.js?v=32"');
+    if(!/src=["']\/site\.js\b/.test(html))html=html.replace(/<\/body>/i,'<script src="/site.js?v=39" defer></script>\n</body>');
+    html=html.replace(/(["'])\/site\.js(?:\?[^"']*)?\1/g,'"/site.js?v=39"');
     html=html.replace(/<main\b([^>]*)>/i,(m,attrs)=>/\bid=/.test(attrs)?m:`<main${attrs} id="main">`);
     const missing=dialogs.filter(dialog=>{const id=dialog.match(/\bid="([^"]+)"/)[1];return !html.includes(`id="${id}"`);});
     // Dialog markup must precede site.js because that script binds on evaluation.
