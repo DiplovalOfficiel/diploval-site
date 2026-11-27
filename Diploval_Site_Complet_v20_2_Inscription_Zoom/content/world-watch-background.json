@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.15",
+  "schema_version": "0.3.16",
   "compiled_on": "2026-11-27",
   "dossiers": [
     {
@@ -779,6 +779,164 @@
         {
           "label": "Nagaland.News, 26 novembre, report du blocage annoncé",
           "url": "https://nagaland.news/cotu-highway-shutdown-naga-bodies/"
+        }
+      ]
+    },
+    {
+      "id": "EUR-01",
+      "context": "L'annexion de la Crimée par la Russie en 2014, non reconnue par la majorité des États, et la guerre dans le Donbass précèdent l'invasion russe à grande échelle de février 2022. Les accords de Minsk n'ont pas permis un règlement durable. La souveraineté ukrainienne, la sécurité des populations et les garanties de paix constituent des enjeux centraux.",
+      "reference_date": "2026-11-27",
+      "current": "Le 27 novembre, Reuters rapporte que l'AIEA cherche à obtenir une suspension locale des hostilités pour permettre des réparations de l'alimentation électrique de la centrale de Zaporijjia. Le Conseil européen des 26 et 27 novembre a examiné les besoins financiers ukrainiens de 2027 ; AP rapporte que les discussions sur un nouveau prêt n'ont pas débouché sur un accord. Les deux questions doivent être distinguées des négociations de paix générales.",
+      "living": "Les civils, les personnes déplacées, la continuité des soins, de l'électricité et de l'eau, la sûreté nucléaire et la restauration des sols contaminés ou dégradés doivent rester au centre de l'analyse.",
+      "peace": "Suivre les démarches de médiation, les échanges de prisonniers et les garanties de sécurité, ainsi que l'application effective des cessez-le-feu éventuels. Le suivi régional conserve sa chronologie et son niveau validé.",
+      "sources": [
+        {
+          "label": "Conseil de l'UE, coordination diplomatique du 10 novembre",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/10/statement-on-today-s-meeting-in-abu-dhabi-between-the-eu-france-germany-italy-united-kingdom-ukraine-united-states-and-nato/"
+        },
+        {
+          "label": "Reuters, 27 novembre, médiation de l'AIEA",
+          "url": "https://www.reuters.com/business/energy/iaea-working-with-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-2026-11-27/"
+        },
+        {
+          "label": "Conseil européen, réunion des 26–27 novembre",
+          "url": "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/26-27/"
+        },
+        {
+          "label": "AP, 27 novembre, financement de l'Ukraine",
+          "url": "https://apnews.com/article/fd025046850b824b2e62def18408c6b6"
+        }
+      ]
+    },
+    {
+      "id": "EUR-02",
+      "context": "Les relations entre la Russie et l'OTAN ont connu des phases de coopération et de confrontation depuis la fin de la guerre froide. L'élargissement de l'Alliance, les divergences sur l'architecture de sécurité européenne et l'invasion de l'Ukraine en 2022 ont accentué les tensions. La défense collective et l'engagement direct dans un conflit sont deux questions distinctes.",
+      "reference_date": "2026-11-27",
+      "current": "La déclaration conjointe publiée par l'OTAN le 26 novembre, à la suite de la rencontre du 25 entre le président américain et le secrétaire général, appelle la Russie à éviter une extension de la guerre. Le 27, les forces armées lettones ont signalé une brève intrusion d'un drone non identifié dans leur espace aérien, selon Reuters. L'origine et l'intention de cet appareil ne sont pas établies par cette seule information.",
+      "living": "Prévenir les atteintes aux infrastructures civiles et énergétiques, les accidents aériens et les risques nucléaires ; analyser les conséquences de la confrontation sur les conditions de vie et les ressources publiques.",
+      "peace": "Documenter les mécanismes de prévention des incidents, les canaux diplomatiques et les débats sur les garanties de sécurité. Un incident aérien ne démontre ni une attaque volontaire ni un déclenchement automatique de la défense collective.",
+      "sources": [
+        {
+          "label": "OTAN, discours du 23 novembre",
+          "url": "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa"
+        },
+        {
+          "label": "OTAN, déclaration conjointe publiée le 26 novembre",
+          "url": "https://www.nato.int/fr/news-and-events/articles/news/2026/11/26/joint-statement-by-the-president-of-the-united-states-of-america-and-the-nato-secretary-general"
+        },
+        {
+          "label": "Reuters, 27 novembre, signalement letton",
+          "url": "https://www.reuters.com/world/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "id": "EUR-03",
+      "context": "Après la guerre de 1998–1999 et l'administration internationale du Kosovo, la déclaration d'indépendance de 2008 a été reconnue par de nombreux États mais reste contestée par la Serbie et d'autres États. Le dialogue facilité par l'Union européenne depuis 2011 et l'accord de normalisation de 2023 visent à résoudre des différends pratiques et politiques.",
+      "reference_date": "2026-11-25",
+      "current": "Le sommet UE–Balkans occidentaux du 25 novembre a réaffirmé le soutien européen au dialogue Belgrade–Pristina et invité les deux parties à progresser dans la normalisation. Il ne s'agit pas d'un nouvel accord bilatéral. Les résultats concrets de cette impulsion restent à établir.",
+      "living": "La sécurité des différentes communautés, l'accès aux services, la liberté de circulation, les droits linguistiques et la protection du patrimoine doivent être suivis.",
+      "peace": "Vérifier l'application des engagements antérieurs, notamment les dispositions relatives aux communautés serbes du Kosovo, et les garanties impartiales pour tous les habitants.",
+      "sources": [
+        {
+          "label": "Service européen pour l'action extérieure, historique du dialogue",
+          "url": "https://www.eeas.europa.eu/eeas/belgrade-pristina-dialogue_en"
+        },
+        {
+          "label": "Conseil européen, sommet du 25 novembre",
+          "url": "https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/25/"
+        },
+        {
+          "label": "Commission européenne, rapport sur l'élargissement du 4 novembre",
+          "url": "https://enlargement.ec.europa.eu/news/2026-enlargement-package-shows-reform-commitment-delivers-progress-towards-eu-membership-2026-11-04_en"
+        }
+      ]
+    },
+    {
+      "id": "EUR-04",
+      "context": "Les accords de Dayton de 1995 ont mis fin à la guerre et établi une architecture constitutionnelle complexe, avec deux entités et le district de Brčko. La répartition des compétences, la représentation des peuples constitutifs et les droits des autres citoyens restent des enjeux institutionnels. Le Haut Représentant accompagne la mise en œuvre civile de la paix.",
+      "reference_date": "2026-11-25",
+      "current": "La Commission européenne a publié son rapport annuel sur le pays le 4 novembre. Le sommet UE–Balkans occidentaux du 25 novembre réaffirme la perspective d'adhésion des partenaires et leur demande de poursuivre les réformes. Ces éléments constituent un cadre institutionnel régional, non la preuve d'une résolution des désaccords internes bosniens. Les développements propres au pays des derniers jours restent à corroborer.",
+      "living": "Le fonctionnement des services publics, l'égalité devant les institutions, le retour des déplacés, la coopération intercommunautaire et le déminage des territoires sont des enjeux de paix durable.",
+      "peace": "Suivre la stabilité des institutions, l'application de Dayton, la protection des droits fondamentaux et les réformes nécessaires à l'intégration européenne.",
+      "sources": [
+        {
+          "label": "Commission européenne, rapport Bosnie-Herzégovine du 4 novembre (notice officielle)",
+          "url": "https://enlargement.ec.europa.eu/bosnia-and-herzegovina-report-2026_en?prefLang=bg"
+        },
+        {
+          "label": "Conseil européen, sommet du 25 novembre",
+          "url": "https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/25/"
+        },
+        {
+          "label": "Commission européenne, déclaration sur les élections du 4 octobre",
+          "url": "https://enlargement.ec.europa.eu/news/joint-statement-high-representativevice-president-kallas-and-commissioner-kos-general-elections-2026-10-06_en?prefLang=da"
+        }
+      ]
+    },
+    {
+      "id": "EUR-05",
+      "context": "Le conflit de 1992 a conduit à une séparation de fait de la Transnistrie, qui demeure internationalement reconnue comme partie de la Moldavie. La présence de forces russes, la sécurité, les droits des habitants et les relations économiques entre les deux rives du Dniestr structurent les négociations.",
+      "reference_date": "2026-11-23",
+      "current": "Le gouvernement moldave a annoncé une réunion tenue le 20 novembre à Bucarest entre le vice-Premier ministre chargé de la réintégration et le ministre roumain des Affaires étrangères. Les échanges ont porté sur la recherche d'un règlement durable respectant l'intégrité territoriale moldave. L'OSCE avait facilité une rencontre des représentants politiques à Tiraspol le 24 septembre. Aucun nouvel accord de statut n'est établi dans les sources examinées.",
+      "living": "Préserver la continuité des services, la circulation, les droits linguistiques et éducatifs, l'accès à l'énergie et les échanges entre les deux rives.",
+      "peace": "Suivre les groupes de travail et les négociations, les garanties de droits et les positions relatives à la présence militaire russe. Distinguer une déclaration diplomatique d'une mesure effectivement appliquée.",
+      "sources": [
+        {
+          "label": "OSCE, réunion du 24 septembre",
+          "url": "https://moldova.osce.org/news/mission-moldova/667755"
+        },
+        {
+          "label": "Gouvernement moldave, compte rendu de la réunion du 20 novembre",
+          "url": "https://gov.md/index.php/en/comunicate-de-presa-bpr/issues-reintegration-process-and-respect-human-rights-eastern-districts"
+        }
+      ]
+    },
+    {
+      "id": "EUR-06",
+      "context": "Les conflits du Haut-Karabakh ont marqué les relations depuis la dissolution de l'URSS, avec des guerres en 1991–1994 et 2020. L'offensive azerbaïdjanaise de septembre 2023 a entraîné le départ massif des habitants arméniens du territoire. En août 2025, les parties ont paraphé un projet de traité de paix et signé une déclaration politique à Washington.",
+      "reference_date": "2026-11-27",
+      "current": "Les dirigeants arménien et azerbaïdjanais ont échangé le 12 novembre à Dublin sur la poursuite du processus de paix. Les 26 et 27 novembre, des représentants des sociétés civiles des deux pays se sont rencontrés à Dilijan lors de la cinquième session de l'initiative Peace Bridge, selon Euronews et APA. Ces échanges favorisent le dialogue, mais ne constituent pas une ratification du traité.",
+      "living": "Les droits et la sécurité des déplacés, la protection du patrimoine, le déminage, les ressources et la coopération locale sont essentiels.",
+      "peace": "Suivre la formalisation du traité, la délimitation frontalière et les garanties de droits et de circulation. Les rapprochements entre sociétés civiles méritent une attention indépendante des annonces gouvernementales.",
+      "sources": [
+        {
+          "label": "Conseil de l'UE, relations avec l'Azerbaïdjan et texte paraphé en 2025",
+          "url": "https://www.consilium.europa.eu/en/policies/azerbaijan/"
+        },
+        {
+          "label": "Premier ministre arménien, rencontre du 12 novembre",
+          "url": "https://www.primeminister.am/en/press-release/item/2026/11/12/Nikol-Pashinyan-Ilham-Aliyev/"
+        },
+        {
+          "label": "Euronews, 27 novembre, échanges des sociétés civiles",
+          "url": "https://www.euronews.com/2026/11/27/azerbaijani-and-armenian-civil-societies-seek-new-history-in-new-round-of-peace-talks"
+        },
+        {
+          "label": "APA, 27 novembre, cinquième rencontre Peace Bridge",
+          "url": "https://en.apa.az/foreign-policy/azerbaijan-armenia-peace-bridge-initiative-completes-fifth-round-of-talks-538970"
+        }
+      ]
+    },
+    {
+      "id": "EUR-07",
+      "context": "La division de Chypre s'inscrit dans les tensions intercommunautaires, le coup d'État de 1974 et l'intervention militaire turque qui a suivi. La République de Chypre est membre de l'UE ; l'entité autoproclamée au nord n'est reconnue que par la Turquie. L'ONU facilite la recherche d'un règlement politique et maintient une mission de paix.",
+      "reference_date": "2026-11-25",
+      "current": "Le 9 novembre, les dirigeants des deux communautés se sont accordés sur l'ouverture de nouveaux points de passage et la poursuite des échanges, selon Reuters. Leur réunion du 24 novembre a permis de poursuivre les préparatifs d'une rencontre avec le secrétaire général de l'ONU, selon Politis et la Famagusta Gazette du 25. La date de cette rencontre et la reprise de négociations de fond restent à confirmer.",
+      "living": "Faciliter les contacts entre communautés, la coopération environnementale, la protection du patrimoine et les solutions aux différends fonciers. Les projets communs d'éducation et de gestion de l'environnement constituent des mesures de confiance possibles.",
+      "peace": "Suivre la mise en œuvre des passages annoncés et les bons offices de l'ONU ; distinguer la reprise du dialogue de l'accord final sur le statut de l'île.",
+      "sources": [
+        {
+          "label": "Reuters, 9 novembre, accord sur les points de passage",
+          "url": "https://www.reuters.com/world/middle-east/cyprus-leaders-agree-open-new-border-crossings-future-talks-2026-11-09/"
+        },
+        {
+          "label": "Politis, 25 novembre, préparatifs du dialogue",
+          "url": "https://en.politis.com.cy/news/1074261/menelaou-window-still-open-for-enlarged-cyprus-meeting-before-guterres-leaves"
+        },
+        {
+          "label": "Famagusta Gazette, 25 novembre, réunion du 24",
+          "url": "https://famagusta-gazette.com/cyprus-leaders-meet-at-un-buffer-zone-call-for-trilateral-talks-with-guterres/"
         }
       ]
     }
