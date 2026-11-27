@@ -1,3 +1,4 @@
+import {generateWorldWatch} from './generate-world-watch.mjs';
 import {generateArticles} from './articles.mjs';
 import {generateDico} from './generate-dico.mjs';
 import {prepareConsultations,isPublic,publicationId} from './consultations.mjs';
@@ -154,6 +155,7 @@ for(const e of eps.filter(x=>x.visible!==false)){const id=e.id||slugify(e.title)
 const agenda=readJson('content/agenda.json',{events:[]}).events||[];const today=new Date().toISOString().slice(0,10);const future=agenda.filter(e=>e.visible!==false&&e.date>=today&&e.status!=='archive');
 try{const p=path.join(root,'index.html');let h=fs.readFileSync(p,'utf8');const orgGraph=[org,website,{'@type':'WebPage','@id':`${SITE}/#webpage`,'url':`${SITE}/`,'name':'Diploval — Analyse, aide à la décision et ingénierie institutionnelle','isPartOf':{'@id':`${SITE}/#website`},'about':{'@id':`${SITE}/#organization`},'inLanguage':'fr-FR','dateModified':RELEASE},...future.map(e=>({'@type':'Event','name':e.title,'description':e.summary||'', 'startDate':`${e.date}${e.start_time?`T${e.start_time}:00+02:00`:''}`,...(e.end_time?{'endDate':`${e.date}T${e.end_time}:00`}:{}),'eventAttendanceMode':e.mode==='online'?'https://schema.org/OnlineEventAttendanceMode':e.mode==='hybrid'?'https://schema.org/MixedEventAttendanceMode':'https://schema.org/OfflineEventAttendanceMode','eventStatus':'https://schema.org/EventScheduled','organizer':{'@id':`${SITE}/#organization`},...(e.online_url?{'location':{'@type':'VirtualLocation','url':e.online_url}}:e.venue?{'location':{'@type':'Place','name':e.venue,'address':[e.address,e.city].filter(Boolean).join(', ')}}:{})}))];const data=JSON.stringify({'@context':'https://schema.org','@graph':orgGraph}).replace(/</g,'\\u003c');h=h.replace(/<script[^>]+id="seo-jsonld"[^>]*>[\s\S]*?<\/script>/,`<script type="application/ld+json" id="seo-jsonld">${data}</script>`);fs.writeFileSync(p,h)}catch(e){console.warn('Index JSON-LD',e.message)}
 
+generateWorldWatch(root,{head,header,footer,org,website,breadcrumb,addMap});
 const xml=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemap.map(x=>`  <url><loc>${x.url.replace(/&/g,'&amp;')}</loc>${x.lastmod?`<lastmod>${x.lastmod}</lastmod>`:''}</url>`).join('\n')}\n</urlset>\n`;fs.writeFileSync(path.join(root,'sitemap.xml'),xml);
 console.log(`SEO pages generated: ${sitemap.length} URLs`);
 

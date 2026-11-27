@@ -88,6 +88,18 @@
   status = 200
 
 [[redirects]]
+  from = "/points-information/monde"
+  to = "/points-information/monde/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/points-information/monde/"
+  to = "/points-information/monde/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/points-information/:slug"
   to = "/points-information.html?suivi=:slug"
   status = 200

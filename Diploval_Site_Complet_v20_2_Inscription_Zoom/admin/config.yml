@@ -549,3 +549,46 @@ collections:
                 default: "Brouillon"
                 options: ["Brouillon", "Publié"]
               - { label: "Visible publiquement", name: "visible", widget: "boolean", default: false, hint: "La publication requiert à la fois le statut Publié et cette case cochée. Les brouillons ne sont pas affichés ni liés automatiquement." }
+
+  - name: "world_watch_admin"
+    label: "Le monde sous vigilance"
+    files:
+      - label: "Registre mondial public"
+        name: "world_watch"
+        file: "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/world-watch.json"
+        format: "json"
+        fields:
+          - { label: "Version du schéma", name: "schema_version", widget: "hidden", default: "0.1.7bis" }
+          - { label: "Date de constitution", name: "register_date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+          - { label: "Périmètre public", name: "scope", widget: "text" }
+          - label: "Dossiers publics"
+            name: "dossiers"
+            widget: "list"
+            collapsed: true
+            summary: "{{fields.id}} — {{fields.title}}"
+            hint: "Dépôt public : ne saisir ici que des informations destinées à être publiées. Aucun nouveau code ni état vérifié n’est autorisé avant validation du dispositif complet."
+            fields:
+              - { label: "Identifiant permanent", name: "id", widget: "string", hint: "Ne jamais modifier un identifiant existant. Format AFR-01, EUR-01, etc." }
+              - { label: "Intitulé public", name: "title", widget: "string" }
+              - label: "Région"
+                name: "region"
+                widget: "select"
+                options: ["Europe et Caucase", "Afrique", "Proche et Moyen-Orient", "Asie", "Amériques", "Océanie et espaces stratégiques"]
+              - label: "État éditorial public"
+                name: "status"
+                widget: "select"
+                default: "recense"
+                options:
+                  - { label: "Recensé", value: "recense" }
+                  - { label: "Évaluation en cours", value: "en_cours" }
+              - { label: "Latitude indicative", name: "latitude", widget: "number", value_type: "float", min: -90, max: 90, hint: "Repère géographique général, jamais une position opérationnelle." }
+              - { label: "Longitude indicative", name: "longitude", widget: "number", value_type: "float", min: -180, max: 180 }
+              - { label: "Niveau non attribué", name: "level", widget: "hidden", default: null }
+              - { label: "Dynamique indéterminée", name: "diplomatic_trend", widget: "hidden", default: "indeterminee" }
+              - label: "Suivi régional associé (facultatif)"
+                name: "related_public_followup"
+                widget: "select"
+                required: false
+                options:
+                  - { label: "Russie–Ukraine", value: "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade" }
+                  - { label: "Proche-Orient", value: "proche-orient-israel-palestine-iran-escalade-regionale" }

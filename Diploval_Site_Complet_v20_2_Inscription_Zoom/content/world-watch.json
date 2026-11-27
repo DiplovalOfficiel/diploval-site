@@ -1,0 +1,473 @@
+{
+  "schema_version": "0.1.7bis",
+  "register_date": "2026-11-27",
+  "scope": "Registre initial non exhaustif de dossiers, et non décompte des conflits armés ou des alertes.",
+  "dossiers": [
+    {
+      "id": "EUR-01",
+      "region": "Europe et Caucase",
+      "title": "Russie–Ukraine",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "latitude": 49,
+      "longitude": 32
+    },
+    {
+      "id": "EUR-02",
+      "region": "Europe et Caucase",
+      "title": "Russie–OTAN et sécurité européenne",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "latitude": 56,
+      "longitude": 27
+    },
+    {
+      "id": "EUR-03",
+      "region": "Europe et Caucase",
+      "title": "Serbie–Kosovo",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 42.7,
+      "longitude": 21
+    },
+    {
+      "id": "EUR-04",
+      "region": "Europe et Caucase",
+      "title": "Bosnie-Herzégovine",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 44,
+      "longitude": 17.8
+    },
+    {
+      "id": "EUR-05",
+      "region": "Europe et Caucase",
+      "title": "Moldavie–Transnistrie",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 47.1,
+      "longitude": 29.3
+    },
+    {
+      "id": "EUR-06",
+      "region": "Europe et Caucase",
+      "title": "Arménie–Azerbaïdjan",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 40.3,
+      "longitude": 46
+    },
+    {
+      "id": "AFR-01",
+      "region": "Afrique",
+      "title": "Soudan",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 15,
+      "longitude": 30
+    },
+    {
+      "id": "AFR-02",
+      "region": "Afrique",
+      "title": "Soudan du Sud",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 7,
+      "longitude": 30
+    },
+    {
+      "id": "AFR-03",
+      "region": "Afrique",
+      "title": "RDC–Rwanda et Grands Lacs",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": -1,
+      "longitude": 29
+    },
+    {
+      "id": "AFR-04",
+      "region": "Afrique",
+      "title": "Mali–Burkina Faso–Niger",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 15,
+      "longitude": 0
+    },
+    {
+      "id": "AFR-05",
+      "region": "Afrique",
+      "title": "Nigeria et bassin du lac Tchad",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 12,
+      "longitude": 14
+    },
+    {
+      "id": "AFR-06",
+      "region": "Afrique",
+      "title": "Éthiopie – conflits internes",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 9,
+      "longitude": 39.5
+    },
+    {
+      "id": "AFR-07",
+      "region": "Afrique",
+      "title": "Éthiopie–Érythrée",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 14.5,
+      "longitude": 38
+    },
+    {
+      "id": "AFR-08",
+      "region": "Afrique",
+      "title": "Somalie",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 5,
+      "longitude": 47
+    },
+    {
+      "id": "AFR-09",
+      "region": "Afrique",
+      "title": "République centrafricaine",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 6.5,
+      "longitude": 20.5
+    },
+    {
+      "id": "AFR-10",
+      "region": "Afrique",
+      "title": "Mozambique – Cabo Delgado",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": -12,
+      "longitude": 40
+    },
+    {
+      "id": "AFR-11",
+      "region": "Afrique",
+      "title": "Cameroun",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 5.5,
+      "longitude": 11
+    },
+    {
+      "id": "AFR-12",
+      "region": "Afrique",
+      "title": "Libye",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 27,
+      "longitude": 17
+    },
+    {
+      "id": "AFR-13",
+      "region": "Afrique",
+      "title": "Sahara occidental et tensions régionales",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 24,
+      "longitude": -13
+    },
+    {
+      "id": "MOR-01",
+      "region": "Proche et Moyen-Orient",
+      "title": "Israël–Palestine",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "latitude": 31.5,
+      "longitude": 35
+    },
+    {
+      "id": "MOR-02",
+      "region": "Proche et Moyen-Orient",
+      "title": "Israël–Liban",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "latitude": 33.4,
+      "longitude": 35.6
+    },
+    {
+      "id": "MOR-03",
+      "region": "Proche et Moyen-Orient",
+      "title": "Iran–Israël–États-Unis",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "latitude": 32,
+      "longitude": 54
+    },
+    {
+      "id": "MOR-04",
+      "region": "Proche et Moyen-Orient",
+      "title": "Syrie",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 35,
+      "longitude": 38
+    },
+    {
+      "id": "MOR-05",
+      "region": "Proche et Moyen-Orient",
+      "title": "Irak",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 33,
+      "longitude": 44
+    },
+    {
+      "id": "MOR-06",
+      "region": "Proche et Moyen-Orient",
+      "title": "Yémen et mer Rouge",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "latitude": 15,
+      "longitude": 45
+    },
+    {
+      "id": "MOR-07",
+      "region": "Proche et Moyen-Orient",
+      "title": "Turquie et question kurde",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 38,
+      "longitude": 42
+    },
+    {
+      "id": "ASI-01",
+      "region": "Asie",
+      "title": "Chine–Taïwan",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 24,
+      "longitude": 121
+    },
+    {
+      "id": "ASI-02",
+      "region": "Asie",
+      "title": "Mer de Chine méridionale",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 12,
+      "longitude": 114
+    },
+    {
+      "id": "ASI-03",
+      "region": "Asie",
+      "title": "Chine–Japon, mer de Chine orientale",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 29,
+      "longitude": 126
+    },
+    {
+      "id": "ASI-04",
+      "region": "Asie",
+      "title": "Péninsule coréenne",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 38,
+      "longitude": 127
+    },
+    {
+      "id": "ASI-05",
+      "region": "Asie",
+      "title": "Inde–Pakistan",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 33,
+      "longitude": 74
+    },
+    {
+      "id": "ASI-06",
+      "region": "Asie",
+      "title": "Inde–Chine",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 31,
+      "longitude": 82
+    },
+    {
+      "id": "ASI-07",
+      "region": "Asie",
+      "title": "Afghanistan–Pakistan",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 32,
+      "longitude": 69
+    },
+    {
+      "id": "ASI-08",
+      "region": "Asie",
+      "title": "Myanmar",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 21,
+      "longitude": 96
+    },
+    {
+      "id": "ASI-09",
+      "region": "Asie",
+      "title": "Thaïlande–Cambodge",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 14,
+      "longitude": 104
+    },
+    {
+      "id": "ASI-10",
+      "region": "Asie",
+      "title": "Afghanistan – sécurité intérieure",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 34,
+      "longitude": 65
+    },
+    {
+      "id": "AME-01",
+      "region": "Amériques",
+      "title": "Haïti",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 19,
+      "longitude": -72.5
+    },
+    {
+      "id": "AME-02",
+      "region": "Amériques",
+      "title": "Colombie",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 4,
+      "longitude": -74
+    },
+    {
+      "id": "AME-03",
+      "region": "Amériques",
+      "title": "Mexique",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 23,
+      "longitude": -102
+    },
+    {
+      "id": "AME-04",
+      "region": "Amériques",
+      "title": "Équateur",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": -1.5,
+      "longitude": -78
+    },
+    {
+      "id": "AME-05",
+      "region": "Amériques",
+      "title": "Venezuela–États-Unis",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 10,
+      "longitude": -67
+    },
+    {
+      "id": "AME-06",
+      "region": "Amériques",
+      "title": "Venezuela–Guyana",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 6.5,
+      "longitude": -60
+    },
+    {
+      "id": "AME-07",
+      "region": "Amériques",
+      "title": "Amérique centrale – violences organisées",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 14,
+      "longitude": -88
+    },
+    {
+      "id": "STR-01",
+      "region": "Océanie et espaces stratégiques",
+      "title": "Arctique et rivalités stratégiques",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": 78,
+      "longitude": 15
+    },
+    {
+      "id": "STR-02",
+      "region": "Océanie et espaces stratégiques",
+      "title": "Pacifique insulaire et rivalités internationales",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": -12,
+      "longitude": 165
+    },
+    {
+      "id": "STR-03",
+      "region": "Océanie et espaces stratégiques",
+      "title": "Papouasie occidentale",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "latitude": -4,
+      "longitude": 139
+    }
+  ]
+}
