@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.14",
+  "schema_version": "0.3.15",
   "compiled_on": "2026-11-27",
   "dossiers": [
     {
@@ -513,6 +513,272 @@
         {
           "label": "Turkish Minute — absence de confirmation du désarmement, 27 novembre (extrait indexé)",
           "url": "https://www.turkishminute.com/2026/11/27/turkey-gives-no-confirmation-kurdish-militants-have-laid-down-arms/"
+        }
+      ]
+    },
+    {
+      "id": "ASI-01",
+      "context": "Depuis 1949, Taïwan est administrée séparément de la République populaire de Chine. Pékin revendique l'île comme partie de son territoire ; les autorités de Taipei rejettent cette prétention. Le détroit concentre des enjeux de sécurité régionale, de diplomatie et de commerce.",
+      "reference_date": "2026-11-27",
+      "current": "Le ministère taïwanais de la Défense a signalé de nouvelles activités militaires chinoises le 21 puis le 27 novembre. Reuters rapporte également des exercices côtiers chinois observés depuis le début du mois. La veille des élections locales, ces signaux témoignent de pressions persistantes, mais ne permettent pas de conclure à une offensive imminente.",
+      "living": "Préserver la sécurité des populations, la pêche, les transports maritimes et la continuité des services essentiels.",
+      "peace": "Observer les mécanismes de communication et de prévention des incidents ; distinguer activité militaire, intention politique et décision d'entrer en guerre.",
+      "sources": [
+        {
+          "label": "Ministère taïwanais de la Défense, communiqué du 21 novembre",
+          "url": "https://www-mnd-gov-tw-01-d3hddnfbecgmc7d0.a01.azurefd.net/EN/News/PressRelease/88327"
+        },
+        {
+          "label": "Reuters, 27 novembre, élections locales et tensions",
+          "url": "https://www.reuters.com/world/china/taiwan-candidates-campaign-key-local-elections-final-day-2026-11-27/"
+        },
+        {
+          "label": "Reuters, 27 novembre, exercices côtiers",
+          "url": "https://www.reuters.com/world/china/chinese-military-tests-new-taiwan-landing-tactics-coastal-drills-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "id": "ASI-02",
+      "context": "Les revendications maritimes de la Chine et de plusieurs États riverains se chevauchent en mer de Chine méridionale. La convention des Nations unies sur le droit de la mer et la sentence arbitrale de 2016 dans l'affaire Philippines–Chine constituent des références juridiques distinctes des revendications de souveraineté sur les îles.",
+      "reference_date": "2026-11-26",
+      "current": "Au sommet de novembre, l'ASEAN et la Chine n'ont pas achevé le projet de code de conduite, malgré des avancées annoncées par Manille. Le 26 novembre, Pékin a critiqué la coopération entre le Japon et les Philippines. Cette déclaration n'établit pas à elle seule une rupture des négociations.",
+      "living": "La pêche artisanale, la préservation des récifs, les ressources marines et la liberté de navigation doivent être prises en compte.",
+      "peace": "Suivre les négociations sous la présidence singapourienne de l'ASEAN en 2027, la prévention des incidents et le respect du droit de la mer.",
+      "sources": [
+        {
+          "label": "Chatham House, 17 novembre, état des négociations",
+          "url": "https://www.chathamhouse.org/2026/11/philippines-did-not-deliver-south-china-sea-code-conduct-it-has-shown-what-asean-can"
+        },
+        {
+          "label": "Reuters, 26 novembre, déclaration chinoise (reprise ThePrint)",
+          "url": "https://theprint.in/world/chinas-defence-ministry-urges-japan-to-stop-stirring-up-south-china-sea-disputes/3109598/"
+        },
+        {
+          "label": "GMA, 18 novembre, explication du code de conduite",
+          "url": "https://www.gmanetwork.com/news/topstories/nation/1009966/explainer-what-is-the-south-china-sea-code-of-conduct/story/"
+        }
+      ]
+    },
+    {
+      "id": "ASI-03",
+      "context": "Les îles Senkaku/Diaoyu, administrées par le Japon et revendiquées par la Chine et Taïwan, concentrent des différends de souveraineté et de délimitation maritime. Les tensions croisent les enjeux du détroit de Taïwan, sans constituer un dossier identique.",
+      "reference_date": "2026-11-27",
+      "current": "La presse rapporte le 26 et le 27 novembre un nouvel incident entre garde-côtes autour des îles disputées. Tokyo dit avoir demandé le départ de navires chinois ; Pékin réaffirme sa revendication de souveraineté et conteste la position japonaise. Les qualifications juridiques sont celles des parties.",
+      "living": "La sécurité des pêcheurs, les ressources halieutiques et la prévention des accidents en mer sont directement concernées.",
+      "peace": "Suivre les canaux bilatéraux de communication maritime et aérienne ainsi que les mesures de prévention des incidents.",
+      "sources": [
+        {
+          "label": "Taipei Times, 27 novembre, déclarations des deux parties",
+          "url": "https://www.taipeitimes.com/News/front/archives/2026/11/27/2003868473"
+        },
+        {
+          "label": "USNI News, 27 novembre, suivi régional",
+          "url": "https://news.usni.org/2026/11/27/usni-news-western-pacific-pulse-nov-27-2026"
+        }
+      ]
+    },
+    {
+      "id": "ASI-04",
+      "context": "L'armistice de 1953 a interrompu les combats de la guerre de Corée sans traité de paix. La division de la péninsule, le programme nucléaire nord-coréen, les sanctions et les alliances de sécurité constituent les principaux enjeux.",
+      "reference_date": "2026-11-27",
+      "current": "Le 25 novembre, la Corée du Nord a ordonné la fermeture du bureau diplomatique suisse à Pyongyang à la suite d'un différend sur des sanctions. Berne indique maintenir les relations diplomatiques via d'autres représentations. Le 27 novembre, AP revient sur cette fermeture. Cela marque une difficulté pour le dialogue, non une rupture de toutes les relations diplomatiques.",
+      "living": "L'aide humanitaire, la sécurité alimentaire, les droits des personnes et la réduction des risques nucléaires sont des préoccupations distinctes à suivre.",
+      "peace": "Préserver les canaux de communication, notamment intercoréens ; examiner les possibilités de dialogue et les mesures de réduction des risques.",
+      "sources": [
+        {
+          "label": "Reuters, 25 novembre, fermeture du bureau suisse",
+          "url": "https://www.reuters.com/business/aerospace-defense/north-korea-expels-swiss-representative-closes-diplomatic-office-over-sanctions-2026-11-25/"
+        },
+        {
+          "label": "AP, 27 novembre, contexte diplomatique",
+          "url": "https://apnews.com/article/c92ed77891d514ac5240ecf1cb82926a"
+        },
+        {
+          "label": "Yonhap, 13 novembre, demande sud-coréenne de dialogue",
+          "url": "https://en.yna.co.kr/view/AEN20261113002051315"
+        }
+      ]
+    },
+    {
+      "id": "ASI-05",
+      "context": "La partition de 1947 a ouvert le différend du Cachemire. Les guerres successives, la ligne de contrôle, les capacités nucléaires des deux États et les différends liés au terrorisme et au partage de l'Indus structurent leur relation. Les affrontements de mai 2025 ont ravivé les tensions.",
+      "reference_date": "2026-11-20",
+      "current": "Le 20 novembre, le ministère pakistanais des Affaires étrangères a confirmé la désignation du ministre chargé du climat pour un forum de l'Organisation de coopération de Shanghai prévu à New Delhi du 20 au 22 novembre. La visite annoncée ne constitue pas un accord bilatéral ; sa réalisation et les éventuelles suites diplomatiques restent à confirmer par des sources supplémentaires.",
+      "living": "La coopération sur l'eau, les effets des sécheresses et des crues, ainsi que la protection des populations du Cachemire doivent être étudiés en propre.",
+      "peace": "Évaluer les échanges techniques et les possibilités de dialogue, notamment sur l'Indus, sans confondre rencontre multilatérale et résolution du différend territorial.",
+      "sources": [
+        {
+          "label": "Ministère pakistanais des Affaires étrangères, 20 novembre",
+          "url": "https://www.mofa.gov.pk/press-releases/transcript-of-the-press-briefing-by-the-spokesperson-on-friday-20th-november-2026"
+        },
+        {
+          "label": "Deutsche Welle, 19 novembre, contexte et limites du dialogue",
+          "url": "https://amp.dw.com/en/pakistan-minister-to-visit-india-but-no-breakthrough-expected/a-79991717"
+        }
+      ]
+    },
+    {
+      "id": "ASI-06",
+      "context": "La guerre sino-indienne de 1962 et les différends de délimitation himalayenne restent au cœur des relations bilatérales. Les affrontements de Galwan en 2020 ont montré les risques liés à la ligne de contrôle effectif, dont le tracé est contesté dans plusieurs secteurs.",
+      "reference_date": "2026-11-27",
+      "current": "Le 27 novembre, le South China Morning Post rapporte de nouveaux échanges destinés à gérer les tensions frontalières. Le ministère chinois de la Défense affirme que la situation demeure généralement stable. Les deux pays poursuivent parallèlement leur préparation militaire. Le communiqué bilatéral d'août 2026 prévoyait déjà de renforcer la communication et la coopération transfrontalière.",
+      "living": "Les populations himalayennes, les écosystèmes d'altitude, le commerce frontalier et le partage des données hydrologiques sont des enjeux communs.",
+      "peace": "Suivre la mise en œuvre des mécanismes de prévention des incidents et des engagements relatifs aux cours d'eau ; les discussions ne constituent pas une démarcation définitive.",
+      "sources": [
+        {
+          "label": "Ministère chinois des Affaires étrangères, consensus du 25 août publié le 26",
+          "url": "https://www.mfa.gov.cn/eng./wjbzhd/202608/t20260826_12011002.html"
+        },
+        {
+          "label": "South China Morning Post, 27 novembre, échanges frontaliers",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3376066/china-and-india-hold-fresh-border-talks-both-boost-military-readiness-winter?module=latest&pgtype=homepage"
+        }
+      ]
+    },
+    {
+      "id": "ASI-07",
+      "context": "La frontière issue de la ligne Durand, les mouvements transfrontaliers et la présence de groupes armés constituent des sources de tensions entre Kaboul et Islamabad. Le retour des talibans au pouvoir en 2021 et les hostilités transfrontalières de 2026 ont aggravé la situation.",
+      "reference_date": "2026-11-22",
+      "current": "Des affrontements ont été signalés au début de novembre à la frontière. Le HCR a publié le 22 novembre un tableau de suivi des retours afghans depuis le Pakistan, couvrant le 15 au 21 novembre et distinguant retours volontaires et forcés. L'évolution militaire des derniers jours reste à corroborer.",
+      "living": "Le droit à la protection internationale, les conditions de retour, les services frontaliers et l'accès humanitaire doivent être distingués des enjeux militaires.",
+      "peace": "Suivre les démarches de médiation, les engagements frontaliers et l'accès des civils aux points de passage ; ne pas assimiler réfugiés et groupes armés.",
+      "sources": [
+        {
+          "label": "Reuters, 24 février, tensions transfrontalières",
+          "url": "https://www.reuters.com/world/asia-pacific/pakistan-afghan-forces-exchange-fire-after-airstrikes-deepen-tensions-2026-02-24/"
+        },
+        {
+          "label": "South Asia Terrorism Portal, 2 novembre, signalement d'affrontements",
+          "url": "https://www.satp.org/terrorism-update/renewed-clashes-between-taliban-and-pakistani-forces-at-torkham-border-crossing"
+        },
+        {
+          "label": "HCR, 22 novembre, suivi des retours",
+          "url": "https://data.unhcr.org/fr/documents/details/124957"
+        }
+      ]
+    },
+    {
+      "id": "ASI-08",
+      "context": "Les conflits entre l'armée et des organisations armées ethniques s'inscrivent dans une histoire de tensions territoriales et de représentation politique. Les persécutions des Rohingya, particulièrement en 2017, et le coup d'État militaire de 2021 ont aggravé la crise.",
+      "reference_date": "2026-11-27",
+      "current": "Le 19 novembre, la Cour internationale de justice a reconnu la responsabilité internationale du Myanmar pour des actes de génocide contre les Rohingya dans le nord de l'État de Rakhine en 2017. Le Royaume-Uni a annoncé le 23 novembre des mesures en réponse à l'arrêt. Le 25, les autorités birmanes ont contesté le jugement, selon Le Monde du 27 novembre. La responsabilité étatique doit être distinguée de la responsabilité pénale individuelle.",
+      "living": "La protection des Rohingya et des autres populations civiles, les retours sûrs et volontaires, l'accès aux soins, l'alimentation et la restitution des biens sont essentiels.",
+      "peace": "Suivre l'exécution de l'arrêt, les garanties de non-répétition, les réparations et la recherche d'un règlement politique inclusif. L'arrêt ne constitue pas en lui-même la fin des hostilités.",
+      "sources": [
+        {
+          "label": "Mécanisme d'enquête indépendant de l'ONU, arrêt du 19 novembre",
+          "url": "https://iimm.un.org/icj-gambia-v-myanmar"
+        },
+        {
+          "label": "Gouvernement britannique, déclaration du 23 novembre",
+          "url": "https://www.gov.uk/government/speeches/foreign-secretary-statement-to-the-house-of-commons-23-november-2026"
+        },
+        {
+          "label": "Le Monde, 27 novembre, réaction des autorités birmanes",
+          "url": "https://www.lemonde.fr/international/article/2026/11/27/birmanie-le-dictateur-birman-min-aung-hlaing-fait-peu-de-cas-du-verdict-de-la-cij_6815834_3210.html"
+        }
+      ]
+    },
+    {
+      "id": "ASI-09",
+      "context": "Les différends frontaliers terrestres, notamment autour des temples, et les revendications maritimes dans le golfe de Thaïlande sont distincts. Les affrontements de 2025 ont conduit à de nouveaux engagements de cessez-le-feu. Le Cambodge a engagé une procédure de conciliation maritime en juin 2026.",
+      "reference_date": "2026-11-27",
+      "current": "La Cour permanente d'arbitrage a publié un communiqué sur la conciliation maritime tenue à Kuala Lumpur. Selon Reuters le 27 novembre, les parties ont accepté le principe d'une visite des lieux disputés. La conciliation maritime ne règle pas automatiquement le différend terrestre ni les conditions de réouverture des frontières.",
+      "living": "Suivre le retour des déplacés, la sécurité des zones frontalières, les ressources marines, la pêche et les échanges locaux.",
+      "peace": "Évaluer séparément l'application du cessez-le-feu terrestre, la conciliation maritime et la coopération au sein de l'ASEAN.",
+      "sources": [
+        {
+          "label": "Cour permanente d'arbitrage, affaire 2026-35",
+          "url": "https://pca-cpa.org/en/cases/380/"
+        },
+        {
+          "label": "Cour permanente d'arbitrage, communiqué du 27 novembre (notice indexée)",
+          "url": "https://pca-cpa.org/fr/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-6/"
+        },
+        {
+          "label": "Reuters, 27 novembre, accord sur une visite",
+          "url": "https://www.reuters.com/markets/commodities/cambodia-thailand-agree-maritime-site-visit-dispute-proceedings-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "id": "ASI-10",
+      "context": "Le retour des talibans au pouvoir en août 2021 a modifié la nature de la crise afghane. Les activités de groupes armés, notamment l'État islamique au Khorassan, les restrictions de droits et les difficultés économiques et humanitaires doivent être étudiées séparément.",
+      "reference_date": "2026-11-27",
+      "current": "Le rapport FAO–PAM du 27 novembre maintient l'Afghanistan parmi les foyers de très forte préoccupation alimentaire. Les données du HCR soulignent les pressions exercées par les retours de réfugiés sur les communautés et les services. Aucun bilan des incidents sécuritaires intérieurs des derniers jours n'est établi dans cette première synthèse.",
+      "living": "L'accès à l'alimentation, aux soins, à l'éducation et aux moyens de subsistance, notamment pour les femmes et les filles, constitue un axe essentiel.",
+      "peace": "Observer les conditions d'accès humanitaire, le respect des droits, la protection des personnes et les possibilités de dialogue avec les autorités de fait.",
+      "sources": [
+        {
+          "label": "PAM–FAO, 27 novembre, perspectives alimentaires",
+          "url": "https://www.wfp.org/news/el-nino-adds-new-hunger-hotspots-conflict-continues-drive-risk-famine-warn-fao-and-wfp"
+        },
+        {
+          "label": "HCR, situation afghane, documentation régionale",
+          "url": "https://data.unhcr.org/en/situations/afghanistan?gsid=84727841-98b9-41d7-b934-d16db4751a57"
+        },
+        {
+          "label": "HCR, 22 novembre, retours depuis le Pakistan",
+          "url": "https://data.unhcr.org/fr/documents/details/124957"
+        }
+      ]
+    },
+    {
+      "id": "ASI-11",
+      "context": "Le Pakistan connaît plusieurs foyers de violence intérieure : insurrection séparatiste au Baloutchistan, activités du Tehrik-e-Taliban Pakistan et autres groupes armés. Les enjeux de représentation politique, de ressources et de droits ne se réduisent pas à la lutte antiterroriste.",
+      "reference_date": "2026-11-26",
+      "current": "L'Agence de l'Union européenne pour l'asile a publié le 26 novembre une étude consacrée à la sécurité au Baloutchistan, couvrant la période de janvier au 22 novembre 2026. Le même jour, Dawn rapporte des opérations annoncées par l'armée pakistanaise. Les allégations de soutien étranger nécessitent une corroboration indépendante.",
+      "living": "Suivre les conséquences pour les civils, les déplacements, les droits fondamentaux, l'accès aux ressources et la continuité des services.",
+      "peace": "Examiner les possibilités de règlement politique et de justice, les mesures de protection et la distinction entre faits établis et accusations des autorités.",
+      "sources": [
+        {
+          "label": "EUAA, 26 novembre, notice de l'étude et période de référence",
+          "url": "https://www.euaa.europa.eu/publications/coi-query-response-pakistan-security-situation-balochistan-province"
+        },
+        {
+          "label": "Dawn, 26 novembre, annonce de l'armée",
+          "url": "https://www.dawn.com/news/2047181/security-forces-kill-12-india-sponsored-terrorists-in-multiple-ibos-in-balochistan-ispr"
+        }
+      ]
+    },
+    {
+      "id": "ASI-12",
+      "context": "Les conflits à Mindanao ont conduit à l'accord global sur le Bangsamoro de 2014 entre le gouvernement philippin et le Front moro islamique de libération (MILF). L'autonomie politique et la normalisation, dont le désarmement et la réintégration, sont deux volets complémentaires. Les autres foyers armés philippins nécessitent un suivi distinct.",
+      "reference_date": "2026-11-07",
+      "current": "Le 6 novembre, la présidence a annoncé des discussions avec les dirigeants du MILF sur l'application de l'accord. L'autorité gouvernementale chargée de la paix a salué la session inaugurale du parlement régional du 30 octobre. Des analyses indépendantes soulignent les retards de la réintégration et les engagements restant à remplir. Aucun élément des tout derniers jours n'a été suffisamment corroboré dans cette recherche.",
+      "living": "Le développement des communautés, la justice transitionnelle, les droits fonciers et la sécurité des personnes réintégrées conditionnent la durabilité du processus.",
+      "peace": "Évaluer l'application effective des engagements politiques et socio-économiques, au-delà de l'installation du parlement.",
+      "sources": [
+        {
+          "label": "Présidence philippine, 6 novembre (communiqué indexé)",
+          "url": "https://pco.gov.ph/news_releases/pbbm-milf-leaders-discuss-remaining-steps-towards-lasting-bangsamoro-peace/"
+        },
+        {
+          "label": "Autorité philippine chargée de la paix, archives de novembre",
+          "url": "https://peace.gov.ph/2026/11/"
+        },
+        {
+          "label": "Vera Files, analyse du processus de normalisation",
+          "url": "https://verafiles.org/articles/bangsamoro-peace-process-sufficiently-off-track-as-normalization-lags"
+        }
+      ]
+    },
+    {
+      "id": "ASI-13",
+      "context": "Les tensions internes en Inde recouvrent des situations distinctes. Au Manipur, les violences intercommunautaires entre Meitei et Kuki-Zo depuis mai 2023 s'ajoutent à d'autres tensions locales impliquant notamment des organisations naga. Les conflits du Cachemire et l'insurrection maoïste ne doivent pas être confondus avec ce dossier local.",
+      "reference_date": "2026-11-26",
+      "current": "Le 24 novembre, la presse locale a fait état de protestations de déplacés et de menaces de blocage routier au Manipur. Le 26, Nagaland.News rapporte que le groupe CoTU a suspendu son projet de blocage prévu le 27 en invoquant une ouverture au dialogue. L'effectivité de cette suspension et les suites de la négociation restent à vérifier.",
+      "living": "L'accès aux services, aux routes d'approvisionnement, aux terres et au logement des personnes déplacées exige une attention égale aux différentes communautés.",
+      "peace": "Soutenir la documentation des besoins, la recherche de garanties impartiales et le dialogue entre communautés. Ce premier socle ne couvre pas l'ensemble des situations intérieures de l'Inde.",
+      "sources": [
+        {
+          "label": "The East Times, 24 novembre, tensions et déplacement",
+          "url": "https://www.theeasttimes.com/india/manipur-faces-renewed-unrest-as-highway-blockade-threat-idp-protests-and-nrc-demand-intensify/203/"
+        },
+        {
+          "label": "Nagaland.News, 26 novembre, report du blocage annoncé",
+          "url": "https://nagaland.news/cotu-highway-shutdown-naga-bodies/"
         }
       ]
     }
