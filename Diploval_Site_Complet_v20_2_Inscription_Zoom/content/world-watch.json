@@ -1,0 +1,381 @@
+{
+  "schema_version": "0.1.6",
+  "register_date": "2026-11-27",
+  "scope": "Registre initial non exhaustif de dossiers, et non décompte des conflits armés ou des alertes.",
+  "dossiers": [
+    {
+      "id": "EUR-01",
+      "region": "Europe et Caucase",
+      "title": "Russie–Ukraine",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade"
+    },
+    {
+      "id": "EUR-02",
+      "region": "Europe et Caucase",
+      "title": "Russie–OTAN et sécurité européenne",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade"
+    },
+    {
+      "id": "EUR-03",
+      "region": "Europe et Caucase",
+      "title": "Serbie–Kosovo",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "EUR-04",
+      "region": "Europe et Caucase",
+      "title": "Bosnie-Herzégovine",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "EUR-05",
+      "region": "Europe et Caucase",
+      "title": "Moldavie–Transnistrie",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "EUR-06",
+      "region": "Europe et Caucase",
+      "title": "Arménie–Azerbaïdjan",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-01",
+      "region": "Afrique",
+      "title": "Soudan",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-02",
+      "region": "Afrique",
+      "title": "Soudan du Sud",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-03",
+      "region": "Afrique",
+      "title": "RDC–Rwanda et Grands Lacs",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-04",
+      "region": "Afrique",
+      "title": "Mali–Burkina Faso–Niger",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-05",
+      "region": "Afrique",
+      "title": "Nigeria et bassin du lac Tchad",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-06",
+      "region": "Afrique",
+      "title": "Éthiopie – conflits internes",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-07",
+      "region": "Afrique",
+      "title": "Éthiopie–Érythrée",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-08",
+      "region": "Afrique",
+      "title": "Somalie",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-09",
+      "region": "Afrique",
+      "title": "République centrafricaine",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-10",
+      "region": "Afrique",
+      "title": "Mozambique – Cabo Delgado",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-11",
+      "region": "Afrique",
+      "title": "Cameroun",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-12",
+      "region": "Afrique",
+      "title": "Libye",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AFR-13",
+      "region": "Afrique",
+      "title": "Sahara occidental et tensions régionales",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "MOR-01",
+      "region": "Proche et Moyen-Orient",
+      "title": "Israël–Palestine",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale"
+    },
+    {
+      "id": "MOR-02",
+      "region": "Proche et Moyen-Orient",
+      "title": "Israël–Liban",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale"
+    },
+    {
+      "id": "MOR-03",
+      "region": "Proche et Moyen-Orient",
+      "title": "Iran–Israël–États-Unis",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale"
+    },
+    {
+      "id": "MOR-04",
+      "region": "Proche et Moyen-Orient",
+      "title": "Syrie",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "MOR-05",
+      "region": "Proche et Moyen-Orient",
+      "title": "Irak",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "MOR-06",
+      "region": "Proche et Moyen-Orient",
+      "title": "Yémen et mer Rouge",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee",
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale"
+    },
+    {
+      "id": "MOR-07",
+      "region": "Proche et Moyen-Orient",
+      "title": "Turquie et question kurde",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "ASI-01",
+      "region": "Asie",
+      "title": "Chine–Taïwan",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "ASI-02",
+      "region": "Asie",
+      "title": "Mer de Chine méridionale",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "ASI-03",
+      "region": "Asie",
+      "title": "Chine–Japon, mer de Chine orientale",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "ASI-04",
+      "region": "Asie",
+      "title": "Péninsule coréenne",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "ASI-05",
+      "region": "Asie",
+      "title": "Inde–Pakistan",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "ASI-06",
+      "region": "Asie",
+      "title": "Inde–Chine",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "ASI-07",
+      "region": "Asie",
+      "title": "Afghanistan–Pakistan",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "ASI-08",
+      "region": "Asie",
+      "title": "Myanmar",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "ASI-09",
+      "region": "Asie",
+      "title": "Thaïlande–Cambodge",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "ASI-10",
+      "region": "Asie",
+      "title": "Afghanistan – sécurité intérieure",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AME-01",
+      "region": "Amériques",
+      "title": "Haïti",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AME-02",
+      "region": "Amériques",
+      "title": "Colombie",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AME-03",
+      "region": "Amériques",
+      "title": "Mexique",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AME-04",
+      "region": "Amériques",
+      "title": "Équateur",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AME-05",
+      "region": "Amériques",
+      "title": "Venezuela–États-Unis",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AME-06",
+      "region": "Amériques",
+      "title": "Venezuela–Guyana",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "AME-07",
+      "region": "Amériques",
+      "title": "Amérique centrale – violences organisées",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "STR-01",
+      "region": "Océanie et espaces stratégiques",
+      "title": "Arctique et rivalités stratégiques",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "STR-02",
+      "region": "Océanie et espaces stratégiques",
+      "title": "Pacifique insulaire et rivalités internationales",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    },
+    {
+      "id": "STR-03",
+      "region": "Océanie et espaces stratégiques",
+      "title": "Papouasie occidentale",
+      "status": "recense",
+      "level": null,
+      "diplomatic_trend": "indeterminee"
+    }
+  ]
+}
