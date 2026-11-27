@@ -3,10 +3,48 @@
     {
       "show_home": true,
       "level": "2",
-      "summary": "Au 27 novembre 2026, aucun cessez-le-feu général n’est établi. Les tensions maritimes et européennes, les dommages aux infrastructures ukrainiennes et les risques de nouvelles frappes énergétiques demeurent préoccupants. Les discussions européennes sur le financement de 2027 se poursuivent, sans décision supplémentaire confirmée dans les sources consultées. Les initiatives humanitaires et les appels à éviter l’élargissement du conflit restent à suivre. Diploval maintient le Code 2.",
+      "summary": "Au 27 novembre 2026, aucun cessez-le-feu général n’est établi. La sûreté nucléaire à Zaporijjia appelle une vigilance particulière : l’AIEA recherche une suspension locale des hostilités pour rétablir l’alimentation électrique externe. Les tensions européennes et maritimes persistent. Le sommet européen n’a pas abouti à un accord sur le financement supplémentaire de 2027. Diploval maintient le Code 2.",
       "social_image": "/assets/uploads/diploval-_-enjeux-russie–ukraine.png",
       "opened_at": "2026-11-19T11:50",
       "updates": [
+        {
+          "datetime": "2026-11-27T19:30",
+          "event_date": "2026-11-27",
+          "event_label": "27 novembre 2026",
+          "title": "Union européenne — Absence d’accord sur le nouveau prêt ukrainien",
+          "body": "Les négociations du sommet extraordinaire n’ont pas abouti à un accord sur le prêt supplémentaire envisagé de 45 milliards d’euros. Selon António Costa, 24 États sur 27 le soutiennent. Les discussions doivent reprendre les 17 et 18 décembre. Il ne s’agit pas d’une annulation des aides déjà adoptées.",
+          "sources": [
+            {
+              "label": "AP — conclusions du sommet",
+              "url": "https://apnews.com/article/fd025046850b824b2e62def18408c6b6",
+              "note": "Compte rendu des déclarations de Costa.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-27T19:30",
+          "event_date": "2026-11-26",
+          "event_label": "26 novembre — complément du 27 novembre",
+          "title": "Zaporijjia — Médiation de l’AIEA pour rétablir l’alimentation externe",
+          "body": "L’AIEA cherche à obtenir une suspension locale des hostilités pour permettre les réparations électriques après la coupure déjà recensée le 25 novembre. La centrale dépend des générateurs de secours. Aucun accident radiologique ni accord local effectivement appliqué n’est établi dans les sources consultées.",
+          "sources": [
+            {
+              "label": "Reuters — médiation nucléaire",
+              "url": "https://www.reuters.com/business/energy/iaea-working-with-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-2026-11-27/",
+              "note": "Dépêche du 26 novembre relayant l’AIEA.",
+              "type": "Agence de presse"
+            },
+            {
+              "label": "World Nuclear News — sûreté nucléaire",
+              "url": "https://www.world-nuclear-news.org/articles/iaea-seeks-fresh-local-ceasefire-for-zaporizhzhia-power-line-repairs",
+              "note": "Publication spécialisée du 27 novembre.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
         {
           "datetime": "2026-11-27T14:59",
           "event_date": "2026-11-27",
@@ -674,7 +712,7 @@
         "Décisions formelles et vérifiées de mise en garde, de mobilisation ou d’activation exceptionnelle de dispositifs civils liées à une menace militaire immédiate, à apprécier dans leur contexte."
       ],
       "related_publication_label": "Pour aller plus loin — Diploval a publié une proposition indépendante d’accord-cadre de paix.",
-      "why_level": "Niveau 2 maintenu au 25 novembre. La combinaison des intrusions russes rapportées en Pologne, des avertissements visant des militaires français en Ukraine, des opérations hybrides attribuées par les États européens et des mesures défensives de l'OTAN constitue un risque significatif d'escalade. La reconnaissance ukrainienne de la frappe contre le Sparta II dans le golfe de Finlande et les opérations revendiquées près de Benghazi démontrent aussi que le débordement géographique peut résulter d'opérations ukrainiennes ; la Norvège et l'Italie ont exprimé des préoccupations officielles. Aucune confrontation armée directe Russie–OTAN n'est établie à cette heure ; le statut et la légalité de chaque opération doivent être appréciés séparément et ne sont pas déterminés par la seule déclaration d'une partie. Le projet allégué de satellite nucléaire russe n'est pas confirmé publiquement. La convocation diplomatique de l'ambassadeur russe ne constitue pas un affrontement armé, et des canaux de dialogue restent actifs. Le Code One doit pouvoir répondre à une convergence préventive de risques critiques, mais son élévation reste soumise à une validation éditoriale documentée ; il n'est pas déclenché par les informations actuelles. Les décès annoncés en Libye et les nouvelles menaces de représailles renforcent la vigilance, sans établir de confrontation directe Russie–OTAN ni de rupture définitive du dialogue. Les développements énergétiques et les déclarations allemandes du 25 novembre renforcent la vigilance sans établir une confrontation directe Russie–OTAN. La déclaration conjointe rapportée le 26 novembre constitue un signal diplomatique modérateur, sans désescalade effective établie. Les constatations chimiques rapportées et l’appel international renforcent les préoccupations juridiques sans établir une extension directe du conflit à l’OTAN. Cette avancée humanitaire ciblée ne constitue pas une désescalade militaire générale. Le discours de Berlin et les textes de résilience renforcent la pertinence du suivi de la préparation civile, mais ne constituent pas une décision de mobilisation générale ni une preuve d’imminence d’un affrontement direct. Le 27 novembre, les discussions financières et les avertissements énergétiques ne démontrent pas un franchissement du seuil vers une confrontation directe Russie–OTAN.",
+      "why_level": "Niveau 2 maintenu au 25 novembre. La combinaison des intrusions russes rapportées en Pologne, des avertissements visant des militaires français en Ukraine, des opérations hybrides attribuées par les États européens et des mesures défensives de l'OTAN constitue un risque significatif d'escalade. La reconnaissance ukrainienne de la frappe contre le Sparta II dans le golfe de Finlande et les opérations revendiquées près de Benghazi démontrent aussi que le débordement géographique peut résulter d'opérations ukrainiennes ; la Norvège et l'Italie ont exprimé des préoccupations officielles. Aucune confrontation armée directe Russie–OTAN n'est établie à cette heure ; le statut et la légalité de chaque opération doivent être appréciés séparément et ne sont pas déterminés par la seule déclaration d'une partie. Le projet allégué de satellite nucléaire russe n'est pas confirmé publiquement. La convocation diplomatique de l'ambassadeur russe ne constitue pas un affrontement armé, et des canaux de dialogue restent actifs. Le Code One doit pouvoir répondre à une convergence préventive de risques critiques, mais son élévation reste soumise à une validation éditoriale documentée ; il n'est pas déclenché par les informations actuelles. Les décès annoncés en Libye et les nouvelles menaces de représailles renforcent la vigilance, sans établir de confrontation directe Russie–OTAN ni de rupture définitive du dialogue. Les développements énergétiques et les déclarations allemandes du 25 novembre renforcent la vigilance sans établir une confrontation directe Russie–OTAN. La déclaration conjointe rapportée le 26 novembre constitue un signal diplomatique modérateur, sans désescalade effective établie. Les constatations chimiques rapportées et l’appel international renforcent les préoccupations juridiques sans établir une extension directe du conflit à l’OTAN. Cette avancée humanitaire ciblée ne constitue pas une désescalade militaire générale. Le discours de Berlin et les textes de résilience renforcent la pertinence du suivi de la préparation civile, mais ne constituent pas une décision de mobilisation générale ni une preuve d’imminence d’un affrontement direct. Le 27 novembre, les discussions financières et les avertissements énergétiques ne démontrent pas un franchissement du seuil vers une confrontation directe Russie–OTAN. La médiation nucléaire exige un suivi prioritaire, sans accident radiologique établi.",
       "visible": true,
       "watch_down": [
         "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
@@ -684,7 +722,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-27T14:59",
+      "last_update": "2026-11-27T19:30",
       "status": "suivi",
       "related_publication": "accord-cadre-ukraine-russie-v01",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
@@ -1066,6 +1104,24 @@
           "url": "https://time.com/article/2026/11/26/trump-warns-putin-russia-to-pull-back-military-aggression-europe-ukraine-war/",
           "note": "Déclaration ukrainienne rapportée.",
           "type": "Agence de presse"
+        },
+        {
+          "label": "AP — conclusions du sommet",
+          "url": "https://apnews.com/article/fd025046850b824b2e62def18408c6b6",
+          "note": "Compte rendu des déclarations de Costa.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Reuters — médiation nucléaire",
+          "url": "https://www.reuters.com/business/energy/iaea-working-with-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-2026-11-27/",
+          "note": "Dépêche du 26 novembre relayant l’AIEA.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "World Nuclear News — sûreté nucléaire",
+          "url": "https://www.world-nuclear-news.org/articles/iaea-seeks-fresh-local-ceasefire-for-zaporizhzhia-power-line-repairs",
+          "note": "Publication spécialisée du 27 novembre.",
+          "type": "Agence de presse"
         }
       ],
       "category": "Géopolitique · Europe"
@@ -1073,10 +1129,80 @@
     {
       "show_home": true,
       "level": "1",
-      "summary": "Au 27 novembre 2026, les tensions régionales demeurent critiques. L’incident meurtrier au Koweït fait l’objet d’une attribution contestée par Téhéran. Une attaque contre la raffinerie de Jazan, de nouvelles violences au Yémen et à Gaza et les alertes alimentaires renforcent les préoccupations humanitaires. Les signalements maritimes autour d’Ormuz restent partiellement contradictoires. Aucun accord durable de désescalade n’est établi. Diploval maintient le Code One.",
+      "summary": "Au 27 novembre 2026, les tensions régionales demeurent critiques. Washington annonce une nouvelle immobilisation de navire marchand dans le golfe d’Oman. La Turquie achève la ratification du pacte de défense avec l’Arabie saoudite et le Pakistan. Les violences à Gaza et les signalements de victimes au Yémen persistent. L’attribution de l’incident au Koweït reste contestée, et la sécurité des infrastructures vitales et de la navigation demeure préoccupante. Aucun accord durable de désescalade n’est établi. Diploval maintient le Code One.",
       "social_image": "/assets/uploads/diploval-_-tensions-au-proche-orient.png",
       "opened_at": "2026-11-19T22:08",
       "updates": [
+        {
+          "datetime": "2026-11-27T19:30",
+          "event_date": "2026-11-27",
+          "event_label": "27 novembre 2026",
+          "title": "Turquie–Arabie saoudite–Pakistan — Ratification turque du pacte de défense",
+          "body": "Reuters rapporte l’achèvement de la ratification turque du pacte de La Mecque et des consultations à Islamabad. Le pacte prévoit une solidarité en cas d’attaque contre un membre, selon les agences. Ceci ne démontre ni un déploiement effectif ni une entrée en guerre de la Turquie ou du Pakistan. Les textes originaux restent à examiner.",
+          "sources": [
+            {
+              "label": "Reuters — ratification turque",
+              "url": "https://www.reuters.com/world/asia-pacific/erdogan-completes-turkeys-ratification-mecca-defence-pact-2026-11-27/",
+              "note": "Article ouvert, citant le journal officiel turc.",
+              "type": "Agence de presse"
+            },
+            {
+              "label": "AP — actualités régionales du 27 novembre",
+              "url": "https://apnews.com/article/saudi-iran-yemen-israel-november-27-2026-dbb2c950f5cd991a52f3a065b6325535",
+              "note": "Article ouvert, déclarations et bilans attribués.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-27T19:30",
+          "event_date": "2026-11-27",
+          "event_label": "27 novembre 2026",
+          "title": "Gaza — Nouvelles frappes et victimes signalées",
+          "body": "AP rapporte de nouveaux décès selon les hôpitaux et des blessés lors d’une frappe sur un logement. Israël affirme avoir visé des combattants lors de certaines opérations. Le Hamas affirme qu’un proche de son négociateur a survécu à une frappe. Le statut des victimes et les circonstances restent à établir.",
+          "sources": [
+            {
+              "label": "AP — actualités régionales du 27 novembre",
+              "url": "https://apnews.com/article/saudi-iran-yemen-israel-november-27-2026-dbb2c950f5cd991a52f3a065b6325535",
+              "note": "Article ouvert, déclarations et bilans attribués.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-27T19:30",
+          "event_date": "2026-11-27",
+          "event_label": "27 novembre 2026",
+          "title": "Yémen — Frappe meurtrière signalée dans la province de Taëz",
+          "body": "Les autorités sanitaires houthies signalent des victimes, dont des enfants, lors d’une frappe attribuée à l’Arabie saoudite. AP indique ne pas avoir pu vérifier indépendamment ces affirmations. Aucun cumul avec les bilans antérieurs n’est effectué.",
+          "sources": [
+            {
+              "label": "AP — actualités régionales du 27 novembre",
+              "url": "https://apnews.com/article/saudi-iran-yemen-israel-november-27-2026-dbb2c950f5cd991a52f3a065b6325535",
+              "note": "Article ouvert, déclarations et bilans attribués.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-27T19:30",
+          "event_date": "2026-11-26",
+          "event_label": "26 novembre — complément du 27 novembre",
+          "title": "Golfe d’Oman — Immobilisation d’un navire marchand annoncée par Washington",
+          "body": "Le commandement américain annonce avoir immobilisé un navire marchand au motif d’une tentative de franchissement du blocus des ports iraniens. L’équipage est déclaré indemne par Washington. Les circonstances indépendantes et la qualification juridique de l’opération restent à établir.",
+          "sources": [
+            {
+              "label": "AP — intervention maritime américaine",
+              "url": "https://apnews.com/article/800620518a351282f098faa9381b3375",
+              "note": "Déclaration du commandement américain relayée le 27 novembre.",
+              "type": "Agence de presse"
+            }
+          ],
+          "correction": false
+        },
         {
           "datetime": "2026-11-27T14:59",
           "event_date": "2026-11-26",
@@ -1746,7 +1872,7 @@
         "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
       ],
       "slug": "proche-orient-israel-palestine-iran-escalade-regionale",
-      "why_level": "Le niveau 1 — Code One demeure motivé par la pluralité des fronts actifs, les risques pour les populations et les infrastructures civiles, ainsi que les incidents maritimes documentés. Les nouvelles informations du 24 novembre sur Riyad, Aden, Ormuz et Gaza ne montrent pas de désescalade durable. Les attributions militaires, déclarations des parties et bilans locaux restent distingués des confirmations indépendantes. Les démarches de médiation restent un facteur modérateur. Le niveau Diploval qualifie le risque de propagation régionale et ne signifie pas qu’une guerre mondiale est imminente. Les développements du 25 novembre renforcent les préoccupations maritimes et humanitaires sans démontrer une désescalade durable. L’ouverture diplomatique conditionnelle concernant Ormuz ne suffit pas à constater une désescalade effective. La pression économique sur les ménages iraniens demeure préoccupante ; aucun nouvel accord sur Ormuz n’est établi. Les nouveaux bilans civils et revendications portuaires ne permettent pas de constater une désescalade durable. La persistance des violences et des incidents maritimes ne permet pas de constater une désescalade durable. Les incidents au Koweït et à Jazan ainsi que l’alerte alimentaire renforcent les facteurs de risque, sans préjuger des responsabilités contestées.",
+      "why_level": "Le niveau 1 — Code One demeure motivé par la pluralité des fronts actifs, les risques pour les populations et les infrastructures civiles, ainsi que les incidents maritimes documentés. Les nouvelles informations du 24 novembre sur Riyad, Aden, Ormuz et Gaza ne montrent pas de désescalade durable. Les attributions militaires, déclarations des parties et bilans locaux restent distingués des confirmations indépendantes. Les démarches de médiation restent un facteur modérateur. Le niveau Diploval qualifie le risque de propagation régionale et ne signifie pas qu’une guerre mondiale est imminente. Les développements du 25 novembre renforcent les préoccupations maritimes et humanitaires sans démontrer une désescalade durable. L’ouverture diplomatique conditionnelle concernant Ormuz ne suffit pas à constater une désescalade effective. La pression économique sur les ménages iraniens demeure préoccupante ; aucun nouvel accord sur Ormuz n’est établi. Les nouveaux bilans civils et revendications portuaires ne permettent pas de constater une désescalade durable. La persistance des violences et des incidents maritimes ne permet pas de constater une désescalade durable. Les incidents au Koweït et à Jazan ainsi que l’alerte alimentaire renforcent les facteurs de risque, sans préjuger des responsabilités contestées. Les nouvelles tensions maritimes et les engagements régionaux de défense renforcent la vigilance.",
       "visible": true,
       "watch_down": [
         "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
@@ -1754,7 +1880,7 @@
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
-      "last_update": "2026-11-27T14:59",
+      "last_update": "2026-11-27T19:30",
       "status": "suivi",
       "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
@@ -2032,6 +2158,24 @@
           "label": "Associated Press — alerte alimentaire ONU",
           "url": "https://apnews.com/article/819ca5f619621b6f3b7ca8ba66b65762",
           "note": "Article ouvert; incohérence de millésime dans la période rapportée, chiffres non repris.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "Reuters — ratification turque",
+          "url": "https://www.reuters.com/world/asia-pacific/erdogan-completes-turkeys-ratification-mecca-defence-pact-2026-11-27/",
+          "note": "Article ouvert, citant le journal officiel turc.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "AP — actualités régionales du 27 novembre",
+          "url": "https://apnews.com/article/saudi-iran-yemen-israel-november-27-2026-dbb2c950f5cd991a52f3a065b6325535",
+          "note": "Article ouvert, déclarations et bilans attribués.",
+          "type": "Agence de presse"
+        },
+        {
+          "label": "AP — intervention maritime américaine",
+          "url": "https://apnews.com/article/800620518a351282f098faa9381b3375",
+          "note": "Déclaration du commandement américain relayée le 27 novembre.",
           "type": "Agence de presse"
         }
       ],
