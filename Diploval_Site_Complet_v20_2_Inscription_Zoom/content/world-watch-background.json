@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.16",
+  "schema_version": "0.3.17",
   "compiled_on": "2026-11-27",
   "dossiers": [
     {
@@ -937,6 +937,196 @@
         {
           "label": "Famagusta Gazette, 25 novembre, réunion du 24",
           "url": "https://famagusta-gazette.com/cyprus-leaders-meet-at-un-buffer-zone-call-for-trilateral-talks-with-guterres/"
+        }
+      ]
+    },
+    {
+      "id": "AME-01",
+      "context": "La fragilité institutionnelle, aggravée par l’assassinat du président en 2021, a favorisé l’emprise des groupes criminels et une transition politique difficile. Le BINUH accompagne les institutions haïtiennes.",
+      "reference_date": "2026-11-17",
+      "current": "Le 17 novembre, le Haut-Commissariat aux droits de l’homme a signalé la poursuite des violences des gangs et des risques liés aux opérations de sécurité. Le calendrier électoral demeure incertain.",
+      "living": "Protéger les populations, les enfants, les personnes déplacées, les services essentiels et l’accès humanitaire.",
+      "peace": "Suivre la transition électorale, le contrôle des opérations de sécurité, la justice et la réduction des violences.",
+      "sources": [
+        {
+          "label": "ONU, mandat BINUH",
+          "url": "https://mandates.un.org/mandate/S/RES/2814%282026%29"
+        },
+        {
+          "label": "ONU, point du 17 novembre",
+          "url": "https://transcripts.un.org/en/briefing/geneva/2026-11-17"
+        },
+        {
+          "label": "ONU, élections et sécurité, octobre",
+          "url": "https://dppa.un.org/en/news/haiti-elections-on-hold-as-gangs-adapt-to-security-crackdown-security-council-hears"
+        }
+      ]
+    },
+    {
+      "id": "AME-02",
+      "context": "L’accord de paix de 2016 avec les FARC a ouvert un processus de démobilisation et de réforme rurale. L’ELN, des dissidences et d’autres groupes armés restent actifs dans plusieurs territoires.",
+      "reference_date": "2026-11-22",
+      "current": "Le Conseil de sécurité a prolongé le mandat de la mission de vérification jusqu’au 31 octobre 2027 le 30 octobre 2026. Le bilan publié par Le Monde le 22 novembre souligne la recomposition des violences dix ans après l’accord.",
+      "living": "Protéger les communautés rurales et autochtones, les terres, les défenseurs de l’environnement et les personnes déplacées.",
+      "peace": "Suivre l’application territoriale de l’accord, les engagements des groupes armés, la justice et les garanties de sécurité.",
+      "sources": [
+        {
+          "label": "ONU, résolution 2833",
+          "url": "https://mandates.un.org/mandate/S/RES/2833%20%282026%29"
+        },
+        {
+          "label": "ONU, rapport du secrétaire général, juin-septembre",
+          "url": "https://digitallibrary.un.org/record/4129789?v=pdf"
+        },
+        {
+          "label": "Le Monde, bilan du 22 novembre",
+          "url": "https://www.lemonde.fr/international/article/2026/11/22/en-colombie-dix-ans-apres-la-signature-de-l-accord-historique-le-bilan-amer-de-la-paix-avec-les-farc_6814189_3210.html"
+        }
+      ]
+    },
+    {
+      "id": "AME-03",
+      "context": "Les réseaux criminels transnationaux, la corruption et les rivalités entre organisations affectent la sécurité de plusieurs États mexicains. La coopération avec les États-Unis soulève aussi des questions de souveraineté.",
+      "reference_date": "2026-11-27",
+      "current": "Reuters rapporte le 27 novembre une protestation mexicaine contre un dispositif de signalement de la DEA, malgré le renforcement de la coopération sécuritaire bilatérale.",
+      "living": "Protéger les habitants, les journalistes, les élus, les migrants et les personnes déplacées ; prévenir les abus lors des opérations.",
+      "peace": "Suivre la coopération consentie, la lutte contre l’impunité et la prévention du recrutement criminel ; ne pas assimiler toute violence à un conflit armé.",
+      "sources": [
+        {
+          "label": "Reuters, 27 novembre",
+          "url": "https://www.reuters.com/world/americas/mexico-files-complaint-with-us-over-dea-tip-line-alleged-drug-traffickers-2026-11-27/"
+        },
+        {
+          "label": "CFR, contexte",
+          "url": "https://www.cfr.org/global-conflict-tracker/conflict/criminal-violence-mexico"
+        },
+        {
+          "label": "Gouvernement mexicain, 6-8 novembre",
+          "url": "https://www.gob.mx/sspc/prensa/el-gabinete-de-seguridad-del-gobierno-de-mexico-informa-acciones-relevantes-del-6-7-y-8-de-noviembre-de-2026?idiom=es"
+        }
+      ]
+    },
+    {
+      "id": "AME-04",
+      "context": "La progression du trafic transnational et des violences carcérales depuis 2021 a aggravé la situation sécuritaire. Les autorités ont renforcé les moyens de lutte contre les organisations criminelles.",
+      "reference_date": "2026-11-27",
+      "current": "Le 27 novembre, Associated Press rapporte que le gouvernement présente une extradition depuis l’Espagne comme un résultat de sa stratégie sécuritaire. L’efficacité durable de cette stratégie reste à évaluer.",
+      "living": "Protéger les familles déplacées, les enfants exposés au recrutement, les écoles et les moyens de subsistance.",
+      "peace": "Évaluer la coopération judiciaire internationale, le contrôle des opérations et la prévention territoriale.",
+      "sources": [
+        {
+          "label": "Associated Press, 27 novembre (extrait)",
+          "url": "https://apnews.com/article/2c5edfb68eb298c5645715e918545960"
+        },
+        {
+          "label": "Reuters, 29 octobre",
+          "url": "https://www.investing.com/news/world-news/as-criminal-networks-spread-in-latin-america-quito-is-new-battleground-4982773"
+        },
+        {
+          "label": "Reuters, déplacements, 8 septembre",
+          "url": "https://www.investing.com/news/world-news/as-gang-violence-deepens-hundreds-of-thousands-of-ecuadoreans-flee-their-homes-4891197"
+        }
+      ]
+    },
+    {
+      "id": "AME-05",
+      "context": "La capture de Nicolás Maduro par les États-Unis le 3 janvier 2026 a été suivie d’une présidence intérimaire de Delcy Rodríguez et d’une reprise des relations diplomatiques en mars. La légalité de l’intervention et les conditions de la transition doivent être distinguées de la coopération ultérieure.",
+      "reference_date": "2026-11-27",
+      "current": "Reuters rapporte un accord de coopération militaire annoncé le 18 novembre et, le 27 novembre, des pressions américaines relatives à l’appartenance du Venezuela à l’OPEP, selon ses sources. Les modalités et les conséquences de ces annonces restent à vérifier.",
+      "living": "Examiner les droits politiques, l’accès aux services, la reconstruction après les séismes et la gestion souveraine des ressources naturelles.",
+      "peace": "Suivre les garanties électorales, la protection des droits, la souveraineté et la transparence des accords économiques et militaires.",
+      "sources": [
+        {
+          "label": "Chambre des communes britannique, 24 septembre",
+          "url": "https://commonslibrary.parliament.uk/research-briefings/CBP-12211/"
+        },
+        {
+          "label": "Reuters, 18 novembre",
+          "url": "https://www.investing.com/news/world-news/us-defense-secretary-hegseth-vows-to-boost-venezuela-military-cooperation-5036784"
+        },
+        {
+          "label": "Reuters, 27 novembre",
+          "url": "https://www.reuters.com/business/energy/us-pushed-venezuela-iraq-consider-leaving-opec-sources-say-2026-11-27/"
+        }
+      ]
+    },
+    {
+      "id": "AME-06",
+      "context": "Le différend territorial sur l’Essequibo porte notamment sur la sentence arbitrale de 1899 et l’accord de Genève de 1966. La Cour internationale de Justice est saisie ; le Guyana et le Venezuela défendent des positions divergentes.",
+      "reference_date": "2026-11-21",
+      "current": "Le 21 novembre, Caribbean Broadcasting Corporation rapporte que le Guyana refuse une négociation bilatérale sur le différend et privilégie la décision de la Cour. Aucun calendrier définitif de jugement n’est confirmé ici.",
+      "living": "Préserver les communautés autochtones, les forêts, les cours d’eau et la sécurité des habitants du territoire contesté.",
+      "peace": "Suivre la procédure judiciaire, le respect des mesures conservatoires et la prévention d’incidents ; vérifier directement le dossier de la Cour lors de l’audit.",
+      "sources": [
+        {
+          "label": "Gouvernement du Guyana, position sur la procédure",
+          "url": "https://dpi.gov.gy/press-statement-guyana-stands-firm-on-sovereignty-as-icj-prepares-final-judgment-in-border-case/"
+        },
+        {
+          "label": "CBC/CMC, 21 novembre",
+          "url": "https://www.cbc.bb/main-stories/guyana-rejects-bilateral-talks-with-venezuela-over-essequibo-dispute/"
+        }
+      ]
+    },
+    {
+      "id": "AME-07",
+      "context": "Les violences de groupes criminels, l’extorsion, la pauvreté et les déplacements affectent notamment le Honduras, le Guatemala et le Salvador, selon des situations nationales distinctes.",
+      "reference_date": "2026-08-13",
+      "current": "Le portail régional du HCR recense notamment un rapport opérationnel du Salvador publié le 13 août 2026. Les profils nationaux documentent des risques persistants de protection ; aucune évolution uniforme de toute la région n’est déduite.",
+      "living": "Protéger les personnes déplacées, les enfants, les victimes de violences et l’accès au logement, à l’éducation et aux soins.",
+      "peace": "Suivre les réponses nationales, le cadre régional MIRPS et l’accès effectif à la protection et à la justice.",
+      "sources": [
+        {
+          "label": "HCR, crise régionale",
+          "url": "https://www.unhcr.org/emergencies/el-salvador-guatemala-and-honduras-emergency?page=0"
+        },
+        {
+          "label": "HCR, Honduras",
+          "url": "https://www.unhcr.org/where-we-work/countries/honduras"
+        },
+        {
+          "label": "HCR, portail régional, notice du 13 août",
+          "url": "https://data.unhcr.org/en/situations/cam/location"
+        }
+      ]
+    },
+    {
+      "id": "AME-08",
+      "context": "Les organisations criminelles et les milices exercent des formes de contrôle économique et territorial variables selon les régions du Brésil. Les réponses policières suscitent des enjeux de responsabilité et de droits fondamentaux.",
+      "reference_date": "2026-11-24",
+      "current": "Agência Brasil rapporte le 24 novembre une cartographie de l’agence de renseignement ABIN identifiant 31 organisations importantes. Le nombre d’organisations ne mesure pas à lui seul l’intensité des violences.",
+      "living": "Protéger les habitants des quartiers exposés, les communautés forestières et les services publics ; garantir des enquêtes sur les abus présumés.",
+      "peace": "Suivre les politiques de prévention, la coordination judiciaire, le contrôle des forces de sécurité et les résultats territoriaux.",
+      "sources": [
+        {
+          "label": "Agência Brasil, 24 novembre",
+          "url": "https://agenciabrasil.ebc.com.br/en/justica/noticia/2026-11/intelligence-agency-reports-31-criminal-organizations-brazil"
+        },
+        {
+          "label": "Human Rights Watch, 28 octobre",
+          "url": "https://www.hrw.org/news/2026/10/28/brazil-new-evidence-of-serious-police-misconduct-in-deadly-raid"
+        }
+      ]
+    },
+    {
+      "id": "AME-09",
+      "context": "Les relations entre Cuba et les États-Unis restent structurées par l’embargo, les sanctions, les divergences politiques et des questions de souveraineté et de droits humains.",
+      "reference_date": "2026-11-05",
+      "current": "L’Assemblée générale de l’ONU a de nouveau demandé la fin de l’embargo en octobre. Reuters rapporte de nouvelles sanctions américaines le 5 novembre. En octobre, un diplomate cubain indiquait que des canaux de communication subsistaient sans négociation formelle.",
+      "living": "Évaluer les effets des restrictions et des politiques nationales sur l’énergie, l’alimentation, les médicaments et les droits des habitants.",
+      "peace": "Suivre les canaux diplomatiques, les exemptions humanitaires et les conditions d’une désescalade respectant les droits et la souveraineté.",
+      "sources": [
+        {
+          "label": "ONU, résolution A/RES/81/7",
+          "url": "https://mandates.un.org/mandate/A/RES/81/7"
+        },
+        {
+          "label": "Reuters, 5 novembre",
+          "url": "https://www.reuters.com/world/americas/us-issues-new-cuba-sanctions-takes-aim-sectors-cuban-economy-2026-11-05/"
+        },
+        {
+          "label": "Reuters, 5 octobre",
+          "url": "https://www.investing.com/news/world-news/exclusivecuba-and-us-maintain-channels-of-communication-but-no-negotiations-diplomat-says-4932854"
         }
       ]
     }
