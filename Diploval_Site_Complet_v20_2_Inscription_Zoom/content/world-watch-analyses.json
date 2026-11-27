@@ -29,27 +29,27 @@
         {
           "date": "2026-11-27",
           "label": "FAO–PAM — Alerte précoce sur l’insécurité alimentaire",
-          "url": "https://www.wfp.org/news/el-nino-adds-new-hunger-hotspots-conflict-continues-drive-risk-famine-warn-fao-and-wfp"
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
         }
       ]
     },
     {
       "id": "AFR-02",
       "level": null,
-      "summary": "Le rapport FAO–PAM du 27 novembre identifie un risque de famine dans certaines parties du Soudan du Sud. L’évaluation du niveau Diploval reste en cours.",
-      "living": "Les risques alimentaires doivent être appréciés à l’échelle des zones et des populations touchées.",
+      "summary": "Le rapport FAO–PAM du 27 novembre 2026 classe le Soudan du Sud parmi les foyers de préoccupation alimentaire maximale. Il rappelle une projection antérieure de risque de famine dans quatre comtés du Haut-Nil et du Jonglei jusqu’en juillet 2026, dans un scénario défavorable. Une nouvelle évaluation locale est nécessaire pour préciser le risque actuel. L’évaluation du niveau Diploval reste en cours.",
+      "living": "Les risques alimentaires doivent être appréciés à l’échelle des zones et des populations touchées, en distinguant les données observées, les projections et leur période de validité.",
       "peace": "Le 27 novembre, l’Union africaine a annoncé l’inauguration du groupe de travail conjoint UA–IGAD–ONU et demandé le respect du cessez-le-feu ainsi que l’application des engagements de transition.",
       "assessment": "Aucun nouveau code n’est attribué à ce stade.",
       "sources": [
         {
           "date": "2026-11-27",
           "label": "FAO–PAM — Alerte précoce sur l’insécurité alimentaire",
-          "url": "https://www.wfp.org/news/el-nino-adds-new-hunger-hotspots-conflict-continues-drive-risk-famine-warn-fao-and-wfp"
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
         },
         {
           "date": "2026-11-27",
           "label": "Union africaine — Dialogue inclusif et transition au Soudan du Sud",
-          "url": "https://au.int/en/pressreleases/20261127/auc-chairperson-calls-commitment-advance-peace-southsudan"
+          "url": "https://www.au.int/en/pressreleases/20261127/auc-chairperson-calls-commitment-advance-peace-southsudan"
         }
       ]
     }
