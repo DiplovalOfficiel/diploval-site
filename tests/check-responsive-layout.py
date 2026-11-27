@@ -348,8 +348,17 @@ def check_world_watch(browser, width, failures):
             failures.append(prefix + " sources non accessibles")
         page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology):not(.ww-background) summary').click()
         backgrounds = page.locator('.ww-background')
-        if backgrounds.count() != 25:
-            failures.append(prefix + " socles Afrique et Proche-Orient incomplets")
+        if backgrounds.count() != 38:
+            failures.append(prefix + " socles Afrique, Proche-Orient et Asie incomplets")
+        for i in range(1,14):
+            bg = page.locator(f'#ww-ASI-{i:02d} .ww-background')
+            if bg.count() != 1 or bg.locator('a[href^="https://"]').count() < 2:
+                failures.append(prefix + f" socle ou références incomplets ASI-{i:02d}")
+        bg = page.locator('#ww-ASI-08 .ww-background')
+        bg.locator('summary').click()
+        if not bg.locator('h4').first.is_visible() or bg.evaluate("el => el.scrollWidth > el.clientWidth + 3"):
+            failures.append(prefix + " socle Myanmar illisible")
+        bg.locator('summary').click()
         for i in range(1,8):
             bg = page.locator(f'#ww-MOR-{i:02d} .ww-background')
             if bg.count() != 1 or bg.locator('a[href^="https://"]').count() < 2:
