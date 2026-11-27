@@ -1,0 +1,1366 @@
+{
+  "schema_version": "0.3.20.3-bis",
+  "compiled_on": "2026-11-27",
+  "dossiers": [
+    {
+      "id": "AFR-01",
+      "context": "La guerre ouverte en avril 2023 oppose les Forces armées soudanaises (FAS) et les Forces de soutien rapide (FSR), anciens partenaires du pouvoir militaire issu du coup de 2021. La transition civile a été interrompue ; les violences au Darfour et au Kordofan s'inscrivent aussi dans des conflits plus anciens.",
+      "reference_date": "2026-11-27",
+      "current": "La FAO et le PAM placent le Soudan parmi les foyers alimentaires les plus préoccupants. Ils signalent des risques de famine localisés dans certaines zones et une malnutrition critique dans deux camps du Darfour Sud. Il ne s’agit pas d’une déclaration de famine nationale. L’Union africaine a accueilli le 25 novembre une proposition de médiation.",
+      "living": "La priorité est l'accès humanitaire, la protection des civils, des systèmes de santé et des moyens de subsistance. Un risque localisé de famine ne signifie pas une famine nationale.",
+      "peace": "Suivre l'acceptation effective d'un dialogue inclusif et les engagements vérifiables de cessation des hostilités.",
+      "sources": [
+        {
+          "label": "ONU, genèse et efforts de paix · Accès à revérifier",
+          "url": "https://dppa.un.org/en/news/sudan-conflict-peace-efforts-resume-to-end-drone-war-fuelling-humanitarian-crisis"
+        },
+        {
+          "label": "Union africaine, 25 novembre · Page consultée lors de cette ouverture",
+          "url": "https://www.au.int/en/pressreleases/20261125/statement-chairperson-au-commission-sudan-mediation-proposal"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AFR-02",
+      "context": "Indépendant depuis 2011, le Soudan du Sud connaît depuis 2013 une crise politico-militaire interne. L'accord revitalisé de 2018 organise la transition, le partage du pouvoir et les arrangements de sécurité.",
+      "reference_date": "2026-11-27",
+      "current": "La FAO et le PAM maintiennent le Soudan du Sud parmi les foyers les plus préoccupants. La projection de risque de famine mentionnée pour quatre comtés concernait une période achevée en juillet 2026 ; de nouvelles données locales sont nécessaires.",
+      "living": "Les déplacements, l'accès aux soins et les risques alimentaires exigent une surveillance locale ; la projection de risque de famine citée par la FAO–PAM concernait une période achevée en juillet 2026.",
+      "peace": "Évaluer les mesures de confiance et l'application de l'accord de 2018, sans présumer la réussite de la transition.",
+      "sources": [
+        {
+          "label": "ONU, contexte de la transition · Passage ou notice consulté lors de la première passe",
+          "url": "https://southsudan.un.org/en/about/about-the-un"
+        },
+        {
+          "label": "Union africaine, 27 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.au.int/en/pressreleases/20261127/auc-chairperson-calls-commitment-advance-peace-southsudan"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AFR-03",
+      "context": "Depuis les guerres des années 1990 et 2000, l'est de la RDC demeure confronté à des conflits locaux et transfrontaliers. Le M23 et d'autres groupes armés, la présence de réfugiés, les ressources et les différends sécuritaires avec le Rwanda se recoupent sans se confondre.",
+      "reference_date": "2026-11-27",
+      "current": "L’analyse IPC couvrant septembre–décembre 2026 estime que 28,8 millions de personnes en RDC connaissent une insécurité alimentaire aiguë de phase 3 ou plus. La FAO et le PAM signalent un risque de détérioration à venir. Ces données concernent la RDC et non l’ensemble des Grands Lacs.",
+      "living": "Protéger l'accès aux terres, aux marchés et aux soins, notamment dans les territoires orientaux affectés par les violences.",
+      "peace": "Suivre les engagements de cessez-le-feu, leur mise en œuvre et les mécanismes de sécurité régionale. Une actualisation diplomatique de la dernière semaine reste nécessaire.",
+      "sources": [
+        {
+          "label": "IPC, période septembre–décembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1165470/?iso3=COD"
+        },
+        {
+          "label": "PAM, FAO, UNICEF et OMS, 13 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.wfp.org/news/conflict-and-disease-outbreaks-deepen-dr-congos-hunger-crisis-record-numbers-are-projected"
+        },
+        {
+          "label": "FAO–PAM — communiqué conjoint du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AFR-04",
+      "context": "La crise ouverte au Mali en 2012 s'est étendue au Sahel central. Elle mêle insurrections armées, tensions locales, forces étatiques, changements de régime et recomposition des partenariats régionaux.",
+      "reference_date": "2026-11-25",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Les déplacements forcés, l'accès aux terres et aux marchés et la continuité des services sont des indicateurs essentiels.",
+      "peace": "Suivre la coopération régionale, les initiatives de dialogue local et la protection des civils indépendamment des stratégies militaires.",
+      "sources": [
+        {
+          "label": "ACLED, conflit au Sahel et notes hebdomadaires · Passage ou notice consulté lors de la première passe",
+          "url": "https://acleddata.com/region/conflict-sahel"
+        },
+        {
+          "label": "HCR, situation régionale du Sahel · Accès à revérifier",
+          "url": "https://data.unhcr.org/en/situations/sahelcrisis"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AFR-05",
+      "context": "L'insurrection de Boko Haram et la fragmentation de groupes armés, dont l'État islamique en Afrique de l'Ouest (ISWAP), ont donné à la crise du nord-est nigérian une dimension régionale dans le bassin du lac Tchad. Les violences criminelles du nord-ouest doivent être distinguées.",
+      "reference_date": "2026-11-27",
+      "current": "Le communiqué FAO–PAM classe certaines parties du Nigeria parmi les foyers de préoccupation alimentaire maximale. Les autres dimensions sécuritaires et les données de déplacement restent à actualiser.",
+      "living": "Les populations déplacées, les communautés d'accueil et les moyens de subsistance agricoles sont particulièrement exposés.",
+      "peace": "Évaluer la coopération du bassin du lac Tchad et les solutions communautaires de protection, de retour volontaire et de réinsertion.",
+      "sources": [
+        {
+          "label": "HCR, 13 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.unhcr.org/africa/news/press-releases/nigeria-unhcr-assistant-high-commissioner-protection-calls-urgent-support"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AFR-06",
+      "context": "La guerre entre les autorités fédérales et les forces du Tigré de 2020 à 2022 a été suivie de l'accord de Pretoria. Les tensions avec différents acteurs du Tigré et d'autres régions, dont l'Amhara, restent distinctes mais peuvent se renforcer mutuellement.",
+      "reference_date": "2026-11-25",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "La protection des civils et le rétablissement des services et des activités agricoles sont des conditions d'une sortie durable du conflit.",
+      "peace": "Examiner la reprise du dialogue, le respect de Pretoria et la possibilité d'enquêtes indépendantes sur les violations présumées.",
+      "sources": [
+        {
+          "label": "Amnesty International, 23 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.amnesty.org/en/latest/news/2026/11/ethiopia-lethal-artillery-strikes-on-civilian-neighbourhoods-in-tigrays-alamata-city-must-be-investigated-as-war-crimes/"
+        },
+        {
+          "label": "Reuters, 24 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/ethiopian-shelling-of-tigray-town-should-be-investigated-possible-war-crimes-2026-11-24/"
+        },
+        {
+          "label": "AP, 25 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://apnews.com/article/427358084fef2eb567e38acd81c3eacd"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AFR-07",
+      "context": "La guerre frontalière de 1998–2000 a été suivie d'un rapprochement en 2018. L'intervention érythréenne aux côtés de l'armée éthiopienne pendant la guerre du Tigré n'a pas supprimé les différends entre les deux États.",
+      "reference_date": "2026-11-25",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Une extension interétatique menacerait les populations frontalières et les circuits d'aide et de commerce.",
+      "peace": "Distinguer signaux de tension et preuve d'une guerre interétatique ; rechercher les démarches de désescalade et les confirmations indépendantes.",
+      "sources": [
+        {
+          "label": "Reuters, 18 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/"
+        },
+        {
+          "label": "AP, 25 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://apnews.com/article/427358084fef2eb567e38acd81c3eacd"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AFR-08",
+      "context": "La reconstruction de l'État somalien après l'effondrement institutionnel de 1991 s'accompagne d'une insurrection durable d'Al-Shabaab. La sécurité dépend aussi de l'articulation entre institutions fédérales, autorités locales et partenaires extérieurs.",
+      "reference_date": "2026-11-27",
+      "current": "Selon la FAO et le PAM, les populations déplacées à Baidoa connaissent une insécurité alimentaire d’urgence (IPC 4). Le rapport indique que le risque de famine a reculé et qu’aucune population n’est actuellement projetée en phase 5. Ces constats ne décrivent pas uniformément tout le pays.",
+      "living": "Les personnes déplacées, notamment à Baidoa, restent très vulnérables. Le dernier communiqué ne projette toutefois pas de population en phase IPC 5 en Somalie.",
+      "peace": "Suivre le financement de la mission, les responsabilités somaliennes et les mécanismes de dialogue politique.",
+      "sources": [
+        {
+          "label": "Union africaine, 26 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://au.int/index.php/en/pressreleases/20261126/chairperson-engages-eastern-african-prc-members-peace-security-priorities"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AFR-09",
+      "context": "La crise ouverte en 2013, les conflits entre groupes armés et les fragilités de l'État ont conduit au déploiement de la MINUSCA en 2014. L'accord politique de paix de 2019 organise une partie des efforts de stabilisation.",
+      "reference_date": "2026-11-25",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "La protection civile, les services essentiels et l'aide humanitaire demeurent prioritaires dans les zones où l'autorité publique reste fragile.",
+      "peace": "Suivre le désarmement, la participation locale et l'application de l'accord, en tenant compte des capacités de la mission.",
+      "sources": [
+        {
+          "label": "ONU, résolution 2836 (2026) · Passage ou notice consulté lors de la première passe",
+          "url": "https://mandates.un.org/mandate/S/RES/2836%20%282026%29"
+        },
+        {
+          "label": "ONU, 25 novembre, paix fragile · Accès à revérifier",
+          "url": "https://peacekeeping.un.org/fr/news/centrafrique-la-paix-avance-mais-reste-fragile"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AFR-10",
+      "context": "Depuis 2017, une insurrection armée affecte Cabo Delgado, province du nord du Mozambique. Les inégalités locales, la gouvernance, l'accès aux terres et aux ressources, ainsi que l'intervention de partenaires de sécurité, constituent des dimensions distinctes.",
+      "reference_date": "2026-11-27",
+      "current": "La FAO et le PAM projettent une dégradation alimentaire en Afrique australe, notamment au Mozambique, sous l’effet de conditions climatiques défavorables. Les données propres aux violences et déplacements de Cabo Delgado restent à actualiser.",
+      "living": "Soutenir les communautés déplacées, les agriculteurs et les pêcheurs ; distinguer risques liés au conflit et chocs climatiques.",
+      "peace": "Évaluer les conditions de retour volontaire, de protection et d'accès aux services ; les faits sécuritaires des tout derniers jours restent à corroborer.",
+      "sources": [
+        {
+          "label": "OIM, 3 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://iom.int/news/fresh-violence-northern-mozambique-forces-over-7000-homes"
+        },
+        {
+          "label": "FEWS NET, perspectives d'octobre · Passage ou notice consulté lors de la première passe",
+          "url": "https://fews.net/southern-africa/mozambique/food-security-outlook/october-2026"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AFR-11",
+      "context": "Les protestations dans les régions anglophones en 2016 ont évolué vers un conflit séparatiste. La violence dans l'Extrême-Nord, liée au bassin du lac Tchad, est un autre foyer de crise ; l'accueil de réfugiés centrafricains ajoute des besoins humanitaires.",
+      "reference_date": "2026-09",
+      "current": "L’UNFPA a publié un rapport consacré à la crise au Cameroun en septembre 2026. La période étudiée doit être distinguée de la publication et ne décrit pas nécessairement la situation de novembre. Les situations régionales seront actualisées séparément.",
+      "living": "L'accès à l'école, aux soins, à la protection et aux moyens de subsistance doit être suivi séparément dans chaque région.",
+      "peace": "Rechercher les initiatives de dialogue, la protection des enfants et les solutions pour les personnes déplacées.",
+      "sources": [
+        {
+          "label": "UNFPA, rapport de septembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.unfpa.org/resources/situation-report-crisis-cameroon-september-2026"
+        },
+        {
+          "label": "Commission européenne, aide humanitaire · Passage ou notice consulté lors de la première passe",
+          "url": "https://civil-protection-humanitarian-aid.ec.europa.eu/where/africa/cameroon_en?prefLang=uk"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AFR-12",
+      "context": "Depuis la chute du régime de Kadhafi en 2011, les divisions entre institutions, coalitions armées et autorités rivales rendent difficile l'unification de l'État. Le cessez-le-feu de 2020 n'a pas réglé la transition politique.",
+      "reference_date": "2026-11-22",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "La continuité des services, la gestion des ressources et la protection des personnes vulnérables, notamment migrantes, sont des enjeux à documenter.",
+      "peace": "Suivre les engagements électoraux, l'unification institutionnelle et le dialogue entre régions, sans assimiler une annonce à sa réalisation.",
+      "sources": [
+        {
+          "label": "UNSMIL, feuille de route · Accès à revérifier",
+          "url": "https://unsmil.unmissions.org/en/political-roadmap"
+        },
+        {
+          "label": "UNSMIL, déplacement du 22 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://unsmil.unmissions.org/en/news/dsrsg-political-koury-begins-five-day-visit-to-southern-libya"
+        },
+        {
+          "label": "UNSMIL, mandat · Extrait seulement — texte intégral à vérifier",
+          "url": "https://unsmil.unmissions.org/en/unsmil-mandate"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AFR-13",
+      "context": "Ancienne colonie espagnole, le Sahara occidental est un territoire au statut international non résolu. Le Maroc revendique sa souveraineté, tandis que le Front Polisario revendique l'autodétermination et l'indépendance. La MINURSO a été créée en 1991.",
+      "reference_date": "2026-11-10",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "La protection des populations du territoire et des réfugiés sahraouis doit rester distincte des revendications de souveraineté.",
+      "peace": "Suivre les bons offices de l'ONU, les garanties de cessez-le-feu et le droit à l'autodétermination ; une actualisation après le 10 novembre reste nécessaire.",
+      "sources": [
+        {
+          "label": "ONU, fin du mandat · Accès à revérifier",
+          "url": "https://peacekeeping.un.org/en/news/western-sahara-un-stands-ready-to-keep-supporting-peace-efforts-as-minurso"
+        },
+        {
+          "label": "Assemblée générale, débat du 10 novembre · Accès à revérifier",
+          "url": "https://www.un.org/pga/81/documents/speeches/veto-initiative-debate-10-november-2026/"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AFR-14",
+      "context": "L'extension de la crise du Sahel vers les pays côtiers expose leurs régions septentrionales à des attaques, aux déplacements et à des tensions économiques. Le Bénin et le Togo ne doivent pas être assimilés automatiquement aux situations du Sahel central.",
+      "reference_date": "2026-11-13",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Accès aux soins, à la terre, aux services de protection et capacité des communautés d'accueil constituent des priorités.",
+      "peace": "Suivre la coopération transfrontalière et les mesures de prévention sociale, sans généraliser les niveaux de violence à l'ensemble des États côtiers.",
+      "sources": [
+        {
+          "label": "HCR, Bénin · Accès à revérifier",
+          "url": "https://www.unhcr.org/where-we-work/countries/benin"
+        },
+        {
+          "label": "HCR, Togo · Accès à revérifier",
+          "url": "https://www.unhcr.org/where-we-work/countries/togo?query=Benin"
+        },
+        {
+          "label": "HCR, déplacements régionaux, 13 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.unhcr.org/africa/news/press-releases/nigeria-unhcr-assistant-high-commissioner-protection-calls-urgent-support"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AFR-15",
+      "context": "Le Tchad cumule une transition institutionnelle, des fragilités internes, les effets des violences autour du lac Tchad et l'accueil des populations fuyant le Soudan. Ces différents facteurs ne constituent pas une seule guerre.",
+      "reference_date": "2026-11-27",
+      "current": "La FAO et le PAM ajoutent le Tchad aux foyers où une aggravation alimentaire est anticipée, en lien avec les répercussions de la guerre au Soudan. Il s’agit d’une projection, pas d’une mesure uniforme des besoins actuels.",
+      "living": "Les régions d'accueil des réfugiés ont besoin d'eau, de terres accessibles, de services et de ressources pour les populations locales comme déplacées.",
+      "peace": "Suivre l'aide transfrontalière, la stabilité des institutions et les possibilités de médiation régionale.",
+      "sources": [
+        {
+          "label": "HCR, situation au 22 novembre, publication du 23 · Passage ou notice consulté lors de la première passe",
+          "url": "https://data.unhcr.org/en/documents/details/124981"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AFR-16",
+      "context": "Le Grand barrage de la Renaissance sur le Nil Bleu, lancé en 2011, cristallise des intérêts divergents : développement hydroélectrique éthiopien, sécurité hydrique égyptienne et soudanaise, règles de remplissage et de fonctionnement. L'accord de principes de 2015 ne résout pas tous ces différends.",
+      "reference_date": "2026-11-25",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Le partage de l'eau, la sécurité des barrages, les sécheresses et les écosystèmes du bassin doivent être étudiés à partir de données hydrologiques contradictoires.",
+      "peace": "Rechercher les possibilités de négociation technique et de coopération sur les données, le fonctionnement du barrage et la gestion des périodes de sécheresse.",
+      "sources": [
+        {
+          "label": "Ahram Online, 5 novembre, déclaration éthiopienne rapportée · Accès à revérifier",
+          "url": "https://english.ahram.org.eg/UI/Front/NewsContent/1/1234/581830/Egypt/Foreign-Affairs/Ethiopian-minister-links-Nile-understanding-to-Red.aspx"
+        },
+        {
+          "label": "EgyptToday, 25 novembre, position Égypte–Soudan · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.egypttoday.com/Article/1/150773/Egypt-Sudan-Ethiopia%E2%80%99s-unilateral-dam-poses-ongoing-threat-to-Nile"
+        },
+        {
+          "label": "Sudan Tribune, 3 novembre (réunion du 2 novembre 2026) · Passage ou notice consulté lors de la première passe",
+          "url": "https://sudantribune.com/article/320834"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AFR-17",
+      "context": "Le Somaliland a proclamé son indépendance en 1991 ; la Somalie revendique son intégrité territoriale. L'accès maritime recherché par l'Éthiopie enclavée a suscité de nouvelles tensions. La déclaration d'Ankara du 11 décembre 2024 prévoit de rechercher une solution respectant la souveraineté somalienne.",
+      "reference_date": "2024-12-11",
+      "current": "La déclaration d’Ankara, facilitée par la Turquie, fixe un cadre de recherche de coopération entre la Somalie et l’Éthiopie respectant la souveraineté somalienne. Sa mise en œuvre et les positions plus récentes restent à vérifier.",
+      "living": "Les accès portuaires, les échanges, les moyens de subsistance côtiers et les effets sur les communautés doivent être intégrés à l'analyse.",
+      "peace": "Suivre l'application de la déclaration d'Ankara et les possibilités de compromis ; les développements depuis le 19 novembre restent à vérifier.",
+      "sources": [
+        {
+          "label": "Turquie, déclaration d'Ankara · Page consultée lors de cette ouverture",
+          "url": "https://www.mfa.gov.tr/etiyopya-federal-demokratik-cumhuriyeti-ve-somali-federal-cumhuriyeti-nin-ankara-bildirisi.en.mfa"
+        },
+        {
+          "label": "Union africaine, position sur le Somaliland · Accès à revérifier",
+          "url": "https://au.int/sw/node/46283?qt-qt_documents_sp=1"
+        },
+        {
+          "label": "Ministère du Somaliland, 19 novembre, position de partie · Extrait seulement — texte intégral à vérifier",
+          "url": "https://mfagovsomaliland.org/news/press-releases/23aa41d9-c9b9-4fb7-86f1-02be0f45e1bd"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AFR-18",
+      "context": "La zone agricole d'Al-Fashaga est au cœur d'un différend frontalier ancien entre l'Éthiopie et le Soudan, mêlant démarcation, accès aux terres, sécurité des agriculteurs et relations entre les États. Les conflits internes des deux pays créent des risques supplémentaires.",
+      "reference_date": "2026-11-16",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "La sécurité des agriculteurs, l'accès aux terres cultivées et les déplacements transfrontaliers doivent être documentés.",
+      "peace": "Rechercher des mécanismes bilatéraux de désescalade et de démarcation. Les évolutions postérieures au 16 novembre restent à corroborer.",
+      "sources": [
+        {
+          "label": "AP, 16 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://apnews.com/article/649640494d674bfffcdc4418205b7485"
+        },
+        {
+          "label": "Agence de l'UE pour l'asile, Gedaref · Passage ou notice consulté lors de la première passe",
+          "url": "https://dip-aws.euaa.europa.eu/coi/216-gedaref/2162-conflict-dynamics-and-tactics"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "MOR-01",
+      "context": "La création d’Israël en 1948 et le déplacement massif de Palestiniens, puis l’occupation de la Cisjordanie, de Jérusalem-Est et de Gaza à partir de 1967 constituent des repères centraux. Le statut juridique et les évolutions après le retrait israélien de Gaza en 2005 doivent être étudiés distinctement. Les accords d’Oslo n’ont pas réglé le statut final. Les attaques du 7 octobre 2023 et la guerre qui a suivi ont aggravé la crise.",
+      "reference_date": "2026-11-27",
+      "current": "OCHA documente le 26 novembre les difficultés d’accès humanitaire, de protection, de santé et d’abris à Gaza et en Cisjordanie. Le lendemain, la FAO et le PAM soulignent une amélioration alimentaire fragile à Gaza et une détérioration anticipée en Cisjordanie. Le suivi régional conserve son niveau propre.",
+      "living": "Priorités : eau potable, assainissement, accès aux soins, abris, sécurité alimentaire, protection de l'enfance et restauration des terres. Les besoins de protection des civils israéliens et palestiniens doivent être pris en compte sans confusion entre populations et groupes armés.",
+      "peace": "Le cessez-le-feu entré en vigueur en octobre 2025 reste fragile. Examiner la mise en œuvre de la résolution 2803 (2025), les garanties de sécurité, le droit à l'autodétermination et la protection des civils. Le suivi régional conserve son historique et son niveau propre.",
+      "sources": [
+        {
+          "label": "ONU — rapport UNSCO de septembre 2026 · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.un.org/unispal/document/unsco-report-to-the-ad-hoc-liaison-committee-september-2026/"
+        },
+        {
+          "label": "OCHA — rapport humanitaire du 26 novembre · Page consultée lors de cette ouverture",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-26-november-2026"
+        },
+        {
+          "label": "AP — actualités régionales du 27 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://apnews.com/article/dbb2c950f5cd991a52f3a065b6325535"
+        },
+        {
+          "label": "FAO–PAM — communiqué conjoint du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "MOR-02",
+      "context": "Les conflits entre Israël et le Hezbollah, notamment la guerre de 2006, ont conduit à la résolution 1701 du Conseil de sécurité. L'arrangement de cessation des hostilités de novembre 2024 n'a pas éliminé les tensions. Les démarches de médiation et la mise en œuvre des engagements restent à suivre.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "La possibilité d'un retour sûr des déplacés, la remise en état des logements, des terres agricoles et des services essentiels ainsi que la protection des civils de part et d'autre de la Ligne bleue restent à évaluer.",
+      "peace": "Suivre les négociations sur le devenir de la présence onusienne, la mise en œuvre de la résolution 1701, le retrait israélien et les responsabilités de l'État libanais. Distinguer proposition, décision du Conseil de sécurité et mise en œuvre.",
+      "sources": [
+        {
+          "label": "ONU — résolution 2790 (2025), référence officielle · Passage ou notice consulté lors de la première passe",
+          "url": "https://mandates.un.org/mandate/S/RES/2790%282025%29?subject=Lebanon"
+        },
+        {
+          "label": "AP — entretien du 27 novembre avec le Premier ministre libanais · Extrait seulement — texte intégral à vérifier",
+          "url": "https://apnews.com/article/c758141bda52c64f6d2822048b1c400c"
+        },
+        {
+          "label": "Chambre des communes britannique — étude du mandat de la FINUL · Passage ou notice consulté lors de la première passe",
+          "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10348/"
+        },
+        {
+          "label": "ONU — FINUL, texte et dispositions de la résolution 2790 · Référence complémentaire à approfondir",
+          "url": "https://unifil.unmissions.org/en/news/security-council-extends-unifils-mandate-resolution-2790-2025"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "MOR-03",
+      "context": "Les relations entre l’Iran, les États-Unis et Israël comportent des antagonismes stratégiques, notamment autour du dossier nucléaire, de l’accord de 2015, du retrait américain de 2018 et des alliances régionales. La qualification des hostilités et des opérations récentes exige un examen distinct.",
+      "reference_date": "2026-11-11",
+      "current": "La déclaration conjointe du G7, publiée à la suite de la réunion des 9 et 10 novembre, constitue un document de référence sur les positions diplomatiques de ses membres. Les informations opérationnelles plus récentes restent à confronter.",
+      "living": "La sécurité des populations du Golfe, les conséquences environnementales d'attaques contre les infrastructures, la sûreté nucléaire et la continuité des approvisionnements nécessitent un suivi spécifique.",
+      "peace": "Rechercher les garanties de désescalade, le rôle des médiateurs qatariens et pakistanais, la reprise de la coopération avec l'AIEA et les conditions de sécurité de la navigation. Aucun accord définitif n'est établi dans les sources examinées.",
+      "sources": [
+        {
+          "label": "Reuters — médiation qatarienne, 21 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/middle-east/qatari-delegation-visits-tehran-talks-iranian-official-says-2026-11-21/"
+        },
+        {
+          "label": "AP — blocus et diplomatie, 27 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://apnews.com/article/800620518a351282f098faa9381b3375"
+        },
+        {
+          "label": "G7 — déclaration publiée le 11 novembre, réunion des 9 et 10 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/dichiarazione-congiunta-a-seguito-della-riunione-dei-ministri-degli-esteri-del-g7-tenutasi-a-parigi-il-9-e-10-novembre-2026/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "MOR-04",
+      "context": "Le soulèvement de 2011 a débouché sur une guerre internationalisée, des déplacements massifs et la fragmentation du territoire. La chute du régime de Bachar al-Assad en décembre 2024 a ouvert une transition ; l'intégration des structures kurdes et la représentation des différentes communautés restent des enjeux institutionnels.",
+      "reference_date": "2026-11-24",
+      "current": "Le HCR décrit le 24 novembre une aide au retour susceptible d’être proposée à certaines familles, sous conditions. Cette annonce ne prouve ni la sécurité générale des retours ni l’éligibilité de toutes les personnes.",
+      "living": "Évaluer les conditions des retours libres et sûrs, le logement, les services essentiels, la restitution foncière et la protection des minorités. L'annonce d'une aide ne garantit pas son versement à chaque famille.",
+      "peace": "Suivre la transition inclusive, l'effectivité des garanties constitutionnelles, la sécurité locale et l'intégration institutionnelle. L'état des violences des derniers jours nécessite une recherche complémentaire.",
+      "sources": [
+        {
+          "label": "Ministère britannique de l'Intérieur — note sur les régions kurdes syriennes, novembre 2026 · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.gov.uk/government/publications/syria-country-policy-and-information-notes/country-policy-and-information-note-kurds-and-kurdish-areas-syria-november-2026-accessible"
+        },
+        {
+          "label": "HCR — aide au retour, 24 novembre · Page consultée lors de cette ouverture",
+          "url": "https://help.unhcr.org/syria/2026/11/24/returning-to-syria-find-out-what-support-may-be-available-to-you/"
+        },
+        {
+          "label": "HCR — évaluation de la réponse aux retours et à la réintégration · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.unhcr.org/publications/unhcr-s-response-return-and-reintegration-refugees-and-internally-displaced-persons"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "MOR-05",
+      "context": "L'intervention de 2003 a ouvert une nouvelle période institutionnelle. La Constitution de 2005 reconnaît une région autonome du Kurdistan au sein de l'Irak fédéral. Les différends sur les recettes pétrolières, les compétences, les territoires disputés, les groupes armés et les influences extérieures persistent.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Suivre les conséquences des différends budgétaires et pétroliers sur les salaires, les services publics, les moyens de subsistance et les pollutions liées à l'exploitation des hydrocarbures.",
+      "peace": "Privilégier l'analyse constitutionnelle contradictoire du partage des compétences et des ressources ; observer les possibilités de négociation Bagdad–Erbil et de maîtrise des armes par les institutions légitimes.",
+      "sources": [
+        {
+          "label": "Ministère britannique de l’Intérieur — note de septembre 2026, actualisée le 6 octobre 2026 · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.gov.uk/government/publications/iraq-country-policy-and-information-notes/country-policy-and-information-note-opposition-to-the-government-in-the-kurdistan-region-of-iraq-kri-iraq-july-2023-accessible"
+        },
+        {
+          "label": "Reuters — manifestations, 26 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/business/energy/iraqi-kurds-protest-against-baghdad-leaders-moves-assert-central-control-2026-11-26/"
+        },
+        {
+          "label": "Reuters — position américaine et différends, 27 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/middle-east/trump-backs-iraqi-leaders-efforts-assert-more-state-authority-2026-11-27/"
+        },
+        {
+          "label": "Al Jazeera — positions divergentes, 27 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.aljazeera.com/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "MOR-06",
+      "context": "La prise de Sanaa par les Houthis en 2014 et l'intervention de la coalition menée par l'Arabie saoudite en 2015 ont internationalisé une crise politique et territoriale yéménite. Les attaques contre la navigation depuis 2023 ont renforcé ses implications régionales et commerciales.",
+      "reference_date": "2026-11-27",
+      "current": "La FAO et le PAM placent le Yémen parmi les foyers de préoccupation alimentaire maximale. Les engagements militaires et les initiatives diplomatiques régionales doivent être examinés séparément de la situation humanitaire.",
+      "living": "L'UNFPA rappelle le 22 novembre l'ampleur des besoins humanitaires et les difficultés d'accès aux soins maternels. La sécurité des marins, la prévention des pollutions marines et la continuité des approvisionnements sont également à examiner.",
+      "peace": "Distinguer le règlement politique yéménite, la protection de la navigation et la désescalade entre États. Examiner la mise en œuvre des engagements de protection et d'accès humanitaire, sans assimiler un pacte de défense à une entrée en guerre.",
+      "sources": [
+        {
+          "label": "Ministère pakistanais des Affaires étrangères — communiqué conjoint du 27 novembre (extrait indexé) · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.mofa.gov.pk/press-releases/second-meeting-of-the-strategic-political-and-defence-committee-s-pdc-of-the-makkah-alliance-for-defence-joint-statement"
+        },
+        {
+          "label": "AP — réunion d'Islamabad, 27 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://apnews.com/article/6c17e4827e5aef3e69f78cdb01d597dc"
+        },
+        {
+          "label": "ONU au Yémen / UNFPA — besoins humanitaires, 22 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://yemen.un.org/en/326491-unfpa-yemen-%E2%80%9Ceverything-was-looted%E2%80%9D-displaced-midwife-saves-mothers-amid-yemen%E2%80%99s-conflict"
+        },
+        {
+          "label": "FAO–PAM — communiqué conjoint du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "MOR-07",
+      "context": "Le conflit armé entre l'État turc et le PKK depuis 1984 doit être distingué de la question plus large des droits et de la représentation des populations kurdes dans plusieurs pays. Les tentatives de dialogue et l'appel d'Abdullah Öcalan en 2025 à la fin de la lutte armée ont ouvert une nouvelle séquence politique.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "La sécurité des populations, les droits culturels, la liberté d'expression, la réintégration civile et la gouvernance locale sont des conditions d'une paix durable, au-delà de la seule cessation des violences.",
+      "peace": "Vérifier le texte promulgué, les décisions de mise en œuvre, les garanties juridiques et la participation des différentes parties. Distinguer désarmement annoncé, vérifié et appliqué, ainsi que négociation politique et droits individuels.",
+      "sources": [
+        {
+          "label": "Présidence turque — communiqué du Conseil national de sécurité, 26 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.iletisim.gov.tr/english/haberler/detay/nsc-convenes-at-the-presidential-complex-26-11-26"
+        },
+        {
+          "label": "Deutsche Welle — loi-cadre et processus de paix, août 2026 · Passage ou notice consulté lors de la première passe",
+          "url": "https://amp.dw.com/en/can-turkeys-new-pkk-law-bring-peace/a-78326063"
+        },
+        {
+          "label": "Turkish Minute — absence de confirmation du désarmement, 27 novembre (extrait indexé) · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.turkishminute.com/2026/11/27/turkey-gives-no-confirmation-kurdish-militants-have-laid-down-arms/"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "ASI-01",
+      "context": "Depuis 1949, Taïwan est administrée séparément de la République populaire de Chine. Pékin revendique l'île comme partie de son territoire ; les autorités de Taipei rejettent cette prétention. Le détroit concentre des enjeux de sécurité régionale, de diplomatie et de commerce.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Préserver la sécurité des populations, la pêche, les transports maritimes et la continuité des services essentiels.",
+      "peace": "Observer les mécanismes de communication et de prévention des incidents ; distinguer activité militaire, intention politique et décision d'entrer en guerre.",
+      "sources": [
+        {
+          "label": "Ministère taïwanais de la Défense, communiqué du 21 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www-mnd-gov-tw-01-d3hddnfbecgmc7d0.a01.azurefd.net/EN/News/PressRelease/88327"
+        },
+        {
+          "label": "Reuters, 27 novembre, élections locales et tensions · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/china/taiwan-candidates-campaign-key-local-elections-final-day-2026-11-27/"
+        },
+        {
+          "label": "Reuters, 27 novembre, exercices côtiers · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/china/chinese-military-tests-new-taiwan-landing-tactics-coastal-drills-2026-11-27/"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "ASI-02",
+      "context": "Les revendications maritimes de la Chine et de plusieurs États riverains se chevauchent en mer de Chine méridionale. La convention des Nations unies sur le droit de la mer et la sentence arbitrale de 2016 dans l'affaire Philippines–Chine constituent des références juridiques distinctes des revendications de souveraineté sur les îles.",
+      "reference_date": "2026-11-26",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "La pêche artisanale, la préservation des récifs, les ressources marines et la liberté de navigation doivent être prises en compte.",
+      "peace": "Suivre les négociations sous la présidence singapourienne de l'ASEAN en 2027, la prévention des incidents et le respect du droit de la mer.",
+      "sources": [
+        {
+          "label": "Chatham House, 17 novembre, état des négociations · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.chathamhouse.org/2026/11/philippines-did-not-deliver-south-china-sea-code-conduct-it-has-shown-what-asean-can"
+        },
+        {
+          "label": "Reuters, 26 novembre, déclaration chinoise (reprise ThePrint) · Passage ou notice consulté lors de la première passe",
+          "url": "https://theprint.in/world/chinas-defence-ministry-urges-japan-to-stop-stirring-up-south-china-sea-disputes/3109598/"
+        },
+        {
+          "label": "CNA, 17 novembre — état des négociations du code de conduite · Référence complémentaire à approfondir",
+          "url": "https://www.channelnewsasia.com/asia/cna-explains-south-china-sea-talks-unfinished-asean-6558131"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "ASI-03",
+      "context": "Les îles Senkaku/Diaoyu, administrées par le Japon et revendiquées par la Chine et Taïwan, concentrent des différends de souveraineté et de délimitation maritime. Les tensions croisent les enjeux du détroit de Taïwan, sans constituer un dossier identique.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "La sécurité des pêcheurs, les ressources halieutiques et la prévention des accidents en mer sont directement concernées.",
+      "peace": "Suivre les canaux bilatéraux de communication maritime et aérienne ainsi que les mesures de prévention des incidents.",
+      "sources": [
+        {
+          "label": "Taipei Times, 27 novembre, déclarations des deux parties · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.taipeitimes.com/News/front/archives/2026/11/27/2003868473"
+        },
+        {
+          "label": "USNI News, 27 novembre, suivi régional · Extrait seulement — texte intégral à vérifier",
+          "url": "https://news.usni.org/2026/11/27/usni-news-western-pacific-pulse-nov-27-2026"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "ASI-04",
+      "context": "L'armistice de 1953 a interrompu les combats de la guerre de Corée sans traité de paix. La division de la péninsule, le programme nucléaire nord-coréen, les sanctions et les alliances de sécurité constituent les principaux enjeux.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "L'aide humanitaire, la sécurité alimentaire, les droits des personnes et la réduction des risques nucléaires sont des préoccupations distinctes à suivre.",
+      "peace": "Préserver les canaux de communication, notamment intercoréens ; examiner les possibilités de dialogue et les mesures de réduction des risques.",
+      "sources": [
+        {
+          "label": "Reuters, 25 novembre, fermeture du bureau suisse · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/business/aerospace-defense/north-korea-expels-swiss-representative-closes-diplomatic-office-over-sanctions-2026-11-25/"
+        },
+        {
+          "label": "AP, 27 novembre, contexte diplomatique · Extrait seulement — texte intégral à vérifier",
+          "url": "https://apnews.com/article/c92ed77891d514ac5240ecf1cb82926a"
+        },
+        {
+          "label": "Yonhap, 13 novembre — échanges ministériels Séoul–Pékin sur la paix dans la péninsule · Passage ou notice consulté lors de la première passe",
+          "url": "https://en.yna.co.kr/view/AEN20261113002051315"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "ASI-05",
+      "context": "La partition de 1947 a ouvert le différend du Cachemire. Les guerres successives, la ligne de contrôle, les capacités nucléaires des deux États et les différends liés au terrorisme et au partage de l'Indus structurent leur relation. Les affrontements de mai 2025 ont ravivé les tensions.",
+      "reference_date": "2026-11-20",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "La coopération sur l'eau, les effets des sécheresses et des crues, ainsi que la protection des populations du Cachemire doivent être étudiés en propre.",
+      "peace": "Évaluer les échanges techniques et les possibilités de dialogue, notamment sur l'Indus, sans confondre rencontre multilatérale et résolution du différend territorial.",
+      "sources": [
+        {
+          "label": "Ministère pakistanais des Affaires étrangères, 20 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.mofa.gov.pk/press-releases/transcript-of-the-press-briefing-by-the-spokesperson-on-friday-20th-november-2026"
+        },
+        {
+          "label": "Deutsche Welle, 19 novembre, contexte et limites du dialogue · Passage ou notice consulté lors de la première passe",
+          "url": "https://amp.dw.com/en/pakistan-minister-to-visit-india-but-no-breakthrough-expected/a-79991717"
+        },
+        {
+          "label": "Dawn, 20 novembre — arrivée à New Delhi · Référence complémentaire à approfondir",
+          "url": "https://www.dawn.com/news/2045878/musadik-malik-arrives-in-new-delhi-to-attend-sco-dialogue-forum"
+        },
+        {
+          "label": "Anadolu, 20 novembre — arrivée annoncée par la représentation pakistanaise · Référence complémentaire à approfondir",
+          "url": "https://www.aa.com.tr/en/asia-pacific/pakistani-minister-arrives-in-india-for-sco-civilizational-dialogue/4131724"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "ASI-06",
+      "context": "La guerre sino-indienne de 1962 et les différends de délimitation himalayenne restent au cœur des relations bilatérales. Les affrontements de Galwan en 2020 ont montré les risques liés à la ligne de contrôle effectif, dont le tracé est contesté dans plusieurs secteurs.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Les populations himalayennes, les écosystèmes d'altitude, le commerce frontalier et le partage des données hydrologiques sont des enjeux communs.",
+      "peace": "Suivre la mise en œuvre des mécanismes de prévention des incidents et des engagements relatifs aux cours d'eau ; les discussions ne constituent pas une démarcation définitive.",
+      "sources": [
+        {
+          "label": "Ministère chinois des Affaires étrangères, consensus du 25 août publié le 26 · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.mfa.gov.cn/eng./wjbzhd/202608/t20260826_12011002.html"
+        },
+        {
+          "label": "South China Morning Post, 27 novembre, échanges frontaliers · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.scmp.com/news/china/diplomacy/article/3376066/china-and-india-hold-fresh-border-talks-both-boost-military-readiness-winter?module=latest&pgtype=homepage"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "ASI-07",
+      "context": "La frontière issue de la ligne Durand, les mouvements transfrontaliers et la présence de groupes armés constituent des sources de tensions entre Kaboul et Islamabad. Le retour des talibans au pouvoir en 2021 a modifié les relations entre les deux pays.",
+      "reference_date": "2026-11-22",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Le droit à la protection internationale, les conditions de retour, les services frontaliers et l'accès humanitaire doivent être distingués des enjeux militaires.",
+      "peace": "Suivre les démarches de médiation, les engagements frontaliers et l'accès des civils aux points de passage ; ne pas assimiler réfugiés et groupes armés.",
+      "sources": [
+        {
+          "label": "Reuters, 24 février, tensions transfrontalières · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/asia-pacific/pakistan-afghan-forces-exchange-fire-after-airstrikes-deepen-tensions-2026-02-24/"
+        },
+        {
+          "label": "South Asia Terrorism Portal, 2 novembre, signalement d'affrontements · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.satp.org/terrorism-update/renewed-clashes-between-taliban-and-pakistani-forces-at-torkham-border-crossing"
+        },
+        {
+          "label": "HCR, 22 novembre, suivi des retours · Passage ou notice consulté lors de la première passe",
+          "url": "https://data.unhcr.org/fr/documents/details/124957"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "ASI-08",
+      "context": "Les conflits entre l'armée et des organisations armées ethniques s'inscrivent dans une histoire de tensions territoriales et de représentation politique. Les persécutions des Rohingya, particulièrement en 2017, et le coup d'État militaire de 2021 ont aggravé la crise.",
+      "reference_date": "2026-11-19",
+      "current": "Le mécanisme indépendant d’enquête des Nations unies indique que la CIJ a jugé le 19 novembre que le Myanmar avait commis un génocide contre les Rohingya dans le nord du Rakhine en 2017, et a ordonné des mesures de réparation et de non-répétition. La responsabilité étatique et la responsabilité pénale individuelle sont distinctes. L’exécution de l’arrêt reste à suivre.",
+      "living": "La protection des Rohingya et des autres populations civiles, les retours sûrs et volontaires, l'accès aux soins, l'alimentation et la restitution des biens sont essentiels.",
+      "peace": "Suivre l'exécution de l'arrêt, les garanties de non-répétition, les réparations et la recherche d'un règlement politique inclusif. L'arrêt ne constitue pas en lui-même la fin des hostilités.",
+      "sources": [
+        {
+          "label": "Mécanisme d'enquête indépendant de l'ONU, arrêt du 19 novembre · Page consultée lors de cette ouverture",
+          "url": "https://iimm.un.org/icj-gambia-v-myanmar"
+        },
+        {
+          "label": "Gouvernement britannique, déclaration du 23 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.gov.uk/government/speeches/foreign-secretary-statement-to-the-house-of-commons-23-november-2026"
+        },
+        {
+          "label": "Le Monde, 27 novembre, réaction des autorités birmanes · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.lemonde.fr/international/article/2026/11/27/birmanie-le-dictateur-birman-min-aung-hlaing-fait-peu-de-cas-du-verdict-de-la-cij_6815834_3210.html"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "ASI-09",
+      "context": "Les différends frontaliers terrestres, notamment autour des temples, et les revendications maritimes dans le golfe de Thaïlande sont distincts. Les affrontements de 2025 ont conduit à de nouveaux engagements de cessez-le-feu. Les démarches de conciliation maritime doivent être suivies séparément.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Suivre le retour des déplacés, la sécurité des zones frontalières, les ressources marines, la pêche et les échanges locaux.",
+      "peace": "Évaluer séparément l'application du cessez-le-feu terrestre, la conciliation maritime et la coopération au sein de l'ASEAN.",
+      "sources": [
+        {
+          "label": "Cour permanente d'arbitrage, affaire 2026-35 · Accès à revérifier",
+          "url": "https://pca-cpa.org/en/cases/380/"
+        },
+        {
+          "label": "Cour permanente d'arbitrage, communiqué du 27 novembre (notice indexée) · Accès à revérifier",
+          "url": "https://pca-cpa.org/fr/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-6/"
+        },
+        {
+          "label": "Reuters, 27 novembre, accord sur une visite · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/markets/commodities/cambodia-thailand-agree-maritime-site-visit-dispute-proceedings-2026-11-27/"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "ASI-10",
+      "context": "Le retour des talibans au pouvoir en août 2021 a modifié la nature de la crise afghane. Les activités de groupes armés, notamment l'État islamique au Khorassan, les restrictions de droits et les difficultés économiques et humanitaires doivent être étudiées séparément.",
+      "reference_date": "2026-11-27",
+      "current": "La FAO et le PAM maintiennent l’Afghanistan parmi les foyers de très forte préoccupation alimentaire. Les conditions des retours et le bilan sécuritaire intérieur récent nécessitent des vérifications complémentaires.",
+      "living": "L'accès à l'alimentation, aux soins, à l'éducation et aux moyens de subsistance, notamment pour les femmes et les filles, constitue un axe essentiel.",
+      "peace": "Observer les conditions d'accès humanitaire, le respect des droits, la protection des personnes et les possibilités de dialogue avec les autorités de fait.",
+      "sources": [
+        {
+          "label": "PAM–FAO, 27 novembre, perspectives alimentaires · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.wfp.org/news/el-nino-adds-new-hunger-hotspots-conflict-continues-drive-risk-famine-warn-fao-and-wfp"
+        },
+        {
+          "label": "HCR, situation afghane, documentation régionale · Passage ou notice consulté lors de la première passe",
+          "url": "https://data.unhcr.org/en/situations/afghanistan?gsid=84727841-98b9-41d7-b934-d16db4751a57"
+        },
+        {
+          "label": "HCR, 22 novembre, retours depuis le Pakistan · Passage ou notice consulté lors de la première passe",
+          "url": "https://data.unhcr.org/fr/documents/details/124957"
+        },
+        {
+          "label": "FAO–PAM — communiqué conjoint du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "ASI-11",
+      "context": "Le Pakistan connaît plusieurs foyers de violence intérieure : insurrection séparatiste au Baloutchistan, activités du Tehrik-e-Taliban Pakistan et autres groupes armés. Les enjeux de représentation politique, de ressources et de droits ne se réduisent pas à la lutte antiterroriste.",
+      "reference_date": "2026-11-26",
+      "current": "L’Agence de l’Union européenne pour l’asile a publié le 26 novembre une étude consacrée à la sécurité au Baloutchistan, portant sur janvier–22 novembre 2026. La notice est accessible ; les conclusions détaillées du rapport restent à examiner.",
+      "living": "Suivre les conséquences pour les civils, les déplacements, les droits fondamentaux, l'accès aux ressources et la continuité des services.",
+      "peace": "Examiner les possibilités de règlement politique et de justice, les mesures de protection et la distinction entre faits établis et accusations des autorités.",
+      "sources": [
+        {
+          "label": "EUAA, 26 novembre, notice de l'étude et période de référence · Page consultée lors de cette ouverture",
+          "url": "https://www.euaa.europa.eu/publications/coi-query-response-pakistan-security-situation-balochistan-province"
+        },
+        {
+          "label": "Dawn, 26 novembre, annonce de l'armée · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.dawn.com/news/2047181/security-forces-kill-12-india-sponsored-terrorists-in-multiple-ibos-in-balochistan-ispr"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "ASI-12",
+      "context": "Les conflits à Mindanao ont conduit à l'accord global sur le Bangsamoro de 2014 entre le gouvernement philippin et le Front moro islamique de libération (MILF). L'autonomie politique et la normalisation, dont le désarmement et la réintégration, sont deux volets complémentaires. Les autres foyers armés philippins nécessitent un suivi distinct.",
+      "reference_date": "2026-11",
+      "current": "L’autorité philippine chargée de la paix publie des informations sur les démarches de consolidation de la paix. La mise en œuvre de l’accord du Bangsamoro, notamment la réintégration et les engagements institutionnels, reste à documenter précisément.",
+      "living": "Le développement des communautés, la justice transitionnelle, les droits fonciers et la sécurité des personnes réintégrées conditionnent la durabilité du processus.",
+      "peace": "Évaluer l'application effective des engagements politiques et socio-économiques, au-delà de l'installation du parlement.",
+      "sources": [
+        {
+          "label": "Présidence philippine, 6 novembre (communiqué indexé) · Extrait seulement — texte intégral à vérifier",
+          "url": "https://pco.gov.ph/news_releases/pbbm-milf-leaders-discuss-remaining-steps-towards-lasting-bangsamoro-peace/"
+        },
+        {
+          "label": "Autorité philippine chargée de la paix, archives de novembre · Page consultée lors de cette ouverture",
+          "url": "https://peace.gov.ph/2026/11/"
+        },
+        {
+          "label": "Vera Files, analyse du processus de normalisation · Passage ou notice consulté lors de la première passe",
+          "url": "https://verafiles.org/articles/bangsamoro-peace-process-sufficiently-off-track-as-normalization-lags"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "ASI-13",
+      "context": "Les tensions internes en Inde recouvrent des situations distinctes. Au Manipur, les violences intercommunautaires entre Meitei et Kuki-Zo depuis mai 2023 s'ajoutent à d'autres tensions locales impliquant notamment des organisations naga. Les conflits du Cachemire et l'insurrection maoïste ne doivent pas être confondus avec ce dossier local.",
+      "reference_date": "2026-11-26",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "L'accès aux services, aux routes d'approvisionnement, aux terres et au logement des personnes déplacées exige une attention égale aux différentes communautés.",
+      "peace": "Soutenir la documentation des besoins, la recherche de garanties impartiales et le dialogue entre communautés. Ce premier socle ne couvre pas l'ensemble des situations intérieures de l'Inde.",
+      "sources": [
+        {
+          "label": "The East Times, 24 novembre, tensions et déplacement · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.theeasttimes.com/india/manipur-faces-renewed-unrest-as-highway-blockade-threat-idp-protests-and-nrc-demand-intensify/203/"
+        },
+        {
+          "label": "Nagaland.News, 26 novembre, report du blocage annoncé · Passage ou notice consulté lors de la première passe",
+          "url": "https://nagaland.news/cotu-highway-shutdown-naga-bodies/"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "EUR-01",
+      "context": "L'annexion de la Crimée par la Russie en 2014, non reconnue par la majorité des États, et la guerre dans le Donbass précèdent l'invasion russe à grande échelle de février 2022. Les accords de Minsk n'ont pas permis un règlement durable. La souveraineté ukrainienne, la sécurité des populations et les garanties de paix constituent des enjeux centraux.",
+      "reference_date": "2026-11-27",
+      "current": "Le Conseil européen des 26–27 novembre a examiné les besoins financiers ukrainiens de 2027. Il indique que 24 États membres soutiennent une proposition, la Bulgarie limitant sa participation au volet non militaire, et que la question sera reprise en décembre. Ce dossier financier est distinct des négociations de paix.",
+      "living": "Les civils, les personnes déplacées, la continuité des soins, de l'électricité et de l'eau, la sûreté nucléaire et la restauration des sols contaminés ou dégradés doivent rester au centre de l'analyse.",
+      "peace": "Suivre les démarches de médiation, les échanges de prisonniers et les garanties de sécurité, ainsi que l'application effective des cessez-le-feu éventuels. Le suivi régional conserve sa chronologie et son niveau validé.",
+      "sources": [
+        {
+          "label": "Conseil de l'UE, coordination diplomatique du 10 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/10/statement-on-today-s-meeting-in-abu-dhabi-between-the-eu-france-germany-italy-united-kingdom-ukraine-united-states-and-nato/"
+        },
+        {
+          "label": "Reuters, 27 novembre, médiation de l'AIEA · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/business/energy/iaea-working-with-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-2026-11-27/"
+        },
+        {
+          "label": "Conseil européen, réunion des 26–27 novembre · Page consultée lors de cette ouverture",
+          "url": "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/26-27/"
+        },
+        {
+          "label": "AP, 27 novembre, financement de l'Ukraine · Extrait seulement — texte intégral à vérifier",
+          "url": "https://apnews.com/article/fd025046850b824b2e62def18408c6b6"
+        },
+        {
+          "label": "AIEA, déclaration du 26 novembre, republication · Référence complémentaire à approfondir",
+          "url": "https://www.publicnow.com/view/8F4773C9BB8CBFD000AE92A795DD056FB05D551B"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "EUR-02",
+      "context": "Les relations entre la Russie et l'OTAN ont connu des phases de coopération et de confrontation depuis la fin de la guerre froide. L'élargissement de l'Alliance, les divergences sur l'architecture de sécurité européenne et l'invasion de l'Ukraine en 2022 ont accentué les tensions. La défense collective et l'engagement direct dans un conflit sont deux questions distinctes.",
+      "reference_date": "2026-11-26",
+      "current": "Une déclaration conjointe du président américain et du secrétaire général de l’OTAN a été publiée le 26 novembre. Les déclarations officielles, les incidents signalés et leur attribution sont des catégories distinctes ; aucun nouveau niveau n’est attribué dans cette fiche.",
+      "living": "Prévenir les atteintes aux infrastructures civiles et énergétiques, les accidents aériens et les risques nucléaires ; analyser les conséquences de la confrontation sur les conditions de vie et les ressources publiques.",
+      "peace": "Documenter les mécanismes de prévention des incidents, les canaux diplomatiques et les débats sur les garanties de sécurité. Un incident aérien ne démontre ni une attaque volontaire ni un déclenchement automatique de la défense collective.",
+      "sources": [
+        {
+          "label": "OTAN, discours du 23 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa"
+        },
+        {
+          "label": "OTAN, déclaration conjointe publiée le 26 novembre · Page consultée lors de cette ouverture",
+          "url": "https://www.nato.int/fr/news-and-events/articles/news/2026/11/26/joint-statement-by-the-president-of-the-united-states-of-america-and-the-nato-secretary-general"
+        },
+        {
+          "label": "Reuters, 27 novembre, signalement letton · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say-2026-11-27/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "EUR-03",
+      "context": "Après la guerre de 1998–1999 et l'administration internationale du Kosovo, la déclaration d'indépendance de 2008 a été reconnue par de nombreux États mais reste contestée par la Serbie et d'autres États. Le dialogue facilité par l'Union européenne depuis 2011 et l'accord de normalisation de 2023 visent à résoudre des différends pratiques et politiques.",
+      "reference_date": "2026-11-25",
+      "current": "Le sommet UE–Balkans occidentaux du 25 novembre réaffirme la perspective européenne des partenaires. Le SEAE présente le dialogue Belgrade–Pristina comme une démarche visant un accord complet de normalisation. Cela ne constitue pas un nouvel accord bilatéral.",
+      "living": "La sécurité des différentes communautés, l'accès aux services, la liberté de circulation, les droits linguistiques et la protection du patrimoine doivent être suivis.",
+      "peace": "Vérifier l'application des engagements antérieurs, notamment les dispositions relatives aux communautés serbes du Kosovo, et les garanties impartiales pour tous les habitants.",
+      "sources": [
+        {
+          "label": "Service européen pour l'action extérieure, historique du dialogue · Page consultée lors de cette ouverture",
+          "url": "https://www.eeas.europa.eu/eeas/belgrade-pristina-dialogue_en"
+        },
+        {
+          "label": "Conseil européen, sommet du 25 novembre · Page consultée lors de cette ouverture",
+          "url": "https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/25/"
+        },
+        {
+          "label": "Commission européenne, rapport sur l'élargissement du 4 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://enlargement.ec.europa.eu/news/2026-enlargement-package-shows-reform-commitment-delivers-progress-towards-eu-membership-2026-11-04_en"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "EUR-04",
+      "context": "Les accords de Dayton de 1995 ont mis fin à la guerre et établi une architecture constitutionnelle complexe, avec deux entités et le district de Brčko. La répartition des compétences, la représentation des peuples constitutifs et les droits des autres citoyens restent des enjeux institutionnels. Le Haut Représentant accompagne la mise en œuvre civile de la paix.",
+      "reference_date": "2026-11-25",
+      "current": "Le sommet UE–Balkans occidentaux a réaffirmé le soutien à la perspective européenne des partenaires et la nécessité de réformes. Ces conclusions régionales ne permettent pas, à elles seules, d’évaluer la stabilité institutionnelle de la Bosnie-Herzégovine.",
+      "living": "Le fonctionnement des services publics, l'égalité devant les institutions, le retour des déplacés, la coopération intercommunautaire et le déminage des territoires sont des enjeux de paix durable.",
+      "peace": "Suivre la stabilité des institutions, l'application de Dayton, la protection des droits fondamentaux et les réformes nécessaires à l'intégration européenne.",
+      "sources": [
+        {
+          "label": "Commission européenne, rapport Bosnie-Herzégovine du 4 novembre (notice officielle) · Passage ou notice consulté lors de la première passe",
+          "url": "https://enlargement.ec.europa.eu/bosnia-and-herzegovina-report-2026_en?prefLang=bg"
+        },
+        {
+          "label": "Conseil européen, sommet du 25 novembre · Page consultée lors de cette ouverture",
+          "url": "https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/25/"
+        },
+        {
+          "label": "Commission européenne, déclaration sur les élections du 4 octobre · Passage ou notice consulté lors de la première passe",
+          "url": "https://enlargement.ec.europa.eu/news/joint-statement-high-representativevice-president-kallas-and-commissioner-kos-general-elections-2026-10-06_en?prefLang=da"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "EUR-05",
+      "context": "Le conflit de 1992 a conduit à une séparation de fait de la Transnistrie, qui demeure internationalement reconnue comme partie de la Moldavie. La présence de forces russes, la sécurité, les droits des habitants et les relations économiques entre les deux rives du Dniestr structurent les négociations.",
+      "reference_date": "2026-09-24",
+      "current": "L’OSCE confirme une rencontre des représentants politiques le 24 septembre à Tiraspol et des échanges portant notamment sur les bureaux d’immatriculation et les locaux scolaires. Leur mise en œuvre et les développements plus récents restent à vérifier.",
+      "living": "Préserver la continuité des services, la circulation, les droits linguistiques et éducatifs, l'accès à l'énergie et les échanges entre les deux rives.",
+      "peace": "Suivre les groupes de travail et les négociations, les garanties de droits et les positions relatives à la présence militaire russe. Distinguer une déclaration diplomatique d'une mesure effectivement appliquée.",
+      "sources": [
+        {
+          "label": "OSCE, réunion du 24 septembre · Page consultée lors de cette ouverture",
+          "url": "https://moldova.osce.org/news/mission-moldova/667755"
+        },
+        {
+          "label": "Gouvernement moldave, compte rendu de la réunion du 20 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://gov.md/index.php/en/comunicate-de-presa-bpr/issues-reintegration-process-and-respect-human-rights-eastern-districts"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "EUR-06",
+      "context": "Les conflits du Haut-Karabakh ont marqué les relations depuis la dissolution de l'URSS, avec des guerres en 1991–1994 et 2020. L'offensive azerbaïdjanaise de septembre 2023 a entraîné le départ massif des habitants arméniens du territoire. En août 2025, les parties ont paraphé un projet de traité de paix et signé une déclaration politique à Washington.",
+      "reference_date": "2026-11-12",
+      "current": "Selon le communiqué officiel arménien, les dirigeants ont discuté le 12 novembre de la délimitation frontalière, des échanges, d’une future interconnexion électrique et de groupes de travail sur les eaux transfrontalières. Ces démarches ne constituent pas une ratification du traité.",
+      "living": "Les droits et la sécurité des déplacés, la protection du patrimoine, le déminage, les ressources et la coopération locale sont essentiels.",
+      "peace": "Suivre la formalisation du traité, la délimitation frontalière et les garanties de droits et de circulation. Les rapprochements entre sociétés civiles méritent une attention indépendante des annonces gouvernementales.",
+      "sources": [
+        {
+          "label": "Conseil de l'UE, relations avec l'Azerbaïdjan et texte paraphé en 2025 · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.consilium.europa.eu/en/policies/azerbaijan/"
+        },
+        {
+          "label": "Premier ministre arménien, rencontre du 12 novembre · Page consultée lors de cette ouverture",
+          "url": "https://www.primeminister.am/en/press-release/item/2026/11/12/Nikol-Pashinyan-Ilham-Aliyev/"
+        },
+        {
+          "label": "Euronews, 27 novembre, échanges des sociétés civiles · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.euronews.com/2026/11/27/azerbaijani-and-armenian-civil-societies-seek-new-history-in-new-round-of-peace-talks"
+        },
+        {
+          "label": "APA, 27 novembre, cinquième rencontre Peace Bridge · Extrait seulement — texte intégral à vérifier",
+          "url": "https://en.apa.az/foreign-policy/azerbaijan-armenia-peace-bridge-initiative-completes-fifth-round-of-talks-538970"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "EUR-07",
+      "context": "La division de Chypre s'inscrit dans les tensions intercommunautaires, le coup d'État de 1974 et l'intervention militaire turque qui a suivi. La République de Chypre est membre de l'UE ; l'entité autoproclamée au nord n'est reconnue que par la Turquie. L'ONU facilite la recherche d'un règlement politique et maintient une mission de paix.",
+      "reference_date": "2026-11-25",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Faciliter les contacts entre communautés, la coopération environnementale, la protection du patrimoine et les solutions aux différends fonciers. Les projets communs d'éducation et de gestion de l'environnement constituent des mesures de confiance possibles.",
+      "peace": "Suivre la mise en œuvre des passages annoncés et les bons offices de l'ONU ; distinguer la reprise du dialogue de l'accord final sur le statut de l'île.",
+      "sources": [
+        {
+          "label": "Reuters, 9 novembre, accord sur les points de passage · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/middle-east/cyprus-leaders-agree-open-new-border-crossings-future-talks-2026-11-09/"
+        },
+        {
+          "label": "Politis, 25 novembre, préparatifs du dialogue · Passage ou notice consulté lors de la première passe",
+          "url": "https://en.politis.com.cy/news/1074261/menelaou-window-still-open-for-enlarged-cyprus-meeting-before-guterres-leaves"
+        },
+        {
+          "label": "Famagusta Gazette, 25 novembre, réunion du 24 · Passage ou notice consulté lors de la première passe",
+          "url": "https://famagusta-gazette.com/cyprus-leaders-meet-at-un-buffer-zone-call-for-trilateral-talks-with-guterres/"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AME-01",
+      "context": "La fragilité institutionnelle, aggravée par l’assassinat du président en 2021, a favorisé l’emprise des groupes criminels et une transition politique difficile. Le BINUH accompagne les institutions haïtiennes.",
+      "reference_date": "2026-11-27",
+      "current": "Le 17 novembre, le Haut-Commissariat aux droits de l’homme a alerté sur les abus des gangs et sur les risques que certaines opérations de sécurité font peser sur les droits des habitants. Le 27 novembre, la FAO et le PAM classent Haïti parmi les foyers de très forte préoccupation alimentaire.",
+      "living": "Protéger les populations, les enfants, les personnes déplacées, les services essentiels et l’accès humanitaire.",
+      "peace": "Suivre la transition électorale, le contrôle des opérations de sécurité, la justice et la réduction des violences.",
+      "sources": [
+        {
+          "label": "ONU, mandat BINUH · Extrait seulement — texte intégral à vérifier",
+          "url": "https://mandates.un.org/mandate/S/RES/2814%282026%29"
+        },
+        {
+          "label": "ONU, point du 17 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://transcripts.un.org/en/briefing/geneva/2026-11-17"
+        },
+        {
+          "label": "ONU, élections et sécurité, octobre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://dppa.un.org/en/news/haiti-elections-on-hold-as-gangs-adapt-to-security-crackdown-security-council-hears"
+        },
+        {
+          "label": "FAO–PAM — communiqué conjoint du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        },
+        {
+          "label": "ONU Genève — point du HCDH du 17 novembre · Page consultée lors de cette ouverture",
+          "url": "https://www.unognewsroom.org/story/en/3328/un-human-rights-spokesperson-marta-hurtado-briefing-on-the-continued-atrocious-abuses-in-haiti"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AME-02",
+      "context": "L’accord de paix de 2016 avec les FARC a ouvert un processus de démobilisation et de réforme rurale. L’ELN, des dissidences et d’autres groupes armés restent actifs dans plusieurs territoires.",
+      "reference_date": "2026-11-22",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Protéger les communautés rurales et autochtones, les terres, les défenseurs de l’environnement et les personnes déplacées.",
+      "peace": "Suivre l’application territoriale de l’accord, les engagements des groupes armés, la justice et les garanties de sécurité.",
+      "sources": [
+        {
+          "label": "ONU, résolution 2833 · Passage ou notice consulté lors de la première passe",
+          "url": "https://mandates.un.org/mandate/S/RES/2833%20%282026%29"
+        },
+        {
+          "label": "ONU, rapport du secrétaire général, juin-septembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://digitallibrary.un.org/record/4129789?v=pdf"
+        },
+        {
+          "label": "Le Monde, bilan du 22 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.lemonde.fr/international/article/2026/11/22/en-colombie-dix-ans-apres-la-signature-de-l-accord-historique-le-bilan-amer-de-la-paix-avec-les-farc_6814189_3210.html"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AME-03",
+      "context": "Les réseaux criminels transnationaux, la corruption et les rivalités entre organisations affectent la sécurité de plusieurs États mexicains. La coopération avec les États-Unis soulève aussi des questions de souveraineté.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Protéger les habitants, les journalistes, les élus, les migrants et les personnes déplacées ; prévenir les abus lors des opérations.",
+      "peace": "Suivre la coopération consentie, la lutte contre l’impunité et la prévention du recrutement criminel ; ne pas assimiler toute violence à un conflit armé.",
+      "sources": [
+        {
+          "label": "Reuters, 27 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/americas/mexico-files-complaint-with-us-over-dea-tip-line-alleged-drug-traffickers-2026-11-27/"
+        },
+        {
+          "label": "CFR, contexte · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.cfr.org/global-conflict-tracker/conflict/criminal-violence-mexico"
+        },
+        {
+          "label": "Gouvernement mexicain, 6-8 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.gob.mx/sspc/prensa/el-gabinete-de-seguridad-del-gobierno-de-mexico-informa-acciones-relevantes-del-6-7-y-8-de-noviembre-de-2026?idiom=es"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AME-04",
+      "context": "La progression du trafic transnational et des violences carcérales depuis 2021 a aggravé la situation sécuritaire. Les autorités ont renforcé les moyens de lutte contre les organisations criminelles.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Protéger les familles déplacées, les enfants exposés au recrutement, les écoles et les moyens de subsistance.",
+      "peace": "Évaluer la coopération judiciaire internationale, le contrôle des opérations et la prévention territoriale.",
+      "sources": [
+        {
+          "label": "Associated Press, 27 novembre (extrait) · Extrait seulement — texte intégral à vérifier",
+          "url": "https://apnews.com/article/2c5edfb68eb298c5645715e918545960"
+        },
+        {
+          "label": "Reuters, 29 octobre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.investing.com/news/world-news/as-criminal-networks-spread-in-latin-america-quito-is-new-battleground-4982773"
+        },
+        {
+          "label": "Reuters, déplacements, 8 septembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.investing.com/news/world-news/as-gang-violence-deepens-hundreds-of-thousands-of-ecuadoreans-flee-their-homes-4891197"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AME-05",
+      "context": "Les relations entre le Venezuela et les États-Unis soulèvent des questions de souveraineté, de transition institutionnelle, de droits politiques et de gestion des ressources pétrolières. Les événements de 2026 et leur qualification juridique font l’objet d’un suivi distinct.",
+      "reference_date": "2026-09-24",
+      "current": "Une note de la bibliothèque de la Chambre des communes britannique publiée le 24 septembre décrit la capture de Nicolás Maduro le 3 janvier, la présidence intérimaire de Delcy Rodríguez et les conséquences économiques et humanitaires. Elle ne tranche pas la légalité de l’intervention. Les accords plus récents restent à examiner.",
+      "living": "Examiner les droits politiques, l’accès aux services, la reconstruction après les séismes et la gestion souveraine des ressources naturelles.",
+      "peace": "Suivre les garanties électorales, la protection des droits, la souveraineté et la transparence des accords économiques et militaires.",
+      "sources": [
+        {
+          "label": "Chambre des communes britannique, 24 septembre · Page consultée lors de cette ouverture",
+          "url": "https://commonslibrary.parliament.uk/research-briefings/CBP-12211/"
+        },
+        {
+          "label": "Reuters, 18 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.investing.com/news/world-news/us-defense-secretary-hegseth-vows-to-boost-venezuela-military-cooperation-5036784"
+        },
+        {
+          "label": "Reuters, 27 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/business/energy/us-pushed-venezuela-iraq-consider-leaving-opec-sources-say-2026-11-27/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AME-06",
+      "context": "Le différend territorial sur l’Essequibo porte notamment sur la sentence arbitrale de 1899 et l’accord de Genève de 1966. La Cour internationale de Justice est saisie ; le Guyana et le Venezuela défendent des positions divergentes.",
+      "reference_date": "2026-11-21",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Préserver les communautés autochtones, les forêts, les cours d’eau et la sécurité des habitants du territoire contesté.",
+      "peace": "Suivre la procédure judiciaire, le respect des mesures conservatoires et la prévention d’incidents ; vérifier directement le dossier de la Cour lors de l’audit.",
+      "sources": [
+        {
+          "label": "Gouvernement du Guyana, position sur la procédure · Accès à revérifier",
+          "url": "https://dpi.gov.gy/press-statement-guyana-stands-firm-on-sovereignty-as-icj-prepares-final-judgment-in-border-case/"
+        },
+        {
+          "label": "CBC/CMC, 21 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.cbc.bb/main-stories/guyana-rejects-bilateral-talks-with-venezuela-over-essequibo-dispute/"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AME-07",
+      "context": "Les violences de groupes criminels, l’extorsion, la pauvreté et les déplacements affectent notamment le Honduras, le Guatemala et le Salvador, selon des situations nationales distinctes.",
+      "reference_date": "2026-11-27",
+      "current": "Le HCR met à disposition une documentation opérationnelle par pays. La FAO et le PAM anticipent une dégradation alimentaire dans le corridor sec centraméricain. Ces projections climatiques et les violences organisées doivent être analysées séparément.",
+      "living": "Protéger les personnes déplacées, les enfants, les victimes de violences et l’accès au logement, à l’éducation et aux soins.",
+      "peace": "Suivre les réponses nationales, le cadre régional MIRPS et l’accès effectif à la protection et à la justice.",
+      "sources": [
+        {
+          "label": "HCR, crise régionale · Accès à revérifier",
+          "url": "https://www.unhcr.org/emergencies/el-salvador-guatemala-and-honduras-emergency?page=0"
+        },
+        {
+          "label": "HCR, Honduras · Accès à revérifier",
+          "url": "https://www.unhcr.org/where-we-work/countries/honduras"
+        },
+        {
+          "label": "HCR, portail régional — rapport Salvador juillet–septembre publié le 16 novembre · Page consultée lors de cette ouverture",
+          "url": "https://data.unhcr.org/en/situations/cam/location"
+        },
+        {
+          "label": "FAO–PAM — communiqué conjoint du 27 novembre 2026 · Page consultée lors de cette ouverture",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "AME-08",
+      "context": "Les organisations criminelles et les milices exercent des formes de contrôle économique et territorial variables selon les régions du Brésil. Les réponses policières suscitent des enjeux de responsabilité et de droits fondamentaux.",
+      "reference_date": "2026-11-24",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Protéger les habitants des quartiers exposés, les communautés forestières et les services publics ; garantir des enquêtes sur les abus présumés.",
+      "peace": "Suivre les politiques de prévention, la coordination judiciaire, le contrôle des forces de sécurité et les résultats territoriaux.",
+      "sources": [
+        {
+          "label": "Agência Brasil, 24 novembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://agenciabrasil.ebc.com.br/en/justica/noticia/2026-11/intelligence-agency-reports-31-criminal-organizations-brazil"
+        },
+        {
+          "label": "Human Rights Watch, 28 octobre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.hrw.org/news/2026/10/28/brazil-new-evidence-of-serious-police-misconduct-in-deadly-raid"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    },
+    {
+      "id": "AME-09",
+      "context": "Les relations entre Cuba et les États-Unis restent structurées par l’embargo, les sanctions, les divergences politiques et des questions de souveraineté et de droits humains.",
+      "reference_date": "2026-11-05",
+      "current": "Le 5 novembre, l’OFAC a publié une décision relative à quatre secteurs de l’économie cubaine et des désignations individuelles distinctes. Il faut distinguer la possibilité juridique de sanctions sectorielles, les mesures effectivement prises et les exemptions.",
+      "living": "Évaluer les effets des restrictions et des politiques nationales sur l’énergie, l’alimentation, les médicaments et les droits des habitants.",
+      "peace": "Suivre les canaux diplomatiques, les exemptions humanitaires et les conditions d’une désescalade respectant les droits et la souveraineté.",
+      "sources": [
+        {
+          "label": "ONU, résolution A/RES/81/7 · Extrait seulement — texte intégral à vérifier",
+          "url": "https://mandates.un.org/mandate/A/RES/81/7"
+        },
+        {
+          "label": "Reuters, 5 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/americas/us-issues-new-cuba-sanctions-takes-aim-sectors-cuban-economy-2026-11-05/"
+        },
+        {
+          "label": "Reuters, 5 octobre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.investing.com/news/world-news/exclusivecuba-and-us-maintain-channels-of-communication-but-no-negotiations-diplomat-says-4932854"
+        },
+        {
+          "label": "OFAC, décision et désignations du 5 novembre · Page consultée lors de cette ouverture",
+          "url": "https://ofac.treasury.gov/recent-actions/20261105"
+        },
+        {
+          "label": "OFAC, FAQ 1277 — portée de la détermination · Référence complémentaire à approfondir",
+          "url": "https://ofac.treasury.gov/faqs/1277"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "STR-01",
+      "context": "L’Arctique réunit huit États et des peuples autochtones dont les organisations participent au Conseil de l’Arctique, créé en 1996. Le recul des glaces, l’accès aux ressources et aux routes maritimes ainsi que les tensions entre la Russie et les États de l’OTAN renforcent les enjeux stratégiques. Le Conseil est un forum de coopération civile et scientifique, distinct des mécanismes de sécurité militaire.",
+      "reference_date": "2026-11-20",
+      "current": "Le Conseil de l’Arctique a annoncé le 20 novembre un atelier de coopération économique durable qui s’est tenu du 10 au 13 novembre à Ilulissat avec des délégations étatiques et autochtones. Cette coopération ne démontre pas à elle seule une désescalade militaire.",
+      "living": "Préserver les écosystèmes polaires, les moyens de subsistance et les droits des peuples autochtones ; suivre les effets de la fonte des glaces, de la navigation, de l’extraction et des pollutions sur les milieux marins et terrestres.",
+      "peace": "Maintenir les canaux scientifiques et civils, suivre les mécanismes de prévention des incidents et les accords de secours et de lutte contre les pollutions. Distinguer les intentions stratégiques, les capacités et les actes ; ne pas déduire une désescalade de la seule poursuite de la coopération.",
+      "sources": [
+        {
+          "label": "Conseil de l’Arctique, atelier de développement durable, 20 novembre · Page consultée lors de cette ouverture",
+          "url": "https://arctic-council.org/news/arctic-council-chairship-leads-workshop-for-sustainable-economic-development/"
+        },
+        {
+          "label": "OTAN, discours du 23 novembre — même document que EUR-02 · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa"
+        },
+        {
+          "label": "The Arctic Institute, stratégie russe du 26 novembre (extrait, texte officiel à vérifier) · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.thearcticinstitute.org/russias-2026-arctic-strategy-security-cooperation/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "STR-02",
+      "context": "Les États et territoires du Pacifique insulaire coopèrent notamment au sein du Forum des îles du Pacifique. Leurs priorités propres comprennent le climat, les océans, le développement et la sécurité. L’Australie, la Nouvelle-Zélande, la Chine, les États-Unis et d’autres partenaires développent des relations bilatérales et régionales dont les objectifs et modalités diffèrent.",
+      "reference_date": "2026-11-26",
+      "current": "Les déclarations conjointes des 25 et 26 novembre confirment la signature du traité Australie–Îles Salomon et l’entrée en vigueur des accords Australie–Fidji. Il faut distinguer la signature, l’entrée en vigueur et la mise en œuvre. Les engagements de développement et les priorités propres des populations insulaires font partie du suivi.",
+      "living": "Respecter les choix souverains des populations insulaires et examiner la résilience climatique, la préservation des océans, les ressources halieutiques, l’accès à l’eau, la mobilité, la santé et l’éducation.",
+      "peace": "Suivre les engagements régionaux de l’Océan de paix, les mécanismes de consultation, la transparence des accords et la prévention des rivalités imposées de l’extérieur. Distinguer signature, entrée en vigueur et application effective ; ne pas présumer du devenir des accords antérieurs.",
+      "sources": [
+        {
+          "label": "Australie–Îles Salomon, déclaration conjointe du 25 novembre · Page consultée lors de cette ouverture",
+          "url": "https://www.pm.gov.au/media/signing-australia-solomon-islands-treaty"
+        },
+        {
+          "label": "Australie–Fidji, déclaration conjointe du 26 novembre · Page consultée lors de cette ouverture",
+          "url": "https://www.pm.gov.au/media/entry-force-fiji-australia-vuvale-union-and-ocean-peace-alliance-veitacini-treaty"
+        },
+        {
+          "label": "Reuters, traité Australie–Îles Salomon, 25 novembre (extrait) · Extrait seulement — texte intégral à vérifier",
+          "url": "https://www.reuters.com/world/china/australia-solomon-islands-sign-security-pact-2026-11-25/"
+        }
+      ],
+      "documentary_note": "Repère documentaire partiel. Les autres sources et événements récents restent en cours de vérification ; aucune conclusion de vigilance ne découle de ce seul repère.",
+      "documentary_state": "repere_partiel"
+    },
+    {
+      "id": "STR-03",
+      "context": "La partie occidentale de l’île de Nouvelle-Guinée est administrée par l’Indonésie. Les contestations liées à son intégration dans les années 1960, aux droits des populations papoues et à la revendication d’indépendance alimentent un conflit prolongé. Le terme Papouasie occidentale désigne ici un ensemble géographique et non la seule province administrative du même nom. Les forces indonésiennes et le TPNPB sont notamment concernés.",
+      "reference_date": "2026-11-27",
+      "current": "Les actualités de cette situation restent en cours d’instruction. Les références ci-dessous constituent des pistes documentaires, sans confirmation intégrale de leurs contenus. Aucun nouveau constat daté n’est publié dans cette fiche à ce stade.",
+      "living": "Protéger les populations civiles et autochtones, garantir l’aide humanitaire, les soins, l’éducation et l’accès aux terres et aux forêts. Examiner les effets des projets de développement, des déplacements et des opérations de sécurité ; recueillir les positions des autorités et des communautés.",
+      "peace": "Suivre les appels au dialogue, les réponses institutionnelles aux recommandations de Komnas HAM, l’accès des observateurs indépendants et les garanties de retour volontaire et sûr des déplacés. Vérifier les allégations et chiffres auprès de sources indépendantes et officielles, sans confondre revendication politique et violence armée.",
+      "sources": [
+        {
+          "label": "Human Rights Monitor — rapport affiché au 12 novembre, contenant un bilan de fin novembre ; date d’actualisation incertaine · Passage ou notice consulté lors de la première passe",
+          "url": "https://humanrightsmonitor.org/reports/idp-update-november26-security-operations-and-new-troop-deployments-trigger-further-displacements-across-west-papua/"
+        },
+        {
+          "label": "Tempo via APSN, recommandations de Komnas HAM, 11 septembre · Passage ou notice consulté lors de la première passe",
+          "url": "https://www.asia-pacific-solidarity.net/news/2026-09-11/komnas-ham-urges-prabowo-curb-papua-conflict.html"
+        },
+        {
+          "label": "Human Rights Monitor, débat sur la qualification des groupes armés, 27 novembre · Extrait seulement — texte intégral à vérifier",
+          "url": "https://humanrightsmonitor.org/news/from-opm-and-kkb-to-keb-indonesian-govt-relabels-armed-groups-in-west-papua/"
+        }
+      ],
+      "documentary_note": "La date affichée correspond à une référence repérée, pas à une actualité validée.",
+      "documentary_state": "actualite_en_instruction"
+    }
+  ]
+}
