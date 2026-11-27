@@ -1,0 +1,362 @@
+{
+  "schema_version": "0.3.13",
+  "compiled_on": "2026-11-27",
+  "dossiers": [
+    {
+      "id": "AFR-01",
+      "context": "La guerre ouverte en avril 2023 oppose les Forces armées soudanaises (FAS) et les Forces de soutien rapide (FSR), anciens partenaires du pouvoir militaire issu du coup de 2021. La transition civile a été interrompue ; les violences au Darfour et au Kordofan s'inscrivent aussi dans des conflits plus anciens.",
+      "reference_date": "2026-11-27",
+      "current": "Le 25 novembre, l'Union africaine a pris acte d'une proposition éthiopienne de dialogue entre Soudanais. Le 27 novembre, la FAO et le PAM ont renouvelé leur mise en garde alimentaire.",
+      "living": "La priorité est l'accès humanitaire, la protection des civils, des systèmes de santé et des moyens de subsistance. Un risque localisé de famine ne signifie pas une famine nationale.",
+      "peace": "Suivre l'acceptation effective d'un dialogue inclusif et les engagements vérifiables de cessation des hostilités.",
+      "sources": [
+        {
+          "label": "ONU, genèse et efforts de paix",
+          "url": "https://dppa.un.org/en/news/sudan-conflict-peace-efforts-resume-to-end-drone-war-fuelling-humanitarian-crisis"
+        },
+        {
+          "label": "Union africaine, 25 novembre",
+          "url": "https://www.au.int/en/pressreleases/20261125/statement-chairperson-au-commission-sudan-mediation-proposal"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+        }
+      ]
+    },
+    {
+      "id": "AFR-02",
+      "context": "Indépendant depuis 2011, le Soudan du Sud connaît depuis 2013 une crise politico-militaire interne. L'accord revitalisé de 2018 organise la transition, le partage du pouvoir et les arrangements de sécurité.",
+      "reference_date": "2026-11-27",
+      "current": "L'Union africaine a inauguré le 27 novembre un groupe de travail commun avec l'IGAD et l'ONU. La présidence de la Commission appelle au respect du cessez-le-feu et à une feuille de route électorale crédible.",
+      "living": "Les déplacements, l'accès aux soins et les risques alimentaires exigent une surveillance locale ; la projection de risque de famine citée par la FAO–PAM concernait une période achevée en juillet 2026.",
+      "peace": "Évaluer les mesures de confiance et l'application de l'accord de 2018, sans présumer la réussite de la transition.",
+      "sources": [
+        {
+          "label": "ONU, contexte de la transition",
+          "url": "https://southsudan.un.org/en/about/about-the-un"
+        },
+        {
+          "label": "Union africaine, 27 novembre",
+          "url": "https://www.au.int/en/pressreleases/20261127/auc-chairperson-calls-commitment-advance-peace-southsudan"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+        }
+      ]
+    },
+    {
+      "id": "AFR-03",
+      "context": "Depuis les guerres des années 1990 et 2000, l'est de la RDC demeure confronté à des conflits locaux et transfrontaliers. Le M23 et d'autres groupes armés, la présence de réfugiés, les ressources et les différends sécuritaires avec le Rwanda se recoupent sans se confondre.",
+      "reference_date": "2026-11-13",
+      "current": "L'évaluation IPC estime que 28,8 millions de personnes sont en insécurité alimentaire aiguë de phase 3 ou plus de septembre à décembre 2026. Le communiqué inter-agences du 13 novembre annonce un risque de dégradation début 2027 ; ce n'est pas un nouveau bilan militaire.",
+      "living": "Protéger l'accès aux terres, aux marchés et aux soins, notamment dans les territoires orientaux affectés par les violences.",
+      "peace": "Suivre les engagements de cessez-le-feu, leur mise en œuvre et les mécanismes de sécurité régionale. Une actualisation diplomatique de la dernière semaine reste nécessaire.",
+      "sources": [
+        {
+          "label": "IPC, période septembre–décembre 2026",
+          "url": "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1165470/?iso3=COD"
+        },
+        {
+          "label": "PAM, FAO, UNICEF et OMS, 13 novembre",
+          "url": "https://www.wfp.org/news/conflict-and-disease-outbreaks-deepen-dr-congos-hunger-crisis-record-numbers-are-projected"
+        }
+      ]
+    },
+    {
+      "id": "AFR-04",
+      "context": "La crise ouverte au Mali en 2012 s'est étendue au Sahel central. Elle mêle insurrections armées, tensions locales, forces étatiques, changements de régime et recomposition des partenariats régionaux.",
+      "reference_date": "2026-11-25",
+      "current": "Les notes ACLED publiées les 24 et 25 novembre, couvrant le 14 au 20, décrivent une activité armée persistante dans les trois pays et des pressions sur les populations et les liaisons économiques.",
+      "living": "Les déplacements forcés, l'accès aux terres et aux marchés et la continuité des services sont des indicateurs essentiels.",
+      "peace": "Suivre la coopération régionale, les initiatives de dialogue local et la protection des civils indépendamment des stratégies militaires.",
+      "sources": [
+        {
+          "label": "ACLED, conflit au Sahel et notes hebdomadaires",
+          "url": "https://acleddata.com/region/conflict-sahel"
+        },
+        {
+          "label": "HCR, situation régionale du Sahel",
+          "url": "https://data.unhcr.org/en/situations/sahelcrisis"
+        }
+      ]
+    },
+    {
+      "id": "AFR-05",
+      "context": "L'insurrection de Boko Haram et la fragmentation de groupes armés, dont l'État islamique en Afrique de l'Ouest (ISWAP), ont donné à la crise du nord-est nigérian une dimension régionale dans le bassin du lac Tchad. Les violences criminelles du nord-ouest doivent être distinguées.",
+      "reference_date": "2026-11-27",
+      "current": "Le HCR a signalé le 13 novembre la hausse des déplacements vers le Niger et le Bénin. Le 27 novembre, la FAO et le PAM maintiennent certaines parties du Nigeria parmi les zones alimentaires les plus préoccupantes.",
+      "living": "Les populations déplacées, les communautés d'accueil et les moyens de subsistance agricoles sont particulièrement exposés.",
+      "peace": "Évaluer la coopération du bassin du lac Tchad et les solutions communautaires de protection, de retour volontaire et de réinsertion.",
+      "sources": [
+        {
+          "label": "HCR, 13 novembre",
+          "url": "https://www.unhcr.org/africa/news/press-releases/nigeria-unhcr-assistant-high-commissioner-protection-calls-urgent-support"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+        }
+      ]
+    },
+    {
+      "id": "AFR-06",
+      "context": "La guerre entre les autorités fédérales et les forces du Tigré de 2020 à 2022 a été suivie de l'accord de Pretoria. Les tensions avec différents acteurs du Tigré et d'autres régions, dont l'Amhara, restent distinctes mais peuvent se renforcer mutuellement.",
+      "reference_date": "2026-11-25",
+      "current": "Amnesty International a demandé le 23 novembre des enquêtes sur des attaques contre des zones civiles d'Alamata en septembre. Reuters a publié le 24 novembre la contestation d'un représentant des forces alliées au gouvernement. Il s'agit d'allégations à examiner, non d'une condamnation judiciaire.",
+      "living": "La protection des civils et le rétablissement des services et des activités agricoles sont des conditions d'une sortie durable du conflit.",
+      "peace": "Examiner la reprise du dialogue, le respect de Pretoria et la possibilité d'enquêtes indépendantes sur les violations présumées.",
+      "sources": [
+        {
+          "label": "Amnesty International, 23 novembre",
+          "url": "https://www.amnesty.org/en/latest/news/2026/11/ethiopia-lethal-artillery-strikes-on-civilian-neighbourhoods-in-tigrays-alamata-city-must-be-investigated-as-war-crimes/"
+        },
+        {
+          "label": "Reuters, 24 novembre",
+          "url": "https://www.reuters.com/world/ethiopian-shelling-of-tigray-town-should-be-investigated-possible-war-crimes-2026-11-24/"
+        },
+        {
+          "label": "AP, 25 novembre",
+          "url": "https://apnews.com/article/427358084fef2eb567e38acd81c3eacd"
+        }
+      ]
+    },
+    {
+      "id": "AFR-07",
+      "context": "La guerre frontalière de 1998–2000 a été suivie d'un rapprochement en 2018. L'intervention érythréenne aux côtés de l'armée éthiopienne pendant la guerre du Tigré n'a pas supprimé les différends entre les deux États.",
+      "reference_date": "2026-11-25",
+      "current": "Reuters a rapporté le 18 novembre des concentrations militaires signalées près de la frontière, sans pouvoir confirmer indépendamment des affrontements directs. Les informations des 24 et 25 novembre prolongent l'inquiétude liée au Tigré.",
+      "living": "Une extension interétatique menacerait les populations frontalières et les circuits d'aide et de commerce.",
+      "peace": "Distinguer signaux de tension et preuve d'une guerre interétatique ; rechercher les démarches de désescalade et les confirmations indépendantes.",
+      "sources": [
+        {
+          "label": "Reuters, 18 novembre",
+          "url": "https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/"
+        },
+        {
+          "label": "AP, 25 novembre",
+          "url": "https://apnews.com/article/427358084fef2eb567e38acd81c3eacd"
+        }
+      ]
+    },
+    {
+      "id": "AFR-08",
+      "context": "La reconstruction de l'État somalien après l'effondrement institutionnel de 1991 s'accompagne d'une insurrection durable d'Al-Shabaab. La sécurité dépend aussi de l'articulation entre institutions fédérales, autorités locales et partenaires extérieurs.",
+      "reference_date": "2026-11-27",
+      "current": "Le 26 novembre, l'Union africaine a évoqué les consultations sur l'avenir de sa mission AUSSOM, son financement et le transfert des responsabilités. Le lendemain, l'évaluation FAO–PAM a maintenu le pays parmi les foyers alimentaires prioritaires.",
+      "living": "Les personnes déplacées, notamment à Baidoa, restent très vulnérables. Le dernier communiqué ne projette toutefois pas de population en phase IPC 5 en Somalie.",
+      "peace": "Suivre le financement de la mission, les responsabilités somaliennes et les mécanismes de dialogue politique.",
+      "sources": [
+        {
+          "label": "Union africaine, 26 novembre",
+          "url": "https://au.int/index.php/en/pressreleases/20261126/chairperson-engages-eastern-african-prc-members-peace-security-priorities"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+        }
+      ]
+    },
+    {
+      "id": "AFR-09",
+      "context": "La crise ouverte en 2013, les conflits entre groupes armés et les fragilités de l'État ont conduit au déploiement de la MINUSCA en 2014. L'accord politique de paix de 2019 organise une partie des efforts de stabilisation.",
+      "reference_date": "2026-11-25",
+      "current": "Le Conseil de sécurité a renouvelé le mandat de la MINUSCA jusqu'au 15 novembre 2027. Une publication onusienne du 25 novembre signale les progrès du processus de paix mais souligne sa fragilité et les contraintes de financement.",
+      "living": "La protection civile, les services essentiels et l'aide humanitaire demeurent prioritaires dans les zones où l'autorité publique reste fragile.",
+      "peace": "Suivre le désarmement, la participation locale et l'application de l'accord, en tenant compte des capacités de la mission.",
+      "sources": [
+        {
+          "label": "ONU, résolution 2836 (2026)",
+          "url": "https://mandates.un.org/mandate/S/RES/2836%20%282026%29"
+        },
+        {
+          "label": "ONU, 25 novembre, paix fragile",
+          "url": "https://peacekeeping.un.org/fr/news/centrafrique-la-paix-avance-mais-reste-fragile"
+        }
+      ]
+    },
+    {
+      "id": "AFR-10",
+      "context": "Depuis 2017, une insurrection armée affecte Cabo Delgado, province du nord du Mozambique. Les inégalités locales, la gouvernance, l'accès aux terres et aux ressources, ainsi que l'intervention de partenaires de sécurité, constituent des dimensions distinctes.",
+      "reference_date": "2026-11-27",
+      "current": "L'OIM signalait le 3 novembre plus de 7 000 nouveaux déplacements depuis fin septembre. Le rapport alimentaire du 27 novembre alerte aussi sur les effets climatiques attendus en Afrique australe ; cette projection n'est pas un bilan des violences à Cabo Delgado.",
+      "living": "Soutenir les communautés déplacées, les agriculteurs et les pêcheurs ; distinguer risques liés au conflit et chocs climatiques.",
+      "peace": "Évaluer les conditions de retour volontaire, de protection et d'accès aux services ; les faits sécuritaires des tout derniers jours restent à corroborer.",
+      "sources": [
+        {
+          "label": "OIM, 3 novembre",
+          "url": "https://iom.int/news/fresh-violence-northern-mozambique-forces-over-7000-homes"
+        },
+        {
+          "label": "FEWS NET, perspectives d'octobre",
+          "url": "https://fews.net/southern-africa/mozambique/food-security-outlook/october-2026"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+        }
+      ]
+    },
+    {
+      "id": "AFR-11",
+      "context": "Les protestations dans les régions anglophones en 2016 ont évolué vers un conflit séparatiste. La violence dans l'Extrême-Nord, liée au bassin du lac Tchad, est un autre foyer de crise ; l'accueil de réfugiés centrafricains ajoute des besoins humanitaires.",
+      "reference_date": "2026-09-30",
+      "current": "Le rapport de situation UNFPA de septembre documente une dégradation liée à l'insécurité, aux inondations et aux maladies. Les données de la Commission européenne pour 2026 confirment les besoins d'aide et d'éducation. Aucun nouveau fait des derniers jours suffisamment corroboré dans cette première recherche.",
+      "living": "L'accès à l'école, aux soins, à la protection et aux moyens de subsistance doit être suivi séparément dans chaque région.",
+      "peace": "Rechercher les initiatives de dialogue, la protection des enfants et les solutions pour les personnes déplacées.",
+      "sources": [
+        {
+          "label": "UNFPA, rapport de septembre 2026",
+          "url": "https://www.unfpa.org/resources/situation-report-crisis-cameroon-september-2026"
+        },
+        {
+          "label": "Commission européenne, aide humanitaire",
+          "url": "https://civil-protection-humanitarian-aid.ec.europa.eu/where/africa/cameroon_en?prefLang=uk"
+        }
+      ]
+    },
+    {
+      "id": "AFR-12",
+      "context": "Depuis la chute du régime de Kadhafi en 2011, les divisions entre institutions, coalitions armées et autorités rivales rendent difficile l'unification de l'État. Le cessez-le-feu de 2020 n'a pas réglé la transition politique.",
+      "reference_date": "2026-11-22",
+      "current": "La mission de l'ONU a annoncé le 22 novembre une visite de cinq jours dans le sud du pays. Sa feuille de route prévoit des institutions unifiées et des élections ; son mandat a été renouvelé jusqu'au 31 octobre 2027.",
+      "living": "La continuité des services, la gestion des ressources et la protection des personnes vulnérables, notamment migrantes, sont des enjeux à documenter.",
+      "peace": "Suivre les engagements électoraux, l'unification institutionnelle et le dialogue entre régions, sans assimiler une annonce à sa réalisation.",
+      "sources": [
+        {
+          "label": "UNSMIL, feuille de route",
+          "url": "https://unsmil.unmissions.org/en/political-roadmap"
+        },
+        {
+          "label": "UNSMIL, déplacement du 22 novembre",
+          "url": "https://unsmil.unmissions.org/en/news/dsrsg-political-koury-begins-five-day-visit-to-southern-libya"
+        },
+        {
+          "label": "UNSMIL, mandat",
+          "url": "https://unsmil.unmissions.org/en/unsmil-mandate"
+        }
+      ]
+    },
+    {
+      "id": "AFR-13",
+      "context": "Ancienne colonie espagnole, le Sahara occidental est un territoire au statut international non résolu. Le Maroc revendique sa souveraineté, tandis que le Front Polisario revendique l'autodétermination et l'indépendance. La MINURSO avait été créée en 1991.",
+      "reference_date": "2026-11-10",
+      "current": "Le 30 octobre, le Conseil de sécurité n'a pas renouvelé le mandat de la MINURSO ; les Nations unies ont annoncé le début de sa liquidation le 1er novembre. L'Assemblée générale a débattu du veto le 10 novembre. Cette fin de mandat ne règle pas le statut du territoire.",
+      "living": "La protection des populations du territoire et des réfugiés sahraouis doit rester distincte des revendications de souveraineté.",
+      "peace": "Suivre les bons offices de l'ONU, les garanties de cessez-le-feu et le droit à l'autodétermination ; une actualisation après le 10 novembre reste nécessaire.",
+      "sources": [
+        {
+          "label": "ONU, fin du mandat",
+          "url": "https://peacekeeping.un.org/en/news/western-sahara-un-stands-ready-to-keep-supporting-peace-efforts-as-minurso"
+        },
+        {
+          "label": "Assemblée générale, débat du 10 novembre",
+          "url": "https://www.un.org/pga/81/documents/speeches/veto-initiative-debate-10-november-2026/"
+        }
+      ]
+    },
+    {
+      "id": "AFR-14",
+      "context": "L'extension de la crise du Sahel vers les pays côtiers expose leurs régions septentrionales à des attaques, aux déplacements et à des tensions économiques. Le Bénin et le Togo ne doivent pas être assimilés automatiquement aux situations du Sahel central.",
+      "reference_date": "2026-11-13",
+      "current": "Le HCR décrit une hausse des déplacements depuis le nord du Nigeria vers le Niger et le Bénin. Les données nationales du HCR distinguent également les vulnérabilités des régions du nord du Bénin et du Togo. Les faits sécuritaires locaux des derniers jours restent à confirmer.",
+      "living": "Accès aux soins, à la terre, aux services de protection et capacité des communautés d'accueil constituent des priorités.",
+      "peace": "Suivre la coopération transfrontalière et les mesures de prévention sociale, sans généraliser les niveaux de violence à l'ensemble des États côtiers.",
+      "sources": [
+        {
+          "label": "HCR, Bénin",
+          "url": "https://www.unhcr.org/where-we-work/countries/benin"
+        },
+        {
+          "label": "HCR, Togo",
+          "url": "https://www.unhcr.org/where-we-work/countries/togo?query=Benin"
+        },
+        {
+          "label": "HCR, déplacements régionaux, 13 novembre",
+          "url": "https://www.unhcr.org/africa/news/press-releases/nigeria-unhcr-assistant-high-commissioner-protection-calls-urgent-support"
+        }
+      ]
+    },
+    {
+      "id": "AFR-15",
+      "context": "Le Tchad cumule une transition institutionnelle, des fragilités internes, les effets des violences autour du lac Tchad et l'accueil des populations fuyant le Soudan. Ces différents facteurs ne constituent pas une seule guerre.",
+      "reference_date": "2026-11-27",
+      "current": "Le HCR a publié le 23 novembre une mise à jour de la réponse à l'urgence soudanaise. Le 27 novembre, la FAO et le PAM ont ajouté le Tchad à leur liste des foyers de dégradation alimentaire anticipée.",
+      "living": "Les régions d'accueil des réfugiés ont besoin d'eau, de terres accessibles, de services et de ressources pour les populations locales comme déplacées.",
+      "peace": "Suivre l'aide transfrontalière, la stabilité des institutions et les possibilités de médiation régionale.",
+      "sources": [
+        {
+          "label": "HCR, situation au 22 novembre, publication du 23",
+          "url": "https://data.unhcr.org/en/documents/details/124981"
+        },
+        {
+          "label": "FAO–PAM, perspectives alimentaires du 27 novembre 2026",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+        }
+      ]
+    },
+    {
+      "id": "AFR-16",
+      "context": "Le Grand barrage de la Renaissance sur le Nil Bleu, lancé en 2011, cristallise des intérêts divergents : développement hydroélectrique éthiopien, sécurité hydrique égyptienne et soudanaise, règles de remplissage et de fonctionnement. L'accord de principes de 2015 ne résout pas tous ces différends.",
+      "reference_date": "2026-11-25",
+      "current": "Le 25 novembre, la presse égyptienne rapporte une position commune de l'Égypte et du Soudan contestant la gestion unilatérale du barrage. Les déclarations de début novembre expriment aussi des divergences éthiopiennes. Les accusations juridiques sont des positions de parties, non une décision de justice.",
+      "living": "Le partage de l'eau, la sécurité des barrages, les sécheresses et les écosystèmes du bassin doivent être étudiés à partir de données hydrologiques contradictoires.",
+      "peace": "Rechercher les possibilités de négociation technique et de coopération sur les données, le fonctionnement du barrage et la gestion des périodes de sécheresse.",
+      "sources": [
+        {
+          "label": "Ahram Online, 5 novembre, déclaration éthiopienne rapportée",
+          "url": "https://english.ahram.org.eg/UI/Front/NewsContent/1/1234/581830/Egypt/Foreign-Affairs/Ethiopian-minister-links-Nile-understanding-to-Red.aspx"
+        },
+        {
+          "label": "EgyptToday, 25 novembre, position Égypte–Soudan",
+          "url": "https://www.egypttoday.com/Article/1/150773/Egypt-Sudan-Ethiopia%E2%80%99s-unilateral-dam-poses-ongoing-threat-to-Nile"
+        },
+        {
+          "label": "Sudan Tribune, 2 novembre",
+          "url": "https://sudantribune.com/article/320834"
+        }
+      ]
+    },
+    {
+      "id": "AFR-17",
+      "context": "Le Somaliland a proclamé son indépendance en 1991 ; la Somalie revendique son intégrité territoriale. L'accès maritime recherché par l'Éthiopie enclavée a suscité de nouvelles tensions. La déclaration d'Ankara du 11 décembre 2024 prévoit de rechercher une solution respectant la souveraineté somalienne.",
+      "reference_date": "2026-11-19",
+      "current": "Le ministère des Affaires étrangères du Somaliland a réaffirmé le 19 novembre sa revendication de souveraineté. L'Union africaine a de son côté rappelé en 2026 son soutien à l'intégrité territoriale de la Somalie. Une déclaration de partie ne vaut pas règlement du statut.",
+      "living": "Les accès portuaires, les échanges, les moyens de subsistance côtiers et les effets sur les communautés doivent être intégrés à l'analyse.",
+      "peace": "Suivre l'application de la déclaration d'Ankara et les possibilités de compromis ; les développements depuis le 19 novembre restent à vérifier.",
+      "sources": [
+        {
+          "label": "Turquie, déclaration d'Ankara",
+          "url": "https://www.mfa.gov.tr/etiyopya-federal-demokratik-cumhuriyeti-ve-somali-federal-cumhuriyeti-nin-ankara-bildirisi.en.mfa"
+        },
+        {
+          "label": "Union africaine, position sur le Somaliland",
+          "url": "https://au.int/sw/node/46283?qt-qt_documents_sp=1"
+        },
+        {
+          "label": "Ministère du Somaliland, 19 novembre, position de partie",
+          "url": "https://mfagovsomaliland.org/news/press-releases/23aa41d9-c9b9-4fb7-86f1-02be0f45e1bd"
+        }
+      ]
+    },
+    {
+      "id": "AFR-18",
+      "context": "La zone agricole d'Al-Fashaga est au cœur d'un différend frontalier ancien entre l'Éthiopie et le Soudan, mêlant démarcation, accès aux terres, sécurité des agriculteurs et relations entre les États. Les conflits internes des deux pays créent des risques supplémentaires.",
+      "reference_date": "2026-11-16",
+      "current": "AP rapporte le 16 novembre des accusations réciproques de soutien à des groupes armés. L'agence européenne pour l'asile décrit des tensions frontalières et des risques pour les activités agricoles dans son analyse de Gedaref. Ces éléments ne suffisent pas à établir une guerre interétatique.",
+      "living": "La sécurité des agriculteurs, l'accès aux terres cultivées et les déplacements transfrontaliers doivent être documentés.",
+      "peace": "Rechercher des mécanismes bilatéraux de désescalade et de démarcation. Les évolutions postérieures au 16 novembre restent à corroborer.",
+      "sources": [
+        {
+          "label": "AP, 16 novembre",
+          "url": "https://apnews.com/article/649640494d674bfffcdc4418205b7485"
+        },
+        {
+          "label": "Agence de l'UE pour l'asile, Gedaref",
+          "url": "https://dip-aws.euaa.europa.eu/coi/216-gedaref/2162-conflict-dynamics-and-tactics"
+        }
+      ]
+    }
+  ]
+}
