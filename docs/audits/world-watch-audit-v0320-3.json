@@ -1,0 +1,3430 @@
+{
+  "version": "0.3.20.3",
+  "date": "2026-11-27",
+  "phase": "premiere_evaluation_contradictoire_sur_corpus",
+  "publication_autorisee": false,
+  "base": {
+    "branch": "feature/monde-v0319-audit-documentaire",
+    "files": [
+      {
+        "path": "docs/audits/world-watch-audit-v0319-8.json",
+        "sha": "bbf3f0ba0b26fff3942677cb91d84735d3417a93"
+      },
+      {
+        "path": "docs/audits/world-watch-audit-v0320-2.json",
+        "sha": "28cfc0eb165d92bdf480fdedb361c2a012373803"
+      },
+      {
+        "path": "docs/audits/world-watch-audit-v0319-7-bis.json",
+        "sha": "550d376652a46ec92e4b0c172eb01c1dcd911e2e"
+      }
+    ]
+  },
+  "method": "Lecture des 63 synthèses consolidées et réserves précédentes, vérification web ciblée des alertes humanitaires et de sûreté nucléaire. Chaque indice est une appréciation de travail, non une nouvelle constatation indépendante ; les sources historiques ne sont pas toutes revérifiées. Aucune valeur basse attribuée sur base lacunaire. Les échéances institutionnelles ne sont pas assimilées à des urgences critiques.",
+  "fresh_checks": [
+    {
+      "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/",
+      "access": "contenu_consulte",
+      "publication": "2026-11-27",
+      "note": "Communiqué conjoint : projections déc. 2026–mai 2027 ; malnutrition déjà au-dessus des seuils de famine dans deux camps du Darfour Sud, risque conditionnel dans 13 zones jusqu'en janvier 2027 ; projection Soudan du Sud échue juillet 2026 ; IPC4 Baidoa, pas de population projetée IPC5 en Somalie ; amélioration fragile Gaza ; dégradation projetée RDC, Afghanistan, Haïti ; facteurs climatiques et débordement au Tchad. Ne pas convertir classement FAO en code."
+    },
+    {
+      "url": "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1165470/?iso3=COD",
+      "access": "contenu_consulte",
+      "publication": "2026-10-30",
+      "note": "Estimation de période septembre–décembre : 28,8 millions IPC3+, 3,6 millions IPC4 ; projection janvier–juin 2027 distincte. Périmètre RDC, pas toute région des Grands Lacs."
+    },
+    {
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-26-november-2026",
+      "access": "contenu_consulte",
+      "publication": "2026-11-26",
+      "note": "Contraintes d'accès et abris, maladies, atteintes aux travailleurs humanitaires. Amélioration alimentaire fragile dans le communiqué FAO, sans contradiction avec persistance d'autres atteintes."
+    },
+    {
+      "url": "https://www.world-nuclear-news.org/articles/iaea-seeks-fresh-local-ceasefire-for-zaporizhzhia-power-line-repairs",
+      "access": "contenu_consulte",
+      "publication": "2026-11-27",
+      "note": "Perte de la dernière ligne électrique externe rapportée mercredi ; appel AIEA à rétablir alimentation et suspendre activités militaires contre infrastructures ; état actuel exact à vérifier, pas preuve d'accident."
+    },
+    {
+      "url": "https://www.unognewsroom.org/story/en/3328/un-human-rights-spokesperson-marta-hurtado-briefing-on-the-continued-atrocious-abuses-in-haiti",
+      "access": "contenu_consulte",
+      "publication": "2026-11-17",
+      "note": "HCDH : abus des gangs, risques des opérations de sécurité, protection et services, demande de déploiement conforme aux droits."
+    },
+    {
+      "url": "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1163308/",
+      "access": "extrait_seulement",
+      "publication": "2026",
+      "note": "Notice IPC : analyse partielle zones gouvernementales, projection oct.–déc. 2026, pas observation actuelle exhaustive."
+    },
+    {
+      "url": "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1163302/?iso3=SSD",
+      "access": "extrait_seulement",
+      "publication": "2026",
+      "note": "Projection IPC avril–juillet 2026 échue ; ne pas la présenter comme mesure novembre."
+    }
+  ],
+  "existing_locks": [
+    {
+      "id": "EUR-01",
+      "level": "2",
+      "source": "suivi_regional"
+    },
+    {
+      "id": "MOR-01",
+      "level": "1",
+      "source": "suivi_regional"
+    },
+    {
+      "id": "AFR-01",
+      "level": "1",
+      "source": "analyse_mondiale"
+    }
+  ],
+  "assessments": [
+    {
+      "id": "AFR-01",
+      "title": "Soudan",
+      "region": "Afrique",
+      "scope": "Soudan",
+      "reference_date": "2026-11-27",
+      "horizon": "Risque alimentaire jusqu'à janvier 2027 ; revue à 30 jours",
+      "existing_code": "1",
+      "existing_code_scope": "analyse mondiale validée",
+      "G": {
+        "value": 4,
+        "reason": "Deux camps du Darfour Sud : malnutrition au-dessus des seuils ; rupture locale, pas famine nationale.",
+        "basis": "suffisante",
+        "confidence": "moyenne",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "U": {
+        "value": null,
+        "reason": "Appel urgent humanitaire mais délai de 24–72 h non établi par zone.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": 3,
+        "reason": "Risque de famine conditionnel dans 13 zones et poursuite du conflit ; horizon janvier 2027 distinct de la revue à 30 jours.",
+        "basis": "limitee",
+        "confidence": "faible",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "credible_urgent_signal": true,
+      "priority": "reexamen_immediat",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Proposition de médiation UA ; seuils de malnutrition seuls ne valent pas classification de famine.",
+      "living": "La priorité est l'accès humanitaire, la protection des civils, des systèmes de santé et des moyens de subsistance. Un risque localisé de famine ne signifie pas une famine nationale.",
+      "peace": "Suivre l'acceptation effective d'un dialogue inclusif et les engagements vérifiables de cessation des hostilités.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Accès aux camps, IPC par zone, santé et réponse des parties.",
+      "corpus_sources": [
+        "https://dppa.un.org/en/news/sudan-conflict-peace-efforts-resume-to-end-drone-war-fuelling-humanitarian-crisis",
+        "https://www.au.int/en/pressreleases/20261125/statement-chairperson-au-commission-sudan-mediation-proposal",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "Médiation et risque alimentaire corroborés ; vérifier genèse, positions FAS/FSR et suite effective.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-02",
+      "title": "Soudan du Sud",
+      "region": "Afrique",
+      "scope": "Soudan du Sud",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Projection IPC échue en juillet, absence d'estimation actuelle locale dans les sources revues.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Appel urgent des agences sans fenêtre précise.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Risque signalé, trajectoire de novembre non suffisamment caractérisée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": true,
+      "priority": "reexamen_immediat",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Groupe UA–IGAD–ONU et cessez-le-feu : mise en œuvre non établie.",
+      "living": "Les déplacements, l'accès aux soins et les risques alimentaires exigent une surveillance locale ; la projection de risque de famine citée par la FAO–PAM concernait une période achevée en juillet 2026.",
+      "peace": "Évaluer les mesures de confiance et l'application de l'accord de 2018, sans présumer la réussite de la transition.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Obtenir dernière analyse IPC et état du cessez-le-feu.",
+      "corpus_sources": [
+        "https://southsudan.un.org/en/about/about-the-un",
+        "https://www.au.int/en/pressreleases/20261127/auc-chairperson-calls-commitment-advance-peace-southsudan",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/",
+        "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1163302/?iso3=SSD"
+      ],
+      "documentary_reserve": "Indépendance, lancement du groupe de travail et portée temporelle du risque alimentaire corroborés ; texte de l’accord de 2018 et mise en œuvre à contrôler.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-03",
+      "title": "RDC–Rwanda et Grands Lacs",
+      "region": "Afrique",
+      "scope": "RDC–Rwanda et Grands Lacs",
+      "reference_date": "2026-11-13",
+      "horizon": "Projection janvier–juin 2027, distincte de l'horizon de revue 30 jours",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": 3,
+        "reason": "IPC estime 3,6 millions en phase urgence pour la période en cours, RDC seulement.",
+        "basis": "suffisante",
+        "confidence": "moyenne",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "U": {
+        "value": null,
+        "reason": "Délai de rupture par territoire non établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": 2,
+        "reason": "Projection de dégradation début 2027 liée au conflit et aux chocs multiples ; horizon élargi six mois.",
+        "basis": "limitee",
+        "confidence": "faible",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "credible_urgent_signal": true,
+      "priority": "reexamen_immediat",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Projection non constat futur ; cessez-le-feu et médiations à réexaminer.",
+      "living": "Protéger l'accès aux terres, aux marchés et aux soins, notamment dans les territoires orientaux affectés par les violences.",
+      "peace": "Suivre les engagements de cessez-le-feu, leur mise en œuvre et les mécanismes de sécurité régionale. Une actualisation diplomatique de la dernière semaine reste nécessaire.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Actualiser sécurité et accès humanitaire dans l'est.",
+      "corpus_sources": [
+        "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1165470/?iso3=COD",
+        "https://www.wfp.org/news/conflict-and-disease-outbreaks-deepen-dr-congos-hunger-crisis-record-numbers-are-projected"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/",
+        "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1165470/?iso3=COD"
+      ],
+      "documentary_reserve": "Chiffres IPC et projections corroborés ; manque une actualisation diplomatique RDC–Rwanda et le contrôle des acteurs.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-04",
+      "title": "Mali–Burkina Faso–Niger",
+      "region": "Afrique",
+      "scope": "Mali–Burkina Faso–Niger",
+      "reference_date": "2026-11-25",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": 2,
+        "reason": "Corpus ACLED : pressions persistantes sur populations et échanges, hétérogènes selon pays.",
+        "basis": "limitee",
+        "confidence": "faible",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre critique localisée établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Persistance des violences ne suffit pas à démontrer leur accélération.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Notes complètes bloquées ; coopération locale à documenter.",
+      "living": "Les déplacements forcés, l'accès aux terres et aux marchés et la continuité des services sont des indicateurs essentiels.",
+      "peace": "Suivre la coopération régionale, les initiatives de dialogue local et la protection des civils indépendamment des stratégies militaires.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Ventiler Mali/Burkina/Niger ; actualiser déplacements et violences.",
+      "corpus_sources": [
+        "https://acleddata.com/region/conflict-sahel",
+        "https://data.unhcr.org/en/situations/sahelcrisis"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "Résumés ACLED corroborés ; notes complètes bloquées et volet HCR non lu ; trois pays à ventiler.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-05",
+      "title": "Nigeria et bassin du lac Tchad",
+      "region": "Afrique",
+      "scope": "Nigeria et bassin du lac Tchad",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Classement alimentaire maximal et déplacements rapportés ; gravité actuelle locale non quantifiée ici.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Appel urgent FAO/PAM, délai spécifique inconnu.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Projection alimentaire et déplacements ne prouvent pas une intensification militaire.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": true,
+      "priority": "reexamen_immediat",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Nord Nigeria seulement ; distinguer pays d'accueil et bassin du lac Tchad.",
+      "living": "Les populations déplacées, les communautés d'accueil et les moyens de subsistance agricoles sont particulièrement exposés.",
+      "peace": "Évaluer la coopération du bassin du lac Tchad et les solutions communautaires de protection, de retour volontaire et de réinsertion.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "IPC/CH récent, déplacements et accès aux services par zone.",
+      "corpus_sources": [
+        "https://www.unhcr.org/africa/news/press-releases/nigeria-unhcr-assistant-high-commissioner-protection-calls-urgent-support",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "Classement alimentaire corroboré ; déplacements corroborés par extrait HCR ; coopération régionale à contrôler.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-06",
+      "title": "Éthiopie – conflits internes",
+      "region": "Afrique",
+      "scope": "Éthiopie – conflits internes",
+      "reference_date": "2026-11-25",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Allégations d'attaques de septembre, demande d'enquête et contestation.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre actuelle établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Tensions signalées sans preuve d'une accélération actuelle.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Réponse des forces alliées au gouvernement ; accord de Pretoria à vérifier.",
+      "living": "La protection des civils et le rétablissement des services et des activités agricoles sont des conditions d'une sortie durable du conflit.",
+      "peace": "Examiner la reprise du dialogue, le respect de Pretoria et la possibilité d'enquêtes indépendantes sur les violations présumées.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Enquête indépendante et situation du Tigré actuelle.",
+      "corpus_sources": [
+        "https://www.amnesty.org/en/latest/news/2026/11/ethiopia-lethal-artillery-strikes-on-civilian-neighbourhoods-in-tigrays-alamata-city-must-be-investigated-as-war-crimes/",
+        "https://www.reuters.com/world/ethiopian-shelling-of-tigray-town-should-be-investigated-possible-war-crimes-2026-11-24/",
+        "https://apnews.com/article/427358084fef2eb567e38acd81c3eacd"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Demande d’enquête et contestation corroborées ; lire réponse des autorités, accord de Pretoria et AP.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-07",
+      "title": "Éthiopie–Érythrée",
+      "region": "Afrique",
+      "scope": "Éthiopie–Érythrée",
+      "reference_date": "2026-11-25",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Pas d'affrontements interétatiques directement corroborés.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Imminence non établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": 2,
+        "reason": "Concentrations militaires signalées et tensions liées au Tigré ; indice provisoire sur extraits.",
+        "basis": "limitee",
+        "confidence": "faible",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Reuters ne confirme pas indépendamment des affrontements directs.",
+      "living": "Une extension interétatique menacerait les populations frontalières et les circuits d'aide et de commerce.",
+      "peace": "Distinguer signaux de tension et preuve d'une guerre interétatique ; rechercher les démarches de désescalade et les confirmations indépendantes.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Positions des deux États et mécanismes de désescalade.",
+      "corpus_sources": [
+        "https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/",
+        "https://apnews.com/article/427358084fef2eb567e38acd81c3eacd"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Reuters accessible par extrait, ne confirme pas d’affrontements directs indépendamment ; rechercher positions officielles contradictoires.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-08",
+      "title": "Somalie",
+      "region": "Afrique",
+      "scope": "Somalie",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": 3,
+        "reason": "IPC4 chez les déplacés de Baidoa selon communiqué FAO/PAM ; pas généralisation nationale.",
+        "basis": "suffisante",
+        "confidence": "moyenne",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "U": {
+        "value": null,
+        "reason": "Appel humanitaire urgent, pas de délai local établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Avenir AUSSOM et risques alimentaires, dynamique additionnelle non chiffrable.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": true,
+      "priority": "reexamen_immediat",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Risque de famine reculé ; pas de population projetée IPC5.",
+      "living": "Les personnes déplacées, notamment à Baidoa, restent très vulnérables. Le dernier communiqué ne projette toutefois pas de population en phase IPC 5 en Somalie.",
+      "peace": "Suivre le financement de la mission, les responsabilités somaliennes et les mécanismes de dialogue politique.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Financement AUSSOM, données locales IPC et accès.",
+      "corpus_sources": [
+        "https://au.int/index.php/en/pressreleases/20261126/chairperson-engages-eastern-african-prc-members-peace-security-priorities",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "Situation alimentaire corroborée ; avenir AUSSOM confirmé par extrait UA ; vérifier calendrier et financement.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-09",
+      "title": "République centrafricaine",
+      "region": "Afrique",
+      "scope": "République centrafricaine",
+      "reference_date": "2026-11-25",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Fragilité et besoins signalés, sans mesure contemporaine suffisante.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Mandat renouvelé ne définit pas urgence.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Fragilité du processus sans trajectoire suffisamment étayée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Progrès du processus de paix signalés.",
+      "living": "La protection civile, les services essentiels et l'aide humanitaire demeurent prioritaires dans les zones où l'autorité publique reste fragile.",
+      "peace": "Suivre le désarmement, la participation locale et l'application de l'accord, en tenant compte des capacités de la mission.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Rapport MINUSCA, désarmement et services.",
+      "corpus_sources": [
+        "https://mandates.un.org/mandate/S/RES/2836%20%282026%29",
+        "https://peacekeeping.un.org/fr/news/centrafrique-la-paix-avance-mais-reste-fragile"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Échéance du mandat confirmée par registre ONU ; dispositif et publication du 25 novembre à lire.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-10",
+      "title": "Mozambique – Cabo Delgado",
+      "region": "Afrique",
+      "scope": "Mozambique – Cabo Delgado",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": 2,
+        "reason": "Nouveaux déplacements rapportés début novembre ; indice provisoire.",
+        "basis": "limitee",
+        "confidence": "faible",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre actuelle précise.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Projection climatique distincte de l'escalade militaire.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Chocs climatiques et conflits ne sont pas assimilables.",
+      "living": "Soutenir les communautés déplacées, les agriculteurs et les pêcheurs ; distinguer risques liés au conflit et chocs climatiques.",
+      "peace": "Évaluer les conditions de retour volontaire, de protection et d'accès aux services ; les faits sécuritaires des tout derniers jours restent à corroborer.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Actualiser OIM et données sécuritaires de Cabo Delgado.",
+      "corpus_sources": [
+        "https://iom.int/news/fresh-violence-northern-mozambique-forces-over-7000-homes",
+        "https://fews.net/southern-africa/mozambique/food-security-outlook/october-2026",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "FEWS NET et FAO confirment contexte et projections ; OIM par extrait ; vérifier faits récents.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-11",
+      "title": "Cameroun",
+      "region": "Afrique",
+      "scope": "Cameroun",
+      "reference_date": "2026-09",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Rapport couvrant septembre ; actualité de novembre insuffisante.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Fenêtre actuelle inconnue.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Aucune trajectoire actuelle par région établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Distinguer insécurité, inondations et maladies.",
+      "living": "L'accès à l'école, aux soins, à la protection et aux moyens de subsistance doit être suivi séparément dans chaque région.",
+      "peace": "Rechercher les initiatives de dialogue, la protection des enfants et les solutions pour les personnes déplacées.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Actualiser UNFPA/OCHA et données régionales.",
+      "corpus_sources": [
+        "https://www.unfpa.org/resources/situation-report-crisis-cameroon-september-2026",
+        "https://civil-protection-humanitarian-aid.ec.europa.eu/where/africa/cameroon_en?prefLang=uk"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Distinguer période de septembre et publication d’octobre ; trois crises distinctes confirmées ; actualisation nécessaire.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-12",
+      "title": "Libye",
+      "region": "Afrique",
+      "scope": "Libye",
+      "reference_date": "2026-11-22",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Fragmentation institutionnelle connue ; dommages actuels non évalués.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Visite de mission sans urgence démontrée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Feuille de route ne prouve ni aggravation ni stabilisation.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Mandat et visite offrent cadre de dialogue.",
+      "living": "La continuité des services, la gestion des ressources et la protection des personnes vulnérables, notamment migrantes, sont des enjeux à documenter.",
+      "peace": "Suivre les engagements électoraux, l'unification institutionnelle et le dialogue entre régions, sans assimiler une annonce à sa réalisation.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Vérifier visite réalisée, feuille de route et protection.",
+      "corpus_sources": [
+        "https://unsmil.unmissions.org/en/political-roadmap",
+        "https://unsmil.unmissions.org/en/news/dsrsg-political-koury-begins-five-day-visit-to-southern-libya",
+        "https://unsmil.unmissions.org/en/unsmil-mandate"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Annonce de visite et renouvellement confirmés par extraits ; feuille de route et texte de résolution non lus.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-13",
+      "title": "Sahara occidental et tensions régionales",
+      "region": "Afrique",
+      "scope": "Sahara occidental et tensions régionales",
+      "reference_date": "2026-11-10",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Effets actuels sur populations insuffisamment évalués.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Échéances et effets de la liquidation à confirmer.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Non-renouvellement allégué de MINURSO à vérifier au fond avant indice.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Absence de nouveau mandat ne règle pas statut ; liquidation non vérifiée indépendamment ici.",
+      "living": "La protection des populations du territoire et des réfugiés sahraouis doit rester distincte des revendications de souveraineté.",
+      "peace": "Suivre les bons offices de l'ONU, les garanties de cessez-le-feu et le droit à l'autodétermination ; une actualisation après le 10 novembre reste nécessaire.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Texte ONU, statut mission et garanties de cessez-le-feu.",
+      "corpus_sources": [
+        "https://peacekeeping.un.org/en/news/western-sahara-un-stands-ready-to-keep-supporting-peace-efforts-as-minurso",
+        "https://www.un.org/pga/81/documents/speeches/veto-initiative-debate-10-november-2026/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Deux projets de résolution non adoptés selon Security Council Report ; lettre ONU confirme veto et convocation du débat ; liquidation et tenue effective du débat à vérifier.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-14",
+      "title": "Bénin, Togo et États côtiers",
+      "region": "Afrique",
+      "scope": "Bénin, Togo et États côtiers",
+      "reference_date": "2026-11-13",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Déplacements vers Niger/Bénin, données Togo insuffisantes.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Délai par zone inconnu.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Déplacements ne prouvent pas expansion uniforme de la violence.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Ventilation par État nécessaire.",
+      "living": "Accès aux soins, à la terre, aux services de protection et capacité des communautés d'accueil constituent des priorités.",
+      "peace": "Suivre la coopération transfrontalière et les mesures de prévention sociale, sans généraliser les niveaux de violence à l'ensemble des États côtiers.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Actualiser nord Bénin/Togo et données HCR.",
+      "corpus_sources": [
+        "https://www.unhcr.org/where-we-work/countries/benin",
+        "https://www.unhcr.org/where-we-work/countries/togo?query=Benin",
+        "https://www.unhcr.org/africa/news/press-releases/nigeria-unhcr-assistant-high-commissioner-protection-calls-urgent-support"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Déplacements Niger/Bénin corroborés par extrait ; Togo et ventilation nationale non contrôlés.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-15",
+      "title": "Tchad",
+      "region": "Afrique",
+      "scope": "Tchad",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Réponse aux réfugiés documentée historiquement, gravité actuelle locale non mesurée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Projection alimentaire ne fixe pas délai critique local.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Dégradation anticipée liée au débordement du Soudan ; horizon déc.–mai, pas escalation imminente.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Aide transfrontalière et communautés d'accueil à documenter.",
+      "living": "Les régions d'accueil des réfugiés ont besoin d'eau, de terres accessibles, de services et de ressources pour les populations locales comme déplacées.",
+      "peace": "Suivre l'aide transfrontalière, la stabilité des institutions et les possibilités de médiation régionale.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "IPC, ressources d'accueil et sécurité frontalière.",
+      "corpus_sources": [
+        "https://data.unhcr.org/en/documents/details/124981",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "Date du document HCR et classement FAO corroborés ; carte PDF et données locales à examiner.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-16",
+      "title": "Égypte, Éthiopie et bassin du Nil",
+      "region": "Afrique",
+      "scope": "Égypte, Éthiopie et bassin du Nil",
+      "reference_date": "2026-11-25",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Conséquences hydrologiques réelles non mesurées.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre de crise hydrique établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Divergences politiques sans données techniques de rupture.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Positions égyptienne/soudanaise/éthiopienne ne sont pas décisions judiciaires.",
+      "living": "Le partage de l'eau, la sécurité des barrages, les sécheresses et les écosystèmes du bassin doivent être étudiés à partir de données hydrologiques contradictoires.",
+      "peace": "Rechercher les possibilités de négociation technique et de coopération sur les données, le fonctionnement du barrage et la gestion des périodes de sécheresse.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Données hydrologiques contradictoires, fonctionnement barrage.",
+      "corpus_sources": [
+        "https://english.ahram.org.eg/UI/Front/NewsContent/1/1234/581830/Egypt/Foreign-Affairs/Ethiopian-minister-links-Nile-understanding-to-Red.aspx",
+        "https://www.egypttoday.com/Article/1/150773/Egypt-Sudan-Ethiopia%E2%80%99s-unilateral-dam-poses-ongoing-threat-to-Nile",
+        "https://sudantribune.com/article/320834"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Position Égypte–Soudan corroborée, source du 3 novembre à relabeller ; position éthiopienne et données hydrologiques à obtenir.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-17",
+      "title": "Somalie–Somaliland et accès à la mer",
+      "region": "Afrique",
+      "scope": "Somalie–Somaliland et accès à la mer",
+      "reference_date": "2026-11-19",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Impacts côtiers et services non mesurés.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de délai critique établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Revendications et divergences, pas de dynamique suffisante.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Déclaration d'Ankara comme piste de dialogue.",
+      "living": "Les accès portuaires, les échanges, les moyens de subsistance côtiers et les effets sur les communautés doivent être intégrés à l'analyse.",
+      "peace": "Suivre l'application de la déclaration d'Ankara et les possibilités de compromis ; les développements depuis le 19 novembre restent à vérifier.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Vérifier mise en œuvre et positions récentes.",
+      "corpus_sources": [
+        "https://www.mfa.gov.tr/etiyopya-federal-demokratik-cumhuriyeti-ve-somali-federal-cumhuriyeti-nin-ankara-bildirisi.en.mfa",
+        "https://au.int/sw/node/46283?qt-qt_documents_sp=1",
+        "https://mfagovsomaliland.org/news/press-releases/23aa41d9-c9b9-4fb7-86f1-02be0f45e1bd"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Déclaration Ankara intégralement accessible ; revendication Somaliland corroborée par extrait ; position UA et application effective à vérifier.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-18",
+      "title": "Éthiopie–Soudan et différend frontalier",
+      "region": "Afrique",
+      "scope": "Éthiopie–Soudan et différend frontalier",
+      "reference_date": "2026-11-16",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Risques agricoles signalés mais dommages actuels non établis.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Informations depuis le 16 novembre lacunaires.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Accusations de soutien armé non corroborées, indice suspendu.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Pas de guerre interétatique établie.",
+      "living": "La sécurité des agriculteurs, l'accès aux terres cultivées et les déplacements transfrontaliers doivent être documentés.",
+      "peace": "Rechercher des mécanismes bilatéraux de désescalade et de démarcation. Les évolutions postérieures au 16 novembre restent à corroborer.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Actualiser frontière, démarcation et protection des agriculteurs.",
+      "corpus_sources": [
+        "https://apnews.com/article/649640494d674bfffcdc4418205b7485",
+        "https://dip-aws.euaa.europa.eu/coi/216-gedaref/2162-conflict-dynamics-and-tactics"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "EUAA et extrait AP corroborent tensions ; accusations restent attribuées ; mécanismes de désescalade récents à rechercher.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AFR-19",
+      "title": "Sénégal–Casamance : consolidation de la paix",
+      "region": "Afrique",
+      "scope": "Sénégal–Casamance : consolidation de la paix",
+      "reference_date": "2026-09-10",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Déminage et reconstruction nécessaires ; rapport septembre ancien.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Réunion annoncée non vérifiée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Pas de preuve actuelle de reprise des hostilités.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Processus de paix et Plan Diomaye.",
+      "living": "Déminage, sécurisation des terres agricoles, retour des déplacés, soins, eau et infrastructures.",
+      "peace": "Suivre la mise en œuvre du plan et les engagements des acteurs concernés, sans supposer de reprise des hostilités.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Accords MFDC, déminage, réunion et résultats locaux.",
+      "corpus_sources": [
+        "https://primature.sn/publications/conseil-des-ministres/conseil-des-ministres-du-10-septembre-2026",
+        "https://www.primature.sn/publications/actualites/declaration-de-politique-generale-par-le-premier-ministre-ahmadou-alhaminou",
+        "https://aps.sn/un-conseil-interministeriel-sur-le-plan-diomaye-pour-la-casamance-en-novembre-a-ziguinchor-officiel/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Confronter les annonces aux acteurs locaux, accords MFDC et résultats du déminage.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "MOR-01",
+      "title": "Israël–Palestine",
+      "region": "Proche et Moyen-Orient",
+      "scope": "Israël–Palestine",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": "1",
+      "existing_code_scope": "suivi régional associé ; ne pas confondre avec indice du dossier",
+      "G": {
+        "value": 3,
+        "reason": "OCHA : restrictions, besoins hivernaux, santé et services ; dommages sévères à Gaza, périmètre distinct du code régional.",
+        "basis": "suffisante",
+        "confidence": "moyenne",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "U": {
+        "value": null,
+        "reason": "Besoin urgent de protection ; délai local non déterminé.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Données Gaza/Cisjordanie ne suffisent pas à coter escalade de tout le Proche-Orient.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": true,
+      "priority": "reexamen_immediat",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "FAO/PAM : amélioration alimentaire fragile à Gaza ; risque de détérioration en Cisjordanie.",
+      "living": "Priorités : eau potable, assainissement, accès aux soins, abris, sécurité alimentaire, protection de l'enfance et restauration des terres. Les besoins de protection des civils israéliens et palestiniens doivent être pris en compte sans confusion entre populations et groupes armés.",
+      "peace": "Le cessez-le-feu entré en vigueur en octobre 2025 reste fragile. Examiner la mise en œuvre de la résolution 2803 (2025), les garanties de sécurité, le droit à l'autodétermination et la protection des civils. Le suivi régional conserve son historique et son niveau propre.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Suivre accès, santé, abris et cessez-le-feu ; distinguer code régional.",
+      "corpus_sources": [
+        "https://www.un.org/unispal/document/unsco-report-to-the-ad-hoc-liaison-committee-september-2026/",
+        "https://www.ochaopt.org/content/humanitarian-situation-report-26-november-2026",
+        "https://apnews.com/article/dbb2c950f5cd991a52f3a065b6325535"
+      ],
+      "fresh_sources": [
+        "https://www.ochaopt.org/content/humanitarian-situation-report-26-november-2026",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "Rapport OCHA et actualités AP corroborés ; UNSCO intégral et résolution 2803 à lire. Déclarations militaires et données hospitalières à distinguer. Contexte de l’occupation et statut juridique de Gaza après 2005 à préciser à partir des textes et jurisprudences pertinents.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "MOR-02",
+      "title": "Israël–Liban",
+      "region": "Proche et Moyen-Orient",
+      "scope": "Israël–Liban",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Retour et dommages actuels non chiffrés dans la fiche.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Échéance de mandat au 31 décembre n'est pas preuve d'urgence critique.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Proposition FINUL ne prouve pas intensification.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Résolution 2790 autorise fonctions limitées pendant retrait.",
+      "living": "La possibilité d'un retour sûr des déplacés, la remise en état des logements, des terres agricoles et des services essentiels ainsi que la protection des civils de part et d'autre de la Ligne bleue restent à évaluer.",
+      "peace": "Suivre les négociations sur le devenir de la présence onusienne, la mise en œuvre de la résolution 1701, le retrait israélien et les responsabilités de l'État libanais. Distinguer proposition, décision du Conseil de sécurité et mise en œuvre.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Situation sécuritaire et proposition officielle française.",
+      "corpus_sources": [
+        "https://mandates.un.org/mandate/S/RES/2790%282025%29?subject=Lebanon",
+        "https://apnews.com/article/c758141bda52c64f6d2822048b1c400c",
+        "https://commonslibrary.parliament.uk/research-briefings/cbp-10348/",
+        "https://unifil.unmissions.org/en/news/security-council-extends-unifils-mandate-resolution-2790-2025"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Mandat et fonctions résiduelles vérifiés aux paragraphes 1–7 de 2790 ; annonce de proposition française attribuée au Premier ministre libanais ; confirmation directe de Paris non obtenue. Ajouter le cadre tripartite de juin 2026, ses limites et le rejet par le Hezbollah, selon la note britannique. Lire le texte original.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "MOR-03",
+      "title": "Iran–Israël–États-Unis",
+      "region": "Proche et Moyen-Orient",
+      "scope": "Iran–Israël–États-Unis",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Effets du blocus allégué et dommages actuels non évalués.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre documentée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": 2,
+        "reason": "Opération maritime rapportée et conditions de négociation divergentes ; appréciation provisoire.",
+        "basis": "limitee",
+        "confidence": "faible",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Médiation qatarienne et G7 ; qualification juridique du blocus à établir.",
+      "living": "La sécurité des populations du Golfe, les conséquences environnementales d'attaques contre les infrastructures, la sûreté nucléaire et la continuité des approvisionnements nécessitent un suivi spécifique.",
+      "peace": "Rechercher les garanties de désescalade, le rôle des médiateurs qatariens et pakistanais, la reprise de la coopération avec l'AIEA et les conditions de sécurité de la navigation. Aucun accord définitif n'est établi dans les sources examinées.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Corroborer opérations, navigation, positions des parties et AIEA.",
+      "corpus_sources": [
+        "https://www.reuters.com/world/middle-east/qatari-delegation-visits-tehran-talks-iranian-official-says-2026-11-21/",
+        "https://apnews.com/article/800620518a351282f098faa9381b3375",
+        "https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/dichiarazione-congiunta-a-seguito-della-riunione-dei-ministri-degli-esteri-del-g7-tenutasi-a-parigi-il-9-e-10-novembre-2026/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Médiation qatarienne attribuée et déclaration G7 corroborées ; annonce américaine et réponse iranienne accessibles par extraits. Qualification juridique du recours à la force, du blocus et de la navigation à examiner séparément ; rechercher textes AIEA et positions des médiateurs et parties.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "MOR-04",
+      "title": "Syrie",
+      "region": "Proche et Moyen-Orient",
+      "scope": "Syrie",
+      "reference_date": "2026-11-24",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Aide au retour et intégration annoncée ne mesurent pas gravité actuelle.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de délai établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Situation des violences récentes manquante.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Aide HCR conditionnelle, intégration non nécessairement effective.",
+      "living": "Évaluer les conditions des retours libres et sûrs, le logement, les services essentiels, la restitution foncière et la protection des minorités. L'annonce d'une aide ne garantit pas son versement à chaque famille.",
+      "peace": "Suivre la transition inclusive, l'effectivité des garanties constitutionnelles, la sécurité locale et l'intégration institutionnelle. L'état des violences des derniers jours nécessite une recherche complémentaire.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Retours sûrs, situation minorités, textes syriens.",
+      "corpus_sources": [
+        "https://www.gov.uk/government/publications/syria-country-policy-and-information-notes/country-policy-and-information-note-kurds-and-kurdish-areas-syria-november-2026-accessible",
+        "https://help.unhcr.org/syria/2026/11/24/returning-to-syria-find-out-what-support-may-be-available-to-you/",
+        "https://www.unhcr.org/publications/unhcr-s-response-return-and-reintegration-refugees-and-internally-displaced-persons"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Dates d’annonce des FDS et aide conditionnelle HCR corroborées ; rapport intégral d’évaluation non lu. Ne pas déduire d’une intégration annoncée une réalisation complète ni une sécurité générale des retours ; rechercher textes syriens et données locales récentes.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "MOR-05",
+      "title": "Irak",
+      "region": "Proche et Moyen-Orient",
+      "scope": "Irak",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Effets du différend budgétaire sur services non établis.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Réunion annoncée du 1er décembre à vérifier, pas urgence démontrée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Manifestations et divergences de compétences ne suffisent pas à établir escalade.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Possibilité de dialogue Bagdad–Erbil ; pertes alléguées.",
+      "living": "Suivre les conséquences des différends budgétaires et pétroliers sur les salaires, les services publics, les moyens de subsistance et les pollutions liées à l'exploitation des hydrocarbures.",
+      "peace": "Privilégier l'analyse constitutionnelle contradictoire du partage des compétences et des ressources ; observer les possibilités de négociation Bagdad–Erbil et de maîtrise des armes par les institutions légitimes.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Décision judiciaire, constitution et résultats réunion.",
+      "corpus_sources": [
+        "https://www.gov.uk/government/publications/iraq-country-policy-and-information-notes/country-policy-and-information-note-opposition-to-the-government-in-the-kurdistan-region-of-iraq-kri-iraq-july-2023-accessible",
+        "https://www.reuters.com/business/energy/iraqi-kurds-protest-against-baghdad-leaders-moves-assert-central-control-2026-11-26/",
+        "https://www.reuters.com/world/middle-east/trump-backs-iraqi-leaders-efforts-assert-more-state-authority-2026-11-27/",
+        "https://www.aljazeera.com/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Autonomie et divergences corroborées ; annonces des 26–27 novembre confirmées par textes indexés ; référence GOV.UK actualisée malgré URL ancienne. Lire Constitution et décision de la Cour fédérale ; suivre la rencontre annoncée du 1er décembre sans la présenter comme réalisée ; éviter de compter plusieurs reprises Reuters comme sources indépendantes.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "MOR-06",
+      "title": "Yémen et mer Rouge",
+      "region": "Proche et Moyen-Orient",
+      "scope": "Yémen et mer Rouge",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Préoccupation alimentaire maximale, analyse IPC partielle et projection ; données actuelles de rupture à obtenir.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Appel urgent FAO/PAM ; délai local non établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Pacte de défense ne suffit pas à prouver participation directe ou escalade militaire.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": true,
+      "priority": "reexamen_immediat",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Position turque déclarée et démarches de paix ; distinguer risques alimentaires et maritimes.",
+      "living": "L'UNFPA rappelle le 22 novembre l'ampleur des besoins humanitaires et les difficultés d'accès aux soins maternels. La sécurité des marins, la prévention des pollutions marines et la continuité des approvisionnements sont également à examiner.",
+      "peace": "Distinguer le règlement politique yéménite, la protection de la navigation et la désescalade entre États. Examiner la mise en œuvre des engagements de protection et d'accès humanitaire, sans assimiler un pacte de défense à une entrée en guerre.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "IPC actualisé et données de santé, médiations ONU, incidents maritimes.",
+      "corpus_sources": [
+        "https://www.mofa.gov.pk/press-releases/second-meeting-of-the-strategic-political-and-defence-committee-s-pdc-of-the-makkah-alliance-for-defence-joint-statement",
+        "https://apnews.com/article/6c17e4827e5aef3e69f78cdb01d597dc",
+        "https://yemen.un.org/en/326491-unfpa-yemen-%E2%80%9Ceverything-was-looted%E2%80%9D-displaced-midwife-saves-mothers-amid-yemen%E2%80%99s-conflict"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/",
+        "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1163308/"
+      ],
+      "documentary_reserve": "Réunion tripartite corroborée et volet UNFPA consulté ; absence de déploiement turc direct uniquement comme position déclarée. Vérifier texte du pacte, ratifications, processus ONU de paix yéménite, positions des parties et conséquences maritimes et environnementales.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "MOR-07",
+      "title": "Turquie et question kurde",
+      "region": "Proche et Moyen-Orient",
+      "scope": "Turquie et question kurde",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Effets actuels non mesurés.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre critique établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Absence de confirmation du désarmement ne prouve pas reprise des violences.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Loi-cadre et poursuite du processus politique.",
+      "living": "La sécurité des populations, les droits culturels, la liberté d'expression, la réintégration civile et la gouvernance locale sont des conditions d'une paix durable, au-delà de la seule cessation des violences.",
+      "peace": "Vérifier le texte promulgué, les décisions de mise en œuvre, les garanties juridiques et la participation des différentes parties. Distinguer désarmement annoncé, vérifié et appliqué, ainsi que négociation politique et droits individuels.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Texte promulgué, vérification du désarmement et garanties.",
+      "corpus_sources": [
+        "https://www.iletisim.gov.tr/english/haberler/detay/nsc-convenes-at-the-presidential-complex-26-11-26",
+        "https://amp.dw.com/en/can-turkeys-new-pkk-law-bring-peace/a-78326063",
+        "https://www.turkishminute.com/2026/11/27/turkey-gives-no-confirmation-kurdish-militants-have-laid-down-arms/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Communiqué officiel et adoption parlementaire corroborés ; absence de confirmation du désarmement le 26 novembre. Obtenir texte promulgué et mesures d’application ; ne pas assimiler absence de confirmation à preuve de non-désarmement.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-01",
+      "title": "Chine–Taïwan",
+      "region": "Asie",
+      "scope": "Chine–Taïwan",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Activités militaires rapportées, dommages civils non établis.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Imminence d'une offensive non établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": 2,
+        "reason": "Pressions persistantes et exercices récents ; indice provisoire.",
+        "basis": "limitee",
+        "confidence": "faible",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Élections et exercices ne démontrent pas décision d'attaque.",
+      "living": "Préserver la sécurité des populations, la pêche, les transports maritimes et la continuité des services essentiels.",
+      "peace": "Observer les mécanismes de communication et de prévention des incidents ; distinguer activité militaire, intention politique et décision d'entrer en guerre.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Sources des deux parties, mécanismes de communication.",
+      "corpus_sources": [
+        "https://www-mnd-gov-tw-01-d3hddnfbecgmc7d0.a01.azurefd.net/EN/News/PressRelease/88327",
+        "https://www.reuters.com/world/china/taiwan-candidates-campaign-key-local-elections-final-day-2026-11-27/",
+        "https://www.reuters.com/world/china/chinese-military-tests-new-taiwan-landing-tactics-coastal-drills-2026-11-27/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Activités du 21 novembre confirmées par communiqué officiel ; 27 novembre et exercices corroborés par Reuters indexé. Chercher bulletin officiel du 27, position chinoise et effets civils.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-02",
+      "title": "Mer de Chine méridionale",
+      "region": "Asie",
+      "scope": "Mer de Chine méridionale",
+      "reference_date": "2026-11-26",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Dommages actuels aux activités maritimes non mesurés.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre de rupture établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Code de conduite inachevé et critique de Pékin insuffisants pour indice actuel.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Négociations encore ouvertes.",
+      "living": "La pêche artisanale, la préservation des récifs, les ressources marines et la liberté de navigation doivent être prises en compte.",
+      "peace": "Suivre les négociations sous la présidence singapourienne de l'ASEAN en 2027, la prévention des incidents et le respect du droit de la mer.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Documents ASEAN, incidents récents, droit de la mer.",
+      "corpus_sources": [
+        "https://www.chathamhouse.org/2026/11/philippines-did-not-deliver-south-china-sea-code-conduct-it-has-shown-what-asean-can",
+        "https://theprint.in/world/chinas-defence-ministry-urges-japan-to-stop-stirring-up-south-china-sea-disputes/3109598/",
+        "https://www.channelnewsasia.com/asia/cna-explains-south-china-sea-talks-unfinished-asean-6558131"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Absence de code achevé et déclaration chinoise corroborées. Lire documents ASEAN, sentence 2016, positions chinoises et riveraines ; distinguer souveraineté et droits maritimes.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-03",
+      "title": "Chine–Japon, mer de Chine orientale",
+      "region": "Asie",
+      "scope": "Chine–Japon, mer de Chine orientale",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Incident signalé sans données de dommages suffisantes.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de délai critique établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Incident et accusations réciproques, mécanisme d'aggravation non étayé suffisamment.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Positions divergentes et canaux bilatéraux à rechercher.",
+      "living": "La sécurité des pêcheurs, les ressources halieutiques et la prévention des accidents en mer sont directement concernées.",
+      "peace": "Suivre les canaux bilatéraux de communication maritime et aérienne ainsi que les mesures de prévention des incidents.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Déclarations officielles et prévention des incidents.",
+      "corpus_sources": [
+        "https://www.taipeitimes.com/News/front/archives/2026/11/27/2003868473",
+        "https://news.usni.org/2026/11/27/usni-news-western-pacific-pulse-nov-27-2026"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Accusations réciproques confirmées par AFP ; USNI non contrôlé au fond. Rechercher déclarations officielles des trois parties et mécanismes de prévention.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-04",
+      "title": "Péninsule coréenne",
+      "region": "Asie",
+      "scope": "Péninsule coréenne",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Fermeture d'un bureau sans évaluation de dommages aux populations.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de délai critique établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Réduction d'un canal sans preuve de rupture générale.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Relations suisses maintenues selon Berne.",
+      "living": "L'aide humanitaire, la sécurité alimentaire, les droits des personnes et la réduction des risques nucléaires sont des préoccupations distinctes à suivre.",
+      "peace": "Préserver les canaux de communication, notamment intercoréens ; examiner les possibilités de dialogue et les mesures de réduction des risques.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Déclaration suisse et canaux intercoréens.",
+      "corpus_sources": [
+        "https://www.reuters.com/business/aerospace-defense/north-korea-expels-swiss-representative-closes-diplomatic-office-over-sanctions-2026-11-25/",
+        "https://apnews.com/article/c92ed77891d514ac5240ecf1cb82926a",
+        "https://en.yna.co.kr/view/AEN20261113002051315"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Fermeture et maintien des relations corroborés par dépêches indexées. Yonhap traite du dialogue Séoul–Pékin, non d’une négociation intercoréenne. Chercher déclaration suisse originale.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-05",
+      "title": "Inde–Pakistan",
+      "region": "Asie",
+      "scope": "Inde–Pakistan",
+      "reference_date": "2026-11-20",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Participation multilatérale ne mesure pas dommages actuels.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre critique documentée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Visite ne démontre ni escalade ni normalisation.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Échange multilatéral réalisé selon corpus.",
+      "living": "La coopération sur l'eau, les effets des sécheresses et des crues, ainsi que la protection des populations du Cachemire doivent être étudiés en propre.",
+      "peace": "Évaluer les échanges techniques et les possibilités de dialogue, notamment sur l'Indus, sans confondre rencontre multilatérale et résolution du différend territorial.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Indus, Cachemire et résultats du forum.",
+      "corpus_sources": [
+        "https://www.mofa.gov.pk/press-releases/transcript-of-the-press-briefing-by-the-spokesperson-on-friday-20th-november-2026",
+        "https://amp.dw.com/en/pakistan-minister-to-visit-india-but-no-breakthrough-expected/a-79991717",
+        "https://www.dawn.com/news/2045878/musadik-malik-arrives-in-new-delhi-to-attend-sco-dialogue-forum",
+        "https://www.aa.com.tr/en/asia-pacific/pakistani-minister-arrives-in-india-for-sco-civilizational-dialogue/4131724"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Nomination confirmée ; arrivée à New Delhi le 20 novembre documentée par Dawn et Tribune/ANI. Actualiser la fiche sans en déduire une normalisation.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-06",
+      "title": "Inde–Chine",
+      "region": "Asie",
+      "scope": "Inde–Chine",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Effets civils frontaliers insuffisamment établis.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de délai critique étayé.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Échanges et préparation militaire signalés, sans dynamique confirmée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Déclaration chinoise de stabilité, discussions frontalières.",
+      "living": "Les populations himalayennes, les écosystèmes d'altitude, le commerce frontalier et le partage des données hydrologiques sont des enjeux communs.",
+      "peace": "Suivre la mise en œuvre des mécanismes de prévention des incidents et des engagements relatifs aux cours d'eau ; les discussions ne constituent pas une démarcation définitive.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Confronter versions indienne/chinoise et hydrologie.",
+      "corpus_sources": [
+        "https://www.mfa.gov.cn/eng./wjbzhd/202608/t20260826_12011002.html",
+        "https://www.scmp.com/news/china/diplomacy/article/3376066/china-and-india-hold-fresh-border-talks-both-boost-military-readiness-winter?module=latest&pgtype=homepage"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Date et existence des huit points confirmées ; échanges de novembre par titre SCMP. Lire les huit points, version indienne et détails du 27 ; vérifier coopération hydrologique.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-07",
+      "title": "Afghanistan–Pakistan",
+      "region": "Asie",
+      "scope": "Afghanistan–Pakistan",
+      "reference_date": "2026-11-22",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Retours HCR recensés mais tableau non lu ; dommages actuels non mesurés.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Délai actuel inconnu.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Affrontements début novembre, évolution récente non corroborée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Retours volontaires/forcés distincts ; médiation à rechercher.",
+      "living": "Le droit à la protection internationale, les conditions de retour, les services frontaliers et l'accès humanitaire doivent être distingués des enjeux militaires.",
+      "peace": "Suivre les démarches de médiation, les engagements frontaliers et l'accès des civils aux points de passage ; ne pas assimiler réfugiés et groupes armés.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Lire HCR, actualiser sécurité et accès à protection.",
+      "corpus_sources": [
+        "https://www.reuters.com/world/asia-pacific/pakistan-afghan-forces-exchange-fire-after-airstrikes-deepen-tensions-2026-02-24/",
+        "https://www.satp.org/terrorism-update/renewed-clashes-between-taliban-and-pakistani-forces-at-torkham-border-crossing",
+        "https://data.unhcr.org/fr/documents/details/124957"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Signalement du 1er novembre par SATP ; notice HCR confirme dates et catégories de retour. Lire tableau original, corroborer faits et médiations récentes.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-08",
+      "title": "Myanmar",
+      "region": "Asie",
+      "scope": "Myanmar",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Jugement sur faits de 2017 ne mesure pas gravité actuelle ; FAO signale risque alimentaire.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Fenêtre actuelle de protection non établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Contestation du jugement n'est pas seule preuve d'escalade.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Arrêt CIJ et mesures britanniques, exécution à suivre.",
+      "living": "La protection des Rohingya et des autres populations civiles, les retours sûrs et volontaires, l'accès aux soins, l'alimentation et la restitution des biens sont essentiels.",
+      "peace": "Suivre l'exécution de l'arrêt, les garanties de non-répétition, les réparations et la recherche d'un règlement politique inclusif. L'arrêt ne constitue pas en lui-même la fin des hostilités.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Actualiser violences et conditions des Rohingya ; lire arrêt.",
+      "corpus_sources": [
+        "https://iimm.un.org/icj-gambia-v-myanmar",
+        "https://www.gov.uk/government/speeches/foreign-secretary-statement-to-the-house-of-commons-23-november-2026",
+        "https://www.lemonde.fr/international/article/2026/11/27/birmanie-le-dictateur-birman-min-aung-hlaing-fait-peu-de-cas-du-verdict-de-la-cij_6815834_3210.html"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "Jugement confirmé par ONU, France et Royaume-Uni ; réaction du 25 novembre confirmée par passage Le Monde. Ajouter jugement original, communiqué birman et position française ; distinguer responsabilité étatique et individuelle.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-09",
+      "title": "Thaïlande–Cambodge",
+      "region": "Asie",
+      "scope": "Thaïlande–Cambodge",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Conciliation maritime ne renseigne pas gravité terrestre actuelle.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de délai critique établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Accord de visite sans preuve de dégradation ou désescalade terrestre.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Avancée technique corroborée au corpus.",
+      "living": "Suivre le retour des déplacés, la sécurité des zones frontalières, les ressources marines, la pêche et les échanges locaux.",
+      "peace": "Évaluer séparément l'application du cessez-le-feu terrestre, la conciliation maritime et la coopération au sein de l'ASEAN.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Suivre cessez-le-feu terrestre et conciliation maritime.",
+      "corpus_sources": [
+        "https://pca-cpa.org/en/cases/380/",
+        "https://pca-cpa.org/fr/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-6/",
+        "https://www.reuters.com/markets/commodities/cambodia-thailand-agree-maritime-site-visit-dispute-proceedings-2026-11-27/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Progrès techniques du 24–27 novembre confirmés par les deux gouvernements et Reuters indexé. Ajouter références officielles accessibles, lire communiqué CPA intégral ; distinguer mer et terre.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-10",
+      "title": "Afghanistan – sécurité intérieure",
+      "region": "Asie",
+      "scope": "Afghanistan – sécurité intérieure",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Très forte préoccupation alimentaire ; pas de mesure locale actuelle de gravité dans cette passe.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Appel urgent des agences, délai spécifique inconnu.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Dégradation projetée et retours, sans données sécuritaires intérieures récentes.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": true,
+      "priority": "reexamen_immediat",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Ne pas assimiler retours à sécurité ou volontariat.",
+      "living": "L'accès à l'alimentation, aux soins, à l'éducation et aux moyens de subsistance, notamment pour les femmes et les filles, constitue un axe essentiel.",
+      "peace": "Observer les conditions d'accès humanitaire, le respect des droits, la protection des personnes et les possibilités de dialogue avec les autorités de fait.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "IPC récent, conditions des femmes et retours, incidents.",
+      "corpus_sources": [
+        "https://www.wfp.org/news/el-nino-adds-new-hunger-hotspots-conflict-continues-drive-risk-famine-warn-fao-and-wfp",
+        "https://data.unhcr.org/en/situations/afghanistan?gsid=84727841-98b9-41d7-b934-d16db4751a57",
+        "https://data.unhcr.org/fr/documents/details/124957"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "Classement alimentaire corroboré par FAO/PAM indexé ; portail HCR accessible daté août et notice spécifique novembre. Ne pas assimiler retour à retour volontaire ; actualiser sécurité intérieure.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-11",
+      "title": "Pakistan – conflits internes",
+      "region": "Asie",
+      "scope": "Pakistan – conflits internes",
+      "reference_date": "2026-11-26",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Notice EUAA et annonces militaires ; rapport non lu.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre critique établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Accusations d'aide étrangère non corroborées.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Distinguer fait annoncé et attribution.",
+      "living": "Suivre les conséquences pour les civils, les déplacements, les droits fondamentaux, l'accès aux ressources et la continuité des services.",
+      "peace": "Examiner les possibilités de règlement politique et de justice, les mesures de protection et la distinction entre faits établis et accusations des autorités.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Rapport EUAA, réponse des parties et protection civile.",
+      "corpus_sources": [
+        "https://www.euaa.europa.eu/publications/coi-query-response-pakistan-security-situation-balochistan-province",
+        "https://www.dawn.com/news/2047181/security-forces-kill-12-india-sponsored-terrorists-in-multiple-ibos-in-balochistan-ispr"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Notice EUAA et annonce Dawn confirmées ; PDF non lu, accusation de soutien étranger attribuée. Étudier protection des civils et droits.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-12",
+      "title": "Philippines – conflits internes",
+      "region": "Asie",
+      "scope": "Philippines – conflits internes",
+      "reference_date": "2026-11-07",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Retards de réintégration signalés, pas de mesure actuelle.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de délai critique établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Dialogue en cours, données sécuritaires récentes manquantes.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Session parlementaire et discussions MILF.",
+      "living": "Le développement des communautés, la justice transitionnelle, les droits fonciers et la sécurité des personnes réintégrées conditionnent la durabilité du processus.",
+      "peace": "Évaluer l'application effective des engagements politiques et socio-économiques, au-delà de l'installation du parlement.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Mise en œuvre et foyers armés distincts.",
+      "corpus_sources": [
+        "https://pco.gov.ph/news_releases/pbbm-milf-leaders-discuss-remaining-steps-towards-lasting-bangsamoro-peace/",
+        "https://peace.gov.ph/2026/11/",
+        "https://verafiles.org/articles/bangsamoro-peace-process-sufficiently-off-track-as-normalization-lags"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Rencontre du 6 novembre corroborée, session parlementaire du 30 confirmée ; décalage entre normalisation et volet politique documenté. Ajouter lien précis et chercher état récent et autres foyers armés.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-13",
+      "title": "Inde – tensions internes",
+      "region": "Asie",
+      "scope": "Inde – tensions internes",
+      "reference_date": "2026-11-26",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Protestations de déplacés et blocage envisagé, dommages actuels non mesurés.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Suspension annoncée le 26, effectivité à confirmer.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Menace de blocage suspendue, pas de mécanisme actuel étayé.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Ouverture au dialogue invoquée.",
+      "living": "L'accès aux services, aux routes d'approvisionnement, aux terres et au logement des personnes déplacées exige une attention égale aux différentes communautés.",
+      "peace": "Soutenir la documentation des besoins, la recherche de garanties impartiales et le dialogue entre communautés. Ce premier socle ne couvre pas l'ensemble des situations intérieures de l'Inde.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Vérifier accès routier, services et positions communautaires.",
+      "corpus_sources": [
+        "https://www.theeasttimes.com/india/manipur-faces-renewed-unrest-as-highway-blockade-threat-idp-protests-and-nrc-demand-intensify/203/",
+        "https://nagaland.news/cotu-highway-shutdown-naga-bodies/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Protestations et projet de blocage corroborés ; suspension annoncée le 26 confirmée. Suivre réalisation et positions communautaires ; périmètre Manipur ne couvre pas toute l’Inde.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-14",
+      "title": "Bangladesh : tensions politiques et communautaires",
+      "region": "Asie",
+      "scope": "Bangladesh : tensions politiques et communautaires",
+      "reference_date": "2026-11-03",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Rapport octobre sur violences et minorités, novembre insuffisant.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre actuelle établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Données de périodes différentes, trajectoire non établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Mission britannique rapporte amélioration après élections ; HRSS signale violences.",
+      "living": "Protection des minorités, libertés publiques, accès à la justice et aux services ; documenter séparément la situation des réfugiés.",
+      "peace": "Suivre les réformes, le dialogue politique et les garanties de droits sans qualifier la situation de guerre.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Confronter autorités/société civile et actualiser novembre.",
+      "corpus_sources": [
+        "https://www.gov.uk/government/publications/bangladesh-country-policy-and-information-notes/report-of-a-fact-finding-mission-bangladesh-political-situation-october-2026-accessible",
+        "https://hrssbd.org/report_details/101",
+        "https://www.thedailystar.net/news/bangladesh/rights/news/bnp-factional-clashes-leave-9-dead-185-injured-october-hrss-report-4314621"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Actualiser novembre, confronter autorités et société civile.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "ASI-15",
+      "title": "Thaïlande méridionale : processus de paix",
+      "region": "Asie",
+      "scope": "Thaïlande méridionale : processus de paix",
+      "reference_date": "2026-11-12",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Bilan des violences récentes absent.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Rencontre du facilitateur ne démontre pas évolution des violences.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Processus de paix distinct du Cambodge.",
+      "living": "Protection des communautés, accès aux services et développement des territoires frontaliers.",
+      "peace": "Suivre la facilitation malaisienne, la participation locale et les positions des parties.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Positions BRN, Malaisie et données locales.",
+      "corpus_sources": [
+        "https://mfa.go.th/en/content/dpm-fm-meets-malaysian-gov-facilitator-sbp-en?cate=5d5bcb4e15e39c306000683c",
+        "https://www.nationthailand.com/news/asean/40072435"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Obtenir positions BRN et Malaisie et données récentes.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "EUR-01",
+      "title": "Russie–Ukraine",
+      "region": "Europe et Caucase",
+      "scope": "Russie–Ukraine",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": "2",
+      "existing_code_scope": "suivi régional associé ; ne pas confondre avec indice du dossier",
+      "G": {
+        "value": null,
+        "reason": "Dommages de la guerre documentés au corpus, pas de synthèse actuelle complète ici.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": 3,
+        "reason": "Perte de la dernière liaison électrique externe rapportée ; besoin d'examen rapproché de sûreté, indice provisoire 24–72 h, situation actuelle à confirmer.",
+        "basis": "limitee",
+        "confidence": "faible",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "E": {
+        "value": null,
+        "reason": "Sûreté nucléaire et risque d'extension distincts ; pas de données suffisantes pour indice global.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": true,
+      "priority": "reexamen_immediat",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "AIEA recherche une suspension locale, aucun accident radiologique établi.",
+      "living": "Les civils, les personnes déplacées, la continuité des soins, de l'électricité et de l'eau, la sûreté nucléaire et la restauration des sols contaminés ou dégradés doivent rester au centre de l'analyse.",
+      "peace": "Suivre les démarches de médiation, les échanges de prisonniers et les garanties de sécurité, ainsi que l'application effective des cessez-le-feu éventuels. Le suivi régional conserve sa chronologie et son niveau validé.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Confirmer état de l'alimentation et sources AIEA ; protéger civils.",
+      "corpus_sources": [
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/11/10/statement-on-today-s-meeting-in-abu-dhabi-between-the-eu-france-germany-italy-united-kingdom-ukraine-united-states-and-nato/",
+        "https://www.reuters.com/business/energy/iaea-working-with-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-2026-11-27/",
+        "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/26-27/",
+        "https://apnews.com/article/fd025046850b824b2e62def18408c6b6",
+        "https://www.publicnow.com/view/8F4773C9BB8CBFD000AE92A795DD056FB05D551B"
+      ],
+      "fresh_sources": [
+        "https://www.world-nuclear-news.org/articles/iaea-seeks-fresh-local-ceasefire-for-zaporizhzhia-power-line-repairs"
+      ],
+      "documentary_reserve": "Coordination du 10 et financement non conclu confirmés ; démarche AIEA annoncée le 26 et rapportée le 27, non cessez-le-feu acquis. Chercher communiqué original AIEA et positions des parties. Distinguer prêt supplémentaire et instrument existant.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "EUR-02",
+      "title": "Russie–OTAN et sécurité européenne",
+      "region": "Europe et Caucase",
+      "scope": "Russie–OTAN et sécurité européenne",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Incident letton rapporté, dommages non établis.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Imminence d'une confrontation non établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": 2,
+        "reason": "Incidents aériens et avertissements, origine et intention du drone inconnues ; appréciation provisoire.",
+        "basis": "limitee",
+        "confidence": "faible",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Déclaration conjointe appelle à prévenir extension ; pas d'affrontement direct établi.",
+      "living": "Prévenir les atteintes aux infrastructures civiles et énergétiques, les accidents aériens et les risques nucléaires ; analyser les conséquences de la confrontation sur les conditions de vie et les ressources publiques.",
+      "peace": "Documenter les mécanismes de prévention des incidents, les canaux diplomatiques et les débats sur les garanties de sécurité. Un incident aérien ne démontre ni une attaque volontaire ni un déclenchement automatique de la défense collective.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Positions nationales, attribution, articles 4–5 et désescalade.",
+      "corpus_sources": [
+        "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa",
+        "https://www.nato.int/fr/news-and-events/articles/news/2026/11/26/joint-statement-by-the-president-of-the-united-states-of-america-and-the-nato-secretary-general",
+        "https://www.reuters.com/world/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say-2026-11-27/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Discours et déclaration OTAN consultés ; incident letton corroboré par reprise Reuters. Attributions et intention à confirmer par autorités nationales et sources indépendantes. Lire traité articles 4–5 ; vérifier événements distincts et positions russes. Pas de changement de niveau.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "EUR-03",
+      "title": "Serbie–Kosovo",
+      "region": "Europe et Caucase",
+      "scope": "Serbie–Kosovo",
+      "reference_date": "2026-11-25",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Pas de mesure contemporaine de dommages.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Aucune fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Soutien UE au dialogue n'établit pas trajectoire de sécurité.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Dialogue de normalisation et accord 2023.",
+      "living": "La sécurité des différentes communautés, l'accès aux services, la liberté de circulation, les droits linguistiques et la protection du patrimoine doivent être suivis.",
+      "peace": "Vérifier l'application des engagements antérieurs, notamment les dispositions relatives aux communautés serbes du Kosovo, et les garanties impartiales pour tous les habitants.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Application des engagements et droits des communautés.",
+      "corpus_sources": [
+        "https://www.eeas.europa.eu/eeas/belgrade-pristina-dialogue_en",
+        "https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/25/",
+        "https://enlargement.ec.europa.eu/news/2026-enlargement-package-shows-reform-commitment-delivers-progress-towards-eu-membership-2026-11-04_en"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Dialogue UE depuis 2011 et sommet du 25 corroborés. Lire accord 2023 et annexes ; suivre application et positions des communautés.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "EUR-04",
+      "title": "Bosnie-Herzégovine",
+      "region": "Europe et Caucase",
+      "scope": "Bosnie-Herzégovine",
+      "reference_date": "2026-11-25",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Rapport UE non lu intégralement, stabilité actuelle inconnue.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Sommet régional ne démontre pas évolution interne.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Perspectives d'adhésion, réformes.",
+      "living": "Le fonctionnement des services publics, l'égalité devant les institutions, le retour des déplacés, la coopération intercommunautaire et le déminage des territoires sont des enjeux de paix durable.",
+      "peace": "Suivre la stabilité des institutions, l'application de Dayton, la protection des droits fondamentaux et les réformes nécessaires à l'intégration européenne.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Rapport UE, OHR, Dayton et actualité interne.",
+      "corpus_sources": [
+        "https://enlargement.ec.europa.eu/bosnia-and-herzegovina-report-2026_en?prefLang=bg",
+        "https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/25/",
+        "https://enlargement.ec.europa.eu/news/joint-statement-high-representativevice-president-kallas-and-commissioner-kos-general-elections-2026-10-06_en?prefLang=da"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Notice du rapport 4 novembre et déclaration électorale consultées ; PDF non lu, absence de conclusion sur stabilité actuelle. Chercher actualisation spécifique, rapports OHR, textes Dayton et OSCE.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "EUR-05",
+      "title": "Moldavie–Transnistrie",
+      "region": "Europe et Caucase",
+      "scope": "Moldavie–Transnistrie",
+      "reference_date": "2026-11-23",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Services et droits à documenter.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Réunion diplomatique sans indice de rupture suffisant.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "OSCE facilite échanges sur écoles et circulation.",
+      "living": "Préserver la continuité des services, la circulation, les droits linguistiques et éducatifs, l'accès à l'énergie et les échanges entre les deux rives.",
+      "peace": "Suivre les groupes de travail et les négociations, les garanties de droits et les positions relatives à la présence militaire russe. Distinguer une déclaration diplomatique d'une mesure effectivement appliquée.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Positions Tiraspol, Chisinau et réalisation des engagements.",
+      "corpus_sources": [
+        "https://moldova.osce.org/news/mission-moldova/667755",
+        "https://gov.md/index.php/en/comunicate-de-presa-bpr/issues-reintegration-process-and-respect-human-rights-eastern-districts"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Réunion du 20 et communiqué OSCE confirmés. Ajouter les engagements concrets sur écoles et immatriculation et rencontre avant fin 2026, sans présumer exécution ; confronter positions de Tiraspol.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "EUR-06",
+      "title": "Arménie–Azerbaïdjan",
+      "region": "Europe et Caucase",
+      "scope": "Arménie–Azerbaïdjan",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Effets actuels sur déplacés et terres non quantifiés.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Rapprochement sans preuve de ratification ou de stabilité durable.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Peace Bridge, groupes de travail transfrontaliers.",
+      "living": "Les droits et la sécurité des déplacés, la protection du patrimoine, le déminage, les ressources et la coopération locale sont essentiels.",
+      "peace": "Suivre la formalisation du traité, la délimitation frontalière et les garanties de droits et de circulation. Les rapprochements entre sociétés civiles méritent une attention indépendante des annonces gouvernementales.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Traité, délimitation et garanties de droits.",
+      "corpus_sources": [
+        "https://www.consilium.europa.eu/en/policies/azerbaijan/",
+        "https://www.primeminister.am/en/press-release/item/2026/11/12/Nikol-Pashinyan-Ilham-Aliyev/",
+        "https://www.euronews.com/2026/11/27/azerbaijani-and-armenian-civil-societies-seek-new-history-in-new-round-of-peace-talks",
+        "https://en.apa.az/foreign-policy/azerbaijan-armenia-peace-bridge-initiative-completes-fifth-round-of-talks-538970"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Paraphe 2025 et rencontre du 12 confirmés ; cinquième Peace Bridge corroborée par textes indexés. Ajouter groupes de travail eaux transfrontalières et projet interconnexion électrique ; chercher communiqué azerbaïdjanais et texte du traité, droits des déplacés.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "EUR-07",
+      "title": "Chypre",
+      "region": "Europe et Caucase",
+      "scope": "Chypre",
+      "reference_date": "2026-11-25",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Impacts fonciers et services non mesurés.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Calendrier de rencontre non confirmé.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Projets communs ne suffisent pas à mesurer risque de rupture.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Accord de principe, secours et coopération.",
+      "living": "Faciliter les contacts entre communautés, la coopération environnementale, la protection du patrimoine et les solutions aux différends fonciers. Les projets communs d'éducation et de gestion de l'environnement constituent des mesures de confiance possibles.",
+      "peace": "Suivre la mise en œuvre des passages annoncés et les bons offices de l'ONU ; distinguer la reprise du dialogue de l'accord final sur le statut de l'île.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Ouverture effective des passages, bons offices ONU.",
+      "corpus_sources": [
+        "https://www.reuters.com/world/middle-east/cyprus-leaders-agree-open-new-border-crossings-future-talks-2026-11-09/",
+        "https://en.politis.com.cy/news/1074261/menelaou-window-still-open-for-enlarged-cyprus-meeting-before-guterres-leaves",
+        "https://famagusta-gazette.com/cyprus-leaders-meet-at-un-buffer-zone-call-for-trilateral-talks-with-guterres/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Accord de principe sur deux passages le 9 et préparatifs du 24 corroborés ; ne pas présenter ouverture comme effective. Ajouter mécanisme de secours et projets communs éducation/environnement rapportés le 25 ; chercher communiqué ONU original.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "EUR-08",
+      "title": "Géorgie–Russie : Abkhazie et Ossétie du Sud",
+      "region": "Europe et Caucase",
+      "scope": "Géorgie–Russie : Abkhazie et Ossétie du Sud",
+      "reference_date": "2026-11-11",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Droits et retour des déplacés à documenter.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Absence d'incident majeur sur une période ne permet pas cotation basse globale.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "68e cycle de Genève et divergences persistantes.",
+      "living": "Suivre circulation, droits, services et retour volontaire et sûr des déplacés.",
+      "peace": "Suivre les deux groupes de travail et les mécanismes de prévention des incidents.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Positions russes/abkhazes, accord 2008 et terrain.",
+      "corpus_sources": [
+        "https://www.osce.org/chairpersonship/669669",
+        "https://mfa.gov.ge/en/statements-by-mfa/578096-sagareo-saqmeta-saministros-gantskhadeba-zhenevis-saertashoriso-molaparakebebis-68-e-raundtan-dakavs",
+        "https://mfa.rsogov.org/en/node/5014"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Lire positions russe et abkhaze, accord de 2008 et mécanismes de terrain.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AME-01",
+      "title": "Haïti",
+      "region": "Amériques",
+      "scope": "Haïti",
+      "reference_date": "2026-11-17",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": 3,
+        "reason": "HCDH : graves atteintes persistantes, services à restaurer ; très forte préoccupation alimentaire.",
+        "basis": "suffisante",
+        "confidence": "moyenne",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "U": {
+        "value": null,
+        "reason": "Appels urgents, délai exact non établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": 2,
+        "reason": "Violence des gangs décrite comme en aggravation par HCDH et insécurité alimentaire projetée ; horizon à préciser.",
+        "basis": "limitee",
+        "confidence": "faible",
+        "freshness": "actuelle",
+        "note": "Indice de travail ; portée limitée aux faits ou estimations indiqués ; non validé."
+      },
+      "credible_urgent_signal": true,
+      "priority": "reexamen_immediat",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Opérations de sécurité peuvent réduire emprise mais comportent risques de droits ; calendrier électoral incertain.",
+      "living": "Protéger les populations, les enfants, les personnes déplacées, les services essentiels et l’accès humanitaire.",
+      "peace": "Suivre la transition électorale, le contrôle des opérations de sécurité, la justice et la réduction des violences.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Accès humanitaire, protection, transition et contrôles judiciaires.",
+      "corpus_sources": [
+        "https://mandates.un.org/mandate/S/RES/2814%282026%29",
+        "https://transcripts.un.org/en/briefing/geneva/2026-11-17",
+        "https://dppa.un.org/en/news/haiti-elections-on-hold-as-gangs-adapt-to-security-crackdown-security-council-hears"
+      ],
+      "fresh_sources": [
+        "https://www.unognewsroom.org/story/en/3328/un-human-rights-spokesperson-marta-hurtado-briefing-on-the-continued-atrocious-abuses-in-haiti",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "Mandat et report électoral corroborés par index ; OHCHR consulté via transcription automatique. Chercher texte officiel et calendrier actuel, contrôler droits et accès humanitaire.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AME-02",
+      "title": "Colombie",
+      "region": "Amériques",
+      "scope": "Colombie",
+      "reference_date": "2026-11-22",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Bilan contrasté et violences recomposées, pas de mesure actuelle suffisante.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Persistance ne suffit pas à prouver aggravation actuelle.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Mission ONU renouvelée, accord 2016.",
+      "living": "Protéger les communautés rurales et autochtones, les terres, les défenseurs de l’environnement et les personnes déplacées.",
+      "peace": "Suivre l’application territoriale de l’accord, les engagements des groupes armés, la justice et les garanties de sécurité.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Rapport SG et application rurale, garanties de sécurité.",
+      "corpus_sources": [
+        "https://mandates.un.org/mandate/S/RES/2833%20%282026%29",
+        "https://digitallibrary.un.org/record/4129789?v=pdf",
+        "https://www.lemonde.fr/international/article/2026/11/22/en-colombie-dix-ans-apres-la-signature-de-l-accord-historique-le-bilan-amer-de-la-paix-avec-les-farc_6814189_3210.html"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Mandat renouvelé et bilan contrasté corroborés ; rapport SG non lu, texte de l'accord, justice transitionnelle, garanties rurales et positions actuelles à approfondir.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AME-03",
+      "title": "Mexique",
+      "region": "Amériques",
+      "scope": "Mexique",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Plainte DEA n'est pas mesure de violence criminelle.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Protestation diplomatique ne suffit pas à établir escalade.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Coopération bilatérale maintenue selon corpus.",
+      "living": "Protéger les habitants, les journalistes, les élus, les migrants et les personnes déplacées ; prévenir les abus lors des opérations.",
+      "peace": "Suivre la coopération consentie, la lutte contre l’impunité et la prévention du recrutement criminel ; ne pas assimiler toute violence à un conflit armé.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Données nationales, note officielle et réponse américaine.",
+      "corpus_sources": [
+        "https://www.reuters.com/world/americas/mexico-files-complaint-with-us-over-dea-tip-line-alleged-drug-traffickers-2026-11-27/",
+        "https://www.cfr.org/global-conflict-tracker/conflict/criminal-violence-mexico",
+        "https://www.gob.mx/sspc/prensa/el-gabinete-de-seguridad-del-gobierno-de-mexico-informa-acciones-relevantes-del-6-7-y-8-de-noviembre-de-2026?idiom=es"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Plainte formelle corroborée par Reuters et AP ; contexte CFR et communiqué officiel indexé. Rechercher note diplomatique, réponse américaine, données nationales et seuil de qualification juridique.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AME-04",
+      "title": "Équateur",
+      "region": "Amériques",
+      "scope": "Équateur",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Déplacements rapportés sur trois ans, pas de mesure actuelle suffisante.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Extradition n'établit ni efficacité durable ni intensification.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Résultat de coopération judiciaire présenté par autorités.",
+      "living": "Protéger les familles déplacées, les enfants exposés au recrutement, les écoles et les moyens de subsistance.",
+      "peace": "Évaluer la coopération judiciaire internationale, le contrôle des opérations et la prévention territoriale.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Actualiser HCR et effets territoriaux des mesures.",
+      "corpus_sources": [
+        "https://apnews.com/article/2c5edfb68eb298c5645715e918545960",
+        "https://www.investing.com/news/world-news/as-criminal-networks-spread-in-latin-america-quito-is-new-battleground-4982773",
+        "https://www.investing.com/news/world-news/as-gang-violence-deepens-hundreds-of-thousands-of-ecuadoreans-flee-their-homes-4891197"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Extradition présentée comme succès corroborée par AP indexé ; contexte et déplacements documentés via Reuters. Rechercher décisions judiciaires, données HCR originales, résultats et droits.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AME-05",
+      "title": "Venezuela–États-Unis",
+      "region": "Amériques",
+      "scope": "Venezuela–États-Unis",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Effets économiques et politiques actuels non mesurés.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Pressions OPEP rapportées antérieures ; pas d'indice d'escalade contemporaine.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Coopération militaire annoncée, légalité et exécution distinctes.",
+      "living": "Examiner les droits politiques, l’accès aux services, la reconstruction après les séismes et la gestion souveraine des ressources naturelles.",
+      "peace": "Suivre les garanties électorales, la protection des droits, la souveraineté et la transparence des accords économiques et militaires.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Texte accord, droits politiques, souveraineté, ressources.",
+      "corpus_sources": [
+        "https://commonslibrary.parliament.uk/research-briefings/CBP-12211/",
+        "https://www.investing.com/news/world-news/us-defense-secretary-hegseth-vows-to-boost-venezuela-military-cooperation-5036784",
+        "https://www.reuters.com/business/energy/us-pushed-venezuela-iraq-consider-leaving-opec-sources-say-2026-11-27/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Contexte et coopération annoncée confirmés ; pressions OPEP rapportées le 27 mais antérieures. Texte accord, légalité du recours à la force, élections et effets sociaux à examiner.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AME-06",
+      "title": "Venezuela–Guyana",
+      "region": "Amériques",
+      "scope": "Venezuela–Guyana",
+      "reference_date": "2026-11-21",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Conséquences actuelles sur populations et écosystèmes non mesurées.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Calendrier CIJ non confirmé.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Préférence judiciaire ne suffit pas à coter risque faible ou élevé.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Voie CIJ, absence de calendrier définitif.",
+      "living": "Préserver les communautés autochtones, les forêts, les cours d’eau et la sécurité des habitants du territoire contesté.",
+      "peace": "Suivre la procédure judiciaire, le respect des mesures conservatoires et la prévention d’incidents ; vérifier directement le dossier de la Cour lors de l’audit.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Mesures conservatoires, positions vénézuéliennes et terrain.",
+      "corpus_sources": [
+        "https://dpi.gov.gy/press-statement-guyana-stands-firm-on-sovereignty-as-icj-prepares-final-judgment-in-border-case/",
+        "https://www.cbc.bb/main-stories/guyana-rejects-bilateral-talks-with-venezuela-over-essequibo-dispute/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Position Guyana corroborée ; site gouvernemental et dossier CIJ indisponibles en direct, notice CIJ retrouvée. Lire ordonnances et positions vénézuéliennes, protéger communautés et ressources.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AME-07",
+      "title": "Amérique centrale – violences organisées",
+      "region": "Amériques",
+      "scope": "Amérique centrale – violences organisées",
+      "reference_date": "2026-11-16",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Notices nationales non lues en entier ; impacts du corridor sec à ventiler.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Projection de soudure précoce, délai local non établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Dégradation alimentaire projetée, non preuve d'escalade criminelle.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Distinguer crise alimentaire et violence, éviter agrégation régionale.",
+      "living": "Protéger les personnes déplacées, les enfants, les victimes de violences et l’accès au logement, à l’éducation et aux soins.",
+      "peace": "Suivre les réponses nationales, le cadre régional MIRPS et l’accès effectif à la protection et à la justice.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Lire rapports HCR et IPC par pays.",
+      "corpus_sources": [
+        "https://www.unhcr.org/emergencies/el-salvador-guatemala-and-honduras-emergency?page=0",
+        "https://www.unhcr.org/where-we-work/countries/honduras",
+        "https://data.unhcr.org/en/situations/cam/location"
+      ],
+      "fresh_sources": [
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+      ],
+      "documentary_reserve": "Portail HCR et notices consultés ; profils bloqués. Rapport Honduras plus récent que référence initiale, fiche Salvador bilan 2025 publiée septembre. Ventiler pays et dates ; aucun bilan régional récent établi.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AME-08",
+      "title": "Brésil – violences organisées",
+      "region": "Amériques",
+      "scope": "Brésil – violences organisées",
+      "reference_date": "2026-11-24",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Nombre d'organisations ne mesure pas gravité ; enquête sur opération 2025.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Cartographie ne prouve pas trajectoire actuelle.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Contrôle judiciaire et prévention à étudier.",
+      "living": "Protéger les habitants des quartiers exposés, les communautés forestières et les services publics ; garantir des enquêtes sur les abus présumés.",
+      "peace": "Suivre les politiques de prévention, la coordination judiciaire, le contrôle des forces de sécurité et les résultats territoriaux.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Rapport ABIN, réponses aux allégations et chiffres récents.",
+      "corpus_sources": [
+        "https://agenciabrasil.ebc.com.br/en/justica/noticia/2026-11/intelligence-agency-reports-31-criminal-organizations-brazil",
+        "https://www.hrw.org/news/2026/10/28/brazil-new-evidence-of-serious-police-misconduct-in-deadly-raid"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Cartographie ABIN et enquête HRW confirmées ; distinguer publication 2026 et opération 2025. Rapport original et réponse des autorités à rechercher, aucune assimilation automatique à guerre.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "AME-09",
+      "title": "Cuba–États-Unis",
+      "region": "Amériques",
+      "scope": "Cuba–États-Unis",
+      "reference_date": "2026-11-05",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Effets des sanctions sur services non évalués ici.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre critique établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Autorisation de sanctions sectorielles ne prouve pas escalation effective.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Canaux déclarés en octobre ; exemptions à contrôler.",
+      "living": "Évaluer les effets des restrictions et des politiques nationales sur l’énergie, l’alimentation, les médicaments et les droits des habitants.",
+      "peace": "Suivre les canaux diplomatiques, les exemptions humanitaires et les conditions d’une désescalade respectant les droits et la souveraineté.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Actes OFAC, données humanitaires et positions des parties.",
+      "corpus_sources": [
+        "https://mandates.un.org/mandate/A/RES/81/7",
+        "https://www.reuters.com/world/americas/us-issues-new-cuba-sanctions-takes-aim-sectors-cuban-economy-2026-11-05/",
+        "https://www.investing.com/news/world-news/exclusivecuba-and-us-maintain-channels-of-communication-but-no-negotiations-diplomat-says-4932854",
+        "https://ofac.treasury.gov/recent-actions/20261105",
+        "https://ofac.treasury.gov/faqs/1277"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Résolution ONU indexée ; OFAC confirme détermination du 5 novembre, Reuters confirme échanges déclarés en octobre. Distinguer autorisation de sanctions sectorielles et désignations effectives ; contrôler licences et effets humanitaires.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "STR-01",
+      "title": "Arctique et rivalités stratégiques",
+      "region": "Océanie et espaces stratégiques",
+      "scope": "Arctique et rivalités stratégiques",
+      "reference_date": "2026-11-26",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Effets écologiques et humains non mesurés dans la fiche.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de délai critique établi.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Décret russe non lu ; importance stratégique ne prouve pas rupture.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Coopération civile du Conseil de l'Arctique.",
+      "living": "Préserver les écosystèmes polaires, les moyens de subsistance et les droits des peuples autochtones ; suivre les effets de la fonte des glaces, de la navigation, de l’extraction et des pollutions sur les milieux marins et terrestres.",
+      "peace": "Maintenir les canaux scientifiques et civils, suivre les mécanismes de prévention des incidents et les accords de secours et de lutte contre les pollutions. Distinguer les intentions stratégiques, les capacités et les actes ; ne pas déduire une désescalade de la seule poursuite de la coopération.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Lire décret et rapport atelier ; écosystèmes et peuples autochtones.",
+      "corpus_sources": [
+        "https://arctic-council.org/news/arctic-council-chairship-leads-workshop-for-sustainable-economic-development/",
+        "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa",
+        "https://www.thearcticinstitute.org/russias-2026-arctic-strategy-security-cooperation/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Atelier du Conseil et discours OTAN consultés. Décret russe 872 identifié mais texte intégral inaccessible ; confronter positions et suivre rapport de l’atelier.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "STR-02",
+      "title": "Pacifique insulaire et rivalités internationales",
+      "region": "Océanie et espaces stratégiques",
+      "scope": "Pacifique insulaire et rivalités internationales",
+      "reference_date": "2026-11-26",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Effets des accords non encore observés.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre critique établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Signature et entrée en vigueur ne prouvent pas escalation militaire.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Accords comportent coopération civile et sécuritaire.",
+      "living": "Respecter les choix souverains des populations insulaires et examiner la résilience climatique, la préservation des océans, les ressources halieutiques, l’accès à l’eau, la mobilité, la santé et l’éducation.",
+      "peace": "Suivre les engagements régionaux de l’Océan de paix, les mécanismes de consultation, la transparence des accords et la prévention des rivalités imposées de l’extérieur. Distinguer signature, entrée en vigueur et application effective ; ne pas présumer du devenir des accords antérieurs.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Clauses, application et positions insulaires et autres partenaires.",
+      "corpus_sources": [
+        "https://www.pm.gov.au/media/signing-australia-solomon-islands-treaty",
+        "https://www.pm.gov.au/media/entry-force-fiji-australia-vuvale-union-and-ocean-peace-alliance-veitacini-treaty",
+        "https://www.reuters.com/world/china/australia-solomon-islands-sign-security-pact-2026-11-25/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Déclarations conjointes et clauses pertinentes des textes DFAT consultées : art. 5 et 9 du traité Salomon (partenaire principal, bases, entrée en vigueur) ; art. 6, 12–14 du Veitacini (défense, accession, ratification). Entrée en vigueur Salomon non établie ; déclaration Fidji confirme celle des deux accords au 26 novembre. Suivre exécution et positions des autres acteurs.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "STR-03",
+      "title": "Papouasie occidentale",
+      "region": "Océanie et espaces stratégiques",
+      "scope": "Papouasie occidentale",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Déplacements et services perturbés rapportés ; rapport daté de façon incohérente, corroboration insuffisante.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre locale fiable.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Débat sur désignation et allégations, trajectoire non corroborée.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Demandes Komnas HAM de réduction des violences.",
+      "living": "Protéger les populations civiles et autochtones, garantir l’aide humanitaire, les soins, l’éducation et l’accès aux terres et aux forêts. Examiner les effets des projets de développement, des déplacements et des opérations de sécurité ; recueillir les positions des autorités et des communautés.",
+      "peace": "Suivre les appels au dialogue, les réponses institutionnelles aux recommandations de Komnas HAM, l’accès des observateurs indépendants et les garanties de retour volontaire et sûr des déplacés. Vérifier les allégations et chiffres auprès de sources indépendantes et officielles, sans confondre revendication politique et violence armée.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Dater rapport, vérifier déplacements, réponses officielles.",
+      "corpus_sources": [
+        "https://humanrightsmonitor.org/reports/idp-update-november26-security-operations-and-new-troop-deployments-trigger-further-displacements-across-west-papua/",
+        "https://www.asia-pacific-solidarity.net/news/2026-09-11/komnas-ham-urges-prabowo-curb-papua-conflict.html",
+        "https://humanrightsmonitor.org/news/from-opm-and-kkb-to-keb-indonesian-govt-relabels-armed-groups-in-west-papua/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Rapport HRM et reprise Tempo consultés, débat sur nomenclature corroboré par extraits HRM et Jakarta Post. Incohérence de datation interne du rapport à résoudre, absence de vérification indépendante de plusieurs allégations ; obtenir sources originales et réponse des autorités.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "STR-04",
+      "title": "Papouasie–Nouvelle-Guinée : violences intercommunautaires des Hautes-Terres",
+      "region": "Océanie et espaces stratégiques",
+      "scope": "Papouasie–Nouvelle-Guinée : violences intercommunautaires des Hautes-Terres",
+      "reference_date": "2026-11",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Sources de programme ONU ne mesurent pas gravité contemporaine.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Pas de fenêtre établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Violences localisées sans bilan contemporain.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Programme de prévention et médiation coutumière.",
+      "living": "Médiation coutumière, foncier, déplacements, services, partage des ressources et adaptation climatique.",
+      "peace": "Suivre prévention et médiations communautaires ; qualifier juridiquement les violences au cas par cas.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Données locales indépendantes et PNUD.",
+      "corpus_sources": [
+        "https://www.un.org/peacebuilding/en/content/papua-new-guinea",
+        "https://www.un.org/peacebuilding/sites/default/files/2026-11/country_brief_png_2026-11-02.pdf",
+        "https://www.undp.org/papua-new-guinea/projects/securing-conditions-sustained-peace-highlands",
+        "https://www.c-r.org/learning-hub/preventing-election-violence-papua-new-guineas-highlands"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Deux références institutionnelles issues du même organisme ; corroboration locale indépendante nécessaire avant publication.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    },
+    {
+      "id": "STR-05",
+      "title": "Papouasie–Nouvelle-Guinée–Bougainville : avenir institutionnel",
+      "region": "Océanie et espaces stratégiques",
+      "scope": "Papouasie–Nouvelle-Guinée–Bougainville : avenir institutionnel",
+      "reference_date": "2026-11-27",
+      "horizon": "Horizon de travail 30 jours, à réviser selon faits et échéances",
+      "existing_code": null,
+      "existing_code_scope": null,
+      "G": {
+        "value": null,
+        "reason": "Dommages actuels non établis.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "U": {
+        "value": null,
+        "reason": "Vote annoncé le 2 décembre : échéance de veille, pas urgence de rupture établie.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "E": {
+        "value": null,
+        "reason": "Débat institutionnel ne prouve pas escalade.",
+        "basis": "absente",
+        "confidence": "indeterminee",
+        "freshness": "inconnue",
+        "note": "Base insuffisante pour coter cet axe, pas absence de risque."
+      },
+      "credible_urgent_signal": false,
+      "priority": "instruction_renforcee",
+      "proposed_code": null,
+      "publication_allowed": false,
+      "contradictory_or_moderating_element": "Procédure constitutionnelle et accord de paix.",
+      "living": "Participation, terres coutumières, ressources naturelles, reconstruction et garanties de droits.",
+      "peace": "Suivre la procédure constitutionnelle et le dialogue entre gouvernement national et autonome.",
+      "legal_review": "Qualification et responsabilités à contrôler ; aucun indice ne qualifie juridiquement une guerre.",
+      "propagation_review": "À instruire séparément V0.3.20.4 ; aucun héritage automatique du niveau régional.",
+      "next_check": "Confirmer ordre du jour, vote et résultat.",
+      "corpus_sources": [
+        "https://abg.gov.pg/index.php/news/read/president-toroama-reaffirms-bougainvilles-commitment-to-peace-agreement-as-national-parliament-considers-referendum-results",
+        "https://www.nbc.com.pg/post/43018/bougainville-debate-continues",
+        "https://www.abc.net.au/pacific/programs/pacificbeat/bville-vote/107433562",
+        "https://www.thenational.com.pg/parliament-to-follow-due-process-on-bougainville-referendum-vote-pm/"
+      ],
+      "fresh_sources": [],
+      "documentary_reserve": "Obtenir ordre du jour officiel, accord de 2001 et article 342 intégral ; vérifier le vote annoncé.",
+      "assessment_status": "premiere_appreciation_interne_non_validee"
+    }
+  ],
+  "totals": {
+    "dossiers": 63,
+    "axes": 189,
+    "axis_values": {
+      "cote_provisoire": 15,
+      "indetermine": 174
+    },
+    "dossiers_with_index": 12,
+    "all_axes_unknown": 51,
+    "priorities": {
+      "reexamen_immediat": 10,
+      "instruction_renforcee": 53
+    },
+    "dossiers_with_fresh_source": 15,
+    "source_urls_rechecked": 7,
+    "existing_locks": 3
+  },
+  "checks": {
+    "count63": true,
+    "exactCoverage": true,
+    "unique": true,
+    "locksPreserved": true,
+    "noCodeProposed": true,
+    "noPublication": true,
+    "axisRange": true,
+    "nullNotZero": true,
+    "reasonsAndCounter": true,
+    "freshUrlsGrounded": true,
+    "urgentPreserved": true,
+    "coordinatesNotAltered": true
+  },
+  "limits": [
+    "Le contrôle documentaire exhaustif des 63 dossiers n'est pas réalisé ; seuls les liens de fresh_checks ont été contrôlés dans cette passe, dont deux par extrait.",
+    "Les informations FAO/PAM couvrent des projections jusqu'en mai 2027, pas une mesure de danger dans les 24 h. Le réexamen immédiat est une priorité éditoriale interne, non un ordre opérationnel.",
+    "L'indice U3 EUR-01 est une appréciation de travail liée à la perte de ligne rapportée ; la fenêtre exacte de rupture n'est pas établie. À réviser sans attendre si état électrique confirmé rétabli.",
+    "Les autres axes restent ouverts, et les éléments modérateurs sont des pistes à confronter, non une preuve de décrue.",
+    "Pas d'attribution ni de simulation de codes à cette étape ; V0.3.20.6 prévue à cet effet.",
+    "Aucun fichier opérationnel modifié ni déploiement."
+  ],
+  "next": "V0.3.20.4 — propagation régionale et mondiale ; contrôler mécanismes, périmètres et chaînes d'interdépendance sans double comptage."
+}
