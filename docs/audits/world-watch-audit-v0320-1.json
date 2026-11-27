@@ -1,0 +1,362 @@
+{
+  "version": "0.3.20.1",
+  "date": "2026-11-27",
+  "phase": "audit_criteres_et_propositions",
+  "publication_autorisee": false,
+  "base": {
+    "branch": "feature/monde-v0319-audit-documentaire",
+    "files": [
+      {
+        "path": "docs/audits/world-watch-audit-v0319-8.json",
+        "sha": "bbf3f0ba0b26fff3942677cb91d84735d3417a93"
+      },
+      {
+        "path": "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/world-watch.json",
+        "sha": "bdb1f5d250e50cced2f16a8220615d69aed2aa04"
+      },
+      {
+        "path": "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/world-watch-analyses.json",
+        "sha": "73c6e3f711acb4695bed3f3e168cccb70bac157d"
+      },
+      {
+        "path": "Diploval_Site_Complet_v20_2_Inscription_Zoom/content/points-information.json",
+        "sha": "e600b107b03c96ebfe016f90dbc5aa118972f4a9"
+      },
+      {
+        "path": "Diploval_Site_Complet_v20_2_Inscription_Zoom/scripts/generate-world-watch.mjs",
+        "sha": "422ee6806e610987faacd21960f7b0ec2a127bc7"
+      }
+    ],
+    "public_method": {
+      "url": "https://diploval.fr/points-information",
+      "consulted_on": "2026-11-27",
+      "status": "page_consultee",
+      "note": "Niveau 3 surveillance active ; 2 convergence justifiant suivi renforcé ; 1 seuil critique par forte convergence, exceptionnel ; absence de niveau possible ; sources distinctes et révision motivée."
+    },
+    "public_world": {
+      "url": "https://diploval.fr/points-information/monde",
+      "status": "inaccessible_via_outil"
+    }
+  },
+  "existing_locks": [
+    {
+      "id": "EUR-01",
+      "level": "2",
+      "source": "suivi_regional",
+      "scope": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
+      "last_update": "2026-11-27T19:30",
+      "watch_up": [
+        "Frappe russe entraînant des morts ou blessés parmi les personnels militaires français présents en Ukraine, notamment si le caractère intentionnel ou ciblé est établi.",
+        "Menace russe explicitement étendue des personnels français présents en Ukraine à des objectifs militaires ou civils situés sur le territoire français ou celui d’un État de l’OTAN.",
+        "Attaque attribuée contre le territoire d’un État de l’OTAN avec victimes ou dommages significatifs.",
+        "Affrontement militaire direct entre forces russes et forces françaises ou de l’OTAN.",
+        "Multiplication coordonnée d’incidents graves dans plusieurs États alliés.",
+        "Changement majeur et vérifiable de posture nucléaire ou stratégique.",
+        "Rupture brutale des canaux de désescalade accompagnée d’une préparation militaire observable.",
+        "Décisions formelles et vérifiées de mise en garde, de mobilisation ou d’activation exceptionnelle de dispositifs civils liées à une menace militaire immédiate, à apprécier dans leur contexte."
+      ],
+      "watch_down": [
+        "Entrée en vigueur d’un cessez-le-feu général vérifiable.",
+        "Réduction durable des frappes et des incidents transfrontaliers.",
+        "Mise en place effective d’un mécanisme commun de surveillance.",
+        "Accord sur des mesures de désescalade militaire ou énergétique.",
+        "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
+        "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
+      ]
+    },
+    {
+      "id": "MOR-01",
+      "level": "1",
+      "source": "suivi_regional",
+      "scope": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
+      "last_update": "2026-11-27T19:30",
+      "watch_up": [
+        "Extension confirmée des affrontements directs à de nouveaux États ou à des infrastructures civiles vitales.",
+        "Hausse majeure des victimes civiles ou attaques répétées contre les services essentiels.",
+        "Perturbation durable et élargie de la navigation dans le Golfe ou en mer Rouge.",
+        "Rupture des médiations accompagnée d’une intensification militaire, ou menace nucléaire crédible et documentée."
+      ],
+      "watch_down": [
+        "Arrêt durable et vérifiable des attaques entre États et contre des pays tiers.",
+        "Respect contrôlé des cessez-le-feu et amélioration effective de l’accès humanitaire.",
+        "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
+        "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
+      ]
+    },
+    {
+      "id": "AFR-01",
+      "level": "1",
+      "source": "analyse_mondiale",
+      "validated_on": "2026-11-27"
+    }
+  ],
+  "findings": [
+    {
+      "id": "AU-01",
+      "title": "Échelle à trois niveaux",
+      "observed": "Confirmé par le générateur et la méthode publique",
+      "recommendation": "Conserver les définitions ; absence de niveau distincte du niveau 3."
+    },
+    {
+      "id": "AU-02",
+      "title": "Séparation registre/analyses/suivis",
+      "observed": "Confirmé ; les 57 niveaux du registre sont null, les niveaux effectifs viennent des analyses et des suivis régionaux",
+      "recommendation": "Maintenir cette architecture ; six nouvelles fiches restent non évaluées."
+    },
+    {
+      "id": "AU-03",
+      "title": "Seuil critique",
+      "observed": "La méthode publique exige plusieurs éléments vérifiables et convergence forte ; cas Soudan justifié par convergence militaire, humanitaire et alimentaire",
+      "recommendation": "Préciser qu'une rupture majeure peut être locale ou systémique, y compris si le dommage est déjà en cours ; proposition à valider."
+    },
+    {
+      "id": "AU-04",
+      "title": "Nombre de sources",
+      "observed": "Générateur exige au moins deux sources pour analyse, trois pour niveau non null ; ne vérifie pas l'indépendance ni le contenu",
+      "recommendation": "Conserver minimum technique, ajouter contrôle humain d'indépendance, provenance, corroboration et date."
+    },
+    {
+      "id": "AU-05",
+      "title": "Validation",
+      "observed": "Le générateur exige validated_on mais ne vérifie ni identité ni trace de décision",
+      "recommendation": "Ajouter registre interne signé/identifié, motif, date, version et contre-arguments ; aucune validation simulée."
+    },
+    {
+      "id": "AU-06",
+      "title": "Montée et décrue",
+      "observed": "watch_up/watch_down présents dans les deux suivis ; analyse mondiale ne les exige pas",
+      "recommendation": "Proposer des seuils observables spécifiques à chaque dossier et échéance de révision."
+    },
+    {
+      "id": "AU-07",
+      "title": "Non-double comptage",
+      "observed": "Générateur réserve association régionale aux deux suivis et interdit niveau indépendant pour un dossier lié",
+      "recommendation": "Conserver les liens ; définir périmètre et distinguer signal parent du niveau autonome."
+    },
+    {
+      "id": "AU-08",
+      "title": "Fraîcheur et confiance",
+      "observed": "Date des références bornée par date de compilation ; pas de test de péremption, contradiction ou accessibilité",
+      "recommendation": "Ajouter fraîcheur adaptée et statut documentaire, contrôle de sources en attente."
+    },
+    {
+      "id": "AU-09",
+      "title": "Intégration technique",
+      "observed": "Générateur retrouvé dans le sous-répertoire du site ; exige coordonnées numériques finies",
+      "recommendation": "Le candidat 63 échouerait sur les six coordonnées null ; ne pas intégrer tant qu'elles ne sont pas validées."
+    },
+    {
+      "id": "AU-10",
+      "title": "Traçabilité publique",
+      "observed": "Méthode publique consultée ; les deux suivis affichent 23/11 dans la page consultable, GitHub contient 27/11 ; page mondiale non accessible par outil web",
+      "recommendation": "Écart de date à contrôler lors de V0.3.21, pas de conclusion sur déploiement."
+    },
+    {
+      "id": "AU-11",
+      "title": "Affichage des codes et état d'instruction",
+      "observed": "Code en tête du registre, null sans niveau ; distinction de la lecture/priorité",
+      "recommendation": "Conserver absence de niveau explicitement, état de documentation et priorité interne séparés."
+    }
+  ],
+  "proposed_axes": [
+    {
+      "id": "CR-01",
+      "title": "Gravité actuelle",
+      "definition": "Atteintes constatées aux civils, institutions, services et écosystèmes ; distribution territoriale et durée.",
+      "guardrail": "Distinguer faits et estimations ; gravité extrême locale possible sans propagation internationale.",
+      "status": "propose_a_valider"
+    },
+    {
+      "id": "CR-02",
+      "title": "Urgence temporelle",
+      "definition": "Fenêtre d'action, rupture imminente documentée, vitesse de détérioration et conséquences du retard.",
+      "guardrail": "Distinguer date du fait, publication et période de projection.",
+      "status": "propose_a_valider"
+    },
+    {
+      "id": "CR-03",
+      "title": "Risque d'escalade",
+      "definition": "Capacités, intentions attribuées, actes observables, chaînes plausibles de rupture.",
+      "guardrail": "Une déclaration ou un exercice ne démontre pas à lui seul une intention d'attaque.",
+      "status": "propose_a_valider"
+    },
+    {
+      "id": "CR-04",
+      "title": "Propagation",
+      "definition": "Effets transfrontaliers, alliances, infrastructures partagées, déplacements et interdépendances.",
+      "guardrail": "Distinguer risque, participation et obligation juridique ; pas de transfert automatique du code parent.",
+      "status": "propose_a_valider"
+    },
+    {
+      "id": "CR-05",
+      "title": "Le vivant et ses conditions d'existence",
+      "definition": "Eau, alimentation, santé, logement, sécurité humaine, biodiversité, sols, climat et générations futures.",
+      "guardrail": "Ne pas réduire le vivant à un score environnemental ; documenter effets cumulés et réversibilité.",
+      "status": "propose_a_valider"
+    },
+    {
+      "id": "CR-06",
+      "title": "Diplomatie et désescalade",
+      "definition": "Médiations, accords, accès humanitaire, mécanismes de vérification et mise en œuvre.",
+      "guardrail": "Une annonce de dialogue ne neutralise pas une violence avérée.",
+      "status": "propose_a_valider"
+    },
+    {
+      "id": "CR-07",
+      "title": "Solidité documentaire",
+      "definition": "Provenance, indépendance, date, contradictoire, incertitude et lacunes.",
+      "guardrail": "Confiance distincte du danger ; absence de données n'est pas absence de risque.",
+      "status": "propose_a_valider"
+    },
+    {
+      "id": "CR-08",
+      "title": "Droit et responsabilité",
+      "definition": "Qualification du contexte, droit applicable, positions, actes et décisions juridictionnelles.",
+      "guardrail": "Ne pas confondre accusation et jugement ; critère transversal, pas multiplicateur automatique.",
+      "status": "propose_a_valider"
+    },
+    {
+      "id": "CR-09",
+      "title": "Tendance et seuils",
+      "definition": "Amélioration, stabilité, détérioration, indétermination ; événements de montée et de décrue.",
+      "guardrail": "Comparer à une période de référence adaptée et tracer la décision.",
+      "status": "propose_a_valider"
+    }
+  ],
+  "decision_framework": {
+    "status": "propose_a_valider",
+    "levels": [
+      {
+        "level": null,
+        "meaning": "Aucun niveau attribué ; distinguer dossier en instruction et dossier évalué sans niveau."
+      },
+      {
+        "level": "3",
+        "meaning": "Signaux pertinents nécessitant surveillance active, dynamique encore insuffisamment établie."
+      },
+      {
+        "level": "2",
+        "meaning": "Convergence documentée justifiant suivi renforcé, sans présumer rupture imminente."
+      },
+      {
+        "level": "1",
+        "meaning": "Convergence critique de faits vérifiables, rupture majeure en cours ou risque crédible de rupture majeure ; exceptionnel, justifié et validé humainement."
+      }
+    ],
+    "rules": [
+      "Pas de moyenne pondérée qui compense un dommage critique par un bon indicateur.",
+      "Pas d'attribution automatique ; seuils non chiffrés à ce stade.",
+      "Un fait grave peut entraîner instruction prioritaire sans niveau automatique ; distinguer appréciation provisoire interne et publication.",
+      "Une source primaire peut établir une décision qu'elle prend ; les faits externes qu'elle allègue nécessitent corroboration.",
+      "Sources dépendantes regroupées ; qualifier explicitement les extraits et lacunes.",
+      "Révision à la hausse ou baisse motivée, y compris en cas d'infirmation.",
+      "Même critères pour tous les territoires ; pas de pondération par proximité, puissance ou couverture médiatique.",
+      "Le niveau public n'est ni une alerte officielle ni une prévision de guerre."
+    ],
+    "separate_fields": [
+      "gravite",
+      "urgence",
+      "escalade",
+      "propagation",
+      "vivant",
+      "desescalade",
+      "confiance",
+      "qualification_juridique",
+      "tendance",
+      "priorite_interne",
+      "niveau_propose",
+      "niveau_valide"
+    ],
+    "human_gate": [
+      "Périmètre et date de référence",
+      "Éléments favorables et contradictoires",
+      "Sources vérifiées et réserves",
+      "Conséquences pour le vivant",
+      "Critères de montée et décrue",
+      "Décision explicite et identité du validateur",
+      "Historique et prochaine révision"
+    ]
+  },
+  "test_cases": [
+    {
+      "id": "T01",
+      "scenario": "Crise locale extrême, convergence de preuves et rupture des services",
+      "expected": "Revue critique niveau 1 possible sans extension géographique",
+      "status": "cas_de_test_a_simuler_v03206"
+    },
+    {
+      "id": "T02",
+      "scenario": "Déclaration isolée alarmante",
+      "expected": "Pas d'élévation automatique ; vérification prioritaire",
+      "status": "cas_de_test_a_simuler_v03206"
+    },
+    {
+      "id": "T03",
+      "scenario": "Crise peu médiatisée, preuves lacunaires",
+      "expected": "Instruction prioritaire ; niveau indéterminé si preuves insuffisantes",
+      "status": "cas_de_test_a_simuler_v03206"
+    },
+    {
+      "id": "T04",
+      "scenario": "Accord annoncé, violences persistantes",
+      "expected": "Pas de baisse automatique ; vérifier exécution",
+      "status": "cas_de_test_a_simuler_v03206"
+    },
+    {
+      "id": "T05",
+      "scenario": "Incident transfrontalier d'origine incertaine",
+      "expected": "Séparer fait, attribution et intention ; évaluer propagation sans présumer attaque",
+      "status": "cas_de_test_a_simuler_v03206"
+    },
+    {
+      "id": "T06",
+      "scenario": "Trois articles issus d'une seule dépêche",
+      "expected": "Une chaîne de provenance, pas trois corroborations indépendantes",
+      "status": "cas_de_test_a_simuler_v03206"
+    },
+    {
+      "id": "T07",
+      "scenario": "Dossier rattaché à un Code One régional",
+      "expected": "Ne pas hériter automatiquement du code ni le recompter",
+      "status": "cas_de_test_a_simuler_v03206"
+    },
+    {
+      "id": "T08",
+      "scenario": "Amélioration durable et vérifiable des critères initiaux",
+      "expected": "Proposer baisse motivée après revue humaine",
+      "status": "cas_de_test_a_simuler_v03206"
+    },
+    {
+      "id": "T09",
+      "scenario": "Information nouvelle infirmant une prémisse décisive",
+      "expected": "Réexamen immédiat, correction datée ; ne pas attendre une période artificielle",
+      "status": "cas_de_test_a_simuler_v03206"
+    },
+    {
+      "id": "T10",
+      "scenario": "Atteintes systémiques à l'eau et à la santé sans affrontement international",
+      "expected": "Évaluer gravité et seuil critique, ne pas qualifier de guerre par défaut",
+      "status": "cas_de_test_a_simuler_v03206"
+    }
+  ],
+  "checks": {
+    "candidate63": true,
+    "operational57": true,
+    "registryAllNull": true,
+    "candidateAllNull": true,
+    "existingCodes": true,
+    "allLocksInRegistry": true,
+    "generatorLocated": true,
+    "generatorRequiresCoordinates": true,
+    "generatorRequires3Sources": true,
+    "generatorRequiresValidationDate": true,
+    "sixCoordinatesMissing": true
+  },
+  "limits": [
+    "Aucune réévaluation factuelle des 63 dossiers effectuée.",
+    "Les audits précédents sont repris sans vérification exhaustive.",
+    "Les règles proposées et tests de scénario ne sont pas encore validés ni exécutés.",
+    "Aucune publication, modification de niveaux ou changement des fichiers opérationnels."
+  ],
+  "next": "0.3.20.2 — distinguer gravité, urgence et risque d'escalade ; construire des échelles ordinales explicites et tester les incompatibilités."
+}
