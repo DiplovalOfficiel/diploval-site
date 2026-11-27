@@ -330,23 +330,84 @@ def check_world_watch(browser, width, failures):
             failures.append(prefix + " Code One Soudan absent ou dupliqué")
         if page.locator('[data-world-alert]').count() != 1 or page.locator('.ww-pin-level-1').count() != 2 or page.locator('.ww-pin-level-2').count() != 1 or page.locator('[data-regional-alert]').count() != 2:
             failures.append(prefix + " nouveaux niveaux non validés ou doublons")
-        if page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology) a[href^="https://"]').count() < 3:
+        if page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology):not(.ww-background) a[href^="https://"]').count() < 3:
             failures.append(prefix + " sources Soudan insuffisantes")
-        if page.locator('#ww-AFR-02 .ww-analysis:not(.ww-chronology) a[href^="https://"]').count() < 2:
+        if page.locator('#ww-AFR-02 .ww-analysis:not(.ww-chronology):not(.ww-background) a[href^="https://"]').count() < 2:
             failures.append(prefix + " sources Soudan du Sud insuffisantes")
         if "aucun niveau attribué" not in page.locator('#ww-AFR-02 .ww-state').inner_text():
             failures.append(prefix + " niveau Soudan du Sud attribué sans validation")
         for ident in ("AFR-01", "AFR-02"):
-            label = page.locator(f'#ww-{ident} .ww-analysis:not(.ww-chronology) .ww-summary-label')
+            label = page.locator(f'#ww-{ident} .ww-analysis:not(.ww-chronology):not(.ww-background) .ww-summary-label')
             if label.count() != 1 or label.evaluate("el => el.getBoundingClientRect().width < 125 || el.getBoundingClientRect().height > 90"):
                 failures.append(prefix + " libellé accordéon trop étroit ou découpé")
         for slug in ("russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade","proche-orient-israel-palestine-iran-escalade-regionale"):
             if page.locator(f'main a.ww-link[href="/points-information/{slug}/"]').count() != 1:
                 failures.append(prefix + " suivi régional dupliqué")
-        page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology) summary').click()
-        if not page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology) a').first.is_visible():
+        page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology):not(.ww-background) summary').click()
+        if not page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology):not(.ww-background) a').first.is_visible():
             failures.append(prefix + " sources non accessibles")
-        page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology) summary').click()
+        page.locator('#ww-AFR-01 .ww-analysis:not(.ww-chronology):not(.ww-background) summary').click()
+        if page.locator('#ww-documentary-notice').count() != 1 or not page.locator('#ww-documentary-notice').is_visible():
+            failures.append(prefix + " bandeau documentaire absent")
+        if page.locator('.ww-background h4', has_text='Sources et état de consultation').count() != total:
+            failures.append(prefix + " état des sources incomplet")
+        backgrounds = page.locator('.ww-background')
+        if backgrounds.count() != 57:
+            failures.append(prefix + " socles documentaires mondiaux incomplets")
+        for i in range(1,4):
+            bg = page.locator(f'#ww-STR-{i:02d} .ww-background')
+            if bg.count() != 1 or bg.locator('a[href^="https://"]').count() < 2:
+                failures.append(prefix + f" socle ou références incomplets STR-{i:02d}")
+        bg = page.locator('#ww-STR-03 .ww-background')
+        bg.locator('summary').click()
+        if not bg.locator('h4').first.is_visible() or bg.evaluate("el => el.scrollWidth > el.clientWidth + 3"):
+            failures.append(prefix + " socle stratégique illisible")
+        bg.locator('summary').click()
+        for i in range(1,10):
+            bg = page.locator(f'#ww-AME-{i:02d} .ww-background')
+            if bg.count() != 1 or bg.locator('a[href^="https://"]').count() < 2:
+                failures.append(prefix + f" socle ou références incomplets AME-{i:02d}")
+        bg = page.locator('#ww-AME-06 .ww-background')
+        bg.locator('summary').click()
+        if not bg.locator('h4').first.is_visible() or bg.evaluate("el => el.scrollWidth > el.clientWidth + 3"):
+            failures.append(prefix + " socle Amériques illisible")
+        bg.locator('summary').click()
+        for i in range(1,8):
+            bg = page.locator(f'#ww-EUR-{i:02d} .ww-background')
+            if bg.count() != 1 or bg.locator('a[href^="https://"]').count() < 2:
+                failures.append(prefix + f" socle ou références incomplets EUR-{i:02d}")
+        bg = page.locator('#ww-EUR-06 .ww-background')
+        bg.locator('summary').click()
+        if not bg.locator('h4').first.is_visible() or bg.evaluate("el => el.scrollWidth > el.clientWidth + 3"):
+            failures.append(prefix + " socle Caucase illisible")
+        bg.locator('summary').click()
+        for i in range(1,14):
+            bg = page.locator(f'#ww-ASI-{i:02d} .ww-background')
+            if bg.count() != 1 or bg.locator('a[href^="https://"]').count() < 2:
+                failures.append(prefix + f" socle ou références incomplets ASI-{i:02d}")
+        bg = page.locator('#ww-ASI-08 .ww-background')
+        bg.locator('summary').click()
+        if not bg.locator('h4').first.is_visible() or bg.evaluate("el => el.scrollWidth > el.clientWidth + 3"):
+            failures.append(prefix + " socle Myanmar illisible")
+        bg.locator('summary').click()
+        for i in range(1,8):
+            bg = page.locator(f'#ww-MOR-{i:02d} .ww-background')
+            if bg.count() != 1 or bg.locator('a[href^="https://"]').count() < 2:
+                failures.append(prefix + f" socle ou références incomplets MOR-{i:02d}")
+        bg = page.locator('#ww-MOR-04 .ww-background')
+        bg.locator('summary').click()
+        if not bg.locator('h4').first.is_visible() or bg.evaluate("el => el.scrollWidth > el.clientWidth + 3"):
+            failures.append(prefix + " socle syrien illisible")
+        bg.locator('summary').click()
+        for i in range(1,19):
+            bg = page.locator(f'#ww-AFR-{i:02d} .ww-background')
+            if bg.count() != 1 or bg.locator('a[href^="https://"]').count() < 2:
+                failures.append(prefix + f" socle ou références incomplets AFR-{i:02d}")
+        bg = page.locator('#ww-AFR-09 .ww-background')
+        bg.locator('summary').click()
+        if not bg.locator('h4').first.is_visible() or bg.evaluate("el => el.scrollWidth > el.clientWidth + 3"):
+            failures.append(prefix + " socle documentaire illisible")
+        bg.locator('summary').click()
         # The newest update is the test clock reference; no dependency on the CI wall clock.
         if page.locator('.ww-chronology').count() != total or page.locator('.ww-dates').count() != total:
             failures.append(prefix + " chronologies ou dates manquantes")
