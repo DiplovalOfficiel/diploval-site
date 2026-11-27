@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.13",
+  "schema_version": "0.3.14",
   "compiled_on": "2026-11-27",
   "dossiers": [
     {
@@ -355,6 +355,164 @@
         {
           "label": "Agence de l'UE pour l'asile, Gedaref",
           "url": "https://dip-aws.euaa.europa.eu/coi/216-gedaref/2162-conflict-dynamics-and-tactics"
+        }
+      ]
+    },
+    {
+      "id": "MOR-01",
+      "context": "1948, la création d'Israël et le déplacement massif de Palestiniens, puis l'occupation de la Cisjordanie, de Jérusalem-Est et de Gaza à partir de 1967 constituent des repères centraux. Les accords d'Oslo des années 1990 n'ont pas résolu le statut final. Les attaques du Hamas et d'autres groupes armés du 7 octobre 2023 et la guerre qui a suivi ont aggravé la crise.",
+      "reference_date": "2026-11-27",
+      "current": "Le rapport humanitaire OCHA du 26 novembre souligne les difficultés de protection des enfants, les restrictions pesant sur les fournitures et le manque de financement des abris hivernaux. Le 27 novembre, AP rapporte de nouvelles victimes à Gaza d'après des établissements hospitaliers et des déclarations israéliennes selon lesquelles des combattants étaient visés. Ces déclarations ne suffisent pas à établir le statut de chaque victime.",
+      "living": "Priorités : eau potable, assainissement, accès aux soins, abris, sécurité alimentaire, protection de l'enfance et restauration des terres. Les besoins de protection des civils israéliens et palestiniens doivent être pris en compte sans confusion entre populations et groupes armés.",
+      "peace": "Le cessez-le-feu entré en vigueur en octobre 2025 reste fragile. Examiner la mise en œuvre de la résolution 2803 (2025), les garanties de sécurité, le droit à l'autodétermination et la protection des civils. Le suivi régional conserve son historique et son niveau propre.",
+      "sources": [
+        {
+          "label": "ONU — rapport UNSCO de septembre 2026",
+          "url": "https://www.un.org/unispal/document/unsco-report-to-the-ad-hoc-liaison-committee-september-2026/"
+        },
+        {
+          "label": "OCHA — rapport humanitaire du 26 novembre",
+          "url": "https://www.ochaopt.org/content/humanitarian-situation-report-26-november-2026"
+        },
+        {
+          "label": "AP — actualités régionales du 27 novembre",
+          "url": "https://apnews.com/article/dbb2c950f5cd991a52f3a065b6325535"
+        }
+      ]
+    },
+    {
+      "id": "MOR-02",
+      "context": "Les conflits entre Israël et le Hezbollah, notamment la guerre de 2006, ont conduit à la résolution 1701 du Conseil de sécurité. L'arrangement de cessation des hostilités de novembre 2024 n'a pas éliminé les tensions. Les hostilités de 2026 ont conduit à de nouvelles démarches de médiation.",
+      "reference_date": "2026-11-27",
+      "current": "Le Premier ministre libanais indique le 27 novembre qu'une proposition est en préparation pour maintenir certaines fonctions de la FINUL au-delà du 31 décembre. AP rapporte que la France n'a pas publiquement confirmé cette proposition. Il ne s'agit pas d'une prolongation adoptée du mandat.",
+      "living": "La possibilité d'un retour sûr des déplacés, la remise en état des logements, des terres agricoles et des services essentiels ainsi que la protection des civils de part et d'autre de la Ligne bleue restent à évaluer.",
+      "peace": "Suivre les négociations sur le devenir de la présence onusienne, la mise en œuvre de la résolution 1701, le retrait israélien et les responsabilités de l'État libanais. Distinguer proposition, décision du Conseil de sécurité et mise en œuvre.",
+      "sources": [
+        {
+          "label": "ONU — résolution 2790 (2025), référence officielle",
+          "url": "https://mandates.un.org/mandate/S/RES/2790%282025%29?subject=Lebanon"
+        },
+        {
+          "label": "AP — entretien du 27 novembre avec le Premier ministre libanais",
+          "url": "https://apnews.com/article/c758141bda52c64f6d2822048b1c400c"
+        },
+        {
+          "label": "Chambre des communes britannique — étude du mandat de la FINUL",
+          "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10348/"
+        }
+      ]
+    },
+    {
+      "id": "MOR-03",
+      "context": "Depuis la révolution iranienne de 1979, les relations entre Téhéran, Washington et Israël sont marquées par des antagonismes stratégiques. Le dossier nucléaire, l'accord de 2015 et le retrait américain de 2018, les alliances régionales et les affrontements directs depuis 2025 structurent la crise. Reuters situe l'ouverture des hostilités américano-israéliennes contre l'Iran au 28 février 2026.",
+      "reference_date": "2026-11-27",
+      "current": "Reuters rapporte le 21 novembre une visite d'une délégation qatarienne à Téhéran, d'après un responsable iranien, et des positions divergentes sur les conditions de négociation. Le 27 novembre, AP rapporte une nouvelle opération américaine contre un navire dans le cadre du blocus annoncé des ports iraniens, selon l'armée américaine. Les annonces des parties et leur qualification juridique doivent être distinguées.",
+      "living": "La sécurité des populations du Golfe, les conséquences environnementales d'attaques contre les infrastructures, la sûreté nucléaire et la continuité des approvisionnements nécessitent un suivi spécifique.",
+      "peace": "Rechercher les garanties de désescalade, le rôle des médiateurs qatariens et pakistanais, la reprise de la coopération avec l'AIEA et les conditions de sécurité de la navigation. Aucun accord définitif n'est établi dans les sources examinées.",
+      "sources": [
+        {
+          "label": "Reuters — médiation qatarienne, 21 novembre",
+          "url": "https://www.reuters.com/world/middle-east/qatari-delegation-visits-tehran-talks-iranian-official-says-2026-11-21/"
+        },
+        {
+          "label": "AP — blocus et diplomatie, 27 novembre",
+          "url": "https://apnews.com/article/800620518a351282f098faa9381b3375"
+        },
+        {
+          "label": "G7 — déclaration des ministres des Affaires étrangères des 9 et 10 novembre",
+          "url": "https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/dichiarazione-congiunta-a-seguito-della-riunione-dei-ministri-degli-esteri-del-g7-tenutasi-a-parigi-il-9-e-10-novembre-2026/"
+        }
+      ]
+    },
+    {
+      "id": "MOR-04",
+      "context": "Le soulèvement de 2011 a débouché sur une guerre internationalisée, des déplacements massifs et la fragmentation du territoire. La chute du régime de Bachar al-Assad en décembre 2024 a ouvert une transition ; l'intégration des structures kurdes et la représentation des différentes communautés restent des enjeux institutionnels.",
+      "reference_date": "2026-11-24",
+      "current": "La note britannique de novembre, publiée le 24, récapitule notamment l'annonce de dissolution des Forces démocratiques syriennes en août 2026 et leur intégration à l'appareil d'État ; ce n'est pas un nouvel accord du 24 novembre. Le même jour, le HCR rappelle l'existence d'une aide ponctuelle réservée à certaines familles de réfugiés revenues durablement, sous conditions et selon les financements.",
+      "living": "Évaluer les conditions des retours libres et sûrs, le logement, les services essentiels, la restitution foncière et la protection des minorités. L'annonce d'une aide ne garantit pas son versement à chaque famille.",
+      "peace": "Suivre la transition inclusive, l'effectivité des garanties constitutionnelles, la sécurité locale et l'intégration institutionnelle. L'état des violences des derniers jours nécessite une recherche complémentaire.",
+      "sources": [
+        {
+          "label": "Ministère britannique de l'Intérieur — note sur les régions kurdes syriennes, novembre 2026",
+          "url": "https://www.gov.uk/government/publications/syria-country-policy-and-information-notes/country-policy-and-information-note-kurds-and-kurdish-areas-syria-november-2026-accessible"
+        },
+        {
+          "label": "HCR — aide au retour, 24 novembre",
+          "url": "https://help.unhcr.org/syria/2026/11/24/returning-to-syria-find-out-what-support-may-be-available-to-you/"
+        },
+        {
+          "label": "HCR — évaluation de la réponse aux retours et à la réintégration",
+          "url": "https://www.unhcr.org/publications/unhcr-s-response-return-and-reintegration-refugees-and-internally-displaced-persons"
+        }
+      ]
+    },
+    {
+      "id": "MOR-05",
+      "context": "L'intervention de 2003 a ouvert une nouvelle période institutionnelle. La Constitution de 2005 reconnaît une région autonome du Kurdistan au sein de l'Irak fédéral. Les différends sur les recettes pétrolières, les compétences, les territoires disputés, les groupes armés et les influences extérieures persistent.",
+      "reference_date": "2026-11-27",
+      "current": "Reuters rapporte le 26 novembre des manifestations au Kurdistan contre les mesures de recentralisation de Bagdad. Le 27, Washington soutient la volonté du Premier ministre irakien de renforcer l'autorité de l'État et de lutter contre les exportations de pétrole jugées illicites par Bagdad. Les autorités kurdes contestent les mesures et invoquent leurs prérogatives constitutionnelles. Les estimations de pertes financières avancées par Bagdad ne sont pas indépendamment établies.",
+      "living": "Suivre les conséquences des différends budgétaires et pétroliers sur les salaires, les services publics, les moyens de subsistance et les pollutions liées à l'exploitation des hydrocarbures.",
+      "peace": "Privilégier l'analyse constitutionnelle contradictoire du partage des compétences et des ressources ; observer les possibilités de négociation Bagdad–Erbil et de maîtrise des armes par les institutions légitimes.",
+      "sources": [
+        {
+          "label": "Ministère britannique de l'Intérieur — cadre institutionnel du Kurdistan irakien",
+          "url": "https://www.gov.uk/government/publications/iraq-country-policy-and-information-notes/country-policy-and-information-note-opposition-to-the-government-in-the-kurdistan-region-of-iraq-kri-iraq-july-2023-accessible"
+        },
+        {
+          "label": "Reuters — manifestations, 26 novembre",
+          "url": "https://www.reuters.com/business/energy/iraqi-kurds-protest-against-baghdad-leaders-moves-assert-central-control-2026-11-26/"
+        },
+        {
+          "label": "Reuters — position américaine et différends, 27 novembre",
+          "url": "https://www.reuters.com/world/middle-east/trump-backs-iraqi-leaders-efforts-assert-more-state-authority-2026-11-27/"
+        },
+        {
+          "label": "Al Jazeera — positions divergentes, 27 novembre",
+          "url": "https://www.aljazeera.com/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown"
+        }
+      ]
+    },
+    {
+      "id": "MOR-06",
+      "context": "La prise de Sanaa par les Houthis en 2014 et l'intervention de la coalition menée par l'Arabie saoudite en 2015 ont internationalisé une crise politique et territoriale yéménite. Les attaques contre la navigation depuis 2023 ont renforcé ses implications régionales et commerciales.",
+      "reference_date": "2026-11-27",
+      "current": "Le 27 novembre, le Pakistan, l'Arabie saoudite et la Turquie se réunissent à Islamabad dans le cadre de leur accord de défense. AP rapporte leur solidarité avec Riyad et leur soutien aux efforts diplomatiques. Les autorités turques indiquent ne pas envisager de combattre les Houthis au Yémen. Ce soutien n'établit pas à lui seul une participation militaire directe.",
+      "living": "L'UNFPA rappelle le 22 novembre l'ampleur des besoins humanitaires et les difficultés d'accès aux soins maternels. La sécurité des marins, la prévention des pollutions marines et la continuité des approvisionnements sont également à examiner.",
+      "peace": "Distinguer le règlement politique yéménite, la protection de la navigation et la désescalade entre États. Examiner la mise en œuvre des engagements de protection et d'accès humanitaire, sans assimiler un pacte de défense à une entrée en guerre.",
+      "sources": [
+        {
+          "label": "Ministère pakistanais des Affaires étrangères — communiqué conjoint du 27 novembre (extrait indexé)",
+          "url": "https://www.mofa.gov.pk/press-releases/second-meeting-of-the-strategic-political-and-defence-committee-s-pdc-of-the-makkah-alliance-for-defence-joint-statement"
+        },
+        {
+          "label": "AP — réunion d'Islamabad, 27 novembre",
+          "url": "https://apnews.com/article/6c17e4827e5aef3e69f78cdb01d597dc"
+        },
+        {
+          "label": "ONU au Yémen / UNFPA — besoins humanitaires, 22 novembre",
+          "url": "https://yemen.un.org/en/326491-unfpa-yemen-%E2%80%9Ceverything-was-looted%E2%80%9D-displaced-midwife-saves-mothers-amid-yemen%E2%80%99s-conflict"
+        }
+      ]
+    },
+    {
+      "id": "MOR-07",
+      "context": "Le conflit armé entre l'État turc et le PKK depuis 1984 doit être distingué de la question plus large des droits et de la représentation des populations kurdes dans plusieurs pays. Les tentatives de dialogue et l'appel d'Abdullah Öcalan en 2025 à la fin de la lutte armée ont ouvert une nouvelle séquence politique.",
+      "reference_date": "2026-11-27",
+      "current": "Le Conseil national de sécurité turc s'est réuni le 26 novembre. Les informations disponibles le 27 ne permettent pas d'établir une confirmation officielle du désarmement complet du PKK ni le début effectif de toutes les mesures de réintégration. La mise en application de la loi-cadre adoptée en 2026 demeure le point à suivre.",
+      "living": "La sécurité des populations, les droits culturels, la liberté d'expression, la réintégration civile et la gouvernance locale sont des conditions d'une paix durable, au-delà de la seule cessation des violences.",
+      "peace": "Vérifier le texte promulgué, les décisions de mise en œuvre, les garanties juridiques et la participation des différentes parties. Distinguer désarmement annoncé, vérifié et appliqué, ainsi que négociation politique et droits individuels.",
+      "sources": [
+        {
+          "label": "Présidence turque — communiqué du Conseil national de sécurité, 26 novembre",
+          "url": "https://www.iletisim.gov.tr/english/haberler/detay/nsc-convenes-at-the-presidential-complex-26-11-26"
+        },
+        {
+          "label": "Deutsche Welle — loi-cadre et processus de paix, août 2026",
+          "url": "https://amp.dw.com/en/can-turkeys-new-pkk-law-bring-peace/a-78326063"
+        },
+        {
+          "label": "Turkish Minute — absence de confirmation du désarmement, 27 novembre (extrait indexé)",
+          "url": "https://www.turkishminute.com/2026/11/27/turkey-gives-no-confirmation-kurdish-militants-have-laid-down-arms/"
         }
       ]
     }
