@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.17",
+  "schema_version": "0.3.18",
   "compiled_on": "2026-11-27",
   "dossiers": [
     {
@@ -1127,6 +1127,72 @@
         {
           "label": "Reuters, 5 octobre",
           "url": "https://www.investing.com/news/world-news/exclusivecuba-and-us-maintain-channels-of-communication-but-no-negotiations-diplomat-says-4932854"
+        }
+      ]
+    },
+    {
+      "id": "STR-01",
+      "context": "L’Arctique réunit huit États et des peuples autochtones dont les organisations participent au Conseil de l’Arctique, créé en 1996. Le recul des glaces, l’accès aux ressources et aux routes maritimes ainsi que les tensions entre la Russie et les États de l’OTAN renforcent les enjeux stratégiques. Le Conseil est un forum de coopération civile et scientifique, distinct des mécanismes de sécurité militaire.",
+      "reference_date": "2026-11-26",
+      "current": "Le Conseil de l’Arctique a annoncé le 20 novembre la tenue, du 10 au 13 novembre à Ilulissat, d’un atelier sur le développement économique durable réunissant des délégations étatiques et autochtones. L’OTAN a réaffirmé le 23 novembre l’importance de la sécurité arctique. Selon un extrait de The Arctic Institute, la Russie a adopté le 26 novembre une nouvelle stratégie arctique ; le texte officiel et ses dispositions restent à vérifier intégralement.",
+      "living": "Préserver les écosystèmes polaires, les moyens de subsistance et les droits des peuples autochtones ; suivre les effets de la fonte des glaces, de la navigation, de l’extraction et des pollutions sur les milieux marins et terrestres.",
+      "peace": "Maintenir les canaux scientifiques et civils, suivre les mécanismes de prévention des incidents et les accords de secours et de lutte contre les pollutions. Distinguer les intentions stratégiques, les capacités et les actes ; ne pas déduire une désescalade de la seule poursuite de la coopération.",
+      "sources": [
+        {
+          "label": "Conseil de l’Arctique, atelier de développement durable, 20 novembre",
+          "url": "https://arctic-council.org/news/arctic-council-chairship-leads-workshop-for-sustainable-economic-development/"
+        },
+        {
+          "label": "OTAN, discours du 23 novembre (extrait)",
+          "url": "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa/"
+        },
+        {
+          "label": "The Arctic Institute, stratégie russe du 26 novembre (extrait, texte officiel à vérifier)",
+          "url": "https://www.thearcticinstitute.org/russias-2026-arctic-strategy-security-cooperation/"
+        }
+      ]
+    },
+    {
+      "id": "STR-02",
+      "context": "Les États et territoires du Pacifique insulaire coopèrent notamment au sein du Forum des îles du Pacifique. Leurs priorités propres comprennent le climat, les océans, le développement et la sécurité. L’Australie, la Nouvelle-Zélande, la Chine, les États-Unis et d’autres partenaires développent des relations bilatérales et régionales dont les objectifs et modalités diffèrent.",
+      "reference_date": "2026-11-26",
+      "current": "Le 25 novembre, l’Australie et les Îles Salomon ont signé un traité faisant de l’Australie leur partenaire principal de sécurité, selon leur déclaration conjointe. Le 26 novembre, les Fidji et l’Australie ont annoncé l’entrée en vigueur de leur Union Vuvale et de l’alliance Ocean of Peace, qui prévoit une action face à un danger commun en cas d’attaque armée selon les procédures internes de chaque État. La mise en œuvre et les effets sur les relations avec les autres partenaires demeurent à observer.",
+      "living": "Respecter les choix souverains des populations insulaires et examiner la résilience climatique, la préservation des océans, les ressources halieutiques, l’accès à l’eau, la mobilité, la santé et l’éducation.",
+      "peace": "Suivre les engagements régionaux de l’Océan de paix, les mécanismes de consultation, la transparence des accords et la prévention des rivalités imposées de l’extérieur. Distinguer signature, entrée en vigueur et application effective ; ne pas présumer du devenir des accords antérieurs.",
+      "sources": [
+        {
+          "label": "Australie–Îles Salomon, déclaration conjointe du 25 novembre",
+          "url": "https://www.pm.gov.au/media/signing-australia-solomon-islands-treaty"
+        },
+        {
+          "label": "Australie–Fidji, déclaration conjointe du 26 novembre",
+          "url": "https://www.pm.gov.au/media/entry-force-fiji-australia-vuvale-union-and-ocean-peace-alliance-veitacini-treaty"
+        },
+        {
+          "label": "Reuters, traité Australie–Îles Salomon, 25 novembre (extrait)",
+          "url": "https://www.reuters.com/world/china/australia-solomon-islands-sign-security-pact-2026-11-25/"
+        }
+      ]
+    },
+    {
+      "id": "STR-03",
+      "context": "La partie occidentale de l’île de Nouvelle-Guinée est administrée par l’Indonésie. Les contestations liées à son intégration dans les années 1960, aux droits des populations papoues et à la revendication d’indépendance alimentent un conflit prolongé. Le terme Papouasie occidentale désigne ici un ensemble géographique et non la seule province administrative du même nom. Les forces indonésiennes et le TPNPB sont notamment concernés.",
+      "reference_date": "2026-11-27",
+      "current": "Human Rights Monitor rapporte en novembre de nouveaux déplacements et des perturbations de services essentiels. Les estimations ont évolué et leur méthode doit être vérifiée. Le 11 septembre, selon Tempo, la commission nationale indonésienne des droits humains (Komnas HAM) a demandé une politique de réduction des violences et une réponse aux besoins des déplacés. Le 27 novembre, Human Rights Monitor rapporte un débat gouvernemental sur la désignation des groupes armés ; aucune décision définitive n’était annoncée par le ministre compétent le 26 novembre selon cette source.",
+      "living": "Protéger les populations civiles et autochtones, garantir l’aide humanitaire, les soins, l’éducation et l’accès aux terres et aux forêts. Examiner les effets des projets de développement, des déplacements et des opérations de sécurité ; recueillir les positions des autorités et des communautés.",
+      "peace": "Suivre les appels au dialogue, les réponses institutionnelles aux recommandations de Komnas HAM, l’accès des observateurs indépendants et les garanties de retour volontaire et sûr des déplacés. Vérifier les allégations et chiffres auprès de sources indépendantes et officielles, sans confondre revendication politique et violence armée.",
+      "sources": [
+        {
+          "label": "Human Rights Monitor, rapport sur les déplacements de novembre (estimations évolutives)",
+          "url": "https://humanrightsmonitor.org/reports/idp-update-november26-security-operations-and-new-troop-deployments-trigger-further-displacements-across-west-papua/"
+        },
+        {
+          "label": "Tempo via APSN, recommandations de Komnas HAM, 11 septembre",
+          "url": "https://www.asia-pacific-solidarity.net/news/2026-09-11/komnas-ham-urges-prabowo-curb-papua-conflict.html"
+        },
+        {
+          "label": "Human Rights Monitor, débat sur la qualification des groupes armés, 27 novembre",
+          "url": "https://humanrightsmonitor.org/news/from-opm-and-kkb-to-keb-indonesian-govt-relabels-armed-groups-in-west-papua/"
         }
       ]
     }
