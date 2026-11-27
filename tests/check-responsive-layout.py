@@ -174,8 +174,15 @@ def check_home_modules(page, width, failures):
         for el in page.locator(selector).all():
             if el.is_visible() and el.evaluate("el => el.scrollWidth > el.clientWidth + 3"):
                 failures.append(f"{width}px: débordement interne {selector}")
-    if watch.locator(".strategic-watch__item").count() < 1:
-        failures.append(f"{width}px: aucune situation affichée")
+    if watch.locator(".strategic-watch__item").count() != 3:
+        failures.append(f"{width}px: les trois alertes consolidées ne sont pas affichées")
+    if not watch.locator('.strategic-watch__world-link[href="/points-information/monde"]').is_visible():
+        failures.append(f"{width}px: accès direct au point mondial absent")
+    if "57 dossiers" not in watch.locator("#strategic-watch-count").inner_text():
+        failures.append(f"{width}px: registre mondial non synchronisé")
+    for ident in ("AFR-01","EUR-01","MOR-01"):
+        if watch.locator(f'a.strategic-watch__main[href="/points-information/monde#ww-{ident}"]').count() != 1:
+            failures.append(f"{width}px: alerte {ident} absente ou dupliquée")
     if dico.locator("h2").evaluate("el => getComputedStyle(el).color") != "rgb(245, 240, 230)":
         failures.append(f"{width}px: titre Dico illisible ou non harmonisé")
 
