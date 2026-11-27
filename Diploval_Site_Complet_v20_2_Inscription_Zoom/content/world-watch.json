@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.6",
+  "schema_version": "0.1.7bis",
   "register_date": "2026-11-27",
   "scope": "Registre initial non exhaustif de dossiers, et non décompte des conflits armés ou des alertes.",
   "dossiers": [
@@ -10,7 +10,9 @@
       "status": "recense",
       "level": null,
       "diplomatic_trend": "indeterminee",
-      "related_public_followup": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade"
+      "related_public_followup": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "latitude": 49,
+      "longitude": 32
     },
     {
       "id": "EUR-02",
@@ -19,7 +21,9 @@
       "status": "recense",
       "level": null,
       "diplomatic_trend": "indeterminee",
-      "related_public_followup": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade"
+      "related_public_followup": "russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade",
+      "latitude": 56,
+      "longitude": 27
     },
     {
       "id": "EUR-03",
@@ -27,7 +31,9 @@
       "title": "Serbie–Kosovo",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 42.7,
+      "longitude": 21
     },
     {
       "id": "EUR-04",
@@ -35,7 +41,9 @@
       "title": "Bosnie-Herzégovine",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 44,
+      "longitude": 17.8
     },
     {
       "id": "EUR-05",
@@ -43,7 +51,9 @@
       "title": "Moldavie–Transnistrie",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 47.1,
+      "longitude": 29.3
     },
     {
       "id": "EUR-06",
@@ -51,7 +61,9 @@
       "title": "Arménie–Azerbaïdjan",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 40.3,
+      "longitude": 46
     },
     {
       "id": "AFR-01",
@@ -59,7 +71,9 @@
       "title": "Soudan",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 15,
+      "longitude": 30
     },
     {
       "id": "AFR-02",
@@ -67,7 +81,9 @@
       "title": "Soudan du Sud",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 7,
+      "longitude": 30
     },
     {
       "id": "AFR-03",
@@ -75,7 +91,9 @@
       "title": "RDC–Rwanda et Grands Lacs",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": -1,
+      "longitude": 29
     },
     {
       "id": "AFR-04",
@@ -83,7 +101,9 @@
       "title": "Mali–Burkina Faso–Niger",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 15,
+      "longitude": 0
     },
     {
       "id": "AFR-05",
@@ -91,7 +111,9 @@
       "title": "Nigeria et bassin du lac Tchad",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 12,
+      "longitude": 14
     },
     {
       "id": "AFR-06",
@@ -99,7 +121,9 @@
       "title": "Éthiopie – conflits internes",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 9,
+      "longitude": 39.5
     },
     {
       "id": "AFR-07",
@@ -107,7 +131,9 @@
       "title": "Éthiopie–Érythrée",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 14.5,
+      "longitude": 38
     },
     {
       "id": "AFR-08",
@@ -115,7 +141,9 @@
       "title": "Somalie",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 5,
+      "longitude": 47
     },
     {
       "id": "AFR-09",
@@ -123,7 +151,9 @@
       "title": "République centrafricaine",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 6.5,
+      "longitude": 20.5
     },
     {
       "id": "AFR-10",
@@ -131,7 +161,9 @@
       "title": "Mozambique – Cabo Delgado",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": -12,
+      "longitude": 40
     },
     {
       "id": "AFR-11",
@@ -139,7 +171,9 @@
       "title": "Cameroun",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 5.5,
+      "longitude": 11
     },
     {
       "id": "AFR-12",
@@ -147,7 +181,9 @@
       "title": "Libye",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 27,
+      "longitude": 17
     },
     {
       "id": "AFR-13",
@@ -155,7 +191,9 @@
       "title": "Sahara occidental et tensions régionales",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 24,
+      "longitude": -13
     },
     {
       "id": "MOR-01",
@@ -164,7 +202,9 @@
       "status": "recense",
       "level": null,
       "diplomatic_trend": "indeterminee",
-      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale"
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "latitude": 31.5,
+      "longitude": 35
     },
     {
       "id": "MOR-02",
@@ -173,7 +213,9 @@
       "status": "recense",
       "level": null,
       "diplomatic_trend": "indeterminee",
-      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale"
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "latitude": 33.4,
+      "longitude": 35.6
     },
     {
       "id": "MOR-03",
@@ -182,7 +224,9 @@
       "status": "recense",
       "level": null,
       "diplomatic_trend": "indeterminee",
-      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale"
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "latitude": 32,
+      "longitude": 54
     },
     {
       "id": "MOR-04",
@@ -190,7 +234,9 @@
       "title": "Syrie",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 35,
+      "longitude": 38
     },
     {
       "id": "MOR-05",
@@ -198,7 +244,9 @@
       "title": "Irak",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 33,
+      "longitude": 44
     },
     {
       "id": "MOR-06",
@@ -207,7 +255,9 @@
       "status": "recense",
       "level": null,
       "diplomatic_trend": "indeterminee",
-      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale"
+      "related_public_followup": "proche-orient-israel-palestine-iran-escalade-regionale",
+      "latitude": 15,
+      "longitude": 45
     },
     {
       "id": "MOR-07",
@@ -215,7 +265,9 @@
       "title": "Turquie et question kurde",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 38,
+      "longitude": 42
     },
     {
       "id": "ASI-01",
@@ -223,7 +275,9 @@
       "title": "Chine–Taïwan",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 24,
+      "longitude": 121
     },
     {
       "id": "ASI-02",
@@ -231,7 +285,9 @@
       "title": "Mer de Chine méridionale",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 12,
+      "longitude": 114
     },
     {
       "id": "ASI-03",
@@ -239,7 +295,9 @@
       "title": "Chine–Japon, mer de Chine orientale",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 29,
+      "longitude": 126
     },
     {
       "id": "ASI-04",
@@ -247,7 +305,9 @@
       "title": "Péninsule coréenne",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 38,
+      "longitude": 127
     },
     {
       "id": "ASI-05",
@@ -255,7 +315,9 @@
       "title": "Inde–Pakistan",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 33,
+      "longitude": 74
     },
     {
       "id": "ASI-06",
@@ -263,7 +325,9 @@
       "title": "Inde–Chine",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 31,
+      "longitude": 82
     },
     {
       "id": "ASI-07",
@@ -271,7 +335,9 @@
       "title": "Afghanistan–Pakistan",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 32,
+      "longitude": 69
     },
     {
       "id": "ASI-08",
@@ -279,7 +345,9 @@
       "title": "Myanmar",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 21,
+      "longitude": 96
     },
     {
       "id": "ASI-09",
@@ -287,7 +355,9 @@
       "title": "Thaïlande–Cambodge",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 14,
+      "longitude": 104
     },
     {
       "id": "ASI-10",
@@ -295,7 +365,9 @@
       "title": "Afghanistan – sécurité intérieure",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 34,
+      "longitude": 65
     },
     {
       "id": "AME-01",
@@ -303,7 +375,9 @@
       "title": "Haïti",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 19,
+      "longitude": -72.5
     },
     {
       "id": "AME-02",
@@ -311,7 +385,9 @@
       "title": "Colombie",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 4,
+      "longitude": -74
     },
     {
       "id": "AME-03",
@@ -319,7 +395,9 @@
       "title": "Mexique",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 23,
+      "longitude": -102
     },
     {
       "id": "AME-04",
@@ -327,7 +405,9 @@
       "title": "Équateur",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": -1.5,
+      "longitude": -78
     },
     {
       "id": "AME-05",
@@ -335,7 +415,9 @@
       "title": "Venezuela–États-Unis",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 10,
+      "longitude": -67
     },
     {
       "id": "AME-06",
@@ -343,7 +425,9 @@
       "title": "Venezuela–Guyana",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 6.5,
+      "longitude": -60
     },
     {
       "id": "AME-07",
@@ -351,7 +435,9 @@
       "title": "Amérique centrale – violences organisées",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 14,
+      "longitude": -88
     },
     {
       "id": "STR-01",
@@ -359,7 +445,9 @@
       "title": "Arctique et rivalités stratégiques",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": 78,
+      "longitude": 15
     },
     {
       "id": "STR-02",
@@ -367,7 +455,9 @@
       "title": "Pacifique insulaire et rivalités internationales",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": -12,
+      "longitude": 165
     },
     {
       "id": "STR-03",
@@ -375,7 +465,9 @@
       "title": "Papouasie occidentale",
       "status": "recense",
       "level": null,
-      "diplomatic_trend": "indeterminee"
+      "diplomatic_trend": "indeterminee",
+      "latitude": -4,
+      "longitude": 139
     }
   ]
 }
