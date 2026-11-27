@@ -297,6 +297,72 @@ def check_opening(browser, width, failures):
         finally:
             page.close()
 
+
+def check_world_watch(browser, width, failures):
+    """Test the actual generated world-watch page, including its interactive map."""
+    page = browser.new_page(viewport={"width": width, "height": 850})
+    prefix = f"{width}px: monde sous vigilance"
+    try:
+        response = page.goto(BASE.rstrip("/") + "/points-information/monde/", wait_until="domcontentloaded", timeout=30000)
+        if not response or response.status >= 400:
+            failures.append(prefix + " indisponible")
+            return
+        cards = page.locator("[data-world-entry]")
+        pins = page.locator("[data-world-pin]")
+        total = cards.count()
+        if total < 46 or pins.count() != total:
+            failures.append(prefix + " registre ou repères incomplets")
+            return
+        if not page.locator("h1").first.is_visible():
+            failures.append(prefix + " titre absent")
+        if page.locator("main .ww-hero img").count() != 1 or not page.locator("main .ww-hero img").evaluate("el => el.decode().then(() => el.naturalWidth > 0).catch(() => false)"):
+            failures.append(prefix + " visuel absent ou non chargé")
+        if page.locator("link[rel=canonical]").get_attribute("href") != "https://diploval.fr/points-information/monde":
+            failures.append(prefix + " URL canonique incorrecte")
+        q = page.locator("#world-query")
+        region = page.locator("#world-region")
+        svg = page.locator("#ww-map")
+        if cards.filter(visible=True).count() != total or svg.get_attribute("viewBox") != "0 0 720 360":
+            failures.append(prefix + " vue initiale incorrecte")
+        region.select_option("Afrique")
+        africa = page.locator('[data-world-entry][data-region="Afrique"]').count()
+        if cards.filter(visible=True).count() != africa or page.locator('[data-world-pin]:not(.ww-pin-hidden)').count() != africa:
+            failures.append(prefix + " filtre géographique et repères désynchronisés")
+        if svg.get_attribute("viewBox") == "0 0 720 360":
+            failures.append(prefix + " zoom régional inopérant")
+        q.fill("ethiopie")
+        if cards.filter(visible=True).count() < 2 or cards.filter(visible=True).count() != page.locator('[data-world-pin]:not(.ww-pin-hidden)').count():
+            failures.append(prefix + " recherche normalisée inopérante")
+        q.fill("xyz-aucun-dossier-123")
+        if cards.filter(visible=True).count() != 0:
+            failures.append(prefix + " recherche vide incorrecte")
+        page.locator("#world-reset").click()
+        if cards.filter(visible=True).count() != total or svg.get_attribute("viewBox") != "0 0 720 360":
+            failures.append(prefix + " réinitialisation inopérante")
+        # A filtered map has a single marker for this exact reference.
+        q.fill("AFR-01")
+        pin = page.locator('[data-world-pin="AFR-01"]')
+        if pin.count() == 1:
+            pin.focus()
+            page.keyboard.press("Enter")
+            if page.evaluate("location.hash") != "#ww-AFR-01":
+                failures.append(prefix + " navigation clavier du repère inopérante")
+        else:
+            failures.append(prefix + " repère de référence absent")
+        page.locator("#world-reset").click()
+        if page.evaluate("document.documentElement.scrollWidth > document.documentElement.clientWidth + 2"):
+            failures.append(prefix + " débordement horizontal")
+        for selector in (".ww-hero", ".ww-map-shell", ".ww-controls", ".ww-register"):
+            item = rect(page, selector)
+            if not item or item["x"] < -2 or item["right"] > width + 2:
+                failures.append(prefix + f" bloc hors écran {selector}: {item}")
+        page.screenshot(path=f"layout-screenshots/{browser.browser_type.name}-monde-{width}px.png", full_page=True, animations="disabled")
+        print(f"{browser.browser_type.name}: monde sous vigilance checked at {width}px")
+    except Exception as exc:
+        failures.append(prefix + f" erreur de contrôle: {exc}")
+    finally:
+        page.close()
+
 def main():
     failures=[]
     Path("layout-screenshots").mkdir(exist_ok=True)
@@ -327,7 +393,9 @@ def main():
                     page.close()
                 for width in (344, 1280):
                     check_public_pages(browser,width,failures)
+                    check_world_watch(browser,width,failures)
                     check_opening(browser,width,failures)
+                check_world_watch(browser,320,failures)
             finally:
                 browser.close()
     if failures:
