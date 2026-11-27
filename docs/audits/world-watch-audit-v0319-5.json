@@ -1,0 +1,3796 @@
+{
+  "version": "0.3.19.5",
+  "date": "2026-11-27",
+  "phase": "audit_ameriques_premiere_passe",
+  "publication_autorisee": false,
+  "base": {
+    "branch": "feature/monde-v0318-strategique",
+    "background_sha": "c64df9c9dcbf7d8842559a720c5dc26944207270",
+    "registry_sha": "bdb1f5d250e50cced2f16a8220615d69aed2aa04"
+  },
+  "method": "Contenu consulté indique que le texte de la page a été accessible et qu’au moins une affirmation a été confrontée ; ne valide ni l’ensemble des affirmations ni le dossier. Les axes restent ouverts jusqu’à vérification complète. Le corpus n’est pas modifié.",
+  "axes": [
+    "AD-01",
+    "AD-02",
+    "AD-03",
+    "AD-04",
+    "AD-05",
+    "AD-06",
+    "AD-07",
+    "AD-08"
+  ],
+  "structural": {
+    "count": 57,
+    "registry_count": 57,
+    "unique_ids": 57,
+    "coverage": true,
+    "required_fields": true,
+    "sources_minimum": true,
+    "total_references": 156,
+    "unique_urls": 147
+  },
+  "dossiers": [
+    {
+      "id": "AFR-01",
+      "title": "Soudan",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://dppa.un.org/en/news/sudan-conflict-peace-efforts-resume-to-end-drone-war-fuelling-humanitarian-crisis",
+        "https://www.au.int/en/pressreleases/20261125/statement-chairperson-au-commission-sudan-mediation-proposal",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Médiation et risque alimentaire corroborés ; vérifier genèse, positions FAS/FSR et suite effective.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-02",
+      "title": "Soudan du Sud",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://southsudan.un.org/en/about/about-the-un",
+        "https://www.au.int/en/pressreleases/20261127/auc-chairperson-calls-commitment-advance-peace-southsudan",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Indépendance, lancement du groupe de travail et portée temporelle du risque alimentaire corroborés ; texte de l’accord de 2018 et mise en œuvre à contrôler.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-03",
+      "title": "RDC–Rwanda et Grands Lacs",
+      "reference_date": "2026-11-13",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1165470/?iso3=COD",
+        "https://www.wfp.org/news/conflict-and-disease-outbreaks-deepen-dr-congos-hunger-crisis-record-numbers-are-projected"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Chiffres IPC et projections corroborés ; manque une actualisation diplomatique RDC–Rwanda et le contrôle des acteurs.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-04",
+      "title": "Mali–Burkina Faso–Niger",
+      "reference_date": "2026-11-25",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Remplacer le portail ACLED par les notes datées des 24 et 25 novembre ; vérifier la période observée.",
+      "source_urls": [
+        "https://acleddata.com/region/conflict-sahel",
+        "https://data.unhcr.org/en/situations/sahelcrisis"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Résumés ACLED corroborés ; notes complètes bloquées et volet HCR non lu ; trois pays à ventiler.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-05",
+      "title": "Nigeria et bassin du lac Tchad",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.unhcr.org/africa/news/press-releases/nigeria-unhcr-assistant-high-commissioner-protection-calls-urgent-support",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Classement alimentaire corroboré ; déplacements corroborés par extrait HCR ; coopération régionale à contrôler.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-06",
+      "title": "Éthiopie – conflits internes",
+      "reference_date": "2026-11-25",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.amnesty.org/en/latest/news/2026/11/ethiopia-lethal-artillery-strikes-on-civilian-neighbourhoods-in-tigrays-alamata-city-must-be-investigated-as-war-crimes/",
+        "https://www.reuters.com/world/ethiopian-shelling-of-tigray-town-should-be-investigated-possible-war-crimes-2026-11-24/",
+        "https://apnews.com/article/427358084fef2eb567e38acd81c3eacd"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Demande d’enquête et contestation corroborées ; lire réponse des autorités, accord de Pretoria et AP.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-07",
+      "title": "Éthiopie–Érythrée",
+      "reference_date": "2026-11-25",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/",
+        "https://apnews.com/article/427358084fef2eb567e38acd81c3eacd"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Reuters accessible par extrait, ne confirme pas d’affrontements directs indépendamment ; rechercher positions officielles contradictoires.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-08",
+      "title": "Somalie",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://au.int/index.php/en/pressreleases/20261126/chairperson-engages-eastern-african-prc-members-peace-security-priorities",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Situation alimentaire corroborée ; avenir AUSSOM confirmé par extrait UA ; vérifier calendrier et financement.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-09",
+      "title": "République centrafricaine",
+      "reference_date": "2026-11-25",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://mandates.un.org/mandate/S/RES/2836%20%282026%29",
+        "https://peacekeeping.un.org/fr/news/centrafrique-la-paix-avance-mais-reste-fragile"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Échéance du mandat confirmée par registre ONU ; dispositif et publication du 25 novembre à lire.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-10",
+      "title": "Mozambique – Cabo Delgado",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://iom.int/news/fresh-violence-northern-mozambique-forces-over-7000-homes",
+        "https://fews.net/southern-africa/mozambique/food-security-outlook/october-2026",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "FEWS NET et FAO confirment contexte et projections ; OIM par extrait ; vérifier faits récents.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-11",
+      "title": "Cameroun",
+      "reference_date": "2026-09",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Référence de septembre : rechercher une actualisation nationale.",
+      "source_urls": [
+        "https://www.unfpa.org/resources/situation-report-crisis-cameroon-september-2026",
+        "https://civil-protection-humanitarian-aid.ec.europa.eu/where/africa/cameroon_en?prefLang=uk"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Distinguer période de septembre et publication d’octobre ; trois crises distinctes confirmées ; actualisation nécessaire.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-12",
+      "title": "Libye",
+      "reference_date": "2026-11-22",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://unsmil.unmissions.org/en/political-roadmap",
+        "https://unsmil.unmissions.org/en/news/dsrsg-political-koury-begins-five-day-visit-to-southern-libya",
+        "https://unsmil.unmissions.org/en/unsmil-mandate"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Annonce de visite et renouvellement confirmés par extraits ; feuille de route et texte de résolution non lus.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-13",
+      "title": "Sahara occidental et tensions régionales",
+      "reference_date": "2026-11-10",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Vérifier le compte rendu du vote et distinguer le projet de résolution rejeté d’une résolution adoptée.",
+      "source_urls": [
+        "https://peacekeeping.un.org/en/news/western-sahara-un-stands-ready-to-keep-supporting-peace-efforts-as-minurso",
+        "https://www.un.org/pga/81/documents/speeches/veto-initiative-debate-10-november-2026/"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Deux projets de résolution non adoptés selon Security Council Report ; lettre ONU confirme veto et convocation du débat ; liquidation et tenue effective du débat à vérifier.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-14",
+      "title": "Bénin, Togo et États côtiers",
+      "reference_date": "2026-11-13",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Préciser les faits par pays et le lien avec les déplacements.",
+      "source_urls": [
+        "https://www.unhcr.org/where-we-work/countries/benin",
+        "https://www.unhcr.org/where-we-work/countries/togo?query=Benin",
+        "https://www.unhcr.org/africa/news/press-releases/nigeria-unhcr-assistant-high-commissioner-protection-calls-urgent-support"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Déplacements Niger/Bénin corroborés par extrait ; Togo et ventilation nationale non contrôlés.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-15",
+      "title": "Tchad",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://data.unhcr.org/en/documents/details/124981",
+        "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Date du document HCR et classement FAO corroborés ; carte PDF et données locales à examiner.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-16",
+      "title": "Égypte, Éthiopie et bassin du Nil",
+      "reference_date": "2026-11-25",
+      "status": "a_corriger",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Rechercher les déclarations originales des trois États.",
+      "source_urls": [
+        "https://english.ahram.org.eg/UI/Front/NewsContent/1/1234/581830/Egypt/Foreign-Affairs/Ethiopian-minister-links-Nile-understanding-to-Red.aspx",
+        "https://www.egypttoday.com/Article/1/150773/Egypt-Sudan-Ethiopia%E2%80%99s-unilateral-dam-poses-ongoing-threat-to-Nile",
+        "https://sudantribune.com/article/320834"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Position Égypte–Soudan corroborée, source du 3 novembre à relabeller ; position éthiopienne et données hydrologiques à obtenir.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-17",
+      "title": "Somalie–Somaliland et accès à la mer",
+      "reference_date": "2026-11-19",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.mfa.gov.tr/etiyopya-federal-demokratik-cumhuriyeti-ve-somali-federal-cumhuriyeti-nin-ankara-bildirisi.en.mfa",
+        "https://au.int/sw/node/46283?qt-qt_documents_sp=1",
+        "https://mfagovsomaliland.org/news/press-releases/23aa41d9-c9b9-4fb7-86f1-02be0f45e1bd"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "Déclaration Ankara intégralement accessible ; revendication Somaliland corroborée par extrait ; position UA et application effective à vérifier.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AFR-18",
+      "title": "Éthiopie–Soudan et différend frontalier",
+      "reference_date": "2026-11-16",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://apnews.com/article/649640494d674bfffcdc4418205b7485",
+        "https://dip-aws.euaa.europa.eu/coi/216-gedaref/2162-conflict-dynamics-and-tactics"
+      ],
+      "audit_pass": "0.3.19.1",
+      "audit_note": "EUAA et extrait AP corroborent tensions ; accusations restent attribuées ; mécanismes de désescalade récents à rechercher.",
+      "axes_observations": {
+        "AD-01": "Tentatives et résultats individuels consignés dans les références.",
+        "AD-02": "Contrôle ciblé, historique et textes de droit non exhaustifs.",
+        "AD-03": "Date et période des éléments cités contrôlées dans la limite des accès ; actualisation indépendante incomplète.",
+        "AD-04": "Confrontation ciblée, positions divergentes à compléter.",
+        "AD-05": "Périmètre relu, vérification géographique détaillée non achevée.",
+        "AD-06": "Volet humain relu ; données environnementales et services à compléter.",
+        "AD-07": "Initiatives citées contrôlées dans la limite des accès ; recherche exhaustive non achevée.",
+        "AD-08": "Distinction déclarations, projections et faits relue ; audit rédactionnel intégral à poursuivre."
+      }
+    },
+    {
+      "id": "AME-01",
+      "title": "Haïti",
+      "reference_date": "2026-11-17",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://mandates.un.org/mandate/S/RES/2814%282026%29",
+        "https://transcripts.un.org/en/briefing/geneva/2026-11-17",
+        "https://dppa.un.org/en/news/haiti-elections-on-hold-as-gangs-adapt-to-security-crackdown-security-council-hears"
+      ],
+      "audit_pass": "0.3.19.5",
+      "audit_note": "Mandat et report électoral corroborés par index ; OHCHR consulté via transcription automatique. Chercher texte officiel et calendrier actuel, contrôler droits et accès humanitaire.",
+      "axes_observations": {
+        "AD-01": "Tentatives et passages pertinents consignés par URL ; notices et extraits distingués.",
+        "AD-02": "Textes juridiques ciblés ; lecture exhaustive et qualification restent ouvertes.",
+        "AD-03": "Mandat et report électoral corroborés par index ; OHCHR consulté via transcription automatique. Chercher texte officiel et calendrier actuel, contrôler droits et accès humanitaire.",
+        "AD-04": "Positions attribuées ; sources primaires et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; ventilation territoriale et recoupements à approfondir.",
+        "AD-06": "Déplacements, droits, services et ressources repérés ; données environnementales et causales à approfondir.",
+        "AD-07": "Initiatives et mécanismes repérés ; exécution et exhaustivité non établies.",
+        "AD-08": "Distinguer déclaration, décision, observation et projection ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "AME-02",
+      "title": "Colombie",
+      "reference_date": "2026-11-22",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://mandates.un.org/mandate/S/RES/2833%20%282026%29",
+        "https://digitallibrary.un.org/record/4129789?v=pdf",
+        "https://www.lemonde.fr/international/article/2026/11/22/en-colombie-dix-ans-apres-la-signature-de-l-accord-historique-le-bilan-amer-de-la-paix-avec-les-farc_6814189_3210.html"
+      ],
+      "audit_pass": "0.3.19.5",
+      "audit_note": "Mandat renouvelé et bilan contrasté corroborés ; rapport SG non lu, texte de l'accord, justice transitionnelle, garanties rurales et positions actuelles à approfondir.",
+      "axes_observations": {
+        "AD-01": "Tentatives et passages pertinents consignés par URL ; notices et extraits distingués.",
+        "AD-02": "Textes juridiques ciblés ; lecture exhaustive et qualification restent ouvertes.",
+        "AD-03": "Mandat renouvelé et bilan contrasté corroborés ; rapport SG non lu, texte de l'accord, justice transitionnelle, garanties rurales et positions actuelles à approfondir.",
+        "AD-04": "Positions attribuées ; sources primaires et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; ventilation territoriale et recoupements à approfondir.",
+        "AD-06": "Déplacements, droits, services et ressources repérés ; données environnementales et causales à approfondir.",
+        "AD-07": "Initiatives et mécanismes repérés ; exécution et exhaustivité non établies.",
+        "AD-08": "Distinguer déclaration, décision, observation et projection ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "AME-03",
+      "title": "Mexique",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.reuters.com/world/americas/mexico-files-complaint-with-us-over-dea-tip-line-alleged-drug-traffickers-2026-11-27/",
+        "https://www.cfr.org/global-conflict-tracker/conflict/criminal-violence-mexico",
+        "https://www.gob.mx/sspc/prensa/el-gabinete-de-seguridad-del-gobierno-de-mexico-informa-acciones-relevantes-del-6-7-y-8-de-noviembre-de-2026?idiom=es"
+      ],
+      "audit_pass": "0.3.19.5",
+      "audit_note": "Plainte formelle corroborée par Reuters et AP ; contexte CFR et communiqué officiel indexé. Rechercher note diplomatique, réponse américaine, données nationales et seuil de qualification juridique.",
+      "axes_observations": {
+        "AD-01": "Tentatives et passages pertinents consignés par URL ; notices et extraits distingués.",
+        "AD-02": "Textes juridiques ciblés ; lecture exhaustive et qualification restent ouvertes.",
+        "AD-03": "Plainte formelle corroborée par Reuters et AP ; contexte CFR et communiqué officiel indexé. Rechercher note diplomatique, réponse américaine, données nationales et seuil de qualification juridique.",
+        "AD-04": "Positions attribuées ; sources primaires et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; ventilation territoriale et recoupements à approfondir.",
+        "AD-06": "Déplacements, droits, services et ressources repérés ; données environnementales et causales à approfondir.",
+        "AD-07": "Initiatives et mécanismes repérés ; exécution et exhaustivité non établies.",
+        "AD-08": "Distinguer déclaration, décision, observation et projection ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "AME-04",
+      "title": "Équateur",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://apnews.com/article/2c5edfb68eb298c5645715e918545960",
+        "https://www.investing.com/news/world-news/as-criminal-networks-spread-in-latin-america-quito-is-new-battleground-4982773",
+        "https://www.investing.com/news/world-news/as-gang-violence-deepens-hundreds-of-thousands-of-ecuadoreans-flee-their-homes-4891197"
+      ],
+      "audit_pass": "0.3.19.5",
+      "audit_note": "Extradition présentée comme succès corroborée par AP indexé ; contexte et déplacements documentés via Reuters. Rechercher décisions judiciaires, données HCR originales, résultats et droits.",
+      "axes_observations": {
+        "AD-01": "Tentatives et passages pertinents consignés par URL ; notices et extraits distingués.",
+        "AD-02": "Textes juridiques ciblés ; lecture exhaustive et qualification restent ouvertes.",
+        "AD-03": "Extradition présentée comme succès corroborée par AP indexé ; contexte et déplacements documentés via Reuters. Rechercher décisions judiciaires, données HCR originales, résultats et droits.",
+        "AD-04": "Positions attribuées ; sources primaires et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; ventilation territoriale et recoupements à approfondir.",
+        "AD-06": "Déplacements, droits, services et ressources repérés ; données environnementales et causales à approfondir.",
+        "AD-07": "Initiatives et mécanismes repérés ; exécution et exhaustivité non établies.",
+        "AD-08": "Distinguer déclaration, décision, observation et projection ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "AME-05",
+      "title": "Venezuela–États-Unis",
+      "reference_date": "2026-11-27",
+      "status": "a_corriger",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Confronter les annonces de novembre et rechercher les actes originaux ; vérifier le contexte juridique de l’intervention.",
+      "source_urls": [
+        "https://commonslibrary.parliament.uk/research-briefings/CBP-12211/",
+        "https://www.investing.com/news/world-news/us-defense-secretary-hegseth-vows-to-boost-venezuela-military-cooperation-5036784",
+        "https://www.reuters.com/business/energy/us-pushed-venezuela-iraq-consider-leaving-opec-sources-say-2026-11-27/"
+      ],
+      "audit_pass": "0.3.19.5",
+      "audit_note": "Contexte et coopération annoncée confirmés ; pressions OPEP rapportées le 27 mais antérieures. Texte accord, légalité du recours à la force, élections et effets sociaux à examiner.",
+      "axes_observations": {
+        "AD-01": "Tentatives et passages pertinents consignés par URL ; notices et extraits distingués.",
+        "AD-02": "Textes juridiques ciblés ; lecture exhaustive et qualification restent ouvertes.",
+        "AD-03": "Contexte et coopération annoncée confirmés ; pressions OPEP rapportées le 27 mais antérieures. Texte accord, légalité du recours à la force, élections et effets sociaux à examiner.",
+        "AD-04": "Positions attribuées ; sources primaires et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; ventilation territoriale et recoupements à approfondir.",
+        "AD-06": "Déplacements, droits, services et ressources repérés ; données environnementales et causales à approfondir.",
+        "AD-07": "Initiatives et mécanismes repérés ; exécution et exhaustivité non établies.",
+        "AD-08": "Distinguer déclaration, décision, observation et projection ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "AME-06",
+      "title": "Venezuela–Guyana",
+      "reference_date": "2026-11-21",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Ajouter la procédure et les ordonnances de la CIJ, ainsi que la position du Venezuela.",
+      "source_urls": [
+        "https://dpi.gov.gy/press-statement-guyana-stands-firm-on-sovereignty-as-icj-prepares-final-judgment-in-border-case/",
+        "https://www.cbc.bb/main-stories/guyana-rejects-bilateral-talks-with-venezuela-over-essequibo-dispute/"
+      ],
+      "audit_pass": "0.3.19.5",
+      "audit_note": "Position Guyana corroborée ; site gouvernemental et dossier CIJ indisponibles en direct, notice CIJ retrouvée. Lire ordonnances et positions vénézuéliennes, protéger communautés et ressources.",
+      "axes_observations": {
+        "AD-01": "Tentatives et passages pertinents consignés par URL ; notices et extraits distingués.",
+        "AD-02": "Textes juridiques ciblés ; lecture exhaustive et qualification restent ouvertes.",
+        "AD-03": "Position Guyana corroborée ; site gouvernemental et dossier CIJ indisponibles en direct, notice CIJ retrouvée. Lire ordonnances et positions vénézuéliennes, protéger communautés et ressources.",
+        "AD-04": "Positions attribuées ; sources primaires et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; ventilation territoriale et recoupements à approfondir.",
+        "AD-06": "Déplacements, droits, services et ressources repérés ; données environnementales et causales à approfondir.",
+        "AD-07": "Initiatives et mécanismes repérés ; exécution et exhaustivité non établies.",
+        "AD-08": "Distinguer déclaration, décision, observation et projection ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "AME-07",
+      "title": "Amérique centrale – violences organisées",
+      "reference_date": "2026-08-13",
+      "status": "a_corriger",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Référence d’août et portail général : actualisation et ventilation par État nécessaires.",
+      "source_urls": [
+        "https://www.unhcr.org/emergencies/el-salvador-guatemala-and-honduras-emergency?page=0",
+        "https://www.unhcr.org/where-we-work/countries/honduras",
+        "https://data.unhcr.org/en/situations/cam/location"
+      ],
+      "audit_pass": "0.3.19.5",
+      "audit_note": "Portail HCR et notices consultés ; profils bloqués. Rapport Honduras plus récent que référence initiale, fiche Salvador bilan 2025 publiée septembre. Ventiler pays et dates ; aucun bilan régional récent établi.",
+      "axes_observations": {
+        "AD-01": "Tentatives et passages pertinents consignés par URL ; notices et extraits distingués.",
+        "AD-02": "Textes juridiques ciblés ; lecture exhaustive et qualification restent ouvertes.",
+        "AD-03": "Portail HCR et notices consultés ; profils bloqués. Rapport Honduras plus récent que référence initiale, fiche Salvador bilan 2025 publiée septembre. Ventiler pays et dates ; aucun bilan régional récent établi.",
+        "AD-04": "Positions attribuées ; sources primaires et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; ventilation territoriale et recoupements à approfondir.",
+        "AD-06": "Déplacements, droits, services et ressources repérés ; données environnementales et causales à approfondir.",
+        "AD-07": "Initiatives et mécanismes repérés ; exécution et exhaustivité non établies.",
+        "AD-08": "Distinguer déclaration, décision, observation et projection ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "AME-08",
+      "title": "Brésil – violences organisées",
+      "reference_date": "2026-11-24",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://agenciabrasil.ebc.com.br/en/justica/noticia/2026-11/intelligence-agency-reports-31-criminal-organizations-brazil",
+        "https://www.hrw.org/news/2026/10/28/brazil-new-evidence-of-serious-police-misconduct-in-deadly-raid"
+      ],
+      "audit_pass": "0.3.19.5",
+      "audit_note": "Cartographie ABIN et enquête HRW confirmées ; distinguer publication 2026 et opération 2025. Rapport original et réponse des autorités à rechercher, aucune assimilation automatique à guerre.",
+      "axes_observations": {
+        "AD-01": "Tentatives et passages pertinents consignés par URL ; notices et extraits distingués.",
+        "AD-02": "Textes juridiques ciblés ; lecture exhaustive et qualification restent ouvertes.",
+        "AD-03": "Cartographie ABIN et enquête HRW confirmées ; distinguer publication 2026 et opération 2025. Rapport original et réponse des autorités à rechercher, aucune assimilation automatique à guerre.",
+        "AD-04": "Positions attribuées ; sources primaires et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; ventilation territoriale et recoupements à approfondir.",
+        "AD-06": "Déplacements, droits, services et ressources repérés ; données environnementales et causales à approfondir.",
+        "AD-07": "Initiatives et mécanismes repérés ; exécution et exhaustivité non établies.",
+        "AD-08": "Distinguer déclaration, décision, observation et projection ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "AME-09",
+      "title": "Cuba–États-Unis",
+      "reference_date": "2026-11-05",
+      "status": "a_corriger",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://mandates.un.org/mandate/A/RES/81/7",
+        "https://www.reuters.com/world/americas/us-issues-new-cuba-sanctions-takes-aim-sectors-cuban-economy-2026-11-05/",
+        "https://www.investing.com/news/world-news/exclusivecuba-and-us-maintain-channels-of-communication-but-no-negotiations-diplomat-says-4932854"
+      ],
+      "audit_pass": "0.3.19.5",
+      "audit_note": "Résolution ONU indexée ; OFAC confirme détermination du 5 novembre, Reuters confirme échanges déclarés en octobre. Distinguer autorisation de sanctions sectorielles et désignations effectives ; contrôler licences et effets humanitaires.",
+      "axes_observations": {
+        "AD-01": "Tentatives et passages pertinents consignés par URL ; notices et extraits distingués.",
+        "AD-02": "Textes juridiques ciblés ; lecture exhaustive et qualification restent ouvertes.",
+        "AD-03": "Résolution ONU indexée ; OFAC confirme détermination du 5 novembre, Reuters confirme échanges déclarés en octobre. Distinguer autorisation de sanctions sectorielles et désignations effectives ; contrôler licences et effets humanitaires.",
+        "AD-04": "Positions attribuées ; sources primaires et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; ventilation territoriale et recoupements à approfondir.",
+        "AD-06": "Déplacements, droits, services et ressources repérés ; données environnementales et causales à approfondir.",
+        "AD-07": "Initiatives et mécanismes repérés ; exécution et exhaustivité non établies.",
+        "AD-08": "Distinguer déclaration, décision, observation et projection ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-01",
+      "title": "Chine–Taïwan",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Vérifier l’URL miroir du ministère taïwanais et la correspondance des dates.",
+      "source_urls": [
+        "https://www-mnd-gov-tw-01-d3hddnfbecgmc7d0.a01.azurefd.net/EN/News/PressRelease/88327",
+        "https://www.reuters.com/world/china/taiwan-candidates-campaign-key-local-elections-final-day-2026-11-27/",
+        "https://www.reuters.com/world/china/chinese-military-tests-new-taiwan-landing-tactics-coastal-drills-2026-11-27/"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Activités du 21 novembre confirmées par communiqué officiel ; 27 novembre et exercices corroborés par Reuters indexé. Chercher bulletin officiel du 27, position chinoise et effets civils.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Activités du 21 novembre confirmées par communiqué officiel ; 27 novembre et exercices corroborés par Reuters indexé. Chercher bulletin officiel du 27, position chinoise et effets civils.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-02",
+      "title": "Mer de Chine méridionale",
+      "reference_date": "2026-11-26",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.chathamhouse.org/2026/11/philippines-did-not-deliver-south-china-sea-code-conduct-it-has-shown-what-asean-can",
+        "https://theprint.in/world/chinas-defence-ministry-urges-japan-to-stop-stirring-up-south-china-sea-disputes/3109598/",
+        "https://www.gmanetwork.com/news/topstories/nation/1009966/explainer-what-is-the-south-china-sea-code-of-conduct/story/"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Absence de code achevé et déclaration chinoise corroborées. Lire documents ASEAN, sentence 2016, positions chinoises et riveraines ; distinguer souveraineté et droits maritimes.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Absence de code achevé et déclaration chinoise corroborées. Lire documents ASEAN, sentence 2016, positions chinoises et riveraines ; distinguer souveraineté et droits maritimes.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-03",
+      "title": "Chine–Japon, mer de Chine orientale",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.taipeitimes.com/News/front/archives/2026/11/27/2003868473",
+        "https://news.usni.org/2026/11/27/usni-news-western-pacific-pulse-nov-27-2026"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Accusations réciproques confirmées par AFP ; USNI non contrôlé au fond. Rechercher déclarations officielles des trois parties et mécanismes de prévention.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Accusations réciproques confirmées par AFP ; USNI non contrôlé au fond. Rechercher déclarations officielles des trois parties et mécanismes de prévention.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-04",
+      "title": "Péninsule coréenne",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.reuters.com/business/aerospace-defense/north-korea-expels-swiss-representative-closes-diplomatic-office-over-sanctions-2026-11-25/",
+        "https://apnews.com/article/c92ed77891d514ac5240ecf1cb82926a",
+        "https://en.yna.co.kr/view/AEN20261113002051315"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Fermeture et maintien des relations corroborés par dépêches indexées. Yonhap traite du dialogue Séoul–Pékin, non d’une négociation intercoréenne. Chercher déclaration suisse originale.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Fermeture et maintien des relations corroborés par dépêches indexées. Yonhap traite du dialogue Séoul–Pékin, non d’une négociation intercoréenne. Chercher déclaration suisse originale.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-05",
+      "title": "Inde–Pakistan",
+      "reference_date": "2026-11-20",
+      "status": "a_corriger",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.mofa.gov.pk/press-releases/transcript-of-the-press-briefing-by-the-spokesperson-on-friday-20th-november-2026",
+        "https://amp.dw.com/en/pakistan-minister-to-visit-india-but-no-breakthrough-expected/a-79991717"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Nomination confirmée ; arrivée à New Delhi le 20 novembre documentée par Dawn et Tribune/ANI. Actualiser la fiche sans en déduire une normalisation.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Nomination confirmée ; arrivée à New Delhi le 20 novembre documentée par Dawn et Tribune/ANI. Actualiser la fiche sans en déduire une normalisation.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-06",
+      "title": "Inde–Chine",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.mfa.gov.cn/eng./wjbzhd/202608/t20260826_12011002.html",
+        "https://www.scmp.com/news/china/diplomacy/article/3376066/china-and-india-hold-fresh-border-talks-both-boost-military-readiness-winter?module=latest&pgtype=homepage"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Date et existence des huit points confirmées ; échanges de novembre par titre SCMP. Lire les huit points, version indienne et détails du 27 ; vérifier coopération hydrologique.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Date et existence des huit points confirmées ; échanges de novembre par titre SCMP. Lire les huit points, version indienne et détails du 27 ; vérifier coopération hydrologique.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-07",
+      "title": "Afghanistan–Pakistan",
+      "reference_date": "2026-11-22",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.reuters.com/world/asia-pacific/pakistan-afghan-forces-exchange-fire-after-airstrikes-deepen-tensions-2026-02-24/",
+        "https://www.satp.org/terrorism-update/renewed-clashes-between-taliban-and-pakistani-forces-at-torkham-border-crossing",
+        "https://data.unhcr.org/fr/documents/details/124957"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Signalement du 1er novembre par SATP ; notice HCR confirme dates et catégories de retour. Lire tableau original, corroborer faits et médiations récentes.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Signalement du 1er novembre par SATP ; notice HCR confirme dates et catégories de retour. Lire tableau original, corroborer faits et médiations récentes.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-08",
+      "title": "Myanmar",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Ajouter l’arrêt et son dispositif, distinguer responsabilité étatique et individuelle.",
+      "source_urls": [
+        "https://iimm.un.org/icj-gambia-v-myanmar",
+        "https://www.gov.uk/government/speeches/foreign-secretary-statement-to-the-house-of-commons-23-november-2026",
+        "https://www.lemonde.fr/international/article/2026/11/27/birmanie-le-dictateur-birman-min-aung-hlaing-fait-peu-de-cas-du-verdict-de-la-cij_6815834_3210.html"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Jugement confirmé par ONU, France et Royaume-Uni ; réaction du 25 novembre confirmée par passage Le Monde. Ajouter jugement original, communiqué birman et position française ; distinguer responsabilité étatique et individuelle.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Jugement confirmé par ONU, France et Royaume-Uni ; réaction du 25 novembre confirmée par passage Le Monde. Ajouter jugement original, communiqué birman et position française ; distinguer responsabilité étatique et individuelle.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-09",
+      "title": "Thaïlande–Cambodge",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://pca-cpa.org/en/cases/380/",
+        "https://pca-cpa.org/fr/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-6/",
+        "https://www.reuters.com/markets/commodities/cambodia-thailand-agree-maritime-site-visit-dispute-proceedings-2026-11-27/"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Progrès techniques du 24–27 novembre confirmés par les deux gouvernements et Reuters indexé. Ajouter références officielles accessibles, lire communiqué CPA intégral ; distinguer mer et terre.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Progrès techniques du 24–27 novembre confirmés par les deux gouvernements et Reuters indexé. Ajouter références officielles accessibles, lire communiqué CPA intégral ; distinguer mer et terre.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-10",
+      "title": "Afghanistan – sécurité intérieure",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.wfp.org/news/el-nino-adds-new-hunger-hotspots-conflict-continues-drive-risk-famine-warn-fao-and-wfp",
+        "https://data.unhcr.org/en/situations/afghanistan?gsid=84727841-98b9-41d7-b934-d16db4751a57",
+        "https://data.unhcr.org/fr/documents/details/124957"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Classement alimentaire corroboré par FAO/PAM indexé ; portail HCR accessible daté août et notice spécifique novembre. Ne pas assimiler retour à retour volontaire ; actualiser sécurité intérieure.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Classement alimentaire corroboré par FAO/PAM indexé ; portail HCR accessible daté août et notice spécifique novembre. Ne pas assimiler retour à retour volontaire ; actualiser sécurité intérieure.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-11",
+      "title": "Pakistan – conflits internes",
+      "reference_date": "2026-11-26",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.euaa.europa.eu/publications/coi-query-response-pakistan-security-situation-balochistan-province",
+        "https://www.dawn.com/news/2047181/security-forces-kill-12-india-sponsored-terrorists-in-multiple-ibos-in-balochistan-ispr"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Notice EUAA et annonce Dawn confirmées ; PDF non lu, accusation de soutien étranger attribuée. Étudier protection des civils et droits.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Notice EUAA et annonce Dawn confirmées ; PDF non lu, accusation de soutien étranger attribuée. Étudier protection des civils et droits.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-12",
+      "title": "Philippines – conflits internes",
+      "reference_date": "2026-11-07",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Remplacer l’archive mensuelle du gouvernement par la publication exacte ; rechercher une actualisation.",
+      "source_urls": [
+        "https://pco.gov.ph/news_releases/pbbm-milf-leaders-discuss-remaining-steps-towards-lasting-bangsamoro-peace/",
+        "https://peace.gov.ph/2026/11/",
+        "https://verafiles.org/articles/bangsamoro-peace-process-sufficiently-off-track-as-normalization-lags"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Rencontre du 6 novembre corroborée, session parlementaire du 30 confirmée ; décalage entre normalisation et volet politique documenté. Ajouter lien précis et chercher état récent et autres foyers armés.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Rencontre du 6 novembre corroborée, session parlementaire du 30 confirmée ; décalage entre normalisation et volet politique documenté. Ajouter lien précis et chercher état récent et autres foyers armés.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "ASI-13",
+      "title": "Inde – tensions internes",
+      "reference_date": "2026-11-26",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.theeasttimes.com/india/manipur-faces-renewed-unrest-as-highway-blockade-threat-idp-protests-and-nrc-demand-intensify/203/",
+        "https://nagaland.news/cotu-highway-shutdown-naga-bodies/"
+      ],
+      "audit_pass": "0.3.19.3",
+      "audit_note": "Protestations et projet de blocage corroborés ; suspension annoncée le 26 confirmée. Suivre réalisation et positions communautaires ; périmètre Manipur ne couvre pas toute l’Inde.",
+      "axes_observations": {
+        "AD-01": "Accès et passages pertinents consignés par URL ; extrait seulement lorsque texte intégral non contrôlé.",
+        "AD-02": "Repères relus ; droit et historique non exhaustivement contrôlés.",
+        "AD-03": "Protestations et projet de blocage corroborés ; suspension annoncée le 26 confirmée. Suivre réalisation et positions communautaires ; périmètre Manipur ne couvre pas toute l’Inde.",
+        "AD-04": "Confrontation ciblée ; sources des parties et indépendance à compléter.",
+        "AD-05": "Périmètre relu ; géographie et recoupements restent ouverts.",
+        "AD-06": "Volet humain et environnemental relu ; données indépendantes à compléter.",
+        "AD-07": "Initiatives repérées ; effectivité et exhaustivité à contrôler.",
+        "AD-08": "Maintenir distinction entre faits, déclarations, annonces et effets ; relecture complète ouverte."
+      }
+    },
+    {
+      "id": "EUR-01",
+      "title": "Russie–Ukraine",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/11/10/statement-on-today-s-meeting-in-abu-dhabi-between-the-eu-france-germany-italy-united-kingdom-ukraine-united-states-and-nato/",
+        "https://www.reuters.com/business/energy/iaea-working-with-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-2026-11-27/",
+        "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/26-27/",
+        "https://apnews.com/article/fd025046850b824b2e62def18408c6b6"
+      ],
+      "audit_pass": "0.3.19.4",
+      "audit_note": "Coordination du 10 et financement non conclu confirmés ; démarche AIEA annoncée le 26 et rapportée le 27, non cessez-le-feu acquis. Chercher communiqué original AIEA et positions des parties. Distinguer prêt supplémentaire et instrument existant.",
+      "axes_observations": {
+        "AD-01": "Résultats des accès consignés par URL ; direct et indexé distingués.",
+        "AD-02": "Textes institutionnels ciblés ; historique et droit non exhaustifs.",
+        "AD-03": "Coordination du 10 et financement non conclu confirmés ; démarche AIEA annoncée le 26 et rapportée le 27, non cessez-le-feu acquis. Chercher communiqué original AIEA et positions des parties. Distinguer prêt supplémentaire et instrument existant.",
+        "AD-04": "Positions attribuées ; contradictoire à compléter.",
+        "AD-05": "Périmètre relu ; recoupements et statuts à approfondir.",
+        "AD-06": "Coopérations eau, énergie, éducation et secours repérées ; données d’impact à compléter.",
+        "AD-07": "Initiatives citées contrôlées ; réalisation et exhaustivité ouvertes.",
+        "AD-08": "Distinction annonce, décision, application et attribution maintenue ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "EUR-02",
+      "title": "Russie–OTAN et sécurité européenne",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa",
+        "https://www.nato.int/fr/news-and-events/articles/news/2026/11/26/joint-statement-by-the-president-of-the-united-states-of-america-and-the-nato-secretary-general",
+        "https://www.reuters.com/world/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say-2026-11-27/"
+      ],
+      "audit_pass": "0.3.19.4",
+      "audit_note": "Discours et déclaration OTAN consultés ; incident letton corroboré par reprise Reuters. Attributions et intention à confirmer par autorités nationales et sources indépendantes. Lire traité articles 4–5 ; vérifier événements distincts et positions russes. Pas de changement de niveau.",
+      "axes_observations": {
+        "AD-01": "Résultats des accès consignés par URL ; direct et indexé distingués.",
+        "AD-02": "Textes institutionnels ciblés ; historique et droit non exhaustifs.",
+        "AD-03": "Discours et déclaration OTAN consultés ; incident letton corroboré par reprise Reuters. Attributions et intention à confirmer par autorités nationales et sources indépendantes. Lire traité articles 4–5 ; vérifier événements distincts et positions russes. Pas de changement de niveau.",
+        "AD-04": "Positions attribuées ; contradictoire à compléter.",
+        "AD-05": "Périmètre relu ; recoupements et statuts à approfondir.",
+        "AD-06": "Coopérations eau, énergie, éducation et secours repérées ; données d’impact à compléter.",
+        "AD-07": "Initiatives citées contrôlées ; réalisation et exhaustivité ouvertes.",
+        "AD-08": "Distinction annonce, décision, application et attribution maintenue ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "EUR-03",
+      "title": "Serbie–Kosovo",
+      "reference_date": "2026-11-25",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.eeas.europa.eu/eeas/belgrade-pristina-dialogue_en",
+        "https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/25/",
+        "https://enlargement.ec.europa.eu/news/2026-enlargement-package-shows-reform-commitment-delivers-progress-towards-eu-membership-2026-11-04_en"
+      ],
+      "audit_pass": "0.3.19.4",
+      "audit_note": "Dialogue UE depuis 2011 et sommet du 25 corroborés. Lire accord 2023 et annexes ; suivre application et positions des communautés.",
+      "axes_observations": {
+        "AD-01": "Résultats des accès consignés par URL ; direct et indexé distingués.",
+        "AD-02": "Textes institutionnels ciblés ; historique et droit non exhaustifs.",
+        "AD-03": "Dialogue UE depuis 2011 et sommet du 25 corroborés. Lire accord 2023 et annexes ; suivre application et positions des communautés.",
+        "AD-04": "Positions attribuées ; contradictoire à compléter.",
+        "AD-05": "Périmètre relu ; recoupements et statuts à approfondir.",
+        "AD-06": "Coopérations eau, énergie, éducation et secours repérées ; données d’impact à compléter.",
+        "AD-07": "Initiatives citées contrôlées ; réalisation et exhaustivité ouvertes.",
+        "AD-08": "Distinction annonce, décision, application et attribution maintenue ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "EUR-04",
+      "title": "Bosnie-Herzégovine",
+      "reference_date": "2026-11-25",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://enlargement.ec.europa.eu/bosnia-and-herzegovina-report-2026_en?prefLang=bg",
+        "https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/25/",
+        "https://enlargement.ec.europa.eu/news/joint-statement-high-representativevice-president-kallas-and-commissioner-kos-general-elections-2026-10-06_en?prefLang=da"
+      ],
+      "audit_pass": "0.3.19.4",
+      "audit_note": "Notice du rapport 4 novembre et déclaration électorale consultées ; PDF non lu, absence de conclusion sur stabilité actuelle. Chercher actualisation spécifique, rapports OHR, textes Dayton et OSCE.",
+      "axes_observations": {
+        "AD-01": "Résultats des accès consignés par URL ; direct et indexé distingués.",
+        "AD-02": "Textes institutionnels ciblés ; historique et droit non exhaustifs.",
+        "AD-03": "Notice du rapport 4 novembre et déclaration électorale consultées ; PDF non lu, absence de conclusion sur stabilité actuelle. Chercher actualisation spécifique, rapports OHR, textes Dayton et OSCE.",
+        "AD-04": "Positions attribuées ; contradictoire à compléter.",
+        "AD-05": "Périmètre relu ; recoupements et statuts à approfondir.",
+        "AD-06": "Coopérations eau, énergie, éducation et secours repérées ; données d’impact à compléter.",
+        "AD-07": "Initiatives citées contrôlées ; réalisation et exhaustivité ouvertes.",
+        "AD-08": "Distinction annonce, décision, application et attribution maintenue ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "EUR-05",
+      "title": "Moldavie–Transnistrie",
+      "reference_date": "2026-11-23",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://moldova.osce.org/news/mission-moldova/667755",
+        "https://gov.md/index.php/en/comunicate-de-presa-bpr/issues-reintegration-process-and-respect-human-rights-eastern-districts"
+      ],
+      "audit_pass": "0.3.19.4",
+      "audit_note": "Réunion du 20 et communiqué OSCE confirmés. Ajouter les engagements concrets sur écoles et immatriculation et rencontre avant fin 2026, sans présumer exécution ; confronter positions de Tiraspol.",
+      "axes_observations": {
+        "AD-01": "Résultats des accès consignés par URL ; direct et indexé distingués.",
+        "AD-02": "Textes institutionnels ciblés ; historique et droit non exhaustifs.",
+        "AD-03": "Réunion du 20 et communiqué OSCE confirmés. Ajouter les engagements concrets sur écoles et immatriculation et rencontre avant fin 2026, sans présumer exécution ; confronter positions de Tiraspol.",
+        "AD-04": "Positions attribuées ; contradictoire à compléter.",
+        "AD-05": "Périmètre relu ; recoupements et statuts à approfondir.",
+        "AD-06": "Coopérations eau, énergie, éducation et secours repérées ; données d’impact à compléter.",
+        "AD-07": "Initiatives citées contrôlées ; réalisation et exhaustivité ouvertes.",
+        "AD-08": "Distinction annonce, décision, application et attribution maintenue ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "EUR-06",
+      "title": "Arménie–Azerbaïdjan",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.consilium.europa.eu/en/policies/azerbaijan/",
+        "https://www.primeminister.am/en/press-release/item/2026/11/12/Nikol-Pashinyan-Ilham-Aliyev/",
+        "https://www.euronews.com/2026/11/27/azerbaijani-and-armenian-civil-societies-seek-new-history-in-new-round-of-peace-talks",
+        "https://en.apa.az/foreign-policy/azerbaijan-armenia-peace-bridge-initiative-completes-fifth-round-of-talks-538970"
+      ],
+      "audit_pass": "0.3.19.4",
+      "audit_note": "Paraphe 2025 et rencontre du 12 confirmés ; cinquième Peace Bridge corroborée par textes indexés. Ajouter groupes de travail eaux transfrontalières et projet interconnexion électrique ; chercher communiqué azerbaïdjanais et texte du traité, droits des déplacés.",
+      "axes_observations": {
+        "AD-01": "Résultats des accès consignés par URL ; direct et indexé distingués.",
+        "AD-02": "Textes institutionnels ciblés ; historique et droit non exhaustifs.",
+        "AD-03": "Paraphe 2025 et rencontre du 12 confirmés ; cinquième Peace Bridge corroborée par textes indexés. Ajouter groupes de travail eaux transfrontalières et projet interconnexion électrique ; chercher communiqué azerbaïdjanais et texte du traité, droits des déplacés.",
+        "AD-04": "Positions attribuées ; contradictoire à compléter.",
+        "AD-05": "Périmètre relu ; recoupements et statuts à approfondir.",
+        "AD-06": "Coopérations eau, énergie, éducation et secours repérées ; données d’impact à compléter.",
+        "AD-07": "Initiatives citées contrôlées ; réalisation et exhaustivité ouvertes.",
+        "AD-08": "Distinction annonce, décision, application et attribution maintenue ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "EUR-07",
+      "title": "Chypre",
+      "reference_date": "2026-11-25",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/cyprus-leaders-agree-open-new-border-crossings-future-talks-2026-11-09/",
+        "https://en.politis.com.cy/news/1074261/menelaou-window-still-open-for-enlarged-cyprus-meeting-before-guterres-leaves",
+        "https://famagusta-gazette.com/cyprus-leaders-meet-at-un-buffer-zone-call-for-trilateral-talks-with-guterres/"
+      ],
+      "audit_pass": "0.3.19.4",
+      "audit_note": "Accord de principe sur deux passages le 9 et préparatifs du 24 corroborés ; ne pas présenter ouverture comme effective. Ajouter mécanisme de secours et projets communs éducation/environnement rapportés le 25 ; chercher communiqué ONU original.",
+      "axes_observations": {
+        "AD-01": "Résultats des accès consignés par URL ; direct et indexé distingués.",
+        "AD-02": "Textes institutionnels ciblés ; historique et droit non exhaustifs.",
+        "AD-03": "Accord de principe sur deux passages le 9 et préparatifs du 24 corroborés ; ne pas présenter ouverture comme effective. Ajouter mécanisme de secours et projets communs éducation/environnement rapportés le 25 ; chercher communiqué ONU original.",
+        "AD-04": "Positions attribuées ; contradictoire à compléter.",
+        "AD-05": "Périmètre relu ; recoupements et statuts à approfondir.",
+        "AD-06": "Coopérations eau, énergie, éducation et secours repérées ; données d’impact à compléter.",
+        "AD-07": "Initiatives citées contrôlées ; réalisation et exhaustivité ouvertes.",
+        "AD-08": "Distinction annonce, décision, application et attribution maintenue ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "MOR-01",
+      "title": "Israël–Palestine",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.un.org/unispal/document/unsco-report-to-the-ad-hoc-liaison-committee-september-2026/",
+        "https://www.ochaopt.org/content/humanitarian-situation-report-26-november-2026",
+        "https://apnews.com/article/dbb2c950f5cd991a52f3a065b6325535"
+      ],
+      "audit_pass": "0.3.19.2",
+      "audit_note": "Rapport OCHA et actualités AP corroborés ; UNSCO intégral et résolution 2803 à lire. Déclarations militaires et données hospitalières à distinguer. Contexte de l’occupation et statut juridique de Gaza après 2005 à préciser à partir des textes et jurisprudences pertinents.",
+      "axes_observations": {
+        "AD-01": "Résultats d’accès individuels consignés.",
+        "AD-02": "Contexte de l’occupation et statut juridique de Gaza après 2005 à préciser à partir des textes et jurisprudences pertinents.",
+        "AD-03": "Rapport OCHA et actualités AP corroborés ; UNSCO intégral et résolution 2803 à lire. Déclarations militaires et données hospitalières à distinguer.",
+        "AD-04": "Positions attribuées ; indépendance et contradictoire à approfondir.",
+        "AD-05": "Périmètre relu ; frontières, statuts et recoupements à vérifier.",
+        "AD-06": "Volet humain relu ; données écologiques et accès aux services à compléter.",
+        "AD-07": "Démarches citées repérées ; textes originaux et mise en œuvre à contrôler.",
+        "AD-08": "Réserves et distinction annonces/faits à maintenir ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "MOR-02",
+      "title": "Israël–Liban",
+      "reference_date": "2026-11-27",
+      "status": "a_corriger",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://mandates.un.org/mandate/S/RES/2790%282025%29?subject=Lebanon",
+        "https://apnews.com/article/c758141bda52c64f6d2822048b1c400c",
+        "https://commonslibrary.parliament.uk/research-briefings/cbp-10348/"
+      ],
+      "audit_pass": "0.3.19.2",
+      "audit_note": "Mandat et fonctions résiduelles vérifiés aux paragraphes 1–7 de 2790 ; annonce de proposition française attribuée au Premier ministre libanais ; confirmation directe de Paris non obtenue. Ajouter le cadre tripartite de juin 2026, ses limites et le rejet par le Hezbollah, selon la note britannique. Lire le texte original.",
+      "axes_observations": {
+        "AD-01": "Résultats d’accès individuels consignés.",
+        "AD-02": "Ajouter le cadre tripartite de juin 2026, ses limites et le rejet par le Hezbollah, selon la note britannique. Lire le texte original.",
+        "AD-03": "Mandat et fonctions résiduelles vérifiés aux paragraphes 1–7 de 2790 ; annonce de proposition française attribuée au Premier ministre libanais ; confirmation directe de Paris non obtenue.",
+        "AD-04": "Positions attribuées ; indépendance et contradictoire à approfondir.",
+        "AD-05": "Périmètre relu ; frontières, statuts et recoupements à vérifier.",
+        "AD-06": "Volet humain relu ; données écologiques et accès aux services à compléter.",
+        "AD-07": "Démarches citées repérées ; textes originaux et mise en œuvre à contrôler.",
+        "AD-08": "Réserves et distinction annonces/faits à maintenir ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "MOR-03",
+      "title": "Iran–Israël–États-Unis",
+      "reference_date": "2026-11-27",
+      "status": "a_corriger",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.reuters.com/world/middle-east/qatari-delegation-visits-tehran-talks-iranian-official-says-2026-11-21/",
+        "https://apnews.com/article/800620518a351282f098faa9381b3375",
+        "https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/dichiarazione-congiunta-a-seguito-della-riunione-dei-ministri-degli-esteri-del-g7-tenutasi-a-parigi-il-9-e-10-novembre-2026/"
+      ],
+      "audit_pass": "0.3.19.2",
+      "audit_note": "Médiation qatarienne attribuée et déclaration G7 corroborées ; annonce américaine et réponse iranienne accessibles par extraits. Qualification juridique du recours à la force, du blocus et de la navigation à examiner séparément ; rechercher textes AIEA et positions des médiateurs et parties.",
+      "axes_observations": {
+        "AD-01": "Résultats d’accès individuels consignés.",
+        "AD-02": "Qualification juridique du recours à la force, du blocus et de la navigation à examiner séparément ; rechercher textes AIEA et positions des médiateurs et parties.",
+        "AD-03": "Médiation qatarienne attribuée et déclaration G7 corroborées ; annonce américaine et réponse iranienne accessibles par extraits.",
+        "AD-04": "Positions attribuées ; indépendance et contradictoire à approfondir.",
+        "AD-05": "Périmètre relu ; frontières, statuts et recoupements à vérifier.",
+        "AD-06": "Volet humain relu ; données écologiques et accès aux services à compléter.",
+        "AD-07": "Démarches citées repérées ; textes originaux et mise en œuvre à contrôler.",
+        "AD-08": "Réserves et distinction annonces/faits à maintenir ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "MOR-04",
+      "title": "Syrie",
+      "reference_date": "2026-11-24",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.gov.uk/government/publications/syria-country-policy-and-information-notes/country-policy-and-information-note-kurds-and-kurdish-areas-syria-november-2026-accessible",
+        "https://help.unhcr.org/syria/2026/11/24/returning-to-syria-find-out-what-support-may-be-available-to-you/",
+        "https://www.unhcr.org/publications/unhcr-s-response-return-and-reintegration-refugees-and-internally-displaced-persons"
+      ],
+      "audit_pass": "0.3.19.2",
+      "audit_note": "Dates d’annonce des FDS et aide conditionnelle HCR corroborées ; rapport intégral d’évaluation non lu. Ne pas déduire d’une intégration annoncée une réalisation complète ni une sécurité générale des retours ; rechercher textes syriens et données locales récentes.",
+      "axes_observations": {
+        "AD-01": "Résultats d’accès individuels consignés.",
+        "AD-02": "Ne pas déduire d’une intégration annoncée une réalisation complète ni une sécurité générale des retours ; rechercher textes syriens et données locales récentes.",
+        "AD-03": "Dates d’annonce des FDS et aide conditionnelle HCR corroborées ; rapport intégral d’évaluation non lu.",
+        "AD-04": "Positions attribuées ; indépendance et contradictoire à approfondir.",
+        "AD-05": "Périmètre relu ; frontières, statuts et recoupements à vérifier.",
+        "AD-06": "Volet humain relu ; données écologiques et accès aux services à compléter.",
+        "AD-07": "Démarches citées repérées ; textes originaux et mise en œuvre à contrôler.",
+        "AD-08": "Réserves et distinction annonces/faits à maintenir ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "MOR-05",
+      "title": "Irak",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.gov.uk/government/publications/iraq-country-policy-and-information-notes/country-policy-and-information-note-opposition-to-the-government-in-the-kurdistan-region-of-iraq-kri-iraq-july-2023-accessible",
+        "https://www.reuters.com/business/energy/iraqi-kurds-protest-against-baghdad-leaders-moves-assert-central-control-2026-11-26/",
+        "https://www.reuters.com/world/middle-east/trump-backs-iraqi-leaders-efforts-assert-more-state-authority-2026-11-27/",
+        "https://www.aljazeera.com/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown"
+      ],
+      "audit_pass": "0.3.19.2",
+      "audit_note": "Autonomie et divergences corroborées ; annonces des 26–27 novembre confirmées par textes indexés ; référence GOV.UK actualisée malgré URL ancienne. Lire Constitution et décision de la Cour fédérale ; suivre la rencontre annoncée du 1er décembre sans la présenter comme réalisée ; éviter de compter plusieurs reprises Reuters comme sources indépendantes.",
+      "axes_observations": {
+        "AD-01": "Résultats d’accès individuels consignés.",
+        "AD-02": "Lire Constitution et décision de la Cour fédérale ; suivre la rencontre annoncée du 1er décembre sans la présenter comme réalisée ; éviter de compter plusieurs reprises Reuters comme sources indépendantes.",
+        "AD-03": "Autonomie et divergences corroborées ; annonces des 26–27 novembre confirmées par textes indexés ; référence GOV.UK actualisée malgré URL ancienne.",
+        "AD-04": "Positions attribuées ; indépendance et contradictoire à approfondir.",
+        "AD-05": "Périmètre relu ; frontières, statuts et recoupements à vérifier.",
+        "AD-06": "Volet humain relu ; données écologiques et accès aux services à compléter.",
+        "AD-07": "Démarches citées repérées ; textes originaux et mise en œuvre à contrôler.",
+        "AD-08": "Réserves et distinction annonces/faits à maintenir ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "MOR-06",
+      "title": "Yémen et mer Rouge",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.mofa.gov.pk/press-releases/second-meeting-of-the-strategic-political-and-defence-committee-s-pdc-of-the-makkah-alliance-for-defence-joint-statement",
+        "https://apnews.com/article/6c17e4827e5aef3e69f78cdb01d597dc",
+        "https://yemen.un.org/en/326491-unfpa-yemen-%E2%80%9Ceverything-was-looted%E2%80%9D-displaced-midwife-saves-mothers-amid-yemen%E2%80%99s-conflict"
+      ],
+      "audit_pass": "0.3.19.2",
+      "audit_note": "Réunion tripartite corroborée et volet UNFPA consulté ; absence de déploiement turc direct uniquement comme position déclarée. Vérifier texte du pacte, ratifications, processus ONU de paix yéménite, positions des parties et conséquences maritimes et environnementales.",
+      "axes_observations": {
+        "AD-01": "Résultats d’accès individuels consignés.",
+        "AD-02": "Vérifier texte du pacte, ratifications, processus ONU de paix yéménite, positions des parties et conséquences maritimes et environnementales.",
+        "AD-03": "Réunion tripartite corroborée et volet UNFPA consulté ; absence de déploiement turc direct uniquement comme position déclarée.",
+        "AD-04": "Positions attribuées ; indépendance et contradictoire à approfondir.",
+        "AD-05": "Périmètre relu ; frontières, statuts et recoupements à vérifier.",
+        "AD-06": "Volet humain relu ; données écologiques et accès aux services à compléter.",
+        "AD-07": "Démarches citées repérées ; textes originaux et mise en œuvre à contrôler.",
+        "AD-08": "Réserves et distinction annonces/faits à maintenir ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "MOR-07",
+      "title": "Turquie et question kurde",
+      "reference_date": "2026-11-27",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": null,
+      "source_urls": [
+        "https://www.iletisim.gov.tr/english/haberler/detay/nsc-convenes-at-the-presidential-complex-26-11-26",
+        "https://amp.dw.com/en/can-turkeys-new-pkk-law-bring-peace/a-78326063",
+        "https://www.turkishminute.com/2026/11/27/turkey-gives-no-confirmation-kurdish-militants-have-laid-down-arms/"
+      ],
+      "audit_pass": "0.3.19.2",
+      "audit_note": "Communiqué officiel et adoption parlementaire corroborés ; absence de confirmation du désarmement le 26 novembre. Obtenir texte promulgué et mesures d’application ; ne pas assimiler absence de confirmation à preuve de non-désarmement.",
+      "axes_observations": {
+        "AD-01": "Résultats d’accès individuels consignés.",
+        "AD-02": "Obtenir texte promulgué et mesures d’application ; ne pas assimiler absence de confirmation à preuve de non-désarmement.",
+        "AD-03": "Communiqué officiel et adoption parlementaire corroborés ; absence de confirmation du désarmement le 26 novembre.",
+        "AD-04": "Positions attribuées ; indépendance et contradictoire à approfondir.",
+        "AD-05": "Périmètre relu ; frontières, statuts et recoupements à vérifier.",
+        "AD-06": "Volet humain relu ; données écologiques et accès aux services à compléter.",
+        "AD-07": "Démarches citées repérées ; textes originaux et mise en œuvre à contrôler.",
+        "AD-08": "Réserves et distinction annonces/faits à maintenir ; relecture intégrale ouverte."
+      }
+    },
+    {
+      "id": "STR-01",
+      "title": "Arctique et rivalités stratégiques",
+      "reference_date": "2026-11-26",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Retrouver décret officiel russe et lien OTAN canonique (variante avec barre oblique).",
+      "source_urls": [
+        "https://arctic-council.org/news/arctic-council-chairship-leads-workshop-for-sustainable-economic-development/",
+        "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa/",
+        "https://www.thearcticinstitute.org/russias-2026-arctic-strategy-security-cooperation/"
+      ]
+    },
+    {
+      "id": "STR-02",
+      "title": "Pacifique insulaire et rivalités internationales",
+      "reference_date": "2026-11-26",
+      "status": "partiellement_verifie",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Lire les traités et distinguer leurs clauses de la déclaration politique.",
+      "source_urls": [
+        "https://www.pm.gov.au/media/signing-australia-solomon-islands-treaty",
+        "https://www.pm.gov.au/media/entry-force-fiji-australia-vuvale-union-and-ocean-peace-alliance-veitacini-treaty",
+        "https://www.reuters.com/world/china/australia-solomon-islands-sign-security-pact-2026-11-25/"
+      ]
+    },
+    {
+      "id": "STR-03",
+      "title": "Papouasie occidentale",
+      "reference_date": "2026-11-27",
+      "status": "a_verifier",
+      "axes": {
+        "AD-01": "ouvert",
+        "AD-02": "ouvert",
+        "AD-03": "ouvert",
+        "AD-04": "ouvert",
+        "AD-05": "ouvert",
+        "AD-06": "ouvert",
+        "AD-07": "ouvert",
+        "AD-08": "ouvert"
+      },
+      "priority_note": "Corroboration indépendante, sources originales de Komnas HAM et des autorités indonésiennes.",
+      "source_urls": [
+        "https://humanrightsmonitor.org/reports/idp-update-november26-security-operations-and-new-troop-deployments-trigger-further-displacements-across-west-papua/",
+        "https://www.asia-pacific-solidarity.net/news/2026-09-11/komnas-ham-urges-prabowo-curb-papua-conflict.html",
+        "https://humanrightsmonitor.org/news/from-opm-and-kkb-to-keb-indonesian-govt-relabels-armed-groups-in-west-papua/"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://dppa.un.org/en/news/sudan-conflict-peace-efforts-resume-to-end-drone-war-fuelling-humanitarian-crisis",
+      "dossiers": [
+        "AFR-01"
+      ],
+      "status": "acces_bloque",
+      "note": "403 ; contexte historique à corroborer.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.au.int/en/pressreleases/20261125/statement-chairperson-au-commission-sudan-mediation-proposal",
+      "dossiers": [
+        "AFR-01"
+      ],
+      "status": "contenu_consulte",
+      "note": "Communiqué UA 25 novembre : proposition éthiopienne, processus inclusif dirigé par les Soudanais ; aucune acceptation générale établie.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/en",
+      "dossiers": [
+        "AFR-01",
+        "AFR-02",
+        "AFR-05",
+        "AFR-08",
+        "AFR-10",
+        "AFR-15"
+      ],
+      "status": "contenu_consulte",
+      "note": "FAO/PAM 27 novembre : risque de famine localisé au Soudan jusqu’à janvier 2027 ; Soudan du Sud dernière analyse jusqu’à juillet 2026 ; Somalie sans projection IPC5, déplacés de Baidoa IPC4 ; Nigeria, Tchad et Mozambique confirmés selon périmètres différents.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://southsudan.un.org/en/about/about-the-un",
+      "dossiers": [
+        "AFR-02"
+      ],
+      "status": "contenu_consulte",
+      "note": "Indépendance et admission ONU en 2011 confirmées ; page ne documente pas suffisamment l’accord de 2018.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.au.int/en/pressreleases/20261127/auc-chairperson-calls-commitment-advance-peace-southsudan",
+      "dossiers": [
+        "AFR-02"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct échoué ; extrait UA et Radio Tamazuj du 27 novembre confirment lancement et feuille de route.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.ipcinfo.org/ipc-country-analysis/details-map/en/c/1165470/?iso3=COD",
+      "dossiers": [
+        "AFR-03"
+      ],
+      "status": "contenu_consulte",
+      "note": "IPC : 28,8 millions en phase 3+ septembre–décembre 2026, 3,6 millions en phase 4.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.wfp.org/news/conflict-and-disease-outbreaks-deepen-dr-congos-hunger-crisis-record-numbers-are-projected",
+      "dossiers": [
+        "AFR-03"
+      ],
+      "status": "contenu_consulte",
+      "note": "Communiqué interagences : projection 30,3 millions phase 3+ janvier–juin 2027 ; 4,2 millions phase 4.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://acleddata.com/region/conflict-sahel",
+      "dossiers": [
+        "AFR-04"
+      ],
+      "status": "contenu_consulte",
+      "note": "Portail affiche les trois résumés nationaux pour 14–20 novembre et dates de publication ; notes individuelles bloquées 403.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://data.unhcr.org/en/situations/sahelcrisis",
+      "dossiers": [
+        "AFR-04"
+      ],
+      "status": "acces_bloque",
+      "note": "Délai dépassé.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.unhcr.org/africa/news/press-releases/nigeria-unhcr-assistant-high-commissioner-protection-calls-urgent-support",
+      "dossiers": [
+        "AFR-05",
+        "AFR-14"
+      ],
+      "status": "extrait_seulement",
+      "note": "429 en accès direct ; extrait du 13 novembre confirme augmentation des passages vers Niger et Bénin.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.amnesty.org/en/latest/news/2026/11/ethiopia-lethal-artillery-strikes-on-civilian-neighbourhoods-in-tigrays-alamata-city-must-be-investigated-as-war-crimes/",
+      "dossiers": [
+        "AFR-06"
+      ],
+      "status": "contenu_consulte",
+      "note": "Amnesty 23 novembre : demande d’enquête concernant des crimes de guerre possibles, événements de septembre. Ne vaut pas jugement.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.reuters.com/world/ethiopian-shelling-of-tigray-town-should-be-investigated-possible-war-crimes-2026-11-24/",
+      "dossiers": [
+        "AFR-06"
+      ],
+      "status": "extrait_seulement",
+      "note": "Reuters 24 novembre : porte-parole TPF conteste la présence de ses combattants en première ligne ; accès direct échoué.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://apnews.com/article/427358084fef2eb567e38acd81c3eacd",
+      "dossiers": [
+        "AFR-06",
+        "AFR-07"
+      ],
+      "status": "a_verifier",
+      "note": "Page AP accessible mais corps pertinent et date non contrôlés dans cette passe.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.reuters.com/world/africa/ethiopia-eritrea-amass-forces-along-border-heightening-war-fears-sources-say-2026-11-18/",
+      "dossiers": [
+        "AFR-07"
+      ],
+      "status": "extrait_seulement",
+      "note": "Reuters 18 novembre : déclarations de sources, impossibilité de confirmer indépendamment les affrontements directs ; accès direct échoué.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://au.int/index.php/en/pressreleases/20261126/chairperson-engages-eastern-african-prc-members-peace-security-priorities",
+      "dossiers": [
+        "AFR-08"
+      ],
+      "status": "extrait_seulement",
+      "note": "UA 26 novembre : consultations avenir AUSSOM, financement et transfert graduel ; accès direct échoué.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://mandates.un.org/mandate/S/RES/2836%20%282026%29",
+      "dossiers": [
+        "AFR-09"
+      ],
+      "status": "contenu_consulte",
+      "note": "Registre ONU confirme numéro et échéance 15 novembre 2027 ; dispositif intégral non lu.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://peacekeeping.un.org/fr/news/centrafrique-la-paix-avance-mais-reste-fragile",
+      "dossiers": [
+        "AFR-09"
+      ],
+      "status": "acces_bloque",
+      "note": "Accès direct échoué ; article du 25 novembre à retrouver.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://iom.int/news/fresh-violence-northern-mozambique-forces-over-7000-homes",
+      "dossiers": [
+        "AFR-10"
+      ],
+      "status": "extrait_seulement",
+      "note": "OIM 3 novembre : plus de 7000 déplacés depuis fin septembre ; accès direct 403.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://fews.net/southern-africa/mozambique/food-security-outlook/october-2026",
+      "dossiers": [
+        "AFR-10"
+      ],
+      "status": "contenu_consulte",
+      "note": "Perspectives octobre : conflit depuis 2017, pression sur revenus, marchés, déplacements ; projections distinctes des observations.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.unfpa.org/resources/situation-report-crisis-cameroon-september-2026",
+      "dossiers": [
+        "AFR-11"
+      ],
+      "status": "contenu_consulte",
+      "note": "Notice UNFPA : période septembre, publication octobre ; insécurité, inondations, maladies et besoins de soins.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://civil-protection-humanitarian-aid.ec.europa.eu/where/africa/cameroon_en?prefLang=uk",
+      "dossiers": [
+        "AFR-11"
+      ],
+      "status": "contenu_consulte",
+      "note": "Commission européenne distingue trois crises : anglophone, lac Tchad, réfugiés RCA ; actualisation de novembre à trouver.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://unsmil.unmissions.org/en/political-roadmap",
+      "dossiers": [
+        "AFR-12"
+      ],
+      "status": "acces_bloque",
+      "note": "403 ; feuille de route à lire.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://unsmil.unmissions.org/en/news/dsrsg-political-koury-begins-five-day-visit-to-southern-libya",
+      "dossiers": [
+        "AFR-12"
+      ],
+      "status": "extrait_seulement",
+      "note": "Titre et date du 22 novembre confirment annonce du déplacement de cinq jours ; accès 403.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://unsmil.unmissions.org/en/unsmil-mandate",
+      "dossiers": [
+        "AFR-12"
+      ],
+      "status": "extrait_seulement",
+      "note": "Extrait confirme résolution 2835 du 30 octobre 2026 et échéance 31 octobre 2027 ; accès 403.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://peacekeeping.un.org/en/news/western-sahara-un-stands-ready-to-keep-supporting-peace-efforts-as-minurso",
+      "dossiers": [
+        "AFR-13"
+      ],
+      "status": "acces_bloque",
+      "note": "Blocage consigné lors de V0.3.19 ; non-renouvellement corroboré par source complémentaire, liquidation à confirmer.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.un.org/pga/81/documents/speeches/veto-initiative-debate-10-november-2026/",
+      "dossiers": [
+        "AFR-13"
+      ],
+      "status": "acces_bloque",
+      "note": "403 ; lettre ONU du 5 novembre confirme convocation du débat, pas sa tenue effective.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.unhcr.org/where-we-work/countries/benin",
+      "dossiers": [
+        "AFR-14"
+      ],
+      "status": "acces_bloque",
+      "note": "429 ; chercher données nationales.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.unhcr.org/where-we-work/countries/togo?query=Benin",
+      "dossiers": [
+        "AFR-14"
+      ],
+      "status": "acces_bloque",
+      "note": "429 ; chercher données nationales.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://data.unhcr.org/en/documents/details/124981",
+      "dossiers": [
+        "AFR-15"
+      ],
+      "status": "contenu_consulte",
+      "note": "Notice HCR confirme carte de situation du 22 novembre publiée le 23 ; PDF non examiné.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://english.ahram.org.eg/UI/Front/NewsContent/1/1234/581830/Egypt/Foreign-Affairs/Ethiopian-minister-links-Nile-understanding-to-Red.aspx",
+      "dossiers": [
+        "AFR-16"
+      ],
+      "status": "acces_bloque",
+      "note": "403 ; position éthiopienne à retrouver.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.egypttoday.com/Article/1/150773/Egypt-Sudan-Ethiopia%E2%80%99s-unilateral-dam-poses-ongoing-threat-to-Nile",
+      "dossiers": [
+        "AFR-16"
+      ],
+      "status": "extrait_seulement",
+      "note": "EgyptToday 25 novembre : position commune contre gestion unilatérale ; accès direct 403.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://sudantribune.com/article/320834",
+      "dossiers": [
+        "AFR-16"
+      ],
+      "status": "contenu_consulte",
+      "note": "Article publié le 3 novembre sur réunion du 2 novembre ; libellé de la fiche indique à tort le 2 comme date de publication.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.mfa.gov.tr/etiyopya-federal-demokratik-cumhuriyeti-ve-somali-federal-cumhuriyeti-nin-ankara-bildirisi.en.mfa",
+      "dossiers": [
+        "AFR-17"
+      ],
+      "status": "contenu_consulte",
+      "note": "Déclaration originale : respect de l’intégrité territoriale, accès maritime sous souveraineté somalienne, modalités à négocier ; ne prouve pas exécution.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://au.int/sw/node/46283?qt-qt_documents_sp=1",
+      "dossiers": [
+        "AFR-17"
+      ],
+      "status": "acces_bloque",
+      "note": "403 ; position UA à retrouver dans document officiel.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://mfagovsomaliland.org/news/press-releases/23aa41d9-c9b9-4fb7-86f1-02be0f45e1bd",
+      "dossiers": [
+        "AFR-17"
+      ],
+      "status": "extrait_seulement",
+      "note": "Extrait du 19 novembre : revendication de souveraineté ; page sans texte lisible.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://apnews.com/article/649640494d674bfffcdc4418205b7485",
+      "dossiers": [
+        "AFR-18"
+      ],
+      "status": "extrait_seulement",
+      "note": "AP 16 novembre : accusations réciproques et différend Al-Fashaga ; accès direct échoué.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://dip-aws.euaa.europa.eu/coi/216-gedaref/2162-conflict-dynamics-and-tactics",
+      "dossiers": [
+        "AFR-18"
+      ],
+      "status": "contenu_consulte",
+      "note": "EUAA octobre 2026 : tensions de frontière, risque pour agriculture et débordement ; événements rapportés, pas preuve de guerre interétatique.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.1"
+    },
+    {
+      "url": "https://www.un.org/unispal/document/unsco-report-to-the-ad-hoc-liaison-committee-september-2026/",
+      "dossiers": [
+        "MOR-01"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct 403 ; extrait indexé du rapport UNSCO de septembre confirme le périmètre et les tensions humanitaires, économiques et politiques. Rapport intégral à lire.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-26-november-2026",
+      "dossiers": [
+        "MOR-01"
+      ],
+      "status": "contenu_consulte",
+      "note": "OCHA, rapport du 26 novembre, éléments de protection des enfants, contraintes d’accès, besoins d’abris hivernaux et restrictions en Cisjordanie. Période de référence en Cisjordanie 17–23 novembre sauf indication contraire.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://apnews.com/article/dbb2c950f5cd991a52f3a065b6325535",
+      "dossiers": [
+        "MOR-01"
+      ],
+      "status": "extrait_seulement",
+      "note": "AP du 27 novembre, accès direct impossible, extrait indexé confirme victimes rapportées par des hôpitaux et déclaration militaire israélienne sur des cibles militantes ; statut des victimes non établi individuellement.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://mandates.un.org/mandate/S/RES/2790%282025%29?subject=Lebanon",
+      "dossiers": [
+        "MOR-02"
+      ],
+      "status": "contenu_consulte",
+      "note": "Registre officiel ONU : paragraphes opératoires 1–7 examinés. Fin des opérations ordinaires le 31 décembre 2026 ; retrait dans l’année suivante ; fonctions limitées autorisées pendant le retrait. Ne pas confondre maintien de fonctions et renouvellement du mandat.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://apnews.com/article/c758141bda52c64f6d2822048b1c400c",
+      "dossiers": [
+        "MOR-02"
+      ],
+      "status": "extrait_seulement",
+      "note": "AP 27 novembre : le Premier ministre libanais annonce une proposition française envisagée. Accès direct impossible ; l’absence de confirmation française n’a pas été vérifiée indépendamment.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10348/",
+      "dossiers": [
+        "MOR-02"
+      ],
+      "status": "contenu_consulte",
+      "note": "Bibliothèque Chambre des communes, 24 septembre 2026 : échéance du mandat, positions divergentes et cadre Liban–Israël–États-Unis de juin 2026 ; décision nouvelle du Conseil nécessaire pour une nouvelle force.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.reuters.com/world/middle-east/qatari-delegation-visits-tehran-talks-iranian-official-says-2026-11-21/",
+      "dossiers": [
+        "MOR-03"
+      ],
+      "status": "extrait_seulement",
+      "note": "Reuters 21 novembre, accès direct impossible ; extrait et reprises confirment les échanges selon un responsable iranien, pas un accord ni une confirmation indépendante de toutes les modalités.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://apnews.com/article/800620518a351282f098faa9381b3375",
+      "dossiers": [
+        "MOR-03"
+      ],
+      "status": "extrait_seulement",
+      "note": "AP 27 novembre, accès direct impossible ; extrait indexé confirme l’annonce militaire américaine et la position iranienne. Légalité et faits précis non établis par la seule déclaration.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.esteri.it/en/sala_stampa/archivionotizie/comunicati/2026/11/dichiarazione-congiunta-a-seguito-della-riunione-dei-ministri-degli-esteri-del-g7-tenutasi-a-parigi-il-9-e-10-novembre-2026/",
+      "dossiers": [
+        "MOR-03"
+      ],
+      "status": "contenu_consulte",
+      "note": "Déclaration G7 publiée le 11 novembre à la suite de la réunion des 9–10 novembre ; soutien aux médiations, coopération AIEA et liberté de navigation. Positions du G7, non jugement juridique.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/syria-country-policy-and-information-notes/country-policy-and-information-note-kurds-and-kurdish-areas-syria-november-2026-accessible",
+      "dossiers": [
+        "MOR-04"
+      ],
+      "status": "contenu_consulte",
+      "note": "Note britannique mise à jour le 24 novembre, §4 et 11 : intégration annoncée le 20 août et dissolution annoncée le 25 août par le dirigeant des FDS. Ne prouve pas l’effectivité complète.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://help.unhcr.org/syria/2026/11/24/returning-to-syria-find-out-what-support-may-be-available-to-you/",
+      "dossiers": [
+        "MOR-04"
+      ],
+      "status": "contenu_consulte",
+      "note": "HCR 24 novembre : aide ponctuelle réservée aux familles réfugiées revenues durablement, éligibilité et fonds limités ; services variables. Ne garantit pas la sécurité générale des retours.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.unhcr.org/publications/unhcr-s-response-return-and-reintegration-refugees-and-internally-displaced-persons",
+      "dossiers": [
+        "MOR-04"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct 429 ; notice d’évaluation indépendante retrouvée. Rapport complet non lu.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/iraq-country-policy-and-information-notes/country-policy-and-information-note-opposition-to-the-government-in-the-kurdistan-region-of-iraq-kri-iraq-july-2023-accessible",
+      "dossiers": [
+        "MOR-05"
+      ],
+      "status": "contenu_consulte",
+      "note": "Note britannique version 4.0 de septembre 2026, mise à jour 6 octobre ; autonomie au sein de l’Irak fédéral. L’URL conserve juillet 2023 ; ne pas la confondre avec la date de version.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.reuters.com/business/energy/iraqi-kurds-protest-against-baghdad-leaders-moves-assert-central-control-2026-11-26/",
+      "dossiers": [
+        "MOR-05"
+      ],
+      "status": "extrait_seulement",
+      "note": "Reuters 26 novembre, accès direct impossible ; texte indexé confirme manifestations et contestation des mesures fédérales. Décision de la juridiction fédérale rapportée, texte original à obtenir.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.reuters.com/world/middle-east/trump-backs-iraqi-leaders-efforts-assert-more-state-authority-2026-11-27/",
+      "dossiers": [
+        "MOR-05"
+      ],
+      "status": "extrait_seulement",
+      "note": "Reuters 27 novembre, accès direct impossible ; extrait et republication confirment soutien américain, positions kurdes et différend sur les exportations. Chiffres de pertes non indépendamment établis.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.aljazeera.com/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown",
+      "dossiers": [
+        "MOR-05"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; version AMP indexée substantielle confirme divergences, fermeture de passages et annonce d’une réunion le 1er décembre. Article s’appuie notamment sur Reuters et AFP : indépendance partielle.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.mofa.gov.pk/press-releases/second-meeting-of-the-strategic-political-and-defence-committee-s-pdc-of-the-makkah-alliance-for-defence-joint-statement",
+      "dossiers": [
+        "MOR-06"
+      ],
+      "status": "extrait_seulement",
+      "note": "Communiqué pakistanais indexé du 27 novembre, accès direct impossible ; annonce de la réunion corroborée par SPA et Radio Pakistan.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://apnews.com/article/6c17e4827e5aef3e69f78cdb01d597dc",
+      "dossiers": [
+        "MOR-06"
+      ],
+      "status": "extrait_seulement",
+      "note": "AP 27 novembre, accès direct impossible ; extrait confirme position déclarée par des responsables turcs, sans préjuger de la mise en œuvre du pacte.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://yemen.un.org/en/326491-unfpa-yemen-%E2%80%9Ceverything-was-looted%E2%80%9D-displaced-midwife-saves-mothers-amid-yemen%E2%80%99s-conflict",
+      "dossiers": [
+        "MOR-06"
+      ],
+      "status": "contenu_consulte",
+      "note": "UNFPA 22 novembre : déplacés, soins maternels et difficultés d’accès aux services ; chiffres attribués aux organismes cités et périodes distinctes.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.iletisim.gov.tr/english/haberler/detay/nsc-convenes-at-the-presidential-complex-26-11-26",
+      "dossiers": [
+        "MOR-07"
+      ],
+      "status": "contenu_consulte",
+      "note": "Communiqué officiel turc du 26 novembre : poursuite des travaux liés à la loi de solidarité et cohésion ; pas de confirmation explicite du désarmement complet.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://amp.dw.com/en/can-turkeys-new-pkk-law-bring-peace/a-78326063",
+      "dossiers": [
+        "MOR-07"
+      ],
+      "status": "contenu_consulte",
+      "note": "DW 11 août 2026 : adoption parlementaire d’une loi-cadre et questions non résolues. Texte promulgué et décrets à rechercher.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www.turkishminute.com/2026/11/27/turkey-gives-no-confirmation-kurdish-militants-have-laid-down-arms/",
+      "dossiers": [
+        "MOR-07"
+      ],
+      "status": "extrait_seulement",
+      "note": "Turkish Minute du 27 novembre, accès direct impossible ; extrait confirme absence de confirmation au Conseil de sécurité nationale et questions de réintégration.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.2"
+    },
+    {
+      "url": "https://www-mnd-gov-tw-01-d3hddnfbecgmc7d0.a01.azurefd.net/EN/News/PressRelease/88327",
+      "dossiers": [
+        "ASI-01"
+      ],
+      "status": "contenu_consulte",
+      "note": "Communiqué officiel du 21 novembre consulté ; activités militaires rapportées par Taipei. Lien miroir accessible ; rechercher adresse canonique.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.reuters.com/world/china/taiwan-candidates-campaign-key-local-elections-final-day-2026-11-27/",
+      "dossiers": [
+        "ASI-01"
+      ],
+      "status": "extrait_seulement",
+      "note": "Reuters 27 novembre : campagne électorale et nouvelles activités militaires signalées par Taipei ; accès direct impossible, résultat indexé pertinent.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.reuters.com/world/china/chinese-military-tests-new-taiwan-landing-tactics-coastal-drills-2026-11-27/",
+      "dossiers": [
+        "ASI-01"
+      ],
+      "status": "extrait_seulement",
+      "note": "Reuters 27 novembre : exercices observés depuis début novembre ; ne démontre pas une décision d’offensive.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.chathamhouse.org/2026/11/philippines-did-not-deliver-south-china-sea-code-conduct-it-has-shown-what-asean-can",
+      "dossiers": [
+        "ASI-02"
+      ],
+      "status": "contenu_consulte",
+      "note": "Chatham House 17 novembre : sommet sans code de conduite achevé ; analyse, non décision officielle.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://theprint.in/world/chinas-defence-ministry-urges-japan-to-stop-stirring-up-south-china-sea-disputes/3109598/",
+      "dossiers": [
+        "ASI-02"
+      ],
+      "status": "contenu_consulte",
+      "note": "ThePrint/Reuters 26 novembre : critique chinoise ; position attribuée.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.gmanetwork.com/news/topstories/nation/1009966/explainer-what-is-the-south-china-sea-code-of-conduct/story/",
+      "dossiers": [
+        "ASI-02"
+      ],
+      "status": "extrait_seulement",
+      "note": "Notice GMA du 18 novembre retrouvée ; ouverture directe 404 ; contenu explicatif non vérifié.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.taipeitimes.com/News/front/archives/2026/11/27/2003868473",
+      "dossiers": [
+        "ASI-03"
+      ],
+      "status": "contenu_consulte",
+      "note": "AFP/Taipei Times 27 novembre : accusations réciproques Japon-Chine, revendication taïwanaise mentionnée.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://news.usni.org/2026/11/27/usni-news-western-pacific-pulse-nov-27-2026",
+      "dossiers": [
+        "ASI-03"
+      ],
+      "status": "extrait_seulement",
+      "note": "Titre et date USNI indexés ; contenu pertinent non contrôlé, ouverture directe impossible.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.reuters.com/business/aerospace-defense/north-korea-expels-swiss-representative-closes-diplomatic-office-over-sanctions-2026-11-25/",
+      "dossiers": [
+        "ASI-04"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; reprise Reuters du 25 novembre confirme fermeture et maintien des relations selon Berne.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://apnews.com/article/c92ed77891d514ac5240ecf1cb82926a",
+      "dossiers": [
+        "ASI-04"
+      ],
+      "status": "extrait_seulement",
+      "note": "AP 27 novembre indexé : fermeture du bureau et expulsion de son responsable ; accès direct impossible.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://en.yna.co.kr/view/AEN20261113002051315",
+      "dossiers": [
+        "ASI-04"
+      ],
+      "status": "contenu_consulte",
+      "note": "Yonhap : entretien ministériel Corée du Sud–Chine sur la paix dans la péninsule ; ne pas assimiler à des négociations intercoréennes.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.mofa.gov.pk/press-releases/transcript-of-the-press-briefing-by-the-spokesperson-on-friday-20th-november-2026",
+      "dossiers": [
+        "ASI-05"
+      ],
+      "status": "extrait_seulement",
+      "note": "Délai dépassé ; variante indexée confirme désignation du ministre pour forum OCS.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://amp.dw.com/en/pakistan-minister-to-visit-india-but-no-breakthrough-expected/a-79991717",
+      "dossiers": [
+        "ASI-05"
+      ],
+      "status": "contenu_consulte",
+      "note": "DW : visite annoncée et limites du dialogue bilatéral ; analyse et non constat d’accord.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.mfa.gov.cn/eng./wjbzhd/202608/t20260826_12011002.html",
+      "dossiers": [
+        "ASI-06"
+      ],
+      "status": "contenu_consulte",
+      "note": "Page officielle chinoise du 26 août, huit points de consensus ; contrôle du titre et de la date, engagements détaillés à relire et confronter à la version indienne.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.scmp.com/news/china/diplomacy/article/3376066/china-and-india-hold-fresh-border-talks-both-boost-military-readiness-winter?module=latest&pgtype=homepage",
+      "dossiers": [
+        "ASI-06"
+      ],
+      "status": "extrait_seulement",
+      "note": "SCMP 27 novembre : nouveaux échanges frontaliers et préparation militaire selon titre indexé ; article inaccessible, détails à vérifier.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.reuters.com/world/asia-pacific/pakistan-afghan-forces-exchange-fire-after-airstrikes-deepen-tensions-2026-02-24/",
+      "dossiers": [
+        "ASI-07"
+      ],
+      "status": "extrait_seulement",
+      "note": "Page Reuters accessible, titre et date du 24 février confirmés ; texte pertinent non examiné dans cette passe.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.satp.org/terrorism-update/renewed-clashes-between-taliban-and-pakistani-forces-at-torkham-border-crossing",
+      "dossiers": [
+        "ASI-07"
+      ],
+      "status": "extrait_seulement",
+      "note": "SATP 2 novembre : rapporte des affrontements du 1er novembre selon Hasht-e Subh ; accès 403.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://data.unhcr.org/fr/documents/details/124957",
+      "dossiers": [
+        "ASI-07",
+        "ASI-10"
+      ],
+      "status": "contenu_consulte",
+      "note": "Notice HCR : période 15–21 novembre, publication 22, distinction retours volontaires/forcés ; tableau PDF non contrôlé.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://iimm.un.org/icj-gambia-v-myanmar",
+      "dossiers": [
+        "ASI-08"
+      ],
+      "status": "contenu_consulte",
+      "note": "Mécanisme ONU confirme constat de génocide et manquements à prévention, répression et préservation de preuves ; arrêt original retrouvé, dispositif intégral à examiner.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.gov.uk/government/speeches/foreign-secretary-statement-to-the-house-of-commons-23-november-2026",
+      "dossiers": [
+        "ASI-08"
+      ],
+      "status": "contenu_consulte",
+      "note": "Déclaration britannique du 23 novembre sur le jugement ; mesures détaillées à vérifier dans le texte et actes d’application.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.lemonde.fr/international/article/2026/11/27/birmanie-le-dictateur-birman-min-aung-hlaing-fait-peu-de-cas-du-verdict-de-la-cij_6815834_3210.html",
+      "dossiers": [
+        "ASI-08"
+      ],
+      "status": "extrait_seulement",
+      "note": "Le Monde : passage accessible confirme réaction du dirigeant le 25 novembre ; article intégral non contrôlé.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://pca-cpa.org/en/cases/380/",
+      "dossiers": [
+        "ASI-09"
+      ],
+      "status": "acces_bloque",
+      "note": "403 ; procédure corroborée par communiqué CPA retrouvé et déclarations officielles des parties.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://pca-cpa.org/fr/news/pca-press-release-pca-case-no-2026-35-conciliation-between-the-kingdom-of-cambodia-and-the-kingdom-of-thailand-6/",
+      "dossiers": [
+        "ASI-09"
+      ],
+      "status": "acces_bloque",
+      "note": "403 sur page française ; communiqué PDF et annonces des gouvernements retrouvés ; PDF non lu intégralement.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.reuters.com/markets/commodities/cambodia-thailand-agree-maritime-site-visit-dispute-proceedings-2026-11-27/",
+      "dossiers": [
+        "ASI-09"
+      ],
+      "status": "extrait_seulement",
+      "note": "Reuters 27 novembre : accord de principe pour visite ; déclarations officielles thaïlandaise et cambodgienne confirment progrès techniques.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.wfp.org/news/el-nino-adds-new-hunger-hotspots-conflict-continues-drive-risk-famine-warn-fao-and-wfp",
+      "dossiers": [
+        "ASI-10"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; communiqué indexé du 27 novembre confirme Afghanistan très forte préoccupation ; version FAO retrouvée.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://data.unhcr.org/en/situations/afghanistan?gsid=84727841-98b9-41d7-b934-d16db4751a57",
+      "dossiers": [
+        "ASI-10"
+      ],
+      "status": "contenu_consulte",
+      "note": "Portail consulté : données de retours datées du 29 août dans la version accessible ; ne pas présenter comme données de novembre.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.euaa.europa.eu/publications/coi-query-response-pakistan-security-situation-balochistan-province",
+      "dossiers": [
+        "ASI-11"
+      ],
+      "status": "contenu_consulte",
+      "note": "Notice EUAA : publiée le 26 novembre, période janvier–22 novembre, acteurs, sécurité et civils ; rapport PDF non lu.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.dawn.com/news/2047181/security-forces-kill-12-india-sponsored-terrorists-in-multiple-ibos-in-balochistan-ispr",
+      "dossiers": [
+        "ASI-11"
+      ],
+      "status": "contenu_consulte",
+      "note": "Dawn 26 novembre : annonce attribuée à l’armée ; accusation de soutien étranger non indépendamment confirmée.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://pco.gov.ph/news_releases/pbbm-milf-leaders-discuss-remaining-steps-towards-lasting-bangsamoro-peace/",
+      "dossiers": [
+        "ASI-12"
+      ],
+      "status": "extrait_seulement",
+      "note": "Communiqué présidence 6 novembre indexé ; 403 ; rencontre corroborée par agence nationale.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://peace.gov.ph/2026/11/",
+      "dossiers": [
+        "ASI-12"
+      ],
+      "status": "contenu_consulte",
+      "note": "Archive officielle : communiqué du 31 octobre confirme session inaugurale le 30 octobre ; lien direct à privilégier.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://verafiles.org/articles/bangsamoro-peace-process-sufficiently-off-track-as-normalization-lags",
+      "dossiers": [
+        "ASI-12"
+      ],
+      "status": "contenu_consulte",
+      "note": "Vera Files : avancée politique et retards socio-économiques, rapports de suivi cités ; documents originaux à examiner.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.theeasttimes.com/india/manipur-faces-renewed-unrest-as-highway-blockade-threat-idp-protests-and-nrc-demand-intensify/203/",
+      "dossiers": [
+        "ASI-13"
+      ],
+      "status": "extrait_seulement",
+      "note": "East Times 24 novembre indexé : protestations des déplacés et menace de blocage ; accès direct impossible.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://nagaland.news/cotu-highway-shutdown-naga-bodies/",
+      "dossiers": [
+        "ASI-13"
+      ],
+      "status": "contenu_consulte",
+      "note": "Nagaland.News 26 novembre : suspension annoncée par CoTU pour dialogue ; effectivité non vérifiée.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.3"
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/11/10/statement-on-today-s-meeting-in-abu-dhabi-between-the-eu-france-germany-italy-united-kingdom-ukraine-united-states-and-nato/",
+      "dossiers": [
+        "EUR-01"
+      ],
+      "status": "contenu_consulte",
+      "note": "Conseil européen 10 novembre : coordination avant discussions trilatérales avec Russie, garanties de sécurité, souveraineté, intégrité territoriale, prévention de l’escalade. Pas d’accord de paix conclu.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.reuters.com/business/energy/iaea-working-with-russia-ukraine-ceasefire-repair-power-link-zaporizhzhia-2026-11-27/",
+      "dossiers": [
+        "EUR-01"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; dépêche Reuters indexée et reprise Internazionale du 27 novembre : démarche AIEA annoncée le 26, perte des alimentations externes ; cessez-le-feu local recherché, non obtenu dans cette source.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/meetings/european-council/2026/11/26-27/",
+      "dossiers": [
+        "EUR-01"
+      ],
+      "status": "contenu_consulte",
+      "note": "Conseil européen : financement 2027, soutien de 24 États dont Bulgarie limitée au non-militaire ; retour en décembre.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://apnews.com/article/fd025046850b824b2e62def18408c6b6",
+      "dossiers": [
+        "EUR-01"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; AP indexée 27 novembre confirme absence d’accord et reprise des discussions en décembre ; corroboré par Conseil et Le Monde.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa",
+      "dossiers": [
+        "EUR-02"
+      ],
+      "status": "contenu_consulte",
+      "note": "Transcription OTAN 23 novembre, passages sur menaces hybrides, incident polonais et communication entre puissances ; déclarations et appréciations de l’Alliance, attribution à corroborer. URL variante du dossier STR-01.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.nato.int/fr/news-and-events/articles/news/2026/11/26/joint-statement-by-the-president-of-the-united-states-of-america-and-the-nato-secretary-general",
+      "dossiers": [
+        "EUR-02"
+      ],
+      "status": "contenu_consulte",
+      "note": "OTAN : déclaration publiée le 26, appel à éviter l’extension délibérée ou non de la guerre et à rechercher une solution pacifique.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.reuters.com/world/drone-briefly-violates-latvian-airspace-latvian-armed-forces-say-2026-11-27/",
+      "dossiers": [
+        "EUR-02"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; republication Reuters Daily Maverick confirme signalement militaire d’un appareil non identifié ; origine/intention non établies.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.eeas.europa.eu/eeas/belgrade-pristina-dialogue_en",
+      "dossiers": [
+        "EUR-03"
+      ],
+      "status": "contenu_consulte",
+      "note": "SEAE : dialogue depuis 2011 à la suite de résolution AGNU 64/298 ; objectif accord juridiquement contraignant, lien vers accord de 2023.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/meetings/international-summit/2026/11/25/",
+      "dossiers": [
+        "EUR-03",
+        "EUR-04"
+      ],
+      "status": "contenu_consulte",
+      "note": "Sommet UE–Balkans : soutien au dialogue Belgrade–Pristina et perspective européenne, réformes ; pas de nouvel accord bilatéral.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://enlargement.ec.europa.eu/news/2026-enlargement-package-shows-reform-commitment-delivers-progress-towards-eu-membership-2026-11-04_en",
+      "dossiers": [
+        "EUR-03"
+      ],
+      "status": "contenu_consulte",
+      "note": "Commission 4 novembre : paquet annuel et priorités de réforme ; différencier pays et stades d’adhésion.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://enlargement.ec.europa.eu/bosnia-and-herzegovina-report-2026_en?prefLang=bg",
+      "dossiers": [
+        "EUR-04"
+      ],
+      "status": "contenu_consulte",
+      "note": "Notice officielle datée du 4 novembre et lien PDF ; rapport lui-même non lu.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://enlargement.ec.europa.eu/news/joint-statement-high-representativevice-president-kallas-and-commissioner-kos-general-elections-2026-10-06_en?prefLang=da",
+      "dossiers": [
+        "EUR-04"
+      ],
+      "status": "contenu_consulte",
+      "note": "Déclaration UE 6 octobre : élections du 4, résultats préliminaires OSCE, difficultés électorales, appel à formation des autorités après certification.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://moldova.osce.org/news/mission-moldova/667755",
+      "dossiers": [
+        "EUR-05"
+      ],
+      "status": "contenu_consulte",
+      "note": "OSCE 24 septembre : dialogue technique, immatriculation, locaux scolaires, prochaine rencontre prévue avant fin 2026 ; pas d’accord sur statut.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://gov.md/index.php/en/comunicate-de-presa-bpr/issues-reintegration-process-and-respect-human-rights-eastern-districts",
+      "dossiers": [
+        "EUR-05"
+      ],
+      "status": "contenu_consulte",
+      "note": "Gouvernement moldave : réunion du 20 à Bucarest, publication 23, règlement politique et droits à l’éducation en roumain. Position gouvernementale, traduction automatique signalée.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.consilium.europa.eu/en/policies/azerbaijan/",
+      "dossiers": [
+        "EUR-06"
+      ],
+      "status": "contenu_consulte",
+      "note": "Page UE dernière révision 13 août 2025 : paraphe du traité et signature déclaration politique, non ratification ; mission civile mandat jusqu’à février 2027.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.primeminister.am/en/press-release/item/2026/11/12/Nikol-Pashinyan-Ilham-Aliyev/",
+      "dossiers": [
+        "EUR-06"
+      ],
+      "status": "contenu_consulte",
+      "note": "Communiqué arménien 12 novembre : transport, commerce, délimitation, interconnexion électrique envisagée, groupes de travail sur cours d’eau transfrontaliers ; ne prouve pas réalisation.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.euronews.com/2026/11/27/azerbaijani-and-armenian-civil-societies-seek-new-history-in-new-round-of-peace-talks",
+      "dossiers": [
+        "EUR-06"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; texte indexé Euronews du 27 confirme cinquième session à Dilijan, dialogue citoyen distinct des négociations étatiques.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://en.apa.az/foreign-policy/azerbaijan-armenia-peace-bridge-initiative-completes-fifth-round-of-talks-538970",
+      "dossiers": [
+        "EUR-06"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; texte indexé APA 27 confirme session 26–27 et thèmes sociaux, écologiques et économiques ; déclaration de l’initiative.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://www.reuters.com/world/middle-east/cyprus-leaders-agree-open-new-border-crossings-future-talks-2026-11-09/",
+      "dossiers": [
+        "EUR-07"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; dépêche Reuters indexée et reprise MarketScreener du 9 novembre : accord d’ouverture de deux passages ; état effectif à vérifier.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://en.politis.com.cy/news/1074261/menelaou-window-still-open-for-enlarged-cyprus-meeting-before-guterres-leaves",
+      "dossiers": [
+        "EUR-07"
+      ],
+      "status": "contenu_consulte",
+      "note": "Politis 25 novembre : préparatifs poursuivis, décembre envisagé mais date non fixée, aucune estimation fiable de l’ouverture des passages.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://famagusta-gazette.com/cyprus-leaders-meet-at-un-buffer-zone-call-for-trilateral-talks-with-guterres/",
+      "dossiers": [
+        "EUR-07"
+      ],
+      "status": "contenu_consulte",
+      "note": "Famagusta Gazette article daté 25 novembre : rencontre du 24, texte de secours rapide finalisé, projets éducation/environnement approuvés, pas d’accord sur passages additionnels ; mise en œuvre à contrôler.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.4"
+    },
+    {
+      "url": "https://mandates.un.org/mandate/S/RES/2814%282026%29",
+      "dossiers": [
+        "AME-01"
+      ],
+      "status": "extrait_seulement",
+      "note": "Page sans lignes lisibles ; résultat indexé du registre ONU confirme mandat BINUH jusqu'au 31 janvier 2027, appui électoral et réduction de violence.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://transcripts.un.org/en/briefing/geneva/2026-11-17",
+      "dossiers": [
+        "AME-01"
+      ],
+      "status": "contenu_consulte",
+      "note": "Passage Haïti, lignes 115–131 : OHCHR signale abus des gangs et risques des opérations, appelle à contrôle et protection. Transcription automatique non officielle ; retrouver communiqué original.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://dppa.un.org/en/news/haiti-elections-on-hold-as-gangs-adapt-to-security-crackdown-security-council-hears",
+      "dossiers": [
+        "AME-01"
+      ],
+      "status": "extrait_seulement",
+      "note": "403 ; notice DPPA du 19 octobre et extrait du rapport SG d'octobre corroborent report du calendrier électoral.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://mandates.un.org/mandate/S/RES/2833%20%282026%29",
+      "dossiers": [
+        "AME-02"
+      ],
+      "status": "contenu_consulte",
+      "note": "Registre ONU, trois paragraphes opératoires : mandat jusqu'au 31 octobre 2027 et recentrage sur vérification de l'accord final. Date d'adoption du 30 octobre à confirmer dans document original.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://digitallibrary.un.org/record/4129789?v=pdf",
+      "dossiers": [
+        "AME-02"
+      ],
+      "status": "extrait_seulement",
+      "note": "403 ; notice indexée S/2026/759 retrouvée, rapport non lu.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.lemonde.fr/international/article/2026/11/22/en-colombie-dix-ans-apres-la-signature-de-l-accord-historique-le-bilan-amer-de-la-paix-avec-les-farc_6814189_3210.html",
+      "dossiers": [
+        "AME-02"
+      ],
+      "status": "extrait_seulement",
+      "note": "Page consultée, article réservé aux abonnés ; introduction et passages accessibles corroborent bilan contrasté et extension de groupes armés.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.reuters.com/world/americas/mexico-files-complaint-with-us-over-dea-tip-line-alleged-drug-traffickers-2026-11-27/",
+      "dossiers": [
+        "AME-03"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; Reuters republié le 27 et AP du 27 corroborent plainte formelle annoncée par la présidente.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.cfr.org/global-conflict-tracker/conflict/criminal-violence-mexico",
+      "dossiers": [
+        "AME-03"
+      ],
+      "status": "contenu_consulte",
+      "note": "CFR, historique des violences criminelles et actualités jusqu'au 24 novembre ; classification propre au CFR, non qualification de conflit armé.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.gob.mx/sspc/prensa/el-gabinete-de-seguridad-del-gobierno-de-mexico-informa-acciones-relevantes-del-6-7-y-8-de-noviembre-de-2026?idiom=es",
+      "dossiers": [
+        "AME-03"
+      ],
+      "status": "extrait_seulement",
+      "note": "403 ; notice indexée et autre portail officiel corroborent période des 6–8 novembre et quatre axes de stratégie ; déclarations officielles.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://apnews.com/article/2c5edfb68eb298c5645715e918545960",
+      "dossiers": [
+        "AME-04"
+      ],
+      "status": "extrait_seulement",
+      "note": "AP inaccessible directement ; résultat indexé du 27 novembre confirme extradition présentée comme succès par gouvernement, sans preuve de succès durable.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.investing.com/news/world-news/as-criminal-networks-spread-in-latin-america-quito-is-new-battleground-4982773",
+      "dossiers": [
+        "AME-04"
+      ],
+      "status": "contenu_consulte",
+      "note": "Reuters republié 29 octobre : extension des réseaux criminels à Quito, fragmentation et stratégie gouvernementale, témoignages et analyse.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.investing.com/news/world-news/as-gang-violence-deepens-hundreds-of-thousands-of-ecuadoreans-flee-their-homes-4891197",
+      "dossiers": [
+        "AME-04"
+      ],
+      "status": "contenu_consulte",
+      "note": "Reuters republié 8 septembre : plus de 300 000 personnes ayant quitté leur domicile sur trois ans selon HCR et Défenseur du peuple ; vérifier données originales et définition.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://commonslibrary.parliament.uk/research-briefings/CBP-12211/",
+      "dossiers": [
+        "AME-05"
+      ],
+      "status": "contenu_consulte",
+      "note": "Note parlementaire du 24 septembre : capture, intérim, relations rétablies en mars, séismes et accords pétroliers ; ne tranche pas légalité de l'intervention.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.investing.com/news/world-news/us-defense-secretary-hegseth-vows-to-boost-venezuela-military-cooperation-5036784",
+      "dossiers": [
+        "AME-05"
+      ],
+      "status": "contenu_consulte",
+      "note": "Reuters republié 18 novembre : accord de coopération annoncé conjointement, texte juridique et exécution non vérifiés.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.reuters.com/business/energy/us-pushed-venezuela-iraq-consider-leaving-opec-sources-say-2026-11-27/",
+      "dossiers": [
+        "AME-05"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès Reuters direct impossible ; dépêche indexée et reprise : pressions exercées plus tôt en 2026 selon sources anonymes, révélation le 27 novembre ; aucune sortie OPEP confirmée.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://dpi.gov.gy/press-statement-guyana-stands-firm-on-sovereignty-as-icj-prepares-final-judgment-in-border-case/",
+      "dossiers": [
+        "AME-06"
+      ],
+      "status": "acces_bloque",
+      "note": "Délai dépassé ; déclaration ministérielle rapportée par CMC. Obtenir position originale et celle du Venezuela.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.cbc.bb/main-stories/guyana-rejects-bilateral-talks-with-venezuela-over-essequibo-dispute/",
+      "dossiers": [
+        "AME-06"
+      ],
+      "status": "contenu_consulte",
+      "note": "CBC/CMC du 21 novembre : préférence pour voie judiciaire, audiences en mai ; estimation début 2027 attribuée au ministre, pas calendrier officiel CIJ.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.unhcr.org/emergencies/el-salvador-guatemala-and-honduras-emergency?page=0",
+      "dossiers": [
+        "AME-07"
+      ],
+      "status": "acces_bloque",
+      "note": "429 ; portail opérationnel alternatif accessible, pas de lecture du profil régional.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.unhcr.org/where-we-work/countries/honduras",
+      "dossiers": [
+        "AME-07"
+      ],
+      "status": "acces_bloque",
+      "note": "429 ; notice opérationnelle Honduras publiée le 1er septembre retrouvée.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://data.unhcr.org/en/situations/cam/location",
+      "dossiers": [
+        "AME-07"
+      ],
+      "status": "contenu_consulte",
+      "note": "Portail affiche rapport Salvador avril–juin publié 13 août, Honduras juillet publié 1er septembre et fiche Salvador bilan 2025 publiée 24 septembre ; notices seulement, pas les PDF.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://agenciabrasil.ebc.com.br/en/justica/noticia/2026-11/intelligence-agency-reports-31-criminal-organizations-brazil",
+      "dossiers": [
+        "AME-08"
+      ],
+      "status": "contenu_consulte",
+      "note": "Agência Brasil du 24 : cartographie ABIN présentée le 23, 31 organisations majeures selon critères d'influence, 75 cellules au niveau des États ; rapport original à obtenir.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.hrw.org/news/2026/10/28/brazil-new-evidence-of-serious-police-misconduct-in-deadly-raid",
+      "dossiers": [
+        "AME-08"
+      ],
+      "status": "contenu_consulte",
+      "note": "HRW publié 28 octobre 2026 : enquête sur opération du 28 octobre 2025, allégations de violations ; rechercher réponse des autorités et suites judiciaires.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://mandates.un.org/mandate/A/RES/81/7",
+      "dossiers": [
+        "AME-09"
+      ],
+      "status": "extrait_seulement",
+      "note": "Page sans lignes lisibles ; bibliothèque numérique ONU et PDF indexé confirment résolution du 29 octobre 2026 demandant fin embargo ; texte intégral non lu.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.reuters.com/world/americas/us-issues-new-cuba-sanctions-takes-aim-sectors-cuban-economy-2026-11-05/",
+      "dossiers": [
+        "AME-09"
+      ],
+      "status": "extrait_seulement",
+      "note": "Accès direct impossible ; Reuters republié et AP, portail OFAC consulté : détermination du 5 novembre permettant sanctions sectorielles et désignations ciblées distinctes.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://www.investing.com/news/world-news/exclusivecuba-and-us-maintain-channels-of-communication-but-no-negotiations-diplomat-says-4932854",
+      "dossiers": [
+        "AME-09"
+      ],
+      "status": "contenu_consulte",
+      "note": "Reuters republié 5 octobre : diplomate cubaine déclare échanges sans négociations formelles, contraste avec déclaration américaine ; ne pas extrapoler à novembre.",
+      "reviewed_on": "2026-11-27",
+      "review_pass": "0.3.19.5"
+    },
+    {
+      "url": "https://arctic-council.org/news/arctic-council-chairship-leads-workshop-for-sustainable-economic-development/",
+      "dossiers": [
+        "STR-01"
+      ],
+      "status": "contenu_consulte",
+      "note": "Atelier du 10 au 13 novembre à Ilulissat, annonce du 20 novembre, participation des délégations étatiques et autochtones."
+    },
+    {
+      "url": "https://www.nato.int/en/news-and-events/events/transcripts/2026/11/23/address-by-the-secretary-general-to-the-npa/",
+      "dossiers": [
+        "STR-01"
+      ],
+      "status": "a_verifier",
+      "note": null
+    },
+    {
+      "url": "https://www.thearcticinstitute.org/russias-2026-arctic-strategy-security-cooperation/",
+      "dossiers": [
+        "STR-01"
+      ],
+      "status": "extrait_seulement",
+      "note": "Résultat de recherche daté du 26 novembre ; accès direct échoué, décret russe à rechercher."
+    },
+    {
+      "url": "https://www.pm.gov.au/media/signing-australia-solomon-islands-treaty",
+      "dossiers": [
+        "STR-02"
+      ],
+      "status": "contenu_consulte",
+      "note": "Déclaration conjointe datée du 25 novembre : signature confirmée ; distinguer déclaration et texte du traité."
+    },
+    {
+      "url": "https://www.pm.gov.au/media/entry-force-fiji-australia-vuvale-union-and-ocean-peace-alliance-veitacini-treaty",
+      "dossiers": [
+        "STR-02"
+      ],
+      "status": "contenu_consulte",
+      "note": "Déclaration conjointe du 26 novembre : entrée en vigueur confirmée ; vérifier les clauses exactes dans les traités."
+    },
+    {
+      "url": "https://www.reuters.com/world/china/australia-solomon-islands-sign-security-pact-2026-11-25/",
+      "dossiers": [
+        "STR-02"
+      ],
+      "status": "a_verifier",
+      "note": null
+    },
+    {
+      "url": "https://humanrightsmonitor.org/reports/idp-update-november26-security-operations-and-new-troop-deployments-trigger-further-displacements-across-west-papua/",
+      "dossiers": [
+        "STR-03"
+      ],
+      "status": "a_verifier",
+      "note": null
+    },
+    {
+      "url": "https://www.asia-pacific-solidarity.net/news/2026-09-11/komnas-ham-urges-prabowo-curb-papua-conflict.html",
+      "dossiers": [
+        "STR-03"
+      ],
+      "status": "a_verifier",
+      "note": null
+    },
+    {
+      "url": "https://humanrightsmonitor.org/news/from-opm-and-kkb-to-keb-indonesian-govt-relabels-armed-groups-in-west-papua/",
+      "dossiers": [
+        "STR-03"
+      ],
+      "status": "a_verifier",
+      "note": null
+    }
+  ],
+  "complementary_sources": [
+    {
+      "url": "https://minurso.unmissions.org/en/mandate",
+      "status": "extrait_seulement",
+      "dossier": "AFR-13"
+    },
+    {
+      "url": "https://www.securitycouncilreport.org/monthly-forecast/2026-11/status-update-since-our-october-forecast-7.php",
+      "status": "extrait_seulement",
+      "dossier": "AFR-13"
+    },
+    {
+      "url": "https://icj-web.leman.un-icc.cloud/case/178",
+      "status": "extrait_seulement",
+      "dossier": "ASI-08"
+    },
+    {
+      "dossier": "AFR-02",
+      "url": "https://www.radiotamazuj.org/en/news/article/au-igad-and-un-call-for-inclusive-dialogue-in-south-sudan",
+      "status": "contenu_consulte",
+      "note": "Lancement, dialogue et feuille de route le 27 novembre."
+    },
+    {
+      "dossier": "AFR-13",
+      "url": "https://www.un.org/pga/81/documents/letters/letter-special-report-on-the-use-of-the-veto-5-november-2026/",
+      "status": "extrait_seulement",
+      "note": "Veto et convocation du débat."
+    },
+    {
+      "dossier": "AFR-16",
+      "url": "https://sis.gov.eg/en/media-center/news/cairo-khartoum-reaffirm-commitment-to-restoring-stability-reject-threats-to-sudans-unity/",
+      "status": "extrait_seulement",
+      "note": "Position officielle égyptienne du 24 novembre."
+    },
+    {
+      "dossier": "AFR-04",
+      "url": "https://acleddata.com/risk-update/niger-weekly-conflict-update-14-20-november-2026",
+      "status": "acces_bloque",
+      "note": "403 ; résumé disponible sur portail ACLED."
+    },
+    {
+      "dossier": "AFR-04",
+      "url": "https://acleddata.com/risk-update/mali-weekly-conflict-update-14-20-november-2026",
+      "status": "acces_bloque",
+      "note": "403 ; résumé disponible sur portail ACLED."
+    },
+    {
+      "dossier": "AFR-04",
+      "url": "https://acleddata.com/risk-update/burkina-faso-weekly-conflict-update-14-20-november-2026",
+      "status": "acces_bloque",
+      "note": "403 ; résumé disponible sur portail ACLED."
+    },
+    {
+      "dossier": "MOR-01",
+      "url": "https://mandates.un.org/mandate/S/RES/2803%282025%29",
+      "status": "extrait_seulement",
+      "note": "Notice retrouvée ; texte non lisible lors de l’ouverture."
+    },
+    {
+      "dossier": "MOR-03",
+      "url": "https://theprint.in/world/qatari-delegation-visits-tehran-for-talks-iranian-official-says/3105383/",
+      "status": "extrait_seulement",
+      "note": "Reprise Reuters, pas une confirmation indépendante."
+    },
+    {
+      "dossier": "MOR-05",
+      "url": "https://www.aljazeera.com/news/2026/11/26/how-an-oil-feud-is-deepening-rift-between-baghdad-and-iraqs-kurdish-region",
+      "status": "extrait_seulement",
+      "note": "Positions Bagdad–Erbil, extrait indexé."
+    },
+    {
+      "dossier": "MOR-05",
+      "url": "https://www.aljazeera.com/amp/news/2026/11/27/trump-backs-iraqi-pms-oil-smuggling-crackdown",
+      "status": "extrait_seulement",
+      "note": "Version AMP indexée : réunion annoncée du 1er décembre ; vérifier confirmation officielle."
+    },
+    {
+      "dossier": "MOR-06",
+      "url": "https://www.spa.gov.sa/en/N2737802",
+      "status": "extrait_seulement",
+      "note": "Communiqué saoudien indexé, page ouverte sans texte lisible."
+    },
+    {
+      "dossier": "MOR-06",
+      "url": "https://www.radio.gov.pk/27-11-2026/pakistan-saudi-arabia-turkiye-vow-to-strengthen-defence-cooperation",
+      "status": "extrait_seulement",
+      "note": "Communiqué conjoint repris par radio publique pakistanaise."
+    },
+    {
+      "dossier": "MOR-06",
+      "url": "https://www.reuters.com/world/asia-pacific/erdogan-completes-turkeys-ratification-mecca-defence-pact-2026-11-27/",
+      "status": "extrait_seulement",
+      "note": "Ratification turque annoncée le 27 novembre ; journal officiel à contrôler."
+    },
+    {
+      "dossier": "ASI-05",
+      "url": "https://www.dawn.com/news/2045878",
+      "status": "extrait_seulement",
+      "note": "Arrivée à New Delhi le 20 novembre rapportée."
+    },
+    {
+      "dossier": "ASI-05",
+      "url": "https://www.tribuneindia.com/news/civilisation-dialogue/pakistan-delegation-led-by-federal-minister-malik-arrives-at-1st-sco-civilisational-dialogue-forum-at-purana-qila",
+      "status": "extrait_seulement",
+      "note": "ANI rapporte présence au forum."
+    },
+    {
+      "dossier": "ASI-08",
+      "url": "https://www.refworld.org/sites/default/files/2026-11/178-20261119-jud-01-00-en.pdf",
+      "status": "extrait_seulement",
+      "note": "Jugement original retrouvé via Refworld ; PDF à examiner."
+    },
+    {
+      "dossier": "ASI-08",
+      "url": "https://www.diplomatie.gouv.fr/en/presse-et-ressources/decouvrir-et-informer/actualites/birmanie-arret-rendu-par-la-cour-internationale-de-justice",
+      "status": "extrait_seulement",
+      "note": "Réaction française et article 94 Charte ONU."
+    },
+    {
+      "dossier": "ASI-08",
+      "url": "https://www.mofa.gov.mm/en/press-statement-by-the-ministry-of-foreign-affairs-of-the-republic-of-the-union-of-myanmar-on-the-judgment-of-the-international-court-of-justice-delivered-on-19-november-2026/",
+      "status": "extrait_seulement",
+      "note": "Position officielle du Myanmar, à distinguer du jugement."
+    },
+    {
+      "dossier": "ASI-09",
+      "url": "https://www.information.gov.kh/articles/207837",
+      "status": "extrait_seulement",
+      "note": "Communiqué cambodgien du 27 novembre."
+    },
+    {
+      "dossier": "ASI-09",
+      "url": "https://www.thailand.go.th/public/index.php/useful-information-detail/thailand-concludes-third-round-of-un-conciliation-talks-on-thailand-cambodia-maritime-boundary",
+      "status": "extrait_seulement",
+      "note": "Communiqué thaïlandais du 27 novembre."
+    },
+    {
+      "dossier": "ASI-09",
+      "url": "https://docs.pca-cpa.org/2026/11/e3de8a46-2026-35-pca-press-release.pdf",
+      "status": "extrait_seulement",
+      "note": "Communiqué CPA retrouvé ; PDF non lu intégralement."
+    },
+    {
+      "dossier": "ASI-12",
+      "url": "https://www.pna.gov.ph/article/pbbm-meets-with-milf-execs-to-sustain-peace-stability-in-barmm",
+      "status": "extrait_seulement",
+      "note": "Rencontre du 6 novembre corroborée par agence publique."
+    },
+    {
+      "dossier": "EUR-01",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/11/27/iaea-working-with-russia-ukraine-on-ceasefire-to-repair-power-link-at-zaporizhzhia-nuclear-plant",
+      "status": "extrait_seulement",
+      "note": "Reprise Reuters consultée dans résultat indexé ; annonce du 26."
+    },
+    {
+      "dossier": "EUR-01",
+      "url": "https://www.lemonde.fr/international/article/2026/11/27/les-vingt-sept-remettent-a-decembre-le-bouclage-d-un-nouveau-pret-de-45-milliards-d-euros-pour-l-ukraine_6815795_3210.html",
+      "status": "extrait_seulement",
+      "note": "Financement supplémentaire reporté."
+    },
+    {
+      "dossier": "EUR-01",
+      "url": "https://enlargement.ec.europa.eu/news/commission-disburses-eur79-billion-strengthen-ukraines-financial-stability-and-advance-reform-2026-11-20_en?prefLang=fi",
+      "status": "extrait_seulement",
+      "note": "Commission : distingue financement existant et proposition supplémentaire."
+    },
+    {
+      "dossier": "EUR-02",
+      "url": "https://www.dailymaverick.co.za/article/2026-11-27-drone-briefly-violates-latvian-airspace-latvian-armed-forces-say/",
+      "status": "extrait_seulement",
+      "note": "Reprise Reuters consultée en résultat indexé, pas source indépendante."
+    },
+    {
+      "dossier": "EUR-06",
+      "url": "https://report.az/en/foreign-politics/2-day-meeting-under-peace-bridge-initiative-concludes-in-armenia",
+      "status": "extrait_seulement",
+      "note": "Reprise déclaration initiative ; indépendance limitée."
+    },
+    {
+      "dossier": "EUR-07",
+      "url": "https://uk.marketscreener.com/news/cyprus-leaders-agree-to-open-new-border-crossings-and-future-talks-ce785fd3df8bf222",
+      "status": "extrait_seulement",
+      "note": "Reprise Reuters indexée, pas source indépendante."
+    },
+    {
+      "dossier": "AME-01",
+      "url": "https://dppa.un.org/sites/default/files/2026-10/SG%20October%20Report%20on%20BINUH%20-%20En.pdf",
+      "status": "extrait_seulement",
+      "note": "Rapport SG indexé, report du calendrier ; PDF non examiné."
+    },
+    {
+      "dossier": "AME-03",
+      "url": "https://www.investing.com/news/world-news/mexico-files-complaint-with-us-over-dea-tip-line-on-alleged-drug-traffickers-corrupt-officials-5053641",
+      "status": "extrait_seulement",
+      "note": "Reprise Reuters indexée."
+    },
+    {
+      "dossier": "AME-03",
+      "url": "https://abcnews.com/International/wireStory/mexico-files-formal-complaint-us-dea-tip-line-138484649",
+      "status": "extrait_seulement",
+      "note": "AP indexé, corroboration distincte."
+    },
+    {
+      "dossier": "AME-03",
+      "url": "https://gabinetedeseguridad.gob.mx/contenido/10227/el-gabinete-de-seguridad-del-gobierno-de-mexico-informa-acciones-relevantes-del-6-7-y-8-de-noviembre-de-2026",
+      "status": "extrait_seulement",
+      "note": "Autre portail officiel indexé."
+    },
+    {
+      "dossier": "AME-05",
+      "url": "https://www.investing.com/news/commodities-news/exclusiveus-pushed-venezuela-iraq-to-consider-leaving-opec-sources-say-5052970",
+      "status": "extrait_seulement",
+      "note": "Reprise Reuters indexée, chronologie antérieure."
+    },
+    {
+      "dossier": "AME-06",
+      "url": "https://icj-web.leman.un-icc.cloud/case/171",
+      "status": "extrait_seulement",
+      "note": "Notice affaire 171 et audiences mai 2026 indexées ; délai dépassé à l'ouverture."
+    },
+    {
+      "dossier": "AME-07",
+      "url": "https://data.unhcr.org/en/documents/details/123938",
+      "status": "contenu_consulte",
+      "note": "Notice Honduras, juillet 2026 publiée 1er septembre ; PDF non lu."
+    },
+    {
+      "dossier": "AME-07",
+      "url": "https://data.unhcr.org/en/documents/details/123715",
+      "status": "contenu_consulte",
+      "note": "Notice Salvador, avril–juin, publication 13 août ; PDF non lu."
+    },
+    {
+      "dossier": "AME-09",
+      "url": "https://digitallibrary.un.org/record/4132081",
+      "status": "extrait_seulement",
+      "note": "Notice résolution ONU indexée."
+    },
+    {
+      "dossier": "AME-09",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/cuba-sanctions",
+      "status": "contenu_consulte",
+      "note": "Portail officiel : détermination du 5 novembre, liens actes et licences ; actes intégraux non lus."
+    }
+  ],
+  "coverage_screen": {
+    "status": "ouvert",
+    "benchmarks": [
+      "https://acleddata.com/conflict-index-2026-watchlist",
+      "https://acleddata.com/platform/weekly-conflict-index",
+      "https://ucdp.uu.se/"
+    ],
+    "candidates": [
+      "Bangladesh : violences politiques ou communautaires",
+      "Papouasie–Nouvelle-Guinée : violences intercommunautaires, distinctes de STR-03",
+      "Sénégal–Casamance : état du processus de paix et violences résiduelles",
+      "Ouganda : distinguer conflits internes, rôle régional et crise alimentaire"
+    ],
+    "note": "Pistes à instruire, pas des conflits confirmés ni de nouvelles alertes."
+  },
+  "corrections_proposees": [
+    {
+      "id": "AFR-16",
+      "field": "sources.label",
+      "before": "Sudan Tribune, 2 novembre",
+      "after": "Sudan Tribune, 3 novembre (réunion du 2 novembre)",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "AFR-11",
+      "field": "reference_date",
+      "before": "2026-09",
+      "after": "Préciser période septembre / publication octobre 2026 ; date exacte inconnue",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "MOR-02",
+      "field": "current",
+      "before": "Maintenir certaines fonctions au-delà du 31 décembre ; France non publiquement confirmée.",
+      "after": "Selon le Premier ministre libanais, une proposition française est en préparation. La résolution 2790 autorise déjà certaines fonctions pendant le retrait ; distinguer toute extension supplémentaire. Confirmation officielle française non retrouvée dans cette passe.",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "MOR-03",
+      "field": "sources.label",
+      "before": "G7 — déclaration des ministres des Affaires étrangères des 9 et 10 novembre",
+      "after": "G7 — déclaration publiée le 11 novembre, réunion des 9 et 10 novembre 2026",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "MOR-05",
+      "field": "sources.label",
+      "before": "Ministère britannique de l’Intérieur — cadre institutionnel du Kurdistan irakien",
+      "after": "Note britannique version 4.0, septembre 2026, actualisée le 6 octobre 2026",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "ASI-05",
+      "field": "current",
+      "before": "La réalisation de la visite reste à confirmer.",
+      "after": "L’arrivée du ministre à New Delhi le 20 novembre est rapportée par Dawn et Tribune/ANI ; aucun accord bilatéral n’est établi.",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "ASI-04",
+      "field": "sources.label",
+      "before": "Yonhap, 13 novembre, demande sud-coréenne de dialogue",
+      "after": "Yonhap, 13 novembre, échanges des ministres sud-coréen et chinois sur la paix dans la péninsule",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "ASI-02",
+      "field": "sources.url",
+      "before": "GMA, lien renvoyant 404",
+      "after": "Retrouver lien fonctionnel ou source officielle ASEAN ; notice seule ne suffit pas",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "EUR-01",
+      "field": "current",
+      "before": "Reuters rapporte le 27 novembre que l’AIEA cherche une suspension locale.",
+      "after": "Démarche annoncée par l’AIEA le 26 novembre, rapportée par Reuters le 27 ; suspension recherchée, non acquise.",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "EUR-07",
+      "field": "current",
+      "before": "Accord sur l’ouverture de nouveaux points de passage.",
+      "after": "Accord de principe le 9 novembre sur deux passages ; ouverture effective à vérifier. Le 24, pas d’accord sur des passages additionnels.",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "AME-05",
+      "field": "current",
+      "before": "Le 27 novembre, des pressions américaines relatives à l'appartenance du Venezuela à l'OPEP.",
+      "after": "Reuters révèle le 27 novembre des pressions exercées plus tôt en 2026, selon des sources ; aucune sortie de l'OPEP établie.",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "AME-07",
+      "field": "current",
+      "before": "Rapport Salvador publié le 13 août, référence régionale.",
+      "after": "Ventiler les notices : Salvador avril–juin publié 13 août, Honduras juillet publié 1er septembre ; fiche bilan Salvador 2025 publiée 24 septembre, non observation de septembre. Lire documents et actualiser.",
+      "status": "proposee_non_appliquee"
+    },
+    {
+      "id": "AME-09",
+      "field": "current",
+      "before": "Nouvelles sanctions américaines le 5 novembre.",
+      "after": "Détermination OFAC permettant de sanctionner des acteurs de quatre secteurs et désignations ciblées distinctes ; vérifier actes et exemptions.",
+      "status": "proposee_non_appliquee"
+    }
+  ],
+  "africa_pass": {
+    "dossiers": 18,
+    "unique_sources": 37,
+    "source_status": {
+      "acces_bloque": 10,
+      "contenu_consulte": 15,
+      "extrait_seulement": 11,
+      "a_verifier": 1
+    },
+    "fully_audited": 0,
+    "axes_closed": 0,
+    "notes": "Tous les liens africains ont été ciblés dans cette passe ou portent un résultat antérieur explicitement indiqué. Aucun dossier clôturé ; aucune modification publique."
+  },
+  "middle_east_pass": {
+    "dossiers": 7,
+    "unique_sources": 22,
+    "source_status": {
+      "extrait_seulement": 12,
+      "contenu_consulte": 10
+    },
+    "fully_audited": 0,
+    "axes_closed": 0,
+    "notes": "22 accès directs tentés ; consultation de passages pertinents ou extraits indexés. Pas de lecture exhaustive de tous les textes. Aucune modification du corpus ni des niveaux."
+  },
+  "asia_pass": {
+    "dossiers": 13,
+    "unique_sources": 33,
+    "source_status": {
+      "contenu_consulte": 16,
+      "extrait_seulement": 15,
+      "acces_bloque": 2
+    },
+    "fully_audited": 0,
+    "axes_closed": 0,
+    "notes": "Première passe des 33 URL. Contenu consulté signifie passages ou notice consultés, non validation intégrale. Aucune modification du corpus ni des niveaux."
+  },
+  "europe_pass": {
+    "dossiers": 7,
+    "unique_sources": 21,
+    "source_status": {
+      "contenu_consulte": 15,
+      "extrait_seulement": 6
+    },
+    "fully_audited": 0,
+    "axes_closed": 0,
+    "notes": "21 accès directs tentés ; 15 pages ou notices accessibles, 6 sources corroborées via résultats indexés. Aucun PDF ni texte juridique intégral audité. Aucune modification du corpus ni des niveaux."
+  },
+  "americas_pass": {
+    "dossiers": 9,
+    "unique_sources": 25,
+    "source_status": {
+      "extrait_seulement": 10,
+      "contenu_consulte": 12,
+      "acces_bloque": 3
+    },
+    "fully_audited": 0,
+    "axes_closed": 0,
+    "notes": "25 accès directs tentés ; consultation de passages ou de notices, extraits indexés si nécessaire. Aucun PDF ni corpus juridique intégral audité. Aucune modification du corpus ni des niveaux."
+  }
+}
