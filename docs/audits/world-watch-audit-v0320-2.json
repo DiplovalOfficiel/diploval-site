@@ -1,0 +1,1025 @@
+{
+  "version": "0.3.20.2",
+  "phase": "echelles_independantes_proposees_et_tests_synthetiques",
+  "date": "2026-11-27",
+  "publication_autorisee": false,
+  "base": {
+    "branch": "feature/monde-v0319-audit-documentaire",
+    "files": [
+      {
+        "path": "docs/audits/world-watch-audit-v0320-1.json",
+        "sha": "fcc7d2b476691fbec5246cfb2fcb232e6218685e"
+      },
+      {
+        "path": "docs/audits/world-watch-audit-v0319-8.json",
+        "sha": "bbf3f0ba0b26fff3942677cb91d84735d3417a93"
+      }
+    ]
+  },
+  "existing_locks": [
+    {
+      "id": "EUR-01",
+      "level": "2",
+      "source": "suivi_regional"
+    },
+    {
+      "id": "MOR-01",
+      "level": "1",
+      "source": "suivi_regional"
+    },
+    {
+      "id": "AFR-01",
+      "level": "1",
+      "source": "analyse_mondiale"
+    }
+  ],
+  "candidate_count": 63,
+  "scales": {
+    "G": {
+      "title": "Gravité actuelle",
+      "axis": "CR-01",
+      "levels": [
+        "Aucune atteinte significative identifiée après examen suffisant",
+        "Atteintes limitées et localisées",
+        "Atteintes importantes aux populations ou aux conditions d’existence",
+        "Dégradation sévère et durable ou désorganisation majeure",
+        "Rupture critique des conditions d’existence, dommages extrêmes ou irréversibles"
+      ],
+      "unknown": "Informations insuffisantes",
+      "basis": "Conséquences constatées, périmètre et durée ; ne pas coder une projection comme dommage déjà survenu."
+    },
+    "U": {
+      "title": "Urgence",
+      "axis": "CR-02",
+      "levels": [
+        "Aucune pression temporelle particulière identifiée",
+        "Vigilance préventive, plusieurs semaines",
+        "Examen ou intervention rapprochée, quelques jours",
+        "Urgence élevée, 24–72 h",
+        "Urgence critique, immédiate ou dans les 24 h"
+      ],
+      "unknown": "Temporalité indéterminée",
+      "basis": "Temps avant rupture, perte de possibilité d’action ou besoin de décision ; repères adaptables, la durée de la crise ne fixe pas l’urgence."
+    },
+    "E": {
+      "title": "Risque d’escalade",
+      "axis": "CR-03",
+      "levels": [
+        "Aucun mécanisme crédible identifié après examen suffisant",
+        "Possibilité plausible, signaux faibles",
+        "Risque significatif étayé",
+        "Dynamique d’aggravation marquée et documentée",
+        "Convergence critique de facteurs vers une rupture majeure"
+      ],
+      "unknown": "Risque impossible à apprécier",
+      "basis": "Risque d’aggravation additionnelle, y compris locale ; ne pas déduire une intention de la seule capacité. Fixer un horizon d’analyse et expliciter le mécanisme."
+    }
+  },
+  "notation": {
+    "unknown": null,
+    "display_unknown": "?",
+    "warning": "0 n'est jamais un synonyme de données manquantes. Les échelles sont ordinales et non additives. Pas de probabilité ni conversion mécanique en code."
+  },
+  "per_axis_record": {
+    "value": "0–4 ou null",
+    "basis": "suffisante/limitee/absente",
+    "confidence": "forte/moyenne/faible/indeterminee",
+    "freshness": "actuelle/ancienne/inconnue, appréciée selon axe et horizon",
+    "reason": "motif factuel obligatoire",
+    "required_for_real_assessment": [
+      "périmètre géographique",
+      "date du fait et de publication",
+      "période d'observation",
+      "horizon d'escalade",
+      "sources et chaînes de provenance",
+      "faits contradictoires",
+      "réserves et prochaine révision"
+    ]
+  },
+  "cross_cutting": {
+    "living": "Documenter eau, nourriture, santé, abris, sécurité, écosystèmes, services, effets cumulés et réversibilité sur chaque axe ; pas de moyenne compensatoire.",
+    "propagation": "CR-04 distinct : mécanisme de propagation et périmètre local/national/transfrontalier/régional/mondial ; distinguer portée actuelle et potentielle ; indéterminé possible. Approfondissement V0.3.20.4.",
+    "deescalation": "CR-06 distinct : annonce, engagement, exécution, durabilité, mécanismes de vérification. Pas de réduction automatique des indices.",
+    "legal": "CR-08 transversal, distinction entre allégation, fait, décision et qualification ; aucun indice ne qualifie juridiquement une guerre.",
+    "confidence": "Confiance par axe distincte de l'indice ; base limitée impose réserve et corroboration, faible indice non acceptable sans examen suffisant.",
+    "trend": "CR-09 distinct : amélioration, stabilité, détérioration ou indétermination, comparer des périodes et périmètres compatibles."
+  },
+  "review_policy": {
+    "status": "proposee",
+    "note": "Priorité interne de revue uniquement, jamais code public. Revue immédiate si indice 4 ou signal urgent crédible, même lorsque d'autres données manquent ou sont invalides ; urgence opérationnelle à traiter par organismes compétents.",
+    "precedence": [
+      "réexamen immédiat",
+      "réexamen prioritaire",
+      "instruction renforcée",
+      "instruction rapprochée",
+      "suivi ordinaire"
+    ],
+    "existing_codes": "Aucune simulation ne modifie un niveau validé ; une baisse comme une hausse nécessite décision humaine."
+  },
+  "validator_source": "function evaluate(profile){\n const errors=[],warnings=[];\n for(const axis of [\"G\",\"U\",\"E\"]){\n  const x=profile[axis];\n  if(!x||!Object.hasOwn(x,\"value\")){errors.push(axis+\":manquant\");continue}\n  if(x.value!==null&&(!Number.isInteger(x.value)||x.value<0||x.value>4))errors.push(axis+\":hors_echelle\");\n  if(![\"suffisante\",\"limitee\",\"absente\"].includes(x.basis))errors.push(axis+\":base_invalide\");\n  if(![\"forte\",\"moyenne\",\"faible\",\"indeterminee\"].includes(x.confidence))errors.push(axis+\":confiance_invalide\");\n  if(![\"actuelle\",\"ancienne\",\"inconnue\"].includes(x.freshness))errors.push(axis+\":fraicheur_invalide\");\n  if(x.value!==null&&(x.basis===\"absente\"||x.freshness!==\"actuelle\"||x.confidence===\"indeterminee\"))errors.push(axis+\":indice_non_etaye\");\n  if((x.value===0||x.value===1)&&(x.basis!==\"suffisante\"||![\"forte\",\"moyenne\"].includes(x.confidence)))errors.push(axis+\":faible_risque_non_etaye\");\n  if(x.value!==null&&x.value>=2&&(x.basis===\"limitee\"||x.confidence===\"faible\"))warnings.push(axis+\":appreciation_provisoire_a_corroborer\");\n  if(x.value===null)warnings.push(axis+\":indetermine\");\n  if(typeof x.reason!==\"string\"||!x.reason.trim())errors.push(axis+\":motif_manquant\");\n }\n if(![null,\"1\",\"2\",\"3\"].includes(profile.existing_code))errors.push(\"code_existant_invalide\");\n if(typeof profile.scope!==\"string\"||!profile.scope.trim())errors.push(\"perimetre_manquant\");\n if(typeof profile.horizon!==\"string\"||!profile.horizon.trim())errors.push(\"horizon_manquant\");\n const values=[\"G\",\"U\",\"E\"].map(k=>profile[k]?.value);\n const urgent=profile.credible_urgent_signal===true||values.includes(4);\n const priority=urgent?\"reexamen_immediat\":values.includes(3)?\"reexamen_prioritaire\":warnings.length||values.includes(null)?\"instruction_renforcee\":values.includes(2)?\"instruction_rapprochee\":\"suivi_ordinaire\";\n return {valid:errors.length===0,errors,warnings,priority:errors.length?(urgent?\"reexamen_immediat_donnees_invalides\":\"corriger_donnees\"):priority,existing_code:profile.existing_code,proposed_code:null,publication_allowed:false};\n}",
+  "tests": [
+    {
+      "id": "S01",
+      "scenario": "Rupture humanitaire locale, sans extension attendue",
+      "input": {
+        "G": {
+          "value": 4,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 4,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 0,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "reexamen_immediat",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "priority": "reexamen_immediat",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S02",
+      "scenario": "Dommages actuels limités, risque critique d’aggravation",
+      "input": {
+        "G": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 3,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 4,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "reexamen_immediat",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "priority": "reexamen_immediat",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S03",
+      "scenario": "Crise chronique sévère mais pas de fenêtre critique immédiate",
+      "input": {
+        "G": {
+          "value": 3,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "reexamen_prioritaire",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "priority": "reexamen_prioritaire",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S04",
+      "scenario": "Données inexistantes",
+      "input": {
+        "G": {
+          "value": null,
+          "basis": "absente",
+          "confidence": "indeterminee",
+          "freshness": "inconnue",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": null,
+          "basis": "absente",
+          "confidence": "indeterminee",
+          "freshness": "inconnue",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": null,
+          "basis": "absente",
+          "confidence": "indeterminee",
+          "freshness": "inconnue",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "instruction_renforcee",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "G:indetermine",
+          "U:indetermine",
+          "E:indetermine"
+        ],
+        "priority": "instruction_renforcee",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S05",
+      "scenario": "Absence de données présentée à tort comme G0",
+      "input": {
+        "G": {
+          "value": 0,
+          "basis": "absente",
+          "confidence": "indeterminee",
+          "freshness": "inconnue",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": false,
+        "priority": "corriger_donnees",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": false,
+        "errors": [
+          "G:indice_non_etaye",
+          "G:faible_risque_non_etaye"
+        ],
+        "warnings": [],
+        "priority": "corriger_donnees",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S06",
+      "scenario": "Signal crédible urgent mais sources encore limitées",
+      "input": {
+        "G": {
+          "value": null,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": null,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": null,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": true
+      },
+      "expected": {
+        "valid": true,
+        "priority": "reexamen_immediat",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "G:indetermine",
+          "U:indetermine",
+          "E:indetermine"
+        ],
+        "priority": "reexamen_immediat",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S07",
+      "scenario": "Indice E4 provisoire sur base limitée",
+      "input": {
+        "G": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 2,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 4,
+          "basis": "limitee",
+          "confidence": "faible",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "reexamen_immediat",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "E:appreciation_provisoire_a_corroborer"
+        ],
+        "priority": "reexamen_immediat",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S08",
+      "scenario": "Situation réellement peu préoccupante sur horizon défini",
+      "input": {
+        "G": {
+          "value": 0,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 0,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 0,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "suivi_ordinaire",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "priority": "suivi_ordinaire",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S09",
+      "scenario": "Indice faible déduit d’une seule information insuffisante",
+      "input": {
+        "G": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 1,
+          "basis": "limitee",
+          "confidence": "faible",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": false,
+        "priority": "corriger_donnees",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": false,
+        "errors": [
+          "E:faible_risque_non_etaye"
+        ],
+        "warnings": [],
+        "priority": "corriger_donnees",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S10",
+      "scenario": "Accord annoncé, dommages extrêmes encore présents",
+      "input": {
+        "G": {
+          "value": 4,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 3,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": "1",
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "reexamen_immediat",
+        "existing_code": "1",
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "priority": "reexamen_immediat",
+        "existing_code": "1",
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S11",
+      "scenario": "Réduction des tensions avec code déjà validé",
+      "input": {
+        "G": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": "2",
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "suivi_ordinaire",
+        "existing_code": "2",
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "priority": "suivi_ordinaire",
+        "existing_code": "2",
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S12",
+      "scenario": "Ancien rapport utilisé comme gravité actuelle",
+      "input": {
+        "G": {
+          "value": 3,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "ancienne",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": false,
+        "priority": "corriger_donnees",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": false,
+        "errors": [
+          "G:indice_non_etaye"
+        ],
+        "warnings": [],
+        "priority": "corriger_donnees",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S13",
+      "scenario": "Indice hors échelle",
+      "input": {
+        "G": {
+          "value": 5,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": false,
+        "priority": "corriger_donnees",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": false,
+        "errors": [
+          "G:hors_echelle"
+        ],
+        "warnings": [],
+        "priority": "corriger_donnees",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S14",
+      "scenario": "Situation importante et suivi rapproché",
+      "input": {
+        "G": {
+          "value": 2,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 2,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "instruction_rapprochee",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "priority": "instruction_rapprochee",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S15",
+      "scenario": "Urgence critique malgré données incohérentes ailleurs",
+      "input": {
+        "G": {
+          "value": 0,
+          "basis": "absente",
+          "confidence": "indeterminee",
+          "freshness": "inconnue",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 4,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": false,
+        "priority": "reexamen_immediat_donnees_invalides",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": false,
+        "errors": [
+          "G:indice_non_etaye",
+          "G:faible_risque_non_etaye"
+        ],
+        "warnings": [],
+        "priority": "reexamen_immediat_donnees_invalides",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S16",
+      "scenario": "Horizon d'escalade absent",
+      "input": {
+        "G": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 1,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 2,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": false,
+        "priority": "corriger_donnees",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": false,
+        "errors": [
+          "horizon_manquant"
+        ],
+        "warnings": [],
+        "priority": "corriger_donnees",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S17",
+      "scenario": "Confiance faible ne doit pas réduire un danger possible",
+      "input": {
+        "G": {
+          "value": 3,
+          "basis": "limitee",
+          "confidence": "faible",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 2,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 2,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": null,
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "reexamen_prioritaire",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [
+          "G:appreciation_provisoire_a_corroborer"
+        ],
+        "priority": "reexamen_prioritaire",
+        "existing_code": null,
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    },
+    {
+      "id": "S18",
+      "scenario": "Code One conservé malgré une simulation favorable",
+      "input": {
+        "G": {
+          "value": 0,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "U": {
+          "value": 0,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "E": {
+          "value": 0,
+          "basis": "suffisante",
+          "confidence": "forte",
+          "freshness": "actuelle",
+          "reason": "Hypothèse fictive explicitée pour test"
+        },
+        "existing_code": "1",
+        "scope": "territoire fictif",
+        "horizon": "30 jours, horizon fictif",
+        "credible_urgent_signal": false
+      },
+      "expected": {
+        "valid": true,
+        "priority": "suivi_ordinaire",
+        "existing_code": "1",
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "output": {
+        "valid": true,
+        "errors": [],
+        "warnings": [],
+        "priority": "suivi_ordinaire",
+        "existing_code": "1",
+        "proposed_code": null,
+        "publication_allowed": false
+      },
+      "pass": true
+    }
+  ],
+  "results": {
+    "executed": 18,
+    "passed": 18,
+    "failed": 0,
+    "kind": "tests synthétiques JavaScript exécutés dans cette passe, pas tests du générateur ou évaluation réelle"
+  },
+  "limits": [
+    "Les seuils et horizons sont des choix méthodologiques proposés, non calibrés empiriquement.",
+    "Les tests sont des scénarios fictifs, non des dossiers réels ; ils contrôlent la cohérence du garde-fou, pas sa performance prédictive.",
+    "Les références historiques des audits précédents ne sont pas revérifiées ici.",
+    "Aucun code, registre opérationnel, générateur ni déploiement modifié."
+  ],
+  "next": "V0.3.20.3 : évaluation contradictoire des 63 dossiers candidats en brouillon, avec indices et niveaux indéterminés si preuve insuffisante, et conservation des codes existants."
+}
