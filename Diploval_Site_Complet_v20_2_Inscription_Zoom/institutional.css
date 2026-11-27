@@ -1034,3 +1034,14 @@
 .institutional-site .brand img{width:100%;height:auto;mix-blend-mode:normal;border-radius:4px}
 .institutional-site .site-footer a.footer-brand{background:#062039;padding:0;border:1px solid #b77b47;border-radius:5px;overflow:hidden}
 @media(max-width:760px){.institutional-site .brand{width:128px;max-width:48%}}
+
+/* Point mondial : accès permanent et alertes consolidées, sans dupliquer les dossiers. */
+.institutional-home .strategic-watch__intro{display:grid;grid-template-columns:minmax(0,1fr);gap:.65rem}
+.institutional-home .strategic-watch__world{min-width:0;padding:.65rem .15rem;display:grid;gap:.3rem}
+.institutional-home .strategic-watch__world h2{margin:0;font:600 clamp(1.25rem,2.4vw,1.8rem)/1.2 Georgia,serif;color:#062039}
+.institutional-home .strategic-watch__world h2 a{color:inherit;text-decoration:none}
+.institutional-home .strategic-watch__world p{margin:0;color:#465d65;font-size:.86rem}
+.institutional-home .strategic-watch__world-link{display:inline-flex;align-items:center;justify-content:center;justify-self:start;min-height:44px;background:#062039;color:#fff;text-decoration:none;border:1px solid #b77b47;border-radius:6px;padding:.55rem .85rem;font-weight:700;font-size:.84rem;max-width:100%;white-space:normal}
+.institutional-home .strategic-watch__world-link:hover,.institutional-home .strategic-watch__world-link:focus-visible{background:#153e5c;color:#fff}
+@media(min-width:1000px){.institutional-home .strategic-watch__inner{grid-template-columns:minmax(0,1fr) minmax(160px,230px)}.institutional-home .strategic-watch__intro{grid-template-columns:minmax(210px,.65fr) minmax(0,1.35fr)}}
+@media(max-width:760px){.institutional-home .strategic-watch__world-link{width:100%}.institutional-home .strategic-watch__inner{width:calc(100% - 24px)}.institutional-home .strategic-watch__help{justify-items:start}}
