@@ -300,7 +300,7 @@ def check_opening(browser, width, failures):
 
 def check_world_watch(browser, width, failures):
     """Test the actual generated world-watch page, including its interactive map."""
-    page = browser.new_page(viewport={"width": width, "height": 850})
+    page = browser.new_page(viewport={"width": width, "height": 850}, has_touch=width <= 650)
     prefix = f"{width}px: monde sous vigilance"
     try:
         response = page.goto(BASE.rstrip("/") + "/points-information/monde/", wait_until="domcontentloaded", timeout=30000)
@@ -380,9 +380,13 @@ def check_world_watch(browser, width, failures):
             if svg.get_attribute("viewBox") != before:
                 failures.append(prefix + " recentrage inopérant")
             # Exercise an actual pointer tap at the visible dot centre.
+            pin.locator('.ww-dot').scroll_into_view_if_needed()
             dot = pin.locator('.ww-dot').bounding_box()
             if dot:
-                page.mouse.click(dot['x'] + dot['width']/2, dot['y'] + dot['height']/2)
+                if width <= 650:
+                    page.touchscreen.tap(dot['x'] + dot['width']/2, dot['y'] + dot['height']/2)
+                else:
+                    page.mouse.click(dot['x'] + dot['width']/2, dot['y'] + dot['height']/2)
                 if page.locator('#ww-map-open').get_attribute('href') != '#ww-AFR-01':
                     failures.append(prefix + " sélection par pointeur inopérante")
             else:
