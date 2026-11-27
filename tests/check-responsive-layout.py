@@ -310,7 +310,7 @@ def check_world_watch(browser, width, failures):
         cards = page.locator("[data-world-entry]")
         pins = page.locator("[data-world-pin]")
         total = cards.count()
-        if total < 46 or pins.count() != total:
+        if total < 57 or pins.count() != total:
             failures.append(prefix + " registre ou repères incomplets")
             return
         if not page.locator("h1").first.is_visible():
@@ -319,6 +319,20 @@ def check_world_watch(browser, width, failures):
             failures.append(prefix + " visuel absent ou non chargé")
         if page.locator("link[rel=canonical]").get_attribute("href") != "https://diploval.fr/points-information/monde":
             failures.append(prefix + " URL canonique incorrecte")
+        if page.locator('[data-world-alert="AFR-01"] .ww-level-1').count() != 1:
+            failures.append(prefix + " Code One Soudan absent ou dupliqué")
+        if page.locator('[data-world-alert]').count() != 1 or page.locator('.ww-pin-level-1').count() != 1:
+            failures.append(prefix + " nouveaux niveaux non validés ou doublons")
+        if page.locator('#ww-AFR-01 .ww-analysis a[href^="https://"]').count() < 3:
+            failures.append(prefix + " sources Soudan insuffisantes")
+        if page.locator('#ww-AFR-02 .ww-analysis a[href^="https://"]').count() < 2:
+            failures.append(prefix + " sources Soudan du Sud insuffisantes")
+        if "aucun niveau attribué" not in page.locator('#ww-AFR-02 .ww-state').inner_text():
+            failures.append(prefix + " niveau Soudan du Sud attribué sans validation")
+        page.locator('#ww-AFR-01 .ww-analysis summary').click()
+        if not page.locator('#ww-AFR-01 .ww-analysis a').first.is_visible():
+            failures.append(prefix + " sources non accessibles")
+        page.locator('#ww-AFR-01 .ww-analysis summary').click()
         q = page.locator("#world-query")
         region = page.locator("#world-region")
         svg = page.locator("#ww-map")
