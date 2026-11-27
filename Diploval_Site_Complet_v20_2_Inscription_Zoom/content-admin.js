@@ -95,18 +95,24 @@
   function pointSlug(p){return p.slug||slugify(p.title)}
   const hasPointLevel = level => ['1','2','3'].includes(String(level));
   const levelMeta = level => ({'3':{label:'Niveau 3',name:'Surveillance active'},'2':{label:'Niveau 2',name:'Vigilance renforcée'},'1':{label:'Niveau 1 · Code One',name:'Seuil critique'}}[String(level)]||null);
-  function renderStrategicWatch(data){
+  function renderStrategicWatch(data,registry,analyses){
     const section=document.querySelector('#strategic-watch'),host=document.querySelector('#strategic-watch-items');
     if(!section||!host)return;
     const rank={'1':3,'2':2,'3':1};
-    const list=(data.points||[])
+    const dossiers=Array.isArray(registry?.dossiers)?registry.dossiers:[];
+    const count=document.querySelector('#strategic-watch-count');
+    if(count&&dossiers.length)count.textContent=dossiers.length+' dossiers · Conflits, tensions internationales et processus de paix';
+    const byId=new Map(dossiers.map(d=>[d.id,d]));
+    const regionalIds=new Map([['russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade','EUR-01'],['proche-orient-israel-palestine-iran-escalade-regionale','MOR-01']]);
+    const individual=(Array.isArray(analyses?.analyses)?analyses.analyses:[]).filter(a=>hasPointLevel(a.level)&&a.validated_on&&byId.has(a.id)&&!byId.get(a.id).related_public_followup).map(a=>({title:byId.get(a.id).title,level:a.level,summary:a.summary,last_update:a.validated_on,worldId:a.id}));
+    const list=[...(data.points||[]),...individual]
       .filter(p=>p.visible!==false&&p.show_home!==false&&!['clos','archive'].includes(p.status)&&hasPointLevel(p.level))
       .sort((a,b)=>(rank[String(b.level)]||0)-(rank[String(a.level)]||0)||String(b.last_update||b.opened_at||'').localeCompare(String(a.last_update||a.opened_at||'')))
       .slice(0,3);
-    section.hidden=!list.length;
+    section.hidden=false;
     if(!list.length){host.innerHTML='';return}
     host.innerHTML=list.map(p=>{
-      const m=levelMeta(p.level),href='/points-information/'+encodeURIComponent(pointSlug(p))+'/';
+      const m=levelMeta(p.level),worldId=p.worldId||regionalIds.get(pointSlug(p)),href=worldId?'/points-information/monde#ww-'+encodeURIComponent(worldId):'/points-information/'+encodeURIComponent(pointSlug(p))+'/';
       const summary=String(p.summary||'').replace(/\s+/g,' ').trim();
       const short=summary.length>165?summary.slice(0,162).replace(/\s+\S*$/,'')+'…':summary;
       const meta=p.last_update?'Mis à jour '+formatDateTime(p.last_update):'Suivi en cours';
@@ -191,10 +197,10 @@
     if(more){more.hidden=list.length<=2;if(more.hidden)more.open=false;}
   }
   function renderPodcasts(data){const host=document.querySelector('#admin-podcast-episodes');if(!host)return;const list=(data.episodes||[]).filter(e=>e.visible!==false).sort((a,b)=>(Number(b.number)||0)-(Number(a.number)||0));if(!list.length)return;host.innerHTML=list.map(e=>`<article class="podcast-upcoming podcast-admin-episode">${e.cover?`<img src="${attr(e.cover)}" alt="Pochette : ${attr(e.title)}" loading="lazy">`:''}<div class="podcast-episode-number"><span>${esc(e.date?formatDate(e.date):'Épisode')}</span><strong>${String(e.number||'').padStart(2,'0')}</strong></div><div class="podcast-episode-copy"><small>${esc(e.format||'Les Voix du Vivant')}${e.duration?' · '+esc(e.duration):''}</small><h3>${esc(e.title)}</h3><p>${esc(e.summary||'')}</p>${e.audio?`<audio controls preload="metadata" src="${attr(e.audio)}"></audio>`:''}${e.transcript?`<details><summary>Lire la transcription</summary><div>${textParagraphs(e.transcript)}</div></details>`:''}</div></article>`).join('')}
-  async function init(){const [pub,dos,agenda,articles,communiques,podcasts,points,settings]=await Promise.all([getJSON('content/publications.json',{publications:[]}),getJSON('content/dossiers.json',{dossiers:[]}),getJSON('content/agenda.json',{events:[]}),getJSON('content/articles.json',{articles:[]}),getJSON('content/communiques.json',{communiques:[]}),getJSON('content/podcasts.json',{episodes:[]}),getJSON('content/points-information.json',{points:[]}),getJSON('content/site-settings.json',{})]);publications=(pub.publications||[]).map(p=>{
+  async function init(){const [pub,dos,agenda,articles,communiques,podcasts,points,settings,worldRegistry,worldAnalyses]=await Promise.all([getJSON('content/publications.json',{publications:[]}),getJSON('content/dossiers.json',{dossiers:[]}),getJSON('content/agenda.json',{events:[]}),getJSON('content/articles.json',{articles:[]}),getJSON('content/communiques.json',{communiques:[]}),getJSON('content/podcasts.json',{episodes:[]}),getJSON('content/points-information.json',{points:[]}),getJSON('content/site-settings.json',{}),getJSON('content/world-watch.json',{dossiers:[]}),getJSON('content/world-watch-analyses.json',{analyses:[]})]);publications=(pub.publications||[]).map(p=>{
       if(p.participation_enabled){p.participation_url=publicationId(p)==='numerisation-resilience'?'/dossiers/numerisation-securite-resilience':'/dossiers/'+publicationId(p)+'/';const today=parisToday();if(!['Consultation close','Résultats publiés'].includes(p.participation_status)){if(p.participation_closes&&today>p.participation_closes.slice(0,10))p.participation_status='Consultation close';else if(p.participation_opens&&today<p.participation_opens.slice(0,10))p.participation_status='Consultation à venir';}}
       return p;
-    });renderFeatured();renderLibrary();renderDossiers(dos);renderAgenda(agenda);renderArticles(articles);renderCommuniquesHome(communiques);renderPodcasts(podcasts);renderStrategicWatch(points);renderPointsHome(points);renderSiteNotice(settings);setupRegistrationEvents(agenda.events||[]);try{const id=new URL(location.href).searchParams.get('publication');if(id&&publications.some(p=>publicationId(p)===id&&p.visible!==false&&p.pdf&&!['Brouillon','Archivé'].includes(p.status)))setTimeout(()=>openPublication(id),120)}catch{}}
+    });renderFeatured();renderLibrary();renderDossiers(dos);renderAgenda(agenda);renderArticles(articles);renderCommuniquesHome(communiques);renderPodcasts(podcasts);renderStrategicWatch(points,worldRegistry,worldAnalyses);renderPointsHome(points);renderSiteNotice(settings);setupRegistrationEvents(agenda.events||[]);try{const id=new URL(location.href).searchParams.get('publication');if(id&&publications.some(p=>publicationId(p)===id&&p.visible!==false&&p.pdf&&!['Brouillon','Archivé'].includes(p.status)))setTimeout(()=>openPublication(id),120)}catch{}}
   document.addEventListener('click',e=>{const b=e.target.closest('.admin-work-open');if(b){e.preventDefault();openPublication(b.dataset.adminWork)}});
   setupDynamicShare();
   init();
