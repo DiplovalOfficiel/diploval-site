@@ -1,0 +1,57 @@
+{
+  "schema_version": "0.3.10",
+  "date": "2026-11-27",
+  "analyses": [
+    {
+      "id": "AFR-01",
+      "level": "1",
+      "validated_on": "2026-11-27",
+      "summary": "Vigilance critique indépendante : poursuite du conflit armé, atteintes aux civils, désorganisation sanitaire et insécurité alimentaire extrême dans certaines zones.",
+      "living": "Médecins Sans Frontières documente la recrudescence des maladies évitables par vaccination au Darfour. Le rapport FAO–PAM du 27 novembre classe le Soudan parmi les foyers de préoccupation alimentaire maximale et signale un risque de famine dans certaines zones. Cela ne signifie pas que tout le pays est en famine.",
+      "peace": "Le 25 novembre, l’Union africaine a accueilli une proposition de médiation et rappelé la nécessité d’un dialogue inclusif conduit par les Soudanais. Les efforts de médiation ne constituent pas une cessation vérifiée des hostilités.",
+      "assessment": "La convergence des risques militaires, humanitaires et alimentaires justifie le Code One. Les informations sur les zones touchées et l’application des démarches de paix restent à actualiser. Il s’agit d’une appréciation Diploval et non d’une alerte officielle.",
+      "sources": [
+        {
+          "date": "2026-11-04",
+          "label": "MSF — Rétablissement de la vaccination de routine au Darfour",
+          "url": "https://www.msf.org/sudan-routine-immunisation-must-be-restored-darfur"
+        },
+        {
+          "date": "2026-11-17",
+          "label": "ONU au Soudan — Conséquences des frappes pour les civils",
+          "url": "https://sudan.un.org/en/326318-un-report-details-deadly-civilian-impact-surge-drone-strikes"
+        },
+        {
+          "date": "2026-11-25",
+          "label": "Union africaine — Proposition de médiation",
+          "url": "https://www.au.int/en/pressreleases/20261125/statement-chairperson-au-commission-sudan-mediation-proposal"
+        },
+        {
+          "date": "2026-11-27",
+          "label": "FAO–PAM — Alerte précoce sur l’insécurité alimentaire",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        }
+      ]
+    },
+    {
+      "id": "AFR-02",
+      "level": null,
+      "summary": "Le rapport FAO–PAM du 27 novembre 2026 classe le Soudan du Sud parmi les foyers de préoccupation alimentaire maximale. Il rappelle une projection antérieure de risque de famine dans quatre comtés du Haut-Nil et du Jonglei jusqu’en juillet 2026, dans un scénario défavorable. Une nouvelle évaluation locale est nécessaire pour préciser le risque actuel. L’évaluation du niveau Diploval reste en cours.",
+      "living": "Les risques alimentaires doivent être appréciés à l’échelle des zones et des populations touchées, en distinguant les données observées, les projections et leur période de validité.",
+      "peace": "Le 27 novembre, l’Union africaine a annoncé l’inauguration du groupe de travail conjoint UA–IGAD–ONU et demandé le respect du cessez-le-feu ainsi que l’application des engagements de transition.",
+      "assessment": "Aucun nouveau code n’est attribué à ce stade.",
+      "sources": [
+        {
+          "date": "2026-11-27",
+          "label": "FAO–PAM — Alerte précoce sur l’insécurité alimentaire",
+          "url": "https://www.fao.org/newsroom/detail/el-nino-adds-new-hunger-hotspots-as-conflict-continues-to-drive-risk-of-famine-warn-fao-and-wfp/"
+        },
+        {
+          "date": "2026-11-27",
+          "label": "Union africaine — Dialogue inclusif et transition au Soudan du Sud",
+          "url": "https://www.au.int/en/pressreleases/20261127/auc-chairperson-calls-commitment-advance-peace-southsudan"
+        }
+      ]
+    }
+  ]
+}
