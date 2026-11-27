@@ -174,8 +174,15 @@ def check_home_modules(page, width, failures):
         for el in page.locator(selector).all():
             if el.is_visible() and el.evaluate("el => el.scrollWidth > el.clientWidth + 3"):
                 failures.append(f"{width}px: débordement interne {selector}")
-    if watch.locator(".strategic-watch__item").count() < 1:
-        failures.append(f"{width}px: aucune situation affichée")
+    if watch.locator(".strategic-watch__item").count() != 3:
+        failures.append(f"{width}px: les trois alertes consolidées ne sont pas affichées")
+    if not watch.locator('.strategic-watch__world-link[href="/points-information/monde"]').is_visible():
+        failures.append(f"{width}px: accès direct au point mondial absent")
+    if "57 dossiers" not in watch.locator("#strategic-watch-count").inner_text():
+        failures.append(f"{width}px: registre mondial non synchronisé")
+    for ident in ("AFR-01","EUR-01","MOR-01"):
+        if watch.locator(f'a.strategic-watch__main[href="/points-information/monde#ww-{ident}"]').count() != 1:
+            failures.append(f"{width}px: alerte {ident} absente ou dupliquée")
     if dico.locator("h2").evaluate("el => getComputedStyle(el).color") != "rgb(245, 240, 230)":
         failures.append(f"{width}px: titre Dico illisible ou non harmonisé")
 
@@ -300,7 +307,7 @@ def check_opening(browser, width, failures):
 
 def check_world_watch(browser, width, failures):
     """Test the actual generated world-watch page, including its interactive map."""
-    page = browser.new_page(viewport={"width": width, "height": 850})
+    page = browser.new_page(viewport={"width": width, "height": 850}, has_touch=width <= 650)
     prefix = f"{width}px: monde sous vigilance"
     try:
         response = page.goto(BASE.rstrip("/") + "/points-information/monde/", wait_until="domcontentloaded", timeout=30000)
@@ -321,7 +328,7 @@ def check_world_watch(browser, width, failures):
             failures.append(prefix + " URL canonique incorrecte")
         if page.locator('[data-world-alert="AFR-01"] .ww-level-1').count() != 1:
             failures.append(prefix + " Code One Soudan absent ou dupliqué")
-        if page.locator('[data-world-alert]').count() != 1 or page.locator('.ww-pin-level-1').count() != 1:
+        if page.locator('[data-world-alert]').count() != 1 or page.locator('.ww-pin-level-1').count() != 2 or page.locator('.ww-pin-level-2').count() != 1 or page.locator('[data-regional-alert]').count() != 2:
             failures.append(prefix + " nouveaux niveaux non validés ou doublons")
         if page.locator('#ww-AFR-01 .ww-analysis a[href^="https://"]').count() < 3:
             failures.append(prefix + " sources Soudan insuffisantes")
@@ -329,6 +336,13 @@ def check_world_watch(browser, width, failures):
             failures.append(prefix + " sources Soudan du Sud insuffisantes")
         if "aucun niveau attribué" not in page.locator('#ww-AFR-02 .ww-state').inner_text():
             failures.append(prefix + " niveau Soudan du Sud attribué sans validation")
+        for ident in ("AFR-01", "AFR-02"):
+            label = page.locator(f'#ww-{ident} .ww-summary-label')
+            if label.count() != 1 or label.evaluate("el => el.getBoundingClientRect().width < 125 || el.getBoundingClientRect().height > 90"):
+                failures.append(prefix + " libellé accordéon trop étroit ou découpé")
+        for slug in ("russie-ukraine-negociations-cessez-le-feu-et-risque-d-escalade","proche-orient-israel-palestine-iran-escalade-regionale"):
+            if page.locator(f'main a.ww-link[href="/points-information/{slug}/"]').count() != 1:
+                failures.append(prefix + " suivi régional dupliqué")
         page.locator('#ww-AFR-01 .ww-analysis summary').click()
         if not page.locator('#ww-AFR-01 .ww-analysis a').first.is_visible():
             failures.append(prefix + " sources non accessibles")
@@ -359,8 +373,67 @@ def check_world_watch(browser, width, failures):
         if pin.count() == 1:
             pin.focus()
             page.keyboard.press("Enter")
+            if not page.locator('#ww-map-open').is_visible() or page.locator('#ww-map-open').get_attribute('href') != '#ww-AFR-01':
+                failures.append(prefix + " sélection clavier du repère inopérante")
+            page.locator('#ww-map-open').click()
             if page.evaluate("location.hash") != "#ww-AFR-01":
-                failures.append(prefix + " navigation clavier du repère inopérante")
+                failures.append(prefix + " ouverture de fiche inopérante")
+            page.locator('#ww-AFR-01 .ww-back-map').click()
+            before = svg.get_attribute("viewBox")
+            marker = pin.locator('.ww-dot')
+            diameter = marker.bounding_box()['width']
+            page.locator('#ww-zoom-in').click()
+            if svg.get_attribute("viewBox") == before:
+                failures.append(prefix + " commande zoom inopérante")
+            if abs(marker.bounding_box()['width'] - diameter) > .6:
+                failures.append(prefix + " taille du repère modifiée par le zoom")
+            page.locator('#ww-zoom-out').click()
+            if abs(marker.bounding_box()['width'] - diameter) > .6:
+                failures.append(prefix + " taille du repère modifiée par le dézoom")
+            page.locator('#ww-fit').click()
+            if svg.get_attribute("viewBox") != before:
+                failures.append(prefix + " recentrage inopérant")
+            # Pointer gesture simulation exercises both-finger geometry in both browsers.
+            box = svg.bounding_box()
+            cx, cy = box['x'] + box['width']/2, box['y'] + box['height']/2
+            def pointer(event, ident, x, y):
+                svg.dispatch_event(event, {"pointerId": ident, "pointerType": "touch", "clientX": x, "clientY": y, "bubbles": True, "cancelable": True, "buttons": 0 if event == "pointerup" else 1})
+            pointer("pointerdown", 101, cx-25, cy)
+            pointer("pointerdown", 102, cx+25, cy)
+            pointer("pointermove", 101, cx-45, cy)
+            pointer("pointermove", 102, cx+45, cy)
+            pointer("pointerup", 101, cx-45, cy)
+            pointer("pointerup", 102, cx+45, cy)
+            if float(svg.get_attribute("viewBox").split()[2]) >= float(before.split()[2]):
+                failures.append(prefix + " pincement inopérant")
+            if abs(marker.bounding_box()['width'] - diameter) > .6:
+                failures.append(prefix + " taille du repère modifiée au pincement")
+            prior = svg.get_attribute("viewBox")
+            pointer("pointerdown", 103, cx, cy)
+            pointer("pointermove", 103, cx+16, cy+12)
+            pointer("pointerup", 103, cx+16, cy+12)
+            if svg.get_attribute("viewBox") == prior:
+                failures.append(prefix + " déplacement inopérant")
+            page.locator('#ww-fit').click()
+            # Wheel zoom, with cursor anchored on the selected area.
+            svg.dispatch_event("wheel", {"deltaY": -150, "clientX": cx, "clientY": cy, "bubbles": True, "cancelable": True})
+            if float(svg.get_attribute("viewBox").split()[2]) >= float(before.split()[2]):
+                failures.append(prefix + " zoom molette inopérant")
+            if abs(marker.bounding_box()['width'] - diameter) > .6:
+                failures.append(prefix + " taille du repère modifiée à la molette")
+            page.locator('#ww-fit').click()
+            # Exercise an actual pointer tap at the visible dot centre.
+            pin.locator('.ww-dot').scroll_into_view_if_needed()
+            dot = pin.locator('.ww-dot').bounding_box()
+            if dot:
+                if width <= 650:
+                    page.touchscreen.tap(dot['x'] + dot['width']/2, dot['y'] + dot['height']/2)
+                else:
+                    page.mouse.click(dot['x'] + dot['width']/2, dot['y'] + dot['height']/2)
+                if page.locator('#ww-map-open').get_attribute('href') != '#ww-AFR-01':
+                    failures.append(prefix + " sélection par pointeur inopérante")
+            else:
+                failures.append(prefix + " repère non visible")
         else:
             failures.append(prefix + " repère de référence absent")
         page.locator("#world-reset").click()
