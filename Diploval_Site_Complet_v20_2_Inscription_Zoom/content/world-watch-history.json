@@ -1,5 +1,46 @@
 {
   "schema_version": "0.3.12",
-  "events": [],
+  "events": [
+    {
+      "uid": "ww-afr09-minusca-20261112",
+      "dossier_id": "AFR-09",
+      "event_date": "2026-11-12",
+      "title": "Centrafrique — Mandat de la MINUSCA renouvelé",
+      "summary": "La résolution 2836 prolonge le mandat jusqu’au 15 novembre 2027. Le transfert progressif des responsabilités aux autorités nationales reste lié aux conditions de sécurité et à la protection des civils.",
+      "sources": [
+        {
+          "label": "ONU — Registre des mandats, résolution 2836",
+          "url": "https://mandates.un.org/mandate/S/RES/2836%20%282026%29"
+        },
+        {
+          "label": "ONU — Maintien de la paix, communiqué du 12 novembre",
+          "url": "https://peacekeeping.un.org/fr/node/137372"
+        }
+      ],
+      "type": "paix",
+      "published_at": "2026-11-28T11:23:00+01:00",
+      "validated_on": "2026-11-28"
+    },
+    {
+      "uid": "ww-afr12-unsmil-20261030",
+      "dossier_id": "AFR-12",
+      "event_date": "2026-10-30",
+      "title": "Libye — Mandat de la MANUL prolongé",
+      "summary": "La résolution 2835 prolonge la mission politique jusqu’au 31 octobre 2027 et réaffirme le soutien à la médiation pour un processus politique inclusif. Cette décision ne garantit pas la réalisation du processus.",
+      "sources": [
+        {
+          "label": "ONU — Texte de la résolution 2835",
+          "url": "https://digitallibrary.un.org/record/4131901/files/S_RES_2835_%282026%29-EN.pdf"
+        },
+        {
+          "label": "Conseil de sécurité — Bulletin mensuel d’octobre 2026",
+          "url": "https://main.un.org/securitycouncil/sites/default/files/2026/un-security-council-in-review-monthly-newsletter-october-2026.pdf"
+        }
+      ],
+      "type": "paix",
+      "published_at": "2026-11-28T11:23:00+01:00",
+      "validated_on": "2026-11-28"
+    }
+  ],
   "reviews": []
 }
