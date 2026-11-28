@@ -108,11 +108,21 @@
 @media (max-width:1100px){.charte-v209__grid{grid-template-columns:repeat(3,minmax(0,1fr))}.charte-v209__item:nth-child(4),.charte-v209__item:nth-child(5){min-height:0}}
 @media (max-width:760px){.charte-v209{margin:1.45rem 0 .95rem;padding:1.05rem .9rem;border-radius:16px}.charte-v209__head{grid-template-columns:1fr;gap:.55rem;margin-bottom:.95rem}.charte-v209__head h3{font-size:clamp(1.45rem,7vw,1.85rem)}.charte-v209__intro{font-size:.83rem;line-height:1.6}.charte-v209__grid{grid-template-columns:1fr;gap:.65rem}.charte-v209__item{padding:.92rem .9rem .88rem}.charte-v209__item h4{font-size:1.03rem}.charte-v209__item p{font-size:.82rem;line-height:1.58}.charte-v209__foot{font-size:.76rem}}
 </style>
-<link href="https://diploval.fr/" hreflang="fr-FR" rel="alternate"><link href="https://diploval.fr/" hreflang="x-default" rel="alternate"><script type="application/ld+json" id="seo-jsonld">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://diploval.fr/#organization","name":"Diploval","url":"https://diploval.fr/","logo":{"@type":"ImageObject","url":"https://diploval.fr/assets/logo-diploval.jpg"},"image":"https://diploval.fr/assets/diploval-partage.jpg","email":"contact@diploval.fr","sameAs":["https://www.facebook.com/share/1JWdnWXggv/","https://bsky.app/profile/diploval.bsky.social","https://epsilon.social/@diploval"],"founder":{"@type":"Person","name":"Souix Nathorod","alternateName":"Franck Saubin"}},{"@type":"WebSite","@id":"https://diploval.fr/#website","url":"https://diploval.fr/","name":"Diploval","inLanguage":"fr-FR","publisher":{"@id":"https://diploval.fr/#organization"}},{"@type":"WebPage","@id":"https://diploval.fr/#webpage","url":"https://diploval.fr/","name":"Diploval — Analyse, aide à la décision et ingénierie institutionnelle","isPartOf":{"@id":"https://diploval.fr/#website"},"about":{"@id":"https://diploval.fr/#organization"},"inLanguage":"fr-FR","dateModified":"2026-10-16"}]}</script><link rel="stylesheet" href="/article.css?v=1"><link rel="stylesheet" href="/institutional.css?v=17">
+<link href="https://diploval.fr/" hreflang="fr-FR" rel="alternate"><link href="https://diploval.fr/" hreflang="x-default" rel="alternate"><script type="application/ld+json" id="seo-jsonld">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://diploval.fr/#organization","name":"Diploval","url":"https://diploval.fr/","logo":{"@type":"ImageObject","url":"https://diploval.fr/assets/logo-diploval.jpg"},"image":"https://diploval.fr/assets/diploval-partage.jpg","email":"contact@diploval.fr","sameAs":["https://www.facebook.com/share/1JWdnWXggv/","https://bsky.app/profile/diploval.bsky.social","https://epsilon.social/@diploval"],"founder":{"@type":"Person","name":"Souix Nathorod","alternateName":"Franck Saubin"}},{"@type":"WebSite","@id":"https://diploval.fr/#website","url":"https://diploval.fr/","name":"Diploval","inLanguage":"fr-FR","publisher":{"@id":"https://diploval.fr/#organization"}},{"@type":"WebPage","@id":"https://diploval.fr/#webpage","url":"https://diploval.fr/","name":"Diploval — Analyse, aide à la décision et ingénierie institutionnelle","isPartOf":{"@id":"https://diploval.fr/#website"},"about":{"@id":"https://diploval.fr/#organization"},"inLanguage":"fr-FR","dateModified":"2026-10-16"}]}</script><link rel="stylesheet" href="/article.css?v=1"><link rel="stylesheet" href="/institutional.css?v=18">
 <link rel="stylesheet" href="/dico-spotlight.css?v=1">
 <link rel="stylesheet" href="/intro-diploval-v23.css?v=1">
 <link rel="preload" as="image" href="/assets/diploval-intro-embleme.webp">
 <script src="/intro-diploval-v23.js?v=1" defer></script>
+<style id="world-watch-home-layout-fix">
+@media (min-width:761px){
+#strategic-watch .strategic-watch__inner,#strategic-watch .strategic-watch__intro{display:grid!important;grid-template-columns:minmax(0,1fr)!important;align-items:start!important;width:100%;min-width:0}
+#strategic-watch .strategic-watch__inner{width:min(1585px,calc(100% - 32px))}
+#strategic-watch .strategic-watch__world,#strategic-watch .strategic-watch__items,#strategic-watch .strategic-watch__help{width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+#strategic-watch .strategic-watch__world h2{overflow-wrap:normal!important;word-break:normal!important}
+#strategic-watch .strategic-watch__help{justify-items:start}
+#strategic-watch .strategic-watch__legend,#strategic-watch .strategic-watch__links{justify-content:flex-start}
+}
+</style>
 </head>
 <body class="institutional-home institutional-site">
 <dialog id="dv-opening" aria-label="Bienvenue chez Diploval">
@@ -149,25 +159,7 @@
 <a href="/points-information"><strong>Points d’information</strong><span>Suivre les situations et leurs évolutions</span></a>
 <a href="/propositions-contributions"><strong>Participer</strong><span>Consulter les contributions ouvertes</span></a>
 <a href="#actualites"><strong>Actualités</strong><span>Découvrir les nouvelles publications</span></a>
-</nav><section class="strategic-watch" id="strategic-watch" aria-label="Situations suivies par Diploval">
-<div class="strategic-watch__inner">
-  <div class="strategic-watch__intro">
-    <div class="strategic-watch__world"><span class="strategic-watch__kicker">Point d’information mondial</span><h2><a href="/points-information/monde">Le monde sous vigilance</a></h2><p id="strategic-watch-count">Conflits, tensions internationales et processus de paix</p><a class="strategic-watch__world-link" href="/points-information/monde">Ouvrir la carte et les dossiers →</a></div>
-    <div class="strategic-watch__items" id="strategic-watch-items"></div>
-  </div>
-  <div class="strategic-watch__help">
-    <span class="strategic-watch__legend" aria-label="Légende des niveaux">
-      <span><i class="sw-dot sw-dot-3" aria-hidden="true"></i>Niveau 3 · Surveillance</span>
-      <span><i class="sw-dot sw-dot-2" aria-hidden="true"></i>Niveau 2 · Vigilance</span>
-      <span><i class="sw-dot sw-dot-1" aria-hidden="true"></i>Code One · Seuil critique</span>
-    </span>
-    <span class="strategic-watch__links">
-      <a href="/points-information#niveaux">Comprendre les niveaux →</a>
-      <a href="/points-information">Autres points d’information et archives →</a>
-    </span>
-  </div>
-</div>
-</section>
+</nav>
 <div class="institutional-front">
 <section class="dico-spotlight" aria-labelledby="dico-spotlight-title">
   <div class="dico-spotlight__media">
@@ -284,6 +276,26 @@
 </aside>
 </div>
 </section>
+<section class="strategic-watch" id="strategic-watch" aria-label="Situations suivies par Diploval">
+<div class="strategic-watch__inner">
+  <div class="strategic-watch__intro">
+    <div class="strategic-watch__world"><span class="strategic-watch__kicker">Point d’information mondial</span><h2><a href="/points-information/monde">Le monde sous vigilance</a></h2><p id="strategic-watch-count">Conflits, tensions internationales et processus de paix</p><a class="strategic-watch__world-link" href="/points-information/monde">Ouvrir la carte et les dossiers →</a></div>
+    <div class="strategic-watch__items" id="strategic-watch-items"></div>
+  </div>
+  <div class="strategic-watch__help">
+    <span class="strategic-watch__legend" aria-label="Légende des niveaux">
+      <span><i class="sw-dot sw-dot-3" aria-hidden="true"></i>Niveau 3 · Surveillance</span>
+      <span><i class="sw-dot sw-dot-2" aria-hidden="true"></i>Niveau 2 · Vigilance</span>
+      <span><i class="sw-dot sw-dot-1" aria-hidden="true"></i>Code One · Seuil critique</span>
+    </span>
+    <span class="strategic-watch__links">
+      <a href="/points-information#niveaux">Comprendre les niveaux →</a>
+      <a href="/points-information">Autres points d’information et archives →</a>
+    </span>
+  </div>
+</div>
+</section>
+
 <div class="home-follow-grid" aria-label="Suivre Diploval et recevoir ses informations"><section aria-labelledby="socials-title" class="section section-socials" id="reseaux">
 <div class="socials-wrap">
 <div class="socials-intro reveal">

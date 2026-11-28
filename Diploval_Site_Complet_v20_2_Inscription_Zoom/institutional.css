@@ -1043,5 +1043,11 @@
 .institutional-home .strategic-watch__world p{margin:0;color:#465d65;font-size:.86rem}
 .institutional-home .strategic-watch__world-link{display:inline-flex;align-items:center;justify-content:center;justify-self:start;min-height:44px;background:#062039;color:#fff;text-decoration:none;border:1px solid #b77b47;border-radius:6px;padding:.55rem .85rem;font-weight:700;font-size:.84rem;max-width:100%;white-space:normal}
 .institutional-home .strategic-watch__world-link:hover,.institutional-home .strategic-watch__world-link:focus-visible{background:#153e5c;color:#fff}
-@media(min-width:1000px){.institutional-home .strategic-watch__inner{grid-template-columns:minmax(0,1fr) minmax(160px,230px)}.institutional-home .strategic-watch__intro{grid-template-columns:minmax(210px,.65fr) minmax(0,1.35fr)}}
+@media(min-width:761px){
+  .institutional-home .strategic-watch__inner{grid-template-columns:minmax(0,1fr);align-items:start}
+  .institutional-home .strategic-watch__intro{grid-template-columns:minmax(0,1fr);align-items:start}
+  .institutional-home .strategic-watch__world{overflow-wrap:normal;word-break:normal}
+  .institutional-home .strategic-watch__help{min-width:0;justify-items:start}
+  .institutional-home .strategic-watch__legend,.institutional-home .strategic-watch__links{justify-content:flex-start}
+}
 @media(max-width:760px){.institutional-home .strategic-watch__world-link{width:100%}.institutional-home .strategic-watch__inner{width:calc(100% - 24px)}.institutional-home .strategic-watch__help{justify-items:start}}
