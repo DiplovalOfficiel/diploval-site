@@ -8,6 +8,38 @@
       "opened_at": "2026-11-19T11:50",
       "updates": [
         {
+          "datetime": "2026-11-28T10:44",
+          "event_date": "2026-11-27",
+          "event_label": "27 novembre 2026",
+          "title": "Mer Noire — Proposition ukrainienne de trêve maritime",
+          "body": "Le ministre ukrainien des affaires étrangères annonce avoir transmis une proposition visant à sécuriser les exportations alimentaires. Kyiv attend une réponse de Moscou. Aucun accord conclu n’est établi.",
+          "sources": [
+            {
+              "label": "RFE/RL — déclaration du ministre ukrainien",
+              "url": "https://www.rferl.org/a/ukraine-black-sea-ceasefire-russia-shipping-exports/33907217.html",
+              "note": "Informations attribuées aux déclarants cités ; vérification indépendante limitée.",
+              "type": "Presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-28T10:44",
+          "event_date": "2026-11-28",
+          "event_label": "28 novembre 2026",
+          "title": "Russie–Ukraine — Attaques aériennes réciproques signalées",
+          "body": "Les deux parties rapportent de nouvelles attaques de drones. Les bilans et responsabilités détaillés restent à corroborer indépendamment.",
+          "sources": [
+            {
+              "label": "The Guardian — bulletin du 28 novembre",
+              "url": "https://www.theguardian.com/world/2026/nov/28/ukraine-war-briefing-zelenskyy-criticises-trump-for-calling-putin-his-friend-kyiv-deploys-new-laser-weapon",
+              "note": "Informations attribuées aux déclarants cités ; vérification indépendante limitée.",
+              "type": "Presse"
+            }
+          ],
+          "correction": false
+        },
+        {
           "datetime": "2026-11-27T19:30",
           "event_date": "2026-11-27",
           "event_label": "27 novembre 2026",
@@ -722,7 +754,7 @@
         "Clarification ou réduction de l’exposition des personnels militaires français présents en Ukraine.",
         "Stabilisation durable des négociations avec mécanismes de contrôle opérationnels."
       ],
-      "last_update": "2026-11-27T19:30",
+      "last_update": "2026-11-28T10:44",
       "status": "suivi",
       "related_publication": "accord-cadre-ukraine-russie-v01",
       "title": "Russie–Ukraine : négociations, cessez-le-feu et risque d’escalade",
@@ -1133,6 +1165,54 @@
       "social_image": "/assets/uploads/diploval-_-tensions-au-proche-orient.png",
       "opened_at": "2026-11-19T22:08",
       "updates": [
+        {
+          "datetime": "2026-11-28T10:44",
+          "event_date": "2026-11-27",
+          "event_label": "27 novembre 2026",
+          "title": "Gaza — Décès de deux collaborateurs de MSF",
+          "body": "MSF dénonce la mort de deux gardiens de sa clinique dans une frappe israélienne le 27 novembre. L’armée israélienne affirme qu’ils appartenaient au Hamas, sans preuve présentée dans le compte rendu consulté. Cette qualification demeure contestée.",
+          "sources": [
+            {
+              "label": "Associated Press — déclarations de MSF et de l’armée israélienne",
+              "url": "https://apnews.com/article/088cd858cd7def5c2c2296882e6e5be4",
+              "note": "Informations attribuées aux déclarants cités ; vérification indépendante limitée.",
+              "type": "Presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-28T10:44",
+          "event_date": "2026-11-28",
+          "event_label": "28 novembre 2026",
+          "title": "Yémen et Arabie saoudite — Nouvelles tensions",
+          "body": "Les autorités houthies signalent des frappes à Sanaa et des dommages à Mokha. Riyad annonce avoir intercepté un missile visant la capitale. Les responsabilités et bilans restent à vérifier.",
+          "sources": [
+            {
+              "label": "Associated Press — déclarations des parties",
+              "url": "https://apnews.com/article/088cd858cd7def5c2c2296882e6e5be4",
+              "note": "Informations attribuées aux déclarants cités ; vérification indépendante limitée.",
+              "type": "Presse"
+            }
+          ],
+          "correction": false
+        },
+        {
+          "datetime": "2026-11-28T10:44",
+          "event_date": "2026-11-28",
+          "event_label": "28 novembre 2026",
+          "title": "Golfe d’Aden — Saisie d’un navire marchand",
+          "body": "Selon le service britannique UKMTO cité par AP, des hommes armés ont saisi un navire marchand. Aucun groupe n’a revendiqué l’action dans le compte rendu consulté.",
+          "sources": [
+            {
+              "label": "Associated Press — UKMTO",
+              "url": "https://apnews.com/article/088cd858cd7def5c2c2296882e6e5be4",
+              "note": "Informations attribuées aux déclarants cités ; vérification indépendante limitée.",
+              "type": "Presse"
+            }
+          ],
+          "correction": false
+        },
         {
           "datetime": "2026-11-27T19:30",
           "event_date": "2026-11-27",
@@ -1880,7 +1960,7 @@
         "Sécurisation durable des routes maritimes et des infrastructures essentielles.",
         "Avancées diplomatiques appliquées sur le terrain, avec mécanismes de vérification."
       ],
-      "last_update": "2026-11-27T19:30",
+      "last_update": "2026-11-28T10:44",
       "status": "suivi",
       "title": "Proche-Orient : Israël–Palestine, Iran et escalade régionale",
       "sources": [
