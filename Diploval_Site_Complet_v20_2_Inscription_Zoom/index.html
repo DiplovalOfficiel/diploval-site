@@ -113,6 +113,16 @@
 <link rel="stylesheet" href="/intro-diploval-v23.css?v=1">
 <link rel="preload" as="image" href="/assets/diploval-intro-embleme.webp">
 <script src="/intro-diploval-v23.js?v=1" defer></script>
+<style id="world-watch-home-layout-fix">
+@media (min-width:761px){
+#strategic-watch .strategic-watch__inner,#strategic-watch .strategic-watch__intro{display:grid!important;grid-template-columns:minmax(0,1fr)!important;align-items:start!important;width:100%;min-width:0}
+#strategic-watch .strategic-watch__inner{width:min(1585px,calc(100% - 32px))}
+#strategic-watch .strategic-watch__world,#strategic-watch .strategic-watch__items,#strategic-watch .strategic-watch__help{width:100%;min-width:0;max-width:100%;box-sizing:border-box}
+#strategic-watch .strategic-watch__world h2{overflow-wrap:normal!important;word-break:normal!important}
+#strategic-watch .strategic-watch__help{justify-items:start}
+#strategic-watch .strategic-watch__legend,#strategic-watch .strategic-watch__links{justify-content:flex-start}
+}
+</style>
 </head>
 <body class="institutional-home institutional-site">
 <dialog id="dv-opening" aria-label="Bienvenue chez Diploval">
